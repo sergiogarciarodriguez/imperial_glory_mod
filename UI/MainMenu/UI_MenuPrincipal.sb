@@ -67,7 +67,7 @@
              .TIPO UIC_DLGSELECTEMPIRE .ID 'MMS2' 
              .PARAMS 
              [ 
-               .MODO_FUNCIONAMIENTO 1
+               .MODO_FUNCIONAMIENTO 0
                %Game\UI\MainMenu\UIDefs_SelectEmpire.sb 
              ]# ~ .PARAMS
            ]
