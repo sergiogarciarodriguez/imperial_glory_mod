@@ -1,3 +1,5 @@
 # ignore all tga and scc files
 *.tga
 *.scc
+*.V3D
+*.fnt
