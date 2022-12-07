@@ -1,0 +1,25 @@
+#------------------------------------------------ VISOR MATRIZ BARCOS ---------------------------------------
+ 
+ .MATRIZ
+ [
+  .FILAS    2
+  .COLUMNAS 9
+ ]     
+  
+ .DRAW_PARAMS
+ [
+  .X 258
+  .Y 456
+  .CELL_XSPACE 0
+  .CELL_YSPACE 1
+  .SLIDER_XSPACE 3
+  .OBJ_WIDTH  57
+  .OBJ_HEIGHT 79
+ ]         
+     
+ .PRIORITY_BASE 10 
+  
+ .SOUNDS
+ [
+   .IDSELECTSOUND 		"S_FX_ADD_ELEMENTO_COLA_CONSTRUCCION" 
+ ]

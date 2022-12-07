@@ -1,0 +1,327 @@
+#================================================================================================
+# Puede haber un DatosBatalla.sb específico por escenario
+# incluyendo un DatosBatalla.sb en el directorio raíz de cada escenario
+# Todos los datos necesarios que no se encuentren en cada escenario individual
+# se cogerán de este fichero por bloque (cada bloque abajo indica si se 
+# los datos se leeran de los datos específicos de escenario).
+#================================================================================================
+
+#================================================================================================
+# FACTOR_VELOCIDAD_DESTRUCCION
+# Este valor puede ser específico por escenario
+# 
+# Factor de velocidad de animaciones de fases de destrucción de edificios
+# Ej.:
+# a 0.5 la velocidad de destruccion se haría a la mitad de la animacion original
+# a 2.0 la velocidad sería el doble
+#================================================================================================
+.FACTOR_VELOCIDAD_DESTRUCCION 0.6
+
+#================================================================================================
+# DATOS_FORMACIONES
+#================================================================================================
+.DATOS_FORMACIONES
+[
+  .CAOS_FORMACION_INFANTERIA_X		35.0
+  .CAOS_FORMACION_INFANTERIA_Y		35.0
+  
+  .CAOS_FORMACION_CABALLERIA_X		35.0
+  .CAOS_FORMACION_CABALLERIA_Y		35.0
+  
+  .CAOS_FORMACION_CUADRO_X		10.0
+  .CAOS_FORMACION_CUADRO_Y		10.0
+]
+
+#================================================================================================
+# PARTICULAS_MOVER_UNIDADES
+#================================================================================================
+.PARTICULAS_MOVER_UNIDADES
+[
+
+  #
+  # Proceso de uso de efectos de particulas al mover unidades. Esto 
+  # se hara por tick de logica y por cada unidad:
+  #
+  # 1) para cada unidad, elegir frecuencia y escalado por clase de tropa
+  # 2) modificar estos datos segun los multiplicadores por tipo de terreno
+  # 3) elegir el nombre del efecto apropiado
+  #
+  # notas: 
+  # si frecuencia o escala resultantes son 0, el efecto no se lanza
+  # si la frecuencia es mayor que los tics por segundo de la logica
+  # de la aplicación (actualmente 20.0), dicha frecuencia
+  # se se fijará en dicho limite.
+  # En otras palabras, una frecuencia de 20 sistemas de particulas
+  # por segundo, es un sistema por tic de logica, que es el limite 
+  # impuesto actualmente por unidad para generar humo.
+  #
+
+  .TROPAS # este bloque puede ser específico por escenario
+  [
+    .INFANTERIA
+    [
+      .FRECUENCIA     0.04   # particulas por segundo por unidad
+      .ESCALA_TAMANO  1.5     # escala del efecto de particulas
+    ]
+    .CABALLERIA
+    [
+      .FRECUENCIA     0.06   # particulas por segundo por unidad
+      .ESCALA_TAMANO  2.3     # escala del efecto de particulas
+    ]
+    .ARTILLERIA
+    [
+      .FRECUENCIA     1.0 # particulas por segundo por unidad
+      .ESCALA_TAMANO  2.0     # escala del efecto de particulas
+    ]
+  ]
+
+  .TERRENOS # este bloque puede ser específico por escenario
+  [
+    #
+    #                         modificador de la     modificador de la
+    #                         escala de arriba      frecuencia de arriba
+    #                         para el efecto        de efectos de particulas
+    #                         de particulas         por segundo
+    #                         por tipo de tropa     por tipo de tropa
+    #
+    .TERRENO_ARIDO         [ .ESCALA_TAMANO 0.9    .ESCALA_FRECUENCIA 1.1 ]
+    .TERRENO_CULTIVADO     [ .ESCALA_TAMANO 0.9    .ESCALA_FRECUENCIA 1.1 ]
+    .TRIGALES              [ .ESCALA_TAMANO 0.9    .ESCALA_FRECUENCIA 1.1 ]
+    .CAMINO                [ .ESCALA_TAMANO 0.9    .ESCALA_FRECUENCIA 1.1 ]
+    .ZONA_VERDE            [ .ESCALA_TAMANO 0.75   .ESCALA_FRECUENCIA 1.0 ]
+    .BARRIZAL              [ .ESCALA_TAMANO 0.75   .ESCALA_FRECUENCIA 1.0 ]
+    .TERRENO_ELEVADO       [ .ESCALA_TAMANO 0.75   .ESCALA_FRECUENCIA 1.0 ]
+    .BARRANCO              [ .ESCALA_TAMANO 0.75   .ESCALA_FRECUENCIA 1.0 ]
+    .BOSQUE                [ .ESCALA_TAMANO 0.75   .ESCALA_FRECUENCIA 1.0 ]
+    .HIERBAS_ALTAS         [ .ESCALA_TAMANO 0.75   .ESCALA_FRECUENCIA 1.0 ]
+    .PASO_ESTRECHO         [ .ESCALA_TAMANO 0.75   .ESCALA_FRECUENCIA 1.0 ]
+    .NIEVE_NO_PROFUNDA     [ .ESCALA_TAMANO 0.9    .ESCALA_FRECUENCIA 1.0 ]
+    .TERRENO_HELADO        [ .ESCALA_TAMANO 0.5    .ESCALA_FRECUENCIA 1.0 ]
+    .NIEVE_PROFUNDA        [ .ESCALA_TAMANO 0.7    .ESCALA_FRECUENCIA 1.0 ]
+    .RIO_POCO_PROFUNDO     [ .ESCALA_TAMANO 0.0    .ESCALA_FRECUENCIA 0.0 ]
+    .RIO_PROFUNDO          [ .ESCALA_TAMANO 0.0    .ESCALA_FRECUENCIA 0.0 ]
+    .PANTANO               [ .ESCALA_TAMANO 0.0    .ESCALA_FRECUENCIA 0.0 ]
+    .CIENAGA               [ .ESCALA_TAMANO 0.0    .ESCALA_FRECUENCIA 0.0 ]
+    .INTERIOR              [ .ESCALA_TAMANO 0.0    .ESCALA_FRECUENCIA 0.0 ]
+    .OBSTACULO             [ .ESCALA_TAMANO 0.0    .ESCALA_FRECUENCIA 0.0 ]
+  ]
+  
+  .EFECTOS # este bloque puede ser específico por escenario
+  [
+    .INFANTERIA
+    [
+      .TERRENO_ARIDO         "HumoAndarInfanteria"
+      .TERRENO_CULTIVADO     "HumoAndarInfanteria"
+      .TRIGALES              "HumoAndarInfanteria"
+      .CAMINO                "HumoAndarInfanteria"
+      .ZONA_VERDE            "HumoAndarInfanteria"
+      .BARRIZAL              "HumoAndarInfanteria"
+      .TERRENO_ELEVADO       "HumoAndarInfanteria"
+      .BARRANCO              "HumoAndarInfanteria"
+      .BOSQUE                "HumoAndarInfanteria"
+      .HIERBAS_ALTAS         "HumoAndarInfanteria"
+      .PASO_ESTRECHO         "HumoAndarInfanteria"
+      .NIEVE_NO_PROFUNDA     "HumoAndarInfanteria"
+      .TERRENO_HELADO        "HumoAndarInfanteria"
+      .NIEVE_PROFUNDA        "HumoAndarInfanteria"
+      .RIO_POCO_PROFUNDO     "HumoAndarInfanteria"
+      .RIO_PROFUNDO          "HumoAndarInfanteria"
+      .PANTANO               "HumoAndarInfanteria"
+      .CIENAGA               "HumoAndarInfanteria"
+      .INTERIOR              "HumoAndarInfanteria"
+      .OBSTACULO             "HumoAndarInfanteria"
+    ]
+    .CABALLERIA
+    [
+      .TERRENO_ARIDO         "HumoAndarInfanteria"
+      .TERRENO_CULTIVADO     "HumoAndarInfanteria"
+      .TRIGALES              "HumoAndarInfanteria"
+      .CAMINO                "HumoAndarInfanteria"
+      .ZONA_VERDE            "HumoAndarInfanteria"
+      .BARRIZAL              "HumoAndarInfanteria"
+      .TERRENO_ELEVADO       "HumoAndarInfanteria"
+      .BARRANCO              "HumoAndarInfanteria"
+      .BOSQUE                "HumoAndarInfanteria"
+      .HIERBAS_ALTAS         "HumoAndarInfanteria"
+      .PASO_ESTRECHO         "HumoAndarInfanteria"
+      .NIEVE_NO_PROFUNDA     "HumoAndarInfanteria"
+      .TERRENO_HELADO        "HumoAndarInfanteria"
+      .NIEVE_PROFUNDA        "HumoAndarInfanteria"
+      .RIO_POCO_PROFUNDO     "HumoAndarInfanteria"
+      .RIO_PROFUNDO          "HumoAndarInfanteria"
+      .PANTANO               "HumoAndarInfanteria"
+      .CIENAGA               "HumoAndarInfanteria"
+      .INTERIOR              "HumoAndarInfanteria"
+      .OBSTACULO             "HumoAndarInfanteria"
+    ]
+    .ARTILLERIA
+    [
+      .TERRENO_ARIDO         "HumoAndarInfanteria"
+      .TERRENO_CULTIVADO     "HumoAndarInfanteria"
+      .TRIGALES              "HumoAndarInfanteria"
+      .CAMINO                "HumoAndarInfanteria"
+      .ZONA_VERDE            "HumoAndarInfanteria"
+      .BARRIZAL              "HumoAndarInfanteria"
+      .TERRENO_ELEVADO       "HumoAndarInfanteria"
+      .BARRANCO              "HumoAndarInfanteria"
+      .BOSQUE                "HumoAndarInfanteria"
+      .HIERBAS_ALTAS         "HumoAndarInfanteria"
+      .PASO_ESTRECHO         "HumoAndarInfanteria"
+      .NIEVE_NO_PROFUNDA     "HumoAndarInfanteria"
+      .TERRENO_HELADO        "HumoAndarInfanteria"
+      .NIEVE_PROFUNDA        "HumoAndarInfanteria"
+      .RIO_POCO_PROFUNDO     "HumoAndarInfanteria"
+      .RIO_PROFUNDO          "HumoAndarInfanteria"
+      .PANTANO               "HumoAndarInfanteria"
+      .CIENAGA               "HumoAndarInfanteria"
+      .INTERIOR              "HumoAndarInfanteria"
+      .OBSTACULO             "HumoAndarInfanteria"
+    ]
+  ]
+
+  .EFECTOS_CORRIENDO # este bloque puede ser específico por escenario
+  [
+    .INFANTERIA
+    [
+      .TERRENO_ARIDO         "HumoMoverInfanteria"
+      .TERRENO_CULTIVADO     "HumoMoverInfanteria"
+      .TRIGALES              "HumoMoverInfanteria"
+      .CAMINO                "HumoMoverInfanteria"
+      .ZONA_VERDE            "HumoMoverInfanteria"
+      .BARRIZAL              "HumoMoverInfanteria"
+      .TERRENO_ELEVADO       "HumoMoverInfanteria"
+      .BARRANCO              "HumoMoverInfanteria"
+      .BOSQUE                "HumoMoverInfanteria"
+      .HIERBAS_ALTAS         "HumoMoverInfanteria"
+      .PASO_ESTRECHO         "HumoMoverInfanteria"
+      .NIEVE_NO_PROFUNDA     "HumoMoverInfanteria"
+      .TERRENO_HELADO        "HumoMoverInfanteria"
+      .NIEVE_PROFUNDA        "HumoMoverInfanteria"
+      .RIO_POCO_PROFUNDO     "HumoMoverInfanteria"
+      .RIO_PROFUNDO          "HumoMoverInfanteria"
+      .PANTANO               "HumoMoverInfanteria"
+      .CIENAGA               "HumoMoverInfanteria"
+      .INTERIOR              "HumoMoverInfanteria"
+      .OBSTACULO             "HumoMoverInfanteria"
+    ]
+    .CABALLERIA
+    [
+      .TERRENO_ARIDO         "HumoMoverInfanteria"
+      .TERRENO_CULTIVADO     "HumoMoverInfanteria"
+      .TRIGALES              "HumoMoverInfanteria"
+      .CAMINO                "HumoMoverInfanteria"
+      .ZONA_VERDE            "HumoMoverInfanteria"
+      .BARRIZAL              "HumoMoverInfanteria"
+      .TERRENO_ELEVADO       "HumoMoverInfanteria"
+      .BARRANCO              "HumoMoverInfanteria"
+      .BOSQUE                "HumoMoverInfanteria"
+      .HIERBAS_ALTAS         "HumoMoverInfanteria"
+      .PASO_ESTRECHO         "HumoMoverInfanteria"
+      .NIEVE_NO_PROFUNDA     "HumoMoverInfanteria"
+      .TERRENO_HELADO        "HumoMoverInfanteria"
+      .NIEVE_PROFUNDA        "HumoMoverInfanteria"
+      .RIO_POCO_PROFUNDO     "HumoMoverInfanteria"
+      .RIO_PROFUNDO          "HumoMoverInfanteria"
+      .PANTANO               "HumoMoverInfanteria"
+      .CIENAGA               "HumoMoverInfanteria"
+      .INTERIOR              "HumoMoverInfanteria"
+      .OBSTACULO             "HumoMoverInfanteria"
+    ]
+    .ARTILLERIA
+    [
+      .TERRENO_ARIDO         "HumoMoverInfanteria"
+      .TERRENO_CULTIVADO     "HumoMoverInfanteria"
+      .TRIGALES              "HumoMoverInfanteria"
+      .CAMINO                "HumoMoverInfanteria"
+      .ZONA_VERDE            "HumoMoverInfanteria"
+      .BARRIZAL              "HumoMoverInfanteria"
+      .TERRENO_ELEVADO       "HumoMoverInfanteria"
+      .BARRANCO              "HumoMoverInfanteria"
+      .BOSQUE                "HumoMoverInfanteria"
+      .HIERBAS_ALTAS         "HumoMoverInfanteria"
+      .PASO_ESTRECHO         "HumoMoverInfanteria"
+      .NIEVE_NO_PROFUNDA     "HumoMoverInfanteria"
+      .TERRENO_HELADO        "HumoMoverInfanteria"
+      .NIEVE_PROFUNDA        "HumoMoverInfanteria"
+      .RIO_POCO_PROFUNDO     "HumoMoverInfanteria"
+      .RIO_PROFUNDO          "HumoMoverInfanteria"
+      .PANTANO               "HumoMoverInfanteria"
+      .CIENAGA               "HumoMoverInfanteria"
+      .INTERIOR              "HumoMoverInfanteria"
+      .OBSTACULO             "HumoMoverInfanteria"
+    ]
+  ]
+  
+]
+
+#================================================================================================
+# TEXTURAS_IMPACTOS_ARTILLERIA
+#================================================================================================
+.TEXTURAS_IMPACTOS_ARTILLERIA # este bloque puede ser específico por escenario
+[
+  .TERRENO_ARIDO         "Effects/Decals/ImpactoDesierto.tga"
+  .TERRENO_CULTIVADO     "Effects/Decals/ImpactoMediterraneo.tga"
+  .TRIGALES              "Effects/Decals/ImpactoMediterraneo.tga"
+  .CAMINO                "Effects/Decals/ImpactoMediterraneo.tga"
+  .ZONA_VERDE            "Effects/Decals/ImpactoMediterraneo.tga"
+  .BARRIZAL              "Effects/Decals/ImpactoMediterraneo.tga"
+  .TERRENO_ELEVADO       "Effects/Decals/ImpactoMediterraneo.tga"
+  .BARRANCO              "Effects/Decals/ImpactoMediterraneo.tga"
+  .BOSQUE                "Effects/Decals/ImpactoMediterraneo.tga"
+  .HIERBAS_ALTAS         "Effects/Decals/ImpactoMediterraneo.tga"
+  .PASO_ESTRECHO         "Effects/Decals/ImpactoMediterraneo.tga"
+  .NIEVE_NO_PROFUNDA     "Effects/Decals/ImpactoNieve.tga"
+  .TERRENO_HELADO        "Effects/Decals/ImpactoNieve.tga"
+  .NIEVE_PROFUNDA        "Effects/Decals/ImpactoNieve.tga"
+  .RIO_POCO_PROFUNDO     "Effects/Decals/ImpactoHumedo.tga"
+  .RIO_PROFUNDO          "Effects/Decals/ImpactoHumedo.tga"
+  .PANTANO               "Effects/Decals/ImpactoHumedo.tga"
+  .CIENAGA               "Effects/Decals/ImpactoHumedo.tga"
+  .INTERIOR              "Effects/Decals/ImpactoMediterraneo.tga"
+  .OBSTACULO             "Effects/Decals/ImpactoMediterraneo.tga"
+]
+
+#================================================================================================
+# Efectos de impacto de balas de cañón según el tipo de terreno
+#================================================================================================
+.EFECTOS_IMPACTOS_ARTILLERIA # este bloque puede ser específico por escenario
+[
+  .TERRENO_ARIDO         "ImpactoCanonSueloA"
+  .TERRENO_CULTIVADO     "ImpactoCanonSueloB"
+  .TRIGALES              "ImpactoCanonSueloC"
+  .CAMINO                "ImpactoCanonSueloA"
+  .ZONA_VERDE            "ImpactoCanonSueloB"
+  .BARRIZAL              "ImpactoCanonSueloC"
+  .TERRENO_ELEVADO       "ImpactoCanonSueloA"
+  .BARRANCO              "ImpactoCanonSueloB"
+  .BOSQUE                "ImpactoCanonSueloC"
+  .HIERBAS_ALTAS         "ImpactoCanonSueloA"
+  .PASO_ESTRECHO         "ImpactoCanonSueloB"
+  .NIEVE_NO_PROFUNDA     "ImpactoCanonSueloC"
+  .TERRENO_HELADO        "ImpactoCanonSueloA"
+  .NIEVE_PROFUNDA        "ImpactoCanonSueloB"
+  .RIO_POCO_PROFUNDO     "ImpactoCanonSueloC"
+  .RIO_PROFUNDO          "ImpactoCanonSueloA"
+  .PANTANO               "ImpactoCanonSueloB"
+  .CIENAGA               "ImpactoCanonSueloC"
+  .INTERIOR              "ImpactoCanonSueloA"
+  .OBSTACULO             "ImpactoCanonSueloB"
+]
+
+#================================================================================================
+# Datos de trayectorias de las balas de artilleria
+#================================================================================================
+.NUM_REBOTES_ARTILLERIA 3
+.ABSORCION_SUELO_REBOTE_ARTILLERIA 0.425
+.RADIO_MATANZA_BALA_RASA 1.00  # (en metros)
+
+#================================================================================================
+# Efectos de carga y melee. Pueden estar definidos por escenario.
+#================================================================================================
+.EFECTO_MELEE "Effects/Batalla/EfectoMelee.ptc"
+.EFECTO_CARGA "Effects/Batalla/EfectoCarga.ptc"
+
+#================================================================================================
+# Movidas varias
+#================================================================================================
+.MODIF_RNG_DET     3000.0    # Modif del rango de detección/disparo de una tropa cuando ha alcanzado el plano máx de alturas

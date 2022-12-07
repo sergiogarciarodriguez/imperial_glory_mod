@@ -1,0 +1,125 @@
+# Naval Battle Mode Scenery Definition
+[
+  .NAME "59"
+  .MAPA "Game\GameModes\NavalBattleMode\Sceneries\59\Maradriatico.sb"
+]
+[
+  .NAME "60"
+  .MAPA "Game\GameModes\NavalBattleMode\Sceneries\60\Levante.sb"
+]
+[
+  .NAME "61"
+  .MAPA "Game\GameModes\NavalBattleMode\Sceneries\61\GolfoVizcaya.sb"
+]
+[
+  .NAME "62"
+  .MAPA "Game\GameModes\NavalBattleMode\Sceneries\62\GolfoSidra.sb"
+]
+[
+  .NAME "63"
+  .MAPA "Game\GameModes\NavalBattleMode\Sceneries\63\GolfoLeon.sb"
+]
+[
+  .NAME "64"
+  .MAPA "Game\GameModes\NavalBattleMode\Sceneries\64\GolfoFinlandia.sb"
+]
+[
+  .NAME "65"
+  .MAPA "Game\GameModes\NavalBattleMode\Sceneries\65\Gibraltar.sb"
+]
+[
+  .NAME "66"
+  .MAPA "Game\GameModes\NavalBattleMode\Sceneries\66\Finisterre.sb"
+]
+[
+  .NAME "67"
+  .MAPA "Game\GameModes\NavalBattleMode\Sceneries\67\DesembocaduraNilo.sb"
+]
+[
+  .NAME "68"
+  .MAPA "Game\GameModes\NavalBattleMode\Sceneries\68\CostaSiciliana.sb"
+]
+[
+  .NAME "69"
+  .MAPA "Game\GameModes\NavalBattleMode\Sceneries\69\CostaPortuguesa.sb"
+]
+[
+  .NAME "70"
+  .MAPA "Game\GameModes\NavalBattleMode\Sceneries\70\CostaMarroqui.sb"
+]
+[
+  .NAME "71"
+  .MAPA "Game\GameModes\NavalBattleMode\Sceneries\71\CostaAfricana.sb"
+]
+[
+  .NAME "72"
+  .MAPA "Game\GameModes\NavalBattleMode\Sceneries\72\Cantabrico.sb"
+]
+[
+  .NAME "73"
+  .MAPA "Game\GameModes\NavalBattleMode\Sceneries\73\CanalMancha.sb"
+]
+[
+  .NAME "74"
+  .MAPA "Game\GameModes\NavalBattleMode\Sceneries\74\BahiaCadiz.sb"
+]
+[
+  .NAME "75"
+  .MAPA "Game\GameModes\NavalBattleMode\Sceneries\75\AtlanticoNorte.sb"
+]
+[
+  .NAME "76"
+  .MAPA "Game\GameModes\NavalBattleMode\Sceneries\76\MarBaltico.sb"
+]
+[
+  .NAME "77"
+  .MAPA "Game\GameModes\NavalBattleMode\Sceneries\77\MarEgeo.sb"
+]
+[
+  .NAME "78"
+  .MAPA "Game\GameModes\NavalBattleMode\Sceneries\78\MarIrlanda.sb"
+]
+[
+  .NAME "79"
+  .MAPA "Game\GameModes\NavalBattleMode\Sceneries\79\MarJonico.sb"
+]
+[
+  .NAME "80"
+  .MAPA "Game\GameModes\NavalBattleMode\Sceneries\80\MarLiguria.sb"
+]
+[
+  .NAME "81"
+  .MAPA "Game\GameModes\NavalBattleMode\Sceneries\81\MarNegro.sb"
+]
+[
+  .NAME "82"
+  .MAPA "Game\GameModes\NavalBattleMode\Sceneries\82\MarNorte.sb"
+]
+[
+  .NAME "83"
+  .MAPA "Game\GameModes\NavalBattleMode\Sceneries\83\MarNoruega.sb"
+]
+[
+  .NAME "84"
+  .MAPA "Game\GameModes\NavalBattleMode\Sceneries\84\MarTirreno.sb"
+]
+[
+  .NAME "85"
+  .MAPA "Game\GameModes\NavalBattleMode\Sceneries\85\MarWadden.sb"
+]
+[
+  .NAME "86"
+  .MAPA "Game\GameModes\NavalBattleMode\Sceneries\86\MediterraneoCentral.sb"
+]
+[
+  .NAME "87"
+  .MAPA "Game\GameModes\NavalBattleMode\Sceneries\87\MediterraneoOccidental.sb"
+]
+[
+  .NAME "88"
+  .MAPA "Game\GameModes\NavalBattleMode\Sceneries\88\MediterraneoOriental.sb"
+]
+[
+  .NAME "89"
+  .MAPA "Game\GameModes\NavalBattleMode\Sceneries\89\OceanoAtlantico.sb"
+]

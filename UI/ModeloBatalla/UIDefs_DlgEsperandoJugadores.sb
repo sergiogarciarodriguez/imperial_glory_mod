@@ -1,0 +1,30 @@
+#################################################################################################
+# Dialogo de espera de jugadores para partidas de red
+#################################################################################################
+
+# Se define la ventana                   
+
+.MODAL TRUE
+.CENTER FALSE
+
+.ACTIVO FALSE
+
+.DEPTH 4
+
+.FONDO 
+[ 
+  .FILE "Game/UI/Comun/men_waiting.tga" 
+  .X 0 .Y 0 
+  .SX 1024 .SY 768 
+  .U 0 .V 0 
+  .TRANSPARENCY 0
+  .PRIORITY 200
+  .ALPHA TRUE
+]              
+
+.RELATIVE_PRIORITY FALSE
+
+.CONTROLES
+[
+  %Game/GameModes/UIDefs_PantallaLoadingBatalla.sb
+]

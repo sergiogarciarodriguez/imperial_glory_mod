@@ -1,0 +1,98 @@
+##################################################
+##  Diálogo de noticias económicas 
+##################################################
+
+.MODAL FALSE
+.CENTER FALSE
+.DEPTH 3
+
+.FONDO
+[
+  .X 0 .Y 93 .U 1 .V 94 .SX 640 .SY 60
+  .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinEstadisticas1.tga" 
+  .ALPHA TRUE .PRIORITY 202
+]
+
+.CONTROLES
+[
+  [ 
+    .TIPO UIC_GESTORCHECKBOX .ID 'GCBE'
+    .PARAMS
+    [
+      .CHECKBOXES
+      [      
+        # botón de estadística anual
+        [ .TIPO UIC_CHECKBOX .ID 'CBEA'
+          .PARAMS
+          [ 
+            .COMPORTAMIENTO FIJO
+
+            # texto provisional hasta maqueta definitiva, por eso no usa etiqueta
+            .TEXT LTEXT_UI_NEWS_ECO_ANUAL
+      	    .FONT "Fonts/Times12.fnt"            
+      	    
+      	    .SOLTADO      [ .COLOR [ .R 0 .G 0 .B 0 ] ]
+      	    .SELECCIONADO [ .COLOR [ .R 0 .G 0 .B 0 ] ]
+      	    .PULSADO      [ .COLOR [ .R 0 .G 0 .B 0 ] .DX 5 .DY 2 ]
+      	    .CENTER_AREA  [ .X1 0 .Y1 0 .X2 209 .Y2 39 ]            
+      	    
+      	    .STYLE DEFAULT_RECTANGLE_BUTTON_BIG
+      	    
+            .FONDO
+            [
+              .PRIORITY 203
+              .X 53 .Y 8
+            ]
+            
+    	    .IDSELECTSOUND "S_FXUI_CLICKBUTTON"                                
+    	    .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"
+
+          ]            
+        ] # ~ CHECKBOX 
+
+        # botón de estadística global        
+        [ .TIPO UIC_CHECKBOX .ID 'CBEG'
+          .PARAMS
+          [ 
+            .COMPORTAMIENTO FIJO
+
+            # texto provisional hasta maqueta definitiva, por eso no usa etiqueta
+            .TEXT LTEXT_UI_NEWS_ECO_GLOBAL
+      	    .FONT "Fonts/Times12.fnt"            
+      	    
+      	    .SOLTADO      [ .COLOR [ .R 0 .G 0 .B 0 ] ]
+      	    .SELECCIONADO [ .COLOR [ .R 0 .G 0 .B 0 ] ]
+      	    .PULSADO      [ .COLOR [ .R 0 .G 0 .B 0 ] .DX 5 .DY 2 ]
+      	    .CENTER_AREA  [ .X1 0 .Y1 0 .X2 209 .Y2 39 ]            
+      	    
+      	    .STYLE DEFAULT_RECTANGLE_BUTTON_BIG
+      	    
+            .FONDO
+            [
+              .PRIORITY 203
+              .X 373 .Y 8
+            ]
+            
+    	    .IDSELECTSOUND "S_FXUI_CLICKBUTTON"                                
+    	    .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"
+          ]            
+        ] # ~ CHECKBOX         
+      ] # ~ CHECKBOXES
+
+      # siempre debe estar activada una opción
+      .PERMITE_NINGUNA_ACTIVACION FALSE
+      
+    ] # ~ PARAMS
+  ]
+  
+  [
+    .TIPO UIC_DLGNOTICIASECONOMIAGLOBAL .ID 'ECO1'
+    .PARAMS [ %Game/UI/ModeloGestion/BoletinNoticias/UIDefs_DlgNoticiasEconomiaGlobal.sb ]
+  ]
+  
+  [
+    .TIPO UIC_DLGNOTICIASECONOMIAANUAL .ID 'ECO2'
+    .PARAMS [ %Game/UI/ModeloGestion/BoletinNoticias/UIDefs_DlgNoticiasEconomiaAnual.sb ]
+  ]  
+
+] #~ CONTROLES

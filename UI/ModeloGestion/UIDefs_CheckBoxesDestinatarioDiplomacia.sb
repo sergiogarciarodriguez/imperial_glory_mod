@@ -1,0 +1,226 @@
+#############################################################################################
+# Params Grupo Checkboxes asociados a los Destinatarios de las Propuestas Diplomaticas
+#############################################################################################
+  
+    .JUG_FRANCIA
+    [
+      .PARAMS
+      [
+        .IDSELECTSOUND "S_FXUI_CHECKBUTTON"
+        .STYLE BANDERA_FRANCIA
+      ]
+    ]
+
+    .JUG_GRAN_BRETANYA
+    [  
+      .PARAMS
+      [ 
+        .IDSELECTSOUND "S_FXUI_CHECKBUTTON"                    
+        .STYLE BANDERA_GRAN_BRETANYA
+      ]            
+    ]
+
+   .JUG_RUSIA
+   [
+       .PARAMS
+       [  
+         .IDSELECTSOUND "S_FXUI_CHECKBUTTON"                    
+         .STYLE BANDERA_RUSIA
+       ]
+   ]
+    
+    .JUG_AUSTRIA
+    [                
+        .PARAMS
+        [ 
+   	  .IDSELECTSOUND "S_FXUI_CHECKBUTTON"                    
+          .STYLE BANDERA_AUSTRIA
+        ]            
+    ]
+
+    .JUG_PRUSIA
+    [
+        .PARAMS
+        [  
+   	  .IDSELECTSOUND "S_FXUI_CHECKBUTTON"                    
+          .STYLE BANDERA_PRUSIA
+        ]            
+    ]
+
+    .JUG_ESPANYA
+    [
+      .PARAMS
+      [  
+   	.IDSELECTSOUND "S_FXUI_CHECKBUTTON"                    
+        .STYLE BANDERA_ESPANYA
+      ]            
+    ]
+    
+    .JUG_OTOMANO
+    [                 
+      .PARAMS
+      [  
+   	.IDSELECTSOUND "S_FXUI_CHECKBUTTON"                    
+        .STYLE BANDERA_OTOMANO        
+      ]            
+    ]
+    
+    .JUG_EGIPTO
+    [
+      .PARAMS
+      [  
+   	.IDSELECTSOUND "S_FXUI_CHECKBUTTON"                    
+        .STYLE BANDERA_EGIPTO
+      ]            
+    ]
+    
+    .JUG_DOS_SICILIAS
+    [
+        .PARAMS
+        [  
+   	  .IDSELECTSOUND "S_FXUI_CHECKBUTTON"                    
+          .STYLE BANDERA_DOS_SICILIAS
+        ]            
+    ]
+
+    .JUG_DINAMARCA
+    [
+        .PARAMS
+        [  
+   	  .IDSELECTSOUND "S_FXUI_CHECKBUTTON"                    
+          .STYLE BANDERA_DINAMARCA
+        ]           
+    ]
+                     
+    .JUG_SUECIA
+    [
+        .PARAMS
+        [  
+   	  .IDSELECTSOUND "S_FXUI_CHECKBUTTON"                    
+          .STYLE BANDERA_SUECIA
+        ]            
+    ]
+
+    .JUG_PORTUGAL
+    [
+        .PARAMS
+        [  
+   	  .IDSELECTSOUND "S_FXUI_CHECKBUTTON"                    
+          .STYLE BANDERA_PORTUGAL
+        ]            
+    ]
+    
+    .JUG_LOMBARDIA
+    [            
+        .PARAMS
+        [  
+   	  .IDSELECTSOUND "S_FXUI_CHECKBUTTON"                    
+          .STYLE BANDERA_LOMBARDIA
+        ]                    
+    ]
+
+    .JUG_PIAMONTE
+    [
+        .PARAMS
+        [ 
+   	  .IDSELECTSOUND "S_FXUI_CHECKBUTTON"                    
+          .STYLE BANDERA_PIAMONTE
+        ]            
+    ]
+    
+    .JUG_EPAPALES
+    [                 
+        .PARAMS
+        [  
+   	  .IDSELECTSOUND "S_FXUI_CHECKBUTTON"                    
+          .STYLE BANDERA_E_PAPALES
+        ]            
+    ]
+
+    .JUG_RHELVETICA
+    [
+         .PARAMS
+         [          
+   	  .IDSELECTSOUND "S_FXUI_CHECKBUTTON"                    
+          .STYLE BANDERA_R_HELVETICA
+         ]            
+    ]
+    
+    .JUG_HANNOVER
+    [
+         .PARAMS
+         [  
+   	  .IDSELECTSOUND "S_FXUI_CHECKBUTTON"                    
+          .STYLE BANDERA_HANNOVER
+         ]            
+    ]
+    
+    .JUG_BATAVIA
+    [
+       .PARAMS
+       [  
+   	  .IDSELECTSOUND "S_FXUI_CHECKBUTTON"                    
+          .STYLE BANDERA_BATAVIA
+       ]            
+    ]
+
+    .JUG_SAJONIA
+    [
+        .PARAMS
+        [ 
+   	  .IDSELECTSOUND "S_FXUI_CHECKBUTTON"                    
+          .STYLE BANDERA_SAJONIA
+        ]            
+    ]
+    
+    .JUG_POLONIA
+    [
+        .PARAMS
+        [  
+   	  .IDSELECTSOUND "S_FXUI_CHECKBUTTON"                    
+          .STYLE BANDERA_POLONIA
+        ]            
+    ]
+
+    .JUG_MOLDAVIA
+    [
+        .PARAMS
+        [          
+   	  .IDSELECTSOUND "S_FXUI_CHECKBUTTON"                    
+          .STYLE BANDERA_MOLDAVIA
+        ]            
+    ]
+
+   .JUG_MARRUECOS
+   [
+        .PARAMS
+        [  
+   	  .IDSELECTSOUND "S_FXUI_CHECKBUTTON"                    
+          .STYLE BANDERA_MARRUECOS
+        ]            
+   ]    
+   
+   .JUG_TUNEZ
+   [
+       .PARAMS
+       [  
+   	.IDSELECTSOUND "S_FXUI_CHECKBUTTON"                    
+        .STYLE BANDERA_TUNEZ
+       ]              
+   ]
+     
+   .JUG_TRIPOLITANIA
+   [
+       .PARAMS
+       [    
+   	.IDSELECTSOUND "S_FXUI_CHECKBUTTON"                    
+        .STYLE BANDERA_TRIPOLITANIA
+       ]            
+   ]
+   
+
+   .PERMITE_NINGUNA_ACTIVACION TRUE
+   .SELECT_FIRST_ON_ACTIVE     FALSE
+   .TECLAS [ .TECLA_SIGUIENTE KEY_TAB .TECLA_CLICK KEY_SPACE .GESTION_CIRCULAR TRUE ]        
+   .ACTIVO FALSE
+                     

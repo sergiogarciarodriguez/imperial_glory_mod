@@ -1,0 +1,14 @@
+.START_PROCS
+[
+  [
+    .NAME PRESENTACION_MAIN_PROC
+    .PARAMS
+    [
+      .UI_DEFS     "Game/UI/Start/UI_Presentacion.sb"
+      
+      .START_UI UI_PRESENTACION
+      .START_MODE 'MENU'
+      .LAST_STAGE '_END'
+    ]
+  ]
+]

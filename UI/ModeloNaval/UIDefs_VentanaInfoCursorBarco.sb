@@ -1,0 +1,54 @@
+##################################################################################################################
+# Ventana de informacion para los barco que esten bajo el cursor de juego
+# Nota: - Es necesario tener al menos una prioridad de 255 - 2 para que se pueda colocar la barra de porcentaje.
+##################################################################################################################
+
+.MODAL FALSE
+.CENTER FALSE
+
+.FONDO
+[
+  .FILE "Game/UI/ModeloNaval/Barras.tga"
+  .X 0 .Y 0 .U 30 .V 10 .SX 84 .SY 42 .ALPHA TRUE
+]
+
+.ALPHA TRUE 
+.PRIORITY 1
+.ACTIVO FALSE
+
+.CONTROLES
+[
+  [
+    .TIPO UIC_BARRAPORCENTAJE .ID 'BPTR'
+    .PARAMS
+    [
+      .X 20 .Y 7
+      .PRIORITY 2
+      .SUPERIOR [ .FILE "Game/UI/ModeloNaval/Barras.tga" .U 51 .V 54 .ALPHA TRUE ]
+      .SX 56 .SY 5
+    ]
+  ]
+  
+  [
+    .TIPO UIC_BARRAPORCENTAJE .ID 'BPVL'
+    .PARAMS
+    [
+      .X 20 .Y 19
+      .PRIORITY 2
+      .SUPERIOR [ .FILE "Game/UI/ModeloNaval/Barras.tga" .U 51 .V 61 .ALPHA TRUE ]
+      .SX 56 .SY 5
+    ]
+  ]
+  
+  [
+    .TIPO UIC_BARRAPORCENTAJE .ID 'BPCS'
+    .PARAMS
+    [
+      .X 20 .Y 31
+      .PRIORITY 2
+      .SUPERIOR [ .FILE "Game/UI/ModeloNaval/Barras.tga" .U 51 .V 68 .ALPHA TRUE ]
+      .SX 56 .SY 5
+    ]
+  ]
+  
+]

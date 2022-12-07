@@ -1,0 +1,1100 @@
+##############################################################################################################
+# Pantalla de opciones
+##############################################################################################################
+
+
+.MODAL TRUE
+.CENTER TRUE
+.DEPTH 3
+
+#------------------------------------------------ IMAGEN DE FONDO -------------------------------------------
+.FONDO
+[
+  .FILE "Game/UI/MainMenu/MenuOpciones.tga"
+  .X 0 .Y 0
+  .U 0 .V 0 
+  .SX 1024 .SY 768
+  .ALPHA TRUE
+  .PRIORITY 253
+]
+
+.RELATIVE_PRIORITY TRUE
+
+.CONTROLES
+[ 
+  #---------------------------
+  #  BITMAP IMPERIAL GLORY 
+  #---------------------------------------------------<<<
+  [
+    .TIPO UIC_BITMAP .ID 'BMIG' 
+    .PARAMS 
+    [ 
+      .FILE "Game/UI/MainMenu/ImperialGloryLogo.tga" .U 0 .V 0 
+      .X 0 .Y 0 
+      .SX 465 .SY 188 
+      .PRIORITY 254
+      .ALPHA TRUE
+    ] 
+  ]
+  #--------------------
+  #  BOTON CANCEL 
+  #----------------------------------------------------<<<
+  [ 
+    .TIPO UIC_BOTONTEXTO .ID 'SBHX'
+	.PRIORITY 254
+	.PARAMS
+	[ 
+      .PRIORITY 254
+      .IDSELECTSOUND "S_CANCELAR"    
+      .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"      
+      .STYLE DEFAULT_X_BUTTON
+      .FONDO
+      [
+        .PRIORITY 254
+        .X 804 .Y 619
+      ]
+      .KEY [ .TECLA KEY_ESCAPE .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ]  		  		  
+    ]
+  ]
+  #-----------------
+  #  BOTON OK 
+  #----------------------------------------------------<<<
+  [ 
+    .TIPO UIC_BOTONTEXTO .ID 'SBHK' 
+    .PARAMS
+    [ 
+      .PRIORITY 254
+      .IDSELECTSOUND "S_ACEPTAR"    
+      .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"  
+      .STYLE DEFAULT_OK_BUTTON
+      .FONDO
+      [
+        .PRIORITY 254
+        .X 854 .Y 619
+      ]
+      .KEY [ .TECLA KEY_RETURN .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ]  	    	    					  
+    ]
+  ]
+  #--------------------------------------
+  #  TEXTO: Titulo pantalla: Opciones
+  #----------------------------------------------------<<<
+  [
+    .TIPO UIC_TEXT .ID 'LM_O' 
+    .PARAMS 
+    [ 
+      .PRIORITY 254
+      .TEXT LTEXT_UI_MAINMENU_OPCIONES_TITLE
+      .FONT "Fonts/MonotypeCorsiva25.fnt"
+      .X 903 .Y 148 .ALIGN RIGHT
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+    ]
+  ]
+  #---------------------------------------------
+  #  TEXTO: Título tabla: Opciones de video
+  #----------------------------------------------------<<<
+  [
+    .TIPO UIC_TEXT .ID 'LMOV'
+    .PARAMS 
+    [ 
+      .PRIORITY 254
+      .TEXT LTEXT_UI_MAINMENU_OPCIONES_VIDEO
+      .FONT "Fonts/Times15.fnt"
+      .X 314 .Y 218 .ALIGN CENTER
+      .COLOR [ .R  255 .G  255 .B 255 ] 
+    ]
+  ]
+  #---------------------------------------------
+  # TEXTO: Título tabla: Opciones de audio
+  #----------------------------------------------------<<<
+  [
+    .TIPO UIC_TEXT .ID 'LMOV'
+    .PARAMS 
+    [ 
+      .PRIORITY 254
+      .TEXT LTEXT_UI_MAINMENU_OPCIONES_AUDIO
+      .FONT "Fonts/Times15.fnt"
+      .X 720 .Y 218 .ALIGN CENTER
+      .COLOR [ .R  255 .G  255 .B 255 ] 
+    ]
+  ]
+  #---------------------------------------------
+  # TEXTO: Título tabla: Opciones de juego
+  #----------------------------------------------------<<<
+  [ .TIPO UIC_TEXT .ID 'LMOV' 
+    .PARAMS 
+    [ 
+    .PRIORITY 254
+    .TEXT LTEXT_UI_MAINMENU_OPCIONES_JUEGO
+    .FONT "Fonts/Times15.fnt"
+    .X 720 .Y 400 .ALIGN CENTER
+    .COLOR [ .R  255 .G  255 .B 255 ] 
+    ]
+  ]
+ 
+  #----------------------
+  # OPCIONES DE VIDEO
+  #--------------------------------------------------------------------------------------------------------------------------<<<
+  
+  #-----------------------------------------
+  # TEXTO ESTATICO: Resolución de video
+  #---------------------------------------------------------------------------<<<
+  [
+    .TIPO UIC_TEXT .ID 'TTTT' 
+    .PARAMS 
+    [ 
+      .PRIORITY 254
+      .TEXT LTEXT_UI_MAINMENU_VIDEO_RESOLUCION
+      .FONT "Fonts/Times12.fnt"
+      .X 134 .Y 244 .ALIGN LEFT
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+    ]
+  ]
+  #-----------------------------------------
+  # TEXTO DINAMICO: Resolución de video
+  # (Texto sobre el slider de resolución)
+  #---------------------------------------------------------------------------<<<
+  [
+    .TIPO UIC_TEXT .ID 'TRES' 
+    .PARAMS 
+    [ 
+      .PRIORITY 254
+      .FONT "Fonts/Times12.fnt"
+      .X 429 .Y 250 .ALIGN CENTER
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+    ]
+  ]
+  #--------------------------------
+  # SLIDER: Resolución de video
+  #---------------------------------------------------------------------------<<<
+  [
+    .TIPO UIC_SLIDER .ID 'SRES'
+    .PARAMS
+    [ 
+      .PRIORITY 254
+      .X 368 .Y 240
+      .STYLE SLIDER_HORIZONTAL_OPCIONES
+      .BARE TRUE
+    ]
+  ]
+  #------------------------------------------
+  # TEXTO ESTATICO: Profundidad de color
+  #---------------------------------------------------------------------------<<<
+  [
+    .TIPO UIC_TEXT .ID 'TTTT' 
+    .PARAMS 
+    [ 
+      .PRIORITY 254
+      .TEXT LTEXT_UI_MAINMENU_VIDEO_BPP
+      .FONT "Fonts/Times12.fnt"
+      .X 134 .Y 270 .ALIGN LEFT
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+    ]
+  ]
+  #-------------------------------------------
+  # TEXTO DINAMICO: Profundidad de color
+  # (Texto sobre el slider de Profundidad)
+  #---------------------------------------------------------------------------<<<
+  [ 
+    .TIPO UIC_TEXT .ID 'TCOL' 
+    .PARAMS 
+    [ 
+      .PRIORITY 254
+      .FONT "Fonts/Times12.fnt"
+      .X 429 .Y 276 .ALIGN CENTER
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+    ]
+  ]  
+  #-------------------------------------------
+  # SLIDER: Profundidad de color
+  #---------------------------------------------------------------------------<<<
+  [
+    .TIPO UIC_SLIDER .ID 'SCOL'
+    .PARAMS
+    [ 
+      .PRIORITY 254
+      .X 368 .Y 266 
+      .STYLE SLIDER_HORIZONTAL_OPCIONES
+      .BARE TRUE
+      #.IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+      #.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"
+    ]
+  ]
+  #------------------------------------------------------
+  # TEXTO ESTATICO: Activación de sombras de unidades
+  #---------------------------------------------------------------------------<<<
+  [
+    .TIPO UIC_TEXT .ID 'TTTT' 
+    .PARAMS 
+    [ 
+      .PRIORITY 254
+      .TEXT LTEXT_UI_MAINMENU_VIDEO_SOMBRAS
+      .FONT "Fonts/Times12.fnt"
+      .X 134 .Y 296 .ALIGN LEFT
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+    ]
+  ]
+  #------------------------------------------------------
+  # TEXTO DINAMICO: Activación de sombras de unidades
+  #---------------------------------------------------------------------------<<<
+  [
+    .TIPO UIC_TEXT .ID 'TSOM' 
+    .PARAMS 
+    [ 
+      .FONT "Fonts/Times12.fnt"
+      .X 469 .Y 302 .ALIGN CENTER
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+      .PRIORITY 254
+    ]
+  ]
+  #----------------------------------------------
+  # BOTON: Activación de sombras de unidades
+  #---------------------------------------------------------------------------<<<
+  [
+    .TIPO UIC_BOTONTEXTO .ID 'BSOM'
+    .PARAMS
+    [ 
+      .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+      .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"  
+      .COMPORTAMIENTO FIJO
+      .FONDO
+      [
+        .PRIORITY 254
+        .X 393 .Y 292
+        .SX 20 .SY 21 .ALPHA TRUE    
+        .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 4 .V 99 ]
+        .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 30 .V 99 ]
+        .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 56 .V 99 ]
+      ]
+    ]
+  ]
+  #--------------------------------------------
+  # TEXTO ESTATICO: Activación meteorología
+  #---------------------------------------------------------------------------<<<
+  [
+    .TIPO UIC_TEXT .ID 'TTTT' 
+    .PARAMS 
+    [ 
+      .PRIORITY 254
+      .TEXT LTEXT_UI_MAINMENU_VIDEO_METEOROLOGIA
+      .FONT "Fonts/Times12.fnt"
+      .X 134 .Y 322 .ALIGN LEFT
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+    ]
+  ]
+  #--------------------------------------------
+  # TEXTO DINAMICO: Activación meteorología
+  #---------------------------------------------------------------------------<<<
+  [
+    .TIPO UIC_TEXT .ID 'TMET' 
+    .PARAMS 
+    [ 
+      .PRIORITY 254
+      .FONT "Fonts/Times12.fnt"
+      .X 469 .Y 328 .ALIGN CENTER
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+    ]
+  ]
+  #-----------------------------------
+  # BOTON: Activación meteorología
+  #---------------------------------------------------------------------------<<<
+  [
+    .TIPO UIC_BOTONTEXTO .ID 'BMET'
+    .PARAMS
+    [ 
+      .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+      .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"  
+      .COMPORTAMIENTO FIJO
+      .FONDO
+      [
+        .PRIORITY 254
+        .X 393 .Y 318
+        .SX 20 .SY 21 .ALPHA TRUE    
+        .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 4 .V 99 ]
+        .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 30 .V 99 ]
+        .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 56 .V 99 ]
+      ]
+    ]
+  ]
+
+  #-----------------------------------------
+  # TEXTO ESTATICO: Calidad animaciones
+  #---------------------------------------------------------------------------<<<
+  [ .TIPO UIC_TEXT .ID 'TTTT' 
+    .PARAMS 
+    [ 
+      .TEXT LTEXT_UI_MAINMENU_VIDEO_ANIMACION
+      .FONT "Fonts/Times12.fnt"
+      .X 134 .Y 348 .ALIGN LEFT
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+      .PRIORITY 254
+    ]
+  ]
+  
+  #----------------------------------------
+  # TEXTO DINAMICO: Calidad animaciones
+  # (Texto sobre slider de calidad de las animaciones)
+  #---------------------------------------------------------------------------<<<
+  [ .TIPO UIC_TEXT .ID 'TCAN' 
+    .PARAMS 
+    [ 
+      .PRIORITY 254
+      .FONT "Fonts/Times12.fnt"
+      .X 429 .Y 354 .ALIGN CENTER
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+    ]
+  ]
+  
+  #---------------------------------
+  # SLIDER: Calidad animaciones
+  #---------------------------------------------------------------------------<<<
+  [ .TIPO UIC_SLIDER .ID 'SCAN'
+    .PARAMS
+    [ 
+      .X 368 .Y 344 
+      .STYLE SLIDER_HORIZONTAL_OPCIONES
+      .PRIORITY 254
+      .BARE TRUE
+    ]
+  ]
+
+  #----------------------------------------------------------
+  # TEXTO ESTATICO: Activación interpolación animaciones
+  #---------------------------------------------------------------------------<<<
+  [ .TIPO UIC_TEXT .ID 'TTTT' 
+    .PARAMS 
+    [ 
+      .PRIORITY 254
+      .TEXT LTEXT_UI_MAINMENU_VIDEO_INTERPOLA
+      .FONT "Fonts/Times12.fnt"
+      .X 134 .Y 374 .ALIGN LEFT
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+    ]
+  ]
+  
+  #----------------------------------------------------------
+  # TEXTO DINAMICO: Activación interpolación animaciones
+  #---------------------------------------------------------------------------<<<
+  [ .TIPO UIC_TEXT .ID 'TIAN' 
+    .PARAMS 
+    [ 
+      .FONT "Fonts/Times12.fnt"
+      .X 469 .Y 380 .ALIGN CENTER
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+      .PRIORITY 254
+    ]
+  ]
+  
+  #-------------------------------------------------
+  # BOTON: Activación interpolación animaciones
+  #---------------------------------------------------------------------------<<<
+  [ .TIPO UIC_BOTONTEXTO .ID 'BIAN'
+    .PARAMS
+    [ 
+      .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+      .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"  
+      .COMPORTAMIENTO FIJO
+      .FONDO
+      [
+        .X 393 .Y 370
+        .SX 20 .SY 21 .ALPHA TRUE    
+        .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 4 .V 99 ]
+        .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 30 .V 99 ]
+        .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 56 .V 99 ]
+        .PRIORITY 254
+      ]
+    ]
+  ]
+
+  #------------------------------------------------
+  # TEXTO ESTATICO: Nivel de calidad partículas
+  #---------------------------------------------------------------------------<<<
+  #[ .TIPO UIC_TEXT .ID 'TTTT' 
+  #  .PARAMS 
+  #  [ 
+  #    .TEXT LTEXT_UI_MAINMENU_VIDEO_PARTICULAS
+  #    .FONT "Fonts/Times12.fnt"
+  #    .X 134 .Y 400 .ALIGN LEFT
+  #    .COLOR [ .R 255 .G 255 .B 255 ] 
+  #    .PRIORITY 254
+  #  ]
+  #]
+  
+  #------------------------------------------------
+  # TEXTO DINAMICO: Nivel de calidad partículas
+  #---------------------------------------------------------------------------<<<
+  #[ .TIPO UIC_TEXT .ID 'TNPA' 
+  #  .PARAMS 
+  #  [ 
+  #    .FONT "Fonts/Times12.fnt"
+  #    .X 455 .Y 406 .ALIGN CENTER
+  #    .COLOR [ .R 255 .G 255 .B 255 ] 
+  #    .PRIORITY 254
+  #  ]
+  #]
+  
+  #----------------------------------------
+  # SLIDER: Nivel de calidad partículas
+  #---------------------------------------------------------------------------<<<
+  #[ .TIPO UIC_SLIDER .ID 'SNPA'
+  #  .PARAMS
+  #  [ 
+  #    .X 288 .Y 396 
+  #    .STYLE SLIDER_HORIZONTAL_OPCIONES
+  #    .PRIORITY 254
+  #        .BARE TRUE
+  #  ]
+  #]
+
+  #----------------------------------------------
+  # TEXTO ESTATICO: Tipo de filtro de texturas
+  #---------------------------------------------------------------------------<<<
+  [ .TIPO UIC_TEXT .ID 'TTTT' 
+    .PARAMS 
+    [ 
+      .TEXT LTEXT_UI_MAINMENU_VIDEO_FILTRO
+      .FONT "Fonts/Times12.fnt"
+      .X 134 .Y 400 .ALIGN LEFT
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+      .PRIORITY 254
+    ]
+  ]
+  
+  #----------------------------------------------
+  # TEXTO DINAMICO: Tipo de filtro de texturas
+  #---------------------------------------------------------------------------<<<
+  [ .TIPO UIC_TEXT .ID 'TFGR' 
+    .PARAMS 
+    [    
+      .FONT "Fonts/Times12.fnt"
+      .X 428 .Y 406 .ALIGN CENTER
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+      .PRIORITY 254
+    ]
+  ]
+  
+  #--------------------------------------
+  # SLIDER: Tipo de filtro de texturas
+  #---------------------------------------------------------------------------<<<
+  [ .TIPO UIC_SLIDER .ID 'SFGR'
+    .PARAMS
+    [ 
+      .X 368 .Y 396 
+      .STYLE SLIDER_HORIZONTAL_OPCIONES
+      .PRIORITY 254
+      .BARE TRUE
+    ]
+  ]
+
+  #---------------------------------------------
+  # TEXTO ESTATICO: Activación alpha blending
+  #---------------------------------------------------------------------------<<<
+  [ .TIPO UIC_TEXT .ID 'TTTT' 
+    .PARAMS 
+    [ 
+      .TEXT LTEXT_UI_MAINMENU_VIDEO_ALPHA
+      .FONT "Fonts/Times12.fnt"
+      .X 134 .Y 426 .ALIGN LEFT
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+      .PRIORITY 254
+    ]
+  ]
+  
+  #---------------------------------------------
+  # TEXTO DINAMICO: Activación alpha blending
+  #---------------------------------------------------------------------------<<<
+  [ .TIPO UIC_TEXT .ID 'TABL'
+    .PARAMS 
+    [ 
+      .FONT "Fonts/Times12.fnt"
+      .X 469 .Y 432 .ALIGN CENTER
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+      .PRIORITY 254
+    ]
+  ]
+  
+  #-------------------------------------
+  # BOTON: Activación alpha blending
+  #---------------------------------------------------------------------------<<<
+  [ .TIPO UIC_BOTONTEXTO .ID 'BABL'
+    .PARAMS
+    [ 
+      .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+      .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"  
+      .COMPORTAMIENTO FIJO
+      .FONDO
+      [
+        .X 393 .Y 422
+        .SX 20 .SY 21 .ALPHA TRUE    
+        .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 4 .V 99 ]
+        .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 30 .V 99 ]
+        .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 56 .V 99 ]
+        .PRIORITY 254
+      ]
+    ]
+  ]
+
+  #---------------------------------------------------
+  # TEXTO ESTATICO: Activación sincronismo vertical
+  #---------------------------------------------------------------------------<<<
+  [ .TIPO UIC_TEXT .ID 'TTTT' 
+    .PARAMS 
+    [ 
+      .TEXT LTEXT_UI_MAINMENU_VIDEO_VSYNC
+      .FONT "Fonts/Times12.fnt"
+      .X 134 .Y 452 .ALIGN LEFT
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+      .PRIORITY 254
+    ]
+  ]
+  
+  #---------------------------------------------------
+  # TEXTO DINAMICO: Activación sincronismo vertical
+  #---------------------------------------------------------------------------<<<
+  [ .TIPO UIC_TEXT .ID 'TVSY' 
+    .PARAMS 
+    [ 
+      .FONT "Fonts/Times12.fnt"
+      .X 469 .Y 458 .ALIGN CENTER
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+      .PRIORITY 254
+    ]
+  ]
+  
+  #------------------------------------------
+  # BOTON: Activación sincronismo vertical
+  #---------------------------------------------------------------------------<<<
+  [ .TIPO UIC_BOTONTEXTO .ID 'BVSY'
+    .PARAMS
+    [ .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+      .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"  
+      .COMPORTAMIENTO FIJO
+      .FONDO
+      [
+        .X 393 .Y 448
+        .SX 20 .SY 21 .ALPHA TRUE    
+        .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 4 .V 99 ]
+        .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 30 .V 99 ]
+        .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 56 .V 99 ]
+        .PRIORITY 254
+      ]
+    ]
+  ]
+  
+  #-------------------------------------------
+  # TEXTO ESTATICO: Mar con pixel shader
+  #---------------------------------------------------------------------------<<<
+  [ .TIPO UIC_TEXT .ID 'TTPS' 
+    .PARAMS 
+    [ 
+      .TEXT LTEXT_UI_MAINMENU_VIDEO_PIXEL_SHADER
+      .FONT "Fonts/Times12.fnt"
+      .X 134 .Y 478 .ALIGN LEFT
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+      .PRIORITY 254
+    ]
+  ]
+  
+  #-------------------------------------------
+  # TEXTO DINAMICO: Mar con pixel shader
+  #---------------------------------------------------------------------------<<<
+  [ .TIPO UIC_TEXT .ID 'TPSH' 
+    .PARAMS 
+    [ 
+      .FONT "Fonts/Times12.fnt"
+      .X 469 .Y 484 .ALIGN CENTER
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+      .PRIORITY 254
+    ]
+  ]
+  
+  #----------------------------------
+  # BOTON: Mar con pixel shader
+  #---------------------------------------------------------------------------<<<
+  [ .TIPO UIC_BOTONTEXTO .ID 'BPSH'
+    .PARAMS
+    [ .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+      .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"  
+      .COMPORTAMIENTO FIJO
+      .FONDO
+      [
+        .X 393 .Y 474
+        .SX 20 .SY 21 .ALPHA TRUE    
+        .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 4 .V 99 ]
+        .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 30 .V 99 ]
+        .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 56 .V 99 ]
+        .PRIORITY 254
+      ]
+    ]
+  ]
+  
+  #-----------------------------------
+  # TEXTO ESTATICO: Nivel gamma
+  #---------------------------------------------------------------------------<<<
+  [ .TIPO UIC_TEXT .ID 'TGCR' 
+    .PARAMS 
+    [ 
+      .TEXT LTEXT_UI_MAINMENU_GAMMA_CORRECTION
+      .FONT "Fonts/Times12.fnt"
+      .X 134 .Y 504 .ALIGN LEFT
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+      .PRIORITY 254
+    ]
+  ]
+  
+  #---------------------------
+  # SLIDER: Nivel gamma
+  #---------------------------------------------------------------------------<<<
+  [ .TIPO UIC_SLIDER .ID 'SGCR'
+    .PARAMS
+    [ 
+      .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+      .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"  
+      .X 368 .Y 500 
+      .STYLE SLIDER_HORIZONTAL_OPCIONES
+      .PRIORITY 254
+    ]
+  ]
+
+  #----------------------
+  # OPCIONES DE SONIDO
+  #--------------------------------------------------------------------------------------------------------------------------<<<
+  
+  #-----------------------------------
+  # TEXTO ESTATICO: Volumen general
+  #---------------------------------------------------------------------------<<<
+  [ .TIPO UIC_TEXT .ID 'TTTT' 
+    .PARAMS 
+    [ 
+      .TEXT LTEXT_UI_MAINMENU_AUDIO_GENERAL
+      .FONT "Fonts/Times12.fnt"
+      .X 540 .Y 244 .ALIGN LEFT
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+      .PRIORITY 254
+    ]
+  ]
+  
+  #---------------------------
+  # SLIDER: Volumen general
+  #---------------------------------------------------------------------------<<<
+  [ .TIPO UIC_SLIDER .ID 'SVOG'
+    .PARAMS
+    [ 
+      .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+      .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"  
+      .X 590 .Y 240 
+      .STYLE SLIDER_HORIZONTAL_OPCIONES
+      .PRIORITY 254
+    ]
+  ]
+
+  #-----------------------------------
+  # TEXTO ESTATICO: Volumen efectos
+  #---------------------------------------------------------------------------<<<
+  [ .TIPO UIC_TEXT .ID 'TTTT' 
+    .PARAMS 
+    [ 
+      .TEXT LTEXT_UI_MAINMENU_AUDIO_EFECTOS
+      .FONT "Fonts/Times12.fnt"
+      .X 724 .Y 244 .ALIGN LEFT
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+      .PRIORITY 254
+    ]
+  ]
+  
+  #-----------------------------------
+  # SLIDER: Volumen efectos
+  #---------------------------------------------------------------------------<<<
+  [ .TIPO UIC_SLIDER .ID 'SVOE'
+    .PARAMS
+    [ 
+      .X 776 .Y 240 
+      .STYLE SLIDER_HORIZONTAL_OPCIONES
+      .PRIORITY 254
+    ]
+  ]
+
+  #-----------------------------------
+  # TEXTO ESTATICO: Volumen música
+  #---------------------------------------------------------------------------<<<
+  [ .TIPO UIC_TEXT .ID 'TTTT' 
+    .PARAMS 
+    [ 
+      .TEXT LTEXT_UI_MAINMENU_AUDIO_MUSICA
+      .FONT "Fonts/Times12.fnt"
+      .X 540 .Y 270 .ALIGN LEFT
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+      .PRIORITY 254
+    ]
+  ]
+  
+  #--------------------------
+  # SLIDER: Volumen música
+  #---------------------------------------------------------------------------<<<
+  [ .TIPO UIC_SLIDER .ID 'SVOM'
+    .PARAMS
+    [ 
+      .X 590 .Y 266 
+      .STYLE SLIDER_HORIZONTAL_OPCIONES
+      .PRIORITY 254
+    ]
+  ]
+
+  #---------------------------------
+  # TEXTO ESTATICO: Volumen voces
+  #---------------------------------------------------------------------------<<<
+  [ .TIPO UIC_TEXT .ID 'TTTT' 
+    .PARAMS 
+    [ 
+      .TEXT LTEXT_UI_MAINMENU_AUDIO_VOCES
+      .FONT "Fonts/Times12.fnt"
+      .X 724 .Y 270 .ALIGN LEFT
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+      .PRIORITY 254
+    ]
+  ]
+  
+  #-------------------------
+  # SLIDER: Volumen voces
+  #---------------------------------------------------------------------------<<<
+  [ .TIPO UIC_SLIDER .ID 'SVOV'
+    .PARAMS
+    [ 
+      .X 776 .Y 266 
+      .STYLE SLIDER_HORIZONTAL_OPCIONES
+      .PRIORITY 254
+    ]
+  ]
+
+  #---------------------------------------------
+  # TEXTO ESTATICO: Desactivar todo el sonido
+  #---------------------------------------------------------------------------<<<
+  [ .TIPO UIC_TEXT .ID 'TTTT' 
+    .PARAMS 
+    [ 
+      .TEXT LTEXT_UI_MAINMENU_AUDIO_SILENCIO
+      .FONT "Fonts/Times12.fnt"
+      .X 727 .Y 295 .ALIGN RIGHT 
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+      .PRIORITY 254
+    ]
+  ]
+
+  #------------------------------------
+  # BOTON: Desactivar todo el sonido
+  #---------------------------------------------------------------------------<<<
+  [ .TIPO UIC_BOTONTEXTO .ID 'BASI'
+    .PARAMS
+    [ .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+      .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"  
+      .COMPORTAMIENTO FIJO
+      .FONDO
+      [
+        .X 735 .Y 292
+        .SX 20 .SY 21 .ALPHA TRUE    
+        .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 4 .V 99 ]
+        .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 30 .V 99 ]
+        .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 56 .V 99 ]
+        .PRIORITY 254
+      ]
+    ]
+  ]
+
+
+  #----------------------
+  # OPCIONES DE JUEGO
+  #--------------------------------------------------------------------------------------------------------------------------<<<
+  
+  #--------------------------------------------------------
+  # TEXTO ESTATICO: Estado de animación de los pergaminos
+  #----------------------------------------------------------------------<<<
+  [ .TIPO UIC_TEXT .ID 'TTTT' 
+    .PARAMS 
+    [ 
+      .TEXT LTEXT_UI_MAINMENU_JUEGO_PERGAMINOS
+      .FONT "Fonts/Times12.fnt"
+      .X 541 .Y 426 .ALIGN LEFT
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+      .PRIORITY 254
+    ]
+  ]
+  
+  #--------------------------------------------------------
+  # TEXTO DINAMICO: Estado de animación de los pergaminos
+  #----------------------------------------------------------------------<<<
+  [ .TIPO UIC_TEXT .ID 'TASE' 
+    .PARAMS 
+    [ 
+      .FONT "Fonts/Times12.fnt"
+      .X 876 .Y 432 .ALIGN CENTER
+      .COLOR [ .R 255 .G 255 .B 255 ]
+      .PRIORITY 254
+    ]
+  ]
+  
+  #------------------------------------------------
+  # BOTON: Estado de animacion de los pergaminos
+  #----------------------------------------------------------------------<<<
+  [ .TIPO UIC_BOTONTEXTO .ID 'BASE'
+    .PARAMS
+    [ .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+      .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"  
+      .COMPORTAMIENTO FIJO
+      .FONDO
+      [
+        .X 800 .Y 423
+        .SX 20 .SY 21 .ALPHA TRUE    
+        .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 4 .V 99 ]
+        .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 30 .V 99 ]
+        .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 56 .V 99 ]
+        .PRIORITY 254
+      ]
+    ]
+  ]
+
+  #----------------------------------------------------
+  # TEXTO ESTATICO: Velocidad de scroll de la cámara
+  #-----------------------------------------------------------------------<<<
+  #[ .TIPO UIC_TEXT .ID 'TTTT' 
+  #  .PARAMS 
+  #  [ 
+  #    .TEXT LTEXT_UI_MAINMENU_JUEGO_SCROLL
+  #    .FONT "Fonts/Times12.fnt"
+  #    .X 541 .Y 452 .ALIGN LEFT
+  #    .COLOR [ .R 255 .G 255 .B 255 ] 
+  #    .PRIORITY 254
+  #  ]
+  #]
+  
+  #----------------------------------------------------
+  # TEXTO DINAMICO: Velocidad de scroll de la cámara
+  #-----------------------------------------------------------------------<<<
+  #[ .TIPO UIC_TEXT .ID 'TSCR' 
+  #  .PARAMS 
+  #  [ 
+  #    .FONT "Fonts/Times12.fnt"
+  #    .X 861 .Y 458 .ALIGN CENTER
+  #    .COLOR [ .R 255 .G 255 .B 255 ] 
+  #    .PRIORITY 254
+  #  ]
+  #]
+  
+  #--------------------------------------------
+  # SLIDER: Velocidad de scroll de la cámara
+  #-----------------------------------------------------------------------<<<
+  #[ .TIPO UIC_SLIDER .ID 'SSCR'
+  #  .PARAMS
+  #  [
+  #    .X 695 .Y 448 
+  #    .STYLE SLIDER_HORIZONTAL_OPCIONES
+  #    .PRIORITY 254
+  #    .BARE TRUE
+  #  ]
+  #]
+  
+  #-------------------------------------------
+  # TEXTO ESTATICO: Velocidad de la cámara
+  #-----------------------------------------------------------------------<<<
+  [ .TIPO UIC_TEXT .ID 'TTTT' 
+    .PARAMS 
+    [ 
+      .TEXT LTEXT_UI_MAINMENU_JUEGO_CAMARA
+      .FONT "Fonts/Times12.fnt"
+      .X 541 .Y 452 .ALIGN LEFT
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+      .PRIORITY 254
+    ]
+  ]
+  
+  #-------------------------------------------
+  # TEXTO DINAMICO: Velocidad de la cámara
+  #-----------------------------------------------------------------------<<<
+  [ .TIPO UIC_TEXT .ID 'TCAM' 
+    .PARAMS 
+    [ 
+      .FONT "Fonts/Times12.fnt"
+      .X 837 .Y 458 .ALIGN CENTER
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+      .PRIORITY 254
+    ]
+  ]
+  
+  #----------------------------------
+  # SLIDER: Velocidad de la cámara
+  #-----------------------------------------------------------------------<<<
+  [ .TIPO UIC_SLIDER .ID 'SCAM'
+    .PARAMS
+    [ 
+      .X 774 .Y 448 
+      .STYLE SLIDER_HORIZONTAL_OPCIONES
+      .PRIORITY 254
+      .BARE TRUE
+    ]
+  ]
+  
+  #-------------------------------------
+  # TEXTO ESTATICO: Movimiento fichas
+  #-----------------------------------------------------------------------<<<
+  [ .TIPO UIC_TEXT .ID 'TTTT' 
+    .PARAMS 
+    [ 
+      .TEXT LTEXT_UI_MAINMENU_JUEGO_FICHAS
+      .FONT "Fonts/Times12.fnt"
+      .X 541 .Y 478 .ALIGN LEFT
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+      .PRIORITY 254
+    ]
+  ]
+  
+  #-------------------------------------
+  # TEXTO DINAMICO: Movimiento fichas
+  #-----------------------------------------------------------------------<<<
+  [ .TIPO UIC_TEXT .ID 'TFIC' 
+    .PARAMS 
+    [ 
+      .TEXT LTEXT_UI_MAINMENU_VIDEO_RESOLUCION
+      .FONT "Fonts/Times12.fnt"
+      .X 837 .Y 484 .ALIGN CENTER
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+      .PRIORITY 254
+    ]
+  ]
+  
+  #-------------------------------------
+  # SLIDER: Movimiento fichas
+  #-----------------------------------------------------------------------<<<
+  [ .TIPO UIC_SLIDER .ID 'SFIC'
+    .PARAMS
+    [
+      .X 774 .Y 474 
+      .STYLE SLIDER_HORIZONTAL_OPCIONES
+      .PRIORITY 254
+      .BARE TRUE
+    ]
+  ]
+  
+  #---------------------------------------
+  # TEXTO ESTATICO: Autoguardar activado
+  #-----------------------------------------------------------------------<<<
+  [ .TIPO UIC_TEXT .ID 'TTTT' 
+    .PARAMS 
+    [ 
+    .TEXT LTEXT_UI_MAINMENU_JUEGO_AUTOGUARDAR
+    .FONT "Fonts/Times12.fnt"
+    .X 541 .Y 504 .ALIGN LEFT
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+    .PRIORITY 254
+    ]
+  ]
+  
+  #---------------------------------------
+  # TEXTO DINAMICO: Autoguardar activado
+  #-----------------------------------------------------------------------<<<
+  [ .TIPO UIC_TEXT .ID 'TAUT' 
+    .PARAMS 
+    [ 
+      .FONT "Fonts/Times12.fnt"
+      .X 876 .Y 510 .ALIGN CENTER
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+      .PRIORITY 254
+    ]
+  ]
+  
+  #---------------------------------------
+  # BOTON: Autoguardar activado
+  #-----------------------------------------------------------------------<<<
+  [ .TIPO UIC_BOTONTEXTO .ID 'BAUT'
+    .PARAMS
+    [ .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+      .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"  
+      .COMPORTAMIENTO FIJO
+      .FONDO
+      [
+        .X 800 .Y 500
+        .SX 20 .SY 21 .ALPHA TRUE    
+        .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 4 .V 99 ]
+        .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 30 .V 99 ]
+        .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 56 .V 99 ]
+        .PRIORITY 254
+      ]
+    ]
+  ]
+  
+  #--------------------------------------------------------------------------------------------------[OPCIONES DE JUEGO]--<<<
+
+
+  ###############################
+  # restaurar video 
+  ###############################
+  [ .TIPO UIC_BOTONTEXTO .ID 'BRVI'
+    .PARAMS
+    [ .IDSELECTSOUND "S_FXUI_CLICKBUTTON"    
+      .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"      
+      .TEXT LTEXT_UI_MAINMENU_RESTAURAR
+      .SOLTADO [ .COLOR [ .R  0 .G  0 .B  0 ] ]
+      .SELECCIONADO [ .COLOR [ .R  0 .G  0 .B  0 ] ]
+      .PULSADO [ .COLOR [ .R  0 .G  0 .B  0 ] ]
+      #.DISABLE [ .COLOR [ .R  0 .G  0 .B  0 ] ]
+      .FONT "Fonts/Times14.fnt"
+      .CENTER_AREA      [ .X1 0 .Y1 0 .X2 139 .Y2 39 ]   
+      .FONDO
+      [
+        .X 246 .Y 522
+        .SX 139 .SY 39 .ALPHA TRUE    
+        .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 113 .V 329 ]
+        .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 113 .V 375 ]
+        .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 255 .V 375 ]
+    .PRIORITY 254
+      ]
+    ]
+  ] # ~ SLIDER
+  ###############################
+  # restaurar sonido 
+  ###############################
+  [ .TIPO UIC_BOTONTEXTO .ID 'BRSO'
+    .PARAMS
+    [ .IDSELECTSOUND "S_FXUI_CLICKBUTTON"    
+      .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"      
+      .TEXT LTEXT_UI_MAINMENU_RESTAURAR
+      .SOLTADO [ .COLOR [ .R  0 .G  0 .B  0 ] ]
+      .SELECCIONADO [ .COLOR [ .R  0 .G  0 .B  0 ] ]
+      .PULSADO [ .COLOR [ .R  0 .G  0 .B  0 ] ]
+      #.DISABLE [ .COLOR [ .R  0 .G  0 .B  0 ] ]
+      .FONT "Fonts/Times14.fnt"
+      .CENTER_AREA      [ .X1 0 .Y1 0 .X2 139 .Y2 39 ]   
+      .FONDO
+      [
+        .X 649 .Y 314
+        .SX 139 .SY 39 .ALPHA TRUE    
+        .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 113 .V 329 ]
+        .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 113 .V 375 ]
+        .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 255 .V 375 ]
+    .PRIORITY 254
+      ]
+    ]
+  ] # ~ SLIDER
+  ###############################
+  # restaurar juego 
+  ###############################
+  [ .TIPO UIC_BOTONTEXTO .ID 'BRJU'
+    .PARAMS
+    [ .IDSELECTSOUND "S_FXUI_CLICKBUTTON"    
+      .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"      
+      .TEXT LTEXT_UI_MAINMENU_RESTAURAR
+      .SOLTADO [ .COLOR [ .R  0 .G  0 .B  0 ] ]
+      .SELECCIONADO [ .COLOR [ .R  0 .G  0 .B  0 ] ]
+      .PULSADO [ .COLOR [ .R  0 .G  0 .B  0 ] ]
+      #.DISABLE [ .COLOR [ .R  0 .G  0 .B  0 ] ]
+      .FONT "Fonts/Times14.fnt"
+      .CENTER_AREA      [ .X1 0 .Y1 0 .X2 139 .Y2 39 ]   
+      .FONDO
+      [
+        .X 649 .Y 574
+        .SX 139 .SY 39 .ALPHA TRUE    
+        .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 113 .V 329 ]
+        .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 113 .V 375 ]
+        .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 255 .V 375 ]
+    .PRIORITY 254
+      ]
+    ]
+  ] # ~ SLIDER
+]

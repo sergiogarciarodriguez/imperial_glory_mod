@@ -1,0 +1,122 @@
+[
+  .NAME UI_PRESENTACION
+  .PROC UI_GENERICO
+  .PARAMS
+  [
+    .CONTROLES
+    [
+      [ .TIPO UIC_GESTORMENUS
+        .ID 'GMEN'
+        .PARAMS
+        [             
+          .MENUS
+          [
+              # Nota: - El primer menu definido sera el que se active al establecer el gestor de menus
+              ######################################################################################### VIDEO 0 ##
+              # Logo de Eidos
+            [ ######################################################################################### VIDEO 0 ##
+              .ID 'VID0'
+              .CONTROLES
+              [          
+                [
+                  .TIPO UIC_VIDEO .ID 'VD_0'
+                  .PARAMS 
+                  [ 
+                    .FILE "Videos/Logos.bik" 
+                    # tamaño y posición del rectángulo en el que se pintará la textura       
+                    .X 0 .Y 96 .SCALETOX 1024 .SCALETOY 576
+                    # tamaño y posición del vídeo en la textura (U y V siempre serán 0, pero se podrían cambiar para presentar
+                    # solo una parte del vídeo)
+                    .U 0 .V 0 .SX 800 .SY 450
+                    .NOSOUND FALSE
+                    .ALPHA FALSE
+                  ]
+                ]
+              
+                [ .TIPO UIC_TECLA .ID 'V0SC' .PARAMS [ .TECLA KEY_ESCAPE .MKEYS [ ] .EVENTOS [ KEY_DOWN ] ] ]     
+              ] # ~ .CONTROLES
+               
+              .ENLACES
+              [
+                [ .CONTROL_ID 'VD_0' .MENU_ID 'VID1' ]
+                [ .CONTROL_ID 'V0SC' .MENU_ID '_END' ]
+              ] # ~ ENLACES         
+   
+            ] # ~ VIDEO 0
+              ######################################################################################### VIDEO 1 ##
+              # Logo de Pyro
+            [ ######################################################################################### VIDEO 1 ##
+              .ID 'VID1'
+              .CONTROLES
+              [          
+                [
+                  .TIPO UIC_VIDEO .ID 'VD_1'
+                  .PARAMS 
+                  [ 
+                    .FILE "Videos/Logo Pyro.bik" 
+                    # tamaño y posición del rectángulo en el que se pintará la textura       
+                    .X 0 .Y 0 .SCALETOX 1024 .SCALETOY 768
+                    # tamaño y posición del vídeo en la textura (U y V siempre serán 0, pero se podrían cambiar para presentar
+                    # solo una parte del vídeo)
+                    .U 0 .V 0 .SX 800 .SY 600
+                    .NOSOUND FALSE
+                    .ALPHA FALSE                    
+                  ]
+                ]
+              
+                [ .TIPO UIC_TECLA .ID 'V1SC' .PARAMS [ .TECLA KEY_ESCAPE .MKEYS [ ] .EVENTOS [ KEY_DOWN ] ] ]     
+              ] # ~ .CONTROLES
+               
+              .ENLACES
+              [
+                [ .CONTROL_ID 'VD_1' .MENU_ID 'VID2' ]
+                [ .CONTROL_ID 'V1SC' .MENU_ID '_END' ]
+              ] # ~ ENLACES         
+   
+            ] # ~ VIDEO 1
+            
+              ######################################################################################### VIDEO 1 ##
+              # Logo de Nvidia
+            [ ######################################################################################### VIDEO 1 ##
+             .ID 'VID2'
+             .CONTROLES
+             [
+               [
+                 .TIPO UIC_VIDEO .ID 'VD_2'
+                  .PARAMS 
+                  [ 
+                    .FILE "Videos/TWIMTBP_640x480_Audio.bik"            
+                    .X 0 .Y 0 .SCALETOX 1024 .SCALETOY 768 
+                    .U 0 .V 0 .SX 640 .SY 480
+                    .NOSOUND FALSE
+                    .ALPHA FALSE
+                  ]
+                ]
+                  
+                [ .TIPO UIC_TECLA .ID 'V2SC' .PARAMS [ .TECLA KEY_ESCAPE .MKEYS [ ] .EVENTOS [ KEY_DOWN ] ] ]     
+              ] # ~ .CONTROLES
+              
+              .ENLACES
+              [
+                [ .CONTROL_ID 'VD_2' .MENU_ID '_END' ]
+                [ .CONTROL_ID 'V2SC' .MENU_ID '_END' ]
+              ] # ~ ENLACES         
+            ] # ~ VIDEO 2
+          
+            ######################################################################################### _END ##
+            # Menú dummy que indica fin de la secuencia de presentación
+          [ ######################################################################################### _END ##
+            .ID '_END'
+            .CONTROLES
+            [
+            ]
+          ]
+          
+         ] # ~ .MENUS     
+        ] # ~ .PARAMS     
+      ] # ~ .TIPO UIC_GESTORMENUS        
+    ] # ~ .CONTROLES
+    
+    
+  ] # ~ .PARAMS
+]

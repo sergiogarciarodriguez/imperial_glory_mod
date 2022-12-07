@@ -1,0 +1,47 @@
+ # Definimos la matriz de vision para los elementos producibles en una ventana de produccion
+ # Sin ToolTip.
+ # Sin Fondo asociado.
+ 
+ .MATRIZ
+ [
+  .FILAS 1
+  .COLUMNAS 9
+ ]     
+  
+ # Definimos los parametros de dibujado
+ # Nota: - En caso de existir fondo X e Y seran deltas sobre la posicion del mismo y en caso de no definirlo
+ #         serviran para indicar la posicion de inicio de dibujado
+ .DRAW_PARAMS
+ [
+  .X 74
+  .Y 135
+  .CELL_XSPACE 0
+  .CELL_YSPACE 0
+  .SLIDER_XSPACE 3
+  .OBJ_WIDTH 72
+  .OBJ_HEIGHT 102
+ ]         
+     
+ # Definimos el Slider
+ .SLIDER [ .SUBTIPO "Game/UI/ModeloGestion/UIDefsInfoProduccion/UIDefs_DefinicionSliderVertical.sb" ]
+ 
+ # Prioridad base de los elementos en el visor
+ # A los que se les haga un drag tendra una prioridad superior por lo que la prioridad base
+ # no debera de exceder el valor de 254
+ .PRIORITY_BASE 202
+ 
+ # Param de ToolTip
+ .TOOL_TIP 
+ [
+  .FONT "Fonts/Times12.fnt" 
+  .COLOR [ .R 255 .G 255 .B 255 ] 
+  .X 32 .Y 32 
+    
+  .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb        
+ ]
+ 
+ .SOUNDS
+ [
+   .IDSELECTSOUND "S_FX_ADD_ELEMENTO_COLA_CONSTRUCCION" 
+   .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"
+ ]

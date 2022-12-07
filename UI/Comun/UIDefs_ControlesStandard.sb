@@ -1,0 +1,450 @@
+######################################################################################################
+# Definicion de estilos para controles standard
+######################################################################################################
+
+[
+  .KEY DEFAULT_BUTTON
+  .PARAMS       
+  [        
+    .FONDO
+    [            
+      .SX 25 .SY 26
+      .ALPHA TRUE          
+      .SOLTADO      [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 4 .V 4 ]
+      .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 35 .V 4 ]
+      .PULSADO      [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 66 .V 4 ]
+    ]
+  ]
+]
+
+[
+  .KEY ESC_MENU_BUTTON
+  .PARAMS
+  [
+    .TEXT " "
+    .FONT "Fonts/Times12.fnt"
+    
+    .SOLTADO  		[ .COLOR [ .R   0 .G   0 .B   0 ] ] 
+    .SELECCIONADO	[ .COLOR [ .R   0 .G   0 .B   0 ] ] 
+    .PULSADO     	[ .COLOR [ .R   0 .G   0 .B   0 ] ]                            
+    
+    .FONDO 
+    [ 
+      .SX 244 .SY 37    .ALPHA TRUE
+      .SOLTADO 	 	  [ .FILE "Game/UI/Comun/Ingame.tga" .U 7 .V 4  ] 
+      .SELECCIONADO [ .FILE "Game/UI/Comun/Ingame.tga" .U 7 .V 45 ] 
+      .PULSADO     	[ .FILE "Game/UI/Comun/Ingame.tga" .U 7 .V 86  ] 
+    ] 
+      
+    .IDSELECTSOUND "S_UI_GENERICO_PULSADO"                    
+      
+    .CENTER_AREA [ .X1 0 .Y1 0 .X2 244 .Y2 37 ]
+  ]
+]
+
+[
+  .KEY GREATER_THAN_BUTTON
+  .PARAMS
+  [
+    .FONDO
+    [            
+      .SX 25 .SY 26
+      .ALPHA TRUE          
+      .DISABLE      [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 313 .V 200 ]
+      .SOLTADO      [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 132 .V 96 ]
+      .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 160 .V 96 ]
+      .PULSADO      [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 188 .V 96 ]
+    ]
+  ]
+]
+
+[
+  .KEY GREATER_THAN_BORDER_BUTTON
+  .PARAMS
+  [
+    .FONDO
+    [            
+      .SX 32 .SY 33
+      .ALPHA TRUE          
+      .DISABLE      [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 278 .V 200 ]
+      .SOLTADO      [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 4   .V 329 ]
+      .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 41  .V 329 ]
+      .PULSADO      [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 78  .V 329 ]
+    ]
+  ]
+]
+
+[
+  .KEY LESSER_THAN_BUTTON
+  .PARAMS
+  [
+    .FONDO
+    [            
+      .SX 25 .SY 26
+      .ALPHA TRUE          
+      .DISABLE      [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 313 .V 234 ]
+      .SOLTADO      [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 132 .V 130 ]
+      .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 160 .V 130 ]
+      .PULSADO      [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 188 .V 130 ]
+    ]  
+  ]
+]
+
+[
+  .KEY LESSER_THAN_BORDER_BUTTON
+  .PARAMS
+  [
+    .FONDO
+    [            
+      .SX 32 .SY 33
+      .ALPHA TRUE          
+      .DISABLE      [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 278 .V 236 ]
+      .SOLTADO      [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 4 .V 365 ]
+      .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 41 .V 365 ]
+      .PULSADO      [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 78 .V 365 ]
+    ]  
+  ]
+]
+
+[
+  .KEY DEFAULT_X_BUTTON
+  .PARAMS
+  [
+    .FONDO
+    [
+      .SX 50 .SY 49
+      .ALPHA TRUE
+      .SOLTADO 			[ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 66 .V 200 ]
+      .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 119 .V 200 ]
+      .PULSADO 			[ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 172 .V 200 ]
+    ]
+  ]
+]
+
+[
+  .KEY DEFAULT_OK_BUTTON
+  .PARAMS
+  [
+    .FONDO
+    [
+      .SX 50 .SY 49
+      .ALPHA TRUE
+      .SOLTADO 			[ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 4 		.V 276 ]
+      .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 57 	.V 276 ]
+      .PULSADO 			[ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 110 	.V 276 ]
+      .DISABLE      [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 163 	.V 276 ]
+    ]
+  ]
+]
+
+[
+  .KEY SUB_BUTTON
+  .PARAMS
+  [
+    .FONDO
+    [
+      .SX 25 .SY 26 
+      .ALPHA TRUE          
+      .SOLTADO      [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 4 .V 36 ]
+      .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 35 .V 36 ]
+      .PULSADO      [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 66 .V 36 ]      
+    ]
+  ]
+]
+
+[
+  .KEY ADD_BUTTON
+  .PARAMS
+  [
+    .FONDO
+    [
+      .SX 25 .SY 26 
+      .ALPHA TRUE          
+      .SOLTADO      [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 4 .V 68 ]
+      .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 35 .V 68 ]
+      .PULSADO      [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 66 .V 68 ]      
+    ]
+  ]
+]
+
+[
+  .KEY ROUND_BUTTON
+  .PARAMS
+  [
+    .FONDO
+    [
+      .SX 25 .SY 26 
+      .ALPHA TRUE          
+      .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 4 .V 4 ]
+      .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 35 .V 4 ]
+      .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 66 .V 4 ]      
+    ]
+  ]
+]
+
+[
+  .KEY SQUARE_BUTTON_SMALL
+  .PARAMS
+  [
+    .FONDO
+    [
+      .SX 11 .SY 15 
+      .ALPHA TRUE          
+      .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 82 .V 252 ]
+      .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 96 .V 252 ]
+      .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 110 .V 252 ]      
+    ]
+  ]
+]
+
+[
+  .KEY ROUND_BUTTON_2
+  .PARAMS
+  [
+    .FONDO
+    [
+      .SX 32 .SY 33 
+      .ALPHA TRUE          
+      .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 115 .V 162 ]
+      .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 152 .V 162 ]
+      .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 189 .V 162 ]      
+    ]
+  ]
+]
+
+[
+  .KEY ROUND_BUTTON_SMALL
+  .PARAMS
+  [
+    .FONDO
+    [
+      .SX 20 .SY 21 
+      .ALPHA TRUE          
+      .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 4 .V 99 ]
+      .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 30 .V 99 ]
+      .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 56 .V 99 ]      
+    ]
+  ]
+]
+
+
+[
+  .KEY DEFAULT_RECTANGLE_BUTTON_SMALL
+  .PARAMS
+  [
+    .FONDO
+    [
+      .SX 139 .SY 39
+      .ALPHA TRUE          
+      .SOLTADO      [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 113 .V 329 ]
+      .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 113 .V 375 ]
+      .PULSADO      [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 255 .V 375 ]                      
+      .DISABLE      [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 255 .V 329 ]                      
+    ]
+    
+   .CENTER_AREA [ .X1 0 .Y1 0 .X2 139 .Y2 39 ]
+  ]    
+]
+
+[
+  .KEY DEFAULT_RECTANGLE_BUTTON_BIG
+  .PARAMS
+  [
+    .FONDO
+    [
+      .SX 209 .SY 39
+      .ALPHA TRUE          
+      .DISABLE      [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 255 .V 463 ]                      
+      .SOLTADO      [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 43 .V 417 ]
+      .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 43 .V 463 ]
+      .PULSADO      [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 255 .V 417 ]                      
+    ]
+    
+   .CENTER_AREA [ .X1 0 .Y1 0 .X2 209 .Y2 39 ]
+  ]    
+]
+
+[
+  .KEY DEFAULT_BOX_BUTTON
+  .PARAMS
+  [
+    .FONDO
+    [
+      .SX 25 .SY 26 
+      .ALPHA TRUE          
+      .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 99 .V 4 ]
+      .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 132 .V 4 ]
+      .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 165 .V 4 ]                      
+    ]
+  ]    
+]
+
+[
+  .KEY DEFAULT_BOX_X_BUTTON
+  .PARAMS
+  [
+    .FONDO
+    [
+      .SX 25 .SY 26 
+      .ALPHA TRUE          
+      .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 99 .V 36 ]
+      .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 132 .V 36 ]
+      .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 165 .V 36 ]                      
+    ]
+  ]    
+]
+
+[
+  .KEY DEFAULT_BOX_V_BUTTON
+  .PARAMS
+  [
+    .FONDO
+    [
+      .SX 25 .SY 26 
+      .ALPHA TRUE          
+      .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 99 .V 68 ]
+      .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 132 .V 68 ]
+      .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 165 .V 68 ]                      
+    ]
+  ]    
+]
+
+[
+  .KEY DEFAULT_CHECKBOX_X
+  .PARAMS
+  [
+    .COMPORTAMIENTO FIJO
+    .FONDO
+    [
+      .SX 24 .SY 23
+      .ALPHA TRUE          
+      .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 99 .V 4 ]
+      .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 99 .V 36 ]                      
+    ]
+  ]    
+]
+
+[
+  .KEY DEFAULT_CHECKBOX_OK
+  .PARAMS
+  [
+    .COMPORTAMIENTO FIJO
+    .FONDO
+    [
+      .SX 24 .SY 23
+      .ALPHA TRUE          
+      .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 99 .V 4 ]
+      .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 99 .V 68 ]                      
+    ]
+  ]    
+]
+
+[ .KEY DEFAULT_MAINMENU_VOLVER_BUTTON
+  .PARAMS
+  [
+    .PX 743 .PY 719
+    .TEXT LTEXT_UI_MAINMENU_BK
+    .FONT "Fonts/Times15.fnt"
+    .SOLTADO          [ .COLOR [ .R 255 .G 255 .B   0 ] ] 
+    .SELECCIONADO     [ .COLOR [ .R 255 .G 255 .B 255 ] ] 
+    .PULSADO          [ .COLOR [ .R 255 .G 255 .B 255 ] .DX 5 .DY 2 ] 
+    .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+    .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"       
+    .KEY [ .TECLA LKEY_MAINMENU_CANCELKEY .MKEYS [ ] ]
+  ]
+]
+
+# Opcion Continuar
+[ .KEY DEFAULT_MAINMENU_CONTINUAR_BUTTON
+  .PARAMS
+  [
+    .PX 929 .PY 719
+    .TEXT LTEXT_UI_MAINMENU_OK
+    .FONT "Fonts/Times15.fnt"
+    .SOLTADO          [ .COLOR [ .R 255 .G 255 .B   0 ] ] 
+    .SELECCIONADO     [ .COLOR [ .R 255 .G 255 .B 255 ] ] 
+    .PULSADO          [ .COLOR [ .R 255 .G 255 .B 255 ] .DX 5 .DY 2 ] 
+    .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+    .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"       
+  ]
+]
+
+# Opcion Aceptar
+[ .KEY DEFAULT_MAINMENU_ACEPTAR_BUTTON
+  .PARAMS
+  [
+    .PX 929 .PY 719
+    .TEXT LTEXT_UI_MAINMENU_ACEPTAR
+    .FONT "Fonts/Times15.fnt"
+    .SOLTADO          [ .COLOR [ .R 255 .G 255 .B   0 ] ] 
+    .SELECCIONADO     [ .COLOR [ .R 255 .G 255 .B 255 ] ] 
+    .PULSADO          [ .COLOR [ .R 255 .G 255 .B 255 ] .DX 5 .DY 2 ] 
+    .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+    .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"       
+  ]
+]
+
+# Opcion cancelar small
+[
+  .KEY DEFAULT_MULTIPLAYER_CANCEL_SMALL
+  .PARAMS
+  [
+  	.PRIORITY 220
+    .FONDO
+    [
+      .SX 20 .SY 21 
+      .ALPHA TRUE          
+      .SOLTADO 			[ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 4  .V 252 ]
+      .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 30 .V 252 ]
+      .PULSADO 			[ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 56 .V 252 ]                      
+    ]
+  ]    
+]
+
+# boton multiplayer grande
+[ .KEY DEFAULT_MULTIPLAYER_BIG_BUTTON
+ 	.PARAMS
+	 [ 
+	   .FONT "Fonts/Times14.fnt"
+	   .SOLTADO  					[ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+	   .SELECCIONADO    	[ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+	   .PULSADO      			[ .COLOR [ .R 0 .G 0 .B 0 ] .DX 0 .DY 1] 
+	   .DISABLE			    	[ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+		 .IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+		 .IDHIGHLIGHTSOUND 	"S_MAINMENU_OPTION_SELECT"         
+		 .CENTER_AREA 			[ .X1 0 .Y1 0 .X2 209 .Y2 39 ]
+	   .FONDO
+	   [
+	     .SOLTADO 				[ .FILE "Game/UI/Red/BotonesMultiplayer.tga" .U 1 	.V 21 ] 
+	     .PULSADO    			[ .FILE "Game/UI/Red/BotonesMultiplayer.tga" .U 213 .V 21 ]
+	     .SELECCIONADO    [ .FILE "Game/UI/Red/BotonesMultiplayer.tga" .U 1 	.V 67 ]
+	     .DISABLE					[ .FILE "Game/UI/Red/BotonesMultiplayer.tga" .U 213 .V 67 ]
+	     .SX 209 .SY 39 
+	     .ALPHA TRUE  
+	   ]
+	 ]
+]
+
+# boton multiplayer pequeño
+[ .KEY DEFAULT_MULTIPLAYER_SMALL_BUTTON
+ 	.PARAMS
+	 [ 
+	   .FONT "Fonts/Times14.fnt"
+	   .SOLTADO  					[ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+	   .SELECCIONADO    	[ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+	   .PULSADO      			[ .COLOR [ .R 0 .G 0 .B 0 ] .DX 0 .DY 2] 
+	   .DISABLE			    	[ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+		 .IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+		 .IDHIGHLIGHTSOUND 	"S_MAINMENU_OPTION_SELECT"         
+		 .CENTER_AREA 			[ .X1 0 .Y1 0 .X2 139 .Y2 35 ]
+	   .FONDO
+	   [
+	     .SOLTADO 				[ .FILE "Game/UI/Red/BotonesMultiplayer.tga" .U 1 	.V 113 ] 
+	     .PULSADO    			[ .FILE "Game/UI/Red/BotonesMultiplayer.tga" .U 1 	.V 205 ]
+	     .SELECCIONADO    [ .FILE "Game/UI/Red/BotonesMultiplayer.tga" .U 1 	.V 159 ]
+	     .DISABLE					[ .FILE "Game/UI/Red/BotonesMultiplayer.tga" .U 143 .V 113 ]
+	     .SX 139 .SY 39 
+	     .ALPHA TRUE  
+	   ]
+	 ]
+]

@@ -1,0 +1,228 @@
+#############################################################################################
+# Definicion de Banderas
+#############################################################################################
+
+[
+  .KEY JUG_DEFAULT
+  .PARAMS
+  [ 
+    .FILE "Game\UI\ModeloBatalla\InterfazBatalla.tga" .SX 33 .SY 18 .U 583 .V 98 .ALPHA TRUE
+    .PRIORITY 10
+  ] 
+]
+
+[
+  .KEY JUG_AUSTRIA
+  .PARAMS
+  [
+    .FILE "Game\UI\ModeloBatalla\InterfazBatalla.tga" .SX 33 .SY 18 .U 583 .V 98 .ALPHA TRUE
+    .PRIORITY 10
+  ] 
+]
+
+[
+  .KEY JUG_FRANCIA
+  .PARAMS 
+  [ 
+    .FILE "Game\UI\ModeloBatalla\InterfazBatalla.tga" .SX 33 .SY 18 .U 619 .V 98 .ALPHA TRUE
+    .PRIORITY 10
+  ] 
+]
+
+[
+  .KEY JUG_RUSIA
+  .PARAMS 
+  [ 
+    .FILE "Game\UI\ModeloBatalla\InterfazBatalla.tga" .SX 33 .SY 18 .U 583 .V 119 .ALPHA TRUE
+    .PRIORITY 10
+  ] 
+]
+ 
+[
+  .KEY JUG_GRAN_BRETANYA  
+  .PARAMS
+  [ 
+    .FILE "Game\UI\ModeloBatalla\InterfazBatalla.tga".SX 33 .SY 18 .U 619  .V 119 .ALPHA TRUE
+    .PRIORITY 10
+  ] 
+]
+
+[
+  .KEY JUG_PRUSIA
+  .PARAMS 
+  [ 
+    .FILE "Game\UI\ModeloBatalla\InterfazBatalla.tga" .SX 33 .SY 18 .U 583 .V 140 .ALPHA TRUE
+    .PRIORITY 10
+  ] 
+]
+   
+[ 
+  .KEY JUG_SUECIA
+  .PARAMS
+  [ 
+    .FILE "Game\UI\ModeloBatalla\InterfazBatalla.tga" .SX 33 .SY 18 .U 619 .V 140 .ALPHA TRUE
+    .PRIORITY 10
+  ] 
+]
+
+[
+  .KEY JUG_DINAMARCA
+  .PARAMS 
+  [ 
+    .FILE "Game\UI\ModeloBatalla\InterfazBatalla.tga" .SX 33 .SY 18 .U 583 .V 161 .ALPHA TRUE
+    .PRIORITY 10
+  ] 
+]
+
+[
+  .KEY JUG_DOS_SICILIAS
+  .PARAMS 
+  [ 
+    .FILE "Game\UI\ModeloBatalla\InterfazBatalla.tga" .SX 33 .SY 18 .U 619 .V 161 .ALPHA TRUE
+    .PRIORITY 10
+  ] 
+]
+
+[
+  .KEY JUG_PORTUGAL
+  .PARAMS
+  [ 
+    .FILE "Game\UI\ModeloBatalla\InterfazBatalla.tga" .SX 33 .SY 18 .U 583 .V 182 .ALPHA TRUE
+    .PRIORITY 10
+  ] 
+]
+
+[  
+  .KEY JUG_OTOMANO
+  .PARAMS 
+  [ 
+    .FILE "Game\UI\ModeloBatalla\InterfazBatalla.tga" .SX 33 .SY 18 .U 619 .V 182 .ALPHA TRUE
+    .PRIORITY 10
+  ] 
+]
+
+[
+  .KEY JUG_ESPANYA
+  .PARAMS 
+  [ 
+    .FILE "Game\UI\ModeloBatalla\InterfazBatalla.tga" .SX 33 .SY 18 .U 583 .V 203 .ALPHA TRUE
+    .PRIORITY 10
+  ] 
+]
+
+[
+  .KEY JUG_SAJONIA
+  .PARAMS
+  [ 
+    .FILE "Game\UI\ModeloBatalla\InterfazBatalla.tga" .SX 33 .SY 18 .U 619 .V 203 .ALPHA TRUE
+    .PRIORITY 10
+  ] 
+]  
+  
+[
+  .KEY JUG_LOMBARDIA
+  .PARAMS 
+  [ 
+    .FILE "Game\UI\ModeloBatalla\InterfazBatalla.tga" .SX 33 .SY 18 .U 583 .V 224 .ALPHA TRUE
+    .PRIORITY 10
+  ] 
+]
+ 
+[
+  .KEY JUG_RHELVETICA
+  .PARAMS 
+  [ 
+    .FILE "Game\UI\ModeloBatalla\InterfazBatalla.tga" .SX 33 .SY 18 .U 619 .V 224 .ALPHA TRUE
+    .PRIORITY 10
+  ] 
+]
+
+[
+  .KEY JUG_EGIPTO
+  .PARAMS 
+  [ 
+    .FILE "Game\UI\ModeloBatalla\InterfazBatalla.tga" .SX 33 .SY 18 .U 583 .V 245 .ALPHA TRUE
+    .PRIORITY 10
+  ] 
+]
+
+[
+  .KEY JUG_BATAVIA
+  .PARAMS 
+  [ 
+    .FILE "Game\UI\ModeloBatalla\InterfazBatalla.tga" .SX 33 .SY 18 .U 619 .V 245 .ALPHA TRUE
+    .PRIORITY 10
+  ] 
+]
+
+[
+  .KEY JUG_HANNOVER
+  .PARAMS 
+  [ 
+    .FILE "Game\UI\ModeloBatalla\InterfazBatalla.tga" .SX 33 .SY 18 .U 583 .V 266 .ALPHA TRUE
+    .PRIORITY 10
+  ] 
+]
+
+[
+  .KEY JUG_POLONIA
+  .PARAMS 
+  [ 
+    .FILE "Game\UI\ModeloBatalla\InterfazBatalla.tga" .SX 33 .SY 18 .U 619 .V 266 .ALPHA TRUE
+    .PRIORITY 10
+  ] 
+]  
+
+[
+  .KEY JUG_EPAPALES
+  .PARAMS 
+  [ 
+    .FILE "Game\UI\ModeloBatalla\InterfazBatalla.tga" .SX 33 .SY 18 .U 583 .V 287 .ALPHA TRUE
+    .PRIORITY 10
+  ] 
+]
+
+[
+  .KEY JUG_MARRUECOS
+  .PARAMS 
+  [ 
+    .FILE "Game\UI\ModeloBatalla\InterfazBatalla.tga" .SX 33 .SY 18 .U 619 .V 287 .ALPHA TRUE
+    .PRIORITY 10
+  ] 
+]
+
+[
+  .KEY JUG_MOLDAVIA
+  .PARAMS 
+  [ 
+    .FILE "Game\UI\ModeloBatalla\InterfazBatalla.tga" .SX 33 .SY 18 .U 583 .V 308 .ALPHA TRUE
+    .PRIORITY 10
+  ] 
+]
+
+[
+  .KEY JUG_TRIPOLITANIA
+  .PARAMS 
+  [ 
+    .FILE "Game\UI\ModeloBatalla\InterfazBatalla.tga" .SX 33 .SY 18 .U 619 .V 308 .ALPHA TRUE
+    .PRIORITY 10
+  ] 
+]
+
+[
+  .KEY JUG_TUNEZ
+  .PARAMS 
+  [ 
+    .FILE "Game\UI\ModeloBatalla\InterfazBatalla.tga" .SX 33 .SY 18 .U 583 .V 329 .ALPHA TRUE
+    .PRIORITY 10
+  ] 
+]
+
+[
+  .KEY JUG_PIAMONTE
+  .PARAMS 
+  [ 
+    .FILE "Game\UI\ModeloBatalla\InterfazBatalla.tga" .SX 33 .SY 18 .U 619 .V 329 .ALPHA TRUE
+    .PRIORITY 10
+  ] 
+]

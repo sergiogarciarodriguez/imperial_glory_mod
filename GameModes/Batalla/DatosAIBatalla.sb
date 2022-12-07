@@ -1,0 +1,326 @@
+# --------------------------------------------------------------------------------------
+# En este fichero se contienen algunos datos de especial utilidad para la IA de batalla
+# --------------------------------------------------------------------------------------
+
+# Los coeficientes que balancean los distintos términos que se utilizan para calcular la prioridad
+# --------------------------------------------------------------------------------------
+
+.PRIORITY_COEFS
+[
+  .BASE         0.45    # La importancia del coeficiente base en la prioridad
+  .INFLUENCE    0.35    # La importancia de la influencia (y en cierto modo también del carácter de la IA) en la prioridad
+  .DISPERSION   0.2     # La importancia de la dispersión de los intereses en la prioridad
+]
+
+# La fórmula para calcular la prioridad base es la siguiente:
+# BASE_PRIORITY = CONST_COEF + (character->Agressive()*AGRESSIVE_COEF) + (character->conquestor()*CONQUEROR_COEF)
+# Por esta razón CONST_COEF + AGRESSIVE_COEF + CONQUEROR_COEF <= 1.0 (pudiendo ser menor, para objetivos, a priori, menos importantes)
+.BASE_PRIORITY
+[
+  .EJERCITO_ENEMIGO
+  [
+    .CONST_COEF       0.5 
+    .AGRESSIVE_COEF   0.5
+    .CONQUEROR_COEF   0.0
+  ]
+
+  .OBJETIVO_MAPA
+  [
+    .CONST_COEF       0.7
+    .AGRESSIVE_COEF   0.0
+    .CONQUEROR_COEF   0.3
+  ]
+
+  .ZONA_INTERESANTE
+  [
+    .CONST_COEF       0.3   # En este objetivo sólo se puede llegar a tener como mucho 0.8 de prioridad base
+    .AGRESSIVE_COEF   0.0   # cosa que es lógica, ya que tiene menos importancia que los objetivos de mapa o aniquilar al enemigo
+    .CONQUEROR_COEF   0.5
+  ]
+
+  .PUENTE
+  [
+    .CONST_COEF       0.3   # Lo tenemos a 0 porque no tenemos todavía el objetivo puente. 
+    .AGRESSIVE_COEF   0.0
+    .CONQUEROR_COEF   0.5
+  ]
+]
+
+# Estos valores indican la proporción de influencia que depende de los objetivos de mapa y del ejército enemigo
+# ----------------------------------------------------------------------------------------------
+
+.INFLUENCE_DISTRIBUTION
+[
+  .OBJETIVOS_MAPA     0.7
+  .EJERCITOS_ENEMIGOS 0.3
+]
+
+# Los valores de los radios por defecto de los puntos de influencia
+# ----------------------------------------------------------------------------------------------
+
+.INFLUENCE_RADIUS
+[
+  .MAX_INFLUENCE_RADIUS   5000.0
+  .ZERO_INFLUENCE_RADIUS  15000.0
+]
+
+# Valores de los coeficientes del calculo de las variables del caracter
+#
+# KBASE       - regula el peso del caracter base incluyendo si ganamos o perdemos la batalla
+# KPOWER      - regula el peso del balance entre nuestras tropas y las enemigas
+# KOBJECTIVES - regula el peso de los objetivos conseguidos
+# ----------------------------------------------------------------------------------------------
+
+.CHARACTER_COEFS
+[
+  .KBASE        0.50
+  .KPOWER       0.25
+  .KOBJECTIVES  0.25
+]
+
+# Valores de control del posicionamiento defensivo del objetivo ConquestZone
+# -----------------------------------------------------------------------------------------------
+
+.CZ_POSDEF_VALUES
+[
+  .MAX_RADIUS	   9500.0
+  .FEATURES_RADIUS 4000.0
+]
+
+# Valores de control del posicionamiento ofensivo del objetivo AttackTroops
+# -----------------------------------------------------------------------------------------------
+
+.AT_POSOF_VALUES
+[
+  .MAX_RADIUS	    4000.0
+  .MAX_RADIUS_DIF 8000.0
+  .TROOP_WIDE     600.0
+  .TROOP_LONG     500.0
+]
+
+# Valores parar la elección del enemigo en combate para infanterías
+# -----------------------------------------------------------------------------------------------
+
+.COMBAT_ENEMY_SELECTION_INFANTRY
+[
+  .EASY
+  [
+    .MOVE_PUNISHMENT_COEF           0.00001   # En el nivel fácil este parámetro es menor para que las tropas decidan moverse con más frecuencia
+    .ENEMY_CHANGE_PUNISHMENT_COEF   0.75      # Se mantiene igual
+    .DAMAGE_COEF                    -1.0      # Se multiplica de forma negativa para que ataquen a la tropa "peor"
+    .POTENTIAL_ENEMY_DAMAGE_COEF    -1.0      # Idem que antes
+    .RECEIVING_ENEMY_DAMAGE_COEF    -1.0      # Este item es negativo (tenerlo en cuenta!)
+    .REMAINING_ENEMY_LIFE           0.25
+    .MILITIA_DISTANCE_COEF          1.5
+    .MILITIA_CONGLOMERATION_COEF    1.0
+    .MILITIA_TROOP_ALREADY_BEING_ATTACKED 0.75
+    .ARTILLERY_DANGER_BONUS_COEF    1.0       # no iremos a por las artillerías especialmente
+    .TIME_BETWEEN_MOVEMENTS         60
+    .MIN_UNITS_ALIVE_TO_MOVE        10
+    .MAX_DISTANCE_TO_MOVE           10000.0
+    .REACTIVE_BEHAVIOUR_PROB        0.15
+  ]
+
+  .MEDIUM
+  [
+    .MOVE_PUNISHMENT_COEF           0.0005   # esto significa que cada 10 metros, aproximadamente, se resta 1 al resultado final
+    .ENEMY_CHANGE_PUNISHMENT_COEF   0.75
+    .DAMAGE_COEF                    2.0
+    .POTENTIAL_ENEMY_DAMAGE_COEF    1.0
+    .RECEIVING_ENEMY_DAMAGE_COEF    0.75
+    .REMAINING_ENEMY_LIFE           -0.25
+    .MILITIA_DISTANCE_COEF          1.5
+    .MILITIA_CONGLOMERATION_COEF    1.0
+    .MILITIA_TROOP_ALREADY_BEING_ATTACKED 0.75
+    .ARTILLERY_DANGER_BONUS_COEF    1.25
+    .TIME_BETWEEN_MOVEMENTS         30
+    .MIN_UNITS_ALIVE_TO_MOVE        20
+    .MAX_DISTANCE_TO_MOVE           5000.0
+    .REACTIVE_BEHAVIOUR_PROB        0.7
+  ]
+
+  .HARD
+  [
+    .MOVE_PUNISHMENT_COEF           0.0005   # esto significa que cada 10 metros, aproximadamente, se resta 1 al resultado final
+    .ENEMY_CHANGE_PUNISHMENT_COEF   0.75
+    .DAMAGE_COEF                    2.0
+    .POTENTIAL_ENEMY_DAMAGE_COEF    1.0
+    .RECEIVING_ENEMY_DAMAGE_COEF    0.75
+    .REMAINING_ENEMY_LIFE           -0.25
+    .MILITIA_DISTANCE_COEF          1.5
+    .MILITIA_CONGLOMERATION_COEF    1.0
+    .MILITIA_TROOP_ALREADY_BEING_ATTACKED 0.75
+    .ARTILLERY_DANGER_BONUS_COEF    1.25
+    .TIME_BETWEEN_MOVEMENTS         30
+    .MIN_UNITS_ALIVE_TO_MOVE        20
+    .MAX_DISTANCE_TO_MOVE           5000.0
+    .REACTIVE_BEHAVIOUR_PROB        1.0
+  ]
+]
+
+# Valores parar la elección del enemigo en combate para caballerías
+# -----------------------------------------------------------------------------------------------
+
+.COMBAT_ENEMY_SELECTION_CAVALRY
+[
+  .EASY
+  [
+    .ENEMY_CHANGE_PUNISHMENT_COEF   0.8
+    .DAMAGE_COEF                    -1.0
+    .REMAINING_ENEMY_LIFE_COEF      1.0
+    .TROOP_ALREADY_BEING_ATTACKED   -1.5
+    .DISTANCE_COEF                  0.75
+    .CONGLOMERATION_COEF            -1.0   # no se pueden atacar tropas que estén rodeadas
+    .ARTILLERY_DANGER_BONUS         1.0    # no priorizan las artillerías
+    .SHOOTER_ENEMY_DANGER_COEF      -1.0   # solo para dragones y similares
+    .MIN_THRESHOLD                  0.75
+    .REACTIVE_BEHAVIOUR_PROB        0.25
+  ]
+
+  .MEDIUM
+  [
+    .ENEMY_CHANGE_PUNISHMENT_COEF   0.8
+    .DAMAGE_COEF                    2.0
+    .REMAINING_ENEMY_LIFE_COEF      -2.0
+    .TROOP_ALREADY_BEING_ATTACKED   1.5
+    .DISTANCE_COEF                  0.75
+    .CONGLOMERATION_COEF            3.0   # no se pueden atacar tropas que estén rodeadas
+    .ARTILLERY_DANGER_BONUS         2.0
+    .SHOOTER_ENEMY_DANGER_COEF      1.5   # solo para dragones y similares
+    .MIN_THRESHOLD                  0.75
+    .REACTIVE_BEHAVIOUR_PROB        1.0
+  ]
+
+  .HARD
+  [
+    .ENEMY_CHANGE_PUNISHMENT_COEF   0.8
+    .DAMAGE_COEF                    2.0
+    .REMAINING_ENEMY_LIFE_COEF      -2.0
+    .TROOP_ALREADY_BEING_ATTACKED   1.5
+    .DISTANCE_COEF                  0.75
+    .CONGLOMERATION_COEF            3.0   # no se pueden atacar tropas que estén rodeadas
+    .ARTILLERY_DANGER_BONUS         2.0
+    .SHOOTER_ENEMY_DANGER_COEF      1.5   # solo para dragones y similares
+    .MIN_THRESHOLD                  0.75
+    .REACTIVE_BEHAVIOUR_PROB        1.0
+  ]
+]
+
+# Valores parar la elección del enemigo en combate para artillerías
+# -----------------------------------------------------------------------------------------------
+
+.COMBAT_ENEMY_SELECTION_ARTILLERY
+[
+  .EASY
+  [
+    .MOVE_PUNISHMENT_COEF           0.00001   # esto significa que cada 10 metros, aproximadamente, se resta 1 al resultado final
+    .ENEMY_CHANGE_PUNISHMENT_COEF   0.8
+    .DAMAGE_COEF                    -1.0
+    .POTENTIAL_ENEMY_DAMAGE_COEF    -1.0
+    .RECEIVING_ENEMY_DAMAGE_COEF    0.5
+    .REMAINING_ENEMY_LIFE           -1.0      # cuanta menos vida le quede peor, ya que menos probabilidades de acertar hay
+    .OBUS_BUILDINGS_BONUS           2.0
+    .MAX_FRIENDLY_FIRE_PERCENTAGE   0.5
+    .MAX_FRIEND_UNITS_DIED          15
+    .ARTILLERY_DANGER_BONUS_COEF    2.0
+  ]
+  
+  .MEDIUM
+  [
+    .MOVE_PUNISHMENT_COEF           0.0005   # esto significa que cada 10 metros, aproximadamente, se resta 1 al resultado final
+    .ENEMY_CHANGE_PUNISHMENT_COEF   0.7
+    .DAMAGE_COEF                    3.0
+    .POTENTIAL_ENEMY_DAMAGE_COEF    1.0
+    .RECEIVING_ENEMY_DAMAGE_COEF    -0.5
+    .REMAINING_ENEMY_LIFE           1.0       # cuanta menos vida le quede peor, ya que menos probabilidades de acertar hay
+    .OBUS_BUILDINGS_BONUS           3.0
+    .MAX_FRIENDLY_FIRE_PERCENTAGE   0.2
+    .MAX_FRIEND_UNITS_DIED          4
+    .ARTILLERY_DANGER_BONUS_COEF    3.0
+  ]
+  
+  .HARD
+  [
+    .MOVE_PUNISHMENT_COEF           0.0005   # esto significa que cada 10 metros, aproximadamente, se resta 1 al resultado final
+    .ENEMY_CHANGE_PUNISHMENT_COEF   0.7
+    .DAMAGE_COEF                    3.0
+    .POTENTIAL_ENEMY_DAMAGE_COEF    1.0
+    .RECEIVING_ENEMY_DAMAGE_COEF    -0.5
+    .REMAINING_ENEMY_LIFE           1.0       # cuanta menos vida le quede peor, ya que menos probabilidades de acertar hay
+    .OBUS_BUILDINGS_BONUS           3.0
+    .MAX_FRIENDLY_FIRE_PERCENTAGE   0.2
+    .MAX_FRIEND_UNITS_DIED          4
+    .ARTILLERY_DANGER_BONUS_COEF    3.0
+  ]
+]
+
+# Valores para el objetivo AttackTroops2
+# -----------------------------------------------------------------------------------------------
+
+.ATTACK_TROOPS2
+[
+  .ARTILLERY_HEIGHT_COEF      2.0
+  .BUILDING_NEAR_ENOUGH_COEF  2.5
+  .DISTANCE_TO_POINT_COEF     0.0001
+  .FLANK_PROBABILITY          0.5
+  .FLANK_VARIANCE             1.0
+  .FLANK_AVERAGE              0.5
+  .EASY
+  [
+    .MIN_FLANK_DISTANCE         12500.0
+    .MAX_FLANK_DISTANCE         17500.0
+    .DEFAULT_FLANK_DISTANCE     15000.0
+  ]
+  .MEDIUM
+  [
+    .MIN_FLANK_DISTANCE         15000.0
+    .MAX_FLANK_DISTANCE         20000.0
+    .DEFAULT_FLANK_DISTANCE     17500.0
+  ]
+  .HARD
+  [
+    .MIN_FLANK_DISTANCE         17500.0
+    .MAX_FLANK_DISTANCE         22500.0
+    .DEFAULT_FLANK_DISTANCE     20000.0
+  ]
+]
+
+# Calculo de influencia del fightpower
+#----------------------------------------
+.FIGHTPOWER_INFLUENCE
+[
+  .INNER_RADIUS 10000.0
+  .OUTER_RADIUS 60000.0
+]
+
+# Valores generales del combate
+#----------------------------------------
+.COMBAT
+[
+  .EASY
+  [
+    .DUMMY_TIME           10.0
+    .DEFENSE_STRENGTHEN   0.0
+    .MELEE_STRENGTHEN     0.0
+    .CHARGE_STRENGTHEN    0.0
+    .DISTANCE_STRENGTHEN  0.0
+  ]
+  
+  .MEDIUM
+  [
+    .DUMMY_TIME           0.0
+    .DEFENSE_STRENGTHEN   0.0
+    .MELEE_STRENGTHEN     0.0
+    .CHARGE_STRENGTHEN    0.0
+    .DISTANCE_STRENGTHEN  0.0
+  ]
+  
+  .HARD
+  [
+    .DUMMY_TIME           0.0
+    .DEFENSE_STRENGTHEN   0.05
+    .MELEE_STRENGTHEN     0.05
+    .CHARGE_STRENGTHEN    0.05
+    .DISTANCE_STRENGTHEN  0.05
+  ]
+]

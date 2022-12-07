@@ -1,0 +1,61 @@
+#########################################################################################################
+# NOTA: Este fichero está obsoleto. Usar el script Gestion\Reglas\DefReglasComercio.sb
+#########################################################################################################
+# Fichero de definiciones para el comercio
+#
+# Descripcion:
+# 
+# Conjunto de bonus que reciben las distintas categorias del comercio
+#
+# Para el Comercio Interior, Rutas (terrestres y marítimas) e Impuestos (terrestres y marítimos)
+# Todos siguen el mismo formato: Nombre del edificio que produce el bono, y el porcentaje que proporciona
+#
+#########################################################################################################
+
+.EDIFICIOS_BONUS
+[
+  .COMERCIO_INTERIOR
+  [
+    [ .NOMBRE "MERCADO"                 .PORCENTAJE 0   ]
+    [ .NOMBRE "RED_CARRETERAS"          .PORCENTAJE 25  ]
+    [ .NOMBRE "EDIFICIO_BOLSA"          .PORCENTAJE 50  ]
+  ]
+  
+  .RUTAS
+  [
+    .TERRESTRES
+    [
+      [ .NOMBRE "DELEGACION_COMERCIAL"  .PORCENTAJE 33  ]
+      [ .NOMBRE "EMBAJADA_COMERCIAL"    .PORCENTAJE 66  ]
+      [ .NOMBRE "MINISTERIO_ECONOMIA"   .PORCENTAJE 100 ]
+    ]
+    
+    .MARITIMAS
+    [
+      [ .NOMBRE "BERTANTINES"           .PORCENTAJE 33  ]
+      [ .NOMBRE "PAQUEBOTES"            .PORCENTAJE 66  ]
+      [ .NOMBRE "URCAS"                 .PORCENTAJE 100 ]
+    ]    
+  ]
+  
+  .IMPUESTOS
+  [
+    .TERRESTRES
+    [
+      [ .NOMBRE "PUESTO_FRONTERIZO"     .PORCENTAJE 10 ]
+      [ .NOMBRE "ADUANAS"               .PORCENTAJE 20 ]
+    ]
+    
+    .MARITIMOS
+    [
+    ]
+  ]
+]
+
+# Categorias de capitales y puertos
+.CATEGORIAS
+[
+  [ .PORCENTAJE 10 ]  # 1 Estrella
+  [ .PORCENTAJE 25 ]  # 2 Estrellas
+  [ .PORCENTAJE 50 ]  # 3 Estrellas
+]

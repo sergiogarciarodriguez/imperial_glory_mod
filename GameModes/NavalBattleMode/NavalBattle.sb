@@ -1,0 +1,79 @@
+# --- Naval Model launch script ---
+.START_PROCS
+[
+  [
+    .NAME NAVAL_MODEL_STARTUP_PROC
+    .PARAMS
+    [
+      .CURSORS       "Game/GameModes/NavalBattleMode/Cursors/Cursors.sb"
+      .AUDIODEF      "Game/GameModes/NavalBattleMode/Audio/AudioDef.sb"
+      .UI_DEFS       "Game/UI/ModeloNaval/ModeloNavalUIDefs.sb"
+      # .UICPOOL_FILE  "Game/GameModes/UI/ModeloNaval/DefsCtrlsPool.sb"
+      .UICPARAMS_FILE  "Game/GameModes/NavalBattleMode/UICParams.sb"
+      .TEXTOS_LOCALES          
+      [
+        [ .FILE "Naval\TextUINaval.sb" ]
+        # para las ventanas de inicio y fin de batalla
+        [ .FILE "Naval\TextUIBatallaVentanaResultadoBatallaNaval.sb" ]
+       	[ .FILE "Naval\TextUIBatallaVentanaInicioBatallaNaval.sb"    ]
+        [ .FILE "Others\TextTutoriales\TextTutorialNaval.sb"         ]
+        [ .FILE "Management\TextProvincias.sb" ]
+        [ .FILE "Management\TextTiposBarcos.sb" ]
+      ]
+      
+      .TECLAS_LOCALES				# Estos ficheros son mapeados a "Teclas\[language]\..."
+      [
+        [ .FILE "ModeloNaval\TeclasUINaval.sb" ]
+      ]
+      
+      .START_PROCS
+      [
+        [
+          .NAME NAVAL_MODEL_LOGIC_BASE_PROC
+          .PARAMS
+          [
+            .GAME_TIME        10 # minutes of max game time
+            .DEF_SCENERIES    "Game/GameModes/NavalBattleMode/Sceneries/Sceneries.sb"
+            .DEF_COMBAT       "Game/GameModes/NavalBattleMode/DefCombat.sb"
+            .DEF_SHIPS        "Game/GameModes/NavalBattleMode/DefCombatShips.sb"
+            .DEF_CREWS        "Game/GameModes/NavalBattleMode/DefCombatCrews.sb"
+
+            .START_PROCS
+            [
+              [
+                .NAME NAVAL_MODEL_ELEMENTS_BASE_PROC
+                .PARAMS
+                [
+                  .DEF_ELEMENTS "Game/GameModes/NavalBattleMode/DefBarcos.sb"
+                ]
+              ]
+
+              [
+                .NAME DIRECTOR_FLOTA
+                .PARAMS
+                [
+                  .DEF_DIRECTOR_FLOTA "Game/GameModes/NavalBattleMode/DefDirectorFlota.sb"
+                ]
+              ]
+                            
+              [
+                .NAME NAVAL_MODEL_PLAYERS_AI_BASE_PROC
+                .PARAMS
+                [
+                  .UI NAVAL_MODEL_MAIN_UI
+                  
+                  .PLAYERS
+                  [ 
+                  ]
+                ]
+              ]
+              
+
+              
+            ]
+          ]
+        ]
+      ]
+    ]
+  ]
+]

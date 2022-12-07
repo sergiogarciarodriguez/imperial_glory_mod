@@ -1,0 +1,19 @@
+.VERSION 2
+
+#----------------------------------------
+#  Archivo de clima: Alentejo (28)
+#----------------------------------------
+
+.CLIMA
+[
+]
+#--------------------------------------------------
+# Para poner animales voladores en el escenario
+#--------------------------------------------------
+.FAUNA
+[
+  [.FILE "Models\Criaturas\Aves\BandadaPajarillos01.V3D" .POS [0.0 -2000.0 0.0]]
+  [.FILE "Models\Criaturas\Aves\BandadaPajarillos02.V3D" .POS [0.0 -2000.0 0.0]]
+  [.FILE "Models\Criaturas\Aves\BandadaPajarillos03.V3D" .POS [0.0 -2000.0 0.0]]
+  [.FILE "Models\Criaturas\Aves\Halcon.V3D" .POS [0.0 0.0 0.0]]
+]

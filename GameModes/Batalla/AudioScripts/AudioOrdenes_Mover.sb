@@ -1,0 +1,106 @@
+  #===============================================================================
+  # S_MOVER_INF
+  #===============================================================================
+  [ 
+    .IDNAME "S_MOVER_INF_FRANCIA"
+    .PATH [ "Audio/Voices/Francia/InfantryCommander/Inf_move_march_01.ogg" 	   "Audio/Voices/Francia/InfantryCommander/Inf_move_march_02.ogg" 
+            "Audio/Voices/Francia/InfantryCommander/Inf_move_battalionmarch.ogg"   "Audio/Voices/Francia/InfantryCommander/Inf_move_advance.ogg" 
+            "Audio/Voices/Francia/InfantryCommander/Inf_move_battalionadvance.ogg" "Audio/Voices/Francia/InfantryCommander/Inf_move_byright.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_MOVER_INF_INGLATERRA"
+    .PATH [ "Audio/Voices/Inglaterra/InfantryCommander/Inf_move_march_01.ogg" 	      "Audio/Voices/Inglaterra/InfantryCommander/Inf_move_march_02.ogg" 
+            "Audio/Voices/Inglaterra/InfantryCommander/Inf_move_battalionmarch.ogg"   "Audio/Voices/Inglaterra/InfantryCommander/Inf_move_advance.ogg" 
+            "Audio/Voices/Inglaterra/InfantryCommander/Inf_move_battalionadvance.ogg" "Audio/Voices/Inglaterra/InfantryCommander/Inf_move_byright.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_MOVER_INF_AUSTRIA"
+    .PATH [ "Audio/Voices/Austria/InfantryCommander/Inf_move_march_01.ogg" 	   "Audio/Voices/Austria/InfantryCommander/Inf_move_march_02.ogg" 
+            "Audio/Voices/Austria/InfantryCommander/Inf_move_battalionmarch.ogg"   "Audio/Voices/Austria/InfantryCommander/Inf_move_advance.ogg" 
+            "Audio/Voices/Austria/InfantryCommander/Inf_move_battalionadvance.ogg" "Audio/Voices/Austria/InfantryCommander/Inf_move_byright.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_MOVER_INF_PRUSIA"
+    .PATH [ "Audio/Voices/Prusia/InfantryCommander/Inf_move_march_01.ogg" 	  "Audio/Voices/PrusiaInfantryCommander/Inf_move_march_02.ogg" 
+            "Audio/Voices/Prusia/InfantryCommander/Inf_move_battalionmarch.ogg"   "Audio/Voices/Prusia/InfantryCommander/Inf_move_advance.ogg" 
+            "Audio/Voices/Prusia/InfantryCommander/Inf_move_battalionadvance.ogg" "Audio/Voices/Prusia/InfantryCommander/Inf_move_byright.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_MOVER_INF_RUSIA"
+    .PATH [ "Audio/Voices/Rusia/InfantryCommander/Inf_move_march_01.ogg" 	 "Audio/Voices/Rusia/InfantryCommander/Inf_move_march_02.ogg" 
+            "Audio/Voices/Rusia/InfantryCommander/Inf_move_battalionmarch.ogg"   "Audio/Voices/Rusia/InfantryCommander/Inf_move_advance.ogg" 
+            "Audio/Voices/Rusia/InfantryCommander/Inf_move_battalionadvance.ogg" "Audio/Voices/Rusia/InfantryCommander/Inf_move_byright.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_MOVER_CAB
+  #===============================================================================
+  [
+    .IDNAME "S_MOVER_CAB_FRANCIA"
+    .PATH [ "Audio/Voices/Francia/CavalryCommander/Cav_move_walk_01.ogg" 	   "Audio/Voices/Francia/CavalryCommander/Cav_move_walk_02.ogg" 
+            "Audio/Voices/Francia/CavalryCommander/Cav_move_regimentadvance_01.ogg"   "Audio/Voices/Francia/CavalryCommander/Cav_move_regimentadvance_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_MOVER_CAB_INGLATERRA"
+    .PATH [ "Audio/Voices/Inglaterra/CavalryCommander/Cav_move_walk_01.ogg" 	      "Audio/Voices/Inglaterra/CavalryCommander/Cav_move_walk_02.ogg" 
+            "Audio/Voices/Inglaterra/CavalryCommander/Cav_move_regimentadvance_01.ogg"   "Audio/Voices/Inglaterra/CavalryCommander/Cav_move_regimentadvance_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_MOVER_CAB_AUSTRIA"
+    .PATH [ "Audio/Voices/Austria/CavalryCommander/Cav_move_walk_01.ogg" 	   "Audio/Voices/Austria/CavalryCommander/Cav_move_walk_02.ogg" 
+            "Audio/Voices/Austria/CavalryCommander/Cav_move_regimentadvance_01.ogg"   "Audio/Voices/Austria/CavalryCommander/Cav_move_regimentadvance_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_MOVER_CAB_PRUSIA"
+    .PATH [ "Audio/Voices/Prusia/CavalryCommander/Cav_move_walk_01.ogg" 	  "Audio/Voices/Prusia/CavalryCommander/Cav_move_walk_02.ogg" 
+            "Audio/Voices/Prusia/CavalryCommander/Cav_move_regimentadvance_01.ogg"   "Audio/Voices/Prusia/CavalryCommander/Cav_move_regimentadvance_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_MOVER_CAB_RUSIA"
+    .PATH [ "Audio/Voices/Rusia/CavalryCommander/Cav_move_walk_01.ogg" 	 "Audio/Voices/Rusia/CavalryCommander/Cav_move_walk_02.ogg" 
+            "Audio/Voices/Rusia/CavalryCommander/Cav_move_regimentadvance_01.ogg"   "Audio/Voices/Rusia/CavalryCommander/Cav_move_regimentadvance_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_MOVER_ART
+  #===============================================================================
+  [
+    .IDNAME "S_MOVER_ART_FRANCIA"
+    .PATH [ "Audio/Voices/Francia/ArtilleryCommander/Art_Move_advance_01.ogg" 	   "Audio/Voices/Francia/ArtilleryCommander/Art_Move_advance_02.ogg" 
+            "Audio/Voices/Francia/ArtilleryCommander/Art_Move_batteryadvance_01.ogg"   "Audio/Voices/Francia/ArtilleryCommander/Art_Move_batteryadvance_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_MOVER_ART_INGLATERRA"
+    .PATH [ "Audio/Voices/Inglaterra/ArtilleryCommander/Art_Move_advance_01.ogg"   "Audio/Voices/Inglaterra/ArtilleryCommander/Art_Move_advance_02.ogg" 
+            "Audio/Voices/Inglaterra/ArtilleryCommander/Art_Move_batteryadvance_01.ogg"   "Audio/Voices/Inglaterra/ArtilleryCommander/Art_Move_batteryadvance_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_MOVER_ART_AUSTRIA"
+    .PATH [ "Audio/Voices/Austria/ArtilleryCommander/Art_Move_advance_01.ogg" 	   "Audio/Voices/Austria/ArtilleryCommander/Art_Move_advance_02.ogg" 
+            "Audio/Voices/Austria/ArtilleryCommander/Art_Move_batteryadvance_01.ogg"   "Audio/Voices/Austria/ArtilleryCommander/Art_Move_batteryadvance_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_MOVER_ART_PRUSIA"
+    .PATH [ "Audio/Voices/Prusia/ArtilleryCommander/Art_Move_advance_01.ogg" 	   "Audio/Voices/Prusia/ArtilleryCommander/Art_Move_advance_02.ogg" 
+            "Audio/Voices/Prusia/ArtilleryCommander/Art_Move_batteryadvance_01.ogg"   "Audio/Voices/Prusia/ArtilleryCommander/Art_Move_batteryadvance_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_MOVER_ART_RUSIA"
+    .PATH [ "Audio/Voices/Rusia/ArtilleryCommander/Art_Move_advance_01.ogg" 	   "Audio/Voices/Rusia/ArtilleryCommander/Art_Move_advance_02.ogg" 
+            "Audio/Voices/Rusia/ArtilleryCommander/Art_Move_batteryadvance_01.ogg"   "Audio/Voices/Rusia/ArtilleryCommander/Art_Move_batteryadvance_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]

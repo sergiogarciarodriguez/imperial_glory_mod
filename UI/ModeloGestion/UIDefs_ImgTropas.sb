@@ -1,0 +1,318 @@
+###############################################################################################################
+# Mantiene las imagenes de las tropas que podran salir en varios controles:
+# - Visor de tropas del mapa de gestion
+# - Ventana de organizacion de ejercitos en mapa de gestion
+# - Ventana de informacion de edificios en modelo de batalla
+# - ...
+###############################################################################################################
+
+# Imagen por defecto
+.DEFAULT 
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .SX 54 .SY 71 .U 773 .V 485 .ALPHA TRUE   
+]
+
+###############################################################################################################
+# Tropas Francesas
+
+.FRANCIA_CAPITAN
+[
+ %Game/UI/ModeloGestion/Iconos/UIDefs_VisorMatrizTropasIcons.sb[FRANCIA_CAPITAN][NORMAL]
+]
+
+.FRANCIA_TENIENTE
+[
+ %Game/UI/ModeloGestion/Iconos/UIDefs_VisorMatrizTropasIcons.sb[FRANCIA_TENIENTE][NORMAL]
+]
+
+.FRANCIA_GENERAL
+[
+ %Game/UI/ModeloGestion/Iconos/UIDefs_VisorMatrizTropasIcons.sb[FRANCIA_GENERAL][NORMAL]
+]
+
+.FRANCIA_MARISCAL
+[
+ %Game/UI/ModeloGestion/Iconos/UIDefs_VisorMatrizTropasIcons.sb[FRANCIA_MARISCAL][NORMAL]
+]
+
+.FRANCIA_FUSILERO
+[
+ %Game/UI/ModeloGestion/Iconos/UIDefs_VisorMatrizTropasIcons.sb[FRANCIA_FUSILERO][NORMAL]
+]
+
+.FRANCIA_TIRADOR
+[ 
+ %Game/UI/ModeloGestion/Iconos/UIDefs_VisorMatrizTropasIcons.sb[FRANCIA_TIRADOR][NORMAL]
+]
+
+.FRANCIA_CAZADOR
+[ 
+ %Game/UI/ModeloGestion/Iconos/UIDefs_VisorMatrizTropasIcons.sb[FRANCIA_CAZADOR][NORMAL]
+]
+
+.FRANCIA_GRANADERO
+[ 
+ %Game/UI/ModeloGestion/Iconos/UIDefs_VisorMatrizTropasIcons.sb[FRANCIA_GRANADERO][NORMAL]
+]
+
+.FRANCIA_CORACERO
+[ 
+ %Game/UI/ModeloGestion/Iconos/UIDefs_VisorMatrizTropasIcons.sb[FRANCIA_CORACERO][NORMAL]
+]
+
+.FRANCIA_ELITE
+[ 
+ %Game/UI/ModeloGestion/Iconos/UIDefs_VisorMatrizTropasIcons.sb[FRANCIA_ELITE][NORMAL]
+]
+
+.FRANCIA_CAB_HUSAR
+[ 
+ %Game/UI/ModeloGestion/Iconos/UIDefs_VisorMatrizTropasIcons.sb[FRANCIA_CAB_HUSAR][NORMAL]
+]
+
+.FRANCIA_CAB_LANCERO
+[ 
+ %Game/UI/ModeloGestion/Iconos/UIDefs_VisorMatrizTropasIcons.sb[FRANCIA_CAB_LANCERO][NORMAL]
+]
+
+.FRANCIA_CAB_DRAGON
+[ 
+ %Game/UI/ModeloGestion/Iconos/UIDefs_VisorMatrizTropasIcons.sb[FRANCIA_CAB_DRAGON][NORMAL]
+]
+
+.FRANCIA_CAB_CORACERO
+[ 
+ %Game/UI/ModeloGestion/Iconos/UIDefs_VisorMatrizTropasIcons.sb[FRANCIA_CAB_CORACERO][NORMAL]
+]
+
+.FRANCIA_MORTERO
+[ 
+ %Game/UI/ModeloGestion/Iconos/UIDefs_VisorMatrizTropasIcons.sb[FRANCIA_MORTERO][NORMAL]
+]
+
+.FRANCIA_CANON
+[ 
+ %Game/UI/ModeloGestion/Iconos/UIDefs_VisorMatrizTropasIcons.sb[FRANCIA_CANON][NORMAL]
+]
+
+.FRANCIA_OBUS
+[ 
+ %Game/UI/ModeloGestion/Iconos/UIDefs_VisorMatrizTropasIcons.sb[FRANCIA_OBUS][NORMAL]
+]
+
+.FRANCIA_CANON_CAB
+[ 
+ %Game/UI/ModeloGestion/Iconos/UIDefs_VisorMatrizTropasIcons.sb[FRANCIA_CANON_CAB][NORMAL]
+]
+
+.FRANCIA_OBUS_CAB
+[ 
+ %Game/UI/ModeloGestion/Iconos/UIDefs_VisorMatrizTropasIcons.sb[FRANCIA_OBUS_CAB][NORMAL]
+]
+
+.FRANCIA_CANON_CAMP
+[ 
+ %Game/UI/ModeloGestion/Iconos/UIDefs_VisorMatrizTropasIcons.sb[FRANCIA_CANON_CAMP][NORMAL]
+]
+
+###############################################################################################################
+# Tropas Inglesas
+
+.INGLATERRA_CAPITAN
+[
+ %Game/UI/ModeloGestion/Iconos/UIDefs_VisorMatrizTropasIcons.sb[INGLATERRA_CAPITAN][NORMAL]
+]
+
+.INGLATERRA_TENIENTE
+[
+ %Game/UI/ModeloGestion/Iconos/UIDefs_VisorMatrizTropasIcons.sb[INGLATERRA_TENIENTE][NORMAL]
+]
+
+.INGLATERRA_GENERAL
+[
+ %Game/UI/ModeloGestion/Iconos/UIDefs_VisorMatrizTropasIcons.sb[INGLATERRA_GENERAL][NORMAL]
+]
+
+.INGLATERRA_MARISCAL
+[
+ %Game/UI/ModeloGestion/Iconos/UIDefs_VisorMatrizTropasIcons.sb[INGLATERRA_MARISCAL][NORMAL]
+]
+
+.INGLATERRA_FUSILERO
+[ 
+ %Game/UI/ModeloGestion/Iconos/UIDefs_VisorMatrizTropasIcons.sb[INGLATERRA_FUSILERO][NORMAL]
+]
+
+.INGLATERRA_TIRADOR
+[ 
+ %Game/UI/ModeloGestion/Iconos/UIDefs_VisorMatrizTropasIcons.sb[INGLATERRA_TIRADOR][NORMAL]
+]
+
+.INGLATERRA_CAZADOR
+[ 
+ %Game/UI/ModeloGestion/Iconos/UIDefs_VisorMatrizTropasIcons.sb[INGLATERRA_CAZADOR][NORMAL]
+]
+
+.INGLATERRA_GRANADERO
+[ 
+ %Game/UI/ModeloGestion/Iconos/UIDefs_VisorMatrizTropasIcons.sb[INGLATERRA_GRANADERO][NORMAL]
+]
+
+.INGLATERRA_CORACERO
+[ 
+ %Game/UI/ModeloGestion/Iconos/UIDefs_VisorMatrizTropasIcons.sb[INGLATERRA_CORACERO][NORMAL]
+]
+
+.INGLATERRA_ELITE
+[ 
+ %Game/UI/ModeloGestion/Iconos/UIDefs_VisorMatrizTropasIcons.sb[INGLATERRA_ELITE][NORMAL]
+]
+
+.INGLATERRA_CAB_HUSAR
+[ 
+ %Game/UI/ModeloGestion/Iconos/UIDefs_VisorMatrizTropasIcons.sb[INGLATERRA_CAB_HUSAR][NORMAL]
+]
+
+.INGLATERRA_CAB_LANCERO
+[ 
+ %Game/UI/ModeloGestion/Iconos/UIDefs_VisorMatrizTropasIcons.sb[INGLATERRA_CAB_LANCERO][NORMAL]
+]
+
+.INGLATERRA_CAB_DRAGON
+[ 
+ %Game/UI/ModeloGestion/Iconos/UIDefs_VisorMatrizTropasIcons.sb[INGLATERRA_CAB_DRAGON][NORMAL]
+]
+
+.INGLATERRA_CAB_CORACERO 
+[ 
+ %Game/UI/ModeloGestion/Iconos/UIDefs_VisorMatrizTropasIcons.sb[INGLATERRA_CAB_CORACERO][NORMAL]
+]
+
+.INGLATERRA_MORTERO
+[ 
+ %Game/UI/ModeloGestion/Iconos/UIDefs_VisorMatrizTropasIcons.sb[INGLATERRA_MORTERO][NORMAL]
+]
+
+.INGLATERRA_CANON
+[ 
+ %Game/UI/ModeloGestion/Iconos/UIDefs_VisorMatrizTropasIcons.sb[INGLATERRA_CANON][NORMAL]
+]
+
+.INGLATERRA_OBUS
+[ 
+ %Game/UI/ModeloGestion/Iconos/UIDefs_VisorMatrizTropasIcons.sb[INGLATERRA_OBUS][NORMAL]
+]
+
+.INGLATERRA_CANON_CAB
+[ 
+ %Game/UI/ModeloGestion/Iconos/UIDefs_VisorMatrizTropasIcons.sb[INGLATERRA_CANON_CAB][NORMAL]
+]
+
+.INGLATERRA_OBUS_CAB
+[ 
+ %Game/UI/ModeloGestion/Iconos/UIDefs_VisorMatrizTropasIcons.sb[INGLATERRA_OBUS_CAB][NORMAL]
+]
+
+.INGLATERRA_CANON_CAMP
+[ 
+ %Game/UI/ModeloGestion/Iconos/UIDefs_VisorMatrizTropasIcons.sb[INGLATERRA_CANON_CAMP][NORMAL]
+]
+
+###############################################################################################################
+# Tropas Austriacas
+
+.AUSTRIA_MORTERO
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 773 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.AUSTRIA_CANON
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 657 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.AUSTRIA_OBUS
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 715 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.AUSTRIA_CANON_CAB
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 541 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.AUSTRIA_OBUS_CAB
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 483 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.AUSTRIA_CANON_CAMP
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 599 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+###############################################################################################################
+# Tropas Prusianas
+
+.PRUSIA_MORTERO
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 773 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.PRUSIA_CANON
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 657 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.PRUSIA_OBUS
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 715 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.PRUSIA_CANON_CAB
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 541 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.PRUSIA_OBUS_CAB
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 483 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.PRUSIA_CANON_CAMP
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 599 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+###############################################################################################################
+# Tropas Rusas
+
+.RUSIA_MORTERO
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 773 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.RUSIA_CANON
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 657 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.RUSIA_OBUS
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 715 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.RUSIA_CANON_CAB
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 541 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.RUSIA_OBUS_CAB
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 483 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.RUSIA_CANON_CAMP
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 599 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]

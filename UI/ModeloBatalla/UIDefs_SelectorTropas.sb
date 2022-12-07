@@ -1,0 +1,9 @@
+##########################################################################
+# Params asociados al selector de tropas del jugador humano
+#########################################################################
+
+ .INIT_POS  [ .X 3 .Y 678 ]
+ 
+ .SEPARADOR [ .MAX_TROPAS 27 .CAMBIO_FILA 14 .SEPARACION_FILA -75 .SEPARACION_COLUMNA 27 .SEPARACION 0 ]
+ 
+ .PRIORITY 9

@@ -1,0 +1,360 @@
+#############################################################################################
+# Se muestra informacion sobre un batallon
+# El Dlg constara de:
+# - Titulo
+# - Img del efectivo
+# - Texto informativo
+# - Btn de licencia
+# - Btn de cura
+# - Btn de cierre / aceptacion
+#############################################################################################
+ 
+ # Se define la ventana                   
+ .ACTIVO FALSE
+ .CENTER TRUE       
+ .MODAL TRUE
+ 
+ .DEPTH 4
+ 
+ # Fondo texto
+ .FONDO
+ [  
+  .U 1 .V 1 .SX 561 .SY 598
+  .FILE "Game/UI/ModeloGestion/UIDefsDlgInfoGestion/InformacionTropas.tga" 
+  .ALPHA TRUE .PRIORITY 202
+ ]              
+ 
+ 
+ # Caption               
+ .CAPTION
+ [
+  .XMARGEN 86 .YMARGEN 7 .HEIGHT 30
+  .TITLE 
+  [ 
+   .ALINEACION CENTER 
+   .TEXT LTEXT_UI_GESTION_DLG_INFO_TROPA_TITLE
+   .FONT "Fonts/Times17.fnt" 
+   .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+  .MOVIBLE FALSE
+ ]
+  
+ .CONTROLES
+ [ 
+ 
+  # Texto de informacion   
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WTIN'
+   .PARAMS
+   [
+    .X 26 .Y 299 .SX 386 .SY 118
+    .ALIGN LEFT
+    
+    .TEXT
+    [
+     .FONT "Fonts/Times11.fnt" 
+     .COLOR [ .R 255 .G 255 .B 255 ]
+     .MSG  " "        
+    ]
+    
+    .VDX 354 .VDY 4
+    .VSX 32 .VSY 118
+    .SLIDER_VERTICAL
+    [
+      .PRIORITY 204
+      .STYLE DEFAULT_SLIDER_VERTICAL_GRANDE
+    ]    
+   ]   
+  ] 
+  
+  # Texto del nombre del tipo de mando
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WTNA'
+   .PARAMS
+   [
+    .X 81 .Y 41 .SX 391 .SY 46
+    .ALIGN CENTER
+    
+    .TEXT
+    [
+     .FONT "Fonts/Times17.fnt" 
+     .COLOR [ .R 255 .G 255 .B 255 ]
+     .MSG  " "        
+    ]
+   ]   
+  ] 
+  
+  [
+   # Btn de salida
+   .TIPO UIC_BOTONTEXTO .ID 'EXIT'
+   .PARAMS 
+   [ 
+     .FONDO [ .X 491 .Y 533 .PRIORITY 203 ]
+     .IDSELECTSOUND "S_FXUI_CLICKBUTTON"
+     .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO" 
+     .KEY
+     [
+      .TECLA KEY_ESCAPE .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ]          
+     ]         
+     
+     .STYLE DEFAULT_X_BUTTON 
+   ]
+  ] 
+  
+  # Botón de licenciar
+  [ 
+    .TIPO UIC_BOTONTEXTO .ID 'BLIN'
+    .PARAMS 
+    [ 
+      .FONT "Fonts/Times14.fnt"
+      .TEXT LTEXT_UI_GESTION_BTN_LICENCIAR_EFECTIVO
+      .PULSADO        [ .COLOR [ .R 255 .G 255 .B 255 ] ]
+      .SELECCIONADO   [ .COLOR [ .R 255 .G 255 .B 255 ] ]
+      .SOLTADO        [ .COLOR [ .R 255 .G 255 .B 255 ] ]
+      .DX 34 .DY 6
+      
+      .IDSELECTSOUND "S_FXUI_CLICKBUTTON"
+      .IDHIGHLIGHTSOUND "S_FXSELECCION_RESALTE_ELEMENTO"    
+      
+      .FONDO [ .X 26 .Y 423 ]
+      .STYLE ROUND_BUTTON_2 
+    ]
+  ]   
+
+  # Botón de curar  
+  [
+    .TIPO UIC_BOTONTEXTO .ID 'BCUR'
+    .PARAMS 
+    [ 
+      .FONT "Fonts/Times14.fnt"
+      .TEXT LTEXT_UI_GESTION_BTN_CURAR_EFECTIVO
+      .DISABLE        [ .COLOR [ .R 0 .G 0 .B 0 ] ]
+      .PULSADO        [ .COLOR [ .R 0 .G 0 .B 0 ] ]
+      .SELECCIONADO   [ .COLOR [ .R 0 .G 0 .B 0 ] ]
+      .SOLTADO        [ .COLOR [ .R 0 .G 0 .B 0 ] ]
+      
+      .CENTER_AREA [ .X1 0 .Y1 0 .X2 139 .Y2 39 ]
+      
+      .IDSELECTSOUND "S_FXUI_CLICKBUTTON"
+      .IDHIGHLIGHTSOUND "S_FXSELECCION_RESALTE_ELEMENTO"    
+      
+      .FONDO [ .X 205 .Y 536 ]
+      .STYLE DEFAULT_RECTANGLE_BUTTON_SMALL
+    ]
+  ]   
+  
+  
+  # Texto estático "Batallas"
+  [
+    .TIPO UIC_TEXT .ID 'LBBT'
+    .PARAMS
+    [
+      .TEXT LTEXT_UI_GESTION_DLG_INFO_BATALLAS
+      .FONT "Fonts/Times14.fnt"
+      .X 275 .Y 430
+      .COLOR [ .R 255 .G 255 .B 255 ]     
+    ]
+  ]  
+  
+  # Texto estático "Experiencia siguiente nivel"
+  [
+    .TIPO UIC_TEXT .ID 'LBNL'
+    .PARAMS
+    [
+      .TEXT LTEXT_UI_GESTION_DLG_INFO_EXP
+      .FONT "Fonts/Times11.fnt"
+      .X 162 .Y 473
+      .COLOR [ .R 255 .G 255 .B 255 ]     
+    ]
+  ]  
+  
+  # Wraptext que nos dice la cantidad de comida que consume el mando
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WTCO'
+   .PARAMS
+   [
+    .X 190 .Y 424 .SX 57 .SY 25
+    .ALIGN RIGHT
+    
+    .TEXT
+    [
+     .FONT "Fonts/Times10.fnt" 
+     .COLOR [ .R 255 .G 255 .B 255 ]
+     .MSG  " "        
+    ]
+   ]   
+  ] 
+  
+  # Wraptext que nos dice la cantidad de batallas que hemos realizado
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WTNB'
+   .PARAMS
+   [
+    .X 361 .Y 424 .SX 44 .SY 25
+    .ALIGN RIGHT
+    
+    .TEXT
+    [
+     .FONT "Fonts/Times10.fnt" 
+     .COLOR [ .R 255 .G 255 .B 255 ]
+     .MSG  " "        
+    ]
+   ]   
+  ]   
+  
+  # Wraptext que nos dice la experiencia que nos falta para subir de nivel
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WTXP'
+   .PARAMS
+   [
+    .X 381 .Y 484 .SX 80 .SY 25
+    .ALIGN CENTER
+    
+    .TEXT
+    [
+     .FONT "Fonts/Times9.fnt" 
+     .COLOR [ .R 255 .G 255 .B 255 ]
+     .MSG  " "        
+    ]
+   ]   
+  ]   
+
+  # -- Controles de Wraptext con características de la tropa  
+  # -  Texto para el rango de la tropa
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WTRA'
+   .PARAMS
+   [
+    .X 472 .Y 300 .SX 55 .SY 25
+    .ALIGN CENTER
+    
+    .TEXT
+    [
+     .FONT "Fonts/Times10.fnt" 
+     .COLOR [ .R 255 .G 255 .B 255 ]
+     .MSG  " "        
+    ]
+   ]   
+  ] 
+  
+  # -  Texto para la defensa de la tropa
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WTDE'
+   .PARAMS
+   [
+    .X 472 .Y 331 .SX 55 .SY 25
+    .ALIGN CENTER
+    
+    .TEXT
+    [
+     .FONT "Fonts/Times10.fnt" 
+     .COLOR [ .R 255 .G 255 .B 255 ]
+     .MSG  " "        
+    ]
+   ]   
+  ] 
+  
+  # -  Texto para la carga de la tropa
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WTCA'
+   .PARAMS
+   [
+    .X 472 .Y 362 .SX 55 .SY 25
+    .ALIGN CENTER
+    
+    .TEXT
+    [
+     .FONT "Fonts/Times10.fnt" 
+     .COLOR [ .R 255 .G 255 .B 255 ]
+     .MSG  " "        
+    ]
+   ]   
+  ] 
+  
+  # -  Texto para la puntería de la tropa
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WTPU'
+   .PARAMS
+   [
+    .X 472 .Y 393 .SX 55 .SY 25
+    .ALIGN CENTER
+    
+    .TEXT
+    [
+     .FONT "Fonts/Times10.fnt" 
+     .COLOR [ .R 255 .G 255 .B 255 ]
+     .MSG  " "        
+    ]
+   ]   
+  ]   
+  
+  
+  
+  # barra de porcentaje de experiencia
+  [
+    .TIPO UIC_BARRAPORCENTAJE .ID 'BPXP'
+    .PARAMS
+    [
+      .X 98 .Y 492
+      .PRIORITY 205
+      .SUPERIOR [ .FILE "Game/UI/ModeloGestion/UIDefsDlgInfoGestion/InformacionTropas.tga" .U 9 .V 608 .ALPHA TRUE ]
+      .SX 264 .SY 12
+    ]
+  ]  
+  
+  # barra de progreso mostrando las estrellas correspondientes al nivel en el que se encuentra la tropa
+  [
+    .TIPO UIC_BARRAPROGRESODISCRETA .ID 'BDXP'
+    .PARAMS
+    [
+      .PRIORITY 205
+      .X 432 .Y 439
+      .MAX_VALUE 5
+      .INTERSPACE_X 3
+      
+      .FRAME
+      [
+    	  .FILE "Game/UI/ModeloGestion/UIDefsDlgInfoGestion/InformacionTropas.tga" 
+    	  .U 287 .V 608 .SX 17 .SY 15 .ALPHA TRUE
+      ]
+    ]
+  ]
+  
+  # zona sensible con tooltip para mostrarnos información de la bandera del jugador que posee el efectivo
+  [ 
+    .TIPO UIC_ZONASENSIBLE  .ID 'ZSTP' 
+    .PARAMS 
+    [ 
+      .RECT [ 263 272 296 290 ] 
+      .DBCLICK_AS_RELEASE FALSE 
+      .EVENTOS [ MOUSE ] 
+      
+      .TOOL_TIP
+      [ 
+        .TEXT LTEXT_TT_BANDERA_INFORMACION
+        .X 32 .Y 32
+        
+        .STYLE DEFAULT_TOOLTIP 
+      ]      
+    ]
+  ]                          
+  
+ ] 
+ 
+ # Se definen los parámetros de la imagen
+ .IMG
+ [
+   .X 198 .Y 96
+   # la textura aquí especificada es lo de menos puesto que va a ser cambiada en cada creación del diálogo, pero debemos poner
+   # una válida
+   .FILE "Game/UI/ModeloGestion/UIDefsDlgInfoGestion/InformacionEdificios.tga" 
+   .U 1 .V 1 .SX 155 .SY 170
+   .PRIORITY 203
+   .ALPHA TRUE
+ ]
+ 
+ # ruta de la que se van a coger las texturas para las imágenes de las tropas
+ .RUTA "Game/UI/ModeloGestion/Iconos/Tropas/VentanaInfo/"
+ 
+ # posición de la bandera del pais al que pertenece la tropa 
+ .POS_BMPBANDERA [ .X 263 .Y 272 ]

@@ -1,0 +1,13 @@
+PuntopeanaPequeña.V3d sirve para los iconos del mapa de gestion:
+
+Teniente.v3d
+Capitan.v3d
+
+
+PuntopeanaPequeña.V3d sirve para los iconos del mapa de gestion:
+
+Mariscal.v3d
+General.v3d
+Barco.v3d
+BarcoFLotaDos.v3d
+BarcoFlotaTres.v3d

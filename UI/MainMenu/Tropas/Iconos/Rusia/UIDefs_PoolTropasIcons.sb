@@ -1,0 +1,180 @@
+###############################################################################################################
+# Tropas RUSIA
+# Mantiene todos los botones asociados a las tropas 
+###############################################################################################################
+
+#------------------------------------------------ CAB_LANCERO -----------------------------------------------
+[
+ .KEY RUSIA_CAB_LANCERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 1 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY RUSIA_CAB_LANCERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 1 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ CAB_HUSAR -------------------------------------------------
+[
+ .KEY RUSIA_CAB_HUSAR_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 117 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY RUSIA_CAB_HUSAR_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 117 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ CAB_CORACERO ----------------------------------------------
+[
+ .KEY RUSIA_CAB_CORACERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 59 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY RUSIA_CAB_CORACERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 59 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ CAB_DRAGON ------------------------------------------------
+[
+ .KEY RUSIA_CAB_DRAGON_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 175 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY RUSIA_CAB_DRAGON_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 175 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ CAZADOR ---------------------------------------------------
+[
+ .KEY RUSIA_CAZADOR_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 233 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY RUSIA_CAZADOR_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 233 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ GRANADERO ---------------------------------------------
+[
+ .KEY RUSIA_GRANADERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 291 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY RUSIA_GRANADERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 291 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ MILICIA --------------------------------------------------
+[
+ .KEY RUSIA_MILICIA_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 349 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY RUSIA_MILICIA_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 349 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ FUSILERO --------------------------------------------------
+[
+ .KEY RUSIA_FUSILERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 407 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY RUSIA_FUSILERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 407 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ TIRADOR ---------------------------------------------------
+[
+ .KEY RUSIA_TIRADOR_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 1 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY RUSIA_TIRADOR_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 1 .V 238 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ ELITE ---------------------------------------------------
+[
+ .KEY RUSIA_ELITE_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 59 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY RUSIA_ELITE_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 59 .V 238 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ OBUS_CAB --------------------------------------------------
+[
+ .KEY RUSIA_OBUS_CAB_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 117 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY RUSIA_OBUS_CAB_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 117 .V 238 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ CANON_CAB -------------------------------------------------
+[
+ .KEY RUSIA_CANON_CAB_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 175 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY RUSIA_CANON_CAB_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 175 .V 238 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ CANON_CAMP ------------------------------------------------
+[
+ .KEY RUSIA_CANON_CAMP_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 233 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY RUSIA_CANON_CAMP_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 233 .V 238 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ CANON -----------------------------------------------------
+[
+ .KEY RUSIA_CANON_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 291 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY RUSIA_CANON_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 291 .V 238 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ OBUS ------------------------------------------------------
+[
+ .KEY RUSIA_OBUS_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 349 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY RUSIA_OBUS_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 349 .V 238 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ MORTERO ---------------------------------------------------
+[
+ .KEY RUSIA_MORTERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 407 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY RUSIA_MORTERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\RUSIA\IconosRUSIA.tga" .U 407 .V 238 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]

@@ -1,0 +1,72 @@
+#
+# Fondos para los paneles de diplomacia
+#
+#
+
+# Fondo panel OroTurnosUltimatum
+[ .TIPO UIC_BITMAP .ID 'FOTU' 
+  .PARAMS 
+  [ 
+    .X 699 .Y 214 .U 1 .V 1 .SX 283 .SY 211 
+    .FILE "Game/UI/ModeloGestion/Diplomacia/VentanasDiplomacia.tga" 
+    .ALPHA TRUE 
+    .PRIORITY 30
+  ]
+] # ~BITMAP 
+
+
+# Fondo panel Oro
+[ .TIPO UIC_BITMAP .ID 'FORO' 
+  .PARAMS 
+  [ 
+    .X 699 .Y 285 .U 1 .V 369 .SX 283 .SY 100 
+    .FILE "Game/UI/ModeloGestion/Diplomacia/VentanasDiplomacia.tga" 
+    .ALPHA TRUE 
+    .PRIORITY 30
+  ]
+] # ~BITMAP 
+
+
+# Fondo panel OroTurnos
+[ .TIPO UIC_BITMAP .ID 'FORT' 
+  .PARAMS 
+  [ 
+    .X 699 .Y 244 .U 573 .V 131 .SX 283 .SY 151 
+    .FILE "Game/UI/ModeloGestion/Diplomacia/VentanasDiplomacia.tga" 
+    .ALPHA TRUE 
+    .PRIORITY 30
+  ]
+] # ~BITMAP 
+
+# Fondo panel OroBoton
+[ .TIPO UIC_BITMAP .ID 'FOBO' 
+  .PARAMS 
+  [ 
+    .X 699 .Y 244 .U 1 .V 215 .SX 283 .SY 151 
+    .FILE "Game/UI/ModeloGestion/Diplomacia/VentanasDiplomacia.tga" 
+    .ALPHA TRUE 
+    .PRIORITY 30
+  ]
+] # ~BITMAP 
+
+# Fondo panel ComercioOferta
+[ .TIPO UIC_BITMAP .ID 'FCOO' 
+  .PARAMS 
+  [ 
+    .X 699 .Y 108 .U 287 .V 1 .SX 283 .SY 191 
+    .FILE "Game/UI/ModeloGestion/Diplomacia/VentanasDiplomacia.tga" 
+    .ALPHA TRUE 
+    .PRIORITY 30
+  ]
+] # ~BITMAP 
+
+# Fondo panel ComercioDemanda
+[ .TIPO UIC_BITMAP .ID 'FCOD' 
+  .PARAMS 
+  [ 
+    .X 699 .Y 316 .U 287 .V 1 .SX 283 .SY 191 
+    .FILE "Game/UI/ModeloGestion/Diplomacia/VentanasDiplomacia.tga" 
+    .ALPHA TRUE 
+    .PRIORITY 30
+  ]
+] # ~BITMAP 

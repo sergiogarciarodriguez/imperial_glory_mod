@@ -1,0 +1,17 @@
+# Cursores para el modelo Naval
+
+[ .NAME CUR_DEFAULT                         .TEXTURE "Game\UI\Cursores\puntero.tga"              .HOTSPOT [ .X 0 .Y 0 ] ]
+
+[ .NAME CUR_MN_POS_MOV_VALIDA               .TEXTURE "Game\UI\Cursores\puntero.tga"              .HOTSPOT [ .X 0 .Y 0 ] ]
+
+[ .NAME CUR_MN_POS_MOV_NO_VALIDA            .TEXTURE "Game\UI\Cursores\punteroProhibido.tga"     .HOTSPOT [ .X 0 .Y 0 ] ]
+
+[ .NAME CUR_MN_SELECT_TROPA_AMIGA           .TEXTURE "Game\UI\Cursores\puntero.tga"              .HOTSPOT [ .X 0 .Y 0 ] ]
+
+[ .NAME CUR_MN_ATAQUE_NO_VALIDO             .TEXTURE "Game\UI\Cursores\punteroAbordajeX.tga"     .HOTSPOT [ .X 0 .Y 0 ] ]
+
+[ .NAME CUR_MN_ATAQUE                       .TEXTURE "Game\UI\Cursores\punteroAbordaje.tga"      .HOTSPOT [ .X 0 .Y 0 ] ]
+
+[ .NAME CUR_MN_SEGUIR_BARCO                 .TEXTURE "Game\UI\Cursores\punteroSeguirBarco.tga"   .HOTSPOT [ .X 0 .Y 0 ] ]
+
+[ .NAME CUR_MN_SEGUIR_BARCO_NO_VALIDO       .TEXTURE "Game\UI\Cursores\punteroSeguirBarcoX.tga"  .HOTSPOT [ .X 0 .Y 0 ] ]

@@ -1,0 +1,176 @@
+#############################################################################################
+# Paneles de las ramas de la fase III asociado al interfaz del Árbol de Tecnologías
+# 
+# 
+# 
+# Muestra la información de los paneles de la rama III
+#
+#############################################################################################
+
+[
+  .TIPO UIC_TABS .ID 'RIII'
+  .PARAMS
+  [
+    .X 1000 .Y 0 .SX 256 .SY 768
+    .ANIMADO FALSE
+    .PANELES
+    [
+      # PANEL RAMA FASE IIIA
+      [
+        .ID 'IIIA'
+        .PARAMS
+        [
+          .X 0 .Y 83 .SX 1024 .SY 44
+          .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/MenuArbolTecnologias.tga" .U 0 .V 83
+          .PRIORITY 131 .ALPHA TRUE
+          
+          .PESTANIA
+          [
+            .TIPO UIC_BOTONTEXTO
+            .PARAMS
+            [
+              .COMPORTAMIENTO MANUAL
+              .DISABLE [ .COLOR [ .R 150 .G 150 .B 190 ] ]
+              .SOLTADO [ .COLOR [ .R 230 .G 200 .B 140 ] ]
+              .PULSADO [ .COLOR [ .R 255 .G 255 .B 255 ] ]
+              
+      	      .FONT "Fonts/Times14.fnt"              
+              .TEXT LTEXT_LABEL_RAMA_IIIA
+              
+              .FONDO
+              [
+                .X 40 .Y 0 .SX 200 .SY 45
+                .ALPHA TRUE
+                .ALPHA_ADITIVO TRUE
+      	        .SOLTADO    [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/MenuArbolTecnologias.tga" .U 360 .V 892 ] 
+      	        .DISABLE    [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/MenuArbolTecnologias.tga" .U 360 .V 892 ] 
+      	        .PULSADO    [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/Brillo.tga" .U   1 .V   1 ] 
+              ]
+              
+              .CENTER_AREA      [ .X1 0 .Y1 0 .X2 200 .Y2 39 ]
+              
+	            .IDSELECTSOUND "S_FXUI_CLICKBUTTON"                            
+            ]
+          ] # ~PESTANIA
+        ]
+      ]
+      
+      # PANEL RAMA FASE IIIB
+      [
+        .ID 'IIIB'
+        .PARAMS
+        [
+          .X 0 .Y 83 .SX 1024 .SY 44
+          .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/MenuArbolTecnologias.tga" .U 0 .V 83
+          .PRIORITY 132 .ALPHA TRUE
+          .PESTANIA
+          [
+            .TIPO UIC_BOTONTEXTO
+            .PARAMS
+            [
+              .COMPORTAMIENTO MANUAL
+              .DISABLE [ .COLOR [ .R 150 .G 150 .B 190 ] ]
+              .SOLTADO [ .COLOR [ .R 230 .G 200 .B 140 ] ]
+              .PULSADO [ .COLOR [ .R 255 .G 255 .B 255 ] ]
+              
+	            .FONT "Fonts/Times14.fnt"              
+              .TEXT LTEXT_LABEL_RAMA_IIIB
+              
+              .FONDO
+              [
+                .X 256 .Y 0 .SX 200 .SY 45
+                .ALPHA TRUE
+                .ALPHA_ADITIVO TRUE
+      	        .SOLTADO    [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/MenuArbolTecnologias.tga" .U 360 .V 892 ] 
+      	        .DISABLE    [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/MenuArbolTecnologias.tga" .U 360 .V 892 ] 
+      	        .PULSADO    [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/Brillo.tga" 	  .U   1 .V   1 ] 
+              ]
+              
+              .CENTER_AREA      [ .X1 0 .Y1 0 .X2 200 .Y2 39 ]
+              
+	      .IDSELECTSOUND "S_FXUI_CLICKBUTTON"                            
+            ]
+          ] # ~PESTANIA
+        ]
+      ]
+      
+      # PANEL RAMA FASE IIIC
+      [
+        .ID 'IIIC'
+        .PARAMS
+        [
+          .X 0 .Y 83 .SX 1024 .SY 44
+          .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/MenuArbolTecnologias.tga" .U 0 .V 83
+          .PRIORITY 133 .ALPHA TRUE
+          .PESTANIA
+          [
+            .TIPO UIC_BOTONTEXTO
+            .PARAMS
+            [
+              .COMPORTAMIENTO MANUAL
+              .DISABLE [ .COLOR [ .R 150 .G 150 .B 190 ] ]
+              .SOLTADO [ .COLOR [ .R 230 .G 200 .B 140 ] ]
+              .PULSADO [ .COLOR [ .R 255 .G 255 .B 255 ] ]
+              
+      	      .FONT "Fonts/Times14.fnt"              
+              .TEXT LTEXT_LABEL_RAMA_IIIC
+              
+              .FONDO
+              [
+                .X 538 .Y 0 .SX 200 .SY 45
+                .ALPHA TRUE
+                .ALPHA_ADITIVO TRUE
+      	        .SOLTADO    [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/MenuArbolTecnologias.tga" .U 360 .V 892 ] 
+      	        .DISABLE    [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/MenuArbolTecnologias.tga" .U 360 .V 892 ] 
+      	        .PULSADO    [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/Brillo.tga" 	  .U   1 .V   1 ] 
+              ]
+              
+              .CENTER_AREA      [ .X1 0 .Y1 0 .X2 200 .Y2 39 ]
+              
+	            .IDSELECTSOUND "S_FXUI_CLICKBUTTON"                            
+            ]
+          ] # ~PESTANIA
+        ]
+      ]
+      
+      # PANEL RAMA FASE IIID
+      [
+        .ID 'IIID'
+        .PARAMS
+        [
+          .X 0 .Y 83 .SX 1024 .SY 44
+          .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/MenuArbolTecnologias.tga" .U 0 .V 83
+          .PRIORITY 134 .ALPHA TRUE
+          .PESTANIA
+          [
+            .TIPO UIC_BOTONTEXTO
+            .PARAMS
+            [
+              .COMPORTAMIENTO MANUAL
+              .DISABLE [ .COLOR [ .R 150 .G 150 .B 190 ] ]
+              .SOLTADO [ .COLOR [ .R 230 .G 200 .B 140 ] ]
+              .PULSADO [ .COLOR [ .R 255 .G 255 .B 255 ] ]
+              
+      	      .FONT "Fonts/Times14.fnt"              
+              .TEXT LTEXT_LABEL_RAMA_IIID
+              
+              .FONDO
+              [
+                .X 782 .Y 0 .SX 200 .SY 45
+                .ALPHA TRUE
+                .ALPHA_ADITIVO TRUE
+      	        .SOLTADO    [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/MenuArbolTecnologias.tga" .U 360 .V 892 ] 
+      	        .DISABLE    [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/MenuArbolTecnologias.tga" .U 360 .V 892 ] 
+      	        .PULSADO    [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/Brillo.tga" 	  .U   1 .V   1 ] 
+              ]
+              
+              .CENTER_AREA      [ .X1 0 .Y1 0 .X2 200 .Y2 39 ]
+              
+	            .IDSELECTSOUND "S_FXUI_CLICKBUTTON"                            
+            ]
+          ] # ~PESTANIA
+        ]
+      ]
+    ]
+  ] # ~PARAMS
+]

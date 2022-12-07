@@ -1,0 +1,110 @@
+#================================================================================================
+# Este archivo contiene los datos de los Fight Power necesarios para llevar a cabo un objetivo
+#================================================================================================
+
+.NEEDED_FIGHT_POWER
+[
+  .OBJETIVO_MAPA
+  [
+    .MELEE              0.05
+    .MELEE_BUILDING     0.05
+    .CHARGE             0.1
+    .DISTANCE           0.2
+    .DISTANCE_BUILDING  0.2
+    .POST               0.0
+    .INFANTRY_COEF      1.0
+    .CAVALRY_COEF       0.75
+    .ARTILLERY_COEF     0.5
+  ]
+
+  .EJERCITO_ENEMIGO
+  [
+    .MELEE              0.05
+    .MELEE_BUILDING     0.05
+    .CHARGE             0.1
+    .DISTANCE           0.2
+    .DISTANCE_BUILDING  0.2
+    .POST               0.0
+    .INFANTRY_COEF      1.0
+    .CAVALRY_COEF       1.0
+    .ARTILLERY_COEF     1.0
+  ]
+
+  .ENEMIGOS_EN_ZONA
+  [
+    .MELEE              0.05
+    .MELEE_BUILDING     0.05
+    .CHARGE             0.1
+    .DISTANCE           0.2
+    .DISTANCE_BUILDING  0.2
+    .POST               0.0
+    .INFANTRY_COEF      1.0
+    .CAVALRY_COEF       1.0
+    .ARTILLERY_COEF     1.0
+  ]
+
+  .EDIFICIO_OCUPADO
+  [
+    .MELEE              0.05
+    .MELEE_BUILDING     0.05
+    .CHARGE             0.1
+    .DISTANCE           0.2
+    .DISTANCE_BUILDING  0.2
+    .POST               0.0
+    .INFANTRY_COEF      1.0
+    .CAVALRY_COEF       0.25
+    .ARTILLERY_COEF     0.75
+  ]
+
+  .PARAPETO
+  [
+    .MELEE              0.05
+    .MELEE_BUILDING     0.05
+    .CHARGE             0.1
+    .DISTANCE           0.2
+    .DISTANCE_BUILDING  0.2
+    .POST               1.0
+    .INFANTRY_COEF      1.0
+    .CAVALRY_COEF       0.7
+    .ARTILLERY_COEF     0.7
+  ]
+
+  .PUENTE
+  [
+    .MELEE              0.05
+    .MELEE_BUILDING     0.05
+    .CHARGE             0.1
+    .DISTANCE           0.2
+    .DISTANCE_BUILDING  0.2
+    .POST               0.0
+    .INFANTRY_COEF      1.0
+    .CAVALRY_COEF       0.75
+    .ARTILLERY_COEF     0.5
+  ]
+
+  .PASO_DIFICIL
+  [
+    .MELEE              0.05
+    .MELEE_BUILDING     0.05
+    .CHARGE             0.1
+    .DISTANCE           0.2
+    .DISTANCE_BUILDING  0.2
+    .POST               0.0
+    .INFANTRY_COEF      1.0
+    .CAVALRY_COEF       0.75
+    .ARTILLERY_COEF     0.5
+  ]
+
+  .ZONA_ELEVADA
+  [
+    .MELEE              0.05
+    .MELEE_BUILDING     0.05
+    .CHARGE             0.1
+    .DISTANCE           0.2
+    .DISTANCE_BUILDING  0.2
+    .POST               0.0
+    .INFANTRY_COEF      1.0
+    .CAVALRY_COEF       0.75
+    .ARTILLERY_COEF     0.5
+  ]
+]

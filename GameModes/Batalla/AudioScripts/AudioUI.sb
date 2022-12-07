@@ -1,0 +1,49 @@
+#=======================================================================================
+# Definición de sonidos para el modelo de batalla [ UI ]
+#
+# Param ".3D" es TRUE por defecto.
+#       ".LOOP" es FALSE por defecto.
+#=======================================================================================
+
+###-------------------------------------------------------------------------------------
+### AUDIO
+###-------------------------------------------------------------------------------------
+.AUDIO 
+[
+
+  [ 
+    .IDNAME "S_UI_BORDENDIRECTA_PULSADO"       
+    .PATH "Audio/Menu/UI/BotonControlPulsado.ogg" 
+    .3D FALSE
+    .LOOP FALSE
+  ]
+
+  [ 
+    .IDNAME "S_UI_BFORMACION_PULSADO"       
+    .PATH "Audio/Menu/UI/BotonControlPulsado.ogg" 
+    .3D FALSE
+    .LOOP FALSE
+  ]
+
+  [ 
+    .IDNAME "S_UI_BATAQUE_PULSADO"       
+    .PATH "Audio/Menu/UI/BotonControlPulsado.ogg" 
+    .3D FALSE
+    .LOOP FALSE
+  ]
+
+  [ 
+    .IDNAME "S_UI_BORDENGENERAL_PULSADO"       
+    .PATH "Audio/Menu/UI/BotonControlPulsado.ogg" 
+    .3D FALSE
+    .LOOP FALSE
+  ]
+
+  [ 
+    .IDNAME "S_UI_BOCOMPORTAMIENTO_PULSADO"       
+    .PATH "Audio/Menu/UI/BotonControlPulsado.ogg" 
+    .3D FALSE
+    .LOOP FALSE
+  ]
+
+] ### !AUDIO

@@ -1,0 +1,800 @@
+##########################################################################################################
+# UI asociado al proceso encargado de controlar las UI's de los diferentes jugadores en el modelo de gestion
+
+[
+  .NAME UI_GESTOR_AI_GESTION
+  .PROC UI_GENERICO
+  .PARAMS
+  [
+    .CONTROLES
+    [         
+     #################################### CONTROLES DE DEBUG #
+      
+     # Ventana para ver la info de generador de batallones
+     [
+      .TIPO UIC_DIALOGO .ID 'DIGB'
+      .PARAMS [ %Game\UI\ModeloGestion\dbgUIDefs\dbgUIDefs_VentanaInfoGeneradores.sb ]
+     ]
+      
+     # Ventana para ver la info de generador de construcciones
+     [
+      .TIPO UIC_DIALOGO .ID 'DIGC'
+      .PARAMS [ %Game\UI\ModeloGestion\dbgUIDefs\dbgUIDefs_VentanaInfoGeneradores.sb ]
+     ]
+      
+     # Ventana para ver la info de generador de tecnologias
+     [
+      .TIPO UIC_DIALOGO .ID 'DIGT'
+      .PARAMS [ %Game\UI\ModeloGestion\dbgUIDefs\dbgUIDefs_VentanaInfoGeneradores.sb ]
+     ]
+     
+     # Ventana para mostrar la informacion de los prisioneros
+     [
+      .TIPO UIC_DIALOGO .ID 'DIPR'
+      .PARAMS [ %Game\UI\ModeloGestion\dbgUIDefs\dbgUIDefs_DefaultDlgListBox.sb ]
+     ]       
+     
+     # Ventana para mostrar la informacion de los jugadores por turno
+     [
+      .TIPO UIC_DIALOGO .ID 'DIJT'
+      .PARAMS [ %Game\UI\ModeloGestion\dbgUIDefs\dbgUIDefs_VentanaInfoTurnos.sb ]
+     ]
+     
+     # Ventana para mostrar la informacion de las provincias militarmente visibles
+     [
+      .TIPO UIC_DIALOGO .ID 'DPVM'
+      .PARAMS [ %Game\UI\ModeloGestion\dbgUIDefs\dbgUIDefs_VentanaInfoProvMilitar.sb ]
+     ]
+              
+     # MessageBox con la pregunta de como resolver el conflicto
+     [ .TIPO UIC_DLGRESOLUCIONCONFLICTOS .ID 'DG_1'
+       .PARAMS [ %Game/UI/ModeloGestion/UIDefs_DlgResolucionConflictos.sb ]
+     ] # ~ MESSAGE_BOX 
+     
+     # MessageBox con la pregunta de como resolver el conflicto
+     [ .TIPO UIC_DLGRESOLUCIONCONFLICTOSBARCOS .ID 'DG_2'
+       .PARAMS [ %Game/UI/ModeloGestion/UIDefs_DlgResolucionConflictosBarcos.sb ]
+     ] # ~ MESSAGE_BOX 
+          
+      # Dialgo estadisticas batalla naval
+      [
+        .TIPO UIC_DLGESTADISICASBATALLAAUTOMATICA .ID 'DEBN'
+        .PARAMS [ %Game\UI\ModeloGestion\UIDefs_DlgEstadisticasBatallaNaval.sb ]
+      ]
+
+      # Dialgo estadisticas batalla terrestre
+      [
+        .TIPO UIC_DLGESTADISICASBATALLAAUTOMATICA .ID 'DEBT'
+        .PARAMS [ %Game\UI\ModeloGestion\UIDefs_DlgEstadisticasBatallaTerrestre.sb ]
+      ]
+      
+      # WrapText que muestra el nombre del país actualmente pensando      
+      [
+       .TIPO UIC_WRAPTEXT .ID 'WTVT'
+       .PARAMS
+       [
+        .X 0 .Y 515 .SX 1024 .SY 30
+        .ALIGN CENTER
+        
+        .TEXT
+        [
+         .FONT "Fonts/Times14.fnt" 
+         .COLOR [ .R 255 .G 255 .B 255 ]
+         .MSG  " "        
+        ]
+       ]   
+      ]        
+      # Visor de turnos
+      [
+        .TIPO UIC_VISORMATRIZCTRLS .ID 'VTUR'
+        .PARAMS [ %Game\UI\ModeloGestion\UIDefs_VisorTurnos.sb ]
+      ]  
+
+      # Tecla para cancelar la anim. inicial (ESC - General)
+      [ .TIPO UIC_TECLA .ID 'GESC' .PARAMS [ .TECLA KEY_ESCAPE .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ]] .ACTIVO FALSE ]      
+           
+    ] # ~ Controles
+    
+    .UI_DATA
+    [       
+    ]     
+  
+  ] # ~ Params
+] # ~ UI
+
+
+##########################################################################################################
+# UI del modo mapa en el modelo de gestion
+
+[
+  .NAME UI_MODELO_GESTION_MAPA
+  .PROC UI_GAME_GEST_MAPA
+  .PARAMS
+  [  
+   .CONTROLES
+   [
+      
+      # Tecla de debug BORRAR!!!
+      [ .TIPO UIC_TECLA .ID 'TDDB' .PARAMS [ .TECLA KEY_0 .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ]] ]
+      
+      #################################### Zonas sensibles #    
+      # Zona del MAPa
+      # Ocupara toda la pantalla.
+      # Se vera invalidada por las zonas sensibles que recogeran la zona de interfaz.
+      [ .TIPO UIC_ZONASENSIBLE .ID 'ZMAP' .PARAMS [ .RECT [ 0 0 1023 620 ] .EVENTOS [ MOUSE ] .DBCLICK_AS_RELEASE TRUE ]  ]   
+      
+      # Zonas asociadas a los interfaces superior e inferior
+      [ .TIPO UIC_ZONASENSIBLE .ID 'ZMID' .PARAMS [ .RECT [ 0 620 1023 767 ] .EVENTOS [ MOUSE ]  ]  ]   
+      [ .TIPO UIC_ZONASENSIBLE .ID 'ZMIU' .PARAMS [ .RECT [ 0 0 1023 45 ] .EVENTOS [ MOUSE ]  ]  ]   
+            
+      #################################### Teclas #    
+    
+      # Tecla de scroll a la DERecha
+      [ .TIPO UIC_TECLA .ID 'TDER' .PARAMS [ .TECLA KEY_RIGHT .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+    
+      # Tecla de scroll a la IZQuierda
+      [ .TIPO UIC_TECLA .ID 'TIZQ' .PARAMS [ .TECLA KEY_LEFT .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+    
+      # Tecla de scroll SUBir
+      [ .TIPO UIC_TECLA .ID 'TSUB' .PARAMS [ .TECLA KEY_UP .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+    
+      # Tecla de scroll ABAjo
+      [ .TIPO UIC_TECLA .ID 'TABA' .PARAMS [ .TECLA KEY_DOWN .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+    
+      # Teclas para modificar la altura de la camara -> debug
+      # Subir / Bajar la altura
+      [ .TIPO UIC_TECLA .ID 'T__U' .PARAMS [ .TECLA KEY_INSERT .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+      [ .TIPO UIC_TECLA .ID 'T__D' .PARAMS [ .TECLA KEY_DELETE .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+      # Rotacion a izq / dcha
+      [ .TIPO UIC_TECLA  .ID 'T_RL'    .PARAMS [ .TECLA KEY_PRIOR .MKEYS [ ]  .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+      [ .TIPO UIC_TECLA  .ID 'T_RR'    .PARAMS [ .TECLA KEY_NEXT  .MKEYS [ ]  .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+      # Rotacion hacia arriba / abajo
+      [ .TIPO UIC_TECLA  .ID 'T_RU'    .PARAMS [ .TECLA KEY_HOME  .MKEYS [ ]  .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+      [ .TIPO UIC_TECLA  .ID 'T_RD'    .PARAMS [ .TECLA KEY_END   .MKEYS [ ]  .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+            
+      # Tecla para mostrar el mapa de relaciones internacionales
+      [ .TIPO UIC_TECLA .ID 'T_RI' .PARAMS [ .TECLA KEY_R .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+      
+      # Tecla para mostrar la info de produccion de las provincias
+      [ .TIPO UIC_TECLA .ID 'T_PR' .PARAMS [ .TECLA KEY_P .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]              
+           
+      # Tecla para mostrar el Árbol de Tecnologías
+      [ .TIPO UIC_TECLA .ID 'T_AT' .PARAMS [ .TECLA KEY_T .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+      
+      
+      # Tecla para ocultar el interfaz
+      #NOTA: Falla, el interfaz se oculta pero al modificar culaquier cosa que actualize el interfaz activara los
+      # controles que se actualicen y el resto permanecera oculto. Como queda muy mal se quita y el control+h vuelve 
+      # a ser la ayuda de debug (si se vuelve a poner se tendra que volver a cambiar)
+      #[ .TIPO UIC_TECLA .ID 'T_HI' .PARAMS [ .TECLA KEY_H .MKEYS [ L_CTRL ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]           
+
+      # Tecla para mostrar la ventana de puntuaciones en modo victoria por puntos
+      [ .TIPO UIC_TECLA .ID 'T_PU' .PARAMS [ .TECLA KEY_F10 .MKEYS [  ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]           
+
+      # Tecla para cambiar del modo economico al politico y viceversa (si esta en uno de esos modos)
+      [ .TIPO UIC_TECLA .ID 'T_MO' .PARAMS [ .TECLA KEY_SPACE .MKEYS [  ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]           
+      
+      #################################### Controles Principales Modelo Gestion #
+     
+      # PANEL DE RIQUEZAS SUPERIOR
+      
+      [
+       .TIPO UIC_PANEL_RIQUEZAS .ID 'PRIQ'
+       .PARAMS [ %Game\UI\ModeloGestion\UIDefs_PanelRiquezas.sb ]
+      ]      
+      
+      # Visor de relaciones
+      [
+        .TIPO UIC_VISORRELACIONES .ID 'VIRE'
+        .PARAMS [ %Game\UI\ModeloGestion\UIDefs_VisorRelaciones.sb ]
+      ]
+            
+      # Panel de botones de construcciones
+      [
+       .TIPO UIC_PANELCONSTRUCCIONES .ID 'PCON'
+       .PARAMS [ %Game\UI\ModeloGestion\UIDefsInfoProduccion\UIDefs_DlgPanelConstrucciones.sb ]
+      ]      
+      
+      # Ventana de contenido politico - militar
+      [
+       .TIPO UIC_DLGCONTENIDOPOLITICOMILITAR .ID 'DCPM'
+       .PARAMS [ %Game\UI\ModeloGestion\VentanasAccionContenidoUIDefs\UIDefs_DlgContenidoPoliticoMilitar.sb ]
+      ]         
+      
+      # Bitmap para la parte inferior del interfaz de gestión
+      [
+       .TIPO UIC_BITMAP .ID 'BFON'
+       .PARAMS [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .X 0 .Y 595 .SX 1024 .SY 173 .U 0 .V 595 .ALPHA TRUE .PRIORITY 1 ]
+      ]
+      
+      # Diálogo que representa la leyenda de las rutas del modo económico
+      [
+        .TIPO UIC_DIALOGO .ID 'LYRC'
+        .PARAMS [ %Game\UI\ModeloGestion\UIDefs_DlgLeyendaRutas.sb ]
+      ]
+      
+      # Diálogo que contiene los checkboxes del modo de estadisticas
+      [
+        .TIPO UIC_DIALOGO .ID 'DCME'
+        .PARAMS [ %Game\UI\ModeloGestion\UIDefs_DlgChkEstadisticas.sb ]
+      ]      
+      
+      # Gestor de CheckBox con los btns de cambio de modo
+      [
+       .TIPO UIC_GESTORCHECKBOX .ID 'GBMO'
+       .PARAMS [ %Game/UI/ModeloGestion/UIDefs_BtnsModoMapa.sb ]
+      ]
+
+      # Boton de Boletin de noticias
+      [
+       .TIPO UIC_BOTONINTERMITENTE .ID 'BBNO'
+       .PARAMS [ %Game/UI/ModeloGestion/UIDefs_BtnBoletinNoticias.sb ]
+      ]
+      
+      # Boton de Visualización de ejércitos
+      [       
+       .TIPO UIC_BOTONTEXTO .ID 'VIEJ'
+       .PARAMS [ %Game\UI\ModeloGestion\UIDefs_BtnVerEjercitos.sb ]
+      ]
+      
+      # Boton de Quest
+      [       
+       .TIPO UIC_BOTONTEXTO .ID 'PMGQ'
+       .PARAMS [ %Game\UI\ModeloGestion\UIDefs_BtnQuest.sb ]
+      ]
+      
+      # Boton de Diplomacia
+      [
+       .TIPO UIC_BOTONTEXTO .ID 'PMGD'
+       .PARAMS [ %Game/UI/ModeloGestion/UIDefs_BtnDiplomacia.sb ]       
+      ]
+      
+      # Btn de Economía
+      [
+        .TIPO UIC_BOTONTEXTO .ID 'BTEC'
+        .PARAMS [ %Game/UI/ModeloGestion/VentanaEconomia/UIDefs_BtnEconomia.sb ]
+      ]
+      
+      # Boton de Tecnologia
+      [ 
+       .TIPO UIC_BOTONTEXTO .ID 'PMGH'
+       .PARAMS [ %Game/UI/ModeloGestion/UIDefs_BtnTecnologia.sb ]       
+      ]
+      
+      # Boton de NextTurn
+      [
+       .TIPO UIC_BTNNEXTTURN .ID 'BPTU'
+       .PARAMS [ %Game/UI/ModeloGestion/UIDefs_BtnNextTurn.sb ]
+      ]
+      
+      
+      # Zonas sensibles de scroll
+      # Zona de scroll a la (DER)echa
+      [ .TIPO UIC_ZONASENSIBLE .ID 'ZDER' .PARAMS [ .RECT [ 1022 0 1023 767 ] .EVENTOS [ MOUSE_ENTER_LEAVE ] ] ]
+    
+      # Zona de scroll a la (IZQ)uierda
+      [ .TIPO UIC_ZONASENSIBLE .ID 'ZIZQ' .PARAMS [ .RECT [ 0 0 1 767 ] .EVENTOS [ MOUSE_ENTER_LEAVE ] ] ]
+    
+      # Zona de scroll (SUB)ir  
+      [ .TIPO UIC_ZONASENSIBLE .ID 'ZSUB' .PARAMS [ .RECT [ 0 0 1023 1 ] .EVENTOS [ MOUSE_ENTER_LEAVE ] ] ]
+    
+      # Zona de scroll (ABA)jo
+      [ .TIPO UIC_ZONASENSIBLE .ID 'ZABA' .PARAMS [ .RECT [ 0 766 1023 767 ] .EVENTOS [ MOUSE_ENTER_LEAVE ] ] ]            
+ 
+                
+      # Dlgs Modales
+      # PANEL CON EL CONTROL DE LOS MODOS DE MAPA, FECHA Y PASO DE TURNO     
+      
+      # Dlg de ventanas de produccion de edificios
+      [
+       .TIPO UIC_DLGPRODUCCIONEDIFICIOS .ID 'DPED'
+       .PARAMS [ %Game\UI\ModeloGestion\UIDefsInfoProduccion\UIDefs_DlgProduccionEdificios.sb ]
+      ]
+      
+      # Dlg de ventanas de produccion de efectivos
+      [
+       .TIPO UIC_DLGPRODUCCIONEFECTIVOS .ID 'DPTR'
+       .PARAMS [ %Game\UI\ModeloGestion\UIDefsInfoProduccion\UIDefs_DlgProduccionEfectivos.sb ]
+      ]
+      
+      # Dlg de informacion de provincia
+      [
+       .TIPO UIC_DLGINFOPROVINCIA .ID 'DLIP'
+       .PARAMS [ %Game\UI\ModeloGestion\UIDefsDlgInfoGestion\UIDefs_DlgInfoProvincia.sb ]       
+      ]     
+
+      # Dlg de informacion de provincia marítima
+      [
+       .TIPO UIC_DLGINFOPROVINCIAMARITIMA .ID 'DLPM'
+       .PARAMS [ %Game\UI\ModeloGestion\UIDefsDlgInfoGestion\UIDefs_DlgInfoProvinciaMaritima.sb ]       
+      ]     
+      
+      [
+       .TIPO UIC_VENTANA_ORGANIZACION_EJERCITOS .ID 'VOEJ'
+       .PARAMS [ %Game\UI\ModeloGestion\UIDefs_VentanaOrganizacionEjercitos.sb ]
+      ]      
+                        
+      #################################### Otros controles #
+     
+     # ToolTip dinamico, Leyenda del modo de estadisticas, informacion general, ...
+     # Comentado mientras esta en desarrollo
+     [ .TIPO UIC_GESTORTOOLTIPDINAMICO .ID 'GTDI'
+       .PARAMS
+       [
+         %Game\UI\ModeloGestion\UIDefs_ToolTipDinamico.sb
+       ]
+     ]       
+     
+     # ToolTip global para mostrar ayuda sobre objetos en el mapa de gestion
+     [ .TIPO UIC_TOOLTIP .ID 'GTTP'
+       .PARAMS 
+       [ 
+        .FONT "Fonts/Times12.fnt" 
+        .COLOR [ .R 255 .G 255 .B 255 ] 
+        .X 32 .Y 32 
+        .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb        
+       ]                          
+     ]     
+      
+      # Dlg MODAL para mostrar Informacion de ejercito
+      [ 
+       .TIPO UIC_MESSAGEBOX .ID 'IEMB'
+       .PARAMS [ %Game\UI\ModeloGestion\UIDefs_InfoEjercitoMsgBox.sb ]
+      ] 
+      
+      # Dlg MODAL para mostrar informacion de los edificios
+      [
+       .TIPO UIC_DLGINFOEDIFICIO .ID 'DLIE'
+       .PARAMS [ %Game\UI\ModeloGestion\UIDefsDlgInfoGestion\UIDefs_DlgInfoEdificio.sb ]
+      ]
+      
+      # Dlg MODAL para mostrar información de los efectivos de tipo mando
+      [
+       .TIPO UIC_DLGINFOMANDO .ID 'DLIM'
+       .PARAMS [ %Game\UI\ModeloGestion\UIDefsDlgInfoGestion\UIDefs_DlgInfoMando.sb ]
+      ]
+      
+      # Dlg MODAL para mostrar informacion de los efectivos de tipo tropa
+      [
+       .TIPO UIC_DLGINFOTROPA .ID 'DLIT'
+       .PARAMS [ %Game\UI\ModeloGestion\UIDefsDlgInfoGestion\UIDefs_DlgInfoBatallon.sb ]
+      ]
+      
+      # Dlg MODAL para mostrar informacion de los efectivos de tipo barco
+      [
+       .TIPO UIC_DLGINFOBARCO .ID 'DLIB'
+       .PARAMS [ %Game\UI\ModeloGestion\UIDefsDlgInfoGestion\UIDefs_DlgInfoBarco.sb ]
+      ]
+      
+      # Dialogo de puntuación de jugadores
+      [
+        .TIPO UIC_DLGPUNTUACIONES .ID 'DPTO'        
+        .PARAMS [ %Game\UI\ModeloGestion\UIDefs_VentanaEstadisticas.sb ]
+      ]
+
+      # MessageBox MODAL para mostrar Informacion generica
+      [ 
+       .TIPO UIC_MESSAGEBOX .ID 'CMSB'
+       .PARAMS [ %Game\UI\ModeloGestion\UIDefsMsgBoxNotificaciones\UIDefs_MsgBoxNotificaciones.sb ]
+      ]       
+      
+      [ 
+       .TIPO UIC_MESSAGEBOX .ID 'CMBG'
+       .PARAMS [ %Game\UI\ModeloGestion\UIDefsMsgBoxNotificaciones\UIDefs_MsgBoxGrandeNotificaciones.sb ]
+      ]      
+      
+      [ 
+       .TIPO UIC_MESSAGEBOX .ID 'CMBP'
+       .PARAMS [ %Game\UI\ModeloGestion\UIDefsMsgBoxNotificaciones\UIDefs_MsgBoxPequenoNotificaciones.sb ]
+      ]      
+
+      [
+       .TIPO UIC_MESSAGEBOX .ID 'CMBX'
+       .PARAMS [ .DEPTH 2 %Game\UI\ModeloGestion\UIDefsMsgBoxNotificaciones\UIDefs_MsgBoxGiganteNotificaciones.sb ]
+      ]            
+      
+      [
+        .TIPO UIC_MESSAGEBOX .ID 'CMS3'
+        .PARAMS[ %Game\UI\Comun\UIDefs_CommonMsgBox3.sb ]
+      ]
+      
+      ##########################################################################################################
+      # MessageBox MODAL para mostrar Informacion de fin de partida
+      [ 
+       .TIPO UIC_MESSAGEBOX .ID 'FPAR'
+       .PARAMS [ %Game\UI\ModeloGestion\UIDefsMsgBoxNotificaciones\UIDefs_MsgBoxNotificaciones.sb ]
+      ]      
+      
+      ##########################################################################################################
+      # Control con la secuencia de video de fin del juego de gestion
+      [ 
+       .TIPO UIC_VIDEOSECUENCIA .ID 'VSFJ'
+       .PARAMS [ %Game\UI\ModeloGestion\UIDefsVideoSecuencia\UIDefs_SecuenciaVictoriaTotal.sb ]
+      ]      
+      
+      ##########################################################################################################
+      # Visor de textos emergentes para mostrar los cambios de modo de mapa
+      [ .TIPO UI_VISOR_TEXTO_EMERGENTE .ID 'VTEG'
+        .PARAMS 
+        
+        [ 
+          # Posición de alineación del texto
+          .X 512 # 1024 - 24 de margen para alineacion derecha
+          .Y 120
+          
+          .ACTIVO TRUE
+          
+          .HALIGN CENTER # LEFT RIGHT CENTER
+          .VALIGN BOTTOM # TOP BOTTOM CENTER
+          
+          .DEFAULT_FONT "Fonts/MonotypeCorsiva29.fnt"   
+          .DEFAULT_SCALE 1.0
+          .DEFAULT_COLOR [ .R 255 .G 255 .B 255 ]
+          
+          .MAX_LINES 1
+          # .MAX_HEIGHT 200 # maxima altura de los textos en pixels (para eliminar textos)
+          .MAX_WIDTH 900
+          
+          .JUG_FRANCIA [ .COLOR [ .R 64 .G 64 .B 255 ] ]
+          .JUG_INGLATERRA [ .COLOR [ .R 255 .G 64 .B 64 ] ]
+          .JUG_AUSTRIA [ .COLOR [ .R 255 .G 255 .B 0 ] ]
+          .JUG_PRUSIA [ .COLOR [ .R 128 .G 128 .B 255 ] ]
+          .JUG_RUSIA [ .COLOR [ .R 64 .G 255 .B 64 ] ]
+          .JUG_NEUTRO [ .COLOR [ .R 128 .G 128 .B 128 ] ]
+        ]
+      ]      
+          
+    ] # ~ CONTROLES
+
+   .UI_DATA
+   [
+    .CURSOR CUR_DEFAULT
+    
+    #COLORES DEL MODO ESTADISTICAS
+    %Game\UI\ModeloGestion\UIDefs_ColoresModoEstadisticas.sb
+    #COLORES RELACIONADOS CON LOS TOOLTIPS
+    %Game\UI\ModeloGestion\UIDefs_ColoresTooltips.sb
+    
+    #Script de la secuencia de tutorial
+    .SECUENCIA_TUTORIAL "Game\LuaScripts\Secuencias\SecuenciaTutorialGestion.lua"
+    
+   ]   
+  ] # ~ PARAMS  
+]
+
+##########################################################################################################
+# UI de la ventana de diplomacia
+[
+  .NAME UI_MODELO_GESTION_VENTANA_DIPLOMACIA
+  .PROC UI_GENERICO
+  .PARAMS
+  [
+    .CONTROLES
+    [
+      # Ventana (Dlg) de la ventana de Diplomacia
+      [
+       .TIPO UIC_VENTANA_DIPLOMACIA .ID 'V_DP'
+       .PARAMS [ %Game\UI\ModeloGestion\UIDefs_VentanaDiplomacia.sb ]
+      ]
+    ] # CONTROLES
+    
+    .UI_DATA
+    [
+      .CURSOR CUR_DEFAULT
+    ]  
+  ] # PARAMS
+]
+
+##########################################################################################################
+# UI de la ventana de Economia
+[
+  .NAME UI_MODELO_GESTION_VENTANA_ECONOMIA
+  .PROC UI_GENERICO
+  .PARAMS
+  [
+    .CONTROLES
+    [
+      # Ventana (Dlg) de la ventana de Economia
+      [
+       .TIPO UIC_DLGECONOMIA .ID 'V_EC'
+       .PARAMS [ %Game\UI\ModeloGestion\VentanaEconomia\UIDefs_DlgEconomia.sb ]
+      ]
+    ] # CONTROLES
+    
+    .UI_DATA
+    [
+      .CURSOR CUR_DEFAULT
+    ]  
+  ] # PARAMS
+]
+
+
+##########################################################################################################
+# UI de la ventana de quests
+[
+  .NAME UI_MODELO_GESTION_VENTANA_QUEST
+  .PROC UI_GENERICO
+  .PARAMS
+  [
+    .CONTROLES
+    [
+      # Ventana (Dlg) de la ventana de Diplomacia
+      [
+       .TIPO UIC_VENTANA_QUEST .ID 'V_QS'
+       .PARAMS [ %Game\UI\ModeloGestion\UIDefs_VentanaQuests.sb ]
+      ]
+    ] # CONTROLES
+    
+    .UI_DATA
+    [
+      .CURSOR CUR_DEFAULT
+    ]  
+  ] # PARAMS
+]
+
+##########################################################################################################
+# UI de la ventana de informacion de ejercito
+[
+  .NAME UI_MODELO_GESTION_VENTANA_INFORMACION_EJERCITOS
+  .PROC UI_GENERICO
+  .PARAMS
+  [
+    .CONTROLES
+    [
+      # Ventana (Dlg) de la ventana de informacion de ejercito
+      [
+       .TIPO UIC_VENTANA_INFORMACION_EJERCITOS .ID 'V_IE'
+       .PARAMS [ %Game\UI\ModeloGestion\InformacionEjercito\UIDefs_VentanaInformacionEjercito.sb ]
+      ]
+    ] # CONTROLES
+    
+    .UI_DATA
+    [
+      .CURSOR CUR_DEFAULT
+    ]  
+  ] # PARAMS
+]
+
+##########################################################################################################
+# UI de la ventana de fin de partida
+[
+  .NAME UI_MODELO_GESTION_VENTANA_FIN_JUEGO_GESTION
+  .PROC UI_GENERICO
+  .PARAMS
+  [
+    .CONTROLES
+    [
+      # Ventana (Dlg) de la ventana de fin juego gestion
+      [
+       .TIPO UIC_VENTANA_FIN_JUEGO_GESTION .ID 'V_FJ'
+       .PARAMS [ %Game\UI\ModeloGestion\FinJuegoGestion\UIDefs_VentanaFinJuegoGestion.sb ]
+      ]
+    ] # CONTROLES
+    
+    .UI_DATA
+    [
+      .CURSOR CUR_DEFAULT
+    ]  
+  ] # PARAMS
+]
+
+##########################################################################################################
+# UI de la ventana de fin de partida (ENCICLOEDIA)
+[
+  .NAME UI_MODELO_GESTION_VENTANA_FIN_JUEGO_GESTION_ENCICLOPEDIA
+  .PROC UI_GENERICO
+  .PARAMS
+  [
+    .CONTROLES
+    [
+      # Ventana (Dlg) de la ventana de fin juego gestion
+      [
+       .TIPO UIC_DLGPUNTUACIONESFINAL .ID 'V_EN'
+       .PARAMS [ %Game\UI\ModeloGestion\FinJuegoGestion\UIDefs_VentanaEnciclopedia.sb ]
+      ]
+    ] # CONTROLES
+    
+    .UI_DATA
+    [
+      .CURSOR CUR_DEFAULT
+    ]  
+  ] # PARAMS
+]
+
+
+##########################################################################################################
+# UI del árbol de tecnologías
+[
+  .NAME UI_MODELO_GESTION_ARBOL_TECNOLOGIAS
+  .PROC UI_GENERICO
+  .PARAMS
+  [
+    .CONTROLES
+    [
+      # Ventana (Dlg) del Árbol de Tecnologías
+      [
+        .TIPO UIC_VENTANA_ARBOL_TECNOLOGIAS .ID 'V_AT'
+        .PARAMS [ %Game\UI\ModeloGestion\UIDefs_VentanaArbolTecnologias.sb ]
+      ]
+    ] # CONTROLES
+    
+    .UI_DATA
+    [
+      .CURSOR CUR_DEFAULT
+    ]  
+  ] # PARAMS
+]
+
+[
+  ##########################################################################################################
+  # Este interfaz representa el menu de juego que aparece en el modelo de gestion al pulsar ESC.
+  # Desde este menu podremos: 
+  #
+  #   - Grabar Partida. 
+  #   - Entrar en Opciones.
+  #   - Volver a la partida.
+  #   - Abandonar Partida
+  #
+  ##########################################################################################################
+
+  .NAME UI_ESC_MENU_MODELO_GESTION
+  .PROC UI_GENERICO
+  .PARAMS
+  [
+  
+   .CONTROLES
+   [
+
+    [ .TIPO UIC_GESTORMENUS
+      .ID 'GMEN'
+      .PARAMS
+      [
+        %Game/UI/ModeloGestion/UIDefs_IngameMenu.sb
+      ] # ~ .PARAMS     
+    ] # ~ .TIPO UIC_GESTORMENUS    
+   ] # ~ CONTROLES
+
+   .UI_DATA
+   [
+     .CURSOR CUR_DEFAULT
+   ]   
+  ] # ~ PARAMS  
+]
+
+##########################################################################################################
+# Imagen de carga del main menu desde el modelo de gestion
+
+[
+  .NAME UI_MODELO_GESTION_MAIN_MENU_LOADING
+  .PROC UI_GENERICO
+  .PARAMS
+  [  
+   .CONTROLES
+   [
+     [ 
+      .TIPO UIC_BITMAP .ID 'BLOA' .PARAMS [ .FILE "Game/UI/Comun/men_waiting.tga" .X 0 .Y 0 .SX 1024 .SY 768 .U 0 .V 0 ] 
+     ]
+     [
+      .TIPO UIC_TEXT .ID 'TLOA' 
+      .PARAMS 
+      [ 
+        .ALIGN CENTER .X 510 .Y 375 .TEXT LTEXT_UI_LOADING
+        .FONT "Fonts/Times18.fnt"
+        .COLOR [ .R 0 .G 0 .B 0 ]
+      ]
+     ]
+   ] # ~ CONTROLES
+
+   .UI_DATA
+   [
+    .CURSOR NO_CURSOR    
+   ]   
+  ] # ~ PARAMS  
+]
+
+##########################################################################################################
+# Imagen de carga del modelo de batalla desde el modelo de gestion
+
+[
+ .NAME UI_MODELO_GESTION_MODELO_BATALLA_LOADING
+ .PROC UI_GENERICO
+ .PARAMS
+ [
+  .CONTROLES
+  [
+   
+   [
+    .TIPO UIC_CARGADORBITMAPS
+    .ID 'CBIT'   
+    .PARAMS
+    [      
+     .BITMAPS_FILE "Game/UI/ModeloGestion/UIDefs_GestionBatallaBitmapsLoading.sb"
+    ] # ~ PARAMS
+   ] 
+
+   [
+    .TIPO UIC_TEXT .ID 'TLOA' 
+    .PARAMS 
+    [ 
+      .ALIGN CENTER .X 510 .Y 375 .TEXT LTEXT_UI_LOADING
+      .FONT "Fonts/Times18.fnt"
+      .COLOR [ .R 0 .G 0 .B 0 ]
+    ]
+   ]
+   
+  ] # ~ CONTROLES
+  
+  .UI_DATA 
+ [
+  .CURSOR NO_CURSOR
+  .STOP_MUSIC FALSE
+ ] # ~ UI_DATA
+ 
+ ] # ~ PARAMS 
+]
+
+##########################################################################################################
+# Imagen de carga del modelo naval desde el modelo de gestion
+
+[
+ .NAME UI_MODELO_GESTION_MODELO_NAVAL_LOADING
+ .PROC UI_GENERICO
+ .PARAMS
+ [
+  .CONTROLES
+  [
+   
+   [
+    .TIPO UIC_CARGADORBITMAPS
+    .ID 'CBIT'   
+    .PARAMS
+    [      
+     .BITMAPS_FILE "Game/UI/ModeloGestion/UIDefs_GestionNavalBitmapsLoading.sb"
+    ] # ~ PARAMS
+   ] 
+   
+  [
+    .TIPO UIC_TEXT .ID 'TLOA' 
+    .PARAMS 
+    [ 
+      .ALIGN CENTER .X 510 .Y 375 .TEXT LTEXT_UI_LOADING
+      .FONT "Fonts/Times18.fnt"
+      .COLOR [ .R 0 .G 0 .B 0 ]
+    ]
+   ]
+
+   
+  ] # ~ CONTROLES
+  
+  .UI_DATA 
+ [
+  .CURSOR NO_CURSOR
+  .STOP_MUSIC FALSE
+ ] # ~ UI_DATA
+ 
+ ] # ~ PARAMS 
+]
+
+##########################################################################################################
+# UI de la ventana de noticias
+[
+  .NAME UI_MODELO_GESTION_VENTANA_NOTICIAS
+  .PROC UI_GENERICO
+  .PARAMS
+  [
+    .CONTROLES
+    [
+      # Ventana (Dlg) de la ventana de Noticias
+      [
+       .TIPO UIC_DLGNOTICIAS .ID 'BONO'
+       .PARAMS [ %Game\UI\ModeloGestion\BoletinNoticias\UIDefs_DlgNoticias.sb ]
+      ]
+    ] # CONTROLES
+    
+    .UI_DATA
+    [
+      .CURSOR CUR_DEFAULT
+    ]  
+  ] # PARAMS
+]
+

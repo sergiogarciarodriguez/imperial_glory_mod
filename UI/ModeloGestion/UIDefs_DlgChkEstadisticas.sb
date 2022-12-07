@@ -1,0 +1,494 @@
+#############################################################################################
+# CheckBoxes del modo de estadisticas
+#############################################################################################
+
+ .MODAL FALSE
+ .CENTER FALSE
+  
+ .FONDO 
+ [  
+  #No queremos que se vea el fondo, le ponemos dos pixeles de una zona con alfa a 0
+  .X 0 .Y 0 .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 0 .V 591 .SX 2 .SY 2 .ALPHA TRUE   
+  .PRIORITY 20
+ ]              
+            
+ # Controles
+ .CONTROLES
+ [
+   # Gestor de CheckBox con los btns de estadisticas
+   [
+    .TIPO UIC_GESTORCHECKBOX .ID 'GBME'
+    .PARAMS 
+    [ 
+    
+      # Los botones seran controlados desde un gestor de CheckBoxes
+      .PERMITE_NINGUNA_ACTIVACION FALSE
+      
+      #////////////////////////////////////////////////////////////////////////////////////////////
+      .CHECKBOXES
+      [ 
+
+       #-------------------------------------------------------------------------------------------
+       # Bloque Izquierdo 
+       #-------------------------------------------------------------------------------------------
+
+       #-----------------------------------------------------------------------
+       # Boton de Almacen de recursos
+       [
+        .ID 'BEAR'
+        .PARAMS
+        [
+         .COMPORTAMIENTO FIJO
+         .FONDO
+         [
+           .X 10 .Y 114  .PRIORITY 10 .ALPHA TRUE .SX 42 .SY 41
+           .SOLTADO       [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 1 .V 608 ] 
+           .SELECCIONADO  [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 1 .V 650 ] 
+           .PULSADO       [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 1 .V 692 ]     
+           .DESHABILITADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 1 .V 734 ]     
+                
+         ]
+         
+         .IDSELECTSOUND "S_FXUI_CHECKBUTTON"            
+         .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"        
+       
+         .TOOL_TIP 
+         [ 
+          .TEXT LTEXT_UI_GESTIONMAPA_TT_STOCK
+          .FONT "Fonts/Default.fnt" X 32 .Y 32 .COLOR [ .R 255 .G 255 .B 255 ]   
+          .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+          .SHOW_TIME 0
+         ]           
+        ]
+       ]
+
+       #-----------------------------------------------------------------------
+       # Boton de Produccion de recursos
+       [
+        .ID 'BEPR'
+        .PARAMS
+        [
+         .COMPORTAMIENTO FIJO
+         .FONDO
+         [
+           .X 10 .Y 159  .PRIORITY 10 .ALPHA TRUE .SX 42 .SY 41
+           .SOLTADO       [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 44 .V 608 ] 
+           .SELECCIONADO  [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 44 .V 650 ] 
+           .PULSADO       [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 44 .V 692 ]     
+           .DESHABILITADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 44 .V 734 ]     
+                
+         ]
+         
+         .IDSELECTSOUND "S_FXUI_CHECKBUTTON"            
+         .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"        
+       
+         .TOOL_TIP 
+         [ 
+          .TEXT LTEXT_UI_GESTIONMAPA_TT_PRODUCCION
+          .FONT "Fonts/Default.fnt" X 32 .Y 32 .COLOR [ .R 255 .G 255 .B 255 ]   
+          .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+          .SHOW_TIME 0
+         ]           
+        ]
+       ]
+
+       #-----------------------------------------------------------------------
+       # Boton de Produccion de ciencia
+       [
+        .ID 'BEPC'
+        .PARAMS
+        [
+         .COMPORTAMIENTO FIJO
+         .FONDO
+         [
+           .X 10 .Y 204  .PRIORITY 10 .ALPHA TRUE .SX 42 .SY 41
+           .SOLTADO       [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 87 .V 608 ] 
+           .SELECCIONADO  [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 87 .V 650 ] 
+           .PULSADO       [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 87 .V 692 ]     
+           .DESHABILITADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 87 .V 734 ]     
+                
+         ]
+         
+         .IDSELECTSOUND "S_FXUI_CHECKBUTTON"            
+         .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"        
+       
+         .TOOL_TIP 
+         [ 
+          .TEXT LTEXT_UI_GESTIONMAPA_TT_CIENCIA
+          .FONT "Fonts/Default.fnt" X 32 .Y 32 .COLOR [ .R 255 .G 255 .B 255 ]   
+          .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+          .SHOW_TIME 0
+         ]           
+        ]
+       ] 
+       
+       #-----------------------------------------------------------------------
+       # Boton de Potencia Militar
+       [
+        .ID 'BEPM'
+        .PARAMS
+        [
+         .COMPORTAMIENTO FIJO
+         .FONDO
+         [
+           .X 10 .Y 249  .PRIORITY 10 .ALPHA TRUE .SX 42 .SY 41
+           .SOLTADO       [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 130 .V 608 ] 
+           .SELECCIONADO  [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 130 .V 650 ] 
+           .PULSADO       [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 130 .V 692 ]     
+           .DESHABILITADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 130 .V 734 ]     
+                
+         ]
+         
+         .IDSELECTSOUND "S_FXUI_CHECKBUTTON"            
+         .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"        
+       
+         .TOOL_TIP 
+         [ 
+          .TEXT LTEXT_UI_GESTIONMAPA_TT_POTENCIAL
+          .FONT "Fonts/Default.fnt" X 32 .Y 32 .COLOR [ .R 255 .G 255 .B 255 ]   
+          .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+          .SHOW_TIME 0
+         ]           
+        ]
+       ]        
+       
+       #-----------------------------------------------------------------------
+       # Boton de Gloria del Imperio
+       [
+        .ID 'BEGI'
+        .PARAMS
+        [
+         .COMPORTAMIENTO FIJO
+         .FONDO
+         [
+           .X 10 .Y 294  .PRIORITY 10 .ALPHA TRUE .SX 42 .SY 41
+           .SOLTADO       [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 173 .V 608 ] 
+           .SELECCIONADO  [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 173 .V 650 ] 
+           .PULSADO       [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 173 .V 692 ]     
+           .DESHABILITADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 173 .V 734 ]     
+                
+         ]
+         
+         .IDSELECTSOUND "S_FXUI_CHECKBUTTON"            
+         .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"        
+       
+         .TOOL_TIP 
+         [ 
+          .TEXT LTEXT_UI_GESTIONMAPA_TT_GLORIA
+          .FONT "Fonts/Default.fnt" X 32 .Y 32 .COLOR [ .R 255 .G 255 .B 255 ]   
+          .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+          .SHOW_TIME 0
+         ]           
+        ]
+       ]          
+       
+       #-----------------------------------------------------------------------
+       # Boton de Quest Realizados
+       [
+        .ID 'BEQR'
+        .PARAMS
+        [
+         .COMPORTAMIENTO FIJO
+         .FONDO
+         [
+           .X 10 .Y 339  .PRIORITY 10 .ALPHA TRUE .SX 42 .SY 41
+           .SOLTADO       [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 216 .V 608 ] 
+           .SELECCIONADO  [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 216 .V 650 ] 
+           .PULSADO       [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 216 .V 692 ]     
+           .DESHABILITADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 216 .V 734 ]     
+                
+         ]
+         
+         .IDSELECTSOUND "S_FXUI_CHECKBUTTON"            
+         .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"        
+       
+         .TOOL_TIP 
+         [ 
+          .TEXT LTEXT_UI_GESTIONMAPA_TT_QUEST
+          .FONT "Fonts/Default.fnt" X 32 .Y 32 .COLOR [ .R 255 .G 255 .B 255 ]   
+          .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+          .SHOW_TIME 0
+         ]           
+        ]
+       ]          
+        
+       #-----------------------------------------------------------------------
+       # Boton de Nivel Comercial
+       [
+        .ID 'BENC'
+        .PARAMS
+        [
+         .COMPORTAMIENTO FIJO
+         .FONDO
+         [
+           .X 10 .Y 384  .PRIORITY 10 .ALPHA TRUE .SX 42 .SY 41
+           .SOLTADO       [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 259 .V 608 ] 
+           .SELECCIONADO  [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 259 .V 650 ] 
+           .PULSADO       [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 259 .V 692 ]     
+           .DESHABILITADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 259 .V 734 ]     
+                
+         ]
+         
+         .IDSELECTSOUND "S_FXUI_CHECKBUTTON"            
+         .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"        
+       
+         .TOOL_TIP 
+         [ 
+          .TEXT LTEXT_UI_GESTIONMAPA_TT_COMERCIAL
+          .FONT "Fonts/Default.fnt" X 32 .Y 32 .COLOR [ .R 255 .G 255 .B 255 ]   
+          .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+          .SHOW_TIME 0
+         ]           
+        ]
+       ]          
+         
+       #-----------------------------------------------------------------------
+       # Boton de Victorias Derrotas
+       [
+        .ID 'BEVD'
+        .PARAMS
+        [
+         .COMPORTAMIENTO FIJO
+         .FONDO
+         [
+           .X 10 .Y 429  .PRIORITY 10 .ALPHA TRUE .SX 42 .SY 41
+           .SOLTADO       [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 302 .V 608 ] 
+           .SELECCIONADO  [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 302 .V 650 ] 
+           .PULSADO       [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 302 .V 692 ]     
+           .DESHABILITADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 302 .V 734 ]     
+                
+         ]
+         
+         .IDSELECTSOUND "S_FXUI_CHECKBUTTON"            
+         .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"        
+       
+         .TOOL_TIP 
+         [ 
+          .TEXT LTEXT_UI_GESTIONMAPA_TT_VICTORIASDERROTAS
+          .FONT "Fonts/Default.fnt" X 32 .Y 32 .COLOR [ .R 255 .G 255 .B 255 ]   
+          .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+          .SHOW_TIME 0
+         ]           
+        ]
+       ]          
+          
+       #-----------------------------------------------------------------------
+       # Boton de Presencia Militar
+       [
+        .ID 'BEMI'
+        .PARAMS
+        [
+         .COMPORTAMIENTO FIJO
+         .FONDO
+         [
+           .X 10 .Y 474  .PRIORITY 10 .ALPHA TRUE .SX 42 .SY 41
+           .SOLTADO       [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 345 .V 608 ] 
+           .SELECCIONADO  [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 345 .V 650 ] 
+           .PULSADO       [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 345 .V 692 ]     
+           .DESHABILITADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 345 .V 734 ]     
+                
+         ]
+         
+         .IDSELECTSOUND "S_FXUI_CHECKBUTTON"            
+         .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"        
+       
+         .TOOL_TIP 
+         [ 
+          .TEXT LTEXT_UI_GESTIONMAPA_TT_PRESENCIA
+          .FONT "Fonts/Default.fnt" X 32 .Y 32 .COLOR [ .R 255 .G 255 .B 255 ]   
+          .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+          .SHOW_TIME 0
+         ]           
+        ]
+       ]          
+          
+       #-----------------------------------------------------------------------
+       # Boton de Desarrollo Cientifico
+       [
+        .ID 'BEDC'
+        .PARAMS
+        [
+         .COMPORTAMIENTO FIJO
+         .FONDO
+         [
+           .X 10 .Y 519  .PRIORITY 10 .ALPHA TRUE .SX 42 .SY 41
+           .SOLTADO       [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 388 .V 608 ] 
+           .SELECCIONADO  [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 388 .V 650 ] 
+           .PULSADO       [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 388 .V 692 ]     
+           .DESHABILITADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 388 .V 734 ]     
+                
+         ]
+         
+         .IDSELECTSOUND "S_FXUI_CHECKBUTTON"            
+         .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"        
+       
+         .TOOL_TIP 
+         [ 
+          .TEXT LTEXT_UI_GESTIONMAPA_TT_INVESTIGACIONES
+          .FONT "Fonts/Default.fnt" X 32 .Y 32 .COLOR [ .R 255 .G 255 .B 255 ]   
+          .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+          .SHOW_TIME 0
+         ]           
+        ]
+       ]                          
+          
+       #-----------------------------------------------------------------------
+       # Boton de Nivel Desarrollo
+       [
+        .ID 'BEND'
+        .PARAMS
+        [
+         .COMPORTAMIENTO FIJO
+         .FONDO
+         [
+           .X 10 .Y 564  .PRIORITY 10 .ALPHA TRUE .SX 42 .SY 41
+           .SOLTADO       [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 431 .V 608 ] 
+           .SELECCIONADO  [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 431 .V 650 ] 
+           .PULSADO       [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 431 .V 692 ]     
+           .DESHABILITADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 431 .V 734 ]     
+                
+         ]
+         
+         .IDSELECTSOUND "S_FXUI_CHECKBUTTON"            
+         .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"        
+       
+         .TOOL_TIP 
+         [ 
+          .TEXT LTEXT_UI_GESTIONMAPA_TT_DESARROLLO
+          .FONT "Fonts/Default.fnt" X 32 .Y 32 .COLOR [ .R 255 .G 255 .B 255 ]   
+          .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+          .SHOW_TIME 0
+         ]           
+        ]
+       ] 
+       
+       #-------------------------------------------------------------------------------------------
+       # Bloque Derecho                         
+       #-------------------------------------------------------------------------------------------
+
+       #-----------------------------------------------------------------------
+       # Boton de Estado Relaciones
+       [
+        .ID 'BEER'
+        .PARAMS
+        [
+         .COMPORTAMIENTO FIJO
+         .FONDO
+         [
+           .X 977 .Y 114  .PRIORITY 10 .ALPHA TRUE .SX 42 .SY 41
+           .SOLTADO       [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 474 .V 608 ] 
+           .SELECCIONADO  [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 474 .V 650 ] 
+           .PULSADO       [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 474 .V 692 ]     
+           .DESHABILITADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 474 .V 734 ]     
+                
+         ]
+         
+         .IDSELECTSOUND "S_FXUI_CHECKBUTTON"            
+         .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"        
+       
+         .TOOL_TIP 
+         [ 
+          .TEXT LTEXT_UI_GESTIONMAPA_TT_ESTADO_RELACIONES
+          .FONT "Fonts/Default.fnt" X 32 .Y 32 .COLOR [ .R 255 .G 255 .B 255 ]   
+          .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+          .SHOW_TIME 0
+         ]           
+        ]
+       ] 
+
+       #-----------------------------------------------------------------------
+       # Boton de Pactos Proteccion Mutua
+       [
+        .ID 'BPPM'
+        .PARAMS
+        [
+         .COMPORTAMIENTO FIJO
+         .FONDO
+         [
+           .X 977 .Y 159  .PRIORITY 10 .ALPHA TRUE .SX 42 .SY 41
+           .SOLTADO       [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 517 .V 608 ] 
+           .SELECCIONADO  [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 517 .V 650 ] 
+           .PULSADO       [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 517 .V 692 ]     
+           .DESHABILITADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 517 .V 734 ]     
+                
+         ]
+         
+         .IDSELECTSOUND "S_FXUI_CHECKBUTTON"            
+         .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"        
+       
+         .TOOL_TIP 
+         [ 
+          .TEXT LTEXT_UI_GESTIONMAPA_TT_PROTECCION_MUTUA
+          .FONT "Fonts/Default.fnt" X 32 .Y 32 .COLOR [ .R 255 .G 255 .B 255 ]   
+          .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+          .SHOW_TIME 0
+         ]           
+        ]
+       ] 
+
+       #-----------------------------------------------------------------------
+       # Boton de Permisos de Paso
+       [
+        .ID 'BEPP'
+        .PARAMS
+        [
+         .COMPORTAMIENTO FIJO
+         .FONDO
+         [
+           .X 977 .Y 204  .PRIORITY 10 .ALPHA TRUE .SX 42 .SY 41
+           .SOLTADO       [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 560 .V 608 ] 
+           .SELECCIONADO  [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 560 .V 650 ] 
+           .PULSADO       [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 560 .V 692 ]     
+           .DESHABILITADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 560 .V 734 ]     
+                
+         ]
+         
+         .IDSELECTSOUND "S_FXUI_CHECKBUTTON"            
+         .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"        
+       
+         .TOOL_TIP 
+         [ 
+          .TEXT LTEXT_UI_GESTIONMAPA_TT_PERMISOS_PASO
+          .FONT "Fonts/Default.fnt" X 32 .Y 32 .COLOR [ .R 255 .G 255 .B 255 ]   
+          .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+          .SHOW_TIME 0
+         ]           
+        ]
+       ] 
+
+       #-----------------------------------------------------------------------
+       # Boton de Sistemas Politicos
+       [
+        .ID 'BESP'
+        .PARAMS
+        [
+         .COMPORTAMIENTO FIJO
+         .FONDO
+         [
+           .X 977 .Y 249  .PRIORITY 10 .ALPHA TRUE .SX 42 .SY 41
+           .SOLTADO       [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 603 .V 608 ] 
+           .SELECCIONADO  [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 603 .V 650 ] 
+           .PULSADO       [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 603 .V 692 ]     
+           .DESHABILITADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 603 .V 734 ]     
+                
+         ]
+         
+         .IDSELECTSOUND "S_FXUI_CHECKBUTTON"            
+         .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"        
+       
+         .TOOL_TIP 
+         [ 
+          .TEXT LTEXT_UI_GESTIONMAPA_TT_SISTEMAS_POLITICOS
+          .FONT "Fonts/Default.fnt" X 32 .Y 32 .COLOR [ .R 255 .G 255 .B 255 ]   
+          .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+          .SHOW_TIME 0
+         ]           
+        ]
+       ]
+              
+      ] # ~ CHECKBOXES    
+      #////////////////////////////////////////////////////////////////////////////////////////////
+    
+    ]
+   ]
+ ] # ~ CONTROLES

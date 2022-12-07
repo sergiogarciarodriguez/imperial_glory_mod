@@ -1,0 +1,206 @@
+
+#------------------------------------------------ GRAN BRETANYA ----------------------------------- 
+[
+  .PAIS "GRAN_BRETANYA"
+  .CONFIGS
+  [
+    #-------------------------------------------- GRAN BRETANYA LOW -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FUSILERO"   .EXP 3 ]
+        [ .TIPO "TIRADOR"    .EXP 3 ]
+        [ .TIPO "CAB_LANCERO" .EXP 3 ] 
+        [ .TIPO "OBUS"       .EXP 3 ] 
+      ]
+    ]
+    
+    #-------------------------------------------- GRAN BRETANYA MID -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FUSILERO"   .EXP 3 ]
+        [ .TIPO "TIRADOR"    .EXP 3 ]
+        [ .TIPO "CAB_LANCERO" .EXP 3 ] 
+        [ .TIPO "OBUS"       .EXP 3 ] 
+      ]
+    ]
+
+    #-------------------------------------------- GRAN BRETANYA HIGH ------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FUSILERO"   .EXP 3 ]
+        [ .TIPO "TIRADOR"    .EXP 3 ]
+        [ .TIPO "CAB_LANCERO" .EXP 3 ] 
+        [ .TIPO "OBUS"       .EXP 3 ] 
+      ]
+    ]
+    
+  ] # CONFIGS
+] 
+
+#------------------------------------------------ FRANCIA ----------------------------------- 
+[
+  .PAIS "FRANCIA"
+  .CONFIGS
+  [
+    #-------------------------------------------- FRANCIA LOW -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FUSILERO"   .EXP 3 ]
+        [ .TIPO "TIRADOR"    .EXP 3 ]
+        [ .TIPO "CAB_LANCERO" .EXP 3 ] 
+        [ .TIPO "OBUS"       .EXP 3 ] 
+      ]
+    ]
+    
+    #-------------------------------------------- FRANCIA MID -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FUSILERO"   .EXP 3 ]
+        [ .TIPO "TIRADOR"    .EXP 3 ]
+        [ .TIPO "CAB_LANCERO" .EXP 3 ] 
+        [ .TIPO "OBUS"       .EXP 3 ] 
+      ]
+    ]
+
+    #-------------------------------------------- FRANCIA HIGH ------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FUSILERO"   .EXP 3 ]
+        [ .TIPO "TIRADOR"    .EXP 3 ]
+        [ .TIPO "CAB_LANCERO" .EXP 3 ] 
+        [ .TIPO "OBUS"       .EXP 3 ]  
+      ]
+    ]
+    
+  ] # CONFIGS
+]
+
+#------------------------------------------------ AUSTRIA ----------------------------------- 
+[
+  .PAIS "AUSTRIA"
+  .CONFIGS
+  [
+    #-------------------------------------------- AUSTRIA LOW -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FUSILERO"      .EXP 2 ]
+        [ .TIPO "CAB_LANCERO"   .EXP 2 ]
+      ]
+    ]
+    
+    #-------------------------------------------- AUSTRIA MID -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FUSILERO"      .EXP 2 ]
+        [ .TIPO "CAB_LANCERO"   .EXP 2 ]
+      ]
+    ]
+
+    #-------------------------------------------- AUSTRIA HIGH ------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FUSILERO"      .EXP 2 ]
+        [ .TIPO "CAB_LANCERO"   .EXP 2 ]
+      ]
+    ]
+    
+  ] # CONFIGS
+]
+
+#------------------------------------------------ RUSIA ----------------------------------- 
+[
+  .PAIS "RUSIA"
+  .CONFIGS
+  [
+    #-------------------------------------------- RUSIA LOW -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FUSILERO"   .EXP 3 ]
+        [ .TIPO "TIRADOR"    .EXP 3 ]
+        [ .TIPO "CAB_LANCERO" .EXP 3 ] 
+        [ .TIPO "OBUS"       .EXP 3 ]  
+        [ .TIPO "MILICIA"    .EXP 3 ]  
+      ]
+    ]
+    
+    #-------------------------------------------- RUSIA MID -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FUSILERO"   .EXP 3 ]
+        [ .TIPO "TIRADOR"    .EXP 3 ]
+        [ .TIPO "CAB_LANCERO" .EXP 3 ] 
+        [ .TIPO "OBUS"       .EXP 3 ]  
+        [ .TIPO "MILICIA"    .EXP 3 ]  
+      ]
+    ]
+
+    #-------------------------------------------- RUSIA HIGH ------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FUSILERO"   .EXP 3 ]
+        [ .TIPO "TIRADOR"    .EXP 3 ]
+        [ .TIPO "CAB_LANCERO" .EXP 3 ] 
+        [ .TIPO "OBUS"       .EXP 3 ]  
+        [ .TIPO "MILICIA"    .EXP 3 ]  
+      ]
+    ]
+    
+  ] # CONFIGS
+]
+
+#------------------------------------------------ PRUSIA ----------------------------------- 
+[
+  .PAIS "PRUSIA"
+  .CONFIGS
+  [
+    #-------------------------------------------- PRUSIA LOW -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FUSILERO"   .EXP 3 ]
+        [ .TIPO "TIRADOR"    .EXP 3 ]
+        [ .TIPO "CAB_LANCERO" .EXP 3 ] 
+        [ .TIPO "OBUS"       .EXP 3 ]  
+      ]
+
+    ]
+    
+    #-------------------------------------------- PRUSIA MID -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FUSILERO"   .EXP 3 ]
+        [ .TIPO "TIRADOR"    .EXP 3 ]
+        [ .TIPO "CAB_LANCERO" .EXP 3 ] 
+        [ .TIPO "OBUS"       .EXP 3 ]  
+      ]
+
+    ]
+
+    #-------------------------------------------- PRUSIA HIGH ------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FUSILERO"   .EXP 3 ]
+        [ .TIPO "TIRADOR"    .EXP 3 ]
+        [ .TIPO "CAB_LANCERO" .EXP 3 ] 
+        [ .TIPO "OBUS"       .EXP 3 ]  
+      ]
+
+    ]
+    
+  ] # CONFIGS
+]
+

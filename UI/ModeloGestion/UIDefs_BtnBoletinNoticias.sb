@@ -1,0 +1,34 @@
+# Boton de Boletin de Noticias.
+
+.COMPORTAMIENTO SIMPLE
+
+.FONDO
+[
+ .X 894 .Y 626 .SX 54 .SY 26 .ALPHA TRUE .PRIORITY 10
+ 
+ .SOLTADO      [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 750 .V 439 ] 
+ .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 807 .V 439 ]    
+ .PULSADO      [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 864 .V 439 ]    
+ .INTERMITENTE [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 807 .V 439 ]    
+]    
+
+# ELIMINADO DE AQUI Y PASADO AL CODIGO DE INICIO DE VENTANA
+# .IDSELECTSOUND "S_FXUI_CLICKBUTTON"
+.IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"
+
+# milisegundos que tarda el botón en alternar la intermitencia
+.BLINK_TIMER 600.0
+
+.TOOL_TIP 
+[ 
+ .TEXT LTEXT_UI_BATALLA_TT_PCMAPA_BTNNOTICIAS
+ .X 32 .Y 32
+   
+ 
+ .STYLE DEFAULT_TOOLTIP
+]
+
+.KEY
+[
+  .TECLA KEY_F5 .EVENTOS [ KEY_DOWN KEY_UP ]          
+]  

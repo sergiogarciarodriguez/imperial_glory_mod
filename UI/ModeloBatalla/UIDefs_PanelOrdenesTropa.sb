@@ -1,0 +1,87 @@
+########################################################################################################
+# Params asociados al panel con las ordenes que se pueden dar a la tropa actualmente seleccionada
+########################################################################################################
+
+
+.ACCIONES
+[
+  [ .TIPO UIC_BITMAP .ID 'FOND'
+    .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .X 0 .Y 589 .SX 1024 .SY 179 .U 0 .V 845 .PRIORITY 3 .ALPHA TRUE ]
+  ]
+  
+  [ .TIPO UIC_ZONASENSIBLE .ID 'ZBCT' .PARAMS [ .RECT [ 787 605 1023 767 ] .EVENTOS [ MOUSE ] ] ]              
+          
+    
+  #Botones Ataque
+  [ .TIPO UIC_BOTONTEXTO .ID 'BADI' .PARAMS [ .STYLE BOTON_ATAQUE_A_DISTANCIA 	.FONDO [ .X 949 .Y 654 .PRIORITY 10 ]  ] ]                          
+  [ .TIPO UIC_BOTONTEXTO .ID 'BACC' .PARAMS [ .STYLE BOTON_ATAQUE_CUERPO_CUERPO .FONDO [ .X 985 .Y 654 .PRIORITY 10]  ] ]                          
+  
+  #Acciones
+  [ .TIPO UIC_BOTONTEXTO .ID 'BPAR' .PARAMS [ .STYLE BOTON_PARAR 	.FONDO [ .X 949 .Y 690 .PRIORITY 10 ] ] ]                          
+  [ .TIPO UIC_BOTONTEXTO .ID 'BIRA' .PARAMS [ .STYLE BOTON_IR_A 	.FONDO [ .X 985 .Y 690 .PRIORITY 10 ] ] ]
+  [ .TIPO UIC_BOTONTEXTO .ID 'DESA' .PARAMS [ .STYLE BOTON_DESAPOSTAR 	.FONDO [ .X 949 .Y 726 .PRIORITY 10 ] ] ]
+  
+  #Menu Sup.
+
+    # Modos
+    [ .TIPO UIC_BOTONTEXTO .ID 'BHPO' .PARAMS [ .STYLE BOTON_HOLD_POSITION 	.FONDO [ .X 809 .Y 672 .PRIORITY 10 ] ] ]  
+                              
+    [ .TIPO UIC_BOTONTEXTO .ID 'BMDF' .PARAMS [ .STYLE BOTON_MODO_DEFENSIVO 	.FONDO [ .X 876 .Y 674 .PRIORITY 10 ] ] ]                              
+    [ .TIPO UIC_BOTONTEXTO .ID 'BMAG' .PARAMS [ .STYLE BOTON_MODO_AGRESIVO 	.FONDO [ .X 876 .Y 674 .PRIORITY 10 ] ] ]     
+                             
+    [ .TIPO UIC_BOTONTEXTO .ID 'BTGR' .PARAMS [ .STYLE BOTON_CORRER 		.FONDO [ .X 816 .Y 674 .PRIORITY 10 ] ] ]                              
+    [ .TIPO UIC_BOTONTEXTO .ID 'BTGW' .PARAMS [ .STYLE BOTON_ANDAR		.FONDO [ .X 816 .Y 674 .PRIORITY 10 ] ] ]  
+       
+    [ .TIPO UIC_BOTONTEXTO .ID 'ANCA' .PARAMS [ .STYLE BOTON_ANCLAR 		.FONDO [ .X 983 .Y 724 .PRIORITY 10 ] ] ]                             
+ 
+  
+  #Botón intermitente de refuerzos
+  [ .TIPO UIC_BOTONINTERMITENTE .ID 'REFU' 
+    .PARAMS 
+    [ 
+      .COMPORTAMIENTO SIMPLE 
+      .BLINK_TIMER 550.0
+      .FONDO 
+      [ 
+        .X 936 .Y 604 .PRIORITY 10 
+        .INTERMITENTE  [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 259 .V 172 ]       
+      ]  
+      .ALPHA TRUE
+      .STYLE BOTON_REFUERZOS 
+    ] 
+  ]
+  
+  
+]
+
+.TACTICAS
+[
+  .TROPAS
+  [
+    [ .TIPO UIC_BOTONTEXTO .ID 'TAGR' .PARAMS [ .STYLE BOTON_TACTICA .FONDO [ .X 806 .Y 639 .PRIORITY 10 ] .TEXT LTEXT_UI_BATALLA_TACTICA  ] ]
+
+    # Botones Formacion
+    [ .TIPO UIC_BOTONTEXTO .ID 'BFCO' .PARAMS [ .STYLE BOTON_FORMACION_COLUMNA 	    .FONDO [ .X 812 .Y 721 .PRIORITY 10 ]  ] .ALPHA TRUE ]                          
+    [ .TIPO UIC_BOTONTEXTO .ID 'BFLS' .PARAMS [ .STYLE BOTON_FORMACION_LINEA_SIMPLE .FONDO [ .X 854 .Y 721 .PRIORITY 10 ]  ] .ALPHA TRUE ]                          
+    [ .TIPO UIC_BOTONTEXTO .ID 'BFLD' .PARAMS [ .STYLE BOTON_FORMACION_LINEA_DOBLE  .FONDO [ .X 854 .Y 721 .PRIORITY 10 ]  ] .ALPHA TRUE ]                          
+    [ .TIPO UIC_BOTONTEXTO .ID 'BFLT' .PARAMS [ .STYLE BOTON_FORMACION_LINEA_TRIPLE .FONDO [ .X 854 .Y 721 .PRIORITY 10 ]  ] .ALPHA TRUE ]                          
+    [ .TIPO UIC_BOTONTEXTO .ID 'BFCD' .PARAMS [ .STYLE BOTON_FORMACION_CUADRO 	    .FONDO [ .X 896 .Y 721 .PRIORITY 10 ]  ] .ALPHA TRUE ]                          
+    
+
+  ]
+  
+  .GRUPOS
+  [
+    [ .TIPO UIC_BOTONTEXTO .ID 'TATR' .PARAMS [ .COMPORTAMIENTO SIMPLE .STYLE BOTON_TACTICA .FONDO [ .X 806 .Y 639 .PRIORITY 10 ] .TEXT LTEXT_UI_BATALLA_TACTICA ] ]
+    [ .TIPO UIC_BITMAP .ID 'BGRU' .PARAMS [.FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .X 803 .Y 673 .SX 140 .SY 95 .U 422 .V 94 .ALPHA TRUE .PRIORITY 7] ]
+
+    # Formaciones de grupos
+    [ .TIPO UIC_BOTONTEXTO .ID 'GIAC' .PARAMS [ .COMPORTAMIENTO SIMPLE .STYLE BOTON_GRUPO_IAC .FONDO [ .X 812 .Y 681 .PRIORITY 9 ] ] ]
+    [ .TIPO UIC_BOTONTEXTO .ID 'GCIA' .PARAMS [ .COMPORTAMIENTO SIMPLE .STYLE BOTON_GRUPO_CIA .FONDO [ .X 854 .Y 681 .PRIORITY 9 ] ] ]
+    [ .TIPO UIC_BOTONTEXTO .ID 'GACI' .PARAMS [ .COMPORTAMIENTO SIMPLE .STYLE BOTON_GRUPO_ACI .FONDO [ .X 896 .Y 681 .PRIORITY 9 ] ] ]  
+    [ .TIPO UIC_BOTONTEXTO .ID 'GTGA' .PARAMS [ .COMPORTAMIENTO SIMPLE .STYLE BOTON_GRUPO_TGA .FONDO [ .X 812 .Y 721 .PRIORITY 9 ] ] ]  
+    [ .TIPO UIC_BOTONTEXTO .ID 'GTGB' .PARAMS [ .COMPORTAMIENTO SIMPLE .STYLE BOTON_GRUPO_TGB .FONDO [ .X 854 .Y 721 .PRIORITY 9 ] ] ]  
+    [ .TIPO UIC_BOTONTEXTO .ID 'GTGC' .PARAMS [ .COMPORTAMIENTO SIMPLE .STYLE BOTON_GRUPO_TGC .FONDO [ .X 896 .Y 721 .PRIORITY 9 ] ] ]  
+  ]
+  
+]

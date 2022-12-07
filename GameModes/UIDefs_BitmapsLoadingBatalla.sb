@@ -1,0 +1,7 @@
+.LOADING1 [ .FILE "Game/UI/Comun/Loading/Loading1.tga" .SX 1024 .SY 768 .ALPHA TRUE .PRIORITY 253 ]
+.LOADING2 [ .FILE "Game/UI/Comun/Loading/Loading2.tga" .SX 1024 .SY 768 .ALPHA TRUE .PRIORITY 253 ]
+.LOADING3 [ .FILE "Game/UI/Comun/Loading/Loading3.tga" .SX 1024 .SY 768 .ALPHA TRUE .PRIORITY 253 ]
+.LOADING4 [ .FILE "Game/UI/Comun/Loading/Loading4.tga" .SX 1024 .SY 768 .ALPHA TRUE .PRIORITY 253 ]
+.LOADING5 [ .FILE "Game/UI/Comun/Loading/Loading5.tga" .SX 1024 .SY 768 .ALPHA TRUE .PRIORITY 253 ]
+.LOADING6 [ .FILE "Game/UI/Comun/Loading/Loading6.tga" .SX 1024 .SY 768 .ALPHA TRUE .PRIORITY 253 ]
+.LOADING7 [ .FILE "Game/UI/Comun/Loading/Loading7.tga" .SX 1024 .SY 768 .ALPHA TRUE .PRIORITY 253 ]

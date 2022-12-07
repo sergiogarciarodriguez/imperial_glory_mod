@@ -1,0 +1,53 @@
+#############################################################################################
+# Spin de la ventana de diplomacia
+#############################################################################################
+
+.BTN_UP
+[ 
+   .COMPORTAMIENTO SIMPLE
+   .FONDO
+   [
+     .X 120 .Y 0 .SX 11 .SY 11
+    .ALPHA TRUE
+    .SOLTADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/MenuDiplomacia.tga" .U 1 .V 848 ]
+    .PULSADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/MenuDiplomacia.tga" .U 16 .V 848 ]
+    .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/MenuDiplomacia.tga" .U 46 .V 848 ]
+    .DISABLE [ .FILE "Game/UI/ModeloGestion/Diplomacia/MenuDiplomacia.tga" .U 31 .V 848 ]
+    .PRIORITY 40
+   ]
+   
+   .IDSELECTSOUND "S_FXDIPLOMACIA_RECURSOS"
+   .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"
+]
+
+.BTN_DOWN
+[
+   .COMPORTAMIENTO SIMPLE
+   .FONDO
+   [
+    .X 120 .Y 13 .SX 11 .SY 11
+    .ALPHA TRUE
+    .SOLTADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/MenuDiplomacia.tga" .U 1 .V 863 ]
+    .PULSADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/MenuDiplomacia.tga" .U 16 .V 863 ]
+    .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/MenuDiplomacia.tga" .U 46 .V 863 ]
+    .DISABLE [ .FILE "Game/UI/ModeloGestion/Diplomacia/MenuDiplomacia.tga" .U 31 .V 863 ]
+    .PRIORITY 40
+   ]
+   
+   .IDSELECTSOUND "S_FXDIPLOMACIA_RECURSOS"
+   .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"
+]
+
+.EDIT
+[
+   .X 0 .Y 0 .SX 120 .SY 23
+   .ALPHA TRUE
+   .SIMPLE FALSE
+   .FONT "Fonts/Times12.fnt"
+   .FONDO [ .FILE "Game/UI/ModeloGestion/Diplomacia/MenuDiplomacia.tga" .U 0 .V 0 .PRIORITY 100 .ALPHA TRUE]                    
+   .PRIORITY 2
+   .MAX 5
+]
+
+# La actualizacion de los valores tiene que ser inmediata (en lugar de esperar al intro o a la perdida de foco)
+.DINAMIC_UPDATE TRUE

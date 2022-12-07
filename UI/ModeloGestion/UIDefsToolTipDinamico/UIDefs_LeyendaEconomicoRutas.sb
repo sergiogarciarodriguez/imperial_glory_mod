@@ -1,0 +1,132 @@
+#
+# LEYENDA DE LAS RUTAS EN EL MODO ECONOMICO
+#
+#
+
+
+#TITULO (NOMBRE DE LA RUTA)
+[
+  .TIPO UIC_WRAPTEXT .ID 'WTTI'
+  .PARAMS
+  [     
+    .X 0 .Y 10 .SX 320 .SY 50
+    .ALIGN CENTER
+    .TEXT [ .FONT "Fonts/Times9.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+  ]
+]
+
+#PAIS AL QUE PERTENECE LA RUTA
+[
+  .TIPO UIC_WRAPTEXT .ID 'WTPA'
+  .PARAMS
+  [     
+    .X 0 .Y 30 .SX 320 .SY 50
+    .ALIGN CENTER
+    .TEXT [ .FONT "Fonts/Times9.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+  ]
+]
+
+#TEXTO NIVEL 1
+[
+  .TIPO UIC_WRAPTEXT .ID 'WTN1'
+  .PARAMS
+  [     
+    .X 10 .Y 50 .SX 100 .SY 40
+    .ALIGN CENTER
+    .TEXT [ .FONT "Fonts/Times9.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+    .MSG LTEXT_UI_NIVEL1
+  ]
+]
+
+#TEXTO NIVEL 2
+[
+  .TIPO UIC_WRAPTEXT .ID 'WTN2'
+  .PARAMS
+  [     
+    .X 110 .Y 50 .SX 100 .SY 40
+    .ALIGN CENTER
+    .TEXT [ .FONT "Fonts/Times9.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+    .MSG LTEXT_UI_NIVEL2
+  ]
+]
+
+#TEXTO NIVEL 3
+[
+  .TIPO UIC_WRAPTEXT .ID 'WTN3'
+  .PARAMS
+  [     
+    .X 200 .Y 50 .SX 100 .SY 40
+    .ALIGN CENTER
+    .TEXT [ .FONT "Fonts/Times9.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+    .MSG LTEXT_UI_NIVEL3
+  ]
+]
+
+
+
+#ORO NIVEL 1
+[
+  .TIPO UIC_WRAPTEXT .ID 'WTO1'
+  .PARAMS
+  [     
+    .X 10 .Y 70 .SX 100 .SY 40
+    .ALIGN CENTER
+    .TEXT [ .FONT "Fonts/Times9.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+  ]
+]
+
+#ORO NIVEL 2
+[
+  .TIPO UIC_WRAPTEXT .ID 'WTO2'
+  .PARAMS
+  [     
+    .X 110 .Y 70 .SX 100 .SY 40
+    .ALIGN CENTER
+    .TEXT [ .FONT "Fonts/Times9.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+  ]
+]
+
+#ORO NIVEL 3
+[
+  .TIPO UIC_WRAPTEXT .ID 'WTO3'
+  .PARAMS
+  [     
+    .X 200 .Y 70 .SX 100 .SY 40
+    .ALIGN CENTER
+    .TEXT [ .FONT "Fonts/Times9.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+  ]
+]
+
+
+#ESTADO DE LA RUTA
+[
+  .TIPO UIC_WRAPTEXT .ID 'WTES'
+  .PARAMS
+  [     
+    .X 20 .Y 90 .SX 280 .SY 40
+    .ALIGN LEFT
+    .TEXT [ .FONT "Fonts/Times9.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+  ]
+]
+
+#PUESTO FRONTERIZO / IMPUESTOS
+[
+  .TIPO UIC_WRAPTEXT .ID 'WTPF'
+  .PARAMS
+  [     
+    .X 20 .Y 105 .SX 280 .SY 40
+    .ALIGN LEFT
+    .TEXT [ .FONT "Fonts/Times9.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+  ]
+]
+
+#CONTRABANDO
+[
+  .TIPO UIC_WRAPTEXT .ID 'WTCO'
+  .PARAMS
+  [     
+    .X 20 .Y 120 .SX 280 .SY 40
+    .ALIGN LEFT
+    .TEXT [ .FONT "Fonts/Times9.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+  ]
+]

@@ -1,0 +1,872 @@
+###############################################################################################################
+# Escenarios 
+# Mantiene el pool de las imagenes asociadas a los escenarios para el menu de partida rapida
+###############################################################################################################
+
+# ----- batallas historicas
+
+[
+ .KEY ESCENARIO_BAHIACADIZ_HISTORICA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida04.tga" .X 652 .Y 235 .U 628 .V 120 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_CASTILLA_HISTORICA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida04.tga" .X 652 .Y 235 .U 315   .V 1 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_BATAVIA_HISTORICA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida04.tga" .X 652 .Y 235 .U 1   .V 120 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_PRUSIAORIENTAL_HISTORICA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida04.tga" .X 652 .Y 235 .U 1   .V 1 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_BOHEMIA_HISTORICA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida04.tga" .X 652 .Y 235 .U 315   .V 120 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_EGIPTO_HISTORICA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida04.tga" .X 652 .Y 235 .U 628   .V 1 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+# -----
+
+[
+ .KEY ESCENARIO_INGLATERRA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida01.tga" .X 652 .Y 235 .U 1   .V 1 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_ESCOCIA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida01.tga" .X 652 .Y 235 .U 314 .V 1 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_IRLANDA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida01.tga" .X 652 .Y 235 .U 627 .V 1 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_GALES
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida01.tga" .X 652 .Y 235 .U 1   .V 120 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_CHAMPAGNE
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida01.tga" .X 652 .Y 235 .U 314 .V 120 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_BURDEOS
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida01.tga" .X 652 .Y 235 .U 627 .V 120 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_TOULOUSE
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida01.tga" .X 652 .Y 235 .U 1   .V 239 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_I_FRANCIA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida01.tga" .X 652 .Y 235 .U 314 .V 239 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_BRETANYA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida01.tga" .X 652 .Y 235 .U 627 .V 239 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_BRANDENBURGO
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida01.tga" .X 652 .Y 235 .U 1   .V 358 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_SILESIA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida01.tga" .X 652 .Y 235 .U 314 .V 358 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_POLONIA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida01.tga" .X 652 .Y 235 .U 627 .V 358 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_AUSTRIA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida01.tga" .X 652 .Y 235 .U 1   .V 477 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_BOHEMIA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida01.tga" .X 652 .Y 235 .U 314 .V 477 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_GALICIA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida01.tga" .X 652 .Y 235 .U 627 .V 477 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_HUNGRIA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida01.tga" .X 652 .Y 235 .U 1   .V 596 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_MINSK
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida01.tga" .X 652 .Y 235 .U 314 .V 596 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_MOSCU
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida01.tga" .X 652 .Y 235 .U 627 .V 596 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_KURKS
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida01.tga" .X 652 .Y 235 .U 1   .V 715 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_LETONIA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida01.tga" .X 652 .Y 235 .U 314 .V 715 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_KIEV
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida01.tga" .X 652 .Y 235 .U 627 .V 715 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_CASTILLA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida01.tga" .X 652 .Y 235 .U 1   .V 834 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_ARAGON
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida01.tga" .X 652 .Y 235 .U 314 .V 834 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_PRUSIAORIENTAL
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida01.tga" .X 652 .Y 235 .U 627 .V 834 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_CATALUNYA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida02.tga" .X 652 .Y 235 .U 1   .V 1 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_ANDALUCIA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida02.tga" .X 652 .Y 235 .U 314 .V 1 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_LOUSIANA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida02.tga" .X 652 .Y 235 .U 627 .V 1 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_ALENTEJO
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida02.tga" .X 652 .Y 235 .U 1   .V 120 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_ALGARBE
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida02.tga" .X 652 .Y 235 .U 314 .V 120 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_ANATOLIA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida02.tga" .X 652 .Y 235 .U 627 .V 120 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_REGIONBALCANICA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida02.tga" .X 652 .Y 235 .U 1   .V 239 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_GRECIA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida02.tga" .X 652 .Y 235 .U 314 .V 239 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_DINAMARCA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida02.tga" .X 652 .Y 235 .U 627 .V 239 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_NORUEGA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida02.tga" .X 652 .Y 235 .U 1   .V 358 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_NAPOLES
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida02.tga" .X 652 .Y 235 .U 314 .V 358 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_SUECIA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida02.tga" .X 652 .Y 235 .U 627 .V 358 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_FINLANDIA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida02.tga" .X 652 .Y 235 .U 1   .V 477 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_LOMBARDIA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida02.tga" .X 652 .Y 235 .U 314 .V 477 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_VENECIA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida02.tga" .X 652 .Y 235 .U 627 .V 477 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_EGIPTO
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida02.tga" .X 652 .Y 235 .U 1   .V 596 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_CIRENAICA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida02.tga" .X 652 .Y 235 .U 314 .V 596 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_PIAMONTE
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida02.tga" .X 652 .Y 235 .U 627 .V 596 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_SICILIA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida02.tga" .X 652 .Y 235 .U 1   .V 715 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_HANNOVER
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida02.tga" .X 652 .Y 235 .U 314 .V 715 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_SAJONIA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida02.tga" .X 652 .Y 235 .U 627 .V 715 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_BATAVIA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida02.tga" .X 652 .Y 235 .U 1   .V 834 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_R_HELVETICA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida02.tga" .X 652 .Y 235 .U 314 .V 834 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_E_PAPALES
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida02.tga" .X 652 .Y 235 .U 627 .V 834 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_MOLDAVIA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida03.tga" .X 652 .Y 235 .U 1   .V 1 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_MARRUECOS
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida03.tga" .X 652 .Y 235 .U 314 .V 1 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_TUNEZ
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida03.tga" .X 652 .Y 235 .U 627 .V 1 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_TRIPOLITANIA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida03.tga" .X 652 .Y 235 .U 1   .V 120 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_MARADRIATICO
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida03.tga" .X 652 .Y 235 .U 314 .V 239 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_LEVANTE
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida03.tga" .X 652 .Y 235 .U 314 .V 239 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_GOLFOSIDRA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida03.tga" .X 652 .Y 235 .U 314 .V 239 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_GOLFOLEON
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida03.tga" .X 652 .Y 235 .U 314 .V 239 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_GIBRALTAR
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida03.tga" .X 652 .Y 235 .U 314 .V 239 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_DESEMBOCADURANILO
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida03.tga" .X 652 .Y 235 .U 314 .V 239 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_COSTASICILIANA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida03.tga" .X 652 .Y 235 .U 314 .V 239 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_COSTAMARROQUI
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida03.tga" .X 652 .Y 235 .U 314 .V 239 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_COSTAAFRICANA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida03.tga" .X 652 .Y 235 .U 314 .V 239 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_MAREGEO
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida03.tga" .X 652 .Y 235 .U 314 .V 239 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_MARJONICO
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida03.tga" .X 652 .Y 235 .U 314 .V 239 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_MARLIGURIA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida03.tga" .X 652 .Y 235 .U 314 .V 239 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_MARTIRRENO
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida03.tga" .X 652 .Y 235 .U 314 .V 239 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_MEDITERRANEOOCCIDENTAL
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida03.tga" .X 652 .Y 235 .U 314 .V 239 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_MEDITERRANEOORIENTAL
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida03.tga" .X 652 .Y 235 .U 314 .V 239 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_GOLFOVIZCAYA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida03.tga" .X 652 .Y 235 .U 1   .V 239 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_CANTABRICO
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida03.tga" .X 652 .Y 235 .U 1   .V 239 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_CANALMANCHA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida03.tga" .X 652 .Y 235 .U 1   .V 239 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_BAHIACADIZ
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida03.tga" .X 652 .Y 235 .U 314 .V 120 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_MARIRLANDA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida03.tga" .X 652 .Y 235 .U 1   .V 239 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_MEDITERRANEOCENTRAL
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida03.tga" .X 652 .Y 235 .U 1   .V 239 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_OCEANOATLANTICO
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida03.tga" .X 652 .Y 235 .U 1   .V 239 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_GOLFOFINLANDIA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida03.tga" .X 652 .Y 235 .U 627 .V 120 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_ATLANTICONORTE
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida03.tga" .X 652 .Y 235 .U 627 .V 120 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_MARBALTICO
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida03.tga" .X 652 .Y 235 .U 627 .V 120 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_MARNORTE
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida03.tga" .X 652 .Y 235 .U 627 .V 120 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_MARNORUEGA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida03.tga" .X 652 .Y 235 .U 627 .V 120 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_MARWADDEN
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida03.tga" .X 652 .Y 235 .U 627 .V 120 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_FINISTERRE
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida03.tga" .X 652 .Y 235 .U 314 .V 120 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_COSTAPORTUGUESA
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida03.tga" .X 652 .Y 235 .U 314 .V 120 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_MARNEGRO
+ .PARAMS [ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida03.tga" .X 652 .Y 235 .U 314 .V 120 .SX 312 .SY 118 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#############################################################
+# imagenes para los minimapas de seleccion de escenario en multiplayer
+#############################################################
+
+[
+ .KEY ESCENARIO_RED_INGLATERRA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/01Inglaterra.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_ESCOCIA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/02Escocia.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_IRLANDA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/03Irlanda.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_GALES
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/04Gales.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_CHAMPAGNE
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/05Champagne.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_BURDEOS
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/06Burdeos.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_TOULOUSE
+.PARAMS [ .FILE "Game/UI/Comun/Minimapas/07Toulose.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_I_FRANCIA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/08IslaDeFrancia.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_BRETANYA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/09Bretana.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_BRANDENBURGO
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/10Brandenburgo.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_SILESIA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/11Silesia.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_POLONIA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/12Polonia.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_AUSTRIA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/13Austria.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_BOHEMIA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/14Bohemia.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_GALICIA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/15Galicia.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_HUNGRIA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/16Hungria.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_MINSK
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/17Minsk.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_MOSCU
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/18Moscu.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_KURKS
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/19Kursk.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_LETONIA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/20Letonia.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_KIEV
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/21Kiev.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_CASTILLA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/22Castilla.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_ARAGON
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/23Aragon.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_PRUSIAORIENTAL
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/24PrusiaOriental.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_CATALUNYA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/25Cataluna.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_ANDALUCIA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/26Andalucia.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_LOUSIANA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/27Lousiana.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_ALENTEJO
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/28Alentejo.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_ALGARBE
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/29Algarbe.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_ANATOLIA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/30Anatolia.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_REGIONBALCANICA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/31RegionBalcanica.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_GRECIA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/32Grecia.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_DINAMARCA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/34Dinamarca.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_NORUEGA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/35Noruega.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_NAPOLES
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/36Napoles.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_SUECIA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/38Suecia.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_FINLANDIA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/39Finlandia.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_LOMBARDIA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/40Lombardia.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_VENECIA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/41Venecia.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_EGIPTO
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/42Egipto.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_CIRENAICA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/43Cirenaica.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_PIAMONTE
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/44Piamonte.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_SICILIA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/45Sicilia.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_HANNOVER
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/46Hanover.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_SAJONIA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/47Sajonia.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_BATAVIA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/49Batavia.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_R_HELVETICA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/51ReinaHelvetica.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_E_PAPALES
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/53EstadosPapales.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_MOLDAVIA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/54Moldavia.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_MARRUECOS
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/55Marruecos.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_TUNEZ
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/57Tunez.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_TRIPOLITANIA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/58Tripolitania.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_MARADRIATICO
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/MiniMapasNavales04.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_LEVANTE
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/MiniMapasNavales04.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_GOLFOSIDRA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/MiniMapasNavales04.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_GOLFOLEON
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/MiniMapasNavales04.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_GIBRALTAR
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/MiniMapasNavales04.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_DESEMBOCADURANILO
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/MiniMapasNavales04.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_COSTASICILIANA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/MiniMapasNavales04.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_COSTAMARROQUI
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/MiniMapasNavales04.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_COSTAAFRICANA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/MiniMapasNavales04.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_MAREGEO
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/MiniMapasNavales04.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_MARJONICO
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/MiniMapasNavales04.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_MARLIGURIA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/MiniMapasNavales04.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_MARTIRRENO
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/MiniMapasNavales04.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_MEDITERRANEOOCCIDENTAL
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/MiniMapasNavales04.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_MEDITERRANEOORIENTAL
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/MiniMapasNavales04.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_GOLFOVIZCAYA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/MiniMapasNavales03.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_CANTABRICO
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/MiniMapasNavales03.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_CANALMANCHA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/MiniMapasNavales03.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_BAHIACADIZ
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/MiniMapasNavales01.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_MARIRLANDA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/MiniMapasNavales03.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_MEDITERRANEOCENTRAL
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/MiniMapasNavales03.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_OCEANOATLANTICO
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/MiniMapasNavales02.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_GOLFOFINLANDIA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/MiniMapasNavales02.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_ATLANTICONORTE
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/MiniMapasNavales02.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_MARBALTICO
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/MiniMapasNavales02.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_MARNORTE
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/MiniMapasNavales02.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_MARNORUEGA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/MiniMapasNavales02.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_MARWADDEN
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/MiniMapasNavales02.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_FINISTERRE
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/MiniMapasNavales01.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_COSTAPORTUGUESA
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/MiniMapasNavales01.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY ESCENARIO_RED_MARNEGRO
+ .PARAMS [ .FILE "Game/UI/Comun/Minimapas/MiniMapasNavales01.tga" .X 442 .Y 225 .U 1 .V 1 .SX 144 .SY 144 .ALPHA TRUE .PRIORITY 40 ]
+]

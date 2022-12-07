@@ -1,0 +1,245 @@
+.MODAL TRUE
+.CENTER FALSE
+
+#------------------------------------------------ IMAGEN DE FONDO -------------------------------------------
+.FONDO
+[
+  .FILE "Game/UI/MainMenu/MenuSeleccionDeMapa.tga"
+  .X 610	.Y 79 
+  .U 1 	  .V 1 
+  .SX 400 .SY 660 
+  .ALPHA TRUE
+  .PRIORITY 10
+]
+
+.RELATIVE_PRIORITY FALSE
+
+.CONTROLES
+[
+  #---------------------------------------------- LABEL SELECT MAP ------------------------------------------
+  [
+    .TIPO UIC_TEXT .ID 'LSEL'
+    .PARAMS
+    [
+      .TEXT LTEXT_UI_MENUSELESCENARIO_SELECTMAP
+      .ALIGN CENTER
+      .FONT "Fonts/MonotypeCorsiva25.fnt"
+      .X 806 .Y 159
+      .COLOR [ .R 255 .G 255 .B 255] 
+    ]
+  ]
+  
+ 	#---------------------------------------------- WRAP ESCENARIO --------------------------------------------
+  [
+    .TIPO UIC_WRAPTEXT .ID 'WESC'
+    .PARAMS
+    [
+      .ALIGN CENTER
+      .TEXT
+      [
+        .FONT "Fonts/Times17.fnt"
+        .COLOR [ .R 255 .G 255 .B 255 ]
+      ]
+      .X 43 .Y 118 .SX 311 .SY 40
+      .PRIORITY 15      
+    ]
+  ]
+
+ 	#---------------------------------------------- WRAP OBJETIVOS TITULO -------------------------------------
+  [
+    .TIPO UIC_WRAPTEXT .ID 'WOBT'
+    .PARAMS
+    [
+      .ALIGN CENTER
+      .TEXT
+      [
+        .FONT "Fonts/Times14.fnt"
+        .COLOR [ .R 255 .G 255 .B 255 ]
+      ]
+      .X 48 .Y 347 .SX 300 .SY 60
+      .PRIORITY 15      
+    ]
+  ]
+   
+ 	#---------------------------------------------- WRAP OBJETIVOS TEXTO --------------------------------------
+  [
+    .TIPO UIC_WRAPTEXT .ID 'WOBJ'
+    .PARAMS
+    [
+      .ALIGN CENTER
+      .TEXT
+      [
+        .FONT "Fonts/Times12.fnt"
+        .COLOR [ .R 0 .G 0 .B 0 ]
+      ]
+      .X 50 .Y 370 .SX 300 .SY 130
+      .PRIORITY 15      
+    ]
+  ]
+
+ 	#---------------------------------------------- WRAP OBJETIVOS HISTORICAS --------------------------------------
+  [
+    .TIPO UIC_WRAPTEXT .ID 'WOBH'
+    .PARAMS
+    [
+      .ALIGN LEFT
+      .TEXT
+      [
+        .FONT "Fonts/Times12.fnt"
+        .COLOR [ .R 0 .G 0 .B 0 ]
+      ]
+      .X 50 .Y 348 .SX 285 .SY 140
+      .PRIORITY 50      
+      .SLIDER_VERTICAL [ .STYLE DEFAULT_SLIDER_VERTICAL  .PRIORITY 51]             
+    ]
+  ]
+
+	#---------------------------------------------- CHECKBOX VICTORIA TOTAL -----------------------------------
+	[ 
+		.TIPO UIC_CHECKBOX .ID 'CBVT'
+	  .PARAMS
+	  [  
+	    .FONDO [ .X 125 .Y 499 .PRIORITY 50 ]
+	    .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK"     
+	    .STYLE DEFAULT_CHECKBOX_OK
+	  ]            
+	]
+	
+  #---------------------------------------------- LABEL VICTORIA TOTAL --------------------------------------
+  [
+    .TIPO UIC_TEXT .ID 'L_VT'
+    .PARAMS
+    [
+ 			.TEXT LTEXT_UI_TOTAL_VICTORY     
+    	.ALIGN LEFT
+      .FONT "Fonts/Times14.fnt"
+      .X 155 .Y 503
+      .COLOR [ .R 255 .G 255 .B 255] 
+    ]
+  ]
+	
+
+
+
+	#---------------------------------------------- BITMAP IMPERIAL GLORY -------------------------------------	
+	[ .TIPO UIC_BITMAP .ID 'BMIG' 
+	 .PARAMS 
+	 [ 
+	  .FILE "Game/UI/MainMenu/ImperialGloryLogo.tga" .U 0 .V 0
+	  .X -610 .Y -79
+	  .SX 465 .SY 188  
+	  .PRIORITY 30
+	  .ALPHA TRUE
+	 ] 
+	]
+
+	#-------------------------------------------- MAPA PAISES -------------------------------------------------
+	[
+		.TIPO UIC_MAPAPAISES .ID 'MAPP'
+		.PARAMS
+		[
+			%Game/UI/MainMenu/UIDefs_MapaPaisesSelectEscenario.sb
+		]		
+	]
+	
+	#-------------------------------------------- BOTON CANCEL ------------------------------------------------	
+	[ 
+		.TIPO UIC_BOTONTEXTO .ID 'MSEX' 
+	 	.PARAMS
+	 	[ 
+	 		.IDSELECTSOUND "S_CANCELAR"    
+      			.IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"    
+	 		.STYLE DEFAULT_X_BUTTON
+	   .FONDO
+		  [
+		    .X 245 .Y 535
+        .PRIORITY 20  
+			]
+			.KEY
+			[
+				.TECLA LKEY_MAINMENU_CANCELKEY .EVENTOS [ KEY_DOWN KEY_UP ]          
+			] 			
+	 	]
+	]
+	
+	#-------------------------------------------- BOTON OK ----------------------------------------------------	
+	[ 
+		.TIPO UIC_BOTONTEXTO .ID 'MSEK' 
+	 	.PARAMS
+	 	[ 
+	 		.IDSELECTSOUND "S_ACEPTAR"    
+       			.IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"    
+	 		.STYLE DEFAULT_OK_BUTTON
+	   .FONDO
+		  [
+		    .X 296 .Y 535
+		    .PRIORITY 20  
+			]
+      .KEY [ .TECLA LKEY_MAINMENU_OPTION_SELECT .EVENTOS [ KEY_DOWN KEY_UP ] ]  	    	    					  			
+	 	]
+	]    
+	
+	#---------------------------------------------- GESTOR CHECKBOX 1 -----------------------------------------
+	[ 
+		.TIPO UIC_GESTORCHECKBOX .ID 'GCB1'
+		.PARAMS
+		[
+			.CHECKBOXES
+			[      
+		
+    	#-------------------------------------------- BOTON ATACANTE ----------------------------------------------
+    	[ 
+    		.TIPO UIC_CHECKBOX .ID 'MSEA' 
+    	 	.PARAMS
+    	 	[ 
+    			.COMPORTAMIENTO FIJO				 	
+    	 		.STYLE DEFAULT_MULTIPLAYER_SMALL_BUTTON
+    	 		.TEXT LTEXT_UI_ATTACKER
+    		  .FONDO
+    		  [
+    		    .PRIORITY 120
+    		    .X 55 .Y 306
+    			]
+    	 	]
+    	]
+    	
+    	#-------------------------------------------- BOTON DEFENSOR ----------------------------------------------
+    	[ 
+    		.TIPO UIC_CHECKBOX .ID 'MSED' 
+    	 	.PARAMS
+    	 	[ 
+    			.COMPORTAMIENTO FIJO				 	
+    	 		.STYLE DEFAULT_MULTIPLAYER_SMALL_BUTTON
+    	 		.TEXT LTEXT_UI_DEFENDER
+    		  .FONDO
+    		  [
+    		    .PRIORITY 120
+    		    .X 205 .Y 306
+    			]
+    	 	]
+    	]
+	
+			]	# CHECKBOXES
+				
+			.PERMITE_NINGUNA_ACTIVACION FALSE
+			
+		] # PARAMS
+	] # GESTOR CHECKBOX	
+  
+	
+	
+]	# ~CONTROLES
+
+
+#------------------------------------------------ PARAMETROS BITMAP ESCENARIO -------------------------------
+.IMG
+[
+ .X 652 .Y 235
+ #la textura aquí especificada es lo de menos puesto que va a ser cambiada en cada creación del diálogo, pero debemos ponerla
+ .FILE "Game/UI/MainMenu/PlantillaLoadingReducida01.tga" 
+ .U 1 .V 1 .SX 312 .SY 118
+ .PRIORITY 40
+ .ALPHA TRUE
+]
+
+

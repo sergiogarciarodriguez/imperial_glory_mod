@@ -1,0 +1,103 @@
+#=======================================================================================
+# Definición de sonidos para el modelo de batalla [ MUSICA ]
+#
+# Param ".3D" es TRUE por defecto.
+#       ".LOOP" es FALSE por defecto.
+#=======================================================================================
+
+###-------------------------------------------------------------------------------------
+### AUDIO
+###-------------------------------------------------------------------------------------
+.AUDIO 
+[
+  [ 
+    .IDNAME "S_MUSICA_BATALLA_1"       
+    .PATH "Audio/Battle/Music/Batalla_01.ogg"
+    .3D FALSE
+    .LOOP TRUE
+    .STREAMING TRUE
+    .VOLUME 72
+    .TYPE MUSIC
+    .PAUSE FALSE
+  ]
+  
+  [ 
+    .IDNAME "S_MUSICA_BATALLA_2"       
+    .PATH "Audio/Battle/Music/Batalla_02.ogg"
+    .3D FALSE
+    .LOOP TRUE
+    .STREAMING TRUE
+    .VOLUME 72
+    .TYPE MUSIC
+    .PAUSE FALSE
+  ]
+  
+  [ 
+    .IDNAME "S_MUSICA_BATALLA_3"       
+    .PATH "Audio/Battle/Music/Batalla_03.ogg"
+    .3D FALSE
+    .LOOP TRUE
+    .STREAMING TRUE
+    .VOLUME 72
+    .TYPE MUSIC
+    .PAUSE FALSE
+  ]
+  
+  [ 
+    .IDNAME "S_MUSICA_BATALLA_4"       
+    .PATH "Audio/Battle/Music/Batalla_04.ogg"
+    .3D FALSE
+    .LOOP TRUE
+    .STREAMING TRUE
+    .VOLUME 72
+    .TYPE MUSIC
+    .PAUSE FALSE
+  ]
+  
+  [ 
+    .IDNAME "S_MUSICA_BATALLA_5"       
+    .PATH "Audio/Battle/Music/Batalla_05.ogg"
+    .3D FALSE
+    .LOOP TRUE
+    .STREAMING TRUE
+    .VOLUME 72
+    .TYPE MUSIC
+    .PAUSE FALSE
+  ]
+  
+  [ 
+    .IDNAME "S_MUSICA_BATALLA_6"       
+    .PATH "Audio/Battle/Music/Batalla_06.ogg"
+    .3D FALSE
+    .LOOP TRUE
+    .STREAMING TRUE
+    .VOLUME 72
+    .TYPE MUSIC
+    .PAUSE FALSE
+  ]
+
+  
+  [ 
+    .IDNAME "S_MUSICA_VICTORIA"       
+    .PATH "Audio/Battle/Music/Victoria.ogg" 
+    .3D FALSE
+    .LOOP TRUE
+    .STREAMING TRUE
+    .VOLUME 72
+    .TYPE MUSIC
+    .PAUSE FALSE
+  ]
+  
+  [ 
+    .IDNAME "S_MUSICA_DERROTA"       
+    .PATH "Audio/Battle/Music/Derrota.ogg" 
+    .3D FALSE
+    .LOOP TRUE
+    .STREAMING TRUE
+    .VOLUME 72
+    .TYPE MUSIC
+    .PAUSE FALSE
+  ]
+	
+] ### !AUDIO
+

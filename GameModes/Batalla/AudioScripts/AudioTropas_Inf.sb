@@ -1,0 +1,178 @@
+#=======================================================================================
+# Definición de sonidos para el modelo de batalla [ TROPAS INFANTERIA ]
+#
+# Param ".3D" es TRUE por defecto.
+#       ".LOOP" es FALSE por defecto.
+#=======================================================================================
+
+
+###-------------------------------------------------------------------------------------
+### AUDIO
+###-------------------------------------------------------------------------------------
+.AUDIO 
+[
+
+        [ 
+          .IDNAME "S_INF_DISPARA_15"
+          .PATH [ "Audio/Battle/Fx/Combat/infanteria_dispara_15_1.ogg" "Audio/Battle/Fx/Combat/infanteria_dispara_15_2.ogg" "Audio/Battle/Fx/Combat/infanteria_dispara_15_3.ogg" "Audio/Battle/Fx/Combat/infanteria_dispara_15_4.ogg"]
+          .3D TRUE
+          .LOOP FALSE
+          .GENERIC FALSE
+        ]
+        [ 
+          .IDNAME "S_INF_DISPARA_30"
+          .PATH [ "Audio/Battle/Fx/Combat/infanteria_dispara_15-30_1.ogg" "Audio/Battle/Fx/Combat/infanteria_dispara_15-30_2.ogg" "Audio/Battle/Fx/Combat/infanteria_dispara_15-30_3.ogg" "Audio/Battle/Fx/Combat/infanteria_dispara_15-30_4.ogg"]
+          .3D TRUE
+          .LOOP FALSE
+          .GENERIC FALSE
+        ]
+        [ 
+          .IDNAME "S_INF_DISPARA_40"
+          .PATH [ "Audio/Battle/Fx/Combat/infanteria_dispara_30_1.ogg" "Audio/Battle/Fx/Combat/infanteria_dispara_30_2.ogg" "Audio/Battle/Fx/Combat/infanteria_dispara_30_3.ogg" "Audio/Battle/Fx/Combat/infanteria_dispara_30_4.ogg"]
+          .3D TRUE
+          .LOOP FALSE
+          .GENERIC FALSE
+        ]
+
+        
+        [ 
+          .IDNAME "S_INF_ANDAR_10"     
+          .PATH "Audio/Battle/Fx/Troops/inf_andar_10.ogg" 
+          .3D TRUE
+          .LOOP TRUE
+          .PREVENT_FLANGER TRUE
+          .GENERIC FALSE
+          .TRANSPOSE 10
+          .POLYPHONY 2
+        ]
+        [ 
+          .IDNAME "S_INF_ANDAR_30"     
+          .PATH "Audio/Battle/Fx/Troops/inf_andar_10-30.ogg" 
+          .3D TRUE
+          .LOOP TRUE
+          .PREVENT_FLANGER TRUE
+          .GENERIC FALSE
+          .TRANSPOSE 10
+          .POLYPHONY 2
+        ]
+        [ 
+          .IDNAME "S_INF_ANDAR_40"     
+          .PATH "Audio/Battle/Fx/Troops/inf_andar_30.ogg" 
+          .3D TRUE
+          .LOOP TRUE
+    	  .PREVENT_FLANGER TRUE
+    	  .GENERIC FALSE
+    	  .TRANSPOSE 10
+    	  .POLYPHONY 2
+        ]
+        [ 
+          .IDNAME "S_INF_ANDAR_AGUA_10"     
+          .PATH "Audio/Battle/Fx/Troops/inf_andaragua_10.ogg" 
+          .3D TRUE
+          .LOOP TRUE
+    	  .PREVENT_FLANGER TRUE
+    	  .GENERIC FALSE
+    	  .TRANSPOSE 10
+    	  .POLYPHONY 2
+        ]
+        [ 
+          .IDNAME "S_INF_ANDAR_AGUA_30"     
+          .PATH "Audio/Battle/Fx/Troops/inf_andaragua_10-30.ogg" 
+          .3D TRUE
+          .LOOP TRUE
+    	  .PREVENT_FLANGER TRUE
+    	  .GENERIC FALSE
+    	  .TRANSPOSE 10
+    	  .POLYPHONY 2
+        ]
+        [ 
+          .IDNAME "S_INF_ANDAR_AGUA_40"     
+          .PATH "Audio/Battle/Fx/Troops/inf_andaragua_30.ogg" 
+          .3D TRUE
+          .LOOP TRUE
+    	  .PREVENT_FLANGER TRUE
+    	  .GENERIC FALSE
+    	  .TRANSPOSE 10
+    	  .POLYPHONY 2
+        ]
+        [ 
+          .IDNAME "S_INF_CORRER_10"     
+          .PATH "Audio/Battle/Fx/Troops/inf_correr_10.ogg" 
+          .3D TRUE
+          .LOOP TRUE
+    	  .PREVENT_FLANGER TRUE
+    	  .GENERIC FALSE
+    	  .TRANSPOSE 10
+    	  .POLYPHONY 2
+        ]
+        [ 
+          .IDNAME "S_INF_CORRER_30"     
+          .PATH "Audio/Battle/Fx/Troops/inf_correr_10-30.ogg" 
+          .3D TRUE
+          .LOOP TRUE
+    	  .PREVENT_FLANGER TRUE
+    	  .GENERIC FALSE
+    	  .TRANSPOSE 10
+    	  .POLYPHONY 2
+        ]
+        [ 
+          .IDNAME "S_INF_CORRER_40"     
+          .PATH "Audio/Battle/Fx/Troops/inf_correr_30.ogg" 
+          .3D TRUE
+          .LOOP TRUE
+    	  .PREVENT_FLANGER TRUE
+    	  .GENERIC FALSE
+    	  .TRANSPOSE 10
+    	  .POLYPHONY 2
+        ]
+        [ 
+          .IDNAME "S_INF_CORRER_AGUA_10"     
+          .PATH "Audio/Battle/Fx/Troops/inf_correragua_10.ogg" 
+          .3D TRUE
+          .LOOP TRUE
+    	  .PREVENT_FLANGER TRUE
+    	  .GENERIC FALSE
+    	  .TRANSPOSE 10
+    	  .POLYPHONY 2
+        ]
+        [ 
+          .IDNAME "S_INF_CORRER_AGUA_30"     
+          .PATH "Audio/Battle/Fx/Troops/inf_correragua_10-30.ogg" 
+          .3D TRUE
+          .LOOP TRUE
+    	  .PREVENT_FLANGER TRUE
+    	  .GENERIC FALSE
+    	  .TRANSPOSE 10
+    	  .POLYPHONY 2
+        ]
+        [ 
+          .IDNAME "S_INF_CORRER_AGUA_40"     
+          .PATH "Audio/Battle/Fx/Troops/inf_correragua_30.ogg" 
+          .3D TRUE
+          .LOOP TRUE
+    	  .PREVENT_FLANGER TRUE
+    	  .GENERIC FALSE
+    	  .TRANSPOSE 10
+    	  .POLYPHONY 2
+        ]
+        
+        [ 
+          .IDNAME "S_INF_ANDAR_INICIO"     
+          .PATH "Audio/Battle/Fx/Troops/Inf_inicio-girar.ogg" 
+          .3D TRUE
+          .LOOP FALSE
+          .POLYPHONY 1
+          .GENERIC FALSE
+        ]
+        
+        [ 
+          .IDNAME "S_INF_ANDAR_FINAL"     
+          .PATH "Audio/Battle/Fx/Troops/Inf_parar.ogg" 
+          .3D TRUE
+          .LOOP FALSE
+          .POLYPHONY 1
+          .GENERIC FALSE
+        ]
+        
+
+] ### !AUDIO

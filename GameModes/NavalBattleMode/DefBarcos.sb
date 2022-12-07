@@ -1,0 +1,2520 @@
+#_______________________________________________________
+#
+#                  <<<< FRANCIA >>>>
+#_______________________________________________________
+
+#-------------------
+#  NAVÍO FRANCÉS
+#-------------------
+.FRANCIA_NAVIO
+[
+  .PROC "BARCO_NAVIO"
+  .AI "AI_BARCO_NAVIO"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Navio.sb"
+  
+  # Definicion de modelos (casco, cuerdas, velas, banderas, gallardetes) : respetar el orden
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Navio\Navio.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Gallardetes.V3D"
+  ]
+  .TEX "Models\01Francia\Barcos\Navio.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Navio\LineaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Navio\NavioVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Navio\Navio_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Navio\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Navio\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionNavio\Tripulacion.sb"
+    .TEX_PATH "Models\01Francia\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+#----------------------
+#  FRAGATA FRANCESA
+#----------------------
+.FRANCIA_FRAGATA
+[
+  .PROC "BARCO_FRAGATA"
+  .AI "AI_BARCO_FRAGATA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Fragata.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Fragata\Fragata.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Gallardetes.V3D"
+  ]
+  .TEX "Models\01Francia\Barcos\Fragata.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Fragata\FragataVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Fragata\FragataVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Fragata\Fragata_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Fragata\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Fragata\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionFragata\Tripulacion.sb"
+    .TEX_PATH "Models\01Francia\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+#----------------------
+#  CORBETA FRANCESA
+#----------------------
+.FRANCIA_CORBETA
+[
+  .PROC "BARCO_CORBETA"
+  .AI "AI_BARCO_CORBETA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Corbeta.sb"
+  
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Corbeta\Corbeta.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Gallardetes.V3D"
+  ]
+  .TEX "Models\01Francia\Barcos\Corbeta.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Corbeta\Corbeta_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Corbeta\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Corbeta\SeleccionMp.V3D"
+ 
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionCorbeta\Tripulacion.sb"
+    .TEX_PATH "Models\01Francia\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+
+#_______________________________________________________
+#
+#                 <<<< INGLATERRA >>>>
+#_______________________________________________________
+
+#---------------------
+#  NAVÍO BRITANICO
+#---------------------
+.GRAN_BRETANYA_NAVIO
+[
+  .PROC "BARCO_NAVIO"
+  .AI "AI_BARCO_NAVIO"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Navio.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Navio\Navio.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Gallardetes.V3D"
+  ]
+  .TEX "Models\04Inglaterra\Barcos\Navio.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Navio\LineaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Navio\NavioVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Navio\Navio_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Navio\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Navio\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionNavio\Tripulacion.sb"
+    .TEX_PATH "Models\04Inglaterra\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+#-----------------------
+#  FRAGATA BRITANICA
+#-----------------------
+.GRAN_BRETANYA_FRAGATA
+[
+  .PROC "BARCO_FRAGATA"
+  .AI "AI_BARCO_FRAGATA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Fragata.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Fragata\Fragata.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Gallardetes.V3D"
+  ]
+  .TEX "Models\04Inglaterra\Barcos\Fragata.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Fragata\FragataVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Fragata\FragataVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Fragata\Fragata_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Fragata\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Fragata\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionFragata\Tripulacion.sb"
+    .TEX_PATH "Models\04Inglaterra\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"  
+]
+#-----------------------
+#  CORBETA BRITANICA
+#-----------------------
+.GRAN_BRETANYA_CORBETA
+[
+  .PROC "BARCO_CORBETA"
+  .AI "AI_BARCO_CORBETA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Corbeta.sb"
+  
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Corbeta\Corbeta.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Gallardetes.V3D"
+  ]
+  .TEX "Models\04Inglaterra\Barcos\Corbeta.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Corbeta\Corbeta_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Corbeta\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Corbeta\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionCorbeta\Tripulacion.sb"
+    .TEX_PATH "Models\04Inglaterra\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+
+#_______________________________________________________
+#
+#                 <<<< AUSTRIA >>>>
+#_______________________________________________________
+
+#---------------------
+#  NAVÍO AUSTRIACO
+#---------------------
+.AUSTRIA_NAVIO
+[
+  .PROC "BARCO_NAVIO"
+  .AI "AI_BARCO_NAVIO"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Navio.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Navio\Navio.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Gallardetes.V3D"
+  ]
+  .TEX "Models\02Austria\Barcos\Navio.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Navio\LineaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Navio\NavioVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Navio\Navio_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Navio\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Navio\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionNavio\Tripulacion.sb"
+    .TEX_PATH "Models\02Austria\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+#-----------------------
+#  FRAGATA AUSTRIACA
+#-----------------------
+.AUSTRIA_FRAGATA
+[
+  .PROC "BARCO_FRAGATA"
+  .AI "AI_BARCO_FRAGATA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Fragata.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Fragata\Fragata.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Gallardetes.V3D"
+  ]
+  .TEX "Models\02Austria\Barcos\Fragata.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Fragata\FragataVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Fragata\FragataVol.V3D"
+  .SEL "Models\00EjercitoBase\Barcos\Fragata\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Fragata\SeleccionMp.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Fragata\Fragata_ANM.sb"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionFragata\Tripulacion.sb"
+    .TEX_PATH "Models\02Austria\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"  
+]
+#-----------------------
+#  CORBETA AUSTRIACA
+#-----------------------
+.AUSTRIA_CORBETA
+[
+  .PROC "BARCO_CORBETA"
+  .AI "AI_BARCO_CORBETA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Corbeta.sb"
+  
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Corbeta\Corbeta.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Gallardetes.V3D"
+  ]
+  .TEX "Models\02Austria\Barcos\Corbeta.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Corbeta\Corbeta_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Corbeta\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Corbeta\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionCorbeta\Tripulacion.sb"
+    .TEX_PATH "Models\02Austria\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+#_______________________________________________________
+#
+#                 <<<< PRUSIA >>>>
+#_______________________________________________________
+
+#-------------------
+# NAVÍO PRUSIANO
+#-------------------
+.PRUSIA_NAVIO
+[
+  .PROC "BARCO_NAVIO"
+  .AI "AI_BARCO_NAVIO"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Navio.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Navio\Navio.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Gallardetes.V3D"
+  ]
+  .TEX "Models\03Prusia\Barcos\Navio.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Navio\LineaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Navio\NavioVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Navio\Navio_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Navio\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Navio\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionNavio\Tripulacion.sb"
+    .TEX_PATH "Models\03Prusia\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+#---------------------
+# FRAGATA PRUSIANA
+#---------------------
+.PRUSIA_FRAGATA
+[
+  .PROC "BARCO_FRAGATA"
+  .AI "AI_BARCO_FRAGATA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Fragata.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Fragata\Fragata.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Gallardetes.V3D"
+  ]
+  .TEX "Models\03Prusia\Barcos\Fragata.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Fragata\FragataVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Fragata\FragataVol.V3D"
+  .SEL "Models\00EjercitoBase\Barcos\Fragata\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Fragata\SeleccionMp.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Fragata\Fragata_ANM.sb"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionFragata\Tripulacion.sb"
+    .TEX_PATH "Models\03Prusia\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"  
+]
+#---------------------
+# CORBETA PRUSIANA
+#---------------------
+.PRUSIA_CORBETA
+[
+  .PROC "BARCO_CORBETA"
+  .AI "AI_BARCO_CORBETA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Corbeta.sb"
+  
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Corbeta\Corbeta.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Gallardetes.V3D"
+  ]
+  .TEX "Models\03Prusia\Barcos\Corbeta.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVol.V3D"
+  .SEL "Models\00EjercitoBase\Barcos\Corbeta\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Corbeta\SeleccionMp.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Corbeta\Corbeta_ANM.sb"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionCorbeta\Tripulacion.sb"
+    .TEX_PATH "Models\03Prusia\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+
+#_______________________________________________________
+#
+#                 <<<<  RUSIA  >>>>
+#_______________________________________________________
+
+#---------------
+# NAVÍO RUSO
+#---------------
+.RUSIA_NAVIO
+[
+  .PROC "BARCO_NAVIO"
+  .AI "AI_BARCO_NAVIO"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Navio.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Navio\Navio.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Gallardetes.V3D"
+  ]
+  .TEX "Models\05Rusia\Barcos\Navio.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Navio\LineaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Navio\NavioVol.V3D"
+  .SEL "Models\00EjercitoBase\Barcos\Navio\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Navio\SeleccionMp.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Navio\Navio_ANM.sb"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionNavio\Tripulacion.sb"
+    .TEX_PATH "Models\05Rusia\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+#-----------------
+# FRAGATA RUSA
+#-----------------
+.RUSIA_FRAGATA
+[
+  .PROC "BARCO_FRAGATA"
+  .AI "AI_BARCO_FRAGATA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Fragata.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Fragata\Fragata.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Gallardetes.V3D"
+  ]
+  .TEX "Models\05Rusia\Barcos\Fragata.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Fragata\FragataVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Fragata\FragataVol.V3D"
+  .SEL "Models\00EjercitoBase\Barcos\Fragata\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Fragata\SeleccionMp.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Fragata\Fragata_ANM.sb"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionFragata\Tripulacion.sb"
+    .TEX_PATH "Models\05Rusia\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"  
+]
+#-----------------
+# CORBETA RUSA
+#-----------------
+.RUSIA_CORBETA
+[
+  .PROC "BARCO_CORBETA"
+  .AI "AI_BARCO_CORBETA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Corbeta.sb"
+  
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Corbeta\Corbeta.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Gallardetes.V3D"
+  ]
+  .TEX "Models\05Rusia\Barcos\Corbeta.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVol.V3D"
+  .SEL "Models\00EjercitoBase\Barcos\Corbeta\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Corbeta\SeleccionMp.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Corbeta\Corbeta_ANM.sb"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionCorbeta\Tripulacion.sb"
+    .TEX_PATH "Models\05Rusia\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+
+#_______________________________________________________
+#
+#                 <<<< ESPANYA >>>>
+#_______________________________________________________
+
+#---------------------
+#  NAVÍO HISPANO
+#---------------------
+.ESPANYA_NAVIO
+[
+  .PROC "BARCO_NAVIO"
+  .AI "AI_BARCO_NAVIO"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Navio.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Navio\Navio.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Gallardetes.V3D"
+  ]
+  .TEX "Models\06Espana\Barcos\Navio.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Navio\LineaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Navio\NavioVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Navio\Navio_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Navio\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Navio\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionNavio\Tripulacion.sb"
+    .TEX_PATH "Models\06Espana\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+#-----------------------
+#  FRAGATA HISPANA
+#-----------------------
+.ESPANYA_FRAGATA
+[
+  .PROC "BARCO_FRAGATA"
+  .AI "AI_BARCO_FRAGATA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Fragata.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Fragata\Fragata.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Gallardetes.V3D"
+  ]
+  .TEX "Models\06Espana\Barcos\Fragata.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Fragata\FragataVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Fragata\FragataVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Fragata\Fragata_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Fragata\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Fragata\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionFragata\Tripulacion.sb"
+    .TEX_PATH "Models\06Espana\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"  
+]
+#-----------------------
+#  CORBETA HISPANA
+#-----------------------
+.ESPANYA_CORBETA
+[
+  .PROC "BARCO_CORBETA"
+  .AI "AI_BARCO_CORBETA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Corbeta.sb"
+  
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Corbeta\Corbeta.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Gallardetes.V3D"
+  ]
+  .TEX "Models\06Espana\Barcos\Corbeta.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Corbeta\Corbeta_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Corbeta\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Corbeta\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionCorbeta\Tripulacion.sb"
+    .TEX_PATH "Models\06Espana\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+
+#_______________________________________________________
+#
+#                 <<<< OTOMANO >>>>
+#_______________________________________________________
+
+#---------------------
+#  NAVÍO OTOMANO
+#---------------------
+.OTOMANO_NAVIO
+[
+  .PROC "BARCO_NAVIO"
+  .AI "AI_BARCO_NAVIO"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Navio.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Navio\Navio.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Gallardetes.V3D"
+  ]
+  .TEX "Models\07Otomano\Barcos\Navio.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Navio\LineaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Navio\NavioVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Navio\Navio_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Navio\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Navio\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionNavio\Tripulacion.sb"
+    .TEX_PATH "Models\07Otomano\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+#-----------------------
+#  FRAGATA OTOMANA
+#-----------------------
+.OTOMANO_FRAGATA
+[
+  .PROC "BARCO_FRAGATA"
+  .AI "AI_BARCO_FRAGATA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Fragata.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Fragata\Fragata.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Gallardetes.V3D"
+  ]
+  .TEX "Models\07Otomano\Barcos\Fragata.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Fragata\FragataVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Fragata\FragataVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Fragata\Fragata_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Fragata\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Fragata\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionFragata\Tripulacion.sb"
+    .TEX_PATH "Models\07Otomano\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"  
+]
+#-----------------------
+#  CORBETA OTOMANA
+#-----------------------
+.OTOMANO_CORBETA
+[
+  .PROC "BARCO_CORBETA"
+  .AI "AI_BARCO_CORBETA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Corbeta.sb"
+  
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Corbeta\Corbeta.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Gallardetes.V3D"
+  ]
+  .TEX "Models\07Otomano\Barcos\Corbeta.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Corbeta\Corbeta_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Corbeta\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Corbeta\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionCorbeta\Tripulacion.sb"
+    .TEX_PATH "Models\07Otomano\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+
+#_______________________________________________________
+#
+#                 <<<< EGIPTO >>>>
+#_______________________________________________________
+
+#---------------------
+#  NAVÍO EGIPCIO
+#---------------------
+.EGIPTO_NAVIO
+[
+  .PROC "BARCO_NAVIO"
+  .AI "AI_BARCO_NAVIO"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Navio.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Navio\Navio.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Gallardetes.V3D"
+  ]
+  .TEX "Models\08Egipto\Barcos\Navio.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Navio\LineaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Navio\NavioVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Navio\Navio_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Navio\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Navio\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionNavio\Tripulacion.sb"
+    .TEX_PATH "Models\08Egipto\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+#-----------------------
+#  FRAGATA EGIPCIA
+#-----------------------
+.EGIPTO_FRAGATA
+[
+  .PROC "BARCO_FRAGATA"
+  .AI "AI_BARCO_FRAGATA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Fragata.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Fragata\Fragata.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Gallardetes.V3D"
+  ]
+  .TEX "Models\08Egipto\Barcos\Fragata.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Fragata\FragataVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Fragata\FragataVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Fragata\Fragata_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Fragata\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Fragata\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionFragata\Tripulacion.sb"
+    .TEX_PATH "Models\08Egipto\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"  
+]
+#-----------------------
+#  CORBETA EGIPCIA
+#-----------------------
+.EGIPTO_CORBETA
+[
+  .PROC "BARCO_CORBETA"
+  .AI "AI_BARCO_CORBETA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Corbeta.sb"
+  
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Corbeta\Corbeta.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Gallardetes.V3D"
+  ]
+  .TEX "Models\08Egipto\Barcos\Corbeta.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Corbeta\Corbeta_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Corbeta\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Corbeta\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionCorbeta\Tripulacion.sb"
+    .TEX_PATH "Models\08Egipto\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+
+#_______________________________________________________
+#
+#                 <<<< DOS_SICILIAS >>>>
+#_______________________________________________________
+
+#---------------------
+#  NAVÍO DOS_SICILIAS
+#---------------------
+.DOS_SICILIAS_NAVIO
+[
+  .PROC "BARCO_NAVIO"
+  .AI "AI_BARCO_NAVIO"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Navio.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Navio\Navio.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Gallardetes.V3D"
+  ]
+  .TEX "Models\09DosSicilias\Barcos\Navio.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Navio\LineaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Navio\NavioVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Navio\Navio_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Navio\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Navio\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionNavio\Tripulacion.sb"
+    .TEX_PATH "Models\09DosSicilias\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+#-----------------------
+#  FRAGATA DOS_SICILIAS
+#-----------------------
+.DOS_SICILIAS_FRAGATA
+[
+  .PROC "BARCO_FRAGATA"
+  .AI "AI_BARCO_FRAGATA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Fragata.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Fragata\Fragata.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Gallardetes.V3D"
+  ]
+  .TEX "Models\09DosSicilias\Barcos\Fragata.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Fragata\FragataVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Fragata\FragataVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Fragata\Fragata_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Fragata\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Fragata\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionFragata\Tripulacion.sb"
+    .TEX_PATH "Models\09DosSicilias\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"  
+]
+#-----------------------
+#  CORBETA DOS_SICILIAS
+#-----------------------
+.DOS_SICILIAS_CORBETA
+[
+  .PROC "BARCO_CORBETA"
+  .AI "AI_BARCO_CORBETA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Corbeta.sb"
+  
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Corbeta\Corbeta.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Gallardetes.V3D"
+  ]
+  .TEX "Models\09DosSicilias\Barcos\Corbeta.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Corbeta\Corbeta_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Corbeta\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Corbeta\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionCorbeta\Tripulacion.sb"
+    .TEX_PATH "Models\09DosSicilias\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+
+#_______________________________________________________
+#
+#                 <<<< DINAMARCA >>>>
+#_______________________________________________________
+
+#---------------------
+#  NAVÍO DINAMARCA
+#---------------------
+.DINAMARCA_NAVIO
+[
+  .PROC "BARCO_NAVIO"
+  .AI "AI_BARCO_NAVIO"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Navio.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Navio\Navio.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Gallardetes.V3D"
+  ]
+  .TEX "Models\10Dinamarca\Barcos\Navio.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Navio\LineaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Navio\NavioVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Navio\Navio_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Navio\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Navio\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionNavio\Tripulacion.sb"
+    .TEX_PATH "Models\10Dinamarca\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+#-----------------------
+#  FRAGATA DINAMARCA
+#-----------------------
+.DINAMARCA_FRAGATA
+[
+  .PROC "BARCO_FRAGATA"
+  .AI "AI_BARCO_FRAGATA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Fragata.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Fragata\Fragata.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Gallardetes.V3D"
+  ]
+  .TEX "Models\10Dinamarca\Barcos\Fragata.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Fragata\FragataVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Fragata\FragataVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Fragata\Fragata_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Fragata\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Fragata\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionFragata\Tripulacion.sb"
+    .TEX_PATH "Models\10Dinamarca\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"  
+]
+#-----------------------
+#  CORBETA DINAMARCA
+#-----------------------
+.DINAMARCA_CORBETA
+[
+  .PROC "BARCO_CORBETA"
+  .AI "AI_BARCO_CORBETA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Corbeta.sb"
+  
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Corbeta\Corbeta.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Gallardetes.V3D"
+  ]
+  .TEX "Models\10Dinamarca\Barcos\Corbeta.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Corbeta\Corbeta_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Corbeta\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Corbeta\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionCorbeta\Tripulacion.sb"
+    .TEX_PATH "Models\10Dinamarca\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+
+#_______________________________________________________
+#
+#                 <<<< SUECIA >>>>
+#_______________________________________________________
+
+#---------------------
+#  NAVÍO SUECO
+#---------------------
+.SUECIA_NAVIO
+[
+  .PROC "BARCO_NAVIO"
+  .AI "AI_BARCO_NAVIO"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Navio.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Navio\Navio.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Gallardetes.V3D"
+  ]
+  .TEX "Models\11Suecia\Barcos\Navio.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Navio\LineaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Navio\NavioVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Navio\Navio_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Navio\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Navio\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionNavio\Tripulacion.sb"
+    .TEX_PATH "Models\11Suecia\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+#-----------------------
+#  FRAGATA SUECO
+#-----------------------
+.SUECIA_FRAGATA
+[
+  .PROC "BARCO_FRAGATA"
+  .AI "AI_BARCO_FRAGATA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Fragata.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Fragata\Fragata.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Gallardetes.V3D"
+  ]
+  .TEX "Models\11Suecia\Barcos\Fragata.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Fragata\FragataVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Fragata\FragataVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Fragata\Fragata_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Fragata\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Fragata\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionFragata\Tripulacion.sb"
+    .TEX_PATH "Models\11Suecia\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"  
+]
+#-----------------------
+#  CORBETA SUECA
+#-----------------------
+.SUECIA_CORBETA
+[
+  .PROC "BARCO_CORBETA"
+  .AI "AI_BARCO_CORBETA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Corbeta.sb"
+  
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Corbeta\Corbeta.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Gallardetes.V3D"
+  ]
+  .TEX "Models\11Suecia\Barcos\Corbeta.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Corbeta\Corbeta_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Corbeta\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Corbeta\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionCorbeta\Tripulacion.sb"
+    .TEX_PATH "Models\11Suecia\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+
+#_______________________________________________________
+#
+#                 <<<< PORTUGAL >>>>
+#_______________________________________________________
+
+#---------------------
+#  NAVÍO PORTUGUES
+#---------------------
+.PORTUGAL_NAVIO
+[
+  .PROC "BARCO_NAVIO"
+  .AI "AI_BARCO_NAVIO"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Navio.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Navio\Navio.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Gallardetes.V3D"
+  ]
+  .TEX "Models\12Portugal\Barcos\Navio.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Navio\LineaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Navio\NavioVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Navio\Navio_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Navio\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Navio\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionNavio\Tripulacion.sb"
+    .TEX_PATH "Models\12Portugal\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+#-----------------------
+#  FRAGATA PORTUGUESA
+#-----------------------
+.PORTUGAL_FRAGATA
+[
+  .PROC "BARCO_FRAGATA"
+  .AI "AI_BARCO_FRAGATA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Fragata.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Fragata\Fragata.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Gallardetes.V3D"
+  ]
+  .TEX "Models\12Portugal\Barcos\Fragata.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Fragata\FragataVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Fragata\FragataVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Fragata\Fragata_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Fragata\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Fragata\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionFragata\Tripulacion.sb"
+    .TEX_PATH "Models\12Portugal\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"  
+]
+#-----------------------
+#  CORBETA PORTUGUESA
+#-----------------------
+.PORTUGAL_CORBETA
+[
+  .PROC "BARCO_CORBETA"
+  .AI "AI_BARCO_CORBETA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Corbeta.sb"
+  
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Corbeta\Corbeta.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Gallardetes.V3D"
+  ]
+  .TEX "Models\12Portugal\Barcos\Corbeta.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Corbeta\Corbeta_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Corbeta\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Corbeta\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionCorbeta\Tripulacion.sb"
+    .TEX_PATH "Models\12Portugal\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+
+#_______________________________________________________
+#
+#                 <<<< LOMBARDIA >>>>
+#_______________________________________________________
+
+#---------------------
+#  NAVÍO LOMBARDO
+#---------------------
+.LOMBARDIA_NAVIO
+[
+  .PROC "BARCO_NAVIO"
+  .AI "AI_BARCO_NAVIO"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Navio.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Navio\Navio.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Gallardetes.V3D"
+  ]
+  .TEX "Models\13Lombardia\Barcos\Navio.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Navio\LineaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Navio\NavioVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Navio\Navio_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Navio\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Navio\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionNavio\Tripulacion.sb"
+    .TEX_PATH "Models\13Lombardia\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+#-----------------------
+#  FRAGATA LOMBARDA
+#-----------------------
+.LOMBARDIA_FRAGATA
+[
+  .PROC "BARCO_FRAGATA"
+  .AI "AI_BARCO_FRAGATA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Fragata.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Fragata\Fragata.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Gallardetes.V3D"
+  ]
+  .TEX "Models\13Lombardia\Barcos\Fragata.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Fragata\FragataVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Fragata\FragataVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Fragata\Fragata_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Fragata\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Fragata\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionFragata\Tripulacion.sb"
+    .TEX_PATH "Models\13Lombardia\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"  
+]
+#-----------------------
+#  CORBETA LOMBARDA
+#-----------------------
+.LOMBARDIA_CORBETA
+[
+  .PROC "BARCO_CORBETA"
+  .AI "AI_BARCO_CORBETA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Corbeta.sb"
+  
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Corbeta\Corbeta.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Gallardetes.V3D"
+  ]
+  .TEX "Models\13Lombardia\Barcos\Corbeta.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Corbeta\Corbeta_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Corbeta\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Corbeta\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionCorbeta\Tripulacion.sb"
+    .TEX_PATH "Models\13Lombardia\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+
+#_______________________________________________________
+#
+#                 <<<< PIAMONTE >>>>
+#_______________________________________________________
+
+#---------------------
+#  NAVÍO PIAMONTE
+#---------------------
+.PIAMONTE_NAVIO
+[
+  .PROC "BARCO_NAVIO"
+  .AI "AI_BARCO_NAVIO"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Navio.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Navio\Navio.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Gallardetes.V3D"
+  ]
+  .TEX "Models\14Piamonte\Barcos\Navio.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Navio\LineaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Navio\NavioVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Navio\Navio_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Navio\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Navio\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionNavio\Tripulacion.sb"
+    .TEX_PATH "Models\14Piamonte\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+#-----------------------
+#  FRAGATA PIAMONTE
+#-----------------------
+.PIAMONTE_FRAGATA
+[
+  .PROC "BARCO_FRAGATA"
+  .AI "AI_BARCO_FRAGATA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Fragata.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Fragata\Fragata.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Gallardetes.V3D"
+  ]
+  .TEX "Models\14Piamonte\Barcos\Fragata.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Fragata\FragataVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Fragata\FragataVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Fragata\Fragata_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Fragata\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Fragata\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionFragata\Tripulacion.sb"
+    .TEX_PATH "Models\14Piamonte\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"  
+]
+#-----------------------
+#  CORBETA PIAMONTE
+#-----------------------
+.PIAMONTE_CORBETA
+[
+  .PROC "BARCO_CORBETA"
+  .AI "AI_BARCO_CORBETA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Corbeta.sb"
+  
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Corbeta\Corbeta.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Gallardetes.V3D"
+  ]
+  .TEX "Models\14Piamonte\Barcos\Corbeta.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Corbeta\Corbeta_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Corbeta\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Corbeta\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionCorbeta\Tripulacion.sb"
+    .TEX_PATH "Models\14Piamonte\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+
+#_______________________________________________________
+#
+#                 <<<< EPAPALES >>>>
+#_______________________________________________________
+
+#---------------------
+#  NAVÍO EPAPALES
+#---------------------
+.EPAPALES_NAVIO
+[
+  .PROC "BARCO_NAVIO"
+  .AI "AI_BARCO_NAVIO"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Navio.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Navio\Navio.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Gallardetes.V3D"
+  ]
+  .TEX "Models\15EPapales\Barcos\Navio.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Navio\LineaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Navio\NavioVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Navio\Navio_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Navio\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Navio\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionNavio\Tripulacion.sb"
+    .TEX_PATH "Models\15EPapales\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+#-----------------------
+#  FRAGATA EPAPALES
+#-----------------------
+.EPAPALES_FRAGATA
+[
+  .PROC "BARCO_FRAGATA"
+  .AI "AI_BARCO_FRAGATA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Fragata.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Fragata\Fragata.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Gallardetes.V3D"
+  ]
+  .TEX "Models\15EPapales\Barcos\Fragata.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Fragata\FragataVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Fragata\FragataVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Fragata\Fragata_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Fragata\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Fragata\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionFragata\Tripulacion.sb"
+    .TEX_PATH "Models\15EPapales\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"  
+]
+#-----------------------
+#  CORBETA EPAPALES
+#-----------------------
+.EPAPALES_CORBETA
+[
+  .PROC "BARCO_CORBETA"
+  .AI "AI_BARCO_CORBETA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Corbeta.sb"
+  
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Corbeta\Corbeta.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Gallardetes.V3D"
+  ]
+  .TEX "Models\15EPapales\Barcos\Corbeta.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Corbeta\Corbeta_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Corbeta\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Corbeta\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionCorbeta\Tripulacion.sb"
+    .TEX_PATH "Models\15EPapales\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+
+#_______________________________________________________
+#
+#                 <<<< RHELVETICA >>>>
+#_______________________________________________________
+
+#---------------------
+#  NAVÍO RHELVETICA
+#---------------------
+.RHELVETICA_NAVIO
+[
+  .PROC "BARCO_NAVIO"
+  .AI "AI_BARCO_NAVIO"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Navio.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Navio\Navio.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Gallardetes.V3D"
+  ]
+  .TEX "Models\16RHelvetica\Barcos\Navio.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Navio\LineaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Navio\NavioVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Navio\Navio_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Navio\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Navio\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionNavio\Tripulacion.sb"
+    .TEX_PATH "Models\16RHelvetica\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+#-----------------------
+#  FRAGATA RHELVETICA
+#-----------------------
+.RHELVETICA_FRAGATA
+[
+  .PROC "BARCO_FRAGATA"
+  .AI "AI_BARCO_FRAGATA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Fragata.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Fragata\Fragata.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Gallardetes.V3D"
+  ]
+  .TEX "Models\16RHelvetica\Barcos\Fragata.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Fragata\FragataVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Fragata\FragataVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Fragata\Fragata_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Fragata\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Fragata\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionFragata\Tripulacion.sb"
+    .TEX_PATH "Models\16RHelvetica\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"  
+]
+#-----------------------
+#  CORBETA RHELVETICA
+#-----------------------
+.RHELVETICA_CORBETA
+[
+  .PROC "BARCO_CORBETA"
+  .AI "AI_BARCO_CORBETA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Corbeta.sb"
+  
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Corbeta\Corbeta.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Gallardetes.V3D"
+  ]
+  .TEX "Models\16RHelvetica\Barcos\Corbeta.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Corbeta\Corbeta_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Corbeta\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Corbeta\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionCorbeta\Tripulacion.sb"
+    .TEX_PATH "Models\16RHelvetica\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+
+#_______________________________________________________
+#
+#                 <<<< HANNOVER >>>>
+#_______________________________________________________
+
+#---------------------
+#  NAVÍO HANNOVER
+#---------------------
+.HANNOVER_NAVIO
+[
+  .PROC "BARCO_NAVIO"
+  .AI "AI_BARCO_NAVIO"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Navio.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Navio\Navio.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Gallardetes.V3D"
+  ]
+  .TEX "Models\17Hannover\Barcos\Navio.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Navio\LineaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Navio\NavioVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Navio\Navio_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Navio\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Navio\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionNavio\Tripulacion.sb"
+    .TEX_PATH "Models\17Hannover\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+#-----------------------
+#  FRAGATA HANNOVER
+#-----------------------
+.HANNOVER_FRAGATA
+[
+  .PROC "BARCO_FRAGATA"
+  .AI "AI_BARCO_FRAGATA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Fragata.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Fragata\Fragata.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Gallardetes.V3D"
+  ]
+  .TEX "Models\17Hannover\Barcos\Fragata.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Fragata\FragataVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Fragata\FragataVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Fragata\Fragata_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Fragata\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Fragata\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionFragata\Tripulacion.sb"
+    .TEX_PATH "Models\17Hannover\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"  
+]
+#-----------------------
+#  CORBETA HANNOVER
+#-----------------------
+.HANNOVER_CORBETA
+[
+  .PROC "BARCO_CORBETA"
+  .AI "AI_BARCO_CORBETA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Corbeta.sb"
+  
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Corbeta\Corbeta.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Gallardetes.V3D"
+  ]
+  .TEX "Models\17Hannover\Barcos\Corbeta.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Corbeta\Corbeta_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Corbeta\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Corbeta\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionCorbeta\Tripulacion.sb"
+    .TEX_PATH "Models\17Hannover\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+
+#_______________________________________________________
+#
+#                 <<<< BATAVIA>>>>
+#_______________________________________________________
+
+#---------------------
+#  NAVÍO BATAVIA
+#---------------------
+.BATAVIA_NAVIO
+[
+  .PROC "BARCO_NAVIO"
+  .AI "AI_BARCO_NAVIO"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Navio.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Navio\Navio.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Gallardetes.V3D"
+  ]
+  .TEX "Models\18Batavia\Barcos\Navio.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Navio\LineaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Navio\NavioVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Navio\Navio_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Navio\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Navio\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionNavio\Tripulacion.sb"
+    .TEX_PATH "Models\18Batavia\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+#-----------------------
+#  FRAGATA BATAVIA
+#-----------------------
+.BATAVIA_FRAGATA
+[
+  .PROC "BARCO_FRAGATA"
+  .AI "AI_BARCO_FRAGATA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Fragata.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Fragata\Fragata.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Gallardetes.V3D"
+  ]
+  .TEX "Models\18Batavia\Barcos\Fragata.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Fragata\FragataVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Fragata\FragataVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Fragata\Fragata_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Fragata\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Fragata\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionFragata\Tripulacion.sb"
+    .TEX_PATH "Models\18Batavia\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"  
+]
+#-----------------------
+#  CORBETA BATAVIA
+#-----------------------
+.BATAVIA_CORBETA
+[
+  .PROC "BARCO_CORBETA"
+  .AI "AI_BARCO_CORBETA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Corbeta.sb"
+  
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Corbeta\Corbeta.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Gallardetes.V3D"
+  ]
+  .TEX "Models\18Batavia\Barcos\Corbeta.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Corbeta\Corbeta_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Corbeta\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Corbeta\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionCorbeta\Tripulacion.sb"
+    .TEX_PATH "Models\18Batavia\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+
+#_______________________________________________________
+#
+#                 <<<< SAJONIA>>>>
+#_______________________________________________________
+
+#---------------------
+#  NAVÍO SAJON
+#---------------------
+.SAJONIA_NAVIO
+[
+  .PROC "BARCO_NAVIO"
+  .AI "AI_BARCO_NAVIO"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Navio.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Navio\Navio.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Gallardetes.V3D"
+  ]
+  .TEX "Models\19Sajonia\Barcos\Navio.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Navio\LineaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Navio\NavioVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Navio\Navio_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Navio\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Navio\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionNavio\Tripulacion.sb"
+    .TEX_PATH "Models\19Sajonia\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+#-----------------------
+#  FRAGATA SAJONA
+#-----------------------
+.SAJONIA_FRAGATA
+[
+  .PROC "BARCO_FRAGATA"
+  .AI "AI_BARCO_FRAGATA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Fragata.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Fragata\Fragata.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Gallardetes.V3D"
+  ]
+  .TEX "Models\19Sajonia\Barcos\Fragata.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Fragata\FragataVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Fragata\FragataVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Fragata\Fragata_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Fragata\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Fragata\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionFragata\Tripulacion.sb"
+    .TEX_PATH "Models\19Sajonia\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"  
+]
+#-----------------------
+#  CORBETA SAJONA
+#-----------------------
+.SAJONIA_CORBETA
+[
+  .PROC "BARCO_CORBETA"
+  .AI "AI_BARCO_CORBETA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Corbeta.sb"
+  
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Corbeta\Corbeta.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Gallardetes.V3D"
+  ]
+  .TEX "Models\19Sajonia\Barcos\Corbeta.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Corbeta\Corbeta_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Corbeta\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Corbeta\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionCorbeta\Tripulacion.sb"
+    .TEX_PATH "Models\19Sajonia\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+
+#_______________________________________________________
+#
+#                 <<<< POLONIA >>>>
+#_______________________________________________________
+
+#---------------------
+#  NAVÍO POLACO
+#---------------------
+.POLONIA_NAVIO
+[
+  .PROC "BARCO_NAVIO"
+  .AI "AI_BARCO_NAVIO"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Navio.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Navio\Navio.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Gallardetes.V3D"
+  ]
+  .TEX "Models\20Polonia\Barcos\Navio.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Navio\LineaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Navio\NavioVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Navio\Navio_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Navio\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Navio\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionNavio\Tripulacion.sb"
+    .TEX_PATH "Models\20Polonia\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+#-----------------------
+#  FRAGATA POLACA
+#-----------------------
+.POLONIA_FRAGATA
+[
+  .PROC "BARCO_FRAGATA"
+  .AI "AI_BARCO_FRAGATA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Fragata.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Fragata\Fragata.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Gallardetes.V3D"
+  ]
+  .TEX "Models\20Polonia\Barcos\Fragata.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Fragata\FragataVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Fragata\FragataVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Fragata\Fragata_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Fragata\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Fragata\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionFragata\Tripulacion.sb"
+    .TEX_PATH "Models\20Polonia\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"  
+]
+#-----------------------
+#  CORBETA POLACA
+#-----------------------
+.POLONIA_CORBETA
+[
+  .PROC "BARCO_CORBETA"
+  .AI "AI_BARCO_CORBETA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Corbeta.sb"
+  
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Corbeta\Corbeta.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Gallardetes.V3D"
+  ]
+  .TEX "Models\20Polonia\Barcos\Corbeta.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Corbeta\Corbeta_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Corbeta\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Corbeta\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionCorbeta\Tripulacion.sb"
+    .TEX_PATH "Models\20Polonia\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+
+#_______________________________________________________
+#
+#                 <<<< MOLDAVIA >>>>
+#_______________________________________________________
+
+#---------------------
+#  NAVÍO MOLDAVO
+#---------------------
+.MOLDAVIA_NAVIO
+[
+  .PROC "BARCO_NAVIO"
+  .AI "AI_BARCO_NAVIO"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Navio.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Navio\Navio.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Gallardetes.V3D"
+  ]
+  .TEX "Models\21Moldavia\Barcos\Navio.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Navio\LineaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Navio\NavioVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Navio\Navio_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Navio\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Navio\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionNavio\Tripulacion.sb"
+    .TEX_PATH "Models\21Moldavia\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+#-----------------------
+#  FRAGATA MOLDAVA
+#-----------------------
+.MOLDAVIA_FRAGATA
+[
+  .PROC "BARCO_FRAGATA"
+  .AI "AI_BARCO_FRAGATA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Fragata.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Fragata\Fragata.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Gallardetes.V3D"
+  ]
+  .TEX "Models\21Moldavia\Barcos\Fragata.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Fragata\FragataVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Fragata\FragataVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Fragata\Fragata_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Fragata\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Fragata\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionFragata\Tripulacion.sb"
+    .TEX_PATH "Models\21Moldavia\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"  
+]
+#-----------------------
+#  CORBETA MOLDAVA
+#-----------------------
+.MOLDAVIA_CORBETA
+[
+  .PROC "BARCO_CORBETA"
+  .AI "AI_BARCO_CORBETA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Corbeta.sb"
+  
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Corbeta\Corbeta.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Gallardetes.V3D"
+  ]
+  .TEX "Models\21Moldavia\Barcos\Corbeta.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Corbeta\Corbeta_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Corbeta\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Corbeta\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionCorbeta\Tripulacion.sb"
+    .TEX_PATH "Models\21Moldavia\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+
+#_______________________________________________________
+#
+#                 <<<< MARRUECOS >>>>
+#_______________________________________________________
+
+#---------------------
+#  NAVÍO MARRUECOS
+#---------------------
+.MARRUECOS_NAVIO
+[
+  .PROC "BARCO_NAVIO"
+  .AI "AI_BARCO_NAVIO"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Navio.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Navio\Navio.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Gallardetes.V3D"
+  ]
+  .TEX "Models\22Marruecos\Barcos\Navio.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Navio\LineaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Navio\NavioVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Navio\Navio_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Navio\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Navio\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionNavio\Tripulacion.sb"
+    .TEX_PATH "Models\22Marruecos\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+#-----------------------
+#  FRAGATA MARROQUI
+#-----------------------
+.MARRUECOS_FRAGATA
+[
+  .PROC "BARCO_FRAGATA"
+  .AI "AI_BARCO_FRAGATA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Fragata.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Fragata\Fragata.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Gallardetes.V3D"
+  ]
+  .TEX "Models\22Marruecos\Barcos\Fragata.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Fragata\FragataVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Fragata\FragataVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Fragata\Fragata_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Fragata\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Fragata\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionFragata\Tripulacion.sb"
+    .TEX_PATH "Models\22Marruecos\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"  
+]
+#-----------------------
+#  CORBETA MARROQUI
+#-----------------------
+.MARRUECOS_CORBETA
+[
+  .PROC "BARCO_CORBETA"
+  .AI "AI_BARCO_CORBETA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Corbeta.sb"
+  
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Corbeta\Corbeta.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Gallardetes.V3D"
+  ]
+  .TEX "Models\22Marruecos\Barcos\Corbeta.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Corbeta\Corbeta_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Corbeta\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Corbeta\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionCorbeta\Tripulacion.sb"
+    .TEX_PATH "Models\22Marruecos\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+
+
+#_______________________________________________________
+#
+#                 <<<< TUNEZ >>>>
+#_______________________________________________________
+
+#---------------------
+#  NAVÍO TUNEZ
+#---------------------
+.TUNEZ_NAVIO
+[
+  .PROC "BARCO_NAVIO"
+  .AI "AI_BARCO_NAVIO"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Navio.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Navio\Navio.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Gallardetes.V3D"
+  ]
+  .TEX "Models\23Tunez\Barcos\Navio.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Navio\LineaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Navio\NavioVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Navio\Navio_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Navio\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Navio\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionNavio\Tripulacion.sb"
+    .TEX_PATH "Models\23Tunez\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+#-----------------------
+#  FRAGATA TUNEZ
+#-----------------------
+.TUNEZ_FRAGATA
+[
+  .PROC "BARCO_FRAGATA"
+  .AI "AI_BARCO_FRAGATA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Fragata.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Fragata\Fragata.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Gallardetes.V3D"
+  ]
+  .TEX "Models\23Tunez\Barcos\Fragata.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Fragata\FragataVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Fragata\FragataVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Fragata\Fragata_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Fragata\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Fragata\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionFragata\Tripulacion.sb"
+    .TEX_PATH "Models\23Tunez\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"  
+]
+#-----------------------
+#  CORBETA TUNEZ
+#-----------------------
+.TUNEZ_CORBETA
+[
+  .PROC "BARCO_CORBETA"
+  .AI "AI_BARCO_CORBETA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Corbeta.sb"
+  
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Corbeta\Corbeta.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Gallardetes.V3D"
+  ]
+  .TEX "Models\23Tunez\Barcos\Corbeta.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Corbeta\Corbeta_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Corbeta\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Corbeta\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionCorbeta\Tripulacion.sb"
+    .TEX_PATH "Models\23Tunez\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+
+#_______________________________________________________
+#
+#                 <<<< TRIPOLITANIA >>>>
+#_______________________________________________________
+
+#---------------------
+#  NAVÍO TRIPOLITANO
+#---------------------
+.TRIPOLITANIA_NAVIO
+[
+  .PROC "BARCO_NAVIO"
+  .AI "AI_BARCO_NAVIO"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Navio.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Navio\Navio.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Navio\Gallardetes.V3D"
+  ]
+  .TEX "Models\24Tripolitania\Barcos\Navio.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Navio\LineaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Navio\NavioVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Navio\Navio_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Navio\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Navio\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionNavio\Tripulacion.sb"
+    .TEX_PATH "Models\24Tripolitania\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]
+#-----------------------
+#  FRAGATA TRIPOLITANA
+#-----------------------
+.TRIPOLITANIA_FRAGATA
+[
+  .PROC "BARCO_FRAGATA"
+  .AI "AI_BARCO_FRAGATA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Fragata.sb"
+
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Fragata\Fragata.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Fragata\Gallardetes.V3D"
+  ]
+  .TEX "Models\24Tripolitania\Barcos\Fragata.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Fragata\FragataVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Fragata\FragataVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Fragata\Fragata_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Fragata\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Fragata\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionFragata\Tripulacion.sb"
+    .TEX_PATH "Models\24Tripolitania\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"  
+]
+#-----------------------
+#  CORBETA TRIPOLITANA
+#-----------------------
+.TRIPOLITANIA_CORBETA
+[
+  .PROC "BARCO_CORBETA"
+  .AI "AI_BARCO_CORBETA"
+  .DEF_FISICA "Game/GameModes/NavalBattleMode/DefFisica_Corbeta.sb"
+  
+  .GRX 
+  [
+    "Models\00EjercitoBase\Barcos\Corbeta\Corbeta.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Cuerdas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\VelaMovimiento.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\2Banderas.V3D"
+    "Models\00EjercitoBase\Barcos\Corbeta\Gallardetes.V3D"
+  ]
+  .TEX "Models\24Tripolitania\Barcos\Corbeta.tga"
+  .DESTROY_TEX "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVelaDestruida.tga"
+  .VOL "Models\00EjercitoBase\Barcos\Corbeta\CorbetaVol.V3D"
+  .ANM "Models\00EjercitoBase\Barcos\Corbeta\Corbeta_ANM.sb"
+  .SEL "Models\00EjercitoBase\Barcos\Corbeta\Seleccion.V3D"
+  .SELSEC "Models\00EjercitoBase\Barcos\Corbeta\SeleccionMp.V3D"
+  
+  .TRIPULACION
+  [
+    .DEF_SB   "Models\00EjercitoBase\Barcos\TripulacionCorbeta\Tripulacion.sb"
+    .TEX_PATH "Models\24Tripolitania\Barcos"
+  ]
+  
+  #.AUDIOSET "Game\GameModes\NavalBattleMode\AudioScripts\AudioFX.sb"
+  #.SHADOW "Models\Sombras\Sombra.V3D"
+]

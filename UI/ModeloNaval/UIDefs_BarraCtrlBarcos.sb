@@ -1,0 +1,30 @@
+####################################################################################################
+# Define la barra de control de barcos
+####################################################################################################
+
+
+.ZONA
+[
+  .X 1 .Y 540 .SX 1023 .SY 225
+]
+
+.SELECTOR 
+[ .ID 'SELB'     
+  .INIT_POS  [ .X 9 .Y 586 ]
+  .INIT_POS2 [ .X 675 .Y 586 ]
+  .SEPARADOR [ .MAX_BARCOS 6 .SEPARACION 5 ]
+]
+
+.PANEL_ORDENES
+[ .ID 'POBA'          
+  .RELATIVE FALSE
+  #.X 812 .Y 639 .SX 824 .SY 659
+  .X 376 .Y 539 .SX 648 .SY 768
+  %Game\UI\ModeloNaval\UIDefs_PanelOrdenesBarcos.sb          
+]
+
+#.INFO_CURSOR
+#[ .ID 'INBS'
+#  .X  5 .Y 540
+#  %Game/UI/ModeloNaval/UIDefs_CtrlInfoBarco.sb
+#]      

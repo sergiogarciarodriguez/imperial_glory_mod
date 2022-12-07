@@ -1,0 +1,21 @@
+.VERSION 2
+
+#----------------------------------------
+#  Archivo de clima: Aragón (23)
+#----------------------------------------
+
+.CLIMA
+[
+]
+#--------------------------------------------------
+# Para poner animales voladores en el escenario
+#--------------------------------------------------
+.FAUNA
+[
+  [.FILE "Models\Criaturas\Aves\BandadaPajarillos01.V3D" .POS [0.0 -4000.0 0.0]]
+  [.FILE "Models\Criaturas\Aves\BandadaPajarillos02.V3D" .POS [0.0 -4000.0 0.0]]
+  [.FILE "Models\Criaturas\Aves\BandadaPajarillos03.V3D" .POS [0.0 -4000.0 0.0]]
+  [.FILE "Models\Criaturas\Aves\BandadaPajarillos01.V3D" .POS [10000.0 -1000.0 800.0]]
+  [.FILE "Models\Criaturas\Aves\BandadaPajarillos02.V3D" .POS [4000.0 -1000.0 3000.0]]
+  [.FILE "Models\Criaturas\Aves\BandadaPajarillos03.V3D" .POS [5000.0 -1000.0 12000.0]]
+]

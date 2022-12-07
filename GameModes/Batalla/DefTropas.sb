@@ -1,0 +1,155 @@
+#_______________________________________________________
+#
+#                  <<<< IMPERIOS >>>>
+#_______________________________________________________
+
+[
+  .NAME          "FRANCIA"
+  .DEFTROPAS     "Game/GameModes/Batalla/DefTropasStandard.sb"
+  .DEFUNIDADES   "Game/GameModes/Batalla/DefUnidadesImperio.sb"
+  .PATHTEX       "Models\01Francia\"
+]
+[
+  .NAME          "GRAN_BRETANYA"
+  .DEFTROPAS     "Game/GameModes/Batalla/DefTropasStandard.sb"
+  .DEFUNIDADES   "Game/GameModes/Batalla/DefUnidadesGranBretanya.sb"
+  .PATHTEX       "Models\04Inglaterra\"
+]
+[
+  .NAME          "AUSTRIA"
+  .DEFTROPAS     "Game/GameModes/Batalla/DefTropasStandard.sb"
+  .DEFUNIDADES   "Game/GameModes/Batalla/DefUnidadesImperio.sb"
+  .PATHTEX       "Models\02Austria\"
+]
+[
+  .NAME          "PRUSIA"
+  .DEFTROPAS     "Game/GameModes/Batalla/DefTropasStandard.sb"
+  .DEFUNIDADES   "Game/GameModes/Batalla/DefUnidadesImperio.sb"
+  .PATHTEX       "Models\03Prusia\"
+]
+[
+  .NAME          "RUSIA"
+  .DEFTROPAS     "Game/GameModes/Batalla/DefTropasStandard.sb"
+  .DEFUNIDADES   "Game/GameModes/Batalla/DefUnidadesImperio.sb"
+  .PATHTEX       "Models\05Rusia\"
+]
+
+#_______________________________________________________
+#
+#               <<<< Paises Neutrales >>>>
+#_______________________________________________________
+
+[
+  .NAME          "ESPANYA"
+  .DEFTROPAS     "Game/GameModes/Batalla/DefTropasStandard.sb"
+  .DEFUNIDADES   "Game/GameModes/Batalla/DefUnidadesEspanya.sb"
+  .PATHTEX       "Models\06Espana\"
+]
+[
+  .NAME          "OTOMANO"
+  .DEFTROPAS     "Game/GameModes/Batalla/DefTropasStandard.sb"
+  .DEFUNIDADES   "Game/GameModes/Batalla/DefUnidadesArabes.sb"
+  .PATHTEX       "Models\07Otomano\"
+]
+[
+  .NAME          "EGIPTO"
+  .DEFTROPAS     "Game/GameModes/Batalla/DefTropasStandard.sb"
+  .DEFUNIDADES   "Game/GameModes/Batalla/DefUnidadesEgipto.sb"
+  .PATHTEX       "Models\08Egipto\"
+]
+[
+  .NAME          "DOS_SICILIAS"
+  .DEFTROPAS     "Game/GameModes/Batalla/DefTropasStandard.sb"
+  .DEFUNIDADES   "Game/GameModes/Batalla/DefUnidadesStandard.sb"
+  .PATHTEX       "Models\09DosSicilias\"
+]
+[
+  .NAME          "DINAMARCA"
+  .DEFTROPAS     "Game/GameModes/Batalla/DefTropasStandard.sb"
+  .DEFUNIDADES   "Game/GameModes/Batalla/DefUnidadesStandard.sb"
+  .PATHTEX       "Models\10Dinamarca\"
+]
+[
+  .NAME          "SUECIA"
+  .DEFTROPAS     "Game/GameModes/Batalla/DefTropasStandard.sb"
+  .DEFUNIDADES   "Game/GameModes/Batalla/DefUnidadesStandard.sb"
+  .PATHTEX       "Models\11Suecia\"
+]
+[
+  .NAME          "PORTUGAL"
+  .DEFTROPAS     "Game/GameModes/Batalla/DefTropasStandard.sb"
+  .DEFUNIDADES   "Game/GameModes/Batalla/DefUnidadesStandard.sb"
+  .PATHTEX       "Models\12Portugal\"
+]
+[
+  .NAME          "LOMBARDIA"
+  .DEFTROPAS     "Game/GameModes/Batalla/DefTropasStandard.sb"
+  .DEFUNIDADES   "Game/GameModes/Batalla/DefUnidadesStandard.sb"
+  .PATHTEX       "Models\13Lombardia\"
+]
+[
+  .NAME          "PIAMONTE"
+  .DEFTROPAS     "Game/GameModes/Batalla/DefTropasStandard.sb"
+  .DEFUNIDADES   "Game/GameModes/Batalla/DefUnidadesStandard.sb"
+  .PATHTEX       "Models\14Piamonte\"
+]
+[
+  .NAME          "EPAPALES"
+  .DEFTROPAS     "Game/GameModes/Batalla/DefTropasStandard.sb"
+  .DEFUNIDADES   "Game/GameModes/Batalla/DefUnidadesStandard.sb"
+  .PATHTEX       "Models\15EPapales\"
+]
+[
+  .NAME          "RHELVETICA"
+  .DEFTROPAS     "Game/GameModes/Batalla/DefTropasStandard.sb"
+  .DEFUNIDADES   "Game/GameModes/Batalla/DefUnidadesStandard.sb"
+  .PATHTEX       "Models\16RHelvetica\"
+]
+[
+  .NAME          "HANNOVER"
+  .DEFTROPAS     "Game/GameModes/Batalla/DefTropasStandard.sb"
+  .DEFUNIDADES   "Game/GameModes/Batalla/DefUnidadesStandard.sb"
+  .PATHTEX       "Models\17Hannover\"
+]
+[
+  .NAME          "BATAVIA"
+  .DEFTROPAS     "Game/GameModes/Batalla/DefTropasStandard.sb"
+  .DEFUNIDADES   "Game/GameModes/Batalla/DefUnidadesStandard.sb"
+  .PATHTEX       "Models\18Batavia\"
+]
+[
+  .NAME          "SAJONIA"
+  .DEFTROPAS     "Game/GameModes/Batalla/DefTropasStandard.sb"
+  .DEFUNIDADES   "Game/GameModes/Batalla/DefUnidadesStandard.sb"
+  .PATHTEX       "Models\19Sajonia\"
+]
+[
+  .NAME          "POLONIA"
+  .DEFTROPAS     "Game/GameModes/Batalla/DefTropasStandard.sb"
+  .DEFUNIDADES   "Game/GameModes/Batalla/DefUnidadesPolonia.sb"
+  .PATHTEX       "Models\20Polonia\"
+]
+[
+  .NAME          "MOLDAVIA"
+  .DEFTROPAS     "Game/GameModes/Batalla/DefTropasStandard.sb"
+  .DEFUNIDADES   "Game/GameModes/Batalla/DefUnidadesStandard.sb"
+  .PATHTEX       "Models\21Moldavia\"
+]
+[
+  .NAME          "MARRUECOS"
+  .DEFTROPAS     "Game/GameModes/Batalla/DefTropasStandard.sb"
+  .DEFUNIDADES   "Game/GameModes/Batalla/DefUnidadesArabes.sb"
+  .PATHTEX       "Models\22Marruecos\"
+]
+[
+  .NAME          "TUNEZ"
+  .DEFTROPAS     "Game/GameModes/Batalla/DefTropasStandard.sb"
+  .DEFUNIDADES   "Game/GameModes/Batalla/DefUnidadesArabes.sb"
+  .PATHTEX       "Models\23Tunez\"
+]
+[
+  .NAME          "TRIPOLITANIA"
+  .DEFTROPAS     "Game/GameModes/Batalla/DefTropasStandard.sb"
+  .DEFUNIDADES   "Game/GameModes/Batalla/DefUnidadesArabes.sb"
+  .PATHTEX       "Models\24Tripolitania\"
+]

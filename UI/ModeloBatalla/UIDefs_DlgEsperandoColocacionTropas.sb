@@ -1,0 +1,47 @@
+#################################################################################################
+# Dialogo de espera a que todos los jugadores coloquen sus tropas para partidas de red
+#################################################################################################
+
+# Se define la ventana                   
+
+.MODAL TRUE
+.CENTER FALSE
+
+.ACTIVO FALSE
+
+.DEPTH 4
+
+.FONDO 
+[ 
+ .X 350 .Y 125 .TRANSPARENCY 220 .PRIORITY 0 .ALPHA TRUE
+ .FILE "Game/UI/ModeloBatalla/DummyDialogMessageBoxBatalla.tga" .U 4 .V 6 .SX 324 .SY 149 
+]              
+
+.CAPTION
+[
+ .XMARGEN 4
+ .YMARGEN 4
+ .HEIGHT 23
+ .TITLE [ .ALINEACION CENTER .TEXT LTEXT_UI_CAPTION_ESPERANDOCOLOCACIONTROPAS .FONT "Fonts/Times12.fnt" .SCALE 1.0 .COLOR [ .R 255 .G 255 .B 255 ] ]
+ .MOVIBLE FALSE
+]
+.MODAL FALSE    
+
+.CONTROLES
+[
+	[
+  	.TIPO UIC_WRAPTEXT .ID 'TXWP'
+  	.PARAMS
+  	[
+  	  .X 10 .Y 30 .SX 314 .SY 70
+  	  .ALIGN CENTER
+  	  
+ 	    .MSG "LTEXT_UI_ESPERANDOCOLOCACIONTROPAS"
+  	  .TEXT
+  	  [
+  	   .FONT "Fonts/Times10.fnt" 
+  	   .COLOR [ .R 255 .G 255 .B 255 ]
+  	  ]
+  	]
+	]  
+]

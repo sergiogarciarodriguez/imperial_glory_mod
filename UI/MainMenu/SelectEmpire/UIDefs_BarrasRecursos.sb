@@ -1,0 +1,77 @@
+#---------------------------------------------- BARRA DE DINERO -------------------------------------------	
+[ .TIPO UIC_BITMAP .ID 'BMBD' 
+ .PARAMS 
+ [ 
+  .FILE "Game/UI/MainMenu/SelectEmpire/SeleccionImperioA_.tga" 
+  .U 333 .V 687
+  .X 52 .Y 454
+  .SX 122 .SY 10  
+  .PRIORITY 40
+  .ALPHA TRUE
+ ] 
+]
+
+#---------------------------------------------- BARRA DE POBLACION ----------------------------------------	
+[ .TIPO UIC_BITMAP .ID 'BMBP' 
+ .PARAMS 
+ [ 
+  .FILE "Game/UI/MainMenu/SelectEmpire/SeleccionImperioA_.tga" 
+  .U 333 .V 687
+  .X 192 .Y 454
+  .SX 122 .SY 10  
+  .PRIORITY 40
+  .ALPHA TRUE
+ ] 
+]
+
+#---------------------------------------------- BARRA DE RECURSOS -----------------------------------------	
+[ .TIPO UIC_BITMAP .ID 'BMBR' 
+ .PARAMS 
+ [ 
+  .FILE "Game/UI/MainMenu/SelectEmpire/SeleccionImperioA_.tga" 
+  .U 333 .V 687
+  .X 52 .Y 480
+  .SX 122 .SY 10  
+  .PRIORITY 40
+  .ALPHA TRUE
+ ] 
+]
+	
+#---------------------------------------------- BARRA DE COMIDA -------------------------------------------	
+[ .TIPO UIC_BITMAP .ID 'BMBC' 
+ .PARAMS 
+ [ 
+  .FILE "Game/UI/MainMenu/SelectEmpire/SeleccionImperioA_.tga" 
+  .U 333 .V 687
+  .X 192 .Y 480
+  .SX 122 .SY 10  
+  .PRIORITY 40
+  .ALPHA TRUE
+ ] 
+]
+
+#---------------------------------------------- ICONO DE DINERO Y RECURSOS --------------------------------	
+[ .TIPO UIC_BITMAP .ID 'BMID' 
+ .PARAMS 
+ [ 
+  .FILE "Game/UI/MainMenu/SelectEmpire/SeleccionImperioA_.tga" 
+  .U 328 .V 774
+  .X 35 .Y 448
+  .SX 38 .SY 49  
+  .PRIORITY 45
+  .ALPHA TRUE
+ ] 
+]
+
+#---------------------------------------------- ICONO DE POBLACION Y COMIDA -------------------------------	
+[ .TIPO UIC_BITMAP .ID 'BMIP' 
+ .PARAMS 
+ [ 
+  .FILE "Game/UI/MainMenu/SelectEmpire/SeleccionImperioA_.tga" 
+  .U 381 .V 774
+  .X 175 .Y 448
+  .SX 38 .SY 49  
+  .PRIORITY 45
+  .ALPHA TRUE
+ ] 
+]

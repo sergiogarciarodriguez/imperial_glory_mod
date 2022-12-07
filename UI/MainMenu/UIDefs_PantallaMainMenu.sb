@@ -1,0 +1,238 @@
+ ##############################################################################################################
+ # Pantalla de menu principal
+ ##############################################################################################################
+
+ # Imagen de fondo de la espada
+ [ .TIPO UIC_BITMAP .ID 'FOND' .PARAMS [ .FILE "Game/UI/MainMenu/MenuPrincipal.tga" .X 0 .Y 0 .SX 1024 .SY 383 .U 0 .V 0 .PRIORITY 240 .ALPHA TRUE ] ]                  
+ 
+ # Video del destello de la espada
+ [ 
+   .TIPO UIC_VIDEO .ID 'VDDE'
+   .PARAMS
+   [
+     .FILE "Videos/Destello.bik" 
+     .SX 1024 .SY 384
+     .ALPHA TRUE .PRIORITY 241 .ALPHA_ADITIVO TRUE
+     .NOSOUND TRUE .LOOP TRUE
+   ]
+ ] 
+ 
+ [ .TIPO UIC_DIALOGO .ID 'DDDD'
+   .PARAMS
+   [
+     .MODAL TRUE
+     .FADE_IN TRUE
+     .FADE_OUT FALSE
+     .FADE_TIME 0.6
+     .FADE_IN_DELAY 1.9
+     
+    .FONDO
+    [
+      .FILE "Game/UI/MainMenu/MenuPrincipal.tga"
+      .X 0 .Y 0 .U 90 .V 700 .SX 1 .SY 1 .ALPHA FALSE
+      .PRIORITY 240
+    ]
+    .CONTROLES
+    [
+      # Gestor de las opciones de menu
+      [ .TIPO UIC_GESTOROPCIONES .ID 'GOMM'
+        .PARAMS
+        [        
+          .OPCIONES
+          [
+          [ .TIPO_OPCION UIC_BOTONTEXTO .ID 'OP_1' 
+            .PARAMS
+            [ .TEXT LTEXT_UI_MAINMENU_CAMPANYA
+              .FONT "Fonts/Times15.fnt"
+              .SOLTADO  [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+              .SELECCIONADO     [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+              .PULSADO      [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+      	      .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+      	      .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"         
+      	      .CENTER_AREA [ .X1 0 .Y1 0 .X2 249 .Y2 29 ]
+              .FONDO
+              [
+                .PRIORITY 230
+                .SOLTADO [ .FILE "Game/UI/MainMenu/MenuPrincipal.tga" .U 2 .V 384 ] 
+                .SELECCIONADO    [ .FILE "Game/UI/MainMenu/MenuPrincipal.tga" .U 252 .V 384 ] 
+                .PULSADO     [ .FILE "Game/UI/MainMenu/MenuPrincipal.tga" .U 502 .V 384 ] 
+                .X 395 .Y 382 .SX 249 .SY 33 .ALPHA TRUE  
+              ]
+            ]
+          ]
+           
+          [ .TIPO_OPCION UIC_BOTONTEXTO .ID 'OP_7' 
+            .PARAMS
+            [ .TEXT LTEXT_UI_MAINMENU_BATALLAS_HISTORICAS
+              .FONT "Fonts/Times15.fnt"
+              .SOLTADO  	[ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+              .SELECCIONADO  [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+              .PULSADO       [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+      	      .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+      	      .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"         
+      	      .CENTER_AREA [ .X1 0 .Y1 0 .X2 249 .Y2 29 ]
+              .FONDO 
+              [ 
+                .PRIORITY 230
+                .SOLTADO [ .FILE "Game/UI/MainMenu/MenuPrincipal.tga" .U 2 .V 418 ] 
+                .SELECCIONADO    [ .FILE "Game/UI/MainMenu/MenuPrincipal.tga" .U 252 .V 418 ] 
+                .PULSADO     [ .FILE "Game/UI/MainMenu/MenuPrincipal.tga" .U 502 .V 418 ] 
+                .X 395 .Y 415 .SX 249 .SY 33 .ALPHA TRUE 
+              ] 
+            ]
+          ]     
+
+          [ .TIPO_OPCION UIC_BOTONTEXTO .ID 'OP_5' 
+            .PARAMS
+            [ .TEXT LTEXT_UI_MAINMENU_PARTIDA_RAPIDA
+              .FONT "Fonts/Times15.fnt"
+              .SOLTADO  	[ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+              .SELECCIONADO  [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+              .PULSADO       [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+      	      .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+      	      .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"         
+      	      .CENTER_AREA [ .X1 0 .Y1 0 .X2 249 .Y2 29 ]
+              .FONDO 
+              [ 
+                .PRIORITY 230
+                .SOLTADO [ .FILE "Game/UI/MainMenu/MenuPrincipal.tga" .U 2 .V 449 ] 
+                .SELECCIONADO    [ .FILE "Game/UI/MainMenu/MenuPrincipal.tga" .U 252 .V 449 ] 
+                .PULSADO     [ .FILE "Game/UI/MainMenu/MenuPrincipal.tga" .U 502 .V 449 ] 
+                .X 395 .Y 445 .SX 249 .SY 33 .ALPHA TRUE 
+              ] 
+            ]
+          ]
+
+          [ .TIPO_OPCION UIC_BOTONTEXTO .ID 'OP_2' 
+            .PARAMS
+            [ .TEXT LTEXT_UI_MAINMENU_MULTIJUGADOR
+              .FONT "Fonts/Times15.fnt"
+              .SOLTADO  [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+              .SELECCIONADO     [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+              .PULSADO      [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+      	      .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+      	      .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"         
+      	      .CENTER_AREA [ .X1 0 .Y1 0 .X2 249 .Y2 29 ]
+              .FONDO 
+              [ 
+                .PRIORITY 230
+                .SOLTADO [ .FILE "Game/UI/MainMenu/MenuPrincipal.tga" .U 2 .V 480 ] 
+                .SELECCIONADO    [ .FILE "Game/UI/MainMenu/MenuPrincipal.tga" .U 252 .V 480 ] 
+                .PULSADO     [ .FILE "Game/UI/MainMenu/MenuPrincipal.tga" .U 502 .V 480 ] 
+                .X 395 .Y 475 .SX 249 .SY 33 .ALPHA TRUE 
+              ] 
+            ]
+          ]
+
+          [ .TIPO_OPCION UIC_BOTONTEXTO .ID 'OP_6' 
+            .PARAMS
+            [ .TEXT LTEXT_UI_MAINMENU_TUTORIAL
+              .FONT "Fonts/Times15.fnt"
+              .SOLTADO  [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+              .SELECCIONADO     [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+              .PULSADO      [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+      	      .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+      	      .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"         
+      	      .CENTER_AREA [ .X1 0 .Y1 0 .X2 249 .Y2 29 ]
+              .FONDO 
+              [ 
+                .PRIORITY 230
+                .SOLTADO [ .FILE "Game/UI/MainMenu/MenuPrincipal.tga" .U 2 .V 511 ] 
+                .SELECCIONADO    [ .FILE "Game/UI/MainMenu/MenuPrincipal.tga" .U 252 .V 511 ] 
+                .PULSADO     [ .FILE "Game/UI/MainMenu/MenuPrincipal.tga" .U 502 .V 511 ] 
+                .X 395 .Y 505 .SX 249 .SY 33 .ALPHA TRUE 
+              ] 
+            ]
+          ]
+
+          [ .TIPO_OPCION UIC_BOTONTEXTO .ID 'OP_8' 
+            .PARAMS
+            [ .TEXT LTEXT_UI_MAINMENU_OPCIONES
+              .FONT "Fonts/Times15.fnt"
+              .SOLTADO  [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+              .SELECCIONADO     [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+              .PULSADO      [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+      	      .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+      	      .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"         
+      	      .CENTER_AREA [ .X1 0 .Y1 0 .X2 209 .Y2 26 ]
+              .FONDO 
+              [ 
+                .PRIORITY 230
+                .SOLTADO [ .FILE "Game/UI/MainMenu/MenuPrincipal.tga" .U 22 .V 542 ] 
+                .SELECCIONADO    [ .FILE "Game/UI/MainMenu/MenuPrincipal.tga" .U 272 .V 542 ] 
+                .PULSADO     [ .FILE "Game/UI/MainMenu/MenuPrincipal.tga" .U 522 .V 542 ] 
+                .X 415 .Y 535 .SX 209 .SY 30 .ALPHA TRUE 
+              ] 
+            ]
+          ]
+
+          [ .TIPO_OPCION UIC_BOTONTEXTO .ID 'OP_4' 
+            .PARAMS
+            [ .TEXT LTEXT_UI_MAINMENU_CREDITOS
+              .FONT "Fonts/Times15.fnt"
+              .SOLTADO  [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+              .SELECCIONADO     [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+              .PULSADO      [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+      	      .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+      	      .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"         
+      	      .CENTER_AREA [ .X1 0 .Y1 0 .X2 209 .Y2 26 ]
+              .FONDO 
+              [ 
+                .PRIORITY 230
+                .SOLTADO [ .FILE "Game/UI/MainMenu/MenuPrincipal.tga" .U 22 .V 573 ] 
+                .SELECCIONADO    [ .FILE "Game/UI/MainMenu/MenuPrincipal.tga" .U 272 .V 573 ] 
+                .PULSADO     [ .FILE "Game/UI/MainMenu/MenuPrincipal.tga" .U 522 .V 573 ] 
+                .X 415 .Y 565 .SX 209 .SY 30 .ALPHA TRUE 
+              ] 
+            ]
+          ]
+                 
+            
+          [ .TIPO_OPCION UIC_BOTONTEXTO .ID 'OP_X' 
+            .PARAMS
+            [ .TEXT LTEXT_UI_EXIT
+              .FONT "Fonts/Times15.fnt"
+              .SOLTADO  [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+              .SELECCIONADO     [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+              .PULSADO      [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+      	      .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+      	      .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"         
+      	      .CENTER_AREA [ .X1 0 .Y1 0 .X2 209 .Y2 26 ]
+              .FONDO 
+              [ 
+                .PRIORITY 230
+                .SOLTADO [ .FILE "Game/UI/MainMenu/MenuPrincipal.tga" .U 22 .V 604 ] 
+                .SELECCIONADO    [ .FILE "Game/UI/MainMenu/MenuPrincipal.tga" .U 272 .V 604 ] 
+                .PULSADO     [ .FILE "Game/UI/MainMenu/MenuPrincipal.tga" .U 522 .V 604 ] 
+                .X 415 .Y 595 .SX 209 .SY 30 .ALPHA TRUE 
+              ]
+              .KEY
+              [
+                .TECLA LKEY_MAINMENU_CANCELKEY .EVENTOS [ KEY_DOWN KEY_UP ]          
+              ] 
+            ]                                
+          ]
+          ]
+                                 
+          .TECLAS [ .TECLA_SUBIR LKEY_MAINMENU_OPTION_UP .TECLA_BAJAR LKEY_MAINMENU_OPTION_DOWN .TECLA_CLICK LKEY_MAINMENU_OPTION_SELECT .GESTION_CIRCULAR FALSE ]         
+        ]
+      ] # ~ Gestor de las opciones de menu                            
+    ]
+   ]
+ ]
+ 
+ # Video del pergamino desplegándose
+ [ 
+   .TIPO UIC_VIDEO .ID 'VDPE'
+   .PARAMS
+   [
+     .FILE "Videos/PergaminoMenu.bik" 
+     .Y 300
+     .SX 1024 .SY 468
+     .V 300
+     .ALPHA TRUE .PRIORITY 220
+     .NOSOUND FALSE .LOOP FALSE
+     .NOSYNC FALSE # estos vídeos deberían estar sincronizados con el sistema
+   ]
+ ] 
+

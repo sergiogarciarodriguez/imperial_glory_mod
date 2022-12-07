@@ -1,0 +1,53 @@
+#################################################################################
+# Definición de la barra Experiencia
+#################################################################################
+
+[ .TIPO UIC_BITMAP .ID 1
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloBatalla/InterfazPaises/Francia/IconosFrancia.tga" 
+    .U 4 .V 492 .X 1 .Y 56 .SX 26 .SY 15
+    .PRIORITY 4 
+    .ALPHA TRUE
+  ]
+]
+
+[ .TIPO UIC_BITMAP .ID 2
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloBatalla/InterfazPaises/Francia/IconosFrancia.tga" 
+    .U 31 .V 492 .X 1 .Y 56 .SX 26 .SY 15 
+    .PRIORITY 4 
+    .ALPHA TRUE
+  ]
+]
+
+[ .TIPO UIC_BITMAP .ID 3
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloBatalla/InterfazPaises/Francia/IconosFrancia.tga" 
+    .U 58 .V 492 .X 1 .Y 56 .SX 26 .SY 15 
+    .PRIORITY 4 
+    .ALPHA TRUE
+  ]
+]
+
+[ .TIPO UIC_BITMAP .ID 4
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloBatalla/InterfazPaises/Francia/IconosFrancia.tga" 
+    .U 85 .V 492 .X 1 .Y 56 .SX 26 .SY 15 
+    .PRIORITY 4 
+    .ALPHA TRUE
+  ]
+]
+
+[ .TIPO UIC_BITMAP .ID 5
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloBatalla/InterfazPaises/Francia/IconosFrancia.tga" 
+    .U 112 .V 492 .X 1 .Y 56 .SX 26 .SY 15 
+    .PRIORITY 4 
+    .ALPHA TRUE
+  ]
+]

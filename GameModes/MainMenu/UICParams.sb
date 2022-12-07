@@ -1,0 +1,84 @@
+###############################################################################################################
+# Fichero asociado al server de parametros para controles.
+# Modo -> MainMenu.
+###############################################################################################################
+
+  .BTNTEXTO_PARAMS
+  [
+  
+    [
+     .KEY MBGESTION_DEFAULT_BTN
+     .PARAMS 
+     [  
+       .TIPO UIC_BOTONTEXTO
+       
+       .COMPORTAMIENTO SIMPLE
+       
+       .SOLTADO [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+       .SELECCIONADO [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+       .PULSADO [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+       
+       .TEXT " "
+       
+       .FONT "Fonts/Times12.fnt"
+         
+       .FONDO
+       [ 
+         .SOLTADO [ .FILE "Game/UI/ModeloGestion/UIDefsMsgBoxNotificaciones/NotificacionEdificios.tga" .U 92 .V 89 ]
+         .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/UIDefsMsgBoxNotificaciones/NotificacionEdificios.tga" .U 92 .V 129 ]
+         .PULSADO [ .FILE "Game/UI/ModeloGestion/UIDefsMsgBoxNotificaciones/NotificacionEdificios.tga" .U 92 .V 169 ]
+         .SX 136 .SY 37
+         .ALPHA TRUE
+       ]              
+                         
+       .CENTER_AREA [ .X1 0 .Y1 0 .X2 136 .Y2 37 ]
+       
+       .IDSELECTSOUND "S_FXUI_CLICKBUTTON"
+       .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"  
+       
+       .KEY [ .TECLA LKEY_GENERIC_MB_OK_KEY .EVENTOS [ KEY_DOWN KEY_UP ] ]     
+     ]
+    ]   
+  
+    [
+      .KEY MB_DEFAULTTEXT_BTN
+      .PARAMS [ %Game/UI/Comun/UIDefs_CommonMsgBoxBtn.sb ]
+    ]
+        
+    # Definicion de controles standard
+    %Game/UI/Comun/UIDefs_ControlesStandard.sb
+  ]
+  
+  .BITMAP_PARAMS
+  [
+    # Tropa de los paises en la pantalla de configurar ejércitos
+    %Game/UI/MainMenu/UIDefs_PoolBitmapEscenario.sb    
+
+    # Iconos de nivels de experiencia para la compra de tropas en Quick Game
+    %Game\UI\MainMenu\UIDefs_PoolBitmapExperiencia.sb    
+
+    # Iconos de tropas 
+    %Game\UI\MainMenu\Tropas\Iconos\Austria\UIDefs_PoolTropasIcons.sb
+    %Game\UI\MainMenu\Tropas\Iconos\Francia\UIDefs_PoolTropasIcons.sb
+    %Game\UI\MainMenu\Tropas\Iconos\Inglaterra\UIDefs_PoolTropasIcons.sb
+    %Game\UI\MainMenu\Tropas\Iconos\Prusia\UIDefs_PoolTropasIcons.sb
+    %Game\UI\MainMenu\Tropas\Iconos\Rusia\UIDefs_PoolTropasIcons.sb
+    %Game\UI\MainMenu\Tropas\Iconos\Especiales\UIDefs_PoolTropasIcons.sb
+    %Game\UI\MainMenu\Tropas\Iconos\Genericos\UIDefs_PoolTropasIcons.sb
+    
+    #Banderas de seleccion de imperios
+    %Game/UI/MainMenu/SelectEmpire/UIDefs_Banderas.sb
+    %Game/UI/ModeloGestion/UIDefs_Banderas.sb
+    %Game/UI/MainMenu/SelectEmpire/UIDefs_Estrellas.sb    
+    
+  ]
+
+  .TEXT_PARAMS
+  [
+    
+    # Textos de los imperios en el menu de seleccion de imperios   
+    %Game/UI/MainMenu/SelectEmpire/UIDefs_TextoNombreImperio.sb
+  
+  ]
+
+  %Game/GameModes/Comun/UICParams.sb

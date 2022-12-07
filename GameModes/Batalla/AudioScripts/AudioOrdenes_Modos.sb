@@ -1,0 +1,180 @@
+  #===============================================================================
+  # S_MODO_DEFENSIVO_INF
+  #===============================================================================
+  [ 
+    .IDNAME "S_MODO_DEFENSIVO_INF_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/InfantryCommander/Inf_ignore_steadymarch.ogg" "Audio/Voices/Francia/InfantryCommander/Inf_ignore_followflag.ogg"  
+            "Audio/Voices/Francia/InfantryCommander/Inf_ignore_holdranks.ogg" "Audio/Voices/Francia/InfantryCommander/Inf_ignore_eyesfront.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_MODO_DEFENSIVO_INF_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/InfantryCommander/Inf_ignore_steadymarch.ogg" "Audio/Voices/Inglaterra/InfantryCommander/Inf_ignore_followflag.ogg"  
+            "Audio/Voices/Inglaterra/InfantryCommander/Inf_ignore_holdranks.ogg" "Audio/Voices/Inglaterra/InfantryCommander/Inf_ignore_eyesfront.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_MODO_DEFENSIVO_INF_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/InfantryCommander/Inf_ignore_steadymarch.ogg" "Audio/Voices/Prusia/InfantryCommander/Inf_ignore_followflag.ogg"  
+            "Audio/Voices/Prusia/InfantryCommander/Inf_ignore_holdranks.ogg" "Audio/Voices/Prusia/InfantryCommander/Inf_ignore_eyesfront.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_MODO_DEFENSIVO_INF_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/InfantryCommander/Inf_ignore_steadymarch.ogg" "Audio/Voices/Austria/InfantryCommander/Inf_ignore_followflag.ogg"  
+            "Audio/Voices/Austria/InfantryCommander/Inf_ignore_holdranks.ogg" "Audio/Voices/Austria/InfantryCommander/Inf_ignore_eyesfront.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_MODO_DEFENSIVO_INF_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/InfantryCommander/Inf_ignore_steadymarch.ogg" "Audio/Voices/Rusia/InfantryCommander/Inf_ignore_followflag.ogg"  
+            "Audio/Voices/Rusia/InfantryCommander/Inf_ignore_holdranks.ogg" "Audio/Voices/Rusia/InfantryCommander/Inf_ignore_eyesfront.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_MODO_DEFENSIVO_CAB
+  #===============================================================================
+  [ 
+    .IDNAME "S_MODO_DEFENSIVO_CAB_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/CavalryCommander/Cav_ignore_steady.ogg" "Audio/Voices/Francia/CavalryCommander/Cav_ignore_followflag.ogg"  
+            "Audio/Voices/Francia/CavalryCommander/Cav_ignore_holdranks.ogg" "Audio/Voices/Francia/CavalryCommander/Cav_ignore_eyesfront.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_MODO_DEFENSIVO_CAB_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/CavalryCommander/Cav_ignore_steady.ogg" "Audio/Voices/Inglaterra/CavalryCommander/Cav_ignore_followflag.ogg"  
+            "Audio/Voices/Inglaterra/CavalryCommander/Cav_ignore_holdranks.ogg" "Audio/Voices/Inglaterra/CavalryCommander/Cav_ignore_eyesfront.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_MODO_DEFENSIVO_CAB_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/CavalryCommander/Cav_ignore_steady.ogg" "Audio/Voices/Prusia/CavalryCommander/Cav_ignore_followflag.ogg"  
+            "Audio/Voices/Prusia/CavalryCommander/Cav_ignore_holdranks.ogg" "Audio/Voices/Prusia/CavalryCommander/Cav_ignore_eyesfront.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_MODO_DEFENSIVO_CAB_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/CavalryCommander/Cav_ignore_steady.ogg" "Audio/Voices/Austria/CavalryCommander/Cav_ignore_followflag.ogg"  
+            "Audio/Voices/Austria/CavalryCommander/Cav_ignore_holdranks.ogg" "Audio/Voices/Austria/CavalryCommander/Cav_ignore_eyesfront.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_MODO_DEFENSIVO_CAB_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/CavalryCommander/Cav_ignore_steady.ogg" "Audio/Voices/Rusia/CavalryCommander/Cav_ignore_followflag.ogg"  
+            "Audio/Voices/Rusia/CavalryCommander/Cav_ignore_holdranks.ogg" "Audio/Voices/Rusia/CavalryCommander/Cav_ignore_eyesfront.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_MODO_DEFENSIVO_ART
+  #===============================================================================
+  [ 
+    .IDNAME "S_MODO_DEFENSIVO_ART_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/ArtilleryCommander/Art_ignore_steady.ogg" "Audio/Voices/Francia/ArtilleryCommander/Art_ignore_eyesfront.ogg"  
+            "Audio/Voices/Francia/ArtilleryCommander/Art_ignore_followflag.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_MODO_DEFENSIVO_ART_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/ArtilleryCommander/Art_ignore_steady.ogg" "Audio/Voices/Inglaterra/ArtilleryCommander/Art_ignore_eyesfront.ogg"  
+            "Audio/Voices/Inglaterra/ArtilleryCommander/Art_ignore_followflag.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_MODO_DEFENSIVO_ART_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/ArtilleryCommander/Art_ignore_steady.ogg" "Audio/Voices/Prusia/ArtilleryCommander/Art_ignore_eyesfront.ogg"  
+            "Audio/Voices/Prusia/ArtilleryCommander/Art_ignore_followflag.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_MODO_DEFENSIVO_ART_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/ArtilleryCommander/Art_ignore_steady.ogg" "Audio/Voices/Austria/ArtilleryCommander/Art_ignore_eyesfront.ogg"  
+            "Audio/Voices/Austria/ArtilleryCommander/Art_ignore_followflag.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_MODO_DEFENSIVO_ART_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/ArtilleryCommander/Art_ignore_steady.ogg" "Audio/Voices/Rusia/ArtilleryCommander/Art_ignore_eyesfront.ogg"  
+            "Audio/Voices/Rusia/ArtilleryCommander/Art_ignore_followflag.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+
+  #===============================================================================
+  # S_MODO_ATACANTE - TODO
+  #===============================================================================
+  [ 
+    .IDNAME "S_MODO_ATACANTE_DEFAULT"     
+    .PATH [ "Audio/Voices/Francia/InfantryCommander/Inf_hold_holdposition.ogg" "Audio/Voices/Francia/InfantryCommander/Inf_hold_holdground.ogg"  
+            "Audio/Voices/Francia/InfantryCommander/Inf_hold_steady.ogg" "Audio/Voices/Francia/InfantryCommander/Inf_hold_holdyourposition.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  
+  
+  #===============================================================================
+  # S_MODO_CORRER_INF
+  #===============================================================================
+  [ 
+    .IDNAME "S_MODO_CORRER_INF_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/InfantryCommander/Inf_run_atdouble_01.ogg" "Audio/Voices/Francia/InfantryCommander/Inf_run_atdouble_02.ogg"  
+            "Audio/Voices/Francia/InfantryCommander/Inf_run_advancedouble_01.ogg" "Audio/Voices/Francia/InfantryCommander/Inf_run_advancedouble_02.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_MODO_CORRER_INF_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/InfantryCommander/Inf_run_atdouble_01.ogg" "Audio/Voices/Inglaterra/InfantryCommander/Inf_run_atdouble_02.ogg"  
+            "Audio/Voices/Inglaterra/InfantryCommander/Inf_run_advancedouble_01.ogg" "Audio/Voices/Inglaterra/InfantryCommander/Inf_run_advancedouble_02.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_MODO_CORRER_INF_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/InfantryCommander/Inf_run_atdouble_01.ogg" "Audio/Voices/Prusia/InfantryCommander/Inf_run_atdouble_02.ogg"  
+            "Audio/Voices/Prusia/InfantryCommander/Inf_run_advancedouble_01.ogg" "Audio/Voices/Prusia/InfantryCommander/Inf_run_advancedouble_02.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_MODO_CORRER_INF_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/InfantryCommander/Inf_run_atdouble_01.ogg" "Audio/Voices/Rusia/InfantryCommander/Inf_run_atdouble_02.ogg"  
+            "Audio/Voices/Rusia/InfantryCommander/Inf_run_advancedouble_01.ogg" "Audio/Voices/Rusia/InfantryCommander/Inf_run_advancedouble_02.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_MODO_CORRER_INF_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/InfantryCommander/Inf_run_atdouble_01.ogg" "Audio/Voices/Austria/InfantryCommander/Inf_run_atdouble_02.ogg"  
+            "Audio/Voices/Austria/InfantryCommander/Inf_run_advancedouble_01.ogg" "Audio/Voices/Austria/InfantryCommander/Inf_run_advancedouble_02.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_MODO_CORRER_CAB
+  #===============================================================================
+  [ 
+    .IDNAME "S_MODO_CORRER_CAB_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/CavalryCommander/Cav_QuickMove_trot_01.ogg" "Audio/Voices/Francia/CavalryCommander/Cav_QuickMove_trot_02.ogg"  
+            "Audio/Voices/Francia/CavalryCommander/Cav_QuickMove_advancetrot_01.ogg" "Audio/Voices/Francia/CavalryCommander/Cav_QuickMove_advancetrot_02.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_MODO_CORRER_CAB_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/CavalryCommander/Cav_QuickMove_trot_01.ogg" "Audio/Voices/Inglaterra/CavalryCommander/Cav_QuickMove_trot_02.ogg"  
+            "Audio/Voices/Inglaterra/CavalryCommander/Cav_QuickMove_advancetrot_01.ogg" "Audio/Voices/Inglaterra/CavalryCommander/Cav_QuickMove_advancetrot_02.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_MODO_CORRER_CAB_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/CavalryCommander/Cav_QuickMove_trot_01.ogg" "Audio/Voices/Prusia/CavalryCommander/Cav_QuickMove_trot_02.ogg"  
+            "Audio/Voices/Prusia/CavalryCommander/Cav_QuickMove_advancetrot_01.ogg" "Audio/Voices/Prusia/CavalryCommander/Cav_QuickMove_advancetrot_02.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_MODO_CORRER_CAB_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/CavalryCommander/Cav_QuickMove_trot_01.ogg" "Audio/Voices/Rusia/CavalryCommander/Cav_QuickMove_trot_02.ogg"  
+            "Audio/Voices/Rusia/CavalryCommander/Cav_QuickMove_advancetrot_01.ogg" "Audio/Voices/Rusia/CavalryCommander/Cav_QuickMove_advancetrot_02.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_MODO_CORRER_CAB_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/CavalryCommander/Cav_QuickMove_trot_01.ogg" "Audio/Voices/Austria/CavalryCommander/Cav_QuickMove_trot_02.ogg"  
+            "Audio/Voices/Austria/CavalryCommander/Cav_QuickMove_advancetrot_01.ogg" "Audio/Voices/Austria/CavalryCommander/Cav_QuickMove_advancetrot_02.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]

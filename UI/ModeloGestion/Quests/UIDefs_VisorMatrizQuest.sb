@@ -1,0 +1,56 @@
+###############################################################################
+# Mostrará los quest
+###############################################################################
+
+ .CENTER_ICONS FALSE
+
+ # Definimos la matriz de vision
+ .MATRIZ
+ [
+  .FILAS 2
+  .COLUMNAS 8
+ ]     
+ 
+ # Definimos el fondo (opcional)
+ #.FONDO
+ #[      
+  #.FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" 
+  #.X 365 .Y 615 .U 365 .V 871 .SX 380 .SY 153 .ALPHA TRUE  
+ #] 
+ 
+ # Definimos los parametros de dibujado
+ # Nota: - En caso de existir fondo X e Y seran deltas sobre la posicion del mismo y en caso de no definirlo
+ #         serviran para indicar la posicion de inicio de dibujado
+ .DRAW_PARAMS
+ [
+  .X 40 #antes 75
+  .Y 116
+  .CELL_XSPACE 0 #16 #antes 10
+  .CELL_YSPACE 0 #30 #antes 22
+  .SLIDER_XSPACE 10
+  .OBJ_WIDTH 120 #104 #antes 110
+  .OBJ_HEIGHT 82 #52 #antes 60
+ ]         
+     
+ # Definimos el Slider
+ .SLIDER [ .STYLE DEFAULT_SLIDER_VERTICAL_GRANDE ]
+ 
+ # Prioridad base de los elementos en el visor
+ # A los que se les haga un drag tendra una prioridad superior por lo que la prioridad base
+ # no debera de exceder el valor de 254
+ .PRIORITY_BASE 254
+ 
+ # Param de ToolTip
+ .TOOL_TIP 
+ [
+  .FONT "Fonts/gothic.fnt"
+  .COLOR [ .R 255 .G 255 .B 255 ] 
+  .X 32 .Y 32 
+    
+  .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb        
+ ]
+ 
+ .SOUNDS
+ [
+   .IDSELECTSOUND "S_MOVIMIENTO_IMPOSIBLE"
+ ]

@@ -1,0 +1,340 @@
+#_______________________________________________________
+#
+#                  <<<< STANDARD >>>>
+#_______________________________________________________
+
+#_______________________________________________________
+#
+#                Infanteria Standard
+#_______________________________________________________
+
+.MILICIA
+[
+  .PROC "UNIDAD_INFANTERIA"
+  .AI "AI_UNIDAD_INFANTERIA"
+  .GRX "Models\00EjercitoBase\Infanteria\GenericoH\GenericoH.V3D"
+  .ANM "Models\00EjercitoBase\Infanteria\GenericoH\GenericoH_ANM.sb"
+  .RANDOMTEX "Infanteria\Miliciano.dds"
+  .SHADOW "Models\Sombras\Sombra.V3D"
+]
+.FUSILERO
+[
+  .PROC "UNIDAD_INFANTERIA"
+  .AI "AI_UNIDAD_INFANTERIA"
+  .GRX "Models\00EjercitoBase\Infanteria\GenericoA\GenericoA.V3D"
+  .ANM "Models\00EjercitoBase\Infanteria\GenericoA\GenericoA_ANM.sb"
+  .TEX "Infanteria\Fusilero.dds"
+  .SHADOW "Models\Sombras\Sombra.V3D"
+]
+.TIRADOR
+[
+  .PROC "UNIDAD_INFANTERIA"
+  .AI "AI_UNIDAD_INFANTERIA"
+  .GRX "Models\00EjercitoBase\Infanteria\GenericoA\GenericoA.V3D"
+  .ANM "Models\00EjercitoBase\Infanteria\GenericoA\GenericoA_ANM.sb"
+  .TEX "Infanteria\Tirador.dds"
+  .SHADOW "Models\Sombras\Sombra.V3D"
+]
+.CAZADOR
+[
+  .PROC "UNIDAD_INFANTERIA"
+  .AI "AI_UNIDAD_INFANTERIA"
+  .GRX "Models\00EjercitoBase\Infanteria\GenericoA\GenericoA.V3D"
+  .ANM "Models\00EjercitoBase\Infanteria\GenericoA\GenericoA_ANM.sb"
+  .TEX "Infanteria\Cazador.dds"
+  .SHADOW "Models\Sombras\Sombra.V3D"
+]
+.GRANADERO
+[
+  .PROC "UNIDAD_INFANTERIA"
+  .AI "AI_UNIDAD_INFANTERIA"
+  .GRX "Models\00EjercitoBase\Infanteria\GenericoB\GenericoB.V3D"
+  .ANM "Models\00EjercitoBase\Infanteria\GenericoB\GenericoB_ANM.sb"
+  .TEX "Infanteria\Granadero.dds"
+  .SHADOW "Models\Sombras\Sombra.V3D"
+]
+.ELITE
+[
+  .PROC "UNIDAD_INFANTERIA"
+  .AI "AI_UNIDAD_INFANTERIA"
+  .GRX "Models\00EjercitoBase\Infanteria\GenericoD\GenericoD.V3D"
+  .ANM "Models\00EjercitoBase\Infanteria\GenericoD\GenericoD_ANM.sb"
+  .TEX "Infanteria\Elite.dds"
+  .SHADOW "Models\Sombras\Sombra.V3D"
+]
+#_______________________________________________________
+#
+#                Caballeria Standard
+#_______________________________________________________
+
+   
+.CAB_HUSAR
+[
+  .PROC "UNIDAD_CABALLERIA"
+  .AI "AI_UNIDAD_CABALLERIA"
+  .GRX "Models\00EjercitoBase\Caballeria\GenericoE\GenericoE.V3D"
+  .ANM "Models\00EjercitoBase\Caballeria\GenericoE\GenericoE_ANM.sb"
+  .TEX "Caballeria\HusarCaballo.dds"
+  .TEX2 "Caballeria\Husar.dds"
+  .SHADOW "Models\Sombras\SombraCaballo.V3D"
+]
+.CAB_DRAGON
+[
+  .PROC "UNIDAD_CABALLERIA"
+  .AI "AI_UNIDAD_CABALLERIA"
+  .GRX "Models\00EjercitoBase\Caballeria\GenericoF\GenericoF.V3D"
+  .ANM "Models\00EjercitoBase\Caballeria\GenericoF\GenericoF_ANM.sb"
+  .TEX "Caballeria\DragonCaballo.dds"
+  .TEX2 "Caballeria\Dragon.dds"
+  .SHADOW "Models\Sombras\SombraCaballo.V3D"
+]
+.CAB_LANCERO
+[
+  .PROC "UNIDAD_CABALLERIA"
+  .AI "AI_UNIDAD_CABALLERIA"
+  .GRX "Models\00EjercitoBase\Caballeria\GenericoG\GenericoG.V3D"
+  .ANM "Models\00EjercitoBase\Caballeria\GenericoG\GenericoG_ANM.sb"
+  .TEX "Caballeria\LanceroCaballo.dds"
+  .TEX2 "Caballeria\Lancero.dds"
+  .SHADOW "Models\Sombras\SombraCaballo.V3D"
+]
+.CAB_CORACERO
+[
+  .PROC "UNIDAD_CABALLERIA"
+  .AI "AI_UNIDAD_CABALLERIA"
+  .GRX "Models\00EjercitoBase\Caballeria\GenericoC\GenericoC.V3D"
+  .ANM "Models\00EjercitoBase\Caballeria\GenericoC\GenericoC_ANM.sb"
+  .TEX "Caballeria\CCoraceroCaballo.dds"
+  .TEX2 "Caballeria\CCoracero.dds"
+  .SHADOW "Models\Sombras\SombraCaballo.V3D"
+]
+
+.CAM_TIRADOR
+[
+  .PROC "UNIDAD_CABALLERIA"
+  .AI "AI_UNIDAD_CABALLERIA"
+  .GRX "Models\00EjercitoBase\Caballeria\GenericoA4\GenericoA4.V3D"
+  .ANM "Models\00EjercitoBase\Caballeria\GenericoA4\GenericoA4_ANM.sb"
+  .TEX "Caballeria\TiradorCamello\Camello.dds"
+  .TEX2 "Caballeria\TiradorCamello\Tirador.dds"
+  .SHADOW "Models\Sombras\SombraCaballo.V3D"
+]
+
+.CAM_LANCERO
+[
+  .PROC "UNIDAD_CABALLERIA"
+  .AI "AI_UNIDAD_CABALLERIA"
+  .GRX "Models\00EjercitoBase\Caballeria\GenericoG3\GenericoG3.V3D"
+  .ANM "Models\00EjercitoBase\Caballeria\GenericoG3\GenericoG3_ANM.sb"
+  .TEX "Caballeria\LanceroCamello\Camello.dds"
+  .TEX2 "Caballeria\LanceroCamello\Lancero.dds"
+  .SHADOW "Models\Sombras\SombraCaballo.V3D"
+]
+
+.CAB_ELITE  #### Rob: D5
+[
+  .PROC "UNIDAD_CABALLERIA"
+  .AI "AI_UNIDAD_CABALLERIA"
+  .GRX "Models\00EjercitoBase\Caballeria\GenericoD5\GenericoD5.V3D"
+  .ANM "Models\00EjercitoBase\Caballeria\GenericoD5\GenericoD5_ANM.sb"
+  .TEX "Caballeria\LanceroCaballo.dds"
+  .TEX2 "Caballeria\Lancero.dds"
+  .SHADOW "Models\Sombras\SombraCaballo.V3D"
+]
+#_______________________________________________________
+#
+#                Artilleria Standard
+#_______________________________________________________
+
+.CANON
+[
+  .PROC "UNIDAD_ARTILLERIA_COMP"
+  .AI "AI_UNIDAD_ARTILLERIA"
+  .GRX "Models\00EjercitoBase\Artilleria\Canon\Canon\Canon.V3D"
+  .ANM "Models\00EjercitoBase\Artilleria\Canon\Canon\Canon_ANM.sb"
+  
+  .NUM_UNIDADES 3
+  .UNIDADES
+  [
+          [.UNI "ARTILLERO"     .POS [100.0 -100.0]]
+          [.UNI "ARTILLERO_DR"  .POS [75.0 300.0]]
+          [.UNI "ARTILLERO_IZ"  .POS [-80.0 300.0]]
+  ]
+]
+.OBUS
+[
+  .PROC "UNIDAD_ARTILLERIA_COMP"
+  .AI "AI_UNIDAD_ARTILLERIA"
+  .GRX "Models\00EjercitoBase\Artilleria\Obus\Obus.V3D"
+  .ANM "Models\00EjercitoBase\Artilleria\Obus\Obus_ANM.sb"
+  
+  .NUM_UNIDADES 3
+  .UNIDADES
+  [
+          [.UNI "ARTILLERO"     .POS [100.0 -100.0]]
+          [.UNI "ARTILLERO_DR"  .POS [75.0 300.0]]
+          [.UNI "ARTILLERO_IZ"  .POS [-80.0 300.0]]
+  ]
+]
+.MORTERO
+[
+  .PROC "UNIDAD_ARTILLERIA_COMP"
+  .AI "AI_UNIDAD_ARTILLERIA"
+  .GRX "Models\00EjercitoBase\Artilleria\Mortero\Mortero\Mortero.V3D"
+  .ANM "Models\00EjercitoBase\Artilleria\Mortero\Mortero\Mortero_ANM.sb"
+  
+  .NUM_UNIDADES 1
+  .UNIDADES
+  [
+          [.UNI "ARTILLERO_MORTERO"     .POS [0.0 -200.0]]
+  ]
+]
+.CANON_CAMP
+[
+  .PROC "UNIDAD_ARTILLERIA_COMP"
+  .AI "AI_UNIDAD_ARTILLERIA"
+  .GRX "Models\00EjercitoBase\Artilleria\CanonCampana\CanonCampana.V3D"
+  .ANM "Models\00EjercitoBase\Artilleria\CanonCampana\CanonCampana_ANM.sb"
+  
+  .NUM_UNIDADES 3
+  .UNIDADES
+  [
+          [.UNI "ARTILLERO"     .POS [100.0 -100.0]]
+          [.UNI "ARTILLERO_DR"  .POS [75.0 300.0]]
+          [.UNI "ARTILLERO_IZ"  .POS [-80.0 300.0]]
+  ]
+]
+.CANON_CABALLOS
+[
+  .PROC "UNIDAD_ARTILLERIA_COMP"
+  .AI "AI_UNIDAD_ARTILLERIA"
+  .GRX "Models\00EjercitoBase\Artilleria\CanonCaballos\Canon\Canon.V3D"
+  .ANM "Models\00EjercitoBase\Artilleria\CanonCaballos\Canon\Canon_ANM.sb"
+  
+  .NUM_UNIDADES 5
+  .UNIDADES
+  [
+          [.UNI "CANCABALLOS_ARTILLERO"     .POS [ 100.0 -100.0]]
+          [.UNI "CANCABALLOS_ARTILLERO_DR"  .POS [ 100.0  400.0]]
+          [.UNI "CANCABALLOS_ARTILLERO_IZ"  .POS [-100.0  400.0]]
+          [.UNI "CANCABALLOS_CABALLO_DR"  .POS [ 50.0 250.0]]     
+          [.UNI "CANCABALLOS_CABALLO_IZ"  .POS [-50.0 250.0]]             
+  ]
+]
+.OBUS_CABALLOS
+[
+  .PROC "UNIDAD_ARTILLERIA_COMP"
+  .AI "AI_UNIDAD_ARTILLERIA"
+  .GRX "Models\00EjercitoBase\Artilleria\ObusCaballos\Obus.V3D"
+  .ANM "Models\00EjercitoBase\Artilleria\ObusCaballos\ObusCaballos_ANM.sb"
+  
+  ## Usamos los mismos artilleros que CANON_CABALLOS  
+  .NUM_UNIDADES 5
+  .UNIDADES
+  [
+          [.UNI "CANCABALLOS_ARTILLERO"     .POS [ 100.0 -100.0]]
+          [.UNI "CANCABALLOS_ARTILLERO_DR"  .POS [ 100.0  400.0]]
+          [.UNI "CANCABALLOS_ARTILLERO_IZ"  .POS [-100.0  400.0]]
+          [.UNI "CANCABALLOS_CABALLO_DR"  .POS [ 50.0 250.0]]     
+          [.UNI "CANCABALLOS_CABALLO_IZ"  .POS [-50.0 250.0]]             
+  ]
+]
+
+#____________________________
+#
+# Sub-unidades de artilleria
+#____________________________
+.ARTILLERO
+[
+  .PROC "SUB_UNIDAD_ARTILLERIA"
+  .AI "AI_UNIDAD_ARTILLERIA"
+  .GRX "Models\00EjercitoBase\Artilleria\Canon\Artillero\Artillero.V3D"
+  .ANM "Models\00EjercitoBase\Artilleria\Canon\Artillero\Artillero_ANM.sb"
+  .TEX "Infanteria\Fusilero.dds"
+  .SHADOW "Models\Sombras\Sombra.V3D"
+]
+.ARTILLERO_DR
+[
+  .PROC "SUB_UNIDAD_ARTILLERIA"
+  .AI "AI_UNIDAD_ARTILLERIA"
+  .GRX "Models\00EjercitoBase\Artilleria\Canon\ArtilleroDR\ArtilleroDR.V3D"
+  .ANM "Models\00EjercitoBase\Artilleria\Canon\ArtilleroDR\ArtilleroDR_ANM.sb"
+  .TEX "Infanteria\Fusilero.dds"
+  .SHADOW "Models\Sombras\Sombra.V3D"
+]
+.ARTILLERO_IZ
+[
+  .PROC "SUB_UNIDAD_ARTILLERIA"
+  .AI "AI_UNIDAD_ARTILLERIA"
+  .GRX "Models\00EjercitoBase\Artilleria\Canon\ArtilleroIZ\ArtilleroIZ.V3D"
+  .ANM "Models\00EjercitoBase\Artilleria\Canon\ArtilleroIZ\ArtilleroIZ_ANM.sb"
+  .TEX "Infanteria\Fusilero.dds"
+  .SHADOW "Models\Sombras\Sombra.V3D"
+]
+.ARTILLERO_MORTERO
+[
+  .PROC "SUB_UNIDAD_ARTILLERIA"
+  .AI "AI_UNIDAD_ARTILLERIA"
+  .GRX "Models\00EjercitoBase\Artilleria\Mortero\Artillero\Artillero.V3D"
+  .ANM "Models\00EjercitoBase\Artilleria\Mortero\Artillero\Artillero_ANM.sb"
+  .TEX "Infanteria\Fusilero.dds"
+  .SHADOW "Models\Sombras\Sombra.V3D"
+]
+.CANON
+[
+  .PROC "SUB_UNIDAD_ARTILLERIA"
+  .AI "AI_UNIDAD_ARTILLERIA"
+  .GRX "Models\00EjercitoBase\Artilleria\Canon\Canon\Canon.V3D"
+  .ANM "Models\00EjercitoBase\Artilleria\Canon\Canon\Canon_ANM.sb"
+]
+
+# Hay 2 conjuntos de artilleros; los de artilleria con caballos y los de artilleria
+# sin caballos; estos están almacenados dentro del directorio de CANON y CANONCABALLOS
+
+.CANCABALLOS_ARTILLERO
+[
+  .PROC "SUB_UNIDAD_ARTILLERIA"
+  .AI "AI_UNIDAD_ARTILLERIA"
+  .GRX "Models\00EjercitoBase\Artilleria\CanonCaballos\Artillero\Artillero.V3D"
+  .ANM "Models\00EjercitoBase\Artilleria\CanonCaballos\Artillero\Artillero_ANM.sb"
+  .TEX "Infanteria\Fusilero.dds"
+  .USEOWNSHADOWFROMFOLDER "Models\Sombras\"
+]
+.CANCABALLOS_ARTILLERO_DR
+[
+  .PROC "SUB_UNIDAD_ARTILLERIA"
+  .AI "AI_UNIDAD_ARTILLERIA"
+  .GRX "Models\00EjercitoBase\Artilleria\CanonCaballos\ArtilleroDR\ArtilleroDR.V3D"
+  .ANM "Models\00EjercitoBase\Artilleria\CanonCaballos\ArtilleroDR\ArtilleroDR_ANM.sb"
+  .TEX "Infanteria\Fusilero.dds"
+  .USEOWNSHADOWFROMFOLDER "Models\Sombras\"
+]
+.CANCABALLOS_ARTILLERO_IZ
+[
+  .PROC "SUB_UNIDAD_ARTILLERIA"
+  .AI "AI_UNIDAD_ARTILLERIA"
+  .GRX "Models\00EjercitoBase\Artilleria\CanonCaballos\ArtilleroIZ\ArtilleroIZ.V3D"
+  .ANM "Models\00EjercitoBase\Artilleria\CanonCaballos\ArtilleroIZ\ArtilleroIZ_ANM.sb"
+  .TEX "Infanteria\Fusilero.dds"
+  .USEOWNSHADOWFROMFOLDER "Models\Sombras\"
+]
+
+# El modelo Derecho e izquierdo de los caballos es exactamente igual (Modelo y textura),
+# entonces solo lo tenemos almacenado en el directorio CaballoDR (model+tex)
+
+.CANCABALLOS_CABALLO_DR
+[
+  .PROC "SUB_UNIDAD_ARTILLERIA"
+  .AI "AI_UNIDAD_ARTILLERIA"
+  .GRX "Models\00EjercitoBase\Artilleria\CanonCaballos\CaballoDR\Caballo.V3D"
+  .ANM "Models\00EjercitoBase\Artilleria\CanonCaballos\CaballoDR\CaballoDR_ANM.sb"
+  #.SHADOW "Models\Sombras\SombraCaballo.V3D"
+]
+.CANCABALLOS_CABALLO_IZ
+[
+  .PROC "SUB_UNIDAD_ARTILLERIA"
+  .AI "AI_UNIDAD_ARTILLERIA"
+  .GRX "Models\00EjercitoBase\Artilleria\CanonCaballos\CaballoDR\Caballo.V3D"
+  .ANM "Models\00EjercitoBase\Artilleria\CanonCaballos\CaballoIZ\CaballoIZ_ANM.sb"
+  #.SHADOW "Models\Sombras\SombraCaballo.V3D"
+]

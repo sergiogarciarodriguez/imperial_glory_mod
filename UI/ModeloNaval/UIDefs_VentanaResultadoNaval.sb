@@ -1,0 +1,89 @@
+##################################################################################################################
+# Params asociados a la ventana de resultado de batalla
+##################################################################################################################
+
+# Se define la ventana                   
+.CENTER TRUE      
+.FONDO 
+[ 
+ .X 0 .Y 0 .TRANSPARENCY 220 .PRIORITY 0 .ALPHA TRUE
+ .FILE "Game/UI/ModeloNaval/DummyDialogMsgBox.tga" .U 4 .V 6 .SX 324 .SY 149 
+]              
+
+.CAPTION
+[
+ .XMARGEN 4
+ .YMARGEN 4
+ .HEIGHT 35
+ .TITLE [ .ALINEACION CENTER .TEXT " " .FONT "Fonts/Times14.fnt" .SCALE 1.0 .COLOR [ .R 255 .G 255 .B 255 ] ]
+ .MOVIBLE FALSE
+]
+.MODAL TRUE 
+
+# Se define el texto
+.TEXT
+[
+ .X 10 .Y 30 .SX 314 .SY 70
+ .ALIGN CENTER
+ .TEXT
+ [
+  .FONT "Fonts/Times14.fnt" 
+  .COLOR [ .R 255 .G 255 .B 255 ]
+  .MSG  " "
+  ]
+]      
+        
+# Se definen los botones
+.BOTONES
+[           
+ # Info de centrado automatico
+ .CENTER
+ [                
+  .YMARGEN 116
+  .XSPACE  0          
+ ]           
+       
+# Lista de Botones
+.LIST
+[
+  
+ [ # Boton de Ok
+  .TIPO UIC_BOTONTEXTO        
+  .ACEPTAR TRUE        
+  .COMPORTAMIENTO SIMPLE
+  .SOLTADO [ .COLOR [ .R 255 .G 255 .B 255 ] ] 
+  .PULSADO [ .COLOR [ .R 158 .G 158 .B 158 ] ] 
+  .SCALE 1.0
+  .TEXT LTEXT_UI_BATALLA_RESULTVENT_ACEPTAR
+  .IDSELECTSOUND "S_ACEPTAR"  
+  .IDHIGHLIGHTSOUND "S_FXSELECCION_RESALTE_ELEMENTO"
+  
+  .FONDO
+  [ 
+   .SX 102 .SY 22
+   .ALPHA TRUE
+   .SOLTADO [ .FILE "Game/UI/ModeloNaval/DummyDialogMsgBox.tga" .U 298 .V 201 ]
+   .PULSADO [ .FILE "Game/UI/ModeloNaval/DummyDialogMsgBox.tga" .U 298 .V 282 ]
+   .PRIORITY 1
+   .ALPHA TRUE
+   ]    
+   
+   .CENTER_AREA [ .X1 0 .Y1 0 .X2 102 .Y2 18 ]
+   
+   .KEY
+   [
+    .TECLA KEY_RETURN .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ]          
+   ]                                                              
+   
+  ]                         
+ ] # ~ LIST
+] # ~ BOTONES               
+
+# Se especifica la informacion de resultado
+.INFO_RESULT
+[
+ .VICTORY [ .TEXT LTEXT_UI_BATALLA_RESULTVENT_VICTORY_TEXT ]
+ .DEFEAT  [ .TEXT LTEXT_UI_BATALLA_RESULTVENT_DEFEAT_TEXT  ]
+ .RETREAT [ .TEXT LTEXT_UI_BATALLA_RESULTVENT_RETREAT_TEXT ]
+ .DISCONNECTED [ .TEXT LTEXT_UI_BATALLA_RESULTVENT_DISCONNECTED_TEXT ]
+] 

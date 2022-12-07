@@ -1,0 +1,50 @@
+###############################################################################
+# Mostrará las estrellas de experiencia
+###############################################################################
+.VISOR_ESTRELLAS
+[
+   .CENTER_ICONS FALSE
+  
+   # Definimos la matriz de vision
+   .MATRIZ
+   [
+    .FILAS 1
+    .COLUMNAS 8
+   ]
+   
+   # Definimos el fondo (opcional)
+   #.FONDO
+   #[      
+    #.FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" 
+    #.X 365 .Y 615 .U 365 .V 871 .SX 380 .SY 153 .ALPHA TRUE  
+   #] 
+   
+   # Definimos los parametros de dibujado
+   # Nota: - En caso de existir fondo X e Y seran deltas sobre la posicion del mismo y en caso de no definirlo
+   #         serviran para indicar la posicion de inicio de dibujado
+   .DRAW_PARAMS
+   [
+    .X 37
+    .Y 160    
+    .CELL_XSPACE 1
+    .CELL_YSPACE 0
+    .SLIDER_XSPACE 10
+    .OBJ_WIDTH 9
+    .OBJ_HEIGHT 10
+   ]         
+       
+   # Definimos el Slider
+   #.SLIDER [ .SUBTIPO "Game/UI/Comun/UIDefs_DefinicionSliderVertical.sb" ]
+   
+   # Prioridad base de los elementos en el visor
+   # A los que se les haga un drag tendra una prioridad superior por lo que la prioridad base
+   # no debera de exceder el valor de 254
+   .PRIORITY_BASE 33
+ ]
+ 
+ .ESTRELLA
+ [
+   .FILE "Game/UI/ModeloNaval/InterfazBarcos.tga"
+   .U 471 .V 621 .SX 9 .SY 10
+   .PRIORITY 34 .ALPHA TRUE 
+ ]

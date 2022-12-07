@@ -1,0 +1,336 @@
+#=======================================================================================
+# Definición de sonidos para el modelo de batalla [ ORDENES, ACKS, VOCES ]
+#
+# Param ".3D" es TRUE por defecto.
+#       ".LOOP" es FALSE por defecto.
+#=======================================================================================
+
+###-------------------------------------------------------------------------------------
+### AUDIO
+###-------------------------------------------------------------------------------------
+.AUDIO 
+[
+  
+  %Game/GameModes/Batalla/AudioScripts/AudioOrdenes_Muertes.sb 
+  %Game/GameModes/Batalla/AudioScripts/AudioOrdenes_Form.sb
+  %Game/GameModes/Batalla/AudioScripts/AudioOrdenes_Mover.sb
+  %Game/GameModes/Batalla/AudioScripts/AudioOrdenes_Ataque.sb
+  %Game/GameModes/Batalla/AudioScripts/AudioOrdenes_AtaqueADist.sb
+  %Game/GameModes/Batalla/AudioScripts/AudioOrdenes_HoldPos.sb
+  %Game/GameModes/Batalla/AudioScripts/AudioOrdenes_Modos.sb
+  %Game/GameModes/Batalla/AudioScripts/AudioOrdenes_Retreat.sb
+  
+  #===============================================================================
+  # S_STOP_INF
+  #===============================================================================
+  [ 
+    .IDNAME "S_STOP_INF_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/InfantryCommander/Inf_stop_halt.ogg"   "Audio/Voices/Francia/InfantryCommander/Inf_stop_ceasemarch.ogg"
+    	    "Audio/Voices/Francia/InfantryCommander/Inf_stop_battalionhalt.ogg"   "Audio/Voices/Francia/InfantryCommander/Inf_stop_battalionceasemarch.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_STOP_INF_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/InfantryCommander/Inf_stop_halt.ogg"   "Audio/Voices/Inglaterra/InfantryCommander/Inf_stop_ceasemarch.ogg"
+    	    "Audio/Voices/Inglaterra/InfantryCommander/Inf_stop_battalionhalt.ogg"   "Audio/Voices/Inglaterra/InfantryCommander/Inf_stop_battalionceasemarch.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_STOP_INF_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/InfantryCommander/Inf_stop_halt.ogg"   "Audio/Voices/Prusia/InfantryCommander/Inf_stop_ceasemarch.ogg"
+    	    "Audio/Voices/Prusia/InfantryCommander/Inf_stop_battalionhalt.ogg"   "Audio/Voices/Prusia/InfantryCommander/Inf_stop_battalionceasemarch.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_STOP_INF_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/InfantryCommander/Inf_stop_halt.ogg"   "Audio/Voices/Rusia/InfantryCommander/Inf_stop_ceasemarch.ogg"
+    	    "Audio/Voices/Rusia/InfantryCommander/Inf_stop_battalionhalt.ogg"   "Audio/Voices/Rusia/InfantryCommander/Inf_stop_battalionceasemarch.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_STOP_INF_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/InfantryCommander/Inf_stop_halt.ogg"   "Audio/Voices/Austria/InfantryCommander/Inf_stop_ceasemarch.ogg"
+    	    "Audio/Voices/Austria/InfantryCommander/Inf_stop_battalionhalt.ogg"   "Audio/Voices/Austria/InfantryCommander/Inf_stop_battalionceasemarch.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_STOP_CAB
+  #===============================================================================
+  [ 
+    .IDNAME "S_STOP_CAB_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/CavalryCommander/Cav_stop_halt_01.ogg"   "Audio/Voices/Francia/CavalryCommander/Cav_stop_halt_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_STOP_CAB_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/CavalryCommander/Cav_stop_halt_01.ogg"   "Audio/Voices/Inglaterra/CavalryCommander/Cav_stop_halt_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_STOP_CAB_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/CavalryCommander/Cav_stop_halt_01.ogg"   "Audio/Voices/Prusia/CavalryCommander/Cav_stop_halt_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_STOP_CAB_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/CavalryCommander/Cav_stop_halt_01.ogg"   "Audio/Voices/Rusia/CavalryCommander/Cav_stop_halt_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_STOP_CAB_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/CavalryCommander/Cav_stop_halt_01.ogg"   "Audio/Voices/Austria/CavalryCommander/Cav_stop_halt_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_STOP_ART
+  #===============================================================================
+  [ 
+    .IDNAME "S_STOP_ART_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/ArtilleryCommander/Art_stop_halt_01.ogg"   "Audio/Voices/Francia/ArtilleryCommander/Art_stop_halt_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_STOP_ART_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/ArtilleryCommander/Art_stop_halt_01.ogg"   "Audio/Voices/Inglaterra/ArtilleryCommander/Art_stop_halt_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_STOP_ART_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/ArtilleryCommander/Art_stop_halt_01.ogg"   "Audio/Voices/Prusia/ArtilleryCommander/Art_stop_halt_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_STOP_ART_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/ArtilleryCommander/Art_stop_halt_01.ogg"   "Audio/Voices/Rusia/ArtilleryCommander/Art_stop_halt_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_STOP_ART_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/ArtilleryCommander/Art_stop_halt_01.ogg"   "Audio/Voices/Austria/ArtilleryCommander/Art_stop_halt_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+
+
+  
+  #===============================================================================
+  # S_OCUPAR_EDIFICIO
+  #===============================================================================
+  [ 
+    .IDNAME "S_OCUPAR_EDIFICIO_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/InfantryCommander/Inf_occupy_takepositions.ogg" "Audio/Voices/Francia/InfantryCommander/Inf_occupy_occupy.ogg" "Audio/Voices/Francia/InfantryCommander/Inf_occupy_takethatposition.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_OCUPAR_EDIFICIO_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/InfantryCommander/Inf_occupy_takepositions.ogg" "Audio/Voices/Inglaterra/InfantryCommander/Inf_occupy_occupy.ogg" "Audio/Voices/Inglaterra/InfantryCommander/Inf_occupy_takethatposition.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_OCUPAR_EDIFICIO_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/InfantryCommander/Inf_occupy_takepositions.ogg" "Audio/Voices/Prusia/InfantryCommander/Inf_occupy_occupy.ogg" "Audio/Voices/Prusia/InfantryCommander/Inf_occupy_takethatposition.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_OCUPAR_EDIFICIO_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/InfantryCommander/Inf_occupy_takepositions.ogg" "Audio/Voices/Rusia/InfantryCommander/Inf_occupy_occupy.ogg" "Audio/Voices/Rusia/InfantryCommander/Inf_occupy_takethatposition.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_OCUPAR_EDIFICIO_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/InfantryCommander/Inf_occupy_takepositions.ogg" "Audio/Voices/Austria/InfantryCommander/Inf_occupy_occupy.ogg" "Audio/Voices/Austria/InfantryCommander/Inf_occupy_takethatposition.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+
+
+
+  #===============================================================================
+  # S_DESOCUPAR_EDIFICIO
+  #===============================================================================
+  [ 
+    .IDNAME "S_DESOCUPAR_EDIFICIO_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/InfantryCommander/Inf_leave_abandon.ogg" "Audio/Voices/Francia/InfantryCommander/Inf_leave_formup.ogg"
+            "Audio/Voices/Francia/InfantryCommander/Inf_leave_abandonyour.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_DESOCUPAR_EDIFICIO_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/InfantryCommander/Inf_leave_abandon.ogg" "Audio/Voices/Inglaterra/InfantryCommander/Inf_leave_formup.ogg"
+            "Audio/Voices/Inglaterra/InfantryCommander/Inf_leave_abandonyour.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_DESOCUPAR_EDIFICIO_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/InfantryCommander/Inf_leave_abandon.ogg" "Audio/Voices/Prusia/InfantryCommander/Inf_leave_formup.ogg"
+            "Audio/Voices/Prusia/InfantryCommander/Inf_leave_abandonyour.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_DESOCUPAR_EDIFICIO_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/InfantryCommander/Inf_leave_abandon.ogg" "Audio/Voices/Rusia/InfantryCommander/Inf_leave_formup.ogg"
+            "Audio/Voices/Rusia/InfantryCommander/Inf_leave_abandonyour.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_DESOCUPAR_EDIFICIO_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/InfantryCommander/Inf_leave_abandon.ogg" "Audio/Voices/Austria/InfantryCommander/Inf_leave_formup.ogg"
+            "Audio/Voices/Austria/InfantryCommander/Inf_leave_abandonyour.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_ANCLAR
+  #===============================================================================
+  [ 
+    .IDNAME "S_ANCLAR_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/ArtilleryCommander/Art_arm_preparefire_01.ogg" "Audio/Voices/Francia/ArtilleryCommander/Art_arm_preparefire_02.ogg"
+            "Audio/Voices/Francia/ArtilleryCommander/Art_arm_prepareguns_01.ogg" "Audio/Voices/Francia/ArtilleryCommander/Art_arm_prepareguns_02.ogg"
+            "Audio/Voices/Francia/ArtilleryCommander/Art_arm_unlimber_01.ogg" "Audio/Voices/Francia/ArtilleryCommander/Art_arm_unlimber_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ANCLAR_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/ArtilleryCommander/Art_arm_preparefire_01.ogg" "Audio/Voices/Inglaterra/ArtilleryCommander/Art_arm_preparefire_02.ogg"
+            "Audio/Voices/Inglaterra/ArtilleryCommander/Art_arm_prepareguns_01.ogg" "Audio/Voices/Inglaterra/ArtilleryCommander/Art_arm_prepareguns_02.ogg"
+            "Audio/Voices/Inglaterra/ArtilleryCommander/Art_arm_unlimber_01.ogg" "Audio/Voices/Inglaterra/ArtilleryCommander/Art_arm_unlimber_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ANCLAR_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/ArtilleryCommander/Art_arm_preparefire_01.ogg" "Audio/Voices/Prusia/ArtilleryCommander/Art_arm_preparefire_02.ogg"
+            "Audio/Voices/Prusia/ArtilleryCommander/Art_arm_prepareguns_01.ogg" "Audio/Voices/Prusia/ArtilleryCommander/Art_arm_prepareguns_02.ogg"
+            "Audio/Voices/Prusia/ArtilleryCommander/Art_arm_unlimber_01.ogg" "Audio/Voices/Prusia/ArtilleryCommander/Art_arm_unlimber_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ANCLAR_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/ArtilleryCommander/Art_arm_preparefire_01.ogg" "Audio/Voices/Rusia/ArtilleryCommander/Art_arm_preparefire_02.ogg"
+            "Audio/Voices/Rusia/ArtilleryCommander/Art_arm_prepareguns_01.ogg" "Audio/Voices/Rusia/ArtilleryCommander/Art_arm_prepareguns_02.ogg"
+            "Audio/Voices/Rusia/ArtilleryCommander/Art_arm_unlimber_01.ogg" "Audio/Voices/Rusia/ArtilleryCommander/Art_arm_unlimber_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ANCLAR_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/ArtilleryCommander/Art_arm_preparefire_01.ogg" "Audio/Voices/Austria/ArtilleryCommander/Art_arm_preparefire_02.ogg"
+            "Audio/Voices/Austria/ArtilleryCommander/Art_arm_prepareguns_01.ogg" "Audio/Voices/Austria/ArtilleryCommander/Art_arm_prepareguns_02.ogg"
+            "Audio/Voices/Austria/ArtilleryCommander/Art_arm_unlimber_01.ogg" "Audio/Voices/Austria/ArtilleryCommander/Art_arm_unlimber_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_DESANCLAR
+  #===============================================================================
+  [ 
+    .IDNAME "S_DESANCLAR_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/ArtilleryCommander/Art_disarm_limberguns_01.ogg"  "Audio/Voices/Francia/ArtilleryCommander/Art_disarm_limberguns_02.ogg"
+            "Audio/Voices/Francia/ArtilleryCommander/Art_disarm_limberup_01.ogg"    "Audio/Voices/Francia/ArtilleryCommander/Art_disarm_limberup_02.ogg"
+            "Audio/Voices/Francia/ArtilleryCommander/Art_disarm_preparemove_01.ogg" "Audio/Voices/Francia/ArtilleryCommander/Art_disarm_preparemove_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_DESANCLAR_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/ArtilleryCommander/Art_disarm_limberguns_01.ogg"  "Audio/Voices/Inglaterra/ArtilleryCommander/Art_disarm_limberguns_02.ogg"
+            "Audio/Voices/Inglaterra/ArtilleryCommander/Art_disarm_limberup_01.ogg"    "Audio/Voices/Inglaterra/ArtilleryCommander/Art_disarm_limberup_02.ogg"
+            "Audio/Voices/Inglaterra/ArtilleryCommander/Art_disarm_preparemove_01.ogg" "Audio/Voices/Inglaterra/ArtilleryCommander/Art_disarm_preparemove_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_DESANCLAR_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/ArtilleryCommander/Art_disarm_limberguns_01.ogg" "Audio/Voices/Prusia/ArtilleryCommander/Art_disarm_limberguns_02.ogg"
+            "Audio/Voices/Prusia/ArtilleryCommander/Art_disarm_limberup_01.ogg" "Audio/Voices/Prusia/ArtilleryCommander/Art_disarm_limberup_02.ogg"
+            "Audio/Voices/Prusia/ArtilleryCommander/Art_disarm_preparemove_01.ogg" "Audio/Voices/Prusia/ArtilleryCommander/Art_disarm_preparemove_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_DESANCLAR_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/ArtilleryCommander/Art_disarm_limberguns_01.ogg" "Audio/Voices/Rusia/ArtilleryCommander/Art_disarm_limberguns_02.ogg"
+            "Audio/Voices/Rusia/ArtilleryCommander/Art_disarm_limberup_01.ogg" "Audio/Voices/Rusia/ArtilleryCommander/Art_disarm_limberup_02.ogg"
+            "Audio/Voices/Rusia/ArtilleryCommander/Art_disarm_preparemove_01.ogg" "Audio/Voices/Rusia/ArtilleryCommander/Art_disarm_preparemove_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_DESANCLAR_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/ArtilleryCommander/Art_disarm_limberguns_01.ogg" "Audio/Voices/Austria/ArtilleryCommander/Art_disarm_limberguns_02.ogg"
+            "Audio/Voices/Austria/ArtilleryCommander/Art_disarm_limberup_01.ogg" "Audio/Voices/Austria/ArtilleryCommander/Art_disarm_limberup_02.ogg"
+            "Audio/Voices/Austria/ArtilleryCommander/Art_disarm_preparemove_01.ogg" "Audio/Voices/Austria/ArtilleryCommander/Art_disarm_preparemove_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_OUTOFRANGE_ART
+  #===============================================================================
+  [ 
+    .IDNAME "S_OUTOFRANGE_ART_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/Soldiers/ArtSol_outrange_outrange.ogg" "Audio/Voices/Francia/Soldiers/ArtSol_outrange_targetout_01.ogg"
+            "Audio/Voices/Francia/Soldiers/ArtSol_outrange_targetout_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_OUTOFRANGE_ART_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/Soldiers/ArtSol_outrange_outrange.ogg" "Audio/Voices/Inglaterra/Soldiers/ArtSol_outrange_targetout_01.ogg"
+            "Audio/Voices/Inglaterra/Soldiers/ArtSol_outrange_targetout_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_OUTOFRANGE_ART_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/Soldiers/ArtSol_outrange_outrange.ogg" "Audio/Voices/Prusia/Soldiers/ArtSol_outrange_targetout_01.ogg"
+            "Audio/Voices/Prusia/Soldiers/ArtSol_outrange_targetout_02.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_OUTOFRANGE_ART_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/Soldiers/ArtSol_outrange_outrange.ogg" "Audio/Voices/Rusia/Soldiers/ArtSol_outrange_targetout_01.ogg"
+            "Audio/Voices/Rusia/Soldiers/ArtSol_outrange_targetout_02.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_OUTOFRANGE_ART_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/Soldiers/ArtSol_outrange_outrange.ogg" "Audio/Voices/Austria/Soldiers/ArtSol_outrange_targetout_01.ogg"
+            "Audio/Voices/Austria/Soldiers/ArtSol_outrange_targetout_02.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_CANNOT
+  #===============================================================================
+  [ 
+    .IDNAME "S_CANNOT_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/Soldiers/Gen_cannot_cannot_01.ogg" "Audio/Voices/Francia/Soldiers/Gen_cannot_cannot_03.ogg"
+            "Audio/Voices/Francia/Soldiers/Gen_cannot_cannot_03.ogg" "Audio/Voices/Francia/Soldiers/Gen_cannot_unable_01.ogg"
+            "Audio/Voices/Francia/Soldiers/Gen_cannot_unable_02.ogg" "Audio/Voices/Francia/Soldiers/Gen_cannot_unable_03.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_CANNOT_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/Soldiers/Gen_cannot_cannot_01.ogg" "Audio/Voices/Inglaterra/Soldiers/Gen_cannot_cannot_03.ogg"
+            "Audio/Voices/Inglaterra/Soldiers/Gen_cannot_cannot_03.ogg" "Audio/Voices/Inglaterra/Soldiers/Gen_cannot_unable_01.ogg"
+            "Audio/Voices/Inglaterra/Soldiers/Gen_cannot_unable_02.ogg" "Audio/Voices/Inglaterra/Soldiers/Gen_cannot_unable_03.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_CANNOT_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/Soldiers/Gen_cannot_cannot_01.ogg" "Audio/Voices/Prusia/Soldiers/Gen_cannot_cannot_03.ogg"
+            "Audio/Voices/Prusia/Soldiers/Gen_cannot_cannot_03.ogg" "Audio/Voices/Prusia/Soldiers/Gen_cannot_unable_01.ogg"
+            "Audio/Voices/Prusia/Soldiers/Gen_cannot_unable_02.ogg" "Audio/Voices/Prusia/Soldiers/Gen_cannot_unable_03.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_CANNOT_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/Soldiers/Gen_cannot_cannot_01.ogg" "Audio/Voices/Rusia/Soldiers/Gen_cannot_cannot_03.ogg"
+            "Audio/Voices/Rusia/Soldiers/Gen_cannot_cannot_03.ogg" "Audio/Voices/Rusia/Soldiers/Gen_cannot_unable_01.ogg"
+            "Audio/Voices/Rusia/Soldiers/Gen_cannot_unable_02.ogg" "Audio/Voices/Rusia/Soldiers/Gen_cannot_unable_03.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_CANNOT_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/Soldiers/Gen_cannot_cannot_01.ogg" "Audio/Voices/Austria/Soldiers/Gen_cannot_cannot_03.ogg"
+            "Audio/Voices/Austria/Soldiers/Gen_cannot_cannot_03.ogg" "Audio/Voices/Austria/Soldiers/Gen_cannot_unable_01.ogg"
+            "Audio/Voices/Austria/Soldiers/Gen_cannot_unable_02.ogg" "Audio/Voices/Austria/Soldiers/Gen_cannot_unable_03.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+
+
+
+] ### !AUDIO
+

@@ -1,0 +1,60 @@
+#----------------------------- TEXTO DESCRIPCION DIFICULTAD -----------------------------------------------
+[ .TIPO UIC_TEXT .ID 'LBDD'
+  .PARAMS 
+  [ 
+    .ALIGN CENTER
+    #.TEXT "Descripcion de la dificultad"
+    .FONT "Fonts/Times12.fnt"
+    .X 720 .Y 625 .SCALE 1.0 
+    .COLOR [ .R 0 .G 0 .B 0 ] 
+  ]    	
+]
+
+#----------------------------------- TEXTO DIFICULTAD -----------------------------------------------------
+[ .TIPO UIC_TEXT .ID 'LBSD'
+  .PARAMS 
+  [ 
+    .ALIGN CENTER
+    .FONT "Fonts/Times12.fnt"
+    .X 720 .Y 645 .SCALE 1.0 
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]    	
+]
+
+#-------------------------------------------- BOTON MENOS DIFICULTAD --------------------------------------	
+[ 
+	.TIPO UIC_BOTONTEXTO .ID 'BTIZ' 
+ 	.PARAMS
+ 	[ 
+ 		.STYLE  LESSER_THAN_BUTTON
+   .FONDO
+	  [
+	    .X 26 .Y 524
+      .PRIORITY 40  
+		]
+	
+	# Pasado a codigo para que suene aunque se deshabilite el boton (al llegar a la minima dificultad)
+    #.IDSELECTSOUND "S_FXUI_CLICKBUTTON"    
+    .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"      			
+
+ 	]
+]  
+
+#-------------------------------------------- BOTON MAS DIFICULTAD ----------------------------------------	
+[ 
+	.TIPO UIC_BOTONTEXTO .ID 'BTDE' 
+ 	.PARAMS
+ 	[ 
+ 		.STYLE  GREATER_THAN_BUTTON
+   .FONDO
+	  [
+	    .X 169 .Y 524
+      .PRIORITY 40  
+		]
+
+	# Pasado a codigo para que suene aunque se deshabilite el boton (al llegar a la minima dificultad)
+    #.IDSELECTSOUND "S_FXUI_CLICKBUTTON"    
+    .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"      			
+
+ 	]
+]  

@@ -1,0 +1,28 @@
+.COMPORTAMIENTO SIMPLE
+
+.FONDO
+[
+  .X 842 .Y 2 .SX 36 .SY 36
+  .ALPHA TRUE .PRIORITY 201
+  
+  .SOLTADO      [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 906 .V 171 ]
+  .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 945 .V 171 ]
+  .PULSADO      [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 984 .V 171 ]
+]
+
+.IDSELECTSOUND "S_BOTON_ECONOMIA"      
+.IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"             
+
+.TOOL_TIP
+[ 
+  .TEXT LTEXT_UI_TT_ECONOMIA
+  .X 32 .Y 32
+    
+  
+  .STYLE DEFAULT_TOOLTIP 
+]      
+
+.KEY
+[
+  .TECLA KEY_F9 .EVENTOS [ KEY_DOWN KEY_UP ]          
+]  

@@ -1,0 +1,156 @@
+###########################################################################################
+##  Definicion del panel de ordenes de barcos seleccionados en  naval
+###########################################################################################
+
+
+.TIPO_ATAQUE
+[
+  %Game/UI/ModeloNaval/UIDefs_OrdenesTipoAtaque.sb
+]
+
+.ACCION_ATAQUE
+[
+  %Game/UI/ModeloNaval/UIDefs_OrdenesAccionAtaque.sb
+]
+
+.ACCION_PARAR
+[
+  .ID 'STOP'
+  .COMPORTAMIENTO MANUAL
+  .FONDO
+  [
+    .X 427 .Y 709
+    .SX 49 .SY 19 .ALPHA TRUE .PRIORITY 30
+    .SOLTADO      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 1 .V 218 ] 
+    .SELECCIONADO [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 53 .V 218 ] 
+    .PULSADO      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 105 .V 218 ]
+    .DISABLE      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 157 .V 218 ] 
+    .INTERMITENTE [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 157 .V 218 ]    
+  ]
+  .BLINK_TIMER 600.0
+  
+  .IDSELECTSOUND "S_UI_PARAR_PULSADO" 
+  
+  .TOOL_TIP 
+  [ 
+   .TEXT LTEXT_UI_NAVAL_TT_STOP
+   .FONT "Fonts/gothic.fnt" 
+   .X 32 .Y 32
+   .COLOR [ .R 255 .G 255 .B 255 ] 
+     
+   .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+  ]  
+  
+  .BARRA_ANCLA
+  [
+    .ID 'BANC'
+    .PRIORITY 32
+    .FORMATO VERTICAL
+    .X 470 .Y 713
+    .PULSADO_X 471 .PULSADO_Y 715 #posición de la barra cuando el botón está pulsado
+    .SUPERIOR [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 209 .V 221 .ALPHA TRUE ]
+    .SX 2 .SY 11
+  ]
+  
+  .KEY [ .TECLA KEY_BACK .MKEYS [ ] .EVENTOS [ KEY_UP ] ] 
+]
+
+.ACCION_SEGUIR
+[
+  .ID 'FOLL'
+  .COMPORTAMIENTO MANUAL
+  .FONDO
+  [
+    .X 549 .Y 709
+    .SX 49 .SY 19 .ALPHA TRUE .PRIORITY 30
+    .SOLTADO      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 1 .V 240 ] 
+    .SELECCIONADO [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 53 .V 240 ] 
+    .PULSADO      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 105 .V 240 ]
+    .DISABLE      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 157 .V 240 ] 
+    .INTERMITENTE [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 157 .V 240 ]    
+  ]
+  .BLINK_TIMER 600.0
+  
+  .IDSELECTSOUND "S_UI_GENERICO_PULSADO" 
+  
+  .TOOL_TIP 
+  [ 
+   .TEXT LTEXT_UI_NAVAL_TT_SEGUIR
+   .FONT "Fonts/gothic.fnt" 
+   .X 32 .Y 32
+   .COLOR [ .R 255 .G 255 .B 255 ] 
+     
+   .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+  ]  
+  
+  .KEY [ .TECLA KEY_V .MKEYS [ ] .EVENTOS [ KEY_UP ] ]   
+]
+
+.ACCION_ABORDAR
+[
+  .ID 'ABOR'
+  .COMPORTAMIENTO MANUAL
+  .FONDO
+  [
+    .X 487 .Y 709 
+    .SX 49 .SY 19 .ALPHA TRUE .PRIORITY 30
+    .SOLTADO      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 1 .V 196 ] 
+    .SELECCIONADO [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 53 .V 196 ] 
+    .PULSADO      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 105 .V 196 ] 
+    .DISABLE      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 157 .V 196 ] 
+    .INTERMITENTE [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 157 .V 196 ]
+  ]
+  .BLINK_TIMER 600.0
+  
+  .IDSELECTSOUND "S_UI_GENERICO_PULSADO" 
+  
+  .TOOL_TIP 
+  [ 
+   .TEXT LTEXT_UI_NAVAL_TT_BOARD
+   .FONT "Fonts/gothic.fnt" 
+   .X 32 .Y 32
+   .COLOR [ .R 255 .G 255 .B 255 ] 
+     
+   .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+  ]  
+  
+  .KEY [ .TECLA KEY_B .MKEYS [ ] .EVENTOS [ KEY_UP ] ]  
+]
+
+#.ACCION_VER_RANGO
+#[ .ID 'VERA'
+#  .COMPORTAMIENTO MANUAL
+#  .FONDO
+#  [
+#    .X 835 .Y 732
+#    .SX 36 .SY 22 .ALPHA TRUE .PRIORITY 30
+#    
+#    .DISABLE      [ .FILE "Game\UI\ModeloNaval\InterfazBarcos.tga" .U 839 .V 555 ] 
+#    .SOLTADO      [ .FILE "Game\UI\ModeloNaval\InterfazBarcos.tga" .U 835 .V 988 ] 
+#    .SELECCIONADO [ .FILE "Game\UI\ModeloNaval\InterfazBarcos.tga" .U 839 .V 505 ] 
+#    .PULSADO      [ .FILE "Game\UI\ModeloNaval\InterfazBarcos.tga" .U 839 .V 530 ]    
+#    .INTERMITENTE [ .FILE "Game\UI\ModeloNaval\InterfazBarcos.tga" .U 839 .V 505 ] 
+#  ]
+#  .BLINK_TIMER 600.0
+#  
+#  .IDSELECTSOUND "S_UI_GENERICO_PULSADO"   
+#  
+#  .TOOL_TIP 
+#  [ 
+#   .TEXT LTEXT_UI_NAVAL_TT_SEERANGE                  
+#   .FONT "Fonts/gothic.fnt" 
+#   .X 32 .Y 32
+#   .COLOR [ .R 255 .G 255 .B 255 ] 
+#     
+#   .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+#  ]  
+#]
+
+.ACCION_AMPLITUD_RANGO
+[ .ID 'AMRA'
+  #.X 886 .Y 735 .MIN 0 .MAX 9
+  .X 463 .Y 697 .MIN 0 .MAX 9
+  .PRIORITY 35
+  # Estilo del slider
+  %Game/UI/ModeloNaval/UIDefs_SliderAmplitudRango.sb
+]

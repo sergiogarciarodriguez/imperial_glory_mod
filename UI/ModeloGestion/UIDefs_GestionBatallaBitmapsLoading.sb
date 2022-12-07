@@ -1,0 +1,13 @@
+##########################################################################################################
+# Contiene el array con los bitmaps de carga asociados a cada una de las provincias cuando se entre
+# desde el modelo de gestion al modelo de batalla.
+# Este archivo lo utilizara un Cargador de Bitmaps creado cuando se entre en modo de batalla.
+#
+# El formato sera .DESC [ Datos del Bitmap ] donde .DESC, en este archivo, se esperara que sea el DESC de
+# las diferentes provincias y DEFAULT para cuando no se halle provincia asociada.
+
+ .DEFAULT   [ .FILE "Game/UI/Comun/men_waiting.tga"                                     .X 0 .Y 0 .SX 1024 .SY 768 .U 0 .V 0 .PRIORITY 255 ] 
+
+ #.NORUEGA   [ .FILE "Game/UI/ModeloGestion/LoadingEscenarios/LoadingGestionNorway.tga"  .X 0 .Y 0 .SX 1024 .SY 768 .U 0 .V 0 .PRIORITY 255 ]
+ #.KIEV      [ .FILE "Game/UI/ModeloGestion/LoadingEscenarios/LoadingGestionKiev.tga"    .X 0 .Y 0 .SX 1024 .SY 768 .U 0 .V 0 .PRIORITY 255 ]
+ #.MARRUECOS [ .FILE "Game/UI/ModeloGestion/LoadingEscenarios/LoadingGestionMorocco.tga" .X 0 .Y 0 .SX 1024 .SY 768 .U 0 .V 0 .PRIORITY 255 ]

@@ -1,0 +1,21 @@
+
+# Parametros generales
+%game/gamemodes/navalbattlemode/sceneries/templates/climas/evening/Map.sb
+
+# Posicion inicial de los barcos
+.INITIAL_POS_SHIPS
+[
+  .RUIDO_POS  500.0                        # Es la "aleatoriedad" de la posicion de cada barco
+  .RUIDO_ANG  15                          # lo mismo on el angulo
+  
+  .DEFENSOR
+  [ 
+    %game/gamemodes/navalbattlemode/sceneries/templates/pos_iniciales/defensor/doble_linia.sb
+  ]
+  
+  .ATACANTE
+  [
+    %game/gamemodes/navalbattlemode/sceneries/templates/pos_iniciales/atacante/doble_linia.sb
+  ]
+]
+]

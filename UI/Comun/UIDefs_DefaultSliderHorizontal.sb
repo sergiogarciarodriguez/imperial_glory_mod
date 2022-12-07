@@ -1,0 +1,42 @@
+#-----------------------------------------------------------------------------------
+# Define el stilo del slider por defecto
+#-----------------------------------------------------------------------------------
+
+
+  .FILE "Game/UI/Comun/DummySlider.tga" .SX 256 .SY 30 .U 0 .V 0 .HORIZONTAL TRUE .ALPHA TRUE
+
+  # Boton 1
+  .BTN_1
+  [ .TIPO UIC_BOTONGRAFICO
+    .COMPORTAMIENTO SIMPLE
+    .FONDO
+    [
+      .X 0 .Y 0 .SX 30 .SY 30 .ALPHA TRUE
+      .SOLTADO [ .FILE "Game/UI/Comun/DummySlider.tga" .U 62 .V 32 ]
+      .PULSADO [ .FILE "Game/UI/Comun/DummySlider.tga" .U 60 .V 30 ]
+    ]
+  ]
+
+  # Boton 2                
+  .BTN_2
+  [ .TIPO UIC_BOTONGRAFICO
+    .COMPORTAMIENTO SIMPLE
+    .FONDO
+    [
+      .X 0 .Y 0 .SX 30 .SY 30 .ALPHA TRUE      
+      .SOLTADO [ .FILE "Game/UI/Comun/DummySlider.tga" .U 0  .V 32 ] 
+      .PULSADO [ .FILE "Game/UI/Comun/DummySlider.tga" .U -2 .V 30 ]
+    ]
+  ]
+
+  # Boton central
+  .BTN_CENTRAL
+  [ .TIPO UIC_BOTONGRAFICO
+    .COMPORTAMIENTO SIMPLE
+    .FONDO
+    [
+      .X 0 .Y 0 .SX 30 .SY 30 .ALPHA TRUE      
+      .SOLTADO [ .FILE "Game/UI/Comun/DummySlider.tga" .U 120 .V 32 ]
+      .PULSADO [ .FILE "Game/UI/Comun/DummySlider.tga" .U 120 .V 32 ]
+    ]
+  ]

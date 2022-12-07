@@ -1,0 +1,185 @@
+#############################################################################################
+# Ventana / Dialogo para la organizacion de ejercitos.
+# Saldra al arrastrar un ejercito sobre otro (siempre y cuando sean del jugador).
+# sE
+#############################################################################################
+
+ .MODAL TRUE 
+ .CENTER FALSE
+ .DEPTH 3
+   
+ .FONDO
+ [  
+  .FILE "Game/UI/ModeloGestion/PantallaIntercambioTropas.tga" 
+  .SX 1024 .SY 652 
+  .ALPHA TRUE .PRIORITY 1
+ ]
+   
+ .CAPTION
+ [
+  .XMARGEN 704 .YMARGEN 131 .HEIGHT 38
+  .TITLE 
+  [ 
+   .ALINEACION CENTER 
+   .TEXT LTEXT_UI_INTERCAMBIOTROPAS_TITLE 
+   .FONT "Fonts/MonotypeCorsiva29.fnt" 
+   .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+  
+  .MOVIBLE FALSE
+ ]   
+  
+  .BOTONES
+  [
+   .CENTER
+   [
+    .XMARGEN 824
+    .YMARGEN 548
+   ]
+   
+   .LIST
+   [
+    [
+     .ACEPTAR TRUE
+     
+     .TIPO UIC_BOTONTEXTO     
+     
+     .IDSELECTSOUND "S_FXUI_CLICKBUTTON"                                    
+     .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"
+     
+     .STYLE DEFAULT_X_BUTTON
+     
+     .KEY
+     [
+       .TECLA KEY_ESCAPE .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ]          
+     ]
+    ]
+   ] # ~ LIST  
+  ]             
+          
+  # Params del WrapText utilizado para mostrar el nombre de los batallones, incluido mando, que
+  # se ubiquen sobre el visor.
+  .WRAPTEXT_NAME_PARAMS
+  [
+   .SX 73 .SY 45
+   .ALIGN CENTER
+   .TEXT [ .FONT "Fonts/Times9.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+   .PRIORITY 254
+  ]
+  
+  # Controles
+  # Incluiremos aqui los visores de matriz para el ejercito sobre el que hicimos drag y el
+  # ejercito que recibe la accion
+  .CONTROLES
+  [
+  
+   # Visores de Matriz de Controles     
+   [
+    .TIPO UIC_VISORMATRIZCTRLS .ID 'VDRS'
+    .PARAMS [ %Game/UI/ModeloGestion/UIDefs_VisorMatrizVentOrgEjercitosDragSlots.sb ]
+   ]
+
+   [
+    .TIPO UIC_VISORMATRIZCTRLS .ID 'VDES'
+    .PARAMS [ %Game/UI/ModeloGestion/UIDefs_VisorMatrizVentOrgEjercitosDestSlots.sb ]
+   ]
+   
+   [
+    .TIPO UIC_VISORMATRIZCTRLS .ID 'VEDR'
+    .PARAMS [ %Game/UI/ModeloGestion/UIDefs_VisorMatrizVentOrgEjercitosDrag.sb ]
+   ]
+   
+   [
+    .TIPO UIC_VISORMATRIZCTRLS .ID 'VEDE'
+    .PARAMS [ %Game/UI/ModeloGestion/UIDefs_VisorMatrizVentOrgEjercitosDest.sb ]
+   ]     
+   
+   # Wraptext para el nombre del oficial del ejército de Origen
+   [ 
+     .TIPO UIC_WRAPTEXT .ID 'TORG' 
+     .PARAMS
+     [
+       .TEXT 
+       [ 
+         .FONT "Fonts/Times14.fnt" 
+         .COLOR [ .R 255 .G 255 .B 255 ]    
+       ] 
+       
+       .ALIGN CENTER
+       
+       .X 187 .Y 190 .SX 315 .SY 34
+       
+       .MSG " "
+     ]
+   ]     
+   
+   # Wraptext para el nombre del oficial del ejército de destino
+   [ 
+     .TIPO UIC_WRAPTEXT .ID 'TDST' 
+     .PARAMS
+     [
+       .TEXT 
+       [ 
+         .FONT "Fonts/Times14.fnt" 
+         .COLOR [ .R 255 .G 255 .B 255 ]    
+       ] 
+
+       .ALIGN CENTER
+       
+       .X 187 .Y 378 .SX 315 .SY 34
+       
+       .MSG " "
+     ]
+   ]        
+   
+   # Wraptext para el nombre de la provincia del ejército de origen
+   [ 
+     .TIPO UIC_WRAPTEXT .ID 'PORG' 
+     .PARAMS
+     [
+       .TEXT 
+       [ 
+         .FONT "Fonts/Times12.fnt" 
+         .COLOR [ .R 255 .G 255 .B 255 ]    
+       ] 
+       
+       .ALIGN CENTER
+       
+       .X 573 .Y 191 .SX 262 .SY 32
+       
+       .MSG " "
+     ]
+   ]     
+   
+   # Wraptext para el nombre de la provincia del ejército de destino
+   [ 
+     .TIPO UIC_WRAPTEXT .ID 'PDST' 
+     .PARAMS
+     [
+       .TEXT 
+       [ 
+         .FONT "Fonts/Times12.fnt" 
+         .COLOR [ .R 255 .G 255 .B 255 ]    
+       ] 
+       
+       .ALIGN CENTER
+       
+       .X 573 .Y 378 .SX 262 .SY 32
+       
+       .MSG " "
+     ]
+   ]           
+  ]  
+  
+  # Ejercito al que hacemos drag
+  .EJERCITO_DRAG
+  [   
+   .OFICIAL  [ .INIT_POS [ .X 184 .Y 228 ] ]
+  ] 
+  
+  # Ejercito que recibe el drag
+  .EJERCITO_DEST
+  [
+   .OFICIAL  [ .INIT_POS [ .X 184 .Y 418 ] ]
+  ]     
+ ] # ~ CONTROLES

@@ -1,0 +1,1716 @@
+###############################################################################################################
+# Mantiene las entradas en el svcUICPool para los iconos de los edificios como botones.
+###############################################################################################################
+
+[
+ .KEY DEFAULT_CONSTRUCCION_BTN_NORMAL
+ .PARAMS [ .U 1 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY DEFAULT_CONSTRUCCION_BTN_SELECCIONADO
+ .PARAMS [ .U 1 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY DEFAULT_CONSTRUCCION_BTN_PULSADO
+ .PARAMS [ .U 1 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+
+######### FILA 1 ###
+
+[
+ .KEY BAZAR_BTN_NORMAL
+ .PARAMS [ .U 1 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY BAZAR_BTN_SELECCIONADO
+ .PARAMS [ .U 1 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY BAZAR_BTN_PULSADO
+ .PARAMS [ .U 1 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ALMACEN_VIVERES_BTN_NORMAL
+ .PARAMS [ .U 89 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ALMACEN_VIVERES_BTN_SELECCIONADO
+ .PARAMS [ .U 89 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ALMACEN_VIVERES_BTN_PULSADO
+ .PARAMS [ .U 89 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ASERRADERO_BTN_NORMAL
+ .PARAMS [ .U 177 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ASERRADERO_BTN_SELECCIONADO
+ .PARAMS [ .U 177 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ASERRADERO_BTN_PULSADO
+ .PARAMS [ .U 177 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY REGADIOS_BTN_NORMAL
+ .PARAMS [ .U 265 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY REGADIOS_BTN_SELECCIONADO
+ .PARAMS [ .U 265 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY REGADIOS_BTN_PULSADO
+ .PARAMS [ .U 265 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINAS_PROFUNDIDAD_BTN_NORMAL
+ .PARAMS [ .U 353 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINAS_PROFUNDIDAD_BTN_SELECCIONADO
+ .PARAMS [ .U 353 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINAS_PROFUNDIDAD_BTN_PULSADO
+ .PARAMS [ .U 353 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_AGRICULTURA_BTN_NORMAL
+ .PARAMS [ .U 441 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_AGRICULTURA_BTN_SELECCIONADO
+ .PARAMS [ .U 441 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_AGRICULTURA_BTN_PULSADO
+ .PARAMS [ .U 441 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CASA_ALISTAMIENTO_BTN_NORMAL
+ .PARAMS [ .U 529 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CASA_ALISTAMIENTO_BTN_SELECCIONADO
+ .PARAMS [ .U 529 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CASA_ALISTAMIENTO_BTN_PULSADO
+ .PARAMS [ .U 529 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ALTOS_HORNOS_BTN_NORMAL
+ .PARAMS [ .U 617 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ALTOS_HORNOS_BTN_SELECCIONADO
+ .PARAMS [ .U 617 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ALTOS_HORNOS_BTN_PULSADO
+ .PARAMS [ .U 617 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY BANCO_BTN_NORMAL
+ .PARAMS [ .U 705 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY BANCO_BTN_SELECCIONADO
+ .PARAMS [ .U 705 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY BANCO_BTN_PULSADO
+ .PARAMS [ .U 705 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY DPTO_COMERCIAL_BTN_NORMAL
+ .PARAMS [ .U 1 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY DPTO_COMERCIAL_BTN_SELECCIONADO
+ .PARAMS [ .U 1 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY DPTO_COMERCIAL_BTN_PULSADO
+ .PARAMS [ .U 1 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY OFICINA_COMERCIAL_BTN_NORMAL
+ .PARAMS [ .U 881 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY OFICINA_COMERCIAL_BTN_SELECCIONADO
+ .PARAMS [ .U 881 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY OFICINA_COMERCIAL_BTN_PULSADO
+ .PARAMS [ .U 881 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ALMACENES_OCULTOS_BTN_NORMAL
+ .PARAMS [ .U 177 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ALMACENES_OCULTOS_BTN_SELECCIONADO
+ .PARAMS [ .U 177 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ALMACENES_OCULTOS_BTN_PULSADO
+ .PARAMS [ .U 177 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+######### FILA 2 ###
+
+[
+ .KEY RED_COMERCIAL_BTN_NORMAL
+ .PARAMS [ .U 1 .V 104 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY RED_COMERCIAL_BTN_SELECCIONADO
+ .PARAMS [ .U 1 .V 104 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY RED_COMERCIAL_BTN_PULSADO
+ .PARAMS [ .U 1 .V 104 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY EDIFICIO_BOLSA_BTN_NORMAL
+ .PARAMS [ .U 89 .V 104 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY EDIFICIO_BOLSA_BTN_SELECCIONADO
+ .PARAMS [ .U 89 .V 104 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY EDIFICIO_BOLSA_BTN_PULSADO
+ .PARAMS [ .U 89 .V 104 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY SENADO_BTN_NORMAL
+ .PARAMS [ .U 441 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY SENADO_BTN_SELECCIONADO
+ .PARAMS [ .U 441 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY SENADO_BTN_PULSADO
+ .PARAMS [ .U 441 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ARCO_TRIUNFO_BTN_NORMAL
+ .PARAMS [ .U 617 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ARCO_TRIUNFO_BTN_SELECCIONADO
+ .PARAMS [ .U 617 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ARCO_TRIUNFO_BTN_PULSADO
+ .PARAMS [ .U 617 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTATUA_REPUBLICA_BTN_NORMAL
+ .PARAMS [ .U 705 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTATUA_REPUBLICA_BTN_SELECCIONADO
+ .PARAMS [ .U 705 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTATUA_REPUBLICA_BTN_PULSADO
+ .PARAMS [ .U 705 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY PARLAMENTO_BTN_NORMAL
+ .PARAMS [ .U 881 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY PARLAMENTO_BTN_SELECCIONADO
+ .PARAMS [ .U 881 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY PARLAMENTO_BTN_PULSADO
+ .PARAMS [ .U 881 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY PALACIO_BTN_NORMAL
+ .PARAMS [ .U 529 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY PALACIO_BTN_SELECCIONADO
+ .PARAMS [ .U 529 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY PALACIO_BTN_PULSADO
+ .PARAMS [ .U 529 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTATUA_ECUESTRE_BTN_NORMAL
+ .PARAMS [ .U 793 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTATUA_ECUESTRE_BTN_SELECCIONADO
+ .PARAMS [ .U 793 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTATUA_ECUESTRE_BTN_PULSADO
+ .PARAMS [ .U 793 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY BANCO_BTN_NORMAL
+ .PARAMS [ .U 705 .V 104 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY BANCO_BTN_SELECCIONADO
+ .PARAMS [ .U 705 .V 104 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY BANCO_BTN_PULSADO
+ .PARAMS [ .U 705 .V 104 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ENSENADAS_OCULTAS_BTN_NORMAL
+ .PARAMS [ .U 1 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ENSENADAS_OCULTAS_BTN_SELECCIONADO
+ .PARAMS [ .U 1 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ENSENADAS_OCULTAS_BTN_PULSADO
+ .PARAMS [ .U 1 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY COMISARIA_BTN_NORMAL
+ .PARAMS [ .U 793 .V 104 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY COMISARIA_BTN_SELECCIONADO
+ .PARAMS [ .U 793 .V 104 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY COMISARIA_BTN_PULSADO
+ .PARAMS [ .U 793 .V 104 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CONSULADO_BTN_NORMAL
+ .PARAMS [ .U 881 .V 104 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CONSULADO_BTN_SELECCIONADO
+ .PARAMS [ .U 881 .V 104 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CONSULADO_BTN_PULSADO
+ .PARAMS [ .U 881 .V 104 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+######### FILA 3 ###
+
+[
+ .KEY PERIODICO_BTN_NORMAL
+ .PARAMS [ .U 1 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY PERIODICO_BTN_SELECCIONADO
+ .PARAMS [ .U 1 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY PERIODICO_BTN_PULSADO
+ .PARAMS [ .U 1 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CTO_CULTURAL_BTN_NORMAL
+ .PARAMS [ .U 89 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CTO_CULTURAL_BTN_SELECCIONADO
+ .PARAMS [ .U 89 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CTO_CULTURAL_BTN_PULSADO
+ .PARAMS [ .U 89 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY EMBAJADA_COMERCIAL_BTN_NORMAL
+ .PARAMS [ .U 793 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY EMBAJADA_COMERCIAL_BTN_SELECCIONADO
+ .PARAMS [ .U 793 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY EMBAJADA_COMERCIAL_BTN_PULSADO
+ .PARAMS [ .U 793 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY BOLETIN_ARMADA_BTN_NORMAL
+ .PARAMS [ .U 177 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY BOLETIN_ARMADA_BTN_SELECCIONADO
+ .PARAMS [ .U 177 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY BOLETIN_ARMADA_BTN_PULSADO
+ .PARAMS [ .U 177 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY INFRAESTRUCTURAS_BTN_NORMAL
+ .PARAMS [ .U 265 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY INFRAESTRUCTURAS_BTN_SELECCIONADO
+ .PARAMS [ .U 265 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY INFRAESTRUCTURAS_BTN_PULSADO
+ .PARAMS [ .U 265 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CELULA_RESISTENCIA_BTN_NORMAL
+ .PARAMS [ .U 353 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CELULA_RESISTENCIA_BTN_SELECCIONADO
+ .PARAMS [ .U 353 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CELULA_RESISTENCIA_BTN_PULSADO
+ .PARAMS [ .U 353 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY FABRICA_UNIFORMES_BTN_NORMAL
+ .PARAMS [ .U 441 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY FABRICA_UNIFORMES_BTN_SELECCIONADO
+ .PARAMS [ .U 441 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY FABRICA_UNIFORMES_BTN_PULSADO
+ .PARAMS [ .U 441 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESCUELA_ARMADA_BTN_NORMAL
+ .PARAMS [ .U 529 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESCUELA_ARMADA_BTN_SELECCIONADO
+ .PARAMS [ .U 529 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESCUELA_ARMADA_BTN_PULSADO
+ .PARAMS [ .U 529 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY HOSPITAL_CAMPANA_BTN_NORMAL
+ .PARAMS [ .U 617 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY HOSPITAL_CAMPANA_BTN_SELECCIONADO
+ .PARAMS [ .U 617 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY HOSPITAL_CAMPANA_BTN_PULSADO
+ .PARAMS [ .U 617 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY HOSPITAL_LOCAL_BTN_NORMAL
+ .PARAMS [ .U 705 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY HOSPITAL_LOCAL_BTN_SELECCIONADO
+ .PARAMS [ .U 705 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY HOSPITAL_LOCAL_BTN_PULSADO
+ .PARAMS [ .U 705 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY HOSPITAL_MODERNO_BTN_NORMAL
+ .PARAMS [ .U 793 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY HOSPITAL_MODERNO_BTN_SELECCIONADO
+ .PARAMS [ .U 793 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY HOSPITAL_MODERNO_BTN_PULSADO
+ .PARAMS [ .U 793 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY OFICINA_RECAUDACION_BTN_NORMAL
+ .PARAMS [ .U 881 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY OFICINA_RECAUDACION_BTN_SELECCIONADO
+ .PARAMS [ .U 881 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY OFICINA_RECAUDACION_BTN_PULSADO
+ .PARAMS [ .U 881 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+######### FILA 4 ###
+
+[
+ .KEY DPTO_TESORO_BTN_NORMAL
+ .PARAMS [ .U 1 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY DPTO_TESORO_BTN_SELECCIONADO
+ .PARAMS [ .U 1 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY DPTO_TESORO_BTN_PULSADO
+ .PARAMS [ .U 1 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_HACIENDA_BTN_NORMAL
+ .PARAMS [ .U 89 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_HACIENDA_BTN_SELECCIONADO
+ .PARAMS [ .U 89 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_HACIENDA_BTN_PULSADO
+ .PARAMS [ .U 89 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_ASUNTOS_EXTERIORES_BTN_NORMAL
+ .PARAMS [ .U 881 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_ASUNTOS_EXTERIORES_BTN_SELECCIONADO
+ .PARAMS [ .U 881 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_ASUNTOS_EXTERIORES_BTN_PULSADO
+ .PARAMS [ .U 881 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESCUELA_BASICA_BTN_NORMAL
+ .PARAMS [ .U 177 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESCUELA_BASICA_BTN_SELECCIONADO
+ .PARAMS [ .U 177 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESCUELA_BASICA_BTN_PULSADO
+ .PARAMS [ .U 177 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY LICEO_BTN_NORMAL
+ .PARAMS [ .U 265 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY LICEO_BTN_SELECCIONADO
+ .PARAMS [ .U 265 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY LICEO_BTN_PULSADO
+ .PARAMS [ .U 265 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY UNIVERSIDAD_BTN_NORMAL
+ .PARAMS [ .U 353 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY UNIVERSIDAD_BTN_SELECCIONADO
+ .PARAMS [ .U 353 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY UNIVERSIDAD_BTN_PULSADO
+ .PARAMS [ .U 353 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY DARSENA_MERCANTIL_BTN_NORMAL
+ .PARAMS [ .U 441 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY DARSENA_MERCANTIL_BTN_SELECCIONADO
+ .PARAMS [ .U 441 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY DARSENA_MERCANTIL_BTN_PULSADO
+ .PARAMS [ .U 441 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY MUELLE_MERCANTIL_BTN_NORMAL
+ .PARAMS [ .U 529 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY MUELLE_MERCANTIL_BTN_SELECCIONADO
+ .PARAMS [ .U 529 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY MUELLE_MERCANTIL_BTN_PULSADO
+ .PARAMS [ .U 529 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY PUERTO_MERCANTIL_BTN_NORMAL
+ .PARAMS [ .U 617 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY PUERTO_MERCANTIL_BTN_SELECCIONADO
+ .PARAMS [ .U 617 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY PUERTO_MERCANTIL_BTN_PULSADO
+ .PARAMS [ .U 617 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY FARO_ARGAND_BTN_NORMAL
+ .PARAMS [ .U 705 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY FARO_ARGAND_BTN_SELECCIONADO
+ .PARAMS [ .U 705 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY FARO_ARGAND_BTN_PULSADO
+ .PARAMS [ .U 705 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY FARO_FRESNEL_BTN_NORMAL
+ .PARAMS [ .U 793 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY FARO_FRESNEL_BTN_SELECCIONADO
+ .PARAMS [ .U 793 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY FARO_FRESNEL_BTN_PULSADO
+ .PARAMS [ .U 793 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY DELEGACION_COMERCIAL_BTN_NORMAL
+ .PARAMS [ .U 881 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY DELEGACION_COMERCIAL_BTN_SELECCIONADO
+ .PARAMS [ .U 881 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY DELEGACION_COMERCIAL_BTN_PULSADO
+ .PARAMS [ .U 881 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+######### FILA 5 ###
+
+[
+ .KEY DPTO_COMERCIAL_BTN_NORMAL
+ .PARAMS [ .U 1 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY DPTO_COMERCIAL_BTN_SELECCIONADO
+ .PARAMS [ .U 1 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY DPTO_COMERCIAL_BTN_PULSADO
+ .PARAMS [ .U 1 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY PUESTO_FRONTERIZO_BTN_NORMAL
+ .PARAMS [ .U 89 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY PUESTO_FRONTERIZO_BTN_SELECCIONADO
+ .PARAMS [ .U 89 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY PUESTO_FRONTERIZO_BTN_PULSADO
+ .PARAMS [ .U 89 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ADUANAS_BTN_NORMAL
+ .PARAMS [ .U 793 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ADUANAS_BTN_SELECCIONADO
+ .PARAMS [ .U 793 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ADUANAS_BTN_PULSADO
+ .PARAMS [ .U 793 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY AYUNTAMIENTO_BTN_NORMAL
+ .PARAMS [ .U 265 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY AYUNTAMIENTO_BTN_SELECCIONADO
+ .PARAMS [ .U 265 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY AYUNTAMIENTO_BTN_PULSADO
+ .PARAMS [ .U 265 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY GOBIERNO_DEPARTAMENTAL_BTN_NORMAL
+ .PARAMS [ .U 353 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY GOBIERNO_DEPARTAMENTAL_BTN_SELECCIONADO
+ .PARAMS [ .U 353 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY GOBIERNO_DEPARTAMENTAL_BTN_PULSADO
+ .PARAMS [ .U 353 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_INTERIOR_BTN_NORMAL
+ .PARAMS [ .U 441 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_INTERIOR_BTN_SELECCIONADO
+ .PARAMS [ .U 441 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_INTERIOR_BTN_PULSADO
+ .PARAMS [ .U 441 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY DPTO_INFORMACION_BTN_NORMAL
+ .PARAMS [ .U 1 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY DPTO_INFORMACION_BTN_SELECCIONADO
+ .PARAMS [ .U 1 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY DPTO_INFORMACION_BTN_PULSADO
+ .PARAMS [ .U 1 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY EDIFICIO_INTELIGENCIA_MILITAR_BTN_NORMAL
+ .PARAMS [ .U 617 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY EDIFICIO_INTELIGENCIA_MILITAR_BTN_SELECCIONADO
+ .PARAMS [ .U 617 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY EDIFICIO_INTELIGENCIA_MILITAR_BTN_PULSADO
+ .PARAMS [ .U 617 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CENTRAL_INTELIGENCIA_BTN_NORMAL
+ .PARAMS [ .U 705 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CENTRAL_INTELIGENCIA_BTN_SELECCIONADO
+ .PARAMS [ .U 705 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CENTRAL_INTELIGENCIA_BTN_PULSADO
+ .PARAMS [ .U 705 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY TALLER_TECNICO_BASICO_BTN_NORMAL
+ .PARAMS [ .U 793 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY TALLER_TECNICO_BASICO_BTN_SELECCIONADO
+ .PARAMS [ .U 793 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY TALLER_TECNICO_BASICO_BTN_PULSADO
+ .PARAMS [ .U 793 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY TALLER_TECNICO_MEDIO_BTN_NORMAL
+ .PARAMS [ .U 881 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY TALLER_TECNICO_MEDIO_BTN_SELECCIONADO
+ .PARAMS [ .U 881 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY TALLER_TECNICO_MEDIO_BTN_PULSADO
+ .PARAMS [ .U 881 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+######### FILA 6 ###
+
+[
+ .KEY FUNDICION_ELITE_BTN_NORMAL
+ .PARAMS [ .U 706 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY FUNDICION_ELITE_BTN_SELECCIONADO
+ .PARAMS [ .U 706 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY FUNDICION_ELITE_BTN_PULSADO
+ .PARAMS [ .U 706 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUARTEL_AVANZADO_BTN_NORMAL
+ .PARAMS [ .U 353 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUARTEL_AVANZADO_BTN_SELECCIONADO
+ .PARAMS [ .U 353 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUARTEL_AVANZADO_BTN_PULSADO
+ .PARAMS [ .U 353 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTADO_MAYOR_BTN_NORMAL
+ .PARAMS [ .U 177 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTADO_MAYOR_BTN_SELECCIONADO
+ .PARAMS [ .U 177 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTADO_MAYOR_BTN_PULSADO
+ .PARAMS [ .U 177 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY BARRACAS_BASICAS_BTN_NORMAL
+ .PARAMS [ .U 793 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY BARRACAS_BASICAS_BTN_SELECCIONADO
+ .PARAMS [ .U 793 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY BARRACAS_BASICAS_BTN_PULSADO
+ .PARAMS [ .U 793 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY BARRACAS_AVANZADAS_BTN_NORMAL
+ .PARAMS [ .U 881 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY BARRACAS_AVANZADAS_BTN_SELECCIONADO
+ .PARAMS [ .U 881 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY BARRACAS_AVANZADAS_BTN_PULSADO
+ .PARAMS [ .U 881 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY BARRACAS_ELITE_BTN_NORMAL
+ .PARAMS [ .U 1 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY BARRACAS_ELITE_BTN_SELECCIONADO
+ .PARAMS [ .U 1 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY BARRACAS_ELITE_BTN_PULSADO
+ .PARAMS [ .U 1 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY FUNDICION_BASICA_BTN_NORMAL
+ .PARAMS [ .U 529 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY FUNDICION_BASICA_BTN_SELECCIONADO
+ .PARAMS [ .U 529 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY FUNDICION_BASICA_BTN_PULSADO
+ .PARAMS [ .U 529 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY FUNDICION_AVANZADA_BTN_NORMAL
+ .PARAMS [ .U 617 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY FUNDICION_AVANZADA_BTN_SELECCIONADO
+ .PARAMS [ .U 617 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY FUNDICION_AVANZADA_BTN_PULSADO
+ .PARAMS [ .U 617 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY TALLER_OBUSES_BTN_NORMAL
+ .PARAMS [ .U 705 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY TALLER_OBUSES_BTN_SELECCIONADO
+ .PARAMS [ .U 705 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY TALLER_OBUSES_BTN_PULSADO
+ .PARAMS [ .U 705 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUARTEL_BASICO_BTN_NORMAL
+ .PARAMS [ .U 265 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUARTEL_BASICO_BTN_SELECCIONADO
+ .PARAMS [ .U 265 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUARTEL_BASICO_BTN_PULSADO
+ .PARAMS [ .U 265 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESCUELA_CAPITANES_BTN_NORMAL
+ .PARAMS [ .U 881 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESCUELA_CAPITANES_BTN_SELECCIONADO
+ .PARAMS [ .U 881 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESCUELA_CAPITANES_BTN_PULSADO
+ .PARAMS [ .U 881 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+######### FILA 7 ###
+
+[
+ .KEY CUARTEL_ELITE_BTN_NORMAL
+ .PARAMS [ .U 441 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUARTEL_ELITE_BTN_SELECCIONADO
+ .PARAMS [ .U 441 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUARTEL_ELITE_BTN_PULSADO
+ .PARAMS [ .U 441 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAMPO_ENTRENAMIENTO_BTN_NORMAL
+ .PARAMS [ .U 89 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAMPO_ENTRENAMIENTO_BTN_SELECCIONADO
+ .PARAMS [ .U 89 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAMPO_ENTRENAMIENTO_BTN_PULSADO
+ .PARAMS [ .U 89 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAMPO_TIRO_BTN_NORMAL
+ .PARAMS [ .U 177 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAMPO_TIRO_BTN_SELECCIONADO
+ .PARAMS [ .U 177 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAMPO_TIRO_BTN_PULSADO
+ .PARAMS [ .U 177 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY PUERTO_MILITAR_BTN_NORMAL
+ .PARAMS [ .U 265 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY PUERTO_MILITAR_BTN_SELECCIONADO
+ .PARAMS [ .U 265 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY PUERTO_MILITAR_BTN_PULSADO
+ .PARAMS [ .U 265 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY DIQUE_SECO_BTN_NORMAL
+ .PARAMS [ .U 353 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY DIQUE_SECO_BTN_SELECCIONADO
+ .PARAMS [ .U 353 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY DIQUE_SECO_BTN_PULSADO
+ .PARAMS [ .U 353 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ARSENAL_BTN_NORMAL
+ .PARAMS [ .U 441 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ARSENAL_BTN_SELECCIONADO
+ .PARAMS [ .U 441 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ARSENAL_BTN_PULSADO
+ .PARAMS [ .U 441 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUADRAS_BASICAS_BTN_NORMAL
+ .PARAMS [ .U 529 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUADRAS_BASICAS_BTN_SELECCIONADO
+ .PARAMS [ .U 529 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUADRAS_BASICAS_BTN_PULSADO
+ .PARAMS [ .U 529 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUADRAS_AVANZADAS_BTN_NORMAL
+ .PARAMS [ .U 617 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUADRAS_AVANZADAS_BTN_SELECCIONADO
+ .PARAMS [ .U 617 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUADRAS_AVANZADAS_BTN_PULSADO
+ .PARAMS [ .U 617 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUADRAS_ELITE_BTN_NORMAL
+ .PARAMS [ .U 705 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUADRAS_ELITE_BTN_SELECCIONADO
+ .PARAMS [ .U 705 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUADRAS_ELITE_BTN_PULSADO
+ .PARAMS [ .U 705 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CENTRO_DATOS_BTN_NORMAL
+ .PARAMS [ .U 1 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CENTRO_DATOS_BTN_SELECCIONADO
+ .PARAMS [ .U 1 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CENTRO_DATOS_BTN_PULSADO
+ .PARAMS [ .U 1 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY EMBARCADERO_BTN_NORMAL
+ .PARAMS [ .U 89 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY EMBARCADERO_BTN_SELECCIONADO
+ .PARAMS [ .U 89 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY EMBARCADERO_BTN_PULSADO
+ .PARAMS [ .U 89 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_RUSIA_BTN_NORMAL
+ .PARAMS [ .U 177 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_RUSIA_BTN_SELECCIONADO
+ .PARAMS [ .U 177 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_RUSIA_BTN_PULSADO
+ .PARAMS [ .U 177 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_FRANCIA_BTN_NORMAL
+ .PARAMS [ .U 265 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_FRANCIA_BTN_SELECCIONADO
+ .PARAMS [ .U 265 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_FRANCIA_BTN_PULSADO
+ .PARAMS [ .U 265 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_GRAN_BRETANYA_BTN_NORMAL
+ .PARAMS [ .U 353 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_GRAN_BRETANYA_BTN_SELECCIONADO
+ .PARAMS [ .U 353 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_GRAN_BRETANYA_BTN_PULSADO
+ .PARAMS [ .U 353 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+
+[
+ .KEY CAPITAL_BASE_PRUSIA_BTN_NORMAL
+ .PARAMS [ .U 441 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_PRUSIA_BTN_SELECCIONADO
+ .PARAMS [ .U 441 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_PRUSIA_BTN_PULSADO
+ .PARAMS [ .U 441 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_AUSTRIA_BTN_NORMAL
+ .PARAMS [ .U 529 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_AUSTRIA_BTN_SELECCIONADO
+ .PARAMS [ .U 529 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_AUSTRIA_BTN_PULSADO
+ .PARAMS [ .U 529 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ARCO_TRIUNFO_BTN_NORMAL
+ .PARAMS [ .U 617 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ARCO_TRIUNFO_BTN_SELECCIONADO
+ .PARAMS [ .U 617 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ARCO_TRIUNFO_BTN_PULSADO
+ .PARAMS [ .U 617 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTATUA_REPUBLICA_BTN_NORMAL
+ .PARAMS [ .U 705 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTATUA_REPUBLICA_BTN_SELECCIONADO
+ .PARAMS [ .U 705 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTATUA_REPUBLICA_BTN_PULSADO
+ .PARAMS [ .U 705 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTATUA_ECUESTRE_BTN_NORMAL
+ .PARAMS [ .U 793 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTATUA_ECUESTRE_BTN_SELECCIONADO
+ .PARAMS [ .U 793 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTATUA_ECUESTRE_BTN_PULSADO
+ .PARAMS [ .U 793 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+
+## edificios de capitales neutrales y gobiernos de era III
+[
+ .KEY PARLAMENTO_BTN_PULSADO
+ .PARAMS [ .U 881 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY PALACIO_BTN_PULSADO
+ .PARAMS [ .U 529 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY SENADO_BTN_PULSADO
+ .PARAMS [ .U 441 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_BTN_PULSADO
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_ESPANYA_BTN_PULSADO
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_OTOMANO_BTN_PULSADO
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_EGIPTO_BTN_PULSADO
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_DOS_SICILIAS_BTN_PULSADO
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_DINAMARCA_BTN_PULSADO
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_SUECIA_BTN_PULSADO
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_PORTUGAL_BTN_PULSADO
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_LOMBARDIA_BTN_PULSADO
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_PIAMONTE_BTN_PULSADO
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_EPAPALES_BTN_PULSADO
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_RHELVETICA_BTN_PULSADO
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_BATAVIA_BTN_PULSADO
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_SAJONIA_BTN_PULSADO
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_POLONIA_BTN_PULSADO
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_MOLDAVIA_BTN_PULSADO
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_MARRUECOS_BTN_PULSADO
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_TUNEZ_BTN_PULSADO
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_TRIPOLITANIA_BTN_PULSADO
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_HANOVER_BTN_PULSADO
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY PARLAMENTO_BTN_SELECCIONADO
+ .PARAMS [ .U 881 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY PALACIO_BTN_SELECCIONADO
+ .PARAMS [ .U 529 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY SENADO_BTN_SELECCIONADO
+ .PARAMS [ .U 441 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_BTN_SELECCIONADO
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_ESPANYA_BTN_SELECCIONADO
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_OTOMANO_BTN_SELECCIONADO
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_EGIPTO_BTN_SELECCIONADO
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_DOS_SICILIAS_BTN_SELECCIONADO
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_DINAMARCA_BTN_SELECCIONADO
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_SUECIA_BTN_SELECCIONADO
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_PORTUGAL_BTN_SELECCIONADO
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_LOMBARDIA_BTN_SELECCIONADO
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_PIAMONTE_BTN_SELECCIONADO
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_EPAPALES_BTN_SELECCIONADO
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_RHELVETICA_BTN_SELECCIONADO
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_BATAVIA_BTN_SELECCIONADO
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_SAJONIA_BTN_SELECCIONADO
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_POLONIA_BTN_SELECCIONADO
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_MOLDAVIA_BTN_SELECCIONADO
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_MARRUECOS_BTN_SELECCIONADO
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_TUNEZ_BTN_SELECCIONADO
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_TRIPOLITANIA_BTN_SELECCIONADO
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_HANOVER_BTN_SELECCIONADO
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY PARLAMENTO_BTN_NORMAL
+ .PARAMS [ .U 881 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY PALACIO_BTN_NORMAL
+ .PARAMS [ .U 529 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY SENADO_BTN_NORMAL
+ .PARAMS [ .U 441 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_BTN_NORMAL
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_ESPANYA_BTN_NORMAL
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_OTOMANO_BTN_NORMAL
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_EGIPTO_BTN_NORMAL
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_DOS_SICILIAS_BTN_NORMAL
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_DINAMARCA_BTN_NORMAL
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_SUECIA_BTN_NORMAL
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_PORTUGAL_BTN_NORMAL
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_LOMBARDIA_BTN_NORMAL
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_PIAMONTE_BTN_NORMAL
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_EPAPALES_BTN_NORMAL
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_RHELVETICA_BTN_NORMAL
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_BATAVIA_BTN_NORMAL
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_SAJONIA_BTN_NORMAL
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_POLONIA_BTN_NORMAL
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_MOLDAVIA_BTN_NORMAL
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_MARRUECOS_BTN_NORMAL
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_TUNEZ_BTN_NORMAL
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_TRIPOLITANIA_BTN_NORMAL
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_HANOVER_BTN_NORMAL
+ .PARAMS [ .U 617 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]

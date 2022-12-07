@@ -1,0 +1,98 @@
+###############################################################################################################
+# Imagenes asociadas a tropas.
+###############################################################################################################
+
+[ 
+ .KEY GRAN_BRETANYA_FUSILERO_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Inglaterra/IconosInglaterra.tga" .U 407 .V 1 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_TIRADOR_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Inglaterra/IconosInglaterra.tga" .U 1 .V 183 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_CAZADOR_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Inglaterra/IconosInglaterra.tga" .U 233 .V 1 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_GRANADERO_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Inglaterra/IconosInglaterra.tga" .U 291 .V 1 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_LANCERO_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Inglaterra/IconosInglaterra.tga" .U 1 .V 1 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_MILICIA_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Inglaterra/IconosInglaterra.tga" .U 349 .V 1 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_HUSAR_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Inglaterra/IconosInglaterra.tga" .U 117 .V 1 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_ELITE_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Inglaterra/IconosInglaterra.tga" .U 59 .V 183 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_CAB_LANCERO_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Inglaterra/IconosInglaterra.tga" .U 1 .V 1 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_CAB_HUSAR_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Inglaterra/IconosInglaterra.tga" .U 59 .V 1 .SX 57 .SY 91 .ALPHA TRUE ] 
+]
+
+[ 
+ .KEY GRAN_BRETANYA_CAB_CORACERO_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Inglaterra/IconosInglaterra.tga" .U 117 .V 1 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_CAB_DRAGON_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Inglaterra/IconosInglaterra.tga" .U 175 .V 1 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_CANON_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Inglaterra/IconosInglaterra.tga" .U 291 .V 183 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_CANON8_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Inglaterra/IconosInglaterra.tga" .U 233 .V 183 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_OBUS_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Inglaterra/IconosInglaterra.tga" .U 117 .V 183 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_MORTERO_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Inglaterra/IconosInglaterra.tga" .U 407 .V 183 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_CANON_CAB_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Inglaterra/IconosInglaterra.tga" .U 175 .V 183 .SX 57 .SY 91 .ALPHA TRUE  ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_OBUS_CAB_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Inglaterra/IconosInglaterra.tga" .U 117 .V 183 .SX 57 .SY 91 .ALPHA TRUE  ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_CANON_CAMP_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Inglaterra/IconosInglaterra.tga" .U 233 .V 183 .ALPHA TRUE ]
+]

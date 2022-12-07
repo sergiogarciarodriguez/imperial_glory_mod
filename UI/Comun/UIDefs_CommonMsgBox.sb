@@ -1,0 +1,67 @@
+ #############################################################################################
+ # MsgBox comun.
+ # Se usara un fondo tileado 
+ #############################################################################################
+ 
+ # Se define la ventana                   
+ .ACTIVO FALSE
+ .CENTER TRUE       
+ .MODAL TRUE
+ 
+ .FONDO_TILEADO 
+ [  
+  %Game/UI/Comun/UIDefs_ImgFondoVentanas.sb
+  .ANCHO 380
+  .ALTO  195    
+ ]              
+  
+ # Titulo 
+ .CAPTION
+ [
+  .XMARGEN 5 .YMARGEN 4
+  .HEIGHT 23
+  .TITLE 
+  [ 
+   .ALINEACION CENTER 
+   .TEXT " " 
+   .FONT "Fonts/Default.fnt" 
+   .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+  .MOVIBLE FALSE
+ ]
+ 
+ # Se definen los parametros de centrado de los botones
+ # Nota: - Solo trabajaremos con botones custom y por defecto
+ .BOTONES
+ [           
+  # Info de centrado automatico
+  .CENTER
+  [                   
+   .YMARGEN 157
+   .XSPACE  8   
+  ]                   
+ ] # ~ BOTONES         
+ 
+ # Se definen los parametros para el trabajo con los botones del MessageBox (MB)
+ .MB_BUTTONS  
+ [
+  # Clave en el UICPool para la base de botones a utilizar
+  .KEY_PARAMS MB_DEFAULTTEXT_BTN
+  #.LIST [ "Yes" "No" "Cancel" ]
+ ]
+ 
+ # Texto
+ .TEXT 
+ [
+  .CENTER
+  [
+   .YTOPMARGEN   34
+   .YBASEMARGEN  45
+   .XLEFTMARGEN  7
+   .XRIGHTMARGEN 7
+  ]   
+    
+  .ALIGN CENTER
+  
+  .TEXT [ .FONT "Fonts/Times12.fnt" .COLOR [ .R 255 .G 255 .B 255 ] .MSG  " " ]
+ ]

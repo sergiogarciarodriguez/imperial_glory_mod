@@ -1,0 +1,19 @@
+#======================================================================================
+# Sonidos reproducidos al cargar el mapa. Esto nos sirve para colocar sonidos ambientales
+# mientras no tengamos una interface de audio en el editor
+#=======================================================================================
+
+.MUSIC
+[
+  .IDNAME "S_MUSICA_BATALLA"
+]
+
+.SOUNDS
+[
+  [ 
+    .IDNAME "S_VIENTO"       
+    .POS [ 0.0 1000.0 0.0 ]
+  ]
+]
+
+

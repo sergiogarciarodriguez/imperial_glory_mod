@@ -1,0 +1,23 @@
+# Formacion de cunya abierta en zona de defensor
+
+[
+  .POS      [-10000.0  45000.0 ]     # Pos inicial expresada como distancia DESDE EL CENTRO DEL MAPA
+  .SPACING  [-20000.0  -5000.0 ]     # espacio entre los barcos (ATENCION, que no sea menor que el tamaño sumado de los barcos!)
+  .ANGLE    180                      # Angulo 0 -> derecha
+  .GROW     1                        # 0-> espaciar por arriba y por abajo 1-> por arriba solo 2-> por abajo
+  .NAVIOS   TRUE                     # Esta linia acepta navios ?
+  .FRAGATAS TRUE                     # Esta linia acepta fragatas ?
+  .CORBETAS TRUE                     # Esta linia acepta Corbetas ?
+  .MAX      3
+]
+
+[
+  .POS      [ 10000.0  45000.0 ]      # Pos inicial expresada como distancia DESDE EL CENTRO DEL MAPA
+  .SPACING  [ 20000.0  -5000.0 ]      # espacio entre los barcos (ATENCION, que no sea menor que el tamaño sumado de los barcos!)
+  .ANGLE    180                      # Angulo 0 -> derecha
+  .GROW     1                        # 0-> espaciar por arriba y por abajo 1-> por arriba solo 2-> por abajo
+  .NAVIOS   TRUE                     # Esta linia acepta navios ?
+  .FRAGATAS TRUE                     # Esta linia acepta fragatas ?
+  .CORBETAS TRUE                     # Esta linia acepta Corbetas ?
+  .MAX      3
+]

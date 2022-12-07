@@ -1,0 +1,15 @@
+# Enlace a los ficheros con las definiciones de sonidos en el sistema de audio
+
+.FILES
+[
+  [ .PATH "Audio/Management/AudioMusic.sb"                         ]
+
+  [ .PATH "Audio/Management/AudioFXUI.sb"                          ]
+  [ .PATH "Audio/Management/AudioFXSeleccion.sb"                   ]
+  [ .PATH "Audio/Management/AudioFXConstruccionDestruccion.sb"     ]
+  [ .PATH "Audio/Management/AudioFXTecnologiasQuests.sb"           ]
+  [ .PATH "Audio/Management/AudioFXMovimientos.sb"                 ]  
+  [ .PATH "Audio/Management/AudioFXOtros.sb"                       ]
+  [ .PATH "Audio/Management/AudioFXConquistaPerdidaTerritorio.sb"  ]
+  [ .PATH "Audio/Management/AudioFXPartida.sb"                     ]
+]

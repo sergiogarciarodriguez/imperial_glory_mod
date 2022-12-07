@@ -1,0 +1,362 @@
+##################################################################################################
+# Definiciones asociadas a la IA del ministerio diplomático
+##################################################################################################
+
+# Probabilidad base de que la IA realice una nueva oferta cuando el jugador al que ha enviado
+# un mensaje diplomático se lo ha rechazado con petición de renegociación.
+# Esta probabilidad irá decreciendo según el jugador siga pidiendo una renegociación para el mismo mensaje;
+# el valor NUMERO_MAXIMO_RENEGOCIACIONES_INICIATIVA_PROPIA indica el número máximo de veces que la IA
+# enviará nuevas ofertas para un mismo mensaje.
+.PROBABILIDAD_BASE_RENEGOCIACION_INICIATIVA_PROPIA    0.75
+.NUMERO_MAXIMO_RENEGOCIACIONES_INICIATIVA_PROPIA      2
+
+# Probabilidad base de que la IA rechace, con petición de renegociación, una oferta de otro jugador.
+# Esta probabilidad base estará modificada por lo justa que era la oferta del jugador ajeno 
+# (i.e. cuanto más cerca de la aceptación se quedara la oferta más probabilidades de renegociar habrá).
+# Esta probabilidad irá decreciendo según el jugador ajeno siga enviando nuevas ofertas para el mismo mensaje;
+# el valor NUMERO_MAXIMO_RENEGOCIACIONES_INICIATIVA_AJENA
+.PROBABILIDAD_BASE_RENEGOCIACION_INICIATIVA_AJENA     0.75
+.NUMERO_MAXIMO_RENEGOCIACIONES_INICIATIVA_AJENA       2
+
+# En caso de que la IA acepte una petición de renegociación por parte de otro jugador, aumentará la oferta 
+# o reducirá la demanda un porcentaje aleatorio cuyo máximo es el definido por este valor. Un valor de 0.25 
+# indica que tras aceptar una petición de renegociación la IA realizará una nueva oferta de hasta un 25% más 
+# de dinero, o una demanada de hasta un 25% menos.
+.MAXIMO_MODIFICADOR_PRECIO_RENEGOCIACION              0.25
+
+# Número de turnos máximo que la IA estará considerando si enviar ayuda militar a un jugador que se la ha pedido.
+# Si al pasar este número de turnos la IA no ha podido enviarle nada al jugador, le mandará una respuesta negativa.
+.MAXIMO_TURNOS_PARA_RESPUESTA_A_PETICION_AYUDA        3
+
+
+##################################################################################################
+# Valores relacionados con el intercambio de recursos.
+##################################################################################################
+
+.NUM_TURNOS_EVALUACION_RECURSOS       20  # Número de turnos sobre los que se calcularán los ingresos y los gastos
+                                          # en cada una de las riquezas para evaluar la necesidad de intercambiarlas.
+.CANTIDAD_MINIMA_INTERCAMBIABLE      200  # Cantidad mínima de cada recurso que se considerará para intercambiar.
+                                          # El jugador nunca realizará intercambios de recursos en cantidades por debajo
+                                          # de este valor.
+                          
+# Estos valores definen la diferencia de proporción máxima de oro con respecto a la de un recurso
+# en un tratado comercial iniciado por la IA. Un valor de 1.5 quiere decir que si la IA quiere
+# comprar 1000 de materias primas entonces nunca ofrecerá más de 1000*1.5 ni menos de 1000/1.5 de oro por ellas.
+.MAXIMA_RAZON_VALOR_MATERIAS_PRIMAS   1.5
+.MAXIMA_RAZON_VALOR_COMIDA            1.5
+
+##################################################################################################
+# Modificadores sobre el precio base de los tratados (común a todos)
+##################################################################################################
+
+# El precio base de los tratados representa la medida básica para el cálculo del coste de un tratado.
+# El coste de un tratado es la cantidad de oro que es necesario ofrecerle al jugador al que se le
+# está proponiendo el tratado para que éste tenga alguna posibilidad de aceptarlo, o alternativamente,
+# la cantidad de oro que se le puede demandar, en caso en que el tratado sea de este tipo.
+# Dado que los valores absolutos no son buenas referencias para los costes de los tratados, ya que
+# la producción y las riquezas de los jugadores van aumentando según avanza el juego, los valores aquí 
+# definidos representan porcentajes sobre la producción de oro del jugador al que se envía la petición.
+.PRECIO_BASE_TRATADOS
+[
+  .PERMISO_DE_PASO                    40.0
+  .MEJORA_RELACIONES                  300.0
+  .PAZ                                250.0
+  .ALIANZA_DEFENSIVA                  40.0
+  .TRATADO_COMERCIAL                  0.0
+  .MATRIMONIO                         1000.0
+  .COALICION                          40.0
+  .CESION_EJERCITOS                   0.0
+]             
+
+# La siguiente tabla indica el precio base mínimo posible de cada tipo de tratado, en oro.
+# Cuando el precio calculado usando la producción y los valores de la tabla anterior es menor que estos valores,
+# se usan éstos. Sirve para evitar precios excesivamente pequeños cuando la producción del jugador receptor es muy baja.
+.PRECIO_MINIMO_TRATADOS
+[
+  .PERMISO_DE_PASO                    200
+  .MEJORA_RELACIONES                  500
+  .PAZ                                300
+  .ALIANZA_DEFENSIVA                  200
+  .TRATADO_COMERCIAL                    0
+  .MATRIMONIO                        5000
+  .COALICION                          300
+  .CESION_EJERCITOS                     0
+]                                          
+
+# El modificador por relación determina el mayor aumento que puede sufrir el precio base
+# de un tratado por la hostilidad entre los jugadores.
+# Un valor de 100.0 significa que el valor base puede llegar como máximo a doblarse en
+# el caso en que la hostilidad entre los jugadores sea máxima. En el caso en que la
+# hostilidad sea mínima, el precio base del tratado no se modifica.
+# Nota: Este aumento de precio depende de la hostilidad de forma cuadrática. Si por ejemplo
+#       este valor es 100.0 el aumento del precio es del 100% cuando la hostilidad es máxima,
+#       pero es del 25% cuando la hostilidad está al 50%, del 6.25% cuando la hostilidad es 25%,
+#       etc. Se recomienda asignar un valor alto a este dato.
+.MODIFICADOR_POR_RELACION             400.0
+
+# Este modificador indica el porcentaje en que aumenta el precio base del tratado según sea
+# la diferencia entre los sistemas políticos de los jugadores involucrados. Si el sistema 
+# político que tienen es el mismo no se produce aumento del precio base. En contraste, si 
+# el sistema político de ambos es diametralmente opuesto el precio base del tratado aumentará
+# en el porcentaje indicado por este valor.
+# Un valor de 100.0 significa que el valor base puede llegar como máximo a doblarse en el caso
+# en que sus sistemas políticos sean completamente opuestos.
+.MODIFICADOR_POR_AFINIDAD_POLITICA    20.0
+
+
+##################################################################################################
+# Modificadores sobre el precio específico de cada tratado
+##################################################################################################
+
+.PRECIOS_ESPECIFICOS
+[
+
+  .PERMISO_PASO
+  [
+    # Define la importancia dentro del cálculo del precio de un tratado de permiso de paso de
+    # el grado de amistad entre el receptor del mensaje (el que dará el permiso de paso) y los
+    # jugadores a los que da acceso, así como del poder militar relativo entre el emisor y
+    # estos jugadores, de tal manera que el precio aumente cuanto más amigos del receptor sean
+    # los jugadores colindantes y cuanto mayor poder militar relativo tenga el emisor con respecto a ellos.
+    # Un valor de 100.0 indica que el precio base del tratado puede llegar a doblarse cuando
+    # tanto la amistad del receptor con los jugadores colindantes como el poder militar relativo
+    # del emisor con éstos es máxima.
+    .IMPORTANCIA_AMISTAD_Y_PODER_MILITAR  20.0
+    # Define la importancia dentro del cálculo del precio de un tratado de permiso de paso de
+    # la producción de las provincias a las que daría acceso el jugador receptor del mensaje.
+    # Un valor de 100.0 indica que el precio base del tratado puede llegar a doblarse cuando
+    # las provincias adyacentes al receptor del mensaje sean las de mayor producción del mapa.
+    .IMPORTANCIA_PROVINCIAS_ADYACENTES    20.0
+    # Define la importancia dentro del cálculo del precio de un tratado de permiso de paso de
+    # una declaración de ultimátum. Un valor de 100.0 indica que el precio del tratado puede
+    # reducirse un 100% si el emisor envía un ultimátum y su potencia militar con respecto
+    # al receptor es máxima.
+    .IMPORTANCIA_ULTIMATUM                30.0
+    # Define el porcentaje mínimo en que se reducirá el precio de un tratado cuando el emisor
+    # lo marca como ultimátum. Si la potencia militar del emisor (es decir, su poder intimidatorio)
+    # no es suficiente, este valor será el que se aplique al precio final del tratado.
+    .REDUCCION_MINIMA_ULTIMATUM           25.0
+    
+    # Modificador que se aplica al precio del tratado cuando el jugador que pide el mensaje
+    # es aliado del receptor.
+    .MODIFICADOR_JUGADOR_ALIADO            1.0
+    # Modificador que se aplica al precio del tratado cuando el jugador que pide el mensaje
+    # no es aliado del receptor y no está en otra alianza.
+    .MODIFICADOR_JUGADOR_NO_ALIADO         2.0
+    # Modificador que se aplica al precio del tratado cuando el jugador que pide el mensaje
+    # no es aliado del receptor y está en otra alianza.
+    .MODIFICADOR_JUGADOR_OTRA_ALIANZA      4.0
+
+    # Estos valores modifican el precio que la IA pide al jugador humano por un permiso paso
+    # cuando éste está en la primera posición en cuanto a puntos.
+    .IMPORTANCIA_ENEMISTAD_POR_PRIMERO_FACIL     50.0
+    .IMPORTANCIA_ENEMISTAD_POR_PRIMERO_MEDIA    100.0
+    .IMPORTANCIA_ENEMISTAD_POR_PRIMERO_DIFICIL  400.0
+  ]
+  
+  .MEJORA_RELACIONES
+  [
+    # Define la importancia dentro del cálculo del precio de un tratado de mejora de relaciones
+    # del grado de amistad entre el emisor y el receptor del mensaje, de tal manera que cuanto
+    # mejor se lleven más cara será la mejora de relaciones. Un valor de 100.0 indica que el
+    # precio base puede llegar a doblarse cuando la amistad entre los jugadores es máxima.
+    # Nota: Al contrario que el valor de MODIFICADOR_POR_RELACION, este dato no crece de 
+    #       forma cuadrática con respecto a la amistad entre los jugadores.
+    .IMPORTANCIA_AMISTAD    1000.0 
+  ]
+  
+  .PAZ
+  [
+    # Define la importancia dentro del cálculo del precio de un tratado de paz del poder
+    # militar relativo entre el emisor y el receptor del mensaje. Un valor de 100.0 indica
+    # que el precio del tratado puede llegar a doblarse cuando el poder relativo del
+    # receptor es máximo con respecto al del emisor.
+    .IMPORTANCIA_PODER_MILITAR                    600.0
+    # Define la importancia dentro del cálculo del precio de un tratado de paz del número
+    # de conflictos en los que se encuentra ya el jugador receptor. Un valor de 25.0 indica
+    # que por cada conflicto en que se encuentra el receptor, sin contar el que tiene con
+    # el jugador que ofrece la paz, el precio del tratado se reduce un 25%.
+    .IMPORTANCIA_NUMERO_CONFLICTOS_RECEPTOR       150.0
+    # Define la importancia dentro del cálculo del precio de un tratado de paz de las
+    # provincias invadidas y las provincias perdidas con respecto al jugador que ofrece la paz.
+    # La idea es que cuanto más importantes sean las provincias del receptor que el emisor tiene 
+    # invadidas más barato será el tratado, ya que le interesa quedarse con ellas. Por otro lado, 
+    # cuanto más importantes sean las provincias tenga perdidas el receptor más caro será el tratado. 
+    .IMPORTANCIA_PROVINCIAS                       500.0
+  ]
+  
+  .ALIANZA_DEFENSIVA
+  [
+    # Define la importancia dentro del cálculo del precio de un tratado de alianza defensiva
+    # de la mejora que supone para cada bando el unirse con el otro. Si el aumento de poder
+    # defensivo para el jugador emisor es mayor que el aumento para la alianza entonces el
+    # precio del tratado será mayor; en caso contrario será menor. Un valor de 100.0 indica
+    # que el precio del tratado puede llegar a aumentar un 100% si el aumento de nivel defensivo
+    # para el emisor es máximo con respecto al de la alianza; alternativamente, el precio
+    # del tratado podría reducirse un 100% cuando el aumento para la alianza sea máximo con
+    # respecto al del emisor.
+    .IMPORTANCIA_MEJORA_MILITAR               150.0
+    
+    # Estos valores modifican el precio que la IA pide al jugador humano por una alianza defensiva
+    # cuando éste está en la primera posición en cuanto a puntos.
+    .IMPORTANCIA_ENEMISTAD_POR_PRIMERO_FACIL     100.0
+    .IMPORTANCIA_ENEMISTAD_POR_PRIMERO_MEDIA     175.0
+    .IMPORTANCIA_ENEMISTAD_POR_PRIMERO_DIFICIL  500.0
+  ]
+  
+  .MATRIMONIO
+  [    
+    # Define el factor de modificacion del precio de un tratado diplomatico segun sea el tipo
+    # de monarquia.
+    .FACTOR_COSTE_MONARQUIA_ABSOLUTA      70.0
+    .FACTOR_COSTE_MONARQUIA_PARLAMENTARIA 40.0
+  ]
+  
+  .COALICION
+  [
+    # Define la importancia dentro del cálculo del precio de un tratado de coalición de
+    # la amistad entre el receptor del mensaje y el jugador al que se pide atacar. Un valor
+    # de 100.0 indica que el precio del mensaje se doblará si la amistad entre el receptor
+    # y el tercero es máxima.
+    .IMPORTANCIA_AMISTAD_CON_TERCERO          1500.0
+    # Define la importancia dentro del cálculo del precio de un tratado de coalición de
+    # el poder militar conjunto que tienen el emisor y receptor del mensaje con respecto
+    # al jugador al que se va a atacar. Un valor de 100.0 indica que el precio del mensaje
+    # se doblará cuando el poder militar con respecto al tercero sea mínimo.
+    .IMPORTANCIA_PODER_MILITAR                250.0
+    # Define la importancia dentro del cálculo del precio de un tratado de coalición de
+    # una declaración de ultimátum. Un valor de 100.0 indica que el precio del tratado puede
+    # reducirse un 100% si el emisor envía un ultimátum y su potencia militar con respecto
+    # al receptor es máxima.
+    .IMPORTANCIA_ULTIMATUM                    25.0
+    # Define el porcentaje mínimo en que se reducirá el precio de un tratado cuando el emisor
+    # lo marca como ultimátum. Si la potencia militar del emisor (es decir, su poder intimidatorio)
+    # no es suficiente, este valor será el que se aplique al precio final del tratado.
+    .REDUCCION_MINIMA_ULTIMATUM           25.0
+  ]
+
+]
+
+##################################################################################################
+# Valores referentes a la probabilidad de rechazo de un tratado independientemente del precio
+# ofrecido. Estos valores indican las probabilidades de que un tratado sea rechazado aunque
+# la oferta sea lo suficientemente buena.
+# Aparte de estos valores, existen una serie de factores no configurables que intervienen en
+# la decisión de rechazar un tratado:
+#   - Un tratado comercial de compra de recursos será rechazado si el jugador receptor no 
+#     tiene la cantidad de recursos demandados.
+#   - Un tratado de cesión de ejércitos será rechazado si el jugador receptor no tiene comida
+#     suficiente para mantener los ejércitos ofrecidos durante al menos un turno.
+#   - Un tratado de coalición será rechazado si el jugador receptor junto con el emisor están
+#     en gran inferioridad militar con respecto al tercero.
+##################################################################################################
+
+.PROBABILIDADES_RECHAZO
+[
+
+  .MATRIMONIO
+  [
+   # Se definen los riesgos de rechazo para todas las combinaciones de monarquia posibles
+   .MONARQUIA_PARLAMENTARIA
+   [
+    .MONARQUIA_ABSOLUTA      50.0
+    .MONARQUIA_PARLAMENTARIA 10.0
+   ]
+   
+   .MONARQUIA_ABSOLUTA
+   [
+    .MONARQUIA_ABSOLUTA      10.0
+    .MONARQUIA_PARLAMENTARIA 10.0
+   ]
+  ]
+
+]
+
+
+##################################################################################################
+# Valores referentes al precio de los recursos que se pueden ofrecer y demandar en un tratado.
+##################################################################################################
+
+.PRECIOS_RECURSOS
+[
+  # Define el valor base de una provincia. Este valor base será la producción de la provincia
+  # multiplicada por este factor.
+  .MODIFICADOR_VALOR_PROVINCIA_POR_PRODUCCION   50.0
+  # Define la cantidad que se sumará al valor de una provincia cuando la provincia es fronteriza
+  # al jugador que la recibe.
+  .MODIFICADOR_VALOR_PROVINCIA_FRONTERIZA       1000
+  # Define la cantidad que se sumará al valor de una provincia cuando la provincia tiene puerto.
+  .MODIFICADOR_VALOR_PROVINCIA_PUERTO           2000
+  # Define el porcentaje del coste de los edificios que se sumará al precio de la provincia
+  .PORCENTAJE_COSTE_EDIFICIOS                   50.0
+  
+  # Define los modificadores que se aplicarán al precio de los batallones dependiendo de su rango.
+  # Un valor de 2.0 significa que el precio base del batallón se duplicará.
+  # Importante: No alterar el orden.
+  .MODIFICADORES_EXPERIENCIA_BATALLONES
+  [
+    # Rango Novato
+    1.0
+    # Rango Medio
+    1.5
+    # Rango Experimentado
+    2.0
+    # Rango Veterano
+    3.0
+    # Rango Elite
+    5.0
+  ]
+  
+  # Define el modificador que se aplicará al precio de un batallón cuando esté acuartelado.
+  # Nota: Para el mensaje de cesión de ejércitos todos los batallones estarán acuartelados.
+  .MODIFICADOR_BATALLON_ACUARTELADO   1.2
+
+  # Define los modificadores que se aplicarán al precio de los barcos dependiendo de la experiencia de su tripulación.
+  # Un valor de 2.0 significa que el precio base del barco se duplicará.
+  # Importante: No alterar el orden.
+  .MODIFICADORES_EXPERIENCIA_BARCOS
+  [
+    # Rango Novato
+    1.0
+    # Rango Medio
+    1.5
+    # Rango Experimentado
+    2.0
+    # Rango Veterano
+    3.0
+    # Rango Elite
+    5.0
+  ]
+
+]
+
+##################################################################################################
+# Valores relacionados con la memoria de la IA.
+# Estos datos evitan que la IA acose al jugador con mensajes diplomáticos, de tal manera que
+# evite enviar repetidamente mensajes que el jugador ha dejado claro que no le interesan.
+##################################################################################################
+
+.MEMORIA
+[
+  # Indica el número de rechazos consecutivos que harán que la IA bloquee el envío de mensajes
+  # diplomáticos de un tipo dado durante un número de turnos especificado.
+  .NUMERO_RECHAZOS_PARA_BLOQUEO 1
+  # Número de turnos que la IA esperará antes de volver a enviar mensajes de cierto tipo tras
+  # el primer bloqueo.
+  .TURNOS_BASE_BLOQUEO          6
+  # Modificador al número de turnos que durarán los bloqueos posteriores. Por ejemplo: Si el
+  # número de turnos base por bloqueo es 6 y este valor es 1.5, el segundo bloqueo durará 9 turnos,
+  # el tercero 13.5, etc.
+  .MODIFICADOR_TURNOS_BLOQUEO   1.5
+  # Número de turnos máximo que durará un bloqueo, sin importar las veces que se haya producido.
+  .DURACION_MAXIMA_BLOQUEO      30
+  
+  # Valor en que aumenta el valor de nº de rechazos de un tipo de tratado cuando el jugador rechaza un tratado de ese tipo.
+  .MODIFICADOR_RECHAZO_TRATADO          1.0
+  # Valor en que aumenta el valor de nº de rechazos de un tipo de tratado cuando el jugador rechaza un tratado de otro tipo.
+  .MODIFICADOR_RECHAZO_TRATADO_OTROS    0.25
+  # Valor en que se reduce el valor de nº de rechazos de un tipo de tratado cuando el jugador acepta un tratado de ese tipo.
+  .MODIFICADOR_ACEPTACION_TRATADO       1.0
+  # Valor en que se reduce el valor de nº de rechazos de un tipo de tratado cuando el jugador acepta un tratado de otro tipo.
+  .MODIFICADOR_ACEPTACION_TRATADO_OTROS 0.25
+]

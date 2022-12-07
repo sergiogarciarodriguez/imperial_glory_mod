@@ -1,0 +1,106 @@
+#===========================================================================================
+# Definiciones de la raglas del combate naval
+#
+#===========================================================================================
+
+.REGLAS_COMBATE_NAVAL
+[
+  
+  # (float) metros/segundo que viajan los ataques (ej. 100.0)
+	.VELOCIDAD_CANYONES			        150.0
+	
+	# (int)   Agrupacion de cañones para reducir calculos y particulas. (1 = no agrupar)
+	.AGRUPAR_CANYONES               2
+	
+	# (float) Reduccion de daño producido por la municion "fuego" cuando tenemos las velas recogidas
+	.REDUCCION_VELAS_RECOGIDAS      0.3
+	
+	# (float) Constante de la formula de calculo de dispersion, consultar formula (ej. 0.3)
+	.K_DISPERSION                   0.4
+	
+	# (float) Incremento al daño cuando se desarrolla la tecnologia de "balistica" (ej. 1.3)
+	.INC_DANYO_CANYONES_BALISTICA		1.5
+	
+	# (float) Minimo valor de danyo que hacemos aunque hayamos perdido mucho casco (ej 0.3)
+	.MIN_DANYO_POR_ESTADO_CASCO     0.3
+	
+	# (float) Factor aleatorio al daño producido por un ataque a distancia
+	.FAC_ALEATORIO_DANYO_DISTANCIA	0.1
+	
+	# (float) Modificador a la probabilida de impacto segun la velocidad del barco atacante, consultar formula (ej. 1.3)
+	# El numero es el maximo bono que se puede conseguir al estar parado ese mismo numero -1.0 es el mod. minimo a velocidad 0
+	# por ejemplo, "1.3" aumentaria en un 30% (= * 1.3) el ataque parado. A maxima velocidad tendriamos un -70% (= * 0.3))
+	.EFECTIVIDAD_SEGUN_VELOCIDAD    1.5
+	
+	# (float) Cuanto aumenta la efectividad del disparo si estamos anclado (ej 1.2)
+	.EFECTIVIDAD_ANCLADO            1.7
+	
+	# (float) Precision minima, para dejar siempre un margen de exito (ej.0.05)
+	.PRECISION_MINIMA               0.05
+	
+	# (float) Precision maxima, para dejar siempre un margen de error (ej.0.95)
+	.PRECISION_MAXIMA               0.95
+	
+	# (float) Factor aleatorio en el danyo producido durante el abordaje (ej. 0.1)
+	.FAC_ALEATORIO_DANYO_ABORDAJE   0.1
+	
+	# (float) Es la velocidad máxima en nudos que puede tener un barco para ser abordado (ej. 5)
+	.MAX_VELOCIDAD_ABORDAJE			    25
+	
+	# (float) Constante a aplicar al cálculo de daño en abordaje, ver formula (ej 0.1)
+	# A valores mas altos, mas rapido y bestia es el abordaje (se hace mas daño)
+	.K_ABORDAJE                     0.2
+	
+	# (float) Minima tripulacion para realizar un abordaje. Al llegar a ese numero perdemos (ej. 10)
+  .MIN_TRIPULACION_ABORDAJE       10
+  
+  # (float) Tiempo en segundos desde que un barco abandona la zona de combate hasta que se considera "huido" definitivamente
+  .TIEMPO_BARCO_FUERA_MAPA        100.0
+  
+  # (float) Fuerza de impacto maxima en una colision
+  .FUERZA_IMPACTO_MAXIMA           99999.0
+	
+	# Danyo de la municion "bomba" hace al casco segun la distancia
+	.DANYO_BOMBA
+	[
+		.QUEMARROPA			              6.0
+		.MEDIO				                4.0
+		.LARGO				                2.0
+	]
+	
+	# Danyo de la municion "fuego" hace al velamen segun la distancia
+	.DANYO_FUEGO				
+	[
+		.QUEMARROPA			              6.0
+		.MEDIO				                4.0
+		.LARGO				                2.0
+	]
+	
+	# Danyo de la municion "metralla" hace a la tripulacion segun la distancia
+	.DANYO_METRALLA
+	[
+		.QUEMARROPA			              6.0
+		.MEDIO				                4.0
+		.LARGO				                2.5
+	]
+	
+	# (float) probabilidad base de impacto en las diferentes distancias
+	.EFECTIVIDAD_SEGUN_DISTANCIA
+	[
+		.QUEMARROPA			              0.8
+		.MEDIO				                0.4
+		.LARGO				                0.2
+	]
+
+  # Color de los conos de disparo amigos
+  .COLOR_CONO_AMIGO               [0.20 0.70 0.20 0.40]
+  .COLOR_CONO_AMIGO_SELECCIONADO  [0.10 1.00 0.10 0.40]
+  
+  .COLOR_CONO_AMIGO_RESALTADO     [0.20 1.00 0.20 0.50]
+  
+  # Color de los conos de disparo enemigos
+  .COLOR_CONO_ENEMIGO             [0.70 0.10 0.10 0.40]
+  
+  # (float) Segundos que dura una salva (luego se pasan a ticks)
+  .SECS_DURACION_SALVA           5.0
+]

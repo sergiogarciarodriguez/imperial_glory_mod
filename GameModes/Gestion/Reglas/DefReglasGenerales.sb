@@ -1,0 +1,573 @@
+#############################################################################################
+# Define las reglas generales del juego.
+# Estas reglas seran mantenidas, internamente, por CEvaluadorReglas.
+#############################################################################################
+
+# Valores que no pertenecen a ningun contexto general especifico
+.VALORES_GENERALES
+[
+ # Cantidad maxima de barcos en una flota
+ .MAX_BARCOS_EN_FLOTA                 1
+ 
+ # Capacidad maxima de tropas titulares en batalla 
+ .MAX_TROPAS_TITULARES               28 
+
+ # Turnos de permiso de paso concedidos a un jugador para que saque ejercitos de un pais 
+ # que cambia a un jugador amigo pero con el que no tiene permiso de paso
+ .TURNOS_PPASO_POR_CAMBIO_JUG_DE_PAIS 4
+]
+
+# Valores asociados a la diplomacia
+.VALORES_DIPLOMACIA
+[
+ # Valores asociados a la diplomacia
+ 
+ .MODIFICADOR_HOSTILIDAD_NIVEL_DIFICULTAD
+ [
+  # Este bonos no afecta a las reglas de Gestion, SOLO a la IA. La IA modificar� ficticicamente la relacion con
+  # el jugador humano seg�n el nivel de dificultad. Los valores posibles son ( -1.0 .. 1.0) indicando
+  # negativo que bajar� la "hostilidad" y positivo que aumentara la "hostilidad"
+  
+  .EASY     -0.5
+  .MEDIUM    0.05
+  .HARD      0.4
+ ]
+ 
+ .MODIFICADOR_HOSTILIDAD_POR_PUNTUACION
+ [
+  # Este bonus no afecta a las reglas de Gestion, SOLO  a la IA. La IA modificar� ficticiamente la relacion con
+  # los N primeros jugadores seg�n su puntuaci�n. Los valores posibles son (-1.0 ... 1.0) indicando 
+  # negativo que bajar� la "hostilidad" y posibitov que aumentar� la "hostilidad"
+  
+  # Indica que se modificar� al primero 
+  .POSICION_RANKING_APLICABLE 1 
+  
+  # Nivel de dificultad
+  .EASY 0.0
+  .MEDIUM 0.3
+  .HARD 0.6
+ ]
+ 
+ .MODIFICADOR_PRODUCCION_NIVEL_DIFICULTAD
+ [
+  # Este bonus se aplica a la producci�n de la IA, no del jugador, dependiendo del nivel de dificultad seleccionado.
+  # Valores negativos reducen la producci�n, mientras que valores positivos la aumentan.
+  # Los valores indican porcentajes, y por tanto no deber�an ser menores de -100.
+  # Se puede controlar a qu� tipo de jugadores se aplicar� el bonus, aunque como se ha mencionado nunca se aplicar� al jugador humano.
+  
+  .EASY
+  [
+    .ORO              -10.0
+    .MATERIAS_PRIMAS  -10.0
+    .POBLACION        -10.0
+    .COMIDA           -15.0
+    .CIENCIA          -10.0
+    
+    .APLICAR_A_JUGADORES_IMPERIALES FALSE
+    .APLICAR_A_JUGADORES_NEUTRALES  TRUE
+  ]
+
+  .MEDIUM
+  [
+    .ORO              0.0
+    .MATERIAS_PRIMAS  0.0
+    .POBLACION        0.0
+    .COMIDA           0.0
+    .CIENCIA          0.0
+
+    .APLICAR_A_JUGADORES_IMPERIALES FALSE
+    .APLICAR_A_JUGADORES_NEUTRALES  FALSE
+  ]
+
+  .HARD
+  [
+    .ORO              10.0
+    .MATERIAS_PRIMAS  10.0
+    .POBLACION        10.0
+    .COMIDA           10.0
+    .CIENCIA          50.0
+
+    .APLICAR_A_JUGADORES_IMPERIALES TRUE
+    .APLICAR_A_JUGADORES_NEUTRALES  TRUE
+  ]
+ ]
+
+ .BONUS_HOSTILIDAD_MENSAJES_DIPLOMATICOS
+ [
+  # Bonus de hostilidad a asignar a los mensajes diplomaticos que se generen.
+  # Se entienden que:
+  # * Los valores POSITIVOS -> MEJORAN la hostilidad (los paises se hacen mas amigos)
+  # * Los valores NEGATIVOS -> EMPEORAN la hostilidad (los paises se hacen menos amigos)
+  
+  # Mensajes
+  
+  .PERMISO_PASO                       0.5
+  .MEJORA_RELACION                    8.0  
+  .DECLARACION_GUERRA                -100.0 
+  .DECLARACION_GUERRA_NO_DIPLOMATICA -7.5
+  .PROPOSICION_TREGUA       		  1.0   
+  .PROPOSICION_ARMISTICIO   		  5.0   
+  .PROTECCION_MUTUA         		  2.5   
+  .TRATO_COMERCIAL_ESPECIAL 		  0.1   
+  .PROPOSICION_MATRIMONIO   		  35.0 # Mejora de relaciones solo si casamos con imperio
+  .ALIANZAS_CONTRA_TERCEROS 		  5.0     
+  .ENVIO_EFECTIVOS          		  7.0     
+  .SOLICITUD_AYUDA_MILITAR  		  -0.5    
+
+  # Modificadores
+  
+  .ULTIMATUM					     -10.0
+  .RECHAZO_OFERTA                    -1.0
+ ]
+ 
+ .BONUS_HOSTILIDAD_ACCIONES
+ [
+  # Modificacion de las hostilidad al producirse ciertas acciones durante el juego  
+  # Se entienden que:
+  # * Los valores POSITIVOS -> MEJORAN la hostilidad (los paises se hacen mas amigos)
+  # * Los valores NEGATIVOS -> EMPEORAN la hostilidad (los paises se hacen menos amigos)
+    
+  # Penalizacion por tener un ejercito en provincia con permiso de paso que supone amenaza a algun jugador
+  # En estos casos, la barra de hostilidad NO se modificara en cascada.
+  .EJERCITO_PERMISO_PASO_AMENAZA   -1.0 
+  
+  # Bonificador por cambiar a un gobierno que es afin para ciertos jugadores  
+  # En estos casos, la barra de hostilidad NO se modificara en cascada.
+  .CAMBIO_GOBIERNO_AFIN             3.0
+  
+  # Bonificador por cambiar a un gobierno que NO es afin para ciertos jugadores
+  # En estos casos, la barra de hostilidad NO se modificara en cascada.
+  .CAMBIO_GOBIERNO_NO_AFIN         -4.0
+  
+  # Bonificador por realizar una declaracion de guerra temprana.
+  # Una declaracion de guerra temprana sera aquella que se produzca cuando un jugador le declare
+  # la guerra a otro con el que no lleva en paz mas de unos turnos fijados por la variable de
+  # ARMISTICIO_CONSOLIDADO (ver la entrada "TURNOS_TRATADOS_DIPLOMATICOS" mas abajo).
+  .DECLARACION_GUERRA_TEMPRANA     -20.0
+  
+  # Bonificador por generarse competencia entre dos imperios.
+  # La competencia entre dos imperios sucedera por las siguientes causas:
+  # - Construccion en pais neutral de edificio que mejora relaciones -> Los otros imperios que
+  #   pudieran anexionar el pais neutral NO lo veran bien y se generara competencia.
+  # - Declaracion de guerra a pais neutral por parte de un imperio -> Los otros imperios que
+  #   pudieran anexionar el pais neutral NO lo veran bien y se generara competencia.
+  # En estos casos, la barra de hostilidad NO se modificara en cascada.
+  # - Una mejora de relaciones de un imperio con respecto a un pais neutral -> Aquellos imperios
+  #   que pudieran anexionarlo NO lo veran bien.
+  .COMPETENCIA_ANEXION_POR_DECLARACION_GUERRA    -5.0
+  .COMPETENCIA_ANEXION_POR_CONSTRUCCION_EDIFICIO -4.0
+  
+  # Nota: IMPORTANTE -> Este factor de competencia no sera un valor a sumar o restar, sino un porcentaje que
+  #                     se aplicara al valor de mejora de relaciones que se haya producido entre un
+  #                     jugador imperial y otro neutral. A mayor porcentaje, mayor sera el enfado que
+  #                     se aplicara sobre este tipo de competencia pero, siempre, utilizando como base
+  #                     la mejora de relaciones que se hubiera producido.
+  .COMPETENCIA_ANEXION_POR_MEJORA_RELACIONES     25.0
+  
+  # Bonificador por la liberacion selectiva de paises neutrales
+  # Estos bonificadores afectaran solo a otros paises neutrales
+  .TRAICION_POR_LIBERACION_PAIS_NEUTRAL -20.0
+  .LIBERACION_PAIS_NEUTRAL               15.0
+  
+  # Conocimiento de la construccion de una casa de resistencia
+  # Siempre que se construya una casa de resistencia y un jugador se de cuenta de ello, aumentara su
+  # hostilidad con respecto al que se la construyo en forma de cascada  
+  .CONOCIMIENTO_SABOTAJE -25.0
+ ]
+ 
+ .FACTOR_HOSTILIDAD_POR_DISTANCIA
+ [
+  # Esta seccion tiene como objetivo definir los factores de modificacion a los valores de hostilidad
+  # final que vamos a vincular entre dos paises dependiendo de la distancia geografica entre ambos.
+  # Ademas se permitira definir este valor en funcion de los sistemas de gobierno involucrados para
+  # que se pueda castigar o premiar modos de juego diferentes (militarista / pacifista).
+  # Notese que: - Un valor en el factor igual a 1.0 no variara el valor de hostilidad.
+  #             - Un valor en el factor superior a 1.0 incrementara el cambio de hostilidad 
+  #             - Un valor en el factor inferior a 1.0 decrementara el cambio de hostilidad
+  
+  .ZONA_INFLUENCIA_1 
+  [
+   [ .GOBIERNO LTEXT_RAMA_I       .FACTOR   1.0 ]  # Pre - Revolucionaria
+   [ .GOBIERNO LTEXT_RAMA_IIA     .FACTOR   1.0 ]  # Democracia
+   [ .GOBIERNO LTEXT_RAMA_IIB     .FACTOR   1.0 ]  # Absolutismo
+   [ .GOBIERNO LTEXT_RAMA_IIIA    .FACTOR   1.0 ]  # Rep�blica
+   [ .GOBIERNO LTEXT_RAMA_IIIC    .FACTOR   1.0 ]  # Monarqu�a Parlamentaria
+   [ .GOBIERNO LTEXT_RAMA_IIIB    .FACTOR   1.0 ]  # Monarqu�a Absoluta    
+   [ .GOBIERNO LTEXT_RAMA_IIID    .FACTOR   1.0 ]  # Dictadura 
+  ]
+   
+  .ZONA_INFLUENCIA_2
+  [
+   [ .GOBIERNO LTEXT_RAMA_I       .FACTOR   1.0 ]  # Pre - Revolucionaria
+   [ .GOBIERNO LTEXT_RAMA_IIA     .FACTOR   1.0 ]  # Democracia
+   [ .GOBIERNO LTEXT_RAMA_IIB     .FACTOR   1.0 ]  # Absolutismo
+   [ .GOBIERNO LTEXT_RAMA_IIIA    .FACTOR   1.0 ]  # Rep�blica
+   [ .GOBIERNO LTEXT_RAMA_IIIC    .FACTOR   1.0 ]  # Monarqu�a Parlamentaria
+   [ .GOBIERNO LTEXT_RAMA_IIIB    .FACTOR   1.0 ]  # Monarqu�a Absoluta    
+   [ .GOBIERNO LTEXT_RAMA_IIID    .FACTOR   1.0 ]  # Dictadura 
+  ]
+  
+  .ZONA_INFLUENCIA_3
+  [
+   [ .GOBIERNO LTEXT_RAMA_I       .FACTOR   0.2 ]  # Pre - Revolucionaria
+   [ .GOBIERNO LTEXT_RAMA_IIA     .FACTOR   0.5 ]  # Democracia
+   [ .GOBIERNO LTEXT_RAMA_IIB     .FACTOR   0.5 ]  # Absolutismo
+   [ .GOBIERNO LTEXT_RAMA_IIIA    .FACTOR   1.0 ]  # Rep�blica
+   [ .GOBIERNO LTEXT_RAMA_IIIC    .FACTOR   1.0 ]  # Monarqu�a Parlamentaria
+   [ .GOBIERNO LTEXT_RAMA_IIIB    .FACTOR   1.0 ]  # Monarqu�a Absoluta    
+   [ .GOBIERNO LTEXT_RAMA_IIID    .FACTOR   1.0 ]  # Dictadura 
+  ]  
+ ]
+ 
+ .CAMBIO_RELACION_GLOBAL
+ [
+  # Valores asociados al cambio de relacion global. 
+  # El cambio de relacion global sera el que se aplique cuando dos jugadores modifiquen, para bien o para mal,
+  # su relacion.
+  
+  .PORCENTAJE_MAXIMO       75.0  # Valor maximo al que podra alcanzar una modificacion de relacion global
+  .PORCENTAJE_APLICACION   15.0  # Porcentaje a utilizar de lo modificado por los dos jugadores
+ ]
+ 
+ .TURNOS_TRATADOS_DIPLOMATICOS
+ [
+  # Valores asociados a los turnos de los tratados diplomaticos
+  .PROTECCION_MUTUA       12 # Numero de turnos maximo para una proteccion mutua
+  .PERMISO_PASO           8  # Numero de turnos maximo para un permiso de paso
+  .MATRIMONIO             4  # OBSOLETO. Numero de turnos que dura un matrimonio en hacerse efectivo.
+  .ARMISTICIO_CONSOLIDADO 5  # Numero de turnos en que consideramos que una paz esta consolidada
+  .TRATADO_COMERCIAL      2  # Numero maximo de tratados comerciales con un jugador en un turno
+  .ENVIO_AYUDA_MILITAR    1  # Numero maximo de ayuda militar que puede recibir un jugador por turno de parte de otro
+ ]
+ 
+ .CFG_PROTECCION_MUTUA
+ [
+  # Valores de configuracion para la proteccion mutua
+  .MAX_JUGADORES 4 # Maximo numero de jugadores en una alianza
+ ]
+
+ .MISC
+ [
+  # Otros datos
+  
+  # Porcentaje que indica a partir de que valor de la barra se entra en situacion de guerra y en situacion
+  # de poder solicitar una paz estando en guerra o tregua (armisticio)
+  .PORCENTAJE_HOSTILIDAD_SITUACION_GUERRA 90.0
+ 
+  # M�xima cantidad de cada tipo de recurso que se puede ofrecer y demandar en un tratado comercial especial.
+  # Nota: Este valor actualmente no se utiliza. En su lugar se utilizan las cantidades m�ximas de recursos
+  #       que el jugador puede llegar a tener.
+  .VALOR_MAXIMO_TRATADOS_COMERCIALES    50000
+   
+  # Porcentaje de desercion en unidades de batallones cedidos por declaracion de guerra
+  # Nota: - El sistema siempre dejara al menos a una unidad en un batallon aunque el resultado de
+  #         la desercion indicara que desiertan todas.
+  .PORCENTAJE_DESERCION_BATALLONES_CEDIDOS_GUERRA 70.0 
+ ]  
+]
+
+# Valores asociados a la capacidad en las provincias
+.CAPACIDAD_PROVINCIAS
+[
+ .MAX_FLOTAS     6         # Max. numero de flotas de un jugador en una provincia 
+ .MAX_EJERCITOS  3         # Max. numero de ejercitos de un jugador en una provincia 
+ .MAX_EJERCITOS_REFUERZO 1 # Max. numero de ejercitos de un jugador que pueden entrar en una provincia como refuerzo
+]
+
+# Valores asociados a las reglas de licencia de efectivos militares
+# Organizaremos los porcentajes en 3 grupos: BATALLONES, ARTILLERIA y BARCOS
+.LICENCIA_BATALLONES
+[
+ .PORCENTAJE_DEVOLUCION_ORO       40.0
+ .PORCENTAJE_DEVOLUCION_POBLACION 20.0
+ .PORCENTAJE_DEVOLUCION_RECURSOS  20.0
+]
+
+.LICENCIA_ARTILLERIA
+[
+ .PORCENTAJE_DEVOLUCION_ORO       20.0
+ .PORCENTAJE_DEVOLUCION_POBLACION 20.0
+ .PORCENTAJE_DEVOLUCION_RECURSOS  40.0
+]
+
+.LICENCIA_BARCOS
+[
+ .PORCENTAJE_DEVOLUCION_ORO       20.0
+ .PORCENTAJE_DEVOLUCION_POBLACION 40.0
+ .PORCENTAJE_DEVOLUCION_RECURSOS  20.0
+]
+
+# Valores asociados a las reglas de anexion belica
+.VALORES_ANEXION_BELICA
+[
+  # La anexion belica vendra dada por la resistencia que cada una de las provincias que forman el
+  # pais a anexionar posee. La resistencia sera una formula que dara como resultado un valor entre 0
+  # y 1. Ese valor lo utilizaremos para multiplicarlo por la potencia militar mas grande que cualquier
+  # jugador puede llegar a desplegar en una provincia y asi obtendremos la que realmente necesitaremos
+  # para vencer la resistencia de la provincia en cuestion.  
+  # La formula de la resistencia tendra tres pesos fundamentales:
+  # - Capital
+  # - Puerto
+  # - Produccion.
+  # El valor de capital y puerto son sencillos pues solo se consideraran si la provincia lo es o lo tiene
+  # respectivamente. El valor de produccion sera contrastar lo que produce la provincia contra lo que 
+  # produce la provincia que mas produce en el juego.
+  # 
+  # Cuando el jugador este anexionando militarmente un pais, lo unico que hara sera sumar en cada turno
+  # la potencia militar que tiene desplegada en ese mismo instante. Cuando el sumatorio acumulado sea 
+  # mayor o igual que el necesario habra vencido la resistencia.
+  
+  .PESOS_FORMULA_RESISTENCIA
+  [
+   .CAPITAL    0.45
+   .PUERTO     0.3
+   .PRODUCCION 0.25
+  ] 
+  
+]
+
+# Valores asociados a las reglas de anexion diplomatica
+.VALORES_ANEXION_DIPLOMATICA
+[
+ 
+]
+
+# Valores asociados a las riquezas ante anexiones y liberaciones
+.RIQUEZAS_ASUMIDAS_POR_ANEXION_LIBERACION
+[
+ .ANEXION
+ [ 
+  # En este punto definiremos los factores por los que multiplicaremos la riqueza del pais
+  # neutral anexionado para saber cuanta de la misma se llevara el pais anexionador.
+  # Dependiendo de como sea la anexion podremos poner un factor u otro.
+  # Notese que un valor de 1.0 hara que se tome la misma riqueza.
+  # Notese que un valor superior a 1.0 hara que se tome una cantidad superior.
+  # Notese que un valor inferior a 1.0 hara que se tome una cantidad inferior.
+  .MILITAR     0.7
+  .DIPLOMATICA 0.2
+ ]
+ 
+ .LIBERACION
+ [  
+  # En este punto definiremos los factores por los que multiplicaremos la riqueza inicial de
+  # un pais con el fin de saber con cuanta riqueza comenzara despues de haberse liberado.
+  # Para saberlo utilizaremos el sistema de gobierno que el jugador tiene ante la liberacion.
+  # Nota: - Recordar que ante una liberacion el pais liberado asume el gobierno y las tecnologias que
+  #         tenia antes de ser asediado NUNCA lo que el jugador que le asedio fue descubriendo.
+  [ .GOBIERNO LTEXT_RAMA_I       .FACTOR   1.5  ]  # Pre - Revolucionaria
+  [ .GOBIERNO LTEXT_RAMA_IIA     .FACTOR   2.8  ]  # Democracia
+  [ .GOBIERNO LTEXT_RAMA_IIB     .FACTOR   2.8  ]  # Absolutismo
+  [ .GOBIERNO LTEXT_RAMA_IIIA    .FACTOR   3.75 ]  # Rep�blica
+  [ .GOBIERNO LTEXT_RAMA_IIIC    .FACTOR   3.75 ]  # Monarqu�a Parlamentaria
+  [ .GOBIERNO LTEXT_RAMA_IIIB    .FACTOR   3.75 ]  # Monarqu�a Absoluta    
+  [ .GOBIERNO LTEXT_RAMA_IIID    .FACTOR   3.75 ]  # Dictadura 
+ ] 
+]
+
+# Valores asociados a las reglas de ocupacion de capital inicial / asedios
+.ASEDIOS
+[
+ .REBELIONES
+ [ 
+  # Especifica datos sobre las rebeliones
+  
+  # Numero maximo de ejercitos rebeldes
+  # En caso de poner 0, nunca habra sistema de ejercitos rebeldes en asedios
+  .MAX_EJERCITOS_REBELDES     2 
+  
+  # Indica el porcentaje maximo del poder militar del ejercito invasor que el ejercito rebelde
+  # podra llegar a tener.
+  # En otras palabras, el sistema crea tantos ejercitos rebeldes como se hayan especificado en la
+  # constante anterior. Una vez creado compara el poder militar de los ejercitos rebeldes con el
+  # de los ejercitos invasores. En caso de que el ejercito invasor tenga mayor poder militar no se
+  # realiza ajuste alguno. En caso de que el ejercito invasor tenga menor o igual poder militar
+  # se debera de realizar un ajuste del poder militar de los ejercitos rebeldes. Para ello, se
+  # multiplicara el poder militar de los ejercitos invasores por la constante PODER_MILITAR_PROPORCIONAL
+  # obteniendo, asi, el valor maximo que los ejercitos rebeldes podran llegar a alcanzar. Una vez
+  # hecho esto, se iterara por cada una de las tropas de los ejercitos rebeldes y se decrementaran
+  # sus unidades en un valor calculandose a continuacion el poder militar del ejercito rebelde
+  # para compararlo con el valor maximo que podran llegar a alcanzar. Se dejara de ajustar cuando
+  # se alcance dicho poder militar.
+  .PODER_MILITAR_PROPORCIONAL 40.0
+  
+  # Este factor sirve para que los ejercitos que se rebelen mantengan un minimo de poder militar.
+  # Esto quiere decir que si ponemos un PODER_MILITAR_PROPORCIONAL de 10.0 pero tenemos un 
+  # PODER_MILITAR_PROPORCIONAL de 50.0 las tropas que se creen tedran, aproximadamente, la mitad
+  # de unidades, independientemente de lo fuerte, o debil, que sea el ejercito que esta asediando.
+  .PODER_MILITAR_REBELDE_MINIMO 25.0
+  
+  # Probabilidad de que la tropa rebelde sea una milicia frente a un fusilero. Cuanto mas alto sea el
+  # valor, mayor probabilidad. Se espera que los valores sean flotantes y oscilen entre 0 y 100.
+  # El sistema lanzara un dado entre 0 y 100 y si es menor o igual que el valor maximo aqui puesto
+  # creara una milicia.
+  .PROBABILIDAD_MILICIA_FRENTE_FUSILERO 80.0
+  
+  # Factor de modificador de enfado segun sea el sistema de gobierno elegido por el jugador que asedia
+  # Un factor con valor 1.0 NO variara el enfado producido.
+  # Un factor con valor superior a 1.0 AUMENTARA el enfado producido
+  # Un factor con valor inferior a 1.0 REDUCIRA el enfado producido
+  # Nota: - En este factor se pueden incluir varias ideas:
+  #         * Capacidad que tiene un gobierno de someter militarmente a un pais.
+  #         * Enfado que causa en los ciudadanos del pais asediante que su gobernante use la fuerza para
+  #           anexionar paises (por ejemplo, en gobiernos de tipo democratico).
+  .FACTOR_MODIFICADOR_ENFADO_POR_GOBIERNO
+  [
+   [ .GOBIERNO LTEXT_RAMA_I       .FACTOR   0.2 ]  # Pre - Revolucionaria
+   
+   [ .GOBIERNO LTEXT_RAMA_IIA     .FACTOR   0.6 ]  # Democracia
+   [ .GOBIERNO LTEXT_RAMA_IIB     .FACTOR   0.7 ]  # Absolutismo
+   
+   [ .GOBIERNO LTEXT_RAMA_IIIA    .FACTOR   0.8 ]  # Rep�blica
+   [ .GOBIERNO LTEXT_RAMA_IIIC    .FACTOR   0.9 ]  # Monarqu�a Parlamentaria
+   [ .GOBIERNO LTEXT_RAMA_IIIB    .FACTOR   1.0 ]  # Monarqu�a Absoluta    
+   [ .GOBIERNO LTEXT_RAMA_IIID    .FACTOR   1.1 ]  # Dictadura 
+  ]
+  
+  .MODIFICADOR_ENFADO_NIVEL_DIFICULTAD
+  [
+    # Este modificador multiplicativo se aplicara a los asedios llevados por el jugador humano
+    # con el fin de reducirlos, incrementarlos o dejarlos en su mismo valor segun sea el modo
+    # de dificultad en el que nos encontremos.
+    # Notese:
+    # - Un valor menor que 1.0 hara que se reduzca el enfado (nos quedamos con un % inferior al 100%)
+    # - Un valor igual a 1.0 hara que el valor de enfado no quede alterado (nos quedamos con el 100% producido)
+    # - Un valor superior a 1.0 hara que el valor de enfado se incremente (nos quedamos con un % superior al 100%)
+    .EASY      0.3
+	.MEDIUM    1.0
+	.HARD      1.2
+  ]  
+ ]
+]
+
+# Valores asociados a las reglas de saldo negativo
+.SALDO_NEGATIVO
+[
+  # Valores asociados a saldo negativo.
+  # El saldo negativo unicamente podra ser aplicado en el dinero
+  .VALOR_MAXIMO_ENFADO                                10 # Valor a partir del cual se aplican consecuencias (rebeliones)
+  .INCREMENTO_ENFADO_RIQUEZA_NEGATIVA                 5  # Incremento del enfado por saldo negativo
+  .MODIFICADOR_INCREMENTO_ENFADO_PRODUCCION_POSITIVA -3  # Modificador al incremento si hay produccion postiva en turno
+  .DECREMENTO_ENFADO_RIQUEZA_POSITIVA                 4  # Decremento del enfado si saldo positivo
+  
+  # Num. maximo de efectivos licenciados como medida por alarma en comida
+  .MAX_EFECTIVOS_LICENCIADOS_ALARMA_COMIDA  2  
+  
+  # Rebeliones
+  # Indica la probabilidad de que haya una rebelion cuando se ha alcanzado el tope de malestar
+  .PROBABILIDAD_REBELION [ .DE 6 .ENTRE 6 .PROBABILIDAD_MILICIA_FRENTE_FUSILERO 80.0 ]
+]
+
+# Todo barco puede ser da�ado en concepto de tripulacion, casco y velamen
+# Los porcentajes de inversion de un barco indican el porcentaje de tripulacion, casco y velamen
+# invertido por riqueza necesaria a la hora de hacer un barco. Un barco se construye a partir de
+# dinero, poblacion y materias primas.
+.PORCENTAJES_INVERSION_BARCO
+[
+ .DINERO     [ .TRIPULACION 30.0  .CASCO 60.0 .VELAMEN 10.0 ]
+ .MAT_PRIMAS [ .TRIPULACION 0.0   .CASCO 80.0 .VELAMEN 20.0 ]
+ .POBLACION  [ .TRIPULACION 100.0 .CASCO 0.0  .VELAMEN 0.0  ]
+]
+
+# Porcentajes de rebaja por reparacion / curacion 
+# Este dato tiene como objetivo definir un porcentaje que rebaje el precio original ante una reparacion / curacion
+.PORCENTAJE_REBAJA_REGENERACION
+[
+ .BATALLONES 100.0
+ .BARCOS     100.0
+]
+
+# Reglas asociadas a la desercion tras liberacion de un pais
+# Nota: - Al liberarse un pais neutral, todas las tropas creadas en el mismo sufriran una
+#         desercion aleatoria entre un porcentaje minimo y maximo
+.DESERCION_POR_LIBERACION_PAIS
+[
+ .PORCENTAJE_MINIMO 30.0
+ .PORCENTAJE_MAXIMO 70.0
+]
+
+# Tabla de equivalencia de ciencia con respecto al resto de riquezas
+# Indicara cuanto de dinero, poblacion, materias primas y comida es un punto de ciencia.
+# Los valores seran flotantes, por lo que deberan de llevar siempre el '.' decimal.
+.EQUIVALENCIA_CIENCIA
+[
+ .DINERO
+ [
+  # La transformacion de ciencia a oro se hara segun tipo de gobierno
+  # Nota: - Se indicara cuantos puntos de oro dara un punto de ciencia
+  [ .GOBIERNO LTEXT_RAMA_I       .EQUIVALENCIA   0.6 ]   # Pre - Revolucionaria
+  [ .GOBIERNO LTEXT_RAMA_IIA     .EQUIVALENCIA   0.3 ]	 # Democracia
+  [ .GOBIERNO LTEXT_RAMA_IIB     .EQUIVALENCIA   0.25 ]	 # Absolutismo
+  [ .GOBIERNO LTEXT_RAMA_IIIA    .EQUIVALENCIA   0.14 ]	 # Rep�blica
+  [ .GOBIERNO LTEXT_RAMA_IIIC    .EQUIVALENCIA   0.17 ]	 # Monarqu�a Parlamentaria
+  [ .GOBIERNO LTEXT_RAMA_IIIB    .EQUIVALENCIA   0.17 ]	 # Monarqu�a Absoluta    
+  [ .GOBIERNO LTEXT_RAMA_IIID    .EQUIVALENCIA   0.14 ]	 # Dictadura 
+ ]
+]
+
+# Porcentajes del coste de mantenimiento de un batallon segun su ubicacion en el mapa de gestion
+# Nota: - Los valores vendran en tanto por cien y flotante
+#       - Indicar un valor de 0.0 supondra decir que NO costara mantenimiento y un valor del 100.0
+#         que su mantenimiento sera integro.
+.MANTENIMIENTO_BATALLON_POR_UBICACION
+[
+  .ACUARTELADO                       0.0   
+  .PROVINCIA_PROPIA                  50.0
+  .PROVINCIA_AJENA                   195.0  
+  .PROVINCIA_CAPITAL_ASEDIANDO       200.0
+  .PROVINCIA_CAPITAL_IMPERIO_OCUPADA 70.0
+  .EMBARCADO                         55.0
+]
+
+# Porcentajes de mantenimiento de un barco por su ubicacion
+# Nota: - Los valores vendra en tanto por cien y flotante
+#       - Indicar un valor de 0.0 supondra decir que NO costara mantenimiento y un valor del 100.0
+#         que su mantenimiento sera integro.
+.MANTENIMIENTO_BARCO_POR_UBICACION
+[
+ .ACUARTELADO 0.0 
+]
+
+.RIQUEZA_MAXIMA
+ [
+  # Valores asociados a la riqueza maxima que un jugador puede llegar a tener
+  # Los valores estaran vinculados a sistemas de gobierno.
+  # Ajustar los valores a cantidades razonables pues no cualquier cifra podra almaenarse
+  # El tope maximo para cualquier gobierno podriamos fijarlo en 999999 (6 digitos)
+  
+  [ # Pre - Revolucionaria
+    .GOBIERNO LTEXT_RAMA_I 
+    .RIQUEZAS [ .DINERO 99999 .MATERIAS_PRIMAS 99999 .POBLACION 99999 .COMIDA 99999 ] 
+  ]   
+  
+  [ # Democracia
+    .GOBIERNO LTEXT_RAMA_IIA 
+    .RIQUEZAS [ .DINERO 99999 .MATERIAS_PRIMAS 99999 .POBLACION 99999 .COMIDA 99999 ] 
+  ]   
+  
+  [ # Absolutismo 
+    .GOBIERNO LTEXT_RAMA_IIB 
+    .RIQUEZAS [ .DINERO 99999 .MATERIAS_PRIMAS 99999 .POBLACION 99999 .COMIDA 99999 ] 
+  ]   
+  
+  [ # Rep�blica 
+    .GOBIERNO LTEXT_RAMA_IIIA 
+    .RIQUEZAS [ .DINERO 99999 .MATERIAS_PRIMAS 99999 .POBLACION 99999 .COMIDA 99999 ] 
+  ]   
+  
+  [ # Monarqu�a Parlamentaria 
+    .GOBIERNO LTEXT_RAMA_IIIC 
+    .RIQUEZAS [ .DINERO 99999 .MATERIAS_PRIMAS 99999 .POBLACION 99999 .COMIDA 99999 ] 
+  ]   
+  
+  [  # Monarqu�a Absoluta    
+    .GOBIERNO LTEXT_RAMA_IIIB 
+    .RIQUEZAS [ .DINERO 99999 .MATERIAS_PRIMAS 99999 .POBLACION 99999 .COMIDA 99999 ] 
+  ]   
+  
+  [  # Dictadura 
+    .GOBIERNO LTEXT_RAMA_IIID 
+    .RIQUEZAS [ .DINERO 99999 .MATERIAS_PRIMAS 99999 .POBLACION 99999 .COMIDA 99999 ] 
+  ]     
+ ]
+ 
+ 

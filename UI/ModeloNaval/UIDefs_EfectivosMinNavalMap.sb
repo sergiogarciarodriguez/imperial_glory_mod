@@ -1,0 +1,83 @@
+#####################################################################################################
+# Representación de efectivos en Mini-Mapa
+#####################################################################################################
+
+[
+  .KEY JUGADOR_ATACANTE_DEFECTO
+  .PARAMS
+  [
+    .FILE "Game\UI\ModeloNaval\MinNavalMap\RepresentacionTropas.tga" .U 2 .V 1 .ALPHA TRUE
+    .SX 7
+    .SY 10
+  ]
+]
+
+[
+  .KEY JUGADOR_ATACANTE_MOVIENDOSE
+  .PARAMS
+  [
+    .FILE "Game\UI\ModeloNaval\MinNavalMap\RepresentacionTropas.tga" .U 2 .V 1 .ALPHA TRUE
+    .SX 7
+    .SY 10
+  ]
+]
+
+[
+  .KEY JUGADOR_ATACANTE_COMBATE
+  .PARAMS
+  [
+    .FILE "Game\UI\ModeloNaval\MinNavalMap\RepresentacionTropas.tga" .U 71 .V 1 .ALPHA TRUE
+    .SX 7
+    .SY 10
+  ]
+]
+
+[
+  .KEY JUGADOR_ATACANTE_SELECCIONADO
+  .PARAMS
+  [
+    .FILE "Game\UI\ModeloNaval\MinNavalMap\RepresentacionTropas.tga" .U 36 .V 1 .ALPHA TRUE
+    .SX 7
+    .SY 10
+  ]
+]
+
+[
+  .KEY JUGADOR_DEFENSOR_DEFECTO
+  .PARAMS
+  [
+    .FILE "Game\UI\ModeloNaval\MinNavalMap\RepresentacionTropas.tga" .U 2 .V 21 .ALPHA TRUE
+    .SX 7
+    .SY 10
+  ]
+]
+
+[
+  .KEY JUGADOR_DEFENSOR_MOVIENDOSE
+  .PARAMS
+  [
+    .FILE "Game\UI\ModeloNaval\MinNavalMap\RepresentacionTropas.tga" .U 10 .V 1 .ALPHA TRUE
+    .SX 7
+    .SY 10
+  ]
+]
+
+[
+  .KEY JUGADOR_DEFENSOR_COMBATE
+  .PARAMS
+  [
+    .FILE "Game\UI\ModeloNaval\MinNavalMap\RepresentacionTropas.tga" .U 19 .V 1 .ALPHA TRUE
+    .SX 7
+    .SY 10
+  ]
+]
+
+[
+  .KEY JUGADOR_DEFENSOR_SELECCIONADO
+  .PARAMS
+  [
+    .FILE "Game\UI\ModeloNaval\MinNavalMap\RepresentacionTropas.tga" .U 36 .V 1 .ALPHA TRUE
+    .SX 7
+    .SY 10
+  ]
+]

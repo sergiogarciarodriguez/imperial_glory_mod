@@ -1,0 +1,106 @@
+#=======================================================================================
+# Definición de sonidos para el modelo naval [ ORDENES ]
+#
+#=======================================================================================
+
+.AUDIO 
+[
+  %Game/GameModes/NavalBattleMode/Audio/AudioOrders_Ataque.sb
+  %Game/GameModes/NavalBattleMode/Audio/AudioOrders_Mover.sb
+  
+  #=======================================================================================
+  # S_ACK_SINK
+  #=======================================================================================
+  [ 
+    .IDNAME "S_ACK_SINK_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/NavalCommander/NAV_sink_abandon_01.ogg" "Audio/Voices/Francia/NavalCommander/NAV_sink_abandon_02.ogg"
+            "Audio/Voices/Francia/NavalCommander/NAV_sink_abandon_03.ogg" "Audio/Voices/Francia/NavalCommander/NAV_sink_allhandsabandon_01.ogg"
+            "Audio/Voices/Francia/NavalCommander/NAV_sink_allhandsabandon_02.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_SINK_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/NavalCommander/NAV_sink_abandon_01.ogg" "Audio/Voices/Inglaterra/NavalCommander/NAV_sink_abandon_02.ogg"
+            "Audio/Voices/Inglaterra/NavalCommander/NAV_sink_abandon_03.ogg" "Audio/Voices/Inglaterra/NavalCommander/NAV_sink_allhandsabandon_01.ogg"
+            "Audio/Voices/Inglaterra/NavalCommander/NAV_sink_allhandsabandon_02.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_SINK_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/NavalCommander/NAV_sink_abandon_01.ogg" "Audio/Voices/Austria/NavalCommander/NAV_sink_abandon_02.ogg"
+            "Audio/Voices/Austria/NavalCommander/NAV_sink_abandon_03.ogg" "Audio/Voices/Austria/NavalCommander/NAV_sink_allhandsabandon_01.ogg"
+            "Audio/Voices/Austria/NavalCommander/NAV_sink_allhandsabandon_02.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_SINK_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/NavalCommander/NAV_sink_abandon_01.ogg" "Audio/Voices/Rusia/NavalCommander/NAV_sink_abandon_02.ogg"
+            "Audio/Voices/Rusia/NavalCommander/NAV_sink_abandon_03.ogg" "Audio/Voices/Rusia/NavalCommander/NAV_sink_allhandsabandon_01.ogg"
+            "Audio/Voices/Rusia/NavalCommander/NAV_sink_allhandsabandon_02.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_SINK_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/NavalCommander/NAV_sink_abandon_01.ogg" "Audio/Voices/Prusia/NavalCommander/NAV_sink_abandon_02.ogg"
+            "Audio/Voices/Prusia/NavalCommander/NAV_sink_abandon_03.ogg" "Audio/Voices/Prusia/NavalCommander/NAV_sink_allhandsabandon_01.ogg"
+            "Audio/Voices/Prusia/NavalCommander/NAV_sink_allhandsabandon_02.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  
+  #=======================================================================================
+  # S_ACK_FOLLOW
+  #=======================================================================================
+  [ 
+    .IDNAME "S_ACK_FOLLOW_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/NavalCommander/NAV_follow_keepstern_01.ogg" "Audio/Voices/Francia/NavalCommander/NAV_follow_keepstern_02.ogg"
+            "Audio/Voices/Francia/NavalCommander/NAV_follow_lineastern_01.ogg" "Audio/Voices/Francia/NavalCommander/NAV_follow_lineastern_02.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_FOLLOW_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/NavalCommander/NAV_follow_keepstern_01.ogg"  "Audio/Voices/Inglaterra/NavalCommander/NAV_follow_keepstern_02.ogg"
+            "Audio/Voices/Inglaterra/NavalCommander/NAV_follow_lineastern_01.ogg" "Audio/Voices/Inglaterra/NavalCommander/NAV_follow_lineastern_02.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_FOLLOW_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/NavalCommander/NAV_follow_keepstern_01.ogg" "Audio/Voices/Austria/NavalCommander/NAV_follow_keepstern_02.ogg"
+            "Audio/Voices/Austria/NavalCommander/NAV_follow_lineastern_01.ogg" "Audio/Voices/Austria/NavalCommander/NAV_follow_lineastern_02.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_FOLLOW_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/NavalCommander/NAV_follow_keepstern_01.ogg" "Audio/Voices/Rusia/NavalCommander/NAV_follow_keepstern_02.ogg"
+            "Audio/Voices/Rusia/NavalCommander/NAV_follow_lineastern_01.ogg" "Audio/Voices/Rusia/NavalCommander/NAV_follow_lineastern_02.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_FOLLOW_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/NavalCommander/NAV_follow_keepstern_01.ogg" "Audio/Voices/Prusia/NavalCommander/NAV_follow_keepstern_02.ogg"
+            "Audio/Voices/Prusia/NavalCommander/NAV_follow_lineastern_01.ogg" "Audio/Voices/Prusia/NavalCommander/NAV_follow_lineastern_02.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  
+  
+] ### !AUDIO
+

@@ -1,0 +1,92 @@
+##################################################################################################
+# Definiciones asociadas a la IA del ministerio de militar
+##################################################################################################
+
+
+#pesos asociados a los diferentes tipos de tropa
+
+.GRAPH_PATH "Game/GameModes/Gestion/IA/Datos_Precalculados"
+
+
+# Este modificador tiene en cuenta la importancia que le daremos militarmente
+# a las tropas de los diferentes paises dependiendo de nuestra amistad con ellos
+.MODIFICADORES_CONFIANZA
+[
+  # distancia en nº de turnos a la que se tiene en cuenta las tropas
+  .DISTANCIA_EXPANSION
+  [
+    .AMISTAD      5    
+    .NEUTRALIDAD  5
+    .ENEMISTAD    5
+    .GUERRA       5
+    .PROPIO       5
+  ]
+  
+  # Este valor estaría ponderado con el grado de hostilidad
+  .VALOR_MILITAR
+  [
+    .AMISTAD      2.0
+    .NEUTRALIDAD  2.0
+    .ENEMISTAD    2.0
+    .GUERRA       2.0
+    .PROPIO       2.0
+  ]
+]
+
+.TIEMPO_VIDA_MEMORIA_NAVAL 10
+
+# Este modificador tiene en cuenta la importancia de tener controlada la visibilidad de los 
+# puertos (Valores entre 0..infinito)
+.IMPORTANCIA_PUERTOS
+[
+  .AMISTAD      0.25
+  .NEUTRALIDAD  0.5
+  .ENEMISTAD    0.75
+  .GUERRA       1.0
+  .PROPIO       2.0
+]
+
+.TURNOS_ESPERA_GUERRA_BLOQUEADA 4
+
+########################################################################################################
+# Agresividad militar por enemistad, EL VALOR PUEDE OSCILAR ENTRE
+# 0..infinito aunque los valores tipicos estan entre 0 y 10, cuanto mayor sea más agresivo. 
+# Si es 0 no se tiene en cuenta 
+# la agresividad en funcion de la hostilidad
+# Ojo una IA más agresiva no es una IA más lista, pero putea más así que no hay que pasarse con este valor
+########################################################################################################
+.AGRESIVIDAD_POR_ENEMISTAD
+[
+  .EASY   0.45
+  .MEDIUM 1.3
+  .HARD   2.0
+]
+
+.AJUSTICIAR
+[
+  .IMPORTANCIA_PERFIL 0.2
+  .IMPORTANCIA_HOSTILIDAD 0.3
+  .IMPORTANCIA_POBLACION 0.5
+]
+
+.TRAICIONAR_LIBERACION
+[
+  .IMPORTANCIA_PERFIL 0.2
+  .IMPORTANCIA_HOSTILIDAD  0.4
+  .IMPORTANCIA_NIVEL_DEFENSIVO 0.4
+]
+
+.BARCOS_SCOUT
+[
+  .PORCENTAJE_SCOUTS  0.5
+  .NUM_MAX_SCOUTS     3
+]
+
+
+.MODIFICADOR_PAZ_TEMPRANA 3.0
+.MODIFICADOR_PROTECCION_PRIMERO 
+[
+  .EASY   1.0
+  .MEDIUM 3.0
+  .HARD   6.0
+]

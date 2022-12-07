@@ -1,0 +1,11 @@
+# habría que intentar cambiar de ruta la definición de los messagebox genéricos y ponerlos en un directorio comun
+.MB_GRANDE [ %Game/UI/ModeloGestion/UIDefsMsgBoxNotificaciones/UIDefs_MsgBoxGrandeNotificaciones.sb ]
+
+.MB_NORMAL [ %Game/UI/ModeloGestion/UIDefsMsgBoxNotificaciones/UIDefs_MsgBoxNotificaciones.sb ]
+
+.MB_GIGANTE [ %Game/UI/ModeloGestion/UIDefsMsgBoxNotificaciones/UIDefs_MsgBoxGiganteNotificaciones.sb ] Ya no se usa
+
+.MB_PEQUENO [ %Game/UI/ModeloGestion/UIDefsMsgBoxNotificaciones/UIDefs_MsgBoxPequenoNotificaciones.sb ]
+
+# tipos de iconos de caption
+.CAPTIONS [ %Game/UI/ModeloGestion/Iconos/UIDefs_PoolIconosCaptionNotificaciones.sb ]

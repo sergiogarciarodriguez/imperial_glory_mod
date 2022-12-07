@@ -1,0 +1,24 @@
+###############################################################################################################
+###############################################################################################################
+
+################# FILA 1
+
+[
+ .KEY TEXT_BATALLON_NUMUNIDADES_BTN_NORMAL 
+ .PARAMS [ .FONT "Fonts/Times15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] .CENTER_AREA [ .X1 42 .Y1 7 .X2 65 .Y2 24 ] ]
+]
+
+[
+ .KEY TEXT_BATALLON_NUMUNIDADES_BTN_SELECCIONADO 
+ .PARAMS [ .FONT "Fonts/Times15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] .CENTER_AREA [ .X1 42 .Y1 7 .X2 65 .Y2 24 ] ]
+]
+
+[
+ .KEY TEXT_BATALLON_NUMUNIDADES_BTN_PULSADO
+ .PARAMS [ .FONT "Fonts/Times15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] .CENTER_AREA [ .X1 42 .Y1 7 .X2 65 .Y2 24 ] ]
+]
+
+[
+ .KEY TEXT_BATALLON_NUMUNIDADES_BTN_DISABLE
+ .PARAMS [ .FONT "Fonts/Times15.fnt" .COLOR [ .R 180 .G 180 .B 180 ] .CENTER_AREA [ .X1 42 .Y1 7 .X2 65 .Y2 24 ] ]
+]

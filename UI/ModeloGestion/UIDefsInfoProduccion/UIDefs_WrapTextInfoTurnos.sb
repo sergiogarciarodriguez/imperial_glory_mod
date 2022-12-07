@@ -1,0 +1,6 @@
+# WrapText para mostrar el coste de turnos de produccion
+# Las coordenadas relativas se definiran desde el exterior
+
+.SX 228 .SY 34
+.ALIGN LEFT
+.TEXT [ .FONT "Fonts/Times12.fnt" .COLOR [ .R 0 .G 0 .B 0 ] ]

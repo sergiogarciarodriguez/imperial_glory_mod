@@ -1,0 +1,20 @@
+#############################################################################################
+# Parametros asociados al campo de porcentaje para un boton de tropa en batalla
+#############################################################################################
+
+ .TEXT 
+  [ 
+   .FONT "Fonts/Times12.fnt" 
+   .DX 32 .DY 59
+   .COLOR [ .R 255 .G 255 .B 255 ] 
+   .SCALE 1.0
+  ]
+              
+  .BARRA 
+  [ 
+   # Se supone que ambas barras tendran el mismo tamaño               
+   #.FONDO    [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Francia/IconosFrancia.tga" .U 185 .V 840 .ALPHA TRUE ]
+   .SUPERIOR [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Francia/IconosFrancia.tga" .U 139 .V 492 .ALPHA TRUE ]
+   .DX 2 .DY 72
+   .SX 49 .SY 4
+  ]              

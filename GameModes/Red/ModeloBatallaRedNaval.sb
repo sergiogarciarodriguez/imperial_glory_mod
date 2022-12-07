@@ -1,0 +1,78 @@
+.START_PROCS
+[
+  [
+    .NAME MODELO_BATALLA_RED_NAVAL_STARTUP_PROC
+    .PARAMS
+    [
+
+      .CURSORES "Game/UI/Cursores/Cursores_Red.sb"
+
+      .TEXTOS_LOCALES
+      [
+      ]
+
+      .UI_DEFS     "Game/UI/Red/UI_Red.sb"
+
+      .START_PROCS
+      [
+      [
+        .NAME MODELO_BATALLA_RED_NAVAL_MAIN_PROC
+        .PARAMS
+        [
+          .ESCENARIO
+          [
+            .PROVINCIA BAHIACADIZ
+            .MAX_CREDITOS 2000
+            .DEFAULT_CREDITS 2000
+          ]
+
+          .SERVER 0        # server será jugador 0
+          .CLIENTE 1       # cliente será jugador 1
+          
+          .BANDOS
+          [
+            [ # bando 0 defensor
+              .JUGADOR JUG_FRANCIA
+              .PAIS FRANCIA
+              .MANDO MARISCAL_RED
+              .TROPAS
+              [ 
+                FRAGATA
+                #TIRADOR
+                #GRANADERO
+                #ELITE
+                #CAB_HUSAR
+                #CAB_LANCERO
+                #CAB_DRAGON
+                #CAB_CORACERO
+                #CANON
+                #OBUS
+              ]
+            ]
+            [  # bando 1 atacante
+              .JUGADOR JUG_GRAN_BRETANYA
+              .PAIS GRAN_BRETANYA
+              .MANDO MARISCAL_RED
+              .TROPAS
+              [
+              	FRAGATA
+                #FUSILERO
+                #TIRADOR
+                #GRANADERO
+                #ELITE
+                #CAB_HUSAR
+                #CAB_LANCERO
+                #CAB_DRAGON
+                #CAB_CORACERO
+                #CANON
+                #OBUS
+              ] 
+            ]
+          ]
+          .START_MODO 'NBAT'
+        ]
+      ]
+      ]
+    ]
+  ]
+]

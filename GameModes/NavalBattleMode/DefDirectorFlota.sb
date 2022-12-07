@@ -1,0 +1,6 @@
+# --------------------------------------------------------------------
+# Definiciones para el Director de Flota
+# --------------------------------------------------------------------
+
+# (float) Tiempo de update del director de flota en segundos
+.UPDATE_LAPSUS  15.0

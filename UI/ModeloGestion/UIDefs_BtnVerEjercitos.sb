@@ -1,0 +1,33 @@
+# Boton de Visualización de ejércitos
+
+.COMPORTAMIENTO SIMPLE
+
+.FONDO
+[
+ .X 965 .Y 626 .SX 54 .SY 26 .ALPHA TRUE .PRIORITY 10
+ 
+ .SOLTADO      [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 750 .V 468 ] 
+ .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 807 .V 468 ]    
+ .PULSADO      [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 864 .V 468 ]    
+]    
+
+#PASADO A CODIGO
+
+.IDSELECTSOUND "S_ABRIR_INFO_ARMY"
+.IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"
+
+
+.TOOL_TIP 
+[ 
+ .TEXT LTEXT_UI_BATALLA_TT_PCMAPA_EJERCITOS
+ .X 32 .Y 32
+   
+ 
+ .STYLE DEFAULT_TOOLTIP
+]
+
+
+.KEY
+[
+  .TECLA KEY_F7 .EVENTOS [ KEY_DOWN KEY_UP ]          
+]  

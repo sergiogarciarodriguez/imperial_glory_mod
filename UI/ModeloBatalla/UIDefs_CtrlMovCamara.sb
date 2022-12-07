@@ -1,0 +1,56 @@
+ ########################################################################################################
+ # Controles asociados al movimiento de la camara
+ ########################################################################################################
+ 
+ # ZONAS de movimiento
+ [ .TIPO UIC_ZONASENSIBLE  .ID 'BXRT' .PARAMS [ .RECT [ 1022 0 1023 767 ] .EVENTOS [ MOUSE_ENTER MOUSE_LEAVE ] ] ]                      
+ [ .TIPO UIC_ZONASENSIBLE  .ID 'BXLT' .PARAMS [ .RECT [ 0 0 1 767 ] .EVENTOS [ MOUSE_ENTER MOUSE_LEAVE ] ] ]                      
+ [ .TIPO UIC_ZONASENSIBLE  .ID 'BXUP' .PARAMS [ .RECT [ 0 0 1023 1 ] .EVENTOS [ MOUSE_ENTER MOUSE_LEAVE ] ] ]                      
+ [ .TIPO UIC_ZONASENSIBLE  .ID 'BXDN' .PARAMS [ .RECT [ 0 766 1023 767 ] .EVENTOS [ MOUSE_ENTER MOUSE_LEAVE ] ] ]                            
+      
+ # TECLAS 
+      
+ # Teclas de movimiento / rotacion / zoom / Otros de camara
+      
+ # De movimiento. IMPORTANTE: Repetidas para q se permita mover la cámara mientras pulsamos CTRL.
+ [ .TIPO UIC_TECLA         .ID 'K_UP'    .PARAMS [ .TECLA LKEY_BATALLA_CAM_GAMER_UP         .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+ [ .TIPO UIC_TECLA         .ID 'K_DN'    .PARAMS [ .TECLA LKEY_BATALLA_CAM_GAMER_DOWN       .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+ [ .TIPO UIC_TECLA         .ID 'K_LT'    .PARAMS [ .TECLA LKEY_BATALLA_CAM_GAMER_LEFT       .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+ [ .TIPO UIC_TECLA         .ID 'K_RT'    .PARAMS [ .TECLA LKEY_BATALLA_CAM_GAMER_RIGHT      .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+ [ .TIPO UIC_TECLA         .ID 'K_UP'    .PARAMS [ .TECLA LKEY_BATALLA_CAM_GAMER_UP_CTRL    .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+ [ .TIPO UIC_TECLA         .ID 'K_DN'    .PARAMS [ .TECLA LKEY_BATALLA_CAM_GAMER_DOWN_CTRL  .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+ [ .TIPO UIC_TECLA         .ID 'K_LT'    .PARAMS [ .TECLA LKEY_BATALLA_CAM_GAMER_LEFT_CTRL  .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+ [ .TIPO UIC_TECLA         .ID 'K_RT'    .PARAMS [ .TECLA LKEY_BATALLA_CAM_GAMER_RIGHT_CTRL .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+
+ [ .TIPO UIC_TECLA         .ID 'K_UP'    .PARAMS [ .TECLA KEY_UP    .MKEYS [ ]  .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+ [ .TIPO UIC_TECLA         .ID 'K_DN'    .PARAMS [ .TECLA KEY_DOWN  .MKEYS [ ]  .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+ [ .TIPO UIC_TECLA         .ID 'K_UP'    .PARAMS [ .TECLA KEY_UP    .MKEYS [ L_CTRL ]  .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+ [ .TIPO UIC_TECLA         .ID 'K_DN'    .PARAMS [ .TECLA KEY_DOWN  .MKEYS [ L_CTRL ]  .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+       
+ # De rotacion
+ [ .TIPO UIC_TECLA         .ID 'K_HO'    .PARAMS [ .TECLA KEY_PRIOR    .MKEYS [ ]  .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+ [ .TIPO UIC_TECLA         .ID 'K_EN'    .PARAMS [ .TECLA KEY_NEXT  .MKEYS [ ]  .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+ 
+ [ .TIPO UIC_TECLA         .ID 'K_PR'    .PARAMS [ .TECLA KEY_LEFT  .MKEYS [ ]  .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+ [ .TIPO UIC_TECLA         .ID 'K_NE'    .PARAMS [ .TECLA KEY_RIGHT .MKEYS [ ]  .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+ [ .TIPO UIC_TECLA         .ID 'K_PR'    .PARAMS [ .TECLA KEY_LEFT  .MKEYS [ L_CTRL ]  .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+ [ .TIPO UIC_TECLA         .ID 'K_NE'    .PARAMS [ .TECLA KEY_RIGHT .MKEYS [ L_CTRL ]  .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+
+ # De zoom 
+ [ .TIPO UIC_TECLA         .ID 'K_IN'    .PARAMS [ .TECLA KEY_INSERT  .MKEYS [  ]  .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+ [ .TIPO UIC_TECLA         .ID 'K_DE'    .PARAMS [ .TECLA KEY_DELETE  .MKEYS [  ]  .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+ 
+ # Zoom in, zoom out
+ [ .TIPO UIC_TECLA         .ID 'K_ZI'    .PARAMS [ .TECLA KEY_SUBTRACT  .MKEYS [  ]  .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+ [ .TIPO UIC_TECLA         .ID 'K_ZO'    .PARAMS [ .TECLA KEY_ADD  .MKEYS [  ]  .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+ 
+ # De FOV
+ [ .TIPO UIC_TECLA         .ID 'K_AF'    .PARAMS [ .TECLA KEY_HOME   .MKEYS [  ]  .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+ [ .TIPO UIC_TECLA         .ID 'K_SF'    .PARAMS [ .TECLA KEY_END    .MKEYS [  ]  .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+      
+ # Otros
+ [ .TIPO UIC_TECLA         .ID 'K_CE'    .PARAMS [ .TECLA KEY_NUMPAD5 .MKEYS [  ]  .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+ [ .TIPO UIC_TECLA         .ID 'KALT'    .PARAMS [ .TECLA KEY_LALT    .MKEYS [ L_ALT ]  .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+
+ # Restaurar Zoom                                                                               
+ ## [ .TIPO UIC_TECLA         .ID 'KDEL'    .PARAMS [ .TECLA KEY_Z .MKEYS [  ]  .EVENTOS [ KEY_DOWN KEY_UP ] ] ]   

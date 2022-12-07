@@ -1,0 +1,116 @@
+##################################################################################################################
+# Ventana de informacion para las tropas que esten bajo el cursor de juego
+##################################################################################################################
+
+.PRIORITY 1             
+
+.DXCURSOR 32 .DYCURSOR 32
+
+.FONDO [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .SX 222 .SY 200 .U 659 .V 98 .ALPHA TRUE .TRANSPARENCY 255 ]
+
+.TITULO [ .FONT "Fonts/Times12.fnt" .DY 16 .COLOR [ .R 255 .G 255 .B 255 ]  .SCALE 1.0 ]
+.TITULO_TINY [ .FONT "Fonts/Times10.fnt" .SCALE 0.9 ] # para cuando el texto es muy grande
+
+# Movidas nuevas de la ventana
+.DATOS_VENTANA
+[
+  .BITMAP_FONDO_PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .X 818 .Y 513 .SX 197 .SY 121 .U 659 .V 312 .PRIORITY 3 .ALPHA TRUE ]
+  .BITMAPS_PROPS
+  [
+    [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .X 895 .Y 518 .SX 42 .SY 18 .U 859 .V 312 .PRIORITY 4 .ALPHA TRUE ]
+    [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .X 895 .Y 538 .SX 42 .SY 18 .U 859 .V 332 .PRIORITY 4 .ALPHA TRUE ]
+    [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .X 895 .Y 558 .SX 42 .SY 18 .U 859 .V 355 .PRIORITY 4 .ALPHA TRUE ]
+    [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .X 895 .Y 578 .SX 42 .SY 18 .U 859 .V 375 .PRIORITY 4 .ALPHA TRUE ]
+  ]
+  .TEXTOS_PROPS
+  [
+    [ 
+      .ALIGN LEFT .X 945 .Y 518 .TEXT "XXX"
+      .FONT "Fonts/Times10.fnt"
+      .COLOR [ .R 255 .G 255 .B 255 ]
+    ]
+    [ 
+      .ALIGN LEFT .X 945 .Y 538 .TEXT "XXX"
+      .FONT "Fonts/Times10.fnt"
+      .COLOR [ .R 255 .G 255 .B 255 ]
+    ]
+    [ 
+      .ALIGN LEFT .X 945 .Y 558 .TEXT "XXX"
+      .FONT "Fonts/Times10.fnt"
+      .COLOR [ .R 255 .G 255 .B 255 ]
+    ]
+    [ 
+      .ALIGN LEFT .X 945 .Y 578 .TEXT "XXX"
+      .FONT "Fonts/Times10.fnt"
+      .COLOR [ .R 255 .G 255 .B 255 ]
+    ]
+  ]
+  
+  .BOTONTROPA_DX 26
+  .BOTONTROPA_DY 45
+
+]
+
+.INFO_VENTANA
+[
+
+  # Valores de espaciado con los que ir ajustando los textos en pantalla (SIN CONTAR EL TITULO)
+ .DXMARGEN 30
+ .DYMARGEN 39
+ .DYLINE_SIZE 18
+ .DXDESC_INFO_SPACE 4
+
+ # Posiciones de inicio y final para la ventanita. 
+ .STARTPOSX 802
+ .STARTPOSY 467  #650
+ .FINALPOSX 802
+ .FINALPOSY 467
+ 
+ .TITLEFORMAT [ .TEXT LTEXT_UI_VENTANAINFO_TITLE ]
+ 
+ # Datos para cualquier tipo de tropa
+ .TIPO 
+ [
+  .LINE 0              
+  .TTROPA_TO_STR_FILE "Game/UI/ModeloBatalla/UIDefs_TTropaToStrFile.sb" 
+  .DESC [ .TEXT LTEXT_UI_BATALLA_TIPO_TROPA .FONT "Fonts/gothic.fnt" .SCALE 0.9 .DX 5 .DY 40 .COLOR [ .R 255 .G 255 .B 255 ] ] 
+  .INFO [ .FONT "Fonts/gothic.fnt" .LINE 0 .COLOR [ .R 255 .G 255 .B 255 ]  ] 
+ ]
+  
+ # Datos para el oficial
+ .NUM_BATALLONES
+ [ 
+  .LINE 1
+  .DESC [ .TEXT LTEXT_UI_BATALLA_NUM_BATALLONES .FONT "Fonts/gothic.fnt" .SCALE 0.8 .COLOR [ .R 255 .G 255 .B 255 ] .ALPHA TRUE ] 
+  .INFO [ .FONT "Fonts/gothic.fnt" .COLOR [ .R 255 .G 255 .B 255 ] .ALPHA TRUE ] 
+ ]
+
+ # Datos para tropas
+ .NUM_UNIDADES 
+ [ 
+  .LINE 1
+  .DESC [ .TEXT LTEXT_UI_BATALLA_NUM_UNIDADES .FONT "Fonts/gothic.fnt" .SCALE 0.8 .COLOR [ .R 255 .G 255 .B 255 ]  ] 
+  .INFO [ .FONT "Fonts/gothic.fnt" .COLOR [ .R 255 .G 255 .B 255 ]  ] 
+ ]
+
+.OFICIAL 
+ [ 
+  .LINE 2
+  .DESC [ .TEXT LTEXT_UI_BATALLA_OFICIAL .FONT "Fonts/gothic.fnt" .SCALE 0.8 .COLOR [ .R 255 .G 255 .B 255 ]  ] 
+  .INFO [ .FONT "Fonts/gothic.fnt" .COLOR [ .R 255 .G 255 .B 255 ]  ] 
+ ]
+
+.PORCENTAJE_VIDA
+ [
+  .LINE 3      
+  .DESC [ .TEXT " " .FONT "Fonts/gothic.fnt" .SCALE 0.8 .COLOR [ .R 255 .G 255 .B 255 ] ]       ### no usado  
+  .INFO 
+  [
+   .X 860 .Y 501
+   .FONDO    [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 771 .V 301 .ALPHA TRUE ]
+   .SUPERIOR [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 659 .V 301 .ALPHA TRUE ]
+   .SX 109 .SY 8
+   .PRIORITY 30
+  ]              
+ ]              
+] # ~ INFO_TROPA

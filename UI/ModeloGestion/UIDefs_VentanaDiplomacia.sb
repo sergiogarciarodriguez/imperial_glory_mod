@@ -1,0 +1,317 @@
+f#############################################################################################
+# Ventana (dialogo) asociado al interfaz del Diplomacia
+#############################################################################################
+
+  .MODAL TRUE
+  .CENTER TRUE
+  .ACTIVO FALSE
+  .MOVIBLE FALSE
+  .RELATIVE_PRIORITY FALSE
+  .DEPTH 3
+
+  .FONDO 
+  [
+    .X 0 .Y 0 .U 0 .V 0 .SX 1024 .SY 768 
+    .FILE "Game/UI/ModeloGestion/Diplomacia/MenuDiplomacia.tga" 
+    .ALPHA TRUE 
+    .PRIORITY 1
+  ] # ~FONDO
+  
+  # colores con los que se pinta el mapa 
+  .COLOR_AMISTAD_MUY_ALTA [ .R 194  .G 235 .B 152 ]
+  .COLOR_AMISTAD_ALTA     [ .R 158  .G 185  .B 132 ]
+  .COLOR_AMISTAD_NEUTRA   [ .R 229 .G 215 .B 120 ]
+  .COLOR_AMISTAD_BAJA     [ .R 204 .G 178  .B 128 ]
+  .COLOR_AMISTAD_MUY_BAJA [ .R 196  .G 132  .B 132 ]
+
+  # Textos que muestra el panel de comparativa (como de buena es la oferta y demanda)
+  # y los rangos en los que se muestran (Rangos en porcentage, entre 0-100% y EN ORDEN ASENDENTE)
+  .TEXTOS_COMPARATIVA
+  [
+    [
+      .TEXTO "LTEXT_OFERTA_RIDICULA"
+      .RANGO 10 # hasta el 10% (incluido) la oferta es ridicula
+    ]
+    [
+      .TEXTO "LTEXT_OFERTA_MALA"
+      .RANGO 40 # desde el anterior hasta el 40% (incluido) la oferta es mala
+    ]
+    [
+      .TEXTO "LTEXT_OFERTA_JUSTA"
+      .RANGO 60 # desde el anterior hasta el 60% (incluido) la oferta es justa
+    ]
+    [
+      .TEXTO "LTEXT_OFERTA_BUENA"
+      .RANGO 90 # desde el anterior hasta el 90% (incluido) la oferta es buena
+    ]
+    [
+      .TEXTO "LTEXT_OFERTA_MUY_BUENA"
+      .RANGO 100 # desde el anterior hasta el 100% (incluido) la oferta es buena
+    ]
+  ]
+
+  #
+  #POSICION BANDERAS DEL PANEL DE COMPARATIVAS 
+  #
+  .POS_BANDERA_LOCAL   [ .X 724 .Y 553 ]
+  .POS_BANDERA_DESTINO [ .X 860 .Y 553 ]
+  
+  ###########################################################################################
+  #DEFINICIONES DE LOS MONTONES DE MONEDAS DE ORO (SOLO LOS PARAMETROS, SE CREARAN AL VUELO)
+  ###########################################################################################
+  
+  .POS_MONEDAS_LOCAL   [ .X 767 .Y 542 ]
+  .POS_MONEDAS_DESTINO [ .X 903 .Y 542 ]
+  
+  .PARAMS_MONTON_MONEDAS_MUY_BAJO
+  [ 
+    .FILE "Game/UI/ModeloGestion/Diplomacia/VentanasDiplomacia.tga" .U 1 .V 493 .SX 53 .SY 40 .ALPHA TRUE 
+    .PRIORITY 250
+  ]  
+  
+  .PARAMS_MONTON_MONEDAS_BAJO
+  [ 
+    .FILE "Game/UI/ModeloGestion/Diplomacia/VentanasDiplomacia.tga" .U 57 .V 493 .SX 53 .SY 40 .ALPHA TRUE 
+    .PRIORITY 250
+  ]   
+
+  .PARAMS_MONTON_MONEDAS_NORMAL
+  [ 
+    .FILE "Game/UI/ModeloGestion/Diplomacia/VentanasDiplomacia.tga" .U 113 .V 493 .SX 53 .SY 40 .ALPHA TRUE 
+    .PRIORITY 250
+  ]     
+  
+  .PARAMS_MONTON_MONEDAS_ALTO
+  [ 
+    .FILE "Game/UI/ModeloGestion/Diplomacia/VentanasDiplomacia.tga" .U 169 .V 493 .SX 53 .SY 40 .ALPHA TRUE 
+    .PRIORITY 250
+  ]    
+  
+  .PARAMS_MONTON_MONEDAS_MUY_ALTO
+  [ 
+    .FILE "Game/UI/ModeloGestion/Diplomacia/VentanasDiplomacia.tga" .U 225 .V 493 .SX 53 .SY 40 .ALPHA TRUE
+    .PRIORITY 250
+  ]    
+  
+  # RANGOS
+  .LIMITE_SUPERIOR_MONTON_MUY_BAJO  200
+  .LIMITE_SUPERIOR_MONTON_BAJO     2000
+  .LIMITE_SUPERIOR_MONTON_NORMAL  10000
+  .LIMITE_SUPERIOR_MONTON_ALTO    25000
+  # el resto sera el monton muy alto
+  
+  # El campo .BOTONES esta reservado a aquellos que se localicen de forma automatica
+  # por lo que aquellos que ubiquemos manualmente los pondremos en el campo .CONTROLES.
+  
+  
+  #Controles
+  .CONTROLES
+  [
+  
+  	#-------------------------------------------- MAPA PAISES -------------------------------------------------
+  	[
+  		.TIPO UIC_MAPAPAISES .ID 'MAPP'
+  		.PARAMS
+  		[
+  			%Game/UI/ModeloGestion/Diplomacia/UIDefs_MapaPaisesSeleccion.sb
+  		]		
+  	]
+  	
+  	# Fichero que contiene los labels de la ventana de diplomacia
+  	%Game/UI/ModeloGestion/Diplomacia/UIDefs_LabelsDiplomacia.sb  	
+  	
+    # Texto Composicion del mensaje
+    [  .TIPO UIC_WRAPTEXT .ID 'TXCM'
+      .PARAMS
+      [
+        .ALIGN CENTER
+        .TEXT
+        [
+          .TEXT LTEXT_DIPLOMACIA_MENSAJE
+          .FONT "Fonts/Times14.fnt"
+          .SCALE 1.0 
+          .COLOR [ .R 255 .G 255 .B 255 ] 
+        ]
+        .X 173 .Y 670  .SX 780 .SY 60
+        .PRIORITY 2         
+       ]
+    ]
+
+    # bitmap de fondo de las comparativas
+    [ .TIPO UIC_BITMAP .ID 'BFCO' 
+      .PARAMS 
+      [ 
+        .X 669 .Y 531 .U 573 .V 1 .SX 343 .SY 127
+        .FILE "Game/UI/ModeloGestion/Diplomacia/VentanasDiplomacia.tga" 
+        .ALPHA TRUE 
+        .PRIORITY 5
+      ]
+    ] # ~BITMAP    
+
+    
+    #################### Getor Focus
+    [ .TIPO UIC_GESTORFOCUS .ID 'GF_P'
+      .PARAMS
+      [
+        .CONTROLES
+        [ 
+      	    
+        # Aunque se llame Tooltip, se usa como gestor de paneles
+        [ .TIPO UIC_GESTORTOOLTIPDINAMICO .ID 'GPAN'
+          .PARAMS
+          [
+            %Game/UI/ModeloGestion/Diplomacia/UIDefs_EstilosPaneles.sb
+          ]
+        ]    	
+        
+        # Barra hostilidad
+        [ .TIPO UIC_BITMAP .ID 'BMHO' 
+          .PARAMS 
+          [ 
+            .X 221 .Y 630 .U 1 .V 822 .SX 361 .SY 22 
+            .FILE "Game/UI/ModeloGestion/Diplomacia/MenuDiplomacia.tga" 
+            .ALPHA TRUE 
+            .PRIORITY 35
+          ]
+        ] # ~TEXT
+        
+    	  # Gestor de checkBoxes Propuesta
+        [ .TIPO UIC_GESTORCHECKBOX .ID 'GCPR'
+          .PARAMS
+          [
+  	      %Game/UI/ModeloGestion/UIDefs_CheckBoxesPropuestaDiplomatica.sb
+          ] # ~PARAMS
+        ] # ~GESTOR CHECKBOX     
+        	     
+        # CheckBox - Contra
+        [ .TIPO UIC_CHECKBOX .ID 'CBCN'
+          .PARAMS
+          [ 
+            .COMPORTAMIENTO FIJO
+            .STYLE DEFAULT_DIPLOMACIA_BUTTON
+            .TEXT LTEXT_DIPLOMACIA_CONTRA
+            .FONDO[ .X 186 .Y 576 ]
+            
+            .IDSELECTSOUND "S_FXUI_CHECKBUTTON"         
+            
+            .SOLTADO [ .COLOR [ .R 0 .G 0 .B 0 ] ]
+            .PULSADO [ .COLOR [ .R 0 .G 0 .B 0 ] ]
+            .SELECCIONADO [ .COLOR [ .R 0 .G 0 .B 0 ] ]
+            .DISABLE [ .COLOR [ .R 0 .G 0 .B 0 ] ]         
+            .TOOL_TIP 
+            [ 
+              .TEXT LTEXT_DIPLOMACIA_CONTRA
+              %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+            ]       
+
+          ]            
+        ] # ~ CHECKBOX 
+          
+        # Botón Enviar
+        [ .TIPO UIC_BOTONTEXTO
+          .ID 'BTEN'
+          .PARAMS
+          [
+            .COMPORTAMIENTO SIMPLE
+            .STYLE DEFAULT_DIPLOMACIA_BUTTON
+            .FONDO [ .X 419 .Y 725 ]
+            
+            .IDSELECTSOUND "S_FXUI_CLICKBUTTON"                    
+            .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"            
+            
+            .TEXT LTEXT_DIPLOMACIA_ENVIAR
+            .SOLTADO [ .COLOR [ .R 0 .G 0 .B 0 ] ]
+            .PULSADO [ .COLOR [ .R 0 .G 0 .B 0 ] ]
+            .SELECCIONADO [ .COLOR [ .R 0 .G 0 .B 0 ] ]
+            .DISABLE [ .COLOR [ .R 0 .G 0 .B 0 ] ]
+            .TOOL_TIP 
+            [ 
+              .TEXT LTEXT_DIPLOMACIA_ENVIAR
+              %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+            ]       
+          ]
+        ] # ~Boton ENVIAR
+          
+        # Botón Borrar
+        [ .TIPO UIC_BOTONTEXTO
+          .ID 'BTBO'
+          .PARAMS
+          [
+            .COMPORTAMIENTO SIMPLE
+            .STYLE DEFAULT_DIPLOMACIA_BUTTON
+            .FONDO [ .X 586 .Y 725 ]
+            
+			# Pasados a codigo para que se ejecute la accion al cancelar el mensaje en lugar de al pulsar el boton
+            #.IDSELECTSOUND "S_FXUI_DIPLOMATICO_CANCELAR"                    
+            .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"            
+            
+            .TEXT LTEXT_DIPLOMACIA_BORRAR
+            .SOLTADO [ .COLOR [ .R 0 .G 0 .B 0 ] ]
+            .PULSADO [ .COLOR [ .R 0 .G 0 .B 0 ] ]
+            .SELECCIONADO [ .COLOR [ .R 0 .G 0 .B 0 ] ]
+            .DISABLE [ .COLOR [ .R 0 .G 0 .B 0 ] ]
+            .TOOL_TIP 
+            [ 
+              .TEXT LTEXT_DIPLOMACIA_BORRAR
+              %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+            ]       
+          ]
+        ] # ~Boton BORRAR          
+
+       ] # ~ CONTROLES GESTOR FOCUS
+       
+       .TECLAS
+       [
+         .TECLA_SIGUIENTE_FOCO [ .TECLA KEY_TAB .MKEYS [ ]        .EVENTOS [ KEY_UP KEY_DOWN ] ]
+         .TECLA_ANTERIOR_FOCO  [ .TECLA KEY_TAB .MKEYS [L_SHIFT]  .EVENTOS [ KEY_UP KEY_DOWN ] ]
+         .TECLA_CAMBIO_ESTADO  [ .TECLA KEY_RETURN .MKEYS [ ]     .EVENTOS [ KEY_UP KEY_DOWN ] ]
+       ]        
+     ]  # ~  PARAMS
+    ] # ~ GESTOR FOCUS
+    
+    # ToolTip global para mostrar ayuda sobre objetos en el mapa de gestion
+    [ .TIPO UIC_TOOLTIP .ID 'GTTP'
+      .PARAMS 
+      [ 
+       .FONT "Fonts/Times12.fnt" 
+       .COLOR [ .R 255 .G 255 .B 255 ] 
+       .X 32 .Y 32 
+       .SHOW_TIME 0  
+       .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb        
+      ]                          
+    ]     
+        
+  ] # ~CONTROLES
+
+  .BOTONES
+  [
+    .CENTER
+    [ 
+     .XMARGEN 970
+     .YMARGEN 714
+     .XSPACE  10
+     .YSPACE  0
+    ]
+    
+    .LIST
+    [      
+
+      [
+        .CANCELAR TRUE
+        .TIPO UIC_BOTONTEXTO     
+        #.COMPORTAMIENTO SIMPLE
+        #.STYLE DEFAULT_GESTION_VOLVER_BUTTON
+        .STYLE DEFAULT_X_BUTTON 
+        
+        .IDSELECTSOUND "S_FXDIPLOMACIA_CERRAR"
+        .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"          
+        
+        .KEY
+        [
+         .TECLA KEY_ESCAPE .EVENTOS [ KEY_DOWN KEY_UP ]          
+        ]         
+       
+      ]      
+            
+    ] # ~ LIST  
+  ] # ~BOTONES

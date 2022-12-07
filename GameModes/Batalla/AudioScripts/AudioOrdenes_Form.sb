@@ -1,0 +1,409 @@
+  #===============================================================================
+  # S_FORM_CUADRO
+  #===============================================================================
+  [ 
+    .IDNAME "S_FORM_CUADRO_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/InfantryCommander/Inf_square_formsquare.ogg" "Audio/Voices/Francia/InfantryCommander/Inf_square_squareformation.ogg"
+            "Audio/Voices/Francia/InfantryCommander/Inf_square_battalionformsquare.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_CUADRO_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/InfantryCommander/Inf_square_formsquare.ogg" "Audio/Voices/Inglaterra/InfantryCommander/Inf_square_squareformation.ogg"
+            "Audio/Voices/Inglaterra/InfantryCommander/Inf_square_battalionformsquare.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_CUADRO_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/InfantryCommander/Inf_square_formsquare.ogg" "Audio/Voices/Prusia/InfantryCommander/Inf_square_squareformation.ogg"
+            "Audio/Voices/Prusia/InfantryCommander/Inf_square_battalionformsquare.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_CUADRO_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/InfantryCommander/Inf_square_formsquare.ogg" "Audio/Voices/Rusia/InfantryCommander/Inf_square_squareformation.ogg"
+            "Audio/Voices/Rusia/InfantryCommander/Inf_square_battalionformsquare.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_CUADRO_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/InfantryCommander/Inf_square_formsquare.ogg" "Audio/Voices/Austria/InfantryCommander/Inf_square_squareformation.ogg"
+            "Audio/Voices/Austria/InfantryCommander/Inf_square_battalionformsquare.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+
+  #===============================================================================
+  # S_FORM_LINEA_INF
+  #===============================================================================
+  [ 
+    .IDNAME "S_FORM_LINEA_INF_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/InfantryCommander/Inf_line_forminline.ogg" "Audio/Voices/Francia/InfantryCommander/Inf_line_formline.ogg"
+            "Audio/Voices/Francia/InfantryCommander/Inf_line_lineformation.ogg" "Audio/Voices/Francia/InfantryCommander/Inf_line_battalionformline.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_LINEA_INF_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/InfantryCommander/Inf_line_forminline.ogg" "Audio/Voices/Prusia/InfantryCommander/Inf_line_formline.ogg"
+            "Audio/Voices/Prusia/InfantryCommander/Inf_line_lineformation.ogg" "Audio/Voices/Prusia/InfantryCommander/Inf_line_battalionformline.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_LINEA_INF_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/InfantryCommander/Inf_line_forminline.ogg" "Audio/Voices/Rusia/InfantryCommander/Inf_line_formline.ogg"
+            "Audio/Voices/Rusia/InfantryCommander/Inf_line_lineformation.ogg" "Audio/Voices/Rusia/InfantryCommander/Inf_line_battalionformline.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_LINEA_INF_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/InfantryCommander/Inf_line_forminline.ogg" "Audio/Voices/Inglaterra/InfantryCommander/Inf_line_formline.ogg"
+            "Audio/Voices/Inglaterra/InfantryCommander/Inf_line_lineformation.ogg" "Audio/Voices/Inglaterra/InfantryCommander/Inf_line_battalionformline.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_LINEA_INF_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/InfantryCommander/Inf_line_forminline.ogg" "Audio/Voices/Austria/InfantryCommander/Inf_line_formline.ogg"
+            "Audio/Voices/Austria/InfantryCommander/Inf_line_lineformation.ogg" "Audio/Voices/Austria/InfantryCommander/Inf_line_battalionformline.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_FORM_LINEA_CAB
+  #===============================================================================
+  [ 
+    .IDNAME "S_FORM_LINEA_CAB_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/CavalryCommander/Cav_line_forminline.ogg" "Audio/Voices/Francia/CavalryCommander/Cav_line_formline.ogg"
+            "Audio/Voices/Francia/CavalryCommander/Cav_line_lineformation.ogg" "Audio/Voices/Francia/CavalryCommander/Cav_line_regimentformline.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_LINEA_CAB_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/CavalryCommander/Cav_line_forminline.ogg" "Audio/Voices/Prusia/CavalryCommander/Cav_line_formline.ogg"
+            "Audio/Voices/Prusia/CavalryCommander/Cav_line_lineformation.ogg" "Audio/Voices/Prusia/CavalryCommander/Cav_line_regimentformline.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_LINEA_CAB_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/CavalryCommander/Cav_line_forminline.ogg" "Audio/Voices/Rusia/CavalryCommander/Cav_line_formline.ogg"
+            "Audio/Voices/Rusia/CavalryCommander/Cav_line_lineformation.ogg" "Audio/Voices/Rusia/CavalryCommander/Cav_line_regimentformline.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_LINEA_CAB_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/CavalryCommander/Cav_line_forminline.ogg" "Audio/Voices/Inglaterra/CavalryCommander/Cav_line_formline.ogg"
+            "Audio/Voices/Inglaterra/CavalryCommander/Cav_line_lineformation.ogg" "Audio/Voices/Inglaterra/CavalryCommander/Cav_line_regimentformline.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_LINEA_CAB_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/CavalryCommander/Cav_line_forminline.ogg" "Audio/Voices/Austria/CavalryCommander/Cav_line_formline.ogg"
+            "Audio/Voices/Austria/CavalryCommander/Cav_line_lineformation.ogg" "Audio/Voices/Austria/CavalryCommander/Cav_line_regimentformline.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  
+  
+  #===============================================================================
+  # S_FORM_COLUMNA_INF
+  #===============================================================================
+  [ 
+    .IDNAME "S_FORM_COLUMNA_INF_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/InfantryCommander/Inf_column_formcolumn.ogg" "Audio/Voices/Francia/InfantryCommander/Inf_column_formincolumn.ogg"
+            "Audio/Voices/Francia/InfantryCommander/Inf_column_columnformation.ogg" "Audio/Voices/Francia/InfantryCommander/Inf_column_battalionformcolumn.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_COLUMNA_INF_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/InfantryCommander/Inf_column_formcolumn.ogg" "Audio/Voices/Inglaterra/InfantryCommander/Inf_column_formincolumn.ogg"
+            "Audio/Voices/Inglaterra/InfantryCommander/Inf_column_columnformation.ogg" "Audio/Voices/Inglaterra/InfantryCommander/Inf_column_battalionformcolumn.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_COLUMNA_INF_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/InfantryCommander/Inf_column_formcolumn.ogg" "Audio/Voices/Prusia/InfantryCommander/Inf_column_formincolumn.ogg"
+            "Audio/Voices/Prusia/InfantryCommander/Inf_column_columnformation.ogg" "Audio/Voices/Prusia/InfantryCommander/Inf_column_battalionformcolumn.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_COLUMNA_INF_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/InfantryCommander/Inf_column_formcolumn.ogg" "Audio/Voices/Rusia/InfantryCommander/Inf_column_formincolumn.ogg"
+            "Audio/Voices/Rusia/InfantryCommander/Inf_column_columnformation.ogg" "Audio/Voices/Rusia/InfantryCommander/Inf_column_battalionformcolumn.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_COLUMNA_INF_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/InfantryCommander/Inf_column_formcolumn.ogg" "Audio/Voices/Austria/InfantryCommander/Inf_column_formincolumn.ogg"
+            "Audio/Voices/Austria/InfantryCommander/Inf_column_columnformation.ogg" "Audio/Voices/Austria/InfantryCommander/Inf_column_battalionformcolumn.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_FORM_COLUMNA_CAB
+  #===============================================================================
+  [ 
+    .IDNAME "S_FORM_COLUMNA_CAB_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/CavalryCommander/Cav_column_formcolumn.ogg" "Audio/Voices/Francia/CavalryCommander/Cav_column_formincolumn.ogg"
+            "Audio/Voices/Francia/CavalryCommander/Cav_column_columnformationwav" "Audio/Voices/Francia/CavalryCommander/Cav_column_regimentformcolumn.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_COLUMNA_CAB_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/CavalryCommander/Cav_column_formcolumn.ogg" "Audio/Voices/Inglaterra/CavalryCommander/Cav_column_formincolumn.ogg"
+            "Audio/Voices/Inglaterra/CavalryCommander/Cav_column_columnformation.ogg" "Audio/Voices/Inglaterra/CavalryCommander/Cav_column_regimentformcolumn.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_COLUMNA_CAB_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/CavalryCommander/Cav_column_formcolumn.ogg" "Audio/Voices/Prusia/CavalryCommander/Cav_column_formincolumn.ogg"
+            "Audio/Voices/Prusia/CavalryCommander/Cav_column_columnformation.ogg" "Audio/Voices/Prusia/CavalryCommander/Cav_column_regimentformcolumn.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_COLUMNA_CAB_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/CavalryCommander/Cav_column_formcolumn.ogg" "Audio/Voices/Rusia/CavalryCommander/Cav_column_formincolumn.ogg"
+            "Audio/Voices/Rusia/CavalryCommander/Cav_column_columnformation.ogg" "Audio/Voices/Rusia/CavalryCommander/Cav_column_regimentformcolumn.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_COLUMNA_CAB_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/CavalryCommander/Cav_column_formcolumn.ogg" "Audio/Voices/Austria/CavalryCommander/Cav_column_formincolumn.ogg"
+            "Audio/Voices/Austria/CavalryCommander/Cav_column_columnformation.ogg" "Audio/Voices/Austria/CavalryCommander/Cav_column_regimentformcolumn.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_FORM_GROUP
+  #===============================================================================
+  [ 
+    .IDNAME "S_FORM_GROUP_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/InfantryCommander/Inf_formation_formup_01.ogg" "Audio/Voices/Francia/InfantryCommander/Inf_formation_formup_02.ogg"
+            "Audio/Voices/Francia/InfantryCommander/Inf_formation_standto_01.ogg" "Audio/Voices/Francia/InfantryCommander/Inf_formation_standto_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_GROUP_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/InfantryCommander/Inf_formation_formup_01.ogg" "Audio/Voices/Inglaterra/InfantryCommander/Inf_formation_formup_02.ogg"
+            "Audio/Voices/Inglaterra/InfantryCommander/Inf_formation_standto_01.ogg" "Audio/Voices/Inglaterra/InfantryCommander/Inf_formation_standto_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_GROUP_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/InfantryCommander/Inf_formation_formup_01.ogg" "Audio/Voices/Prusia/InfantryCommander/Inf_formation_formup_02.ogg"
+            "Audio/Voices/Prusia/InfantryCommander/Inf_formation_standto_01.ogg" "Audio/Voices/Prusia/InfantryCommander/Inf_formation_standto_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_GROUP_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/InfantryCommander/Inf_formation_formup_01.ogg" "Audio/Voices/Rusia/InfantryCommander/Inf_formation_formup_02.ogg"
+            "Audio/Voices/Rusia/InfantryCommander/Inf_formation_standto_01.ogg" "Audio/Voices/Rusia/InfantryCommander/Inf_formation_standto_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_GROUP_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/InfantryCommander/Inf_formation_formup_01.ogg" "Audio/Voices/Austria/InfantryCommander/Inf_formation_formup_02.ogg"
+            "Audio/Voices/Austria/InfantryCommander/Inf_formation_standto_01.ogg" "Audio/Voices/Austria/InfantryCommander/Inf_formation_standto_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_FORM_REALIGN_LEFT_INF
+  #===============================================================================
+  [ 
+    .IDNAME "S_FORM_REALIGN_LEFT_INF_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/InfantryCommander/Inf_realign_turnaround_aboutface.ogg" "Audio/Voices/Francia/InfantryCommander/Inf_realign_turnaround_aboutturn.ogg"
+            "Audio/Voices/Francia/InfantryCommander/Inf_realignleft_battalionleftwheel.ogg" "Audio/Voices/Francia/InfantryCommander/Inf_realignleft_leftwheel.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_REALIGN_LEFT_INF_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/InfantryCommander/Inf_realign_turnaround_aboutface.ogg" "Audio/Voices/Inglaterra/InfantryCommander/Inf_realign_turnaround_aboutturn.ogg"
+            "Audio/Voices/Inglaterra/InfantryCommander/Inf_realignleft_battalionleftwheel.ogg" "Audio/Voices/Inglaterra/InfantryCommander/Inf_realignleft_leftwheel.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_REALIGN_LEFT_INF_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/InfantryCommander/Inf_realign_turnaround_aboutface.ogg" "Audio/Voices/Prusia/InfantryCommander/Inf_realign_turnaround_aboutturn.ogg"
+            "Audio/Voices/Prusia/InfantryCommander/Inf_realignleft_battalionleftwheel.ogg" "Audio/Voices/Prusia/InfantryCommander/Inf_realignleft_leftwheel.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_REALIGN_LEFT_INF_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/InfantryCommander/Inf_realign_turnaround_aboutface.ogg" "Audio/Voices/Rusia/InfantryCommander/Inf_realign_turnaround_aboutturn.ogg"
+            "Audio/Voices/Rusia/InfantryCommander/Inf_realignleft_battalionleftwheel.ogg" "Audio/Voices/Rusia/InfantryCommander/Inf_realignleft_leftwheel.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_REALIGN_LEFT_INF_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/InfantryCommander/Inf_realign_turnaround_aboutface.ogg" "Audio/Voices/Austria/InfantryCommander/Inf_realign_turnaround_aboutturn.ogg"
+            "Audio/Voices/Austria/InfantryCommander/Inf_realignleft_battalionleftwheel.ogg" "Audio/Voices/Austria/InfantryCommander/Inf_realignleft_leftwheel.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_FORM_REALIGN_RIGHT_INF
+  #===============================================================================
+  [ 
+    .IDNAME "S_FORM_REALIGN_RIGHT_INF_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/InfantryCommander/Inf_realign_turnaround_aboutface.ogg" "Audio/Voices/Francia/InfantryCommander/Inf_realign_turnaround_aboutturn.ogg"
+            "Audio/Voices/Francia/InfantryCommander/Inf_realignright_battalionrightwheel.ogg" "Audio/Voices/Francia/InfantryCommander/Inf_realignright_rightwheel.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_REALIGN_RIGHT_INF_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/InfantryCommander/Inf_realign_turnaround_aboutface.ogg" "Audio/Voices/Inglaterra/InfantryCommander/Inf_realign_turnaround_aboutturn.ogg"
+            "Audio/Voices/Inglaterra/InfantryCommander/Inf_realignright_battalionrightwheel.ogg" "Audio/Voices/Inglaterra/InfantryCommander/Inf_realignright_rightwheel.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_REALIGN_RIGHT_INF_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/InfantryCommander/Inf_realign_turnaround_aboutface.ogg" "Audio/Voices/Prusia/InfantryCommander/Inf_realign_turnaround_aboutturn.ogg"
+            "Audio/Voices/Prusia/InfantryCommander/Inf_realignright_battalionrightwheel.ogg" "Audio/Voices/Prusia/InfantryCommander/Inf_realignright_rightwheel.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_REALIGN_RIGHT_INF_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/InfantryCommander/Inf_realign_turnaround_aboutface.ogg" "Audio/Voices/Rusia/InfantryCommander/Inf_realign_turnaround_aboutturn.ogg"
+            "Audio/Voices/Rusia/InfantryCommander/Inf_realignright_battalionrightwheel.ogg" "Audio/Voices/Rusia/InfantryCommander/Inf_realignright_rightwheel.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_REALIGN_RIGHT_INF_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/InfantryCommander/Inf_realign_turnaround_aboutface.ogg" "Audio/Voices/Austria/InfantryCommander/Inf_realign_turnaround_aboutturn.ogg"
+            "Audio/Voices/Austria/InfantryCommander/Inf_realignright_battalionrightwheel.ogg" "Audio/Voices/Austria/InfantryCommander/Inf_realignright_rightwheel.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_FORM_REALIGN_LEFT_CAB
+  #===============================================================================
+  [ 
+    .IDNAME "S_FORM_REALIGN_LEFT_CAB_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/CavalryCommander/Cav_realign_turnaround_aboutface.ogg" "Audio/Voices/Francia/CavalryCommander/Cav_realign_turnaround_aboutturn.ogg"
+            "Audio/Voices/Francia/CavalryCommander/Cav_realignleft_regimentleftwheel.ogg" "Audio/Voices/Francia/CavalryCommander/Cav_realignleft_leftwheel.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_REALIGN_LEFT_CAB_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/CavalryCommander/Cav_realign_turnaround_aboutface.ogg" "Audio/Voices/Inglaterra/CavalryCommander/Cav_realign_turnaround_aboutturn.ogg"
+            "Audio/Voices/Inglaterra/CavalryCommander/Cav_realignleft_regimentleftwheel.ogg" "Audio/Voices/Inglaterra/CavalryCommander/Cav_realignleft_leftwheel.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_REALIGN_LEFT_CAB_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/CavalryCommander/Cav_realign_turnaround_aboutface.ogg" "Audio/Voices/Prusia/CavalryCommander/Cav_realign_turnaround_aboutturn.ogg"
+            "Audio/Voices/Prusia/CavalryCommander/Cav_realignleft_regimentleftwheel.ogg" "Audio/Voices/Prusia/CavalryCommander/Cav_realignleft_leftwheel.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_REALIGN_LEFT_CAB_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/CavalryCommander/Cav_realign_turnaround_aboutface.ogg" "Audio/Voices/Rusia/CavalryCommander/Cav_realign_turnaround_aboutturn.ogg"
+            "Audio/Voices/Rusia/CavalryCommander/Cav_realignleft_regimentleftwheel.ogg" "Audio/Voices/Rusia/CavalryCommander/Cav_realignleft_leftwheel.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_REALIGN_LEFT_CAB_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/CavalryCommander/Cav_realign_turnaround_aboutface.ogg" "Audio/Voices/Austria/CavalryCommander/Cav_realign_turnaround_aboutturn.ogg"
+            "Audio/Voices/Austria/CavalryCommander/Cav_realignleft_regimentleftwheel.ogg" "Audio/Voices/Austria/CavalryCommander/Cav_realignleft_leftwheel.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_FORM_REALIGN_RIGHT_CAB
+  #===============================================================================
+  [ 
+    .IDNAME "S_FORM_REALIGN_RIGHT_CAB_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/CavalryCommander/Cav_realign_turnaround_aboutface.ogg" "Audio/Voices/Francia/CavalryCommander/Cav_realign_turnaround_aboutturn.ogg"
+            "Audio/Voices/Francia/CavalryCommander/Cav_realignright_regimentrightwheel.ogg" "Audio/Voices/Francia/CavalryCommander/Cav_realignright_rightwheel.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_REALIGN_RIGHT_CAB_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/CavalryCommander/Cav_realign_turnaround_aboutface.ogg" "Audio/Voices/Inglaterra/CavalryCommander/Cav_realign_turnaround_aboutturn.ogg"
+            "Audio/Voices/Inglaterra/CavalryCommander/Cav_realignright_regimentrightwheel.ogg" "Audio/Voices/Inglaterra/CavalryCommander/Cav_realignright_rightwheel.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_REALIGN_RIGHT_CAB_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/CavalryCommander/Cav_realign_turnaround_aboutface.ogg" "Audio/Voices/Prusia/CavalryCommander/Cav_realign_turnaround_aboutturn.ogg"
+            "Audio/Voices/Prusia/CavalryCommander/Cav_realignright_regimentrightwheel.ogg" "Audio/Voices/Prusia/CavalryCommander/Cav_realignright_rightwheel.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_REALIGN_RIGHT_CAB_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/CavalryCommander/Cav_realign_turnaround_aboutface.ogg" "Audio/Voices/Rusia/CavalryCommander/Cav_realign_turnaround_aboutturn.ogg"
+            "Audio/Voices/Rusia/CavalryCommander/Cav_realignright_regimentrightwheel.ogg" "Audio/Voices/Rusia/CavalryCommander/Cav_realignright_rightwheel.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_REALIGN_RIGHT_CAB_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/CavalryCommander/Cav_realign_turnaround_aboutface.ogg" "Audio/Voices/Austria/CavalryCommander/Cav_realign_turnaround_aboutturn.ogg"
+            "Audio/Voices/Austria/CavalryCommander/Cav_realignright_regimentrightwheel.ogg" "Audio/Voices/Austria/CavalryCommander/Cav_realignright_rightwheel.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_FORM_REALIGN_LEFT_ART
+  #===============================================================================
+  [ 
+    .IDNAME "S_FORM_REALIGN_LEFT_ART_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/ArtilleryCommander/Art_realign_turnaround_aboutface.ogg" "Audio/Voices/Francia/ArtilleryCommander/Art_realign_turnaround_aboutturn.ogg"
+            "Audio/Voices/Francia/ArtilleryCommander/Art_realignleft_batteryleftwheel.ogg" "Audio/Voices/Francia/ArtilleryCommander/Art_realignleft_leftwheel.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_REALIGN_LEFT_ART_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/ArtilleryCommander/Art_realign_turnaround_aboutface.ogg" "Audio/Voices/Inglaterra/ArtilleryCommander/Art_realign_turnaround_aboutturn.ogg"
+            "Audio/Voices/Inglaterra/ArtilleryCommander/Art_realignleft_batteryleftwheel.ogg" "Audio/Voices/Inglaterra/ArtilleryCommander/Art_realignleft_leftwheel.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_REALIGN_LEFT_ART_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/ArtilleryCommander/Art_realign_turnaround_aboutface.ogg" "Audio/Voices/Prusia/ArtilleryCommander/Art_realign_turnaround_aboutturn.ogg"
+            "Audio/Voices/Prusia/ArtilleryCommander/Art_realignleft_batteryleftwheel.ogg" "Audio/Voices/Prusia/ArtilleryCommander/Art_realignleft_leftwheel.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_REALIGN_LEFT_ART_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/ArtilleryCommander/Art_realign_turnaround_aboutface.ogg" "Audio/Voices/Rusia/ArtilleryCommander/Art_realign_turnaround_aboutturn.ogg"
+            "Audio/Voices/Rusia/ArtilleryCommander/Art_realignleft_batteryleftwheel.ogg" "Audio/Voices/Rusia/ArtilleryCommander/Art_realignleft_leftwheel.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_REALIGN_LEFT_ART_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/ArtilleryCommander/Art_realign_turnaround_aboutface.ogg" "Audio/Voices/Austria/ArtilleryCommander/Art_realign_turnaround_aboutturn.ogg"
+            "Audio/Voices/Austria/ArtilleryCommander/Art_realignleft_batteryleftwheel.ogg" "Audio/Voices/Austria/ArtilleryCommander/Art_realignleft_leftwheel.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_FORM_REALIGN_RIGHT_ART
+  #===============================================================================
+  [ 
+    .IDNAME "S_FORM_REALIGN_RIGHT_ART_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/ArtilleryCommander/Art_realign_turnaround_aboutface.ogg" "Audio/Voices/Francia/ArtilleryCommander/Art_realign_turnaround_aboutturn.ogg"
+            "Audio/Voices/Francia/ArtilleryCommander/Art_realignright_batteryrightwheel.ogg" "Audio/Voices/Francia/ArtilleryCommander/Art_realignright_rightwheel.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_REALIGN_RIGHT_ART_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/ArtilleryCommander/Art_realign_turnaround_aboutface.ogg" "Audio/Voices/Inglaterra/ArtilleryCommander/Art_realign_turnaround_aboutturn.ogg"
+            "Audio/Voices/Inglaterra/ArtilleryCommander/Art_realignright_batteryrightwheel.ogg" "Audio/Voices/Inglaterra/ArtilleryCommander/Art_realignright_rightwheel.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_REALIGN_RIGHT_ART_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/ArtilleryCommander/Art_realign_turnaround_aboutface.ogg" "Audio/Voices/Prusia/ArtilleryCommander/Art_realign_turnaround_aboutturn.ogg"
+            "Audio/Voices/Prusia/ArtilleryCommander/Art_realignright_batteryrightwheel.ogg" "Audio/Voices/Prusia/ArtilleryCommander/Art_realignright_rightwheel.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_REALIGN_RIGHT_ART_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/ArtilleryCommander/Art_realign_turnaround_aboutface.ogg" "Audio/Voices/Rusia/ArtilleryCommander/Art_realign_turnaround_aboutturn.ogg"
+            "Audio/Voices/Rusia/ArtilleryCommander/Art_realignright_batteryrightwheel.ogg" "Audio/Voices/Rusia/ArtilleryCommander/Art_realignright_rightwheel.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_FORM_REALIGN_RIGHT_ART_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/ArtilleryCommander/Art_realign_turnaround_aboutface.ogg" "Audio/Voices/Austria/ArtilleryCommander/Art_realign_turnaround_aboutturn.ogg"
+            "Audio/Voices/Austria/ArtilleryCommander/Art_realignright_batteryrightwheel.ogg" "Audio/Voices/Austria/ArtilleryCommander/Art_realignright_rightwheel.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  

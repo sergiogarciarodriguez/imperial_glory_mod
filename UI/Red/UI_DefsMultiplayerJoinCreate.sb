@@ -1,0 +1,525 @@
+##############################################################################################################
+# 
+# Pantalla de unirse/crear partida de red
+#
+##############################################################################################################
+
+.MODAL TRUE
+.CENTER FALSE
+
+
+.FONDO
+[
+  .PRIORITY 10
+  .FILE "Game/UI/Red/MenuJoinCreate.tga"
+  .X 0 .Y 0 .U 0 .V 0 .SX 1024 .SY 768 .ALPHA TRUE
+]
+
+.CONTROLES 
+[
+  #---------------------------------------------- LABEL MULTIPLAYER -----------------------------------------
+  [
+    .TIPO UIC_TEXT .ID 'LMUL'
+    .PARAMS
+    [
+      .TEXT LTEXT_UI_MENUMULTIPLAYER_LBL_MULTIPLAYER
+      .ALIGN RIGHT
+      .FONT "Fonts/MonotypeCorsiva29.fnt"
+      .X 900 .Y 145 
+      .COLOR [ .R 255 .G 255 .B 255] 
+    ]
+  ]
+
+  #---------------------------------------------- LABEL JOIN ------------------------------------------------
+  [
+    .TIPO UIC_TEXT .ID 'LJOI'
+    .PARAMS
+    [
+      .TEXT LTEXT_UI_MENUMULTIPLAYER_LBL_JOIN
+      .ALIGN CENTER
+      .FONT "Fonts/MonotypeCorsiva29.fnt"
+      .X 363 .Y 231 
+      .COLOR [ .R 255 .G 255 .B 255] 
+    ]
+  ]
+
+  #---------------------------------------------- LABEL CREATE ----------------------------------------------
+  [
+    .TIPO UIC_TEXT .ID 'LCRE'
+    .PARAMS
+    [
+      .TEXT LTEXT_UI_MENUMULTIPLAYER_LBL_CREATE
+      .ALIGN CENTER
+      .FONT "Fonts/MonotypeCorsiva29.fnt"
+      .X 767 .Y 231 
+      .COLOR [ .R 255 .G 255 .B 255] 
+    ]
+  ]
+
+  #---------------------------------------------- LABEL GAME NAME 1 -----------------------------------------
+  [
+    .TIPO UIC_TEXT .ID 'LGN1'
+    .PARAMS
+    [
+      .TEXT LTEXT_UI_MENUMULTIPLAYER_LBL_GAMENAME
+      .ALIGN LEFT
+      .FONT "Fonts/Times14.fnt"
+      .X 144 .Y 319 
+      .COLOR [ .R 255 .G 255 .B 255] 
+    ]
+  ]
+
+  #---------------------------------------------- LABEL PLAYERS 1 -------------------------------------------
+  [
+    .TIPO UIC_TEXT .ID 'LPL1'
+    .PARAMS
+    [
+      .TEXT LTEXT_UI_MENUMULTIPLAYER_LBL_PLAYERS
+      .ALIGN LEFT
+      .FONT "Fonts/Times14.fnt"
+      .X 364 .Y 319 
+      .COLOR [ .R 255 .G 255 .B 255] 
+    ]
+  ]
+
+  #---------------------------------------------- LABEL PASSWORD 1 ------------------------------------------
+  [
+    .TIPO UIC_TEXT .ID 'LPW1'
+    .PARAMS
+    [
+      .TEXT LTEXT_UI_MENUMULTIPLAYER_LBL_PASSWORD
+      .ALIGN LEFT
+      .FONT "Fonts/Times14.fnt"
+      .X 427 .Y 319 
+      .COLOR [ .R 255 .G 255 .B 255] 
+    ]
+  ]
+
+  #---------------------------------------------- LABEL PING ------------------------------------------------
+  [
+    .TIPO UIC_TEXT .ID 'LPIN'
+    .PARAMS
+    [
+      .TEXT LTEXT_UI_MENUMULTIPLAYER_LBL_PING
+      .ALIGN LEFT
+      .FONT "Fonts/Times14.fnt"
+      .X 515 .Y 319 
+      .COLOR [ .R 255 .G 255 .B 255] 
+    ]
+  ]
+
+  #---------------------------------------------- LABEL GAME NAME 2 -----------------------------------------
+  [
+    .TIPO UIC_TEXT .ID 'LGN2'
+    .PARAMS
+    [
+      .TEXT LTEXT_UI_MENUMULTIPLAYER_LBL_GAMENAME
+      .ALIGN CENTER
+      .FONT "Fonts/Times18.fnt"
+      .X 766 .Y 327 
+      .COLOR [ .R 255 .G 255 .B 255] 
+    ]
+  ]
+
+  #---------------------------------------------- LABEL PASSWORD 2 ------------------------------------------
+  [
+    .TIPO UIC_TEXT .ID 'LPW2'
+    .PARAMS
+    [
+      .TEXT LTEXT_UI_MENUMULTIPLAYER_LBL_PASSWORD
+      .ALIGN CENTER
+      .FONT "Fonts/Times18.fnt"
+      .X 766 .Y 399 
+      .COLOR [ .R 255 .G 255 .B 255] 
+    ]
+  ]
+
+  #---------------------------------------------- LABEL PLAYERS 2 -------------------------------------------
+  [
+    .TIPO UIC_TEXT .ID 'LPL2'
+    .PARAMS
+    [
+      .TEXT LTEXT_UI_MENUMULTIPLAYER_LBL_NUM_PLAYERS
+      .ALIGN CENTER
+      .FONT "Fonts/Times18.fnt"
+      .X 766 .Y 469 
+      .COLOR [ .R 255 .G 255 .B 255] 
+    ]
+  ]
+
+	#---------------------------------------------- GESTOR CHECKBOX 1 -----------------------------------------
+	[ 
+		.TIPO UIC_GESTORCHECKBOX .ID 'GCB1'
+		.PARAMS
+		[
+			.CHECKBOXES
+			[      
+
+				#-------------------------------------------- BOTON LAN ---------------------------------------------------
+				[ 
+					.TIPO UIC_CHECKBOX .ID 'MJCL' 
+				 	.PARAMS
+				 	[ 
+						.COMPORTAMIENTO FIJO				 	
+				 		.STYLE DEFAULT_MULTIPLAYER_SMALL_BUTTON
+				 		.TEXT LTEXT_UI_MENUMULTIPLAYER_BTN_LAN
+					  .FONDO
+					  [
+					    .PRIORITY 120
+					    .X 187 .Y 267
+						]
+				 	]
+				]
+			
+				#-------------------------------------------- BOTON INTERNET ----------------------------------------------	
+				[ 
+					.TIPO UIC_CHECKBOX .ID 'MJCI' 
+				 	.PARAMS
+				 	[ 
+						.COMPORTAMIENTO FIJO				 	
+				 		.STYLE DEFAULT_MULTIPLAYER_SMALL_BUTTON
+				 		.TEXT LTEXT_UI_MENUMULTIPLAYER_BTN_INTERNET
+					  .FONDO
+					  [
+					    .PRIORITY 120
+					    .X 402 .Y 267
+						]
+				 	]
+				]
+	
+			]	# CHECKBOXES
+				
+			.PERMITE_NINGUNA_ACTIVACION FALSE
+			
+		] # PARAMS
+	] # GESTOR CHECKBOX
+
+				
+				
+
+	#-------------------------------------------- BOTON SEARCH ------------------------------------------------	
+	[ 
+		.TIPO UIC_BOTONTEXTO .ID 'MJCS' 
+	 	.PARAMS
+	 	[ 
+	 		.STYLE DEFAULT_MULTIPLAYER_SMALL_BUTTON
+	 		.TEXT LTEXT_UI_MENUMULTIPLAYER_BTN_SEARCH
+		  .FONDO
+		  [
+		    .X 435 .Y 532
+			]
+	 	]
+	]
+
+	#-------------------------------------------- BOTON JOIN --------------------------------------------------	
+	[ 
+		.TIPO UIC_BOTONTEXTO .ID 'MJCJ' 
+	 	.PARAMS
+	 	[ 
+	 		.IDSELECTSOUND "S_FXUI_CLICKBUTTON"    
+      			.IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"    
+	 		.STYLE DEFAULT_MULTIPLAYER_BIG_BUTTON
+	 		.TEXT LTEXT_UI_MENUMULTIPLAYER_BTN_JOIN
+			.DISABLED TRUE	 		
+		  .FONDO
+		  [
+		    .X 266 .Y 573
+			]
+	 	]
+	]
+
+	#-------------------------------------------- BOTON CREATE ------------------------------------------------	
+	[ 
+		.TIPO UIC_BOTONTEXTO .ID 'MJCC' 
+	 	.PARAMS
+	 	[ 
+	 		.IDSELECTSOUND "S_FXUI_CLICKBUTTON"    
+      			.IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"    
+	 		.STYLE DEFAULT_MULTIPLAYER_BIG_BUTTON
+	 		.TEXT LTEXT_UI_MENUMULTIPLAYER_BTN_CREATE
+			.DISABLED TRUE	 		
+		  .FONDO
+		  [
+		    .X 666 .Y 573
+			]
+	 	]
+	]
+
+	#-------------------------------------------- BOTON CANCEL ------------------------------------------------	
+	[ 
+		.TIPO UIC_BOTONTEXTO .ID 'MJCX' 
+	 	.PARAMS
+	 	[ 
+	 		.IDSELECTSOUND "S_CANCELAR"    
+      			.IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"    
+	 		.STYLE DEFAULT_X_BUTTON
+	   .FONDO
+		  [
+		    .PRIORITY 100
+		    .X 854 .Y 620
+			]
+			.KEY
+			[
+				.TECLA LKEY_MAINMENU_CANCELKEY .EVENTOS [ KEY_DOWN KEY_UP ]          
+			] 				
+	 	]
+	]
+	
+	#---------------------------------------------- GESTOR CHECKBOX 2 -----------------------------------------
+	[ 
+		.TIPO UIC_GESTORCHECKBOX .ID 'GCB2'
+		.PARAMS
+		[
+			.CHECKBOXES
+			[      
+		
+				#---------------------------------------- BOTON 2 PLAYERS -------------------------------------------	
+				[ 
+					.TIPO UIC_CHECKBOX .ID 'MJC2'
+				 	.PARAMS
+					[ 
+						.COMPORTAMIENTO FIJO
+				 		.TEXT LTEXT_UI_MENUMULTIPLAYER_BTN_2
+						.FONT "Fonts/Times14.fnt"
+						.SOLTADO  					[ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+						.SELECCIONADO    		[ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+						.PULSADO      			[ .COLOR [ .R 0 .G 0 .B 0 ] .DX 0 .DY 1 ] 
+						.IDSELECTSOUND 			"S_MAINMENU_OPTION_CLICK" 
+						.IDHIGHLIGHTSOUND 	"S_MAINMENU_OPTION_SELECT"         
+						.CENTER_AREA 				[ .X1 0 .Y1 0 .X2 30 .Y2 30 ]
+						.FONDO
+						[
+							.SOLTADO 					[ .FILE "Game/UI/Red/BotonesMultiplayer.tga" .U 428 	.V 1 ] 
+							.SELECCIONADO   	[ .FILE "Game/UI/Red/BotonesMultiplayer.tga" .U 428 	.V 37 ]
+							.PULSADO    			[ .FILE "Game/UI/Red/BotonesMultiplayer.tga" .U 428 	.V 73 ]
+					    .X 705 .Y 	486
+							.SX 32 .SY 	33 
+							.ALPHA TRUE  
+						]
+					]
+				]	
+			
+				#---------------------------------------- BOTON 3 PLAYERS -------------------------------------------
+				[ 
+					.TIPO UIC_CHECKBOX .ID 'MJC3'
+				 	.PARAMS
+					[ 
+				 		.COMPORTAMIENTO FIJO
+				 		.TEXT LTEXT_UI_MENUMULTIPLAYER_BTN_3
+						.FONT "Fonts/Times14.fnt"
+						.SOLTADO  					[ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+						.SELECCIONADO    		[ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+						.PULSADO      			[ .COLOR [ .R 0 .G 0 .B 0 ] .DX 0 .DY 1 ] 
+						.IDSELECTSOUND 			"S_MAINMENU_OPTION_CLICK" 
+						.IDHIGHLIGHTSOUND 	"S_MAINMENU_OPTION_SELECT"         
+						.CENTER_AREA 				[ .X1 0 .Y1 0 .X2 32 .Y2 30 ]
+						.FONDO
+						[
+							.SOLTADO 					[ .FILE "Game/UI/Red/BotonesMultiplayer.tga" .U 428 	.V 1 ] 
+							.SELECCIONADO   	[ .FILE "Game/UI/Red/BotonesMultiplayer.tga" .U 428 	.V 37 ]
+							.PULSADO    			[ .FILE "Game/UI/Red/BotonesMultiplayer.tga" .U 428 	.V 73 ]
+					    .X 755 .Y 	486
+							.SX 32 .SY 	33 
+							.ALPHA TRUE  
+						]
+					]
+				]	
+			
+				#---------------------------------------- BOTON 4 PLAYERS -------------------------------------------
+				[ 
+					.TIPO UIC_CHECKBOX .ID 'MJC4'
+				 	.PARAMS
+					[ 
+				 		.COMPORTAMIENTO FIJO
+				 		.TEXT LTEXT_UI_MENUMULTIPLAYER_BTN_4
+						.FONT "Fonts/Times14.fnt"
+						.SOLTADO  					[ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+						.SELECCIONADO    		[ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+						.PULSADO      			[ .COLOR [ .R 0 .G 0 .B 0 ] .DX 0 .DY 1 ] 
+						.IDSELECTSOUND 			"S_MAINMENU_OPTION_CLICK" 
+						.IDHIGHLIGHTSOUND 	"S_MAINMENU_OPTION_SELECT"         
+						.CENTER_AREA 				[ .X1 0 .Y1 0 .X2 32 .Y2 30 ]
+						.FONDO
+						[
+							.SOLTADO 					[ .FILE "Game/UI/Red/BotonesMultiplayer.tga" .U 428 	.V 1 ] 
+							.SELECCIONADO   	[ .FILE "Game/UI/Red/BotonesMultiplayer.tga" .U 428 	.V 37 ]
+							.PULSADO    			[ .FILE "Game/UI/Red/BotonesMultiplayer.tga" .U 428 	.V 73 ]
+					    .X 805 .Y 	486
+							.SX 32 .SY 	33 
+							.ALPHA TRUE  
+						]
+					]
+				]	
+				
+			]	# CHECKBOXES
+			
+			.PERMITE_NINGUNA_ACTIVACION FALSE
+			
+		] # PARAMS
+	] # GESTOR CHECKBOX
+
+	#-------------------------------------------- GESTOR DE FOCO PARA EDITBOXS --------------------------------		
+  [ 
+  	.TIPO UIC_GESTORFOCUS .ID 'GF_E'
+    .PARAMS
+    [
+      .CONTROLES
+      [
+ 
+ 				#---------------------------------------- EDITBOX IP ------------------------------------------------
+        [ .TIPO UIC_EDITBOX .ID 'EBIP'
+          .PARAMS
+          [
+            .NUMERIC FALSE
+            .FONT "Fonts/LucidaConsole11.fnt"
+            .X 163 .Y 537 .SX 253 .SY 25
+            .FONDO 
+            [
+              .FILE "Game/UI/Red/SlotPasswordCandado.tga"
+              .ALPHA TRUE
+              .PRIORITY 100
+              .U 1 .V 42
+              .X 163 .Y 537 
+              .SX 253 .SY 25
+            ]
+            
+            .MAX 25            
+          ]
+        ]
+
+ 				#---------------------------------------- EDITBOX GAME NAME -----------------------------------------
+        [ .TIPO UIC_EDITBOX .ID 'EBGN'
+          .PARAMS
+          [
+            .NUMERIC FALSE
+            .FONT "Fonts/LucidaConsole11.fnt"
+            .X 652 .Y 345 .SX 237 .SY 25
+            .FONDO 
+            [
+              .FILE "Game/UI/Red/MenuJoinCreate.tga"
+              .ALPHA TRUE
+              .PRIORITY 100
+              .U 652 .V 345
+              .X 652 .Y 345 
+              .SX 237 .SY 25
+            ]
+            
+            .MAX 20           
+          ]
+        ]
+
+ 				#---------------------------------------- EDITBOX PASSWORD CREATE -----------------------------------
+        [ .TIPO UIC_EDITBOX .ID 'EBPC'
+          .PARAMS
+          [
+            .NUMERIC FALSE
+            .PASSWORD TRUE         
+            .FONT "Fonts/LucidaConsole11.fnt"
+            .X 652 .Y 417 .SX 237 .SY 25
+            .FONDO 
+            [
+              .FILE "Game/UI/Red/MenuJoinCreate.tga"
+              .ALPHA TRUE
+              .PRIORITY 15
+              .U 652 .V 417
+              .X 652 .Y 417 
+              .SX 237 .SY 25
+            ]
+            
+            .MAX 20           
+          ]
+        ]
+
+ 				#---------------------------------------- EDITBOX PASSWORD JOIN -------------------------------------
+        [ .TIPO UIC_EDITBOX .ID 'EBPJ'
+          .PARAMS
+          [
+            .NUMERIC FALSE
+            .PASSWORD TRUE         
+            .FONT "Fonts/LucidaConsole11.fnt"
+            .X 249 .Y 497 .SX 224 .SY 38
+            .FONDO 
+            [
+              .FILE "Game/UI/Red/SlotPasswordCandado.tga"
+              .ALPHA TRUE
+              .PRIORITY 15
+              .U 1 .V 1
+              .X 249 .Y 497 
+              .SX 224 .SY 38
+            ]
+            
+            .MAX 20           
+          ]
+        ]
+        
+      ] # CONTROLES DEL GESTOR DE FOCO
+      
+      .TECLAS
+      [
+        #.TECLA_SIGUIENTE_FOCO [ .TECLA KEY_TAB .MKEYS [ ]        .EVENTOS [ KEY_UP KEY_DOWN ] ]
+        #.TECLA_ANTERIOR_FOCO  [ .TECLA KEY_TAB .MKEYS [L_SHIFT]  .EVENTOS [ KEY_UP KEY_DOWN ] ]
+        .TECLA_CAMBIO_ESTADO  [ .TECLA KEY_RETURN .MKEYS [ ]     .EVENTOS [ KEY_UP KEY_DOWN ] ]
+      ] # TECLAS DEL GESTOR DE FOCO   
+          
+    ] # PARAMS
+	] # GESTOR DE FOCO 
+	
+	#---------------------------------------------- LISTBOX PARTIDAS ------------------------------------------
+  [ 
+  	.TIPO UIC_LISTBOXTEXT .ID 'LBPA'
+    .PARAMS
+    [ 
+    	.X 132 .Y 335 .SX 500 .SY 160
+      .TEXT 
+      [
+        .FONT "Fonts/LucidaConsole11.fnt"
+        .DX 14 .DY 81 
+        .COLOR [ .R 255 .G 255 .B 255 ] 
+        .ALIGN LEFT
+      ]
+      
+      .VDX 428 .VDY 6
+      .VSX 10  .VSY 150
+      .SLIDER_VERTICAL
+      [
+        .STYLE DEFAULT_SLIDER_VERTICAL_GRANDE
+      ]
+    ]            
+  ]	
+	  
+	#---------------------------------------------- BITMAP IMPERIAL GLORY -------------------------------------	
+	[ .TIPO UIC_BITMAP .ID 'BMIG' 
+	 .PARAMS 
+	 [ 
+	  .FILE "Game/UI/MainMenu/ImperialGloryLogo.tga" .U 0 .V 0
+	  .X 0 .Y 0 
+	  .SX 465 .SY 188  
+	  .PRIORITY 201
+	  .ALPHA TRUE
+	 ] 
+	]
+	
+	[
+	  .TIPO UIC_DIALOGO .ID 'LOGI'
+	  .PARAMS [ %Game/UI/Red/UI_DefsMultiplayerProfile.sb ]
+	]
+		
+] # .CONTROLES
+
+#------------------------------------------------ TIEMPO ENTRE ENUMERACIONES DE PARTIDAS --------------------
+.TIME_SEG_BETWEEN_ENUM 60
+
+#------------------------------------------------ BITMAP PASSWORD -------------------------------------------
+.BITMAP_PASSWORD
+[
+  .FILE "Game/UI/Red/SlotPasswordCandado.tga"
+  .X 0 .Y 0 
+  .U 1 .V 70 
+  .SX 11 .SY 15 
+  .PRIORITY 202
+  .ALPHA TRUE  
+]
+
+.BITMAP_PASSWORD_X     460   # posicion horizontal de los iconos de password
+.BITMAP_PASSWORD_Y     342   # posicion vertical de los iconos de password
+.BITMAP_PASSWORD_Y_INC 14    # desplazamiento vertical de los iconos (para ajustarse a las lineas del listbox de partidas)

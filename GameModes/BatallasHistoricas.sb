@@ -1,0 +1,64 @@
+# Definición de las batallas historicas del juego
+[
+  #Batavia - Waterloo
+  .PROVINCIA 45
+  .ESCENARIO "49"
+  .DESCRIPCION "LTEXT_BATALLA_HISTORICA_WATERLOO"
+  .TEXTO "LTEXT_HISTORICA_WATERLOO_INTRO"
+  .FICHERO_ESCENARIO "Game\GameModes\Batalla\Escenarios\49\batalla_historica.lvl"
+  .MAPA "Game\GameModes\Batalla\Escenarios\49\batalla_historica.sb"
+  .INTRO_ATACANTE "Game\GameModes\Batalla\Escenarios\49\batalla_historica_intro_atacante.lua"
+  .INTRO_DEFENSOR "Game\GameModes\Batalla\Escenarios\49\batalla_historica_intro_defensor.lua"
+]
+[
+  #Castilla - Arapiles
+  .PROVINCIA 22
+  .ESCENARIO "22"
+  .DESCRIPCION "LTEXT_BATALLA_HISTORICA_ARAPILES"
+  .TEXTO "LTEXT_HISTORICA_ARAPILES_INTRO"
+  .FICHERO_ESCENARIO "Game\GameModes\Batalla\Escenarios\22\batalla_historica.lvl"
+  .MAPA "Game\GameModes\Batalla\Escenarios\22\batalla_historica.sb"
+  .INTRO_ATACANTE "Game\GameModes\Batalla\Escenarios\22\batalla_historica_intro_atacante.lua"
+  .INTRO_DEFENSOR "Game\GameModes\Batalla\Escenarios\22\batalla_historica_intro_defensor.lua"
+]
+[
+  #Bohemia - Retirada de Austerlitz
+  .PROVINCIA 16
+  .ESCENARIO "14"
+  .DESCRIPCION "LTEXT_BATALLA_HISTORICA_AUSTERLITZ"
+  .TEXTO "LTEXT_HISTORICA_AUSTERLITZ_INTRO"
+  .FICHERO_ESCENARIO "Game\GameModes\Batalla\Escenarios\14\batalla_historica.lvl"
+  .MAPA "Game\GameModes\Batalla\Escenarios\14\batalla_historica.sb"
+  .INTRO_ATACANTE "Game\GameModes\Batalla\Escenarios\14\batalla_historica_intro_atacante.lua"
+  .INTRO_DEFENSOR "Game\GameModes\Batalla\Escenarios\14\batalla_historica_intro_defensor.lua"
+]
+[
+  #Prusia Oriental - Friedland
+  .PROVINCIA 20
+  .ESCENARIO "24"
+  .DESCRIPCION "LTEXT_BATALLA_HISTORICA_FRIEDLAND"
+  .TEXTO "LTEXT_HISTORICA_FRIEDLAND_INTRO"
+  .FICHERO_ESCENARIO "Game\GameModes\Batalla\Escenarios\24\batalla_historica.lvl"
+  .MAPA "Game\GameModes\Batalla\Escenarios\24\batalla_historica.sb"
+  .INTRO_ATACANTE "Game\GameModes\Batalla\Escenarios\24\batalla_historica_intro_atacante.lua"
+  .INTRO_DEFENSOR "Game\GameModes\Batalla\Escenarios\24\batalla_historica_intro_defensor.lua"
+]
+[
+  #Egipto - Batalla de las Pirámides
+  .PROVINCIA 29
+  .ESCENARIO "42"
+  .DESCRIPCION "LTEXT_BATALLA_HISTORICA_PIRAMIDES"
+  .TEXTO "LTEXT_HISTORICA_PIRAMIDES_INTRO"
+  .FICHERO_ESCENARIO "Game\GameModes\Batalla\Escenarios\42\batalla_historica.lvl"
+  .MAPA "Game\GameModes\Batalla\Escenarios\42\batalla_historica.sb"
+  .INTRO_ATACANTE "Game\GameModes\Batalla\Escenarios\42\batalla_historica_intro_atacante.lua"
+  .INTRO_DEFENSOR "Game\GameModes\Batalla\Escenarios\42\batalla_historica_intro_defensor.lua"
+]
+[
+  #Bahía de Cádiz - Trafalgar
+  .PROVINCIA 76
+  .ESCENARIO "74"
+  .DESCRIPCION "LTEXT_BATALLA_HISTORICA_TRAFALGAR"
+  .TEXTO "LTEXT_HISTORICA_TRAFALGAR_INTRO"
+  .MAPA "Game\GameModes\NavalBattleMode\Sceneries\74\batalla_historica.sb"
+]

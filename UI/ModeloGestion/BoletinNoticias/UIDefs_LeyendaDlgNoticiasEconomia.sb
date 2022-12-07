@@ -1,0 +1,109 @@
+#Bitmap Materias Primas
+[
+  .TIPO UIC_BITMAP .ID 'GRMP'
+  .PARAMS
+  [
+    .X 484 .Y 78 .U 1 .V 663 .SX 13 .SY 12
+    .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinEstadisticas1.tga"
+    .ALPHA TRUE .PRIORITY 203
+  ]
+]
+#Texto Materias Primas
+[
+  .TIPO UIC_TEXT .ID 'LBMP'
+  .PARAMS
+  [
+    .TEXT LTEXT_NEWS_ECO_MATERIASP
+    .FONT "Fonts/MonotypeCorsiva11.fnt"
+    .X 504 .Y 78
+    .COLOR [ .R 255 .G 255 .B 255 ]     
+  ]
+]
+
+#Bitmap Oro
+[
+  .TIPO UIC_BITMAP .ID 'GROR'
+  .PARAMS
+  [
+    .X 154 .Y 78 .U 1 .V 678 .SX 13 .SY 12
+    .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinEstadisticas1.tga"
+    .ALPHA TRUE .PRIORITY 203
+  ]
+]
+#Texto Oro
+[
+  .TIPO UIC_TEXT .ID 'LBOR'
+  .PARAMS
+  [
+    .TEXT LTEXT_NEWS_ECO_ORO
+    .FONT "Fonts/MonotypeCorsiva11.fnt"
+    .X 174 .Y 78
+    .COLOR [ .R 255 .G 255 .B 255 ]     
+  ]
+]    
+
+#Bitmap Población  
+[
+  .TIPO UIC_BITMAP .ID 'GRPO'
+  .PARAMS
+  [
+    .X 264 .Y 78 .U 1 .V 693 .SX 13 .SY 12
+    .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinEstadisticas1.tga"
+    .ALPHA TRUE .PRIORITY 203
+  ]
+]
+#Texto Poblacion
+[
+  .TIPO UIC_TEXT .ID 'LBPO'
+  .PARAMS
+  [
+    .TEXT LTEXT_NEWS_ECO_POBLACION
+    .FONT "Fonts/MonotypeCorsiva11.fnt"
+    .X 284 .Y 78
+    .COLOR [ .R 255 .G 255 .B 255 ]     
+  ]
+]  
+
+#Bitmap Comida  
+[
+  .TIPO UIC_BITMAP .ID 'GRCO'
+  .PARAMS
+  [
+    .X 374 .Y 78 .U 1 .V 708 .SX 13 .SY 12
+    .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinEstadisticas1.tga"
+    .ALPHA TRUE .PRIORITY 203
+  ]
+]
+#Texto Comida
+[
+  .TIPO UIC_TEXT .ID 'LBCO'
+  .PARAMS
+  [
+    .TEXT LTEXT_NEWS_ECO_COMIDA
+    .FONT "Fonts/MonotypeCorsiva11.fnt"
+    .X 394 .Y 78
+    .COLOR [ .R 255 .G 255 .B 255 ]     
+  ]
+]    
+
+# Bitmap Ciencia  
+[
+  .TIPO UIC_BITMAP .ID 'GRCI'
+  .PARAMS
+  [
+    .X 44 .Y 78 .U 1 .V 723 .SX 13 .SY 12
+    .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinEstadisticas1.tga"
+    .ALPHA TRUE .PRIORITY 203
+  ]
+]  
+#Texto Ciencia
+[
+  .TIPO UIC_TEXT .ID 'LBCI'
+  .PARAMS
+  [
+    .TEXT LTEXT_NEWS_ECO_CIENCIA
+    .FONT "Fonts/MonotypeCorsiva11.fnt"
+    .X 64 .Y 78
+    .COLOR [ .R 255 .G 255 .B 255 ]     
+  ]
+]  

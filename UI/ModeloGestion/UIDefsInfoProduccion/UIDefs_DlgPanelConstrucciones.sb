@@ -1,0 +1,14 @@
+#############################################################################################
+# Panel de construcciones.
+# Mantiene los btns para la creacion de construcciones y efectivos militares.
+#############################################################################################
+
+.BTN_CREAR_EDIFICIOS
+[
+ %Game\UI\ModeloGestion\UIDefsInfoProduccion\UIDefs_BtnProduccionEdificios.sb
+]
+
+.BTN_CREAR_EFECTIVOS
+[
+ %Game\UI\ModeloGestion\UIDefsInfoProduccion\UIDefs_BtnProduccionTropas.sb
+]

@@ -1,0 +1,1238 @@
+###############################################################################################################
+# Tropas Neutrales
+# Mantiene el pool de los botones asociados a las tropas
+# En principio, los botones no deberan de aparecer de forma muy frecuente
+###############################################################################################################
+
+################# FILA 1
+
+[
+ .KEY NEUTRAL_TENIENTE_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 1 .V 1 .ALPHA TRUE ]
+]
+
+[
+ .KEY NEUTRAL_TENIENTE_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 512 .V 1 .ALPHA TRUE ]
+]
+
+[
+ .KEY NEUTRAL_TENIENTE_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 1 .V 310 .ALPHA TRUE ]
+]
+
+[
+ .KEY NEUTRAL_TENIENTE_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 512 .V 310 .ALPHA TRUE ]
+]
+
+[
+ .KEY NEUTRAL_CAPITAN_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 74 .V 1 .ALPHA TRUE ]
+]
+
+[
+ .KEY NEUTRAL_CAPITAN_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 585 .V 1 .ALPHA TRUE ]
+]
+
+[
+ .KEY NEUTRAL_CAPITAN_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 74 .V 310 .ALPHA TRUE ]
+]
+
+[
+ .KEY NEUTRAL_CAPITAN_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 585 .V 310 .ALPHA TRUE ]
+]
+
+[
+ .KEY NEUTRAL_GENERAL_BTN_NORMAL 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 147 .V 1 .ALPHA TRUE ] 
+]
+
+[
+ .KEY NEUTRAL_GENERAL_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 658 .V 1 .ALPHA TRUE ] 
+]
+
+[
+ .KEY NEUTRAL_GENERAL_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 147 .V 310 .ALPHA TRUE ] 
+]
+
+[
+ .KEY NEUTRAL_GENERAL_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 658 .V 310 .ALPHA TRUE ] 
+]
+
+[
+ .KEY NEUTRAL_MARISCAL_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 220 .V 1 .ALPHA TRUE ]
+]
+
+[
+ .KEY NEUTRAL_MARISCAL_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 731 .V 1 .ALPHA TRUE ]
+]
+
+[
+ .KEY NEUTRAL_MARISCAL_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 220 .V 310 .ALPHA TRUE ]
+]
+
+[
+ .KEY NEUTRAL_MARISCAL_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 731 .V 310 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_ELITE_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 293 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_ELITE_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 804 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_ELITE_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 293 .V 310 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_ELITE_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 804 .V 310 .ALPHA TRUE ]
+]
+
+[
+ .KEY NEUTRAL_FUSILERO_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 366 .V 1 .ALPHA TRUE ]
+]
+
+[
+ .KEY NEUTRAL_FUSILERO_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 877 .V 1 .ALPHA TRUE ]
+]
+
+[
+ .KEY NEUTRAL_FUSILERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 366 .V 310 .ALPHA TRUE ]
+]
+
+[
+ .KEY NEUTRAL_FUSILERO_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 877 .V 310 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_GRANADERO_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 439 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_GRANADERO_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 950 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_GRANADERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 439 .V 310 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_GRANADERO_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 950 .V 310 .ALPHA TRUE ]
+]
+
+
+################# FILA 2
+
+[ 
+ .KEY NEUTRAL_CAZADOR_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 1 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_CAZADOR_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 512 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_CAZADOR_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 1 .V 413 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_CAZADOR_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 512 .V 413 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_TIRADOR_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 74 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_TIRADOR_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 585 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_TIRADOR_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 74 .V 413 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_TIRADOR_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 585 .V 413 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_MILICIA_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 147 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_MILICIA_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 658 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_MILICIA_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 147 .V 413 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_MILICIA_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 658 .V 413 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_CAB_HUSAR_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 220 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_CAB_HUSAR_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 731 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_CAB_HUSAR_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 220 .V 413 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_CAB_HUSAR_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 731 .V 413 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_CAB_DRAGON_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 293 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_CAB_DRAGON_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 804 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_CAB_DRAGON_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 293 .V 413 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_CAB_DRAGON_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 804 .V 413 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_CAB_CORACERO_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 366 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_CAB_CORACERO_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 877 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_CAB_CORACERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 366 .V 413 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_CAB_CORACERO_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 877 .V 413 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_CAB_LANCERO_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 439 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_CAB_LANCERO_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 950 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_CAB_LANCERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 439 .V 413 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_CAB_LANCERO_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 950 .V 413 .ALPHA TRUE ]
+]
+
+################# FILA 3
+
+[ 
+ .KEY NEUTRAL_OBUS_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 1 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_OBUS_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 512 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_OBUS_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 1 .V 516 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_OBUS_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 512 .V 516 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_CANON_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 74 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_CANON_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 585 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_CANON_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 74 .V 516 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_CANON_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 585 .V 516 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_CANON_CAMP_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 147 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_CANON_CAMP_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 658 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_CANON_CAMP_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 147 .V 516 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_CANON_CAMP_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 658 .V 516 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_MORTERO_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 220 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_MORTERO_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 731 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_MORTERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 220 .V 516 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_MORTERO_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 731 .V 516 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_OBUS_CAB_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 293 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_OBUS_CAB_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 804 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_OBUS_CAB_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 293 .V 516 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_OBUS_CAB_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 804 .V 516 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_CANON_CAB_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 366 .V 207 .ALPHA  TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_CANON_CAB_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 877 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_CANON_CAB_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 366 .V 516 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_CANON_CAB_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 877 .V 516 .ALPHA TRUE ]
+]
+
+[
+ .KEY NEUTRAL_BARCO_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 439 .V 207 .ALPHA  TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_BARCO_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 950 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_BARCO_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 439 .V 516 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_BARCO_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 950 .V 516 .ALPHA TRUE ]
+]
+
+## Tropas especiales
+# BANDOLEROS
+
+[ 
+ .KEY ESPANYA_ELITE_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasEspeciales.tga" .SX 72 .SY 102 .U 147 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY ESPANYA_ELITE_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasEspeciales.tga" .SX 72 .SY 102 .U 147 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY ESPANYA_ELITE_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasEspeciales.tga" .SX 72 .SY 102 .U 147 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY ESPANYA_ELITE_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasEspeciales.tga" .SX 72 .SY 102 .U 147 .V 310 .ALPHA TRUE ]
+]
+
+# LANCEROS POLACOS
+
+[ 
+ .KEY POLONIA_CAB_ELITE_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasEspeciales.tga" .SX 72 .SY 102 .U 74 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY POLONIA_CAB_ELITE_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasEspeciales.tga" .SX 72 .SY 102 .U 74 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY POLONIA_CAB_ELITE_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasEspeciales.tga" .SX 72 .SY 102 .U 74 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY POLONIA_CAB_ELITE_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasEspeciales.tga" .SX 72 .SY 102 .U 74 .V 310 .ALPHA TRUE ]
+]
+
+# CAZADOR PORTUGUÉS
+
+[ 
+ .KEY PORTUGAL_ELITE_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasEspeciales.tga" .SX 72 .SY 102 .U 220 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY PORTUGAL_ELITE_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasEspeciales.tga" .SX 72 .SY 102 .U 220 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY PORTUGAL_ELITE_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasEspeciales.tga" .SX 72 .SY 102 .U 220 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY PORTUGAL_ELITE_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasEspeciales.tga" .SX 72 .SY 102 .U 220 .V 310 .ALPHA TRUE ]
+]
+
+# MAMELUCOS
+
+[ 
+ .KEY EGIPTO_CAB_ELITE_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasEspeciales.tga" .SX 72 .SY 102 .U 1 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY EGIPTO_CAB_ELITE_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasEspeciales.tga" .SX 72 .SY 102 .U 1 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY EGIPTO_CAB_ELITE_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasEspeciales.tga" .SX 72 .SY 102 .U 1 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY EGIPTO_CAB_ELITE_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasEspeciales.tga" .SX 72 .SY 102 .U 1 .V 310 .ALPHA TRUE ]
+]
+
+## TROPAS ARABES
+
+# Fusileros
+
+[ 
+ .KEY OTOMANO_FUSILERO_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 1 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY OTOMANO_FUSILERO_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 1 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY OTOMANO_FUSILERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 1 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY OTOMANO_FUSILERO_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 1 .V 310 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY EGIPTO_FUSILERO_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 1 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY EGIPTO_FUSILERO_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 1 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY EGIPTO_FUSILERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 1 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY EGIPTO_FUSILERO_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 1 .V 310 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TRIPOLITANIA_FUSILERO_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 1 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TRIPOLITANIA_FUSILERO_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 1 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TRIPOLITANIA_FUSILERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 1 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TRIPOLITANIA_FUSILERO_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 1 .V 310 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TUNEZ_FUSILERO_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 1 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TUNEZ_FUSILERO_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 1 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TUNEZ_FUSILERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 1 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TUNEZ_FUSILERO_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 1 .V 310 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY MARRUECOS_FUSILERO_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 1 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY MARRUECOS_FUSILERO_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 1 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY MARRUECOS_FUSILERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 1 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY MARRUECOS_FUSILERO_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 1 .V 310 .ALPHA TRUE ]
+]
+
+# Husares
+
+[ 
+ .KEY OTOMANO_CAB_HUSAR_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 74 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY OTOMANO_CAB_HUSAR_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 74 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY OTOMANO_CAB_HUSAR_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 74 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY OTOMANO_CAB_HUSAR_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 74 .V 310 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY EGIPTO_CAB_HUSAR_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 74 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY EGIPTO_CAB_HUSAR_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 74 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY EGIPTO_CAB_HUSAR_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 74 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY EGIPTO_CAB_HUSAR_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 74 .V 310 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TRIPOLITANIA_CAB_HUSAR_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 74 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TRIPOLITANIA_CAB_HUSAR_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 74 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TRIPOLITANIA_CAB_HUSAR_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 74 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TRIPOLITANIA_CAB_HUSAR_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 74 .V 310 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TUNEZ_CAB_HUSAR_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 74 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TUNEZ_CAB_HUSAR_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 74 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TUNEZ_CAB_HUSAR_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 74 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TUNEZ_CAB_HUSAR_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 74 .V 310 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY MARRUECOS_CAB_HUSAR_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 74 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY MARRUECOS_CAB_HUSAR_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 74 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY MARRUECOS_CAB_HUSAR_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 74 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY MARRUECOS_CAB_HUSAR_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 74 .V 310 .ALPHA TRUE ]
+]
+
+# Lanceros Caballo
+
+[ 
+ .KEY OTOMANO_CAB_LANCERO_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 147 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY OTOMANO_CAB_LANCERO_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 147 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY OTOMANO_CAB_LANCERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 147 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY OTOMANO_CAB_LANCERO_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 147 .V 310 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY EGIPTO_CAB_LANCERO_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 147 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY EGIPTO_CAB_LANCERO_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 147 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY EGIPTO_CAB_LANCERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 147 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY EGIPTO_CAB_LANCERO_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 147 .V 310 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TRIPOLITANIA_CAB_LANCERO_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 147 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TRIPOLITANIA_CAB_LANCERO_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 147 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TRIPOLITANIA_CAB_LANCERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 147 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TRIPOLITANIA_CAB_LANCERO_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 147 .V 310 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TUNEZ_CAB_LANCERO_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 147 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TUNEZ_CAB_LANCERO_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 147 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TUNEZ_CAB_LANCERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 147 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TUNEZ_CAB_LANCERO_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 147 .V 310 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY MARRUECOS_CAB_LANCERO_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 147 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY MARRUECOS_CAB_LANCERO_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 147 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY MARRUECOS_CAB_LANCERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 147 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY MARRUECOS_CAB_LANCERO_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 147 .V 310 .ALPHA TRUE ]
+]
+
+# Lanceros Camello
+
+[ 
+ .KEY OTOMANO_CAM_LANCERO_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 220 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY OTOMANO_CAM_LANCERO_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 220 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY OTOMANO_CAM_LANCERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 220 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY OTOMANO_CAM_LANCERO_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 220 .V 310 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY EGIPTO_CAM_LANCERO_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 220 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY EGIPTO_CAM_LANCERO_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 220 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY EGIPTO_CAM_LANCERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 220 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY EGIPTO_CAM_LANCERO_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 220 .V 310 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TRIPOLITANIA_CAM_LANCERO_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 220 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TRIPOLITANIA_CAM_LANCERO_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 220 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TRIPOLITANIA_CAM_LANCERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 220 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TRIPOLITANIA_CAM_LANCERO_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 220 .V 310 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TUNEZ_CAM_LANCERO_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 220 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TUNEZ_CAM_LANCERO_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 220 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TUNEZ_CAM_LANCERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 220 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TUNEZ_CAM_LANCERO_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 220 .V 310 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY MARRUECOS_CAM_LANCERO_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 220 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY MARRUECOS_CAM_LANCERO_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 220 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY MARRUECOS_CAM_LANCERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 220 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY MARRUECOS_CAM_LANCERO_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 220 .V 310 .ALPHA TRUE ]
+]
+
+# Milicia
+
+[ 
+ .KEY OTOMANO_MILICIA_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U  293 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY OTOMANO_MILICIA_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U  293 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY OTOMANO_MILICIA_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U  293 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY OTOMANO_MILICIA_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U  293 .V 310 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY EGIPTO_MILICIA_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U  293 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY EGIPTO_MILICIA_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U  293 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY EGIPTO_MILICIA_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U  293 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY EGIPTO_MILICIA_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U  293 .V 310 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TRIPOLITANIA_MILICIA_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U  293 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TRIPOLITANIA_MILICIA_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U  293 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TRIPOLITANIA_MILICIA_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U  293 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TRIPOLITANIA_MILICIA_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U  293 .V 310 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TUNEZ_MILICIA_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U  293 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TUNEZ_MILICIA_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U  293 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TUNEZ_MILICIA_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U  293 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TUNEZ_MILICIA_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U  293 .V 310 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY MARRUECOS_MILICIA_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U  293 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY MARRUECOS_MILICIA_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U  293 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY MARRUECOS_MILICIA_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U  293 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY MARRUECOS_MILICIA_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U  293 .V 310 .ALPHA TRUE ]
+]
+
+# Tirador
+
+[ 
+ .KEY OTOMANO_TIRADOR_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 366 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY OTOMANO_TIRADOR_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 366 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY OTOMANO_TIRADOR_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 366 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY OTOMANO_TIRADOR_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 366 .V 310 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY EGIPTO_TIRADOR_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 366 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY EGIPTO_TIRADOR_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 366 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY EGIPTO_TIRADOR_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 366 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY EGIPTO_TIRADOR_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 366 .V 310 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TRIPOLITANIA_TIRADOR_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 366 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TRIPOLITANIA_TIRADOR_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 366 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TRIPOLITANIA_TIRADOR_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 366 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TRIPOLITANIA_TIRADOR_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 366 .V 310 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TUNEZ_TIRADOR_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 366 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TUNEZ_TIRADOR_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 366 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TUNEZ_TIRADOR_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 366 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TUNEZ_TIRADOR_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 366 .V 310 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY MARRUECOS_TIRADOR_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 366 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY MARRUECOS_TIRADOR_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 366 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY MARRUECOS_TIRADOR_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 366 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY MARRUECOS_TIRADOR_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 366 .V 310 .ALPHA TRUE ]
+]
+
+# Tirador Camello
+
+[ 
+ .KEY OTOMANO_CAM_TIRADOR_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 439 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY OTOMANO_CAM_TIRADOR_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 439 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY OTOMANO_CAM_TIRADOR_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 439 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY OTOMANO_CAM_TIRADOR_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 439 .V 310 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY EGIPTO_CAM_TIRADOR_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 439 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY EGIPTO_CAM_TIRADOR_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 439 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY EGIPTO_CAM_TIRADOR_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 439 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY EGIPTO_CAM_TIRADOR_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 439 .V 310 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TRIPOLITANIA_CAM_TIRADOR_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 439 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TRIPOLITANIA_CAM_TIRADOR_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 439 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TRIPOLITANIA_CAM_TIRADOR_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 439 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TRIPOLITANIA_CAM_TIRADOR_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 439 .V 310 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TUNEZ_CAM_TIRADOR_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 439 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TUNEZ_CAM_TIRADOR_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 439 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TUNEZ_CAM_TIRADOR_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 439 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY TUNEZ_CAM_TIRADOR_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 439 .V 310 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY MARRUECOS_CAM_TIRADOR_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 439 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY MARRUECOS_CAM_TIRADOR_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 439 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY MARRUECOS_CAM_TIRADOR_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 439 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY MARRUECOS_CAM_TIRADOR_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasArabes.tga" .SX 72 .SY 102 .U 439 .V 310 .ALPHA TRUE ]
+]
+

@@ -1,0 +1,33 @@
+####################################################################################################################
+# Este archivo contendra los identificadores de color de los distintos paises (imperios, reinos y prov. neutrales)
+# utilizados en la UI para diferenciarlos cuando aparezcan en conjunto.
+# Nota: - Por el momento utilizados en: 
+#         * Control UIC_VentanaInfoProduccion
+####################################################################################################################
+
+
+
+[ .DESC GRAN_BRETANYA .COLOR [ .R 203 .G 54  .B 54  ] ]
+[ .DESC FRANCIA       .COLOR [ .R 75 .G 100 .B 210 ] ]
+[ .DESC PRUSIA        .COLOR [ .R 167 .G 227 .B 236 ] ]
+[ .DESC AUSTRIA       .COLOR [ .R 222 .G 208 .B 208 ] ]
+[ .DESC RUSIA         .COLOR [ .R 71  .G 154 .B 95  ] ]
+[ .DESC ESPANYA       .COLOR [ .R 182 .G 184 .B 45  ] ]
+[ .DESC PORTUGAL      .COLOR [ .R 182 .G 184 .B 45  ] ]
+[ .DESC OTOMANO       .COLOR [ .R 182 .G 184 .B 45  ] ]
+[ .DESC DINAMARCA     .COLOR [ .R 182 .G 184 .B 45  ] ]
+[ .DESC DOS_SICILIAS  .COLOR [ .R 182 .G 184 .B 45  ] ]
+[ .DESC SUECIA        .COLOR [ .R 182 .G 184 .B 45  ] ]
+[ .DESC LOMBARDIA     .COLOR [ .R 182 .G 184 .B 45  ] ]
+[ .DESC EGIPTO        .COLOR [ .R 182 .G 184 .B 45  ] ]
+[ .DESC POLONIA       .COLOR [ .R 185 .G 24  .B 200  ] ]
+[ .DESC PIAMONTE      .COLOR [ .R 185 .G 24  .B 200  ] ]
+[ .DESC HANNOVER      .COLOR [ .R 185 .G 24  .B 200  ] ]
+[ .DESC SAJONIA       .COLOR [ .R 185 .G 24  .B 200  ] ]
+[ .DESC BATAVIA       .COLOR [ .R 185 .G 24  .B 200  ] ]
+[ .DESC R_HELVETICA   .COLOR [ .R 185 .G 24  .B 200  ] ]
+[ .DESC E_PAPALES     .COLOR [ .R 185 .G 24  .B 200  ] ]
+[ .DESC MOLDAVIA      .COLOR [ .R 185 .G 24  .B 200  ] ]
+[ .DESC TUNEZ         .COLOR [ .R 185 .G 24  .B 200  ] ]
+[ .DESC MARRUECOS     .COLOR [ .R 185 .G 24  .B 200  ] ]
+[ .DESC TRIPOLITANIA  .COLOR [ .R 185 .G 24  .B 200  ] ]

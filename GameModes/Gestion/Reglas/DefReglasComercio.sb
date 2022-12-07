@@ -1,0 +1,49 @@
+#############################################################################################
+# Define las reglas de comercio.
+#############################################################################################
+
+# Reglas genéricas
+.VALOR_PUNTOS_COMERCIALES                           1.0   # Valor en oro de cada punto comercial
+
+# Comercio Interior
+.COMERCIO_INTERIOR
+[
+        .PORCENTAJE_EXPLOTACION_BASE                0.0   # Porcentaje de explotación cuando no hay ningún edificio relacionado construido en el país
+        .PORCENTAJE_EXPLOTACION_NIVEL1             75.0   # Porcentaje de explotación cuando hay un Mercado construido en el país
+        .PORCENTAJE_EXPLOTACION_NIVEL2             150.0   # Porcentaje de explotación cuando hay una Red de Carreteras construido en el país
+        .PORCENTAJE_EXPLOTACION_NIVEL3            225.0   # Porcentaje de explotación cuando hay un Edificio de Bolsa construido en el país
+]
+
+# Comercio Internacional
+.COMERCIO_INTERNACIONAL
+[
+        .PORCENTAJE_EXPLOTACION_NIVEL1             45.0   # Porcentaje de explotación del valor comercial de la ruta cuando la ruta es de nivel 1
+        .PORCENTAJE_EXPLOTACION_NIVEL2             68.0   # Porcentaje de explotación del valor comercial de la ruta cuando la ruta es de nivel 2
+        .PORCENTAJE_EXPLOTACION_NIVEL3             80.0   # Porcentaje de explotación del valor comercial de la ruta cuando la ruta es de nivel 3
+        .PORCENTAJE_CAPITAL_CATEGORIA1             15.0   # Bonus al valor comercial de la ruta terrestre cuando la capital es de categoría 1
+        .PORCENTAJE_CAPITAL_CATEGORIA2             20.0   # Bonus al valor comercial de la ruta terrestre cuando la capital es de categoría 2
+        .PORCENTAJE_CAPITAL_CATEGORIA3             30.0   # Bonus al valor comercial de la ruta terrestre cuando la capital es de categoría 3
+        .PORCENTAJE_PUERTO_CATEGORIA1              15.0   # Bonus al valor comercial de la ruta maritima cuando el puerto es de categoría 1
+        .PORCENTAJE_PUERTO_CATEGORIA2              20.0   # Bonus al valor comercial de la ruta maritima cuando el puerto es de categoría 2
+        .PORCENTAJE_PUERTO_CATEGORIA3              30.0   # Bonus al valor comercial de la ruta maritima cuando el puerto es de categoría 3
+        .PORCENTAJE_EXPLOTACION_RUTA_AJENA_BASE     0.0   # Porcentaje base de explotación de una ruta ajena 
+        .PORCENTAJE_EXPLOTACION_RUTA_AJENA_NIVEL1  25.0   # Porcentaje de explotación de una ruta ajena cuando se tiene un Puesto Fronterizo
+        .PORCENTAJE_EXPLOTACION_RUTA_AJENA_NIVEL2  50.0   # Porcentaje de explotación de una ruta ajena cuando se tienen Aduanas
+        
+        .BONUS_AMISTAD_APERTURA_RUTA                3.0   # Bonus de amistad recibido cuando se crea una delegación comercial o 
+                                                          # se asigna una flota comercial a una capital o 
+                                                          # puerto de otro país.
+        .BONUS_AMISTAD_MEJORA_RUTA                  3.0   # Bonus de amistad por mejora de ruta tanto terrestre
+                                                          # como comercial.
+                                                          # Nota: - No se considerara el ministerio de economia al ser un edificio
+                                                          #         a construir en territorio propio.
+        .BONUS_AMISTAD_TURNO_RUTA_SIMPLE            0.0   # Bonus de amistad por turno cuando se mantiene abierta una ruta terrestre o una ruta marítima con un país
+        .BONUS_AMISTAD_TURNO_RUTA_DOBLE             0.0   # Bonus de amistad por turno cuando se mantiene abierta una ruta terrestre además de una ruta marítima con el mismo pais
+        
+        .BONUS_RUTA_MARITIMA                      150.0   # Bonus al valor comercial de las rutas marítimas.
+                                                          # El cálculo del valor de una ruta terrestre y una marítima son muy similares.
+                                                          # Ambos tipos usan los mismos valores comerciales de los países que unen y 
+                                                          # los mismos porcentajes de explotación por nivel de la ruta.
+                                                          # Este modificador sirve para que las rutas marítimas generen un porcentaje 
+                                                          # mayor de beneficio que las rutas terrestres que unen los mismos países.
+]

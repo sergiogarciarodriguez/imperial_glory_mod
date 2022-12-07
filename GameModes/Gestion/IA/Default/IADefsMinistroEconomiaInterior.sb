@@ -1,0 +1,28 @@
+##################################################################################################
+# Definiciones asociadas a la IA del ministerio de economia e interior
+##################################################################################################
+
+# Indica el fichero sb donde se hallaran las definiciones para el report del ministerio
+.AIDEFS_REPORT_FILE "Game/GameModes/Gestion/IA/Default/IADefsMinistroEconomiaInteriorReport.sb"
+
+# Definicion de valores generales
+.DEFS_GENERALES
+[
+]
+
+# Pesos asociados a la formula que nos da el beneficio de realizar una accion
+# En el caso del peso ESFUERZO, este contemplara tres datos que tendran su propio peso
+.PESOS_BENEFICIO_ACCION
+[
+ .PREFERENCIA 0.65  # Interes de hacer una accion en relacion al perfil del jugador
+ .ESFUERZO	  0.35  # Interes de hacer una accion en relacion al esfuerzo (coste + turnos + mantenimiento)
+ .NECESIDAD	  0.0   # Interes de hacer una accion en relacion a la necesidad
+
+ .PESOS_ESFUERZO_ACCION
+ [
+  .COSTE         0.5 # Importancia del coste de la accion en el peso esfuerzo
+  .TURNOS		 0.3 # Importancia de los turnos necesarios en el peso esfuerzo
+  .MANTENIMIENTO 0.2 # Importancia del coste de mantenimiento en el peso esfuerzo
+ ] 
+]
+.AMORTIZACION_EDIFICIO 60 #Numero de turnos que se puede tardar en amortizar un edificio

@@ -1,0 +1,7 @@
+#############################################################################################################
+# Cursores para el modelo de gestion
+#############################################################################################################
+
+
+ [ .NAME CUR_DEFAULT      .TEXTURE "Game/UI/Cursores/puntero.tga"         .HOTSPOT [ .X 0 .Y 0 ] ]
+ [ .NAME CUR_CONTEXTHELP  .TEXTURE "Game/UI/Cursores/punteroHelp.tga"     .HOTSPOT [ .X 0 .Y 0 ] ]

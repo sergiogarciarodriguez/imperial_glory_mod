@@ -1,0 +1,8 @@
+# Parámetros de check box redondo amarillo 
+
+.PRIORITY 10
+.SX 25 .SY 26
+.ALPHA TRUE
+.SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 35 .V 4 ]
+.PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 66 .V 4 ]
+.SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 4 .V 4 ]

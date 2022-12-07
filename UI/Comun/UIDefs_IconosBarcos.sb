@@ -1,0 +1,68 @@
+
+.FILE_BITMAPS_AUSTRIA  "Game\UI\Red\BarcosAustria.tga"
+.FILE_BITMAPS_RUSIA    "Game\UI\Red\BarcosRusia.tga"
+.FILE_BITMAPS_PRUSIA   "Game\UI\Red\BarcosPrusia.tga"
+.FILE_BITMAPS_GRANB    "Game\UI\Red\BarcosInglaterra.tga"
+.FILE_BITMAPS_FRANCIA  "Game\UI\Red\BarcosFrancia.tga"
+.FILE_BITMAPS_ESPANYA  "Game\UI\Red\BarcosFrancia.tga"
+
+#---------------------------------------------- BITMAP CORBETA ----------------------------------------------	
+.BITMAP_CORBETA		
+[ 
+	.X 0 .Y 0 
+	.FILE "Game/UI/Red/BarcosAustria.tga" .U 21 .V 18 
+	.SX 125 .SY 147 
+	.PRIORITY 20
+	.ALPHA TRUE
+] 
+
+#---------------------------------------------- BITMAP CORBETA SEL ------------------------------------------	
+.BITMAP_CORBETA_SEL		
+[ 
+	.X 0 .Y 0 
+	.FILE "Game/UI/Red/BarcosAustria.tga" .U 21 .V 168 
+	.SX 125 .SY 147 
+	.PRIORITY 20
+	.ALPHA TRUE
+] 
+
+#---------------------------------------------- BITMAP FRAGATA ----------------------------------------------
+.BITMAP_FRAGATA
+[ 
+	.X 0 .Y 0 
+	.FILE "Game/UI/Red/BarcosAustria.tga" .U 149 .V 18 
+	.SX 125 .SY 147 
+	.PRIORITY 20
+	.ALPHA TRUE
+] 
+
+#---------------------------------------------- BITMAP FRAGATA SEL ------------------------------------------
+.BITMAP_FRAGATA_SEL		
+[ 
+	.X 0 .Y 0 
+	.FILE "Game/UI/Red/BarcosAustria.tga" .U 149 .V 168 
+	.SX 125 .SY 147 
+	.PRIORITY 20
+	.ALPHA TRUE
+] 
+
+#---------------------------------------------- BITMAP NAVIO ----------------------------------------------
+.BITMAP_NAVIO
+[ 
+	.X 0 .Y 0 
+	.FILE "Game/UI/Red/BarcosAustria.tga" .U 277 .V 18 
+	.SX 125 .SY 147 
+	.PRIORITY 20
+	.ALPHA TRUE
+] 
+
+#---------------------------------------------- BITMAP NAVIO SEL ------------------------------------------
+.BITMAP_NAVIO_SEL		
+[ 
+	.X 0 .Y 0 
+	.FILE "Game/UI/Red/BarcosAustria.tga" .U 277 .V 168 
+	.SX 125 .SY 147 
+	.PRIORITY 20
+	.ALPHA TRUE
+] 
+

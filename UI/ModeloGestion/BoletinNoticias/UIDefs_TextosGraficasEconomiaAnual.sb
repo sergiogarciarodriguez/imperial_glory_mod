@@ -1,0 +1,131 @@
+[
+  .TIPO UIC_TEXT .ID 'LBM1'
+  .PARAMS
+  [
+    .TEXT LTEXT_NEWS_ECO_MES1
+    .FONT "Fonts/MonotypeCorsiva11.fnt"
+    .X 320 .Y 585 .ALIGN CENTER
+    .COLOR [ .R 255 .G 255 .B 255 ]     
+  ]
+]
+
+[
+  .TIPO UIC_TEXT .ID 'LBM2'
+  .PARAMS
+  [
+    .TEXT LTEXT_NEWS_ECO_MES2
+    .FONT "Fonts/MonotypeCorsiva11.fnt"
+    .X 359 .Y 585 .ALIGN CENTER
+    .COLOR [ .R 255 .G 255 .B 255 ]     
+  ]
+]
+
+[
+  .TIPO UIC_TEXT .ID 'LBM3'
+  .PARAMS
+  [
+    .TEXT LTEXT_NEWS_ECO_MES3
+    .FONT "Fonts/MonotypeCorsiva11.fnt"
+    .X 398 .Y 585 .ALIGN CENTER
+    .COLOR [ .R 255 .G 255 .B 255 ]     
+  ]
+]
+
+[
+  .TIPO UIC_TEXT .ID 'LBM4'
+  .PARAMS
+  [
+    .TEXT LTEXT_NEWS_ECO_MES4
+    .FONT "Fonts/MonotypeCorsiva11.fnt"
+    .X 437 .Y 585 .ALIGN CENTER
+    .COLOR [ .R 255 .G 255 .B 255 ]     
+  ]
+]
+
+[
+  .TIPO UIC_TEXT .ID 'LBM5'
+  .PARAMS
+  [
+    .TEXT LTEXT_NEWS_ECO_MES5
+    .FONT "Fonts/MonotypeCorsiva11.fnt"
+    .X 476 .Y 585 .ALIGN CENTER
+    .COLOR [ .R 255 .G 255 .B 255 ]     
+  ]
+]
+
+[
+  .TIPO UIC_TEXT .ID 'LBM6'
+  .PARAMS
+  [
+    .TEXT LTEXT_NEWS_ECO_MES6
+    .FONT "Fonts/MonotypeCorsiva11.fnt"
+    .X 515 .Y 585 .ALIGN CENTER
+    .COLOR [ .R 255 .G 255 .B 255 ]     
+  ]
+]
+
+[
+  .TIPO UIC_TEXT .ID 'LBM7'
+  .PARAMS
+  [
+    .TEXT LTEXT_NEWS_ECO_MES7
+    .FONT "Fonts/MonotypeCorsiva11.fnt"
+    .X 554 .Y 585 .ALIGN CENTER
+    .COLOR [ .R 255 .G 255 .B 255 ]     
+  ]
+]
+
+[
+  .TIPO UIC_TEXT .ID 'LBM8'
+  .PARAMS
+  [
+    .TEXT LTEXT_NEWS_ECO_MES8
+    .FONT "Fonts/MonotypeCorsiva11.fnt"
+    .X 593 .Y 585 .ALIGN CENTER
+    .COLOR [ .R 255 .G 255 .B 255 ]     
+  ]
+]
+
+[
+  .TIPO UIC_TEXT .ID 'LBM9'
+  .PARAMS
+  [
+    .TEXT LTEXT_NEWS_ECO_MES9
+    .FONT "Fonts/MonotypeCorsiva11.fnt"
+    .X 632 .Y 585 .ALIGN CENTER
+    .COLOR [ .R 255 .G 255 .B 255 ]     
+  ]
+]
+
+[
+  .TIPO UIC_TEXT .ID 'LM10'
+  .PARAMS
+  [
+    .TEXT LTEXT_NEWS_ECO_MES10
+    .FONT "Fonts/MonotypeCorsiva11.fnt"
+    .X 671 .Y 585 .ALIGN CENTER
+    .COLOR [ .R 255 .G 255 .B 255 ]     
+  ]
+]
+
+[
+  .TIPO UIC_TEXT .ID 'LM11'
+  .PARAMS
+  [
+    .TEXT LTEXT_NEWS_ECO_MES11
+    .FONT "Fonts/MonotypeCorsiva11.fnt"
+    .X 710 .Y 585 .ALIGN CENTER
+    .COLOR [ .R 255 .G 255 .B 255 ]     
+  ]
+]
+
+[
+  .TIPO UIC_TEXT .ID 'LM12'
+  .PARAMS
+  [
+    .TEXT LTEXT_NEWS_ECO_MES12
+    .FONT "Fonts/MonotypeCorsiva11.fnt"
+    .X 749 .Y 585 .ALIGN CENTER
+    .COLOR [ .R 255 .G 255 .B 255 ]     
+  ]
+]

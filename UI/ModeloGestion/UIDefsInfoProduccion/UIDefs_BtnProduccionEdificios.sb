@@ -1,0 +1,42 @@
+ # Btn para la produccion de edificios
+ .COMPORTAMIENTO SIMPLE
+  
+ .SOLTADO [ .COLOR [ .R 255 .G 255 .B 255 ] ] 
+ .PULSADO [ .COLOR [ .R 255 .G 255 .B 255 ] .DX 2 .DY 2 ] 
+ .DISABLE [ .COLOR [ .R 128 .G 128 .B 128 ] ] 
+   
+ .TEXT LTEXT_UI_GESTION_PMGEST_CREAR_EDIFICIOS
+  
+ .FONT "Fonts/Times11.fnt"
+    
+ .FONDO
+ [ 
+  .X 7 .Y 731 .SX 120 .SY 30 .ALPHA TRUE .PRIORITY 10  
+  .SOLTADO      [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 3  .V 532 ]  
+  .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 129 .V 532 ]      
+  .PULSADO      [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 255 .V 532 ]    
+  .DISABLE      [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 885 .V 497 ]    
+ ]              
+ 
+ .IDSELECTSOUND "S_FXUI_CLICKBUTTON"  
+ .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"
+                    
+ .CENTER_AREA [ .X1 0 .Y1 0 .X2 120 .Y2 28 ]
+ #.ALIGN CENTER
+ 
+.TOOL_TIP 
+[ 
+ .TEXT LTEXT_UI_BATALLA_TT_PCMAPA_EDIFICIOS
+ .FONT "Fonts/Default.fnt" 
+ .X 32 .Y 32
+ .COLOR [ .R 255 .G 255 .B 255 ] 
+   
+ .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+]
+      
+.KEY
+[
+  .TECLA KEY_F1 .EVENTOS [ KEY_DOWN KEY_UP ]          
+]  
+
+       

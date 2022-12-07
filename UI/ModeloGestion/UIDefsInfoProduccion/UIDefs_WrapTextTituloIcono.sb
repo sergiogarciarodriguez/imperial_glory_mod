@@ -1,0 +1,7 @@
+# WrapText para mostrar el titulo para el icono del efectivo que se está produciendo actualmente
+# Las coordenadas relativas se definiran desde el exterior
+
+.X 13 .Y 428
+.SX 195 .SY 30
+.ALIGN CENTER
+.TEXT [ .FONT "Fonts/Times14.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]

@@ -1,0 +1,92 @@
+#=======================================================================================
+# Definición de sonidos para el modelo naval [ ENVIRONMENT ]
+#=======================================================================================
+
+%game/gamemodes/navalbattlemode/audio/audiovoldefs.sb
+
+.AUDIO 
+[
+  [ 
+    .IDNAME "S_MAR"
+    .PATH 
+    [
+      "Audio/Naval/fx/scenary/mar_1.ogg"
+      "Audio/Naval/fx/scenary/mar_2.ogg"
+      "Audio/Naval/fx/scenary/mar_3.ogg"
+    ]
+    .3D     FALSE
+    .LOOP   TRUE
+    .VOLUME !VOL_MIN
+    .TYPE   EFFECT
+    .GENERIC TRUE
+    .PAUSE 	FALSE
+  ]
+  
+  [ 
+    .IDNAME "S_VIENTO"
+    .PATH 
+    [
+      "Audio/Naval/fx/scenary/viento_1.ogg"
+    ]
+    .3D     FALSE
+    .LOOP   TRUE
+    .VOLUME !VOL_MIN
+    .TYPE   EFFECT
+    .GENERIC TRUE
+    .PAUSE 	FALSE
+  ]
+  
+  [ 
+    .IDNAME "S_GAVIOTAS"
+    .PATH 
+    [
+      "Audio/Naval/fx/scenary/gaviota_1.ogg"
+      "Audio/Naval/fx/scenary/gaviota_2.ogg"
+      "Audio/Naval/fx/scenary/gaviota_3.ogg"
+      "Audio/Naval/fx/scenary/gaviota_4.ogg"
+    ] 
+    .3D     FALSE
+    .LOOP   FALSE
+    .VOLUME !VOL_MIN
+    .TYPE   EFFECT
+    .GENERIC TRUE
+    .PAUSE 	FALSE
+  ]
+  
+  [ 
+    .IDNAME "S_LLUVIA"
+    .PATH 
+    [
+      "Audio/Naval/fx/scenary/lluvia1.ogg"
+      "Audio/Naval/fx/scenary/lluvia2.ogg"
+    ]
+    .3D     FALSE
+    .LOOP   TRUE
+    .VOLUME !VOL_MIN
+    .TYPE   EFFECT
+    .GENERIC TRUE
+    .PAUSE 	FALSE
+  ]
+  
+  [ 
+    .IDNAME "S_TRUENO"
+    .PATH 
+    [
+      "Audio/Battle/Fx/Climatology/trueno cerca_1.ogg"
+	  "Audio/Battle/Fx/Climatology/trueno cerca_2.ogg"
+	  "Audio/Battle/Fx/Climatology/trueno cerca_3.ogg"
+	  "Audio/Battle/Fx/Climatology/trueno cerca_4.ogg"
+	  "Audio/Battle/Fx/Climatology/trueno cerca_5.ogg"
+	  "Audio/Battle/Fx/Climatology/trueno cerca_6.ogg"
+	  "Audio/Battle/Fx/Climatology/trueno lejos_1.ogg"
+	  "Audio/Battle/Fx/Climatology/trueno lejos_2.ogg"
+	  "Audio/Battle/Fx/Climatology/trueno lejos_3.ogg"
+    ]
+    .3D     FALSE
+    .VOLUME !VOL_HI
+    .TYPE   EFFECT
+    .GENERIC TRUE
+    .PAUSE 	FALSE
+  ]
+  
+]

@@ -1,0 +1,114 @@
+#############################################################################################
+# Se muestra informacion sobre un efectivo militar (tropa / barco).
+# El Dlg constara de:
+# - Titulo
+# - Img del efectivo
+# - Texto informativo
+# - Btn de cierre / aceptacion
+#############################################################################################
+ 
+ # Se define la ventana                   
+ .ACTIVO FALSE
+ #.CENTER TRUE       
+ .MODAL TRUE
+ 
+ .DEPTH 4
+ 
+ # Fondo texto
+ .FONDO
+ [  
+  .X 256 .Y 128 .U 0 .V 0 .SX 512 .SY 512
+  .FILE "Game/UI/ModeloGestion/UIDefsDlgInfoGestion/PinformacionC0030.tga" 
+  .ALPHA TRUE .PRIORITY 202
+ ]              
+ 
+ 
+ # Caption               
+ .CAPTION
+ [
+  .XMARGEN 256 .YMARGEN 50 .HEIGHT 34
+  .TITLE 
+  [ 
+   .ALINEACION CENTER 
+   .TEXT "Información de edificios" 
+   .FONT "Fonts/Times12.fnt" 
+   .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+  .MOVIBLE FALSE
+ ]
+ 
+ .CONTROLES
+ [ 
+   # bitmap que irá detrás del texto del caption
+   [
+     .TIPO UIC_BITMAP .ID 'BMCP'
+     .PARAMS
+     [
+       .X 70 .Y 47
+       .FILE "Game/UI/ModeloGestion/UIDefsDlgInfoGestion/InformacionEdificios.tga"
+       .U 4 .V 6 .SX 380 .SY 45
+       .ALPHA TRUE .PRIORITY 203
+     ]
+   ]
+ 
+  # Texto de informacion   
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WTIN'
+   .PARAMS
+   [
+    .X 74 .Y 269 .SX 327 .SY 152
+    .ALIGN LEFT
+    
+    .FILE "Game/UI/ModeloGestion/UIDefsDlgInfoGestion/InformacionEdificios.tga" .U 7 .V 59 .FILE_SX 365
+    .ALPHA TRUE .PRIORITY 203
+    
+    .TEXT
+    [
+     .FONT "Fonts/MonoTypeCorsiva12.fnt" 
+     .COLOR [ .R 255 .G 255 .B 195 ]
+     .MSG  " "        
+    ]
+    
+    .VDX 327 .VDY 5
+    .VSX 6 .VSY 140
+    .SLIDER_VERTICAL
+    [
+      .PRIORITY 204
+      .STYLE DEFAULT_SLIDER_VERTICAL_GRANDE
+    ]    
+   ]   
+  ] 
+  
+  [
+   # Btn de salida
+   .TIPO UIC_BOTONTEXTO .ID 'EXIT'
+   .PARAMS 
+   [ 
+     .FONDO [ .X 394 .Y 423 .PRIORITY 203 ]
+     .IDSELECTSOUND "S_CANCELAR"
+     .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO" 
+
+     .KEY
+     [
+      .TECLA KEY_ESCAPE .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ]          
+     ]         
+     
+     .STYLE DEFAULT_X_BUTTON 
+   ]
+  ] 
+ ] 
+ 
+ # Se definen los parámetros de la imagen
+ .IMG
+ [
+   .X 182 .Y 96
+   # la textura aquí especificada es lo de menos puesto que va a ser cambiada en cada creación del diálogo, pero debemos poner
+   # una válida
+   .FILE "Game/UI/ModeloGestion/UIDefsDlgInfoGestion/InformacionEdificios.tga" 
+   .U 1 .V 1 .SX 155 .SY 170
+   .PRIORITY 203
+   .ALPHA TRUE
+ ]
+ 
+ # ruta de la que se van a coger las texturas para las imágenes de las tropas
+ .RUTA "Game/UI/ModeloGestion/Iconos/Tropas/"

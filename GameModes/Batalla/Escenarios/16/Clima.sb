@@ -1,0 +1,114 @@
+#---------------------------------------
+#    Script de definición de clima
+#---------------------------------------
+#    ESCENARIO: Hungria (16)
+#---------------------------------------
+.VERSION 2                          # En la versión 2 se pueden definir varios grupos de parámetros
+.CLIMA
+[
+  #-----------------
+  # Estado despejado
+  #-------------------
+  [
+	.TYPE "DESPEJADO"
+	.DURAC 0.0                     # En despejado solo afecta la duración
+  ] 	 
+
+  #--------------------
+  # Se avecina tormenta
+  #-------------------- 
+  [
+    .TYPE   "RAIN"
+    .ON TRUE                        # Estado de activación
+    
+    .PROB     0.5                   # Probabilidad de que llueva cada minuto
+    .INTERP   50.0                  # Tiempo de interpolación con los parámetros anteriores (en segundos)
+    .DURAC    120.0                  # Tiempo de duración del efecto
+	.TEX "textures/gotaGuay.tga"    # Textura de las partículas
+	.UP   12000.0                   # Altura de generacion de partículas
+	.DOWN     4900.0                # Altura de desaparicion de partículas
+	.FAR  13000.0                   # Distancia máxima de generación de partículas
+	.NEAR  2000.0                   # Distancia mínima de generación de partículas
+	.DENS     0.6                   # Densidad de partículas [0,1]
+	.FALL
+	[
+	  .SPEED 6000.0                  # Velocidad media de caida
+	  .VSPEED 900.0                  # Variación de la velocidad de caida [speed - vspeed, speed + vspeed]
+	  .ANGMAX 0.1                 # Variación del angulo de caida [0 angmax]
+	]
+	.WIND
+	[
+	  .SPEED 4000.0                   # Velocidad del viento
+	  .DIR      0.0                 # Dirección del viento (angulo en radianes)
+	  .VDIR   [0.8  1.13]           # Variación de la dirección [ amplitud  frecuencia_variacion ]
+	  .VSPEED [600.0  0.8]          # Variación de la velocidad [ amplitud  frecuencia_variacion ]
+	]
+	.SIZE
+	[
+	  .INCL TRUE                   # Inclinación. Si FALSE --> las partículas no se inclinan (bueno para nieve)
+	  .WH [4.5 80.0]               # [Ancho Alto] de la partícula
+	  .VWH [4.0 100.0]                # Variación máxima del tamaño [inc_ancho inc_alto] 	  
+	]
+	.SPLASH
+	[
+	  .TEX "textures/SPLASH.tga"  # Textura de las salpicaduras
+	  .SIZE [40.0 40.0]         # Tamaño de las salpicaduras
+	  .LIFE 190.0                   # Duración de las salpicaduras en ms
+	]
+  ]
+
+  #----------------
+  # Tormenta loca
+  #---------------- 
+  [
+    .TYPE   "RAIN"
+    .ON TRUE                        # Estado de activación
+    
+    .PROB     0.5                   # Probabilidad de que llueva cada minuto
+    .INTERP   30.0                  # Tiempo de interpolación con los parámetros anteriores (en segundos)
+    .DURAC    90.0                  # Tiempo de duración del efecto
+	.TEX "textures/gotaGuay.tga"    # Textura de las partículas
+	.UP   12000.0                   # Altura de generacion de partículas
+	.DOWN     4900.0                # Altura de desaparicion de partículas
+	.FAR  13000.0                   # Distancia máxima de generación de partículas
+	.NEAR  2000.0                   # Distancia mínima de generación de partículas
+	.DENS     0.7                   # Densidad de partículas [0,1]
+	.FALL
+	[
+	  .SPEED 6000.0                  # Velocidad media de caida
+	  .VSPEED 900.0                  # Variación de la velocidad de caida [speed - vspeed, speed + vspeed]
+	  .ANGMAX 0.1                 # Variación del angulo de caida [0 angmax]
+	]
+	.WIND
+	[
+	  .SPEED 4500.0                   # Velocidad del viento
+	  .DIR      0.0                 # Dirección del viento (angulo en radianes)
+	  .VDIR   [1.8  1.53]           # Variación de la dirección [ amplitud  frecuencia_variacion ]
+	  .VSPEED [800.0  1.0]          # Variación de la velocidad [ amplitud  frecuencia_variacion ]
+	]
+	.SIZE
+	[
+	  .INCL TRUE                   # Inclinación. Si FALSE --> las partículas no se inclinan (bueno para nieve)
+	  .WH [5.0 80.0]               # [Ancho Alto] de la partícula
+	  .VWH [4.0 100.0]                # Variación máxima del tamaño [inc_ancho inc_alto] 	  
+	]
+	.SPLASH
+	[
+	  .TEX "textures/SPLASH.tga"  # Textura de las salpicaduras
+	  .SIZE [50.0 50.0]         # Tamaño de las salpicaduras
+	  .LIFE 190.0                   # Duración de las salpicaduras en ms
+	]
+	#------------------------------------------------------------------------
+	# Sección para truenos. Si existe, la lluvia se acompañará de truenos
+	#------------------------------------------------------------------------
+	.THUNDER
+	[
+      .AMP   0.8         # Máximo valor de intensidad (de 0.0 a 1.0, valores superiores a 1.0 son válidos pero producirán gran saturación de blanco)
+      .FREC  0.04        # Frecuencia de las variaciones de intensidad (0.1 se puede considerar ya exagerado)
+      .DUR   300.0       # Duración de las variaciones
+      .FADE  300.0       # Duración del fade-out para evitar un salto al final. Entonces --> Duración trueno = DUR + FADE
+      .PROB  0.05        # Probabilidad de que haya un trueno (de 0.0 a 1.0)   0.5 --> hay truenos durante la mitad del tiempo
+      .SOUND "S_TRUENO"  # Sonido asociado (definido en el script correspondiente)
+	]
+  ]
+]

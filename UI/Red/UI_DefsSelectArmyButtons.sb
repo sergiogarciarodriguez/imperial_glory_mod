@@ -1,0 +1,268 @@
+####################################################################################################
+# Botones de seleccion de army
+####################################################################################################
+
+.POSICIONAMIENTO_TROPAS
+[
+  .X 191
+  .Y 254
+  .SX 87
+]
+
+.INFANTERIA
+[
+  .MILICIA
+  [
+  	.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+  	.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"               
+    .FONDO
+    [
+      .PRIORITY 215
+      .X  445 .Y  200 
+      .SX 76 .SY 80 
+      .ALPHA TRUE          
+  		.SOLTADO 					[ .FILE "Game/UI/Red/PlantillaAustria.tga" .U 1 .V 1 ] 
+  		.PULSADO    			[ .FILE "Game/UI/Red/PlantillaAustria.tga" .U 1 .V 1 ]
+    ]
+  ]
+  
+  .FUSILERO
+  [
+  	.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+  	.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"               
+    .FONDO
+    [
+      .PRIORITY 215
+      .X  445 .Y  200 
+      .SX 76 .SY 80 
+      .ALPHA TRUE          
+  		.SOLTADO 					[ .FILE "Game/UI/Red/PlantillaAustria.tga" .U 77 .V 1 ] 
+  		.PULSADO    			[ .FILE "Game/UI/Red/PlantillaAustria.tga" .U 77 .V 1 ]
+    ]
+  ]
+  
+  .TIRADOR
+  [
+  	.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+  	.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"               
+    .FONDO
+    [
+      .PRIORITY 215
+      .X  445 .Y  200 
+      .SX 76 .SY 80 
+      .ALPHA TRUE          
+  		.SOLTADO 					[ .FILE "Game/UI/Red/PlantillaAustria.tga" .U 152 .V 1 ] 
+  		.PULSADO    			[ .FILE "Game/UI/Red/BarcosAustriaMenu.tga" .U 291 	.V 281 ]
+    ]
+  ]
+  
+  
+  .CAZADOR
+  [
+  	.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+  	.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"               
+    .FONDO
+    [
+      .PRIORITY 215
+      .X  445 .Y  200 
+      .SX 76 .SY 80 
+      .ALPHA TRUE          
+  		.SOLTADO 					[ .FILE "Game/UI/Red/PlantillaAustria.tga" .U 229 .V 1 ] 
+  		.PULSADO    			[ .FILE "Game/UI/Red/PlantillaAustria.tga" .U 229 .V 1 ]
+    ]
+  ]
+  
+  .GRANADERO
+  [
+  	.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+  	.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"               
+    .FONDO
+    [
+      .PRIORITY 215
+      .X  445 .Y  200 
+      .SX 76 .SY 80 
+      .ALPHA TRUE          
+  		.SOLTADO 					[ .FILE "Game/UI/Red/PlantillaAustria.tga" .U 1 .V 81 ] 
+  		.PULSADO    			[ .FILE "Game/UI/Red/PlantillaAustria.tga" .U 1 .V 81 ]
+    ]
+  ]
+  
+  .ELITE
+  [
+  	.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+  	.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"               
+    .FONDO
+    [
+      .PRIORITY 215
+      .X  445 .Y  200 
+      .SX 76 .SY 80 
+      .ALPHA TRUE          
+  		.SOLTADO 					[ .FILE "Game/UI/Red/PlantillaAustria.tga" .U 77 .V 81 ] 
+  		.PULSADO    			[ .FILE "Game/UI/Red/PlantillaAustria.tga" .U 77 .V 81 ]
+    ]
+  ]
+]
+
+
+.CABALLERIA
+[
+  .LANCERO
+  [
+  	.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+  	.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"               
+    .FONDO
+    [
+      .PRIORITY 215
+      .X  445 .Y  200 
+      .SX 76 .SY 80 
+      .ALPHA TRUE          
+  		.SOLTADO 					[ .FILE "Game/UI/Red/PlantillaAustria.tga" .U 152 .V 81 ] 
+  		.PULSADO    			[ .FILE "Game/UI/Red/PlantillaAustria.tga" .U 152 .V 81 ]
+    ]
+  ]
+  
+  .CAB_CORACERO
+  [
+  	.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+  	.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"               
+    .FONDO
+    [
+      .PRIORITY 215
+      .X  445 .Y  200 
+      .SX 76 .SY 80 
+      .ALPHA TRUE          
+  		.SOLTADO 					[ .FILE "Game/UI/Red/PlantillaAustria.tga" .U 229 .V 81 ] 
+  		.PULSADO    			[ .FILE "Game/UI/Red/PlantillaAustria.tga" .U 229 .V 81 ]
+    ]
+  ]
+  
+  .CAB_DRAGON
+  [
+  	.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+  	.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"               
+    .FONDO
+    [
+      .PRIORITY 215
+      .X  445 .Y  200 
+      .SX 76 .SY 80 
+      .ALPHA TRUE          
+  		.SOLTADO 					[ .FILE "Game/UI/Red/PlantillaAustria.tga" .U 1 .V 161 ] 
+  		.PULSADO    			[ .FILE "Game/UI/Red/PlantillaAustria.tga" .U 1 .V 161 ]
+    ]
+  ]
+  
+  
+  .CAB_HUSAR
+  [
+  	.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+  	.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"               
+    .FONDO
+    [
+      .PRIORITY 215
+      .X  445 .Y  200 
+      .SX 76 .SY 80 
+      .ALPHA TRUE          
+  		.SOLTADO 					[ .FILE "Game/UI/Red/PlantillaAustria.tga" .U 77 .V 161 ] 
+  		.PULSADO    			[ .FILE "Game/UI/Red/PlantillaAustria.tga" .U 77 .V 161 ]
+    ]
+  ]
+]
+
+.ARTILLERIA
+[
+  .MORTERO
+  [
+  	.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+  	.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"               
+    .FONDO
+    [
+      .PRIORITY 215
+      .X  445 .Y  200 
+      .SX 76 .SY 80 
+      .ALPHA TRUE          
+  		.SOLTADO 					[ .FILE "Game/UI/Red/PlantillaAustria.tga" .U 152 .V 161 ] 
+  		.PULSADO    			[ .FILE "Game/UI/Red/PlantillaAustria.tga" .U 152 .V 161 ]
+    ]
+  ]
+  
+  
+  .CANON_CAMP
+  [
+  	.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+  	.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"               
+    .FONDO
+    [
+      .PRIORITY 215
+      .X  445 .Y  200 
+      .SX 76 .SY 80 
+      .ALPHA TRUE          
+  		.SOLTADO 					[ .FILE "Game/UI/Red/PlantillaAustria.tga" .U 229 .V 161 ] 
+  		.PULSADO    			[ .FILE "Game/UI/Red/PlantillaAustria.tga" .U 229 .V 161 ]
+    ]
+  ]
+  
+  
+  .CANON
+  [
+  	.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+  	.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"               
+    .FONDO
+    [
+      .PRIORITY 215
+      .X  445 .Y  200 
+      .SX 76 .SY 80 
+      .ALPHA TRUE          
+  		.SOLTADO 					[ .FILE "Game/UI/Red/PlantillaAustria.tga" .U 1 .V 241 ] 
+  		.PULSADO    			[ .FILE "Game/UI/Red/PlantillaAustria.tga" .U 1 .V 241 ]
+    ]
+  ]
+  
+  
+  .OBUS
+  [
+  	.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+  	.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"               
+    .FONDO
+    [
+      .PRIORITY 215
+      .X  445 .Y  200 
+      .SX 76 .SY 80 
+      .ALPHA TRUE          
+  		.SOLTADO 					[ .FILE "Game/UI/Red/PlantillaAustria.tga" .U 77 .V 241 ] 
+  		.PULSADO    			[ .FILE "Game/UI/Red/PlantillaAustria.tga" .U 77 .V 241 ]
+    ]
+  ]
+  
+  
+  .CANON_CAB
+  [
+  	.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+  	.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"               
+    .FONDO
+    [
+      .PRIORITY 215
+      .X  445 .Y  200 
+      .SX 76 .SY 80 
+      .ALPHA TRUE          
+  		.SOLTADO 					[ .FILE "Game/UI/Red/PlantillaAustria.tga" .U 152 .V 241 ] 
+  		.PULSADO    			[ .FILE "Game/UI/Red/PlantillaAustria.tga" .U 152 .V 241 ]
+    ]
+  ]
+  
+  
+  .OBUS_CAB
+  [
+  	.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+  	.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"               
+    .FONDO
+    [
+      .PRIORITY 215
+      .X  445 .Y  200 
+      .SX 76 .SY 80 
+      .ALPHA TRUE          
+  		.SOLTADO 					[ .FILE "Game/UI/Red/PlantillaAustria.tga" .U 229 .V 241 ] 
+  		.PULSADO    			[ .FILE "Game/UI/Red/PlantillaAustria.tga" .U 229 .V 241 ]
+    ]
+  ]
+]
+

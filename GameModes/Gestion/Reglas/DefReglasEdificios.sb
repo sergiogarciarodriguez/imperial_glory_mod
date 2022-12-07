@@ -1,0 +1,136 @@
+#############################################################################################
+# Definición de las reglas asociadas a algunos edificios.
+################################################################################################
+
+.OFICINA_RECAUDACION
+[
+        .DINERO         50.0  # Porcentaje de aumento en la producción de dinero
+]
+
+.DPTO_TESORO
+[
+        .DINERO         75.0  # Porcentaje de aumento en la producción de dinero
+]
+
+.MINISTERIO_HACIENDA
+[
+        .DINERO        100.0  # Porcentaje de aumento en la producción de dinero
+]
+
+.ASERRADERO
+[
+        .MATERIAS_PRIMAS       50.0  # Porcentaje de aumento en la producción de materias primas
+]
+
+.MINAS_PROFUNDIDAD
+[
+        .MATERIAS_PRIMAS       75.0  # Porcentaje de aumento en la producción de materias primas
+]
+
+.ALTOS_HORNOS
+[
+        .MATERIAS_PRIMAS      100.0  # Porcentaje de aumento en la producción de materias primas
+]
+
+.ALMACEN_VIVERES
+[
+        .COMIDA          0.0  # Porcentaje de aumento en la producción de comida
+                              # Nota: El almacen de viveres tiene también la regla asociada de que permite almacenar comida.
+]
+
+.REGADIOS
+[
+        .COMIDA         50.0  # Porcentaje de aumento en la producción de comida
+]
+
+.MINISTERIO_AGRICULTURA
+[
+        .COMIDA         75.0  # Porcentaje de aumento en la producción de comida
+]
+
+.HOSPITAL_LOCAL
+[
+        .POBLACION      50.0  # Porcentaje de aumento en la producción de población
+]      
+
+.HOSPITAL_MODERNO
+[
+        .POBLACION      75.0  # Porcentaje de aumento en la producción de población
+]      
+
+.CASA_ALISTAMIENTO
+[
+        .POBLACION     100.0  # Porcentaje de aumento en la producción de población
+]      
+
+.ESCUELA_BASICA
+[
+        .CIENCIA        50.0  # Porcentaje de aumento en la producción de puntos de ciencia
+]
+
+.LICEO
+[
+        .CIENCIA        100.0  # Porcentaje de aumento en la producción de puntos de ciencia
+]
+
+.UNIVERSIDAD
+[
+        .CIENCIA       150.0  # Porcentaje de aumento en la producción de puntos de ciencia
+]
+
+.CONSULADO
+[
+        .BONUS_AMISTAD_INICIAL               5.0 # Puntos de amistad recibidos al construir el edificio en un país
+                                                  # Nota: El consulado tiene también la regla de permitir comenzar la anexión pacífica de un país
+        .BONUS_AMISTAD_TURNO                 0.0  # Puntos de amistad por turno recibidos por tener construido el edificio
+]
+
+.PERIODICO
+[
+        .BONUS_AMISTAD_INICIAL               10.0 # Puntos de amistad recibidos al construir el edificio en un país
+        .BONUS_AMISTAD_TURNO                0.03   # Puntos de amistad por turno recibidos por tener construido el edificio
+]
+
+.CTO_CULTURAL
+[
+        .BONUS_AMISTAD_INICIAL              20.0  # Puntos de amistad recibidos al construir el edificio en un país
+        .BONUS_AMISTAD_TURNO                 0.05  # Puntos de amistad por turno recibidos por tener construido el edificio
+]
+
+.BOLETIN_ARMADA
+[
+        .BONUS_AMISTAD_INICIAL              10.0  # Puntos de amistad recibidos al construir el edificio en un país
+        .BONUS_AMISTAD_TURNO                 0.3 # Puntos de amistad por turno recibidos por tener construido el edificio
+]
+
+.INFRAESTRUCTURAS
+[
+        .BONUS_AMISTAD_INICIAL              2.5   # Puntos de amistad recibidos al construir el edificio en un país
+        .BONUS_AMISTAD_TURNO                0.5  # Puntos de amistad por turno recibidos por tener construido el edificio
+]
+
+.COMISARIA
+[
+        .PORCENTAJE_REDUCCION_ANEX_MILITAR 25.0 # Porcentaje de reduccion en los turnos de espera para anexion militar
+]
+
+.CUARTEL_ELITE
+[
+ .ESPACIO_CUARTEL   18     # Espacio que habilita en el cuartel la construccion vinculada
+]
+
+.CUARTEL_AVANZADO
+[
+ .ESPACIO_CUARTEL   12    # Espacio que habilita en el cuartel la construccion vinculada 
+]
+
+.CUARTEL_BASICO
+[
+ .ESPACIO_CUARTEL   7    # Espacio que habilita en el cuartel la construccion vinculada
+]
+
+.BANCO
+[
+ .MAX_DINERO_PRESTAMO 15000 # Cantidad maxima de dinero que puede recibir en un prestamo
+]
+

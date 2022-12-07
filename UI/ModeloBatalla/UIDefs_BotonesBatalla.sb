@@ -1,0 +1,772 @@
+#######################################################################################################
+# Definición de los botones batalla
+#######################################################################################################
+
+ # Orden parar
+ [ .KEY BOTON_PARAR
+   .PARAMS
+   [
+     .IDSELECTSOUND "S_UI_BORDENDIRECTA_PULSADO" 
+     .COMPORTAMIENTO SIMPLE
+     .KEY [ .TECLA LKEY_BATALLA_STOP ]
+     .FONDO
+     [
+       .SX 29 .SY 29 .ALPHA TRUE 
+       .SOLTADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 949 .V 946 ]    
+       .SELECCIONADO  [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 213 .V 330 ]                 
+       .PULSADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 281 .V 330 ] 
+       .DISABLE       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 349 .V 330 ]                 
+     ]
+     .TOOL_TIP 
+      [ 
+       .TEXT LTEXT_UI_BATALLA_TT_PARAR                   
+       .FONT "Fonts/gothic.fnt" 
+       .X 32 .Y 32 
+       .COLOR [ .R 255 .G 255 .B 255 ] 
+         
+       .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+      ]                          
+     
+    ]
+ ]
+               
+# Formacion columna              
+[ .KEY BOTON_FORMACION_COLUMNA
+  .PARAMS
+  [
+    .IDSELECTSOUND "S_UI_BFORMACION_PULSADO" 
+    .COMPORTAMIENTO FIJO
+    .KEY [ .TECLA LKEY_BATALLA_COLUMN_FORM ]
+    .FONDO
+    [
+      .SX 30 .SY 31 .ALPHA TRUE 
+      .SOLTADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 812 .V 977 ] 
+      .SELECCIONADO  [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 82 .V 402 ] 
+      .PULSADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 82 .V 435 ] 
+      .DISABLE       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 82 .V 468 ]                
+    ]
+    .TOOL_TIP 
+    [ 
+     .TEXT LTEXT_UI_BATALLA_TT_FCOLUMNA                  
+     .FONT "Fonts/gothic.fnt" 
+     .X 32 .Y 32
+     .COLOR [ .R 255 .G 255 .B 255 ] 
+       
+     .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+    ]
+    .DISABLEKEYONACTIVE FALSE
+  ]
+]              
+
+# Formacion linea simple
+[ .KEY BOTON_FORMACION_LINEA_SIMPLE
+  .PARAMS
+  [
+    .U 195 .V 411 .IDSELECTSOUND "S_UI_BFORMACION_PULSADO" 
+    .COMPORTAMIENTO FIJO
+    .KEY [ .TECLA LKEY_BATALLA_LINE_FORM ]
+    .FONDO
+    [
+      .SX 30 .SY 31 .ALPHA TRUE 
+      .SOLTADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 854 .V 977 ] 
+      .SELECCIONADO  [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 124 .V 402 ] 
+      .PULSADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 124 .V 435 ] 
+      .DISABLE       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 124 .V 468 ]                
+    ]
+    .TOOL_TIP 
+    [ 
+     .TEXT LTEXT_UI_BATALLA_TT_FLSIMPLE                  
+     .FONT "Fonts/gothic.fnt" 
+     .X 32 .Y 32
+     .COLOR [ .R 255 .G 255 .B 255 ] 
+       
+     .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+    ]
+    .DISABLEKEYONACTIVE FALSE
+  ]
+]
+
+# Formacion linea doble
+[ .KEY BOTON_FORMACION_LINEA_DOBLE
+  .PARAMS
+  [
+    .IDSELECTSOUND "S_UI_BFORMACION_PULSADO" 
+    .COMPORTAMIENTO FIJO
+    .KEY [ .TECLA LKEY_BATALLA_LINE_FORM ]
+    .FONDO
+    [
+      .SX 30 .SY 31 .ALPHA TRUE 
+      .SOLTADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 854 .V 977 ] 
+      .SELECCIONADO  [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 124 .V 402 ] 
+      .PULSADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 124 .V 435 ] 
+      .DISABLE       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 124 .V 468 ]                
+    ]
+    .TOOL_TIP 
+    [ 
+     .TEXT LTEXT_UI_BATALLA_TT_FLDOBLE                  
+     .FONT "Fonts/gothic.fnt" 
+     .COLOR [ .R 255 .G 255 .B 255 ] 
+       
+     .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+    ]
+    .DISABLEKEYONACTIVE FALSE
+  ]
+]
+
+# Formacion linea triple
+[ .KEY BOTON_FORMACION_LINEA_TRIPLE
+  .PARAMS
+  [
+    .IDSELECTSOUND "S_UI_BFORMACION_PULSADO" 
+    .COMPORTAMIENTO FIJO
+    .KEY [ .TECLA LKEY_BATALLA_LINE_FORM ]
+    .FONDO
+    [
+      .SX 30 .SY 31 .ALPHA TRUE 
+      .SOLTADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 854 .V 977 ] 
+      .SELECCIONADO  [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 124 .V 402 ] 
+      .PULSADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 124 .V 435 ] 
+      .DISABLE       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 124 .V 468 ]                
+    ]
+    .TOOL_TIP 
+    [ 
+     .TEXT LTEXT_UI_BATALLA_TT_FLTRIPLE                  
+     .FONT "Fonts/gothic.fnt" 
+     .X 32 .Y 32
+     .COLOR [ .R 255 .G 255 .B 255 ] 
+       
+     .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+    ]
+    .DISABLEKEYONACTIVE FALSE
+  ]
+]
+            
+ 
+# Formacion cuadro
+[ .KEY BOTON_FORMACION_CUADRO
+  .PARAMS
+  [
+    .IDSELECTSOUND "S_UI_BFORMACION_PULSADO" 
+    .COMPORTAMIENTO FIJO
+    .KEY [ .TECLA LKEY_BATALLA_SQUARE_FORM ]
+    .FONDO
+    [
+      .SX 30 .SY 31 .ALPHA TRUE 
+      .SOLTADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 896 .V 977 ] 
+      .SELECCIONADO  [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 166 .V 402 ] 
+      .PULSADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 166 .V 435 ] 
+      .DISABLE       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 166 .V 468 ]                
+    ]
+    .TOOL_TIP 
+    [ 
+    .TEXT LTEXT_UI_BATALLA_TT_FCUADRO                 
+    .FONT "Fonts/gothic.fnt" 
+    .X 32 .Y 32 
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+      
+    .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+    ]
+    .DISABLEKEYONACTIVE FALSE
+  ]
+] 
+
+# Ataque a distancia
+[ 
+ .KEY BOTON_ATAQUE_A_DISTANCIA
+ .PARAMS
+ [
+   .IDSELECTSOUND "S_UI_BATAQUE_PULSADO" 
+   .COMPORTAMIENTO FIJO
+   .KEY [ .TECLA LKEY_BATALLA_ATTACK_DISTANCE ]
+   .FONDO
+   [
+     .SX 29 .SY 29 .ALPHA TRUE
+     .SOLTADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 949 .V 910 ] 
+     .SELECCIONADO  [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 213 .V 294 ]  
+     .PULSADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 281 .V 294 ]  
+     .DISABLE       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 349 .V 294 ]  
+   ]
+   .TOOL_TIP 
+   [ 
+    .TEXT LTEXT_UI_BATALLA_TT_ADISTANCIA                 
+    .FONT "Fonts/gothic.fnt" 
+    .X 32 .Y 32 
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+      
+    .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+   ]
+   
+  ]
+] 
+
+# Ataque cuerpo a cuerpo
+[ .KEY BOTON_ATAQUE_CUERPO_CUERPO
+  .PARAMS
+  [
+    .IDSELECTSOUND "S_UI_BATAQUE_PULSADO" 
+    .COMPORTAMIENTO FIJO
+    .KEY [ .TECLA LKEY_BATALLA_ATTACK_HAND ]
+    .FONDO
+    [
+      .SX 29 .SY 29 .ALPHA TRUE 
+      .SOLTADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 985 .V 910 ] 
+      .SELECCIONADO  [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 249 .V 294 ] 
+      .PULSADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 317 .V 294 ] 
+      .DISABLE       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 385 .V 294 ]                  
+    ]
+    .TOOL_TIP 
+    [ 
+     .TEXT LTEXT_UI_BATALLA_TT_ACUEPCUEP 
+     .FONT "Fonts/gothic.fnt" 
+     .X 32 .Y 32 
+     .COLOR [ .R 255 .G 255 .B 255 ] 
+       
+     .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+    ]
+    
+   ]
+] 
+
+# Orden Modo defensivo
+[ .KEY BOTON_MODO_DEFENSIVO 
+ .PARAMS
+ [
+   .IDSELECTSOUND "S_UI_BORDENDIRECTA_PULSADO" 
+   .COMPORTAMIENTO SIMPLE
+   .KEY [ .TECLA LKEY_BATALLA_TOGGLE_MODE ]
+   .DBCLICK_AS_RELEASE TRUE
+   .FONDO
+   [
+     .SX 50 .SY 32 .ALPHA TRUE 
+     .SOLTADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 929 .V 446 ]                 
+     .SELECCIONADO  [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 929 .V 481 ] 
+     .PULSADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 929 .V 516 ] 
+     .DISABLE       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 929 .V 551 ]                 
+   ]
+   .TOOL_TIP 
+   [ 
+    .TEXT LTEXT_UI_BATALLA_TT_JUGADOR_AL_MANDO
+    .FONT "Fonts/gothic.fnt" 
+    .X 32 .Y 32
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+      
+    .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+   ]
+   
+ ]
+]
+
+# Orden Modo Agresivo
+[ .KEY BOTON_MODO_AGRESIVO
+ .PARAMS
+ [
+   .IDSELECTSOUND "S_UI_BORDENDIRECTA_PULSADO" 
+   .COMPORTAMIENTO SIMPLE
+   .KEY [ .TECLA LKEY_BATALLA_TOGGLE_MODE ]
+   .DBCLICK_AS_RELEASE TRUE
+   .FONDO
+   [
+     .SX 50 .SY 32 .ALPHA TRUE 
+     .SOLTADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 869 .V 446 ]                 
+     .SELECCIONADO  [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 869 .V 481 ] 
+     .PULSADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 869 .V 516 ] 
+     .DISABLE       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 869 .V 551 ]                 
+   ]
+   .TOOL_TIP 
+   [ 
+    .TEXT LTEXT_UI_BATALLA_TT_OFICIAL_AL_MANDO
+    .FONT "Fonts/gothic.fnt" 
+    .X 32 .Y 32
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+      
+    .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+   ]
+   
+ ]
+]
+
+# Orden Boton Correr
+[ .KEY BOTON_CORRER
+ .PARAMS
+ [
+   .IDSELECTSOUND "S_UI_BORDENDIRECTA_PULSADO" 
+   .COMPORTAMIENTO SIMPLE
+   .KEY [ .TECLA LKEY_BATALLA_TOGGLE_RUN ]
+   .DBCLICK_AS_RELEASE TRUE
+   .FONDO
+   [
+     .SX 50 .SY 32 .ALPHA TRUE 
+     .SOLTADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 929  .V 586 ]                 
+     .SELECCIONADO  [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 929  .V 621 ] 
+     .PULSADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 929  .V 656 ] 
+     .DISABLE       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 929  .V 691 ]                 
+   ]
+   .TOOL_TIP 
+   [ 
+    .TEXT LTEXT_UI_BATALLA_TT_TOGGLE_RUN
+    .FONT "Fonts/gothic.fnt" 
+    .X 32 .Y 32
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+      
+    .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+   ]
+   
+ ]
+]
+
+# Orden Boton Andar
+[ .KEY BOTON_ANDAR
+ .PARAMS
+ [
+   .IDSELECTSOUND "S_UI_BORDENDIRECTA_PULSADO" 
+   .COMPORTAMIENTO SIMPLE
+   .KEY [ .TECLA LKEY_BATALLA_TOGGLE_RUN ]
+   .DBCLICK_AS_RELEASE TRUE
+   .FONDO
+   [
+     .SX 50 .SY 32 .ALPHA TRUE 
+     .SOLTADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 869  .V 586 ]                 
+     .SELECCIONADO  [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 869  .V 621 ] 
+     .PULSADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 869  .V 656 ] 
+     .DISABLE       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 869  .V 691 ]                 
+   ]
+   .TOOL_TIP 
+   [ 
+    .TEXT LTEXT_UI_BATALLA_TT_TOGGLE_RUN
+    .FONT "Fonts/gothic.fnt" 
+    .X 32 .Y 32
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+      
+    .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+   ]
+   
+ ]
+]
+
+# Orden Hold Position
+[ .KEY BOTON_HOLD_POSITION
+ .PARAMS
+ [
+   .IDSELECTSOUND "S_UI_BORDENDIRECTA_PULSADO" 
+   .COMPORTAMIENTO FIJO
+   .KEY [ .TECLA LKEY_BATALLA_HOLD_POSITION ]
+   #.DBCLICK_AS_RELEASE TRUE
+   .FONDO
+   [
+     .SX 35 .SY 35 .ALPHA TRUE 
+     .SOLTADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 10 .V 505 ]     
+     .SELECCIONADO  [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 10 .V 543  ] 
+     .PULSADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 10 .V 581  ] 
+     .DISABLE       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 10 .V 619  ]                                  
+   ]
+   .TOOL_TIP 
+   [ 
+    .TEXT LTEXT_UI_BATALLA_TT_HOLD_POSITION
+    .FONT "Fonts/gothic.fnt" 
+    .X 32 .Y 32
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+      
+    .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+   ]
+   
+ ]
+]
+        
+# Orden Anclar/Desanclar
+[ .KEY BOTON_ANCLAR
+ .PARAMS
+ [
+   .IDSELECTSOUND "S_UI_BORDENDIRECTA_PULSADO" 
+   .COMPORTAMIENTO FIJO
+   .KEY [ .TECLA LKEY_BATALLA_ANCLAR ]
+   .DBCLICK_AS_RELEASE TRUE
+   .FONDO
+   [
+     .SX 33 .SY 33  .ALPHA TRUE 
+     .SOLTADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 983 .V 980 ]      
+     .SELECCIONADO  [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 245 .V 366 ] 
+     .PULSADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 313 .V 366 ] 
+     .DISABLE       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 381 .V 366 ]                                  
+   ]
+   .TOOL_TIP 
+   [ 
+    .TEXT LTEXT_UI_BATALLA_TT_ANCLAR
+    .FONT "Fonts/gothic.fnt" 
+    .X 32 .Y 32
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+      
+    .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+   ]
+   
+ ]
+]
+
+# Orden Retirada
+[ .KEY BOTON_RETIRADA
+ .PARAMS
+ [
+   .IDSELECTSOUND "S_UI_BORDENDIRECTA_PULSADO" 
+   .COMPORTAMIENTO SIMPLE
+   ##.KEY [ .TECLA LKEY_BATALLA_RETREAT ]
+   .DBCLICK_AS_RELEASE TRUE
+   .FONDO
+   [
+     .SX 35 .SY 27 .ALPHA TRUE 
+     .SOLTADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 294 .V 3 ]     
+     .PULSADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 332 .V 130 ] 
+     .SELECCIONADO  [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 332 .V 100 ] 
+     
+   ]
+   .TOOL_TIP 
+   [ 
+    .TEXT LTEXT_UI_BATALLA_TT_RETIRADA
+    .FONT "Fonts/gothic.fnt" 
+    .X 32 .Y 32
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+      
+    .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+   ]
+   
+ ]
+]
+ 
+# Botón de sistema
+[ .KEY BOTON_ESC
+ .PARAMS
+ [
+   .IDSELECTSOUND "S_UI_BORDENDIRECTA_PULSADO" 
+   .COMPORTAMIENTO SIMPLE
+   .DBCLICK_AS_RELEASE TRUE
+   .FONDO
+   [
+     .SX 33 .SY 32 .ALPHA TRUE 
+     .SOLTADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 702 .V 1 ]     
+     .PULSADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 296 .V 135 ] 
+     .SELECCIONADO  [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 296 .V 100 ] 
+     
+   ]
+   .TOOL_TIP 
+   [ 
+    .TEXT LTEXT_UI_BATALLA_OPCIONES
+    .FONT "Fonts/gothic.fnt" 
+    .X 32 .Y 32
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+      
+    .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+   ]
+   
+ ]
+] 
+        
+# Orden Tactica
+[ .KEY BOTON_TACTICA
+ .PARAMS
+ [
+   .IDSELECTSOUND "S_UI_BORDENDIRECTA_PULSADO" 
+   .COMPORTAMIENTO SIMPLE
+   .KEY [ .TECLA LKEY_BATALLA_CHANGE_TACTICS ]
+   .DBCLICK_AS_RELEASE TRUE
+   .FONT "Fonts/Times12.fnt"
+   .CENTER_AREA [ .X1 0 .Y1 0 .X2 127 .Y2 22 ]
+   .SOLTADO [ .COLOR [ .R 68 .G 68 .B 68 ] ]
+   .PULSADO [ .COLOR [ .R 68 .G 68 .B 68 ] .DX 3 .DY 2]
+   .FONDO
+   [
+     .SX 127 .SY 27 .ALPHA TRUE 
+     .SELECCIONADO  [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 78  .V 215 ]     
+     .PULSADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 78  .V 245 ] 
+     .SOLTADO  	    [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 806 .V 895 ] 
+   ]
+   .TOOL_TIP 
+   [ 
+    .TEXT LTEXT_UI_BATALLA_TT_TACTICA
+    .FONT "Fonts/gothic.fnt" 
+    .X 32 .Y 32
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+      
+    .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+   ]
+ ]
+]
+
+# Orden Grupos IAC
+[ .KEY BOTON_GRUPO_IAC
+ .PARAMS
+ [
+   .IDSELECTSOUND "S_UI_BORDENDIRECTA_PULSADO" 
+   .DBCLICK_AS_RELEASE TRUE
+   .KEY [ .TECLA LKEY_BATALLA_IAC_GROUP ]
+   .FONDO
+   [
+     .SX 31 .SY 30 .ALPHA TRUE 
+     .SOLTADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 431 .V 102 ]     
+     .SELECCIONADO  [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 431 .V 193 ] 
+     .PULSADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 431 .V 259 ] 
+     .DISABLE       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 431 .V 325 ]     
+   ]
+   .TOOL_TIP 
+   [ 
+    .TEXT LTEXT_UI_BATALLA_TT_DISTRIBUCION_IAC
+    .FONT "Fonts/gothic.fnt" 
+    .X 32 .Y 32
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+      
+    .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+   ]
+   .DISABLEKEYONACTIVE FALSE
+ ]
+]
+
+# Orden Grupos CIA
+[ .KEY BOTON_GRUPO_CIA
+ .PARAMS
+ [
+   .IDSELECTSOUND "S_UI_BORDENDIRECTA_PULSADO" 
+   .DBCLICK_AS_RELEASE TRUE
+   .KEY [ .TECLA LKEY_BATALLA_CIA_GROUP ]
+   .FONDO
+   [
+     .SX 31 .SY 30 .ALPHA TRUE 
+     .SOLTADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 473 .V 102 ]     
+     .SELECCIONADO  [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 473 .V 193 ] 
+     .PULSADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 473 .V 259 ] 
+     .DISABLE       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 473 .V 325 ]     
+   ]
+   .TOOL_TIP 
+   [ 
+    .TEXT LTEXT_UI_BATALLA_TT_DISTRIBUCION_CIA
+    .FONT "Fonts/gothic.fnt" 
+    .X 32 .Y 32
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+      
+    .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+   ]
+   .DISABLEKEYONACTIVE FALSE
+ ]
+]
+
+# Orden Grupos ACI
+[ .KEY BOTON_GRUPO_ACI
+ .PARAMS
+ [
+   .IDSELECTSOUND "S_UI_BORDENDIRECTA_PULSADO" 
+   .DBCLICK_AS_RELEASE TRUE
+   .KEY [ .TECLA LKEY_BATALLA_ACI_GROUP ]
+   .FONDO
+   [
+     .SX 31 .SY 30 .ALPHA TRUE 
+     .SOLTADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 515 .V 102 ]     
+     .SELECCIONADO  [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 515 .V 193 ] 
+     .PULSADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 515 .V 259 ] 
+     .DISABLE       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 515 .V 325 ]     
+   ]
+   .TOOL_TIP 
+   [ 
+    .TEXT LTEXT_UI_BATALLA_TT_DISTRIBUCION_ACI
+    .FONT "Fonts/gothic.fnt" 
+    .X 32 .Y 32
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+      
+    .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+   ]
+   .DISABLEKEYONACTIVE FALSE
+ ]
+]
+
+# Orden Grupos TGA
+[ .KEY BOTON_GRUPO_TGA
+ .PARAMS
+ [
+   .IDSELECTSOUND "S_UI_BORDENDIRECTA_PULSADO" 
+   .DBCLICK_AS_RELEASE TRUE
+   .KEY [ .TECLA LKEY_BATALLA_TGA_GROUP ]
+   .FONDO
+   [
+     .SX 31 .SY 30 .ALPHA TRUE 
+     .SOLTADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 431 .V 142 ]     
+     .SELECCIONADO  [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 431 .V 226 ] 
+     .PULSADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 431 .V 292 ] 
+     .DISABLE       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 431 .V 358 ]     
+   ]
+   .TOOL_TIP 
+   [ 
+    .TEXT LTEXT_UI_BATALLA_TT_DISTRIBUCION_TGA
+    .FONT "Fonts/gothic.fnt" 
+    .X 32 .Y 32
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+      
+    .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+   ]
+   .DISABLEKEYONACTIVE FALSE
+ ]
+]
+
+# Orden Grupos TGB
+[ .KEY BOTON_GRUPO_TGB
+ .PARAMS
+ [
+   .IDSELECTSOUND "S_UI_BORDENDIRECTA_PULSADO" 
+   .DBCLICK_AS_RELEASE TRUE
+   .KEY [ .TECLA LKEY_BATALLA_TGB_GROUP ]
+   .FONDO
+   [
+     .SX 31 .SY 30 .ALPHA TRUE 
+     .SOLTADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 473 .V 142 ]     
+     .SELECCIONADO  [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 473 .V 226 ] 
+     .PULSADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 473 .V 292 ] 
+     .DISABLE       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 473 .V 358 ]     
+   ]
+   .TOOL_TIP 
+   [ 
+    .TEXT LTEXT_UI_BATALLA_TT_DISTRIBUCION_TGB
+    .FONT "Fonts/gothic.fnt" 
+    .X 32 .Y 32
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+      
+    .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+   ]
+   .DISABLEKEYONACTIVE FALSE
+ ]
+]
+
+# Orden Grupos TGC
+[ .KEY BOTON_GRUPO_TGC
+ .PARAMS
+ [
+   .IDSELECTSOUND "S_UI_BORDENDIRECTA_PULSADO" 
+   .DBCLICK_AS_RELEASE TRUE
+   .KEY [ .TECLA LKEY_BATALLA_TGC_GROUP ]
+   .FONDO
+   [
+     .SX 31 .SY 30 .ALPHA TRUE 
+     .SOLTADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 515 .V 142 ]     
+     .SELECCIONADO  [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 515 .V 226 ] 
+     .PULSADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 515 .V 292 ] 
+     .DISABLE       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 515 .V 358 ]     
+   ]
+   .TOOL_TIP 
+   [ 
+    .TEXT LTEXT_UI_BATALLA_TT_DISTRIBUCION_TGC
+    .FONT "Fonts/gothic.fnt" 
+    .X 32 .Y 32
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+      
+    .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+   ]
+   .DISABLEKEYONACTIVE FALSE
+ ]
+]
+
+
+# Accion IrA
+[ .KEY BOTON_IR_A
+ .PARAMS
+ [
+   .IDSELECTSOUND "S_UI_BORDENDIRECTA_PULSADO" 
+   .DBCLICK_AS_RELEASE TRUE   
+   .KEY [ .TECLA LKEY_BATALLA_GO_TO ]
+   .COMPORTAMIENTO FIJO
+   .FONDO
+   [
+     .SX 29 .SY 29 .ALPHA TRUE 
+     .SOLTADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 985 .V 946 ]     
+     .SELECCIONADO  [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 249 .V 330 ] 
+     .PULSADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 317 .V 330 ] 
+     .DISABLE       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 385 .V 330 ]     
+   ]
+   .TOOL_TIP 
+   [ 
+    .TEXT LTEXT_UI_BATALLA_TT_IR_A
+    .FONT "Fonts/gothic.fnt" 
+    .X 32 .Y 32
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+      
+    .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+   ]
+   
+ ]
+]
+
+# Accion Apostar
+[ .KEY BOTON_APOSTAR
+ .PARAMS
+ [
+   .IDSELECTSOUND "S_UI_BORDENDIRECTA_PULSADO" 
+   .DBCLICK_AS_RELEASE TRUE
+   .KEY [ .TECLA LKEY_BATALLA_GET_IN ]
+   .COMPORTAMIENTO FIJO
+   .FONDO
+   [
+     .SX 29 .SY 29 .ALPHA TRUE 
+     .SOLTADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 985 .V 982 ]     
+     .SELECCIONADO  [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 249 .V 366 ] 
+     .PULSADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 317 .V 366 ] 
+     .DISABLE       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 385 .V 366 ]     
+   ]
+   .TOOL_TIP 
+   [ 
+    .TEXT LTEXT_UI_BATALLA_TT_APOSTAR
+    .FONT "Fonts/gothic.fnt" 
+    .X 32 .Y 32
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+      
+    .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+   ]
+  
+ ]
+]
+
+# Accion Desapostar
+[ .KEY BOTON_DESAPOSTAR
+ .PARAMS
+ [
+   .IDSELECTSOUND "S_UI_BORDENDIRECTA_PULSADO" 
+   .DBCLICK_AS_RELEASE TRUE
+   .KEY [ .TECLA LKEY_BATALLA_GET_OUT ]
+   .FONDO
+   [
+     .SX 29 .SY 29 .ALPHA TRUE 
+     .SOLTADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 949 .V 982 ]     
+     .SELECCIONADO  [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 213 .V 366 ] 
+     .PULSADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 281 .V 366 ] 
+     .DISABLE       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 349 .V 366 ]     
+   ]
+   .TOOL_TIP 
+   [ 
+    .TEXT LTEXT_UI_BATALLA_TT_DESAPOSTAR
+    .FONT "Fonts/gothic.fnt" 
+    .X 32 .Y 32
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+      
+    .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+   ]
+ ]
+]
+
+# Accion Refuerzos
+[ .KEY BOTON_REFUERZOS
+ .PARAMS
+ [
+   .IDSELECTSOUND "S_UI_BORDENDIRECTA_PULSADO" 
+   .DBCLICK_AS_RELEASE TRUE
+   ##.KEY [ .TECLA LKEY_BATALLA_REINFORCEMENT ]
+   .FONDO
+   [
+     .SX 88 .SY 36 .ALPHA TRUE 
+     .SOLTADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 936 .V 860 ]     
+     .SELECCIONADO  [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 259 .V 172 ] 
+     .PULSADO       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 259 .V 211 ] 
+     .DISABLE       [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 259 .V 250 ]     
+   ]
+   .TOOL_TIP 
+   [ 
+    .TEXT LTEXT_UI_BATALLA_TT_AGPREFUERZOS
+    .FONT "Fonts/gothic.fnt" 
+    .X 32 .Y 32
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+      
+    .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+   ]
+ ]
+]
+

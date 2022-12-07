@@ -1,0 +1,82 @@
+#---------------------------------------------------------------------------------------------------------
+# Definimos la configuración de terrenos
+# Cada tipo de configuración
+#---------------------------------------------------------------------------------------------------------
+.TABLAS_COSTES_TERRENO
+[
+    # Por defecto todas las configuraciones especificadas en el fichero
+    # \napoleon\app\modeloBatalla\TablaCostesTerreno.h
+    # tendrán todos los costes a 1.f
+    # aquí se deben especificar las variaciones
+    [
+      .NAME CT_CRIATURA_FRIO
+      .ENTRY
+      [
+        [ TT_TERRENO_ARIDO     1.9 ]
+        [ TT_CAMINO            1.5 ]
+        [ TT_NIEVE_NO_PROFUNDA 0.5 ]
+        [ TT_TERRENO_HELADO    0.8 ]
+        [ TT_BARRIZAL          1.3 ]
+        [ TT_NIEVE_PROFUNDA    1.3 ]
+        [ TT_TERRENO_ELEVADO   1.3 ]
+        [ TT_RIO_PROFUNDO      2.0 ]
+        [ TT_BARRANCO          2.0 ]
+        [ TT_PANTANO           1.8 ]
+        [ TT_CIENAGA           1.8 ]
+        [ TT_HIERBAS_ALTAS     0.5 ]
+        [ TT_BOSQUE            0.1 ]
+        [ TT_INTERIOR          2.0 ]
+        [ TT_PASO_ESTRECHO     2.0 ]
+        [ TT_OBSTACULO         2.0 ]
+      ]
+    ]
+    [
+      .NAME CT_CRIATURA_TEMPLADO
+      .ENTRY
+      [      
+        [ TT_TERRENO_ARIDO     1.5 ]
+        [ TT_ZONA_VERDE        0.2 ]
+        [ TT_CAMINO            1.5 ]
+        [ TT_NIEVE_NO_PROFUNDA 1.3 ]
+        [ TT_TERRENO_HELADO    1.8 ]
+        [ TT_BARRIZAL          1.3 ]
+        [ TT_NIEVE_PROFUNDA    1.9 ]
+        [ TT_TERRENO_CULTIVADO 0.8 ]
+        [ TT_TERRENO_ELEVADO   1.5 ]
+        [ TT_TRIGALES          0.8 ]
+        [ TT_RIO_POCO_PROFUNDO 0.8 ]
+        [ TT_RIO_PROFUNDO      2.0 ]
+        [ TT_BARRANCO          2.0 ]
+        [ TT_PANTANO           1.5 ]
+        [ TT_CIENAGA           1.6 ]
+        [ TT_HIERBAS_ALTAS     0.3 ]
+        [ TT_BOSQUE            0.2 ]
+        [ TT_INTERIOR          2.0 ]
+        [ TT_PASO_ESTRECHO     2.0 ]
+        [ TT_OBSTACULO         2.0 ]
+      ]
+    ]
+    [
+      .NAME CT_CRIATURA_ARIDO
+      .ENTRY
+      [
+        [ TT_TERRENO_ARIDO       0.5 ]
+        [ TT_CAMINO              1.5 ]
+        [ TT_NIEVE_NO_PROFUNDA   1.8 ]
+        [ TT_TERRENO_HELADO      1.8 ]
+        [ TT_BARRIZAL            1.5 ]
+        [ TT_NIEVE_PROFUNDA      1.9 ]
+        [ TT_TERRENO_ELEVADO     1.5 ]
+        [ TT_RIO_POCO_PROFUNDO   0.1 ]
+        [ TT_RIO_PROFUNDO        2.0 ]
+        [ TT_BARRANCO            2.0 ]
+        [ TT_PANTANO             0.3 ]
+        [ TT_CIENAGA             0.3 ]
+        [ TT_HIERBAS_ALTAS       0.2 ]
+        [ TT_BOSQUE              0.3 ]
+        [ TT_INTERIOR            2.0 ]
+        [ TT_PASO_ESTRECHO       2.0 ]
+        [ TT_OBSTACULO           2.0 ]
+      ]
+    ]
+]

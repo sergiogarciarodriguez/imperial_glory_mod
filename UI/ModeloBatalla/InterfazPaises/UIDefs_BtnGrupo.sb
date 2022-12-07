@@ -1,0 +1,18 @@
+#######################################################################################################
+# Definición del botoncito que indica el númeto de grupo de una tropa :)
+#######################################################################################################
+
+# el offset respecto a la pos del BtnTropa.
+.DX 47
+.DY 12
+
+# Los params del CUIC_BotonTexto correspondiente
+.BOTONTEXTO
+[
+ .TEXT " "
+ .FONT "Fonts/Times11.fnt"
+ .SCALE 1.0
+ .SOLTADO [ .COLOR [ .R 255 .G 255 .B 255 ] ] 
+ .PULSADO [ .COLOR [ .R 255 .G 255 .B 255 ] ] 
+ .COMPORTAMIENTO MANUAL
+]

@@ -1,0 +1,91 @@
+#Bitmap Rama Recursos
+[
+  .TIPO UIC_BITMAP .ID 'BMRR'
+  .PARAMS
+  [
+    .X 873 .Y 536 
+    .U 1 .V 949 .SX 13 .SY 12
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/MenuArbolTecnologias.tga" 
+    .ALPHA TRUE .PRIORITY 203
+  ]
+]
+#Texto Rama Recursos
+[
+  .TIPO UIC_TEXT .ID 'LBRR'
+  .PARAMS
+  [
+    .TEXT LTEXT_UI_TECNOLOGIAS_RAMA_RECURSOS
+    .FONT "Fonts/MonotypeCorsiva12.fnt"
+    .X 894 .Y 536
+    .COLOR [ .R 255 .G 255 .B 255 ]     
+  ]
+]
+
+#Bitmap Rama Militar
+[
+  .TIPO UIC_BITMAP .ID 'BMRM'
+  .PARAMS
+  [
+    .X 873 .Y 558 
+    .U 17 .V 949 .SX 13 .SY 12
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/MenuArbolTecnologias.tga"
+    .ALPHA TRUE .PRIORITY 203
+  ]
+]
+#Texto Rama Militar
+[
+  .TIPO UIC_TEXT .ID 'LBRM'
+  .PARAMS
+  [
+    .TEXT LTEXT_UI_TECNOLOGIAS_RAMA_MILITAR
+    .FONT "Fonts/MonotypeCorsiva12.fnt"
+    .X 894 .Y 558
+    .COLOR [ .R 255 .G 255 .B 255 ]     
+  ]
+]    
+
+#Bitmap Rama política
+[
+  .TIPO UIC_BITMAP .ID 'BMRP'
+  .PARAMS
+  [
+    .X 873 .Y 580
+    .U 33 .V 949 .SX 13 .SY 12
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/MenuArbolTecnologias.tga"
+    .ALPHA TRUE .PRIORITY 203
+  ]
+]
+#Texto Rama política
+[
+  .TIPO UIC_TEXT .ID 'LBRP'
+  .PARAMS
+  [
+    .TEXT LTEXT_UI_TECNOLOGIAS_RAMA_POLITICA
+    .FONT "Fonts/MonotypeCorsiva12.fnt"
+    .X 894 .Y 580
+    .COLOR [ .R 255 .G 255 .B 255 ]     
+  ]
+]  
+
+#Bitmap Rama Comercial
+[
+  .TIPO UIC_BITMAP .ID 'BMRC'
+  .PARAMS
+  [
+    .X 873 .Y 602
+    .U 49 .V 949 .SX 13 .SY 12
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/MenuArbolTecnologias.tga"
+    .ALPHA TRUE .PRIORITY 203
+  ]
+]
+#Texto Rama Comercial
+[
+  .TIPO UIC_TEXT .ID 'LBRC'
+  .PARAMS
+  [
+    .TEXT LTEXT_UI_TECNOLOGIAS_RAMA_COMERCIAL
+    .FONT "Fonts/MonotypeCorsiva12.fnt"
+    .X 894 .Y 602
+    .COLOR [ .R 255 .G 255 .B 255 ]     
+  ]
+]

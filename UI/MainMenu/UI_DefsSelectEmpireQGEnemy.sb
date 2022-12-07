@@ -1,0 +1,15 @@
+##############################################################################################################
+# 
+# Pantalla de imperio del enemigo para quick game 
+#
+##############################################################################################################
+
+#--------------------------------------------- MODO DE FUNCIONAMIENTO----------------------------------------
+# Modo 0 -> Campaña, muestra todos los datos y todos los imperios
+# Modo 1 -> Quick seleccion imperio, oculta datos de recursos y muestra todos los imperios
+# Modo 2 -> Quick seleccion imperio oponente, oculta datos de recursos y muestra todos los imperios menos el seleccionado antes
+.MODO_FUNCIONAMIENTO 2
+
+#------------------------------------------------ DATOS COMUNES ---------------------------------------------
+%Game\UI\MainMenu\UIDefs_SelectEmpire.sb
+

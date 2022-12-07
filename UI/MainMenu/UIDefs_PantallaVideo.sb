@@ -1,0 +1,219 @@
+##############################################################################################################
+# Pantalla de opciones de video
+##############################################################################################################
+
+# Menu de selección de opciones de video
+
+# Imagen de fondo
+# [ .TIPO UIC_BITMAP .ID 'FOND' .PARAMS [ .FILE "Game/UI/MainMenu/OpcionesVideo.tga" .X 0 .Y 0 .SX 1024 .SY 768 .U 0 .V 256 ] ]	                  
+
+ [ .TIPO UIC_TEXT .ID 'LB_V' 
+  .PARAMS 
+  [ 
+   .TEXT LTEXT_UI_MAINMENU_OPCIONES_VIDEO
+    .FONT "Fonts/Default.fnt"
+    .X 300 .Y 16 .SCALE 2.0 
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+ ] # ~TEXT
+ 
+ # Texto Resolucion
+ [ .TIPO UIC_TEXT .ID 'LB_R' 
+  .PARAMS 
+  [ 
+   .TEXT LTEXT_UI_MAINMENU_VIDEO_RESOLUCION
+   .FONT "Fonts/Default.fnt"
+   .X 150 .Y 192 .SCALE 1.0 
+   .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+ ] # ~TEXT
+ 
+ [ .TIPO UIC_TEXT .ID 'LBRS' 
+  .PARAMS 
+  [ 
+   .TEXT LTEXT_UI_MAINMENU_VIDEO_RESOLUCION
+   .FONT "Fonts/Default.fnt"
+   .X 550 .Y 162 .SCALE 1.0 
+   .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+ ] # ~TEXT
+ 
+ # Slider Resolucion
+ [ .TIPO UIC_SLIDER .ID 'SL_R'
+  .PARAMS
+  [ 
+    .X 450 .Y 192 
+    # Estilo del slider
+    %Game/UI/Comun/UIDefs_DefaultSliderHorizontal.sb      
+  ]
+ ] # ~ SLIDER
+  
+ # Texto Profundidad de color
+ [ .TIPO UIC_TEXT .ID 'LB_P' 
+  .PARAMS 
+  [ 
+   .TEXT LTEXT_UI_MAINMENU_VIDEO_BPP
+   .FONT "Fonts/Default.fnt"
+   .X 150 .Y 270 .SCALE 1.0 
+   .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+ ] # ~TEXT
+ 
+ [ .TIPO UIC_TEXT .ID 'LBPP' 
+  .PARAMS 
+  [ 
+   .TEXT LTEXT_UI_MAINMENU_VIDEO_BPP
+   .FONT "Fonts/Default.fnt"
+   .X 550 .Y 238 .SCALE 1.0 
+   .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+ ] # ~TEXT
+
+ # Slider Profundidad de color
+ [ .TIPO UIC_SLIDER .ID 'SL_B'
+  .PARAMS
+  [ 
+    .X 450 .Y 268 
+    # Estilo del slider
+    %Game/UI/Comun/UIDefs_DefaultSliderHorizontal.sb      
+  ]
+ ] # ~ SLIDER
+ 
+ 
+ #Texto Calidad de animaciones 
+ [ .TIPO UIC_TEXT .ID 'LB_A' 
+  .PARAMS 
+  [ 
+   .TEXT LTEXT_UI_MAINMENU_VIDEO_ANIMACION
+   .FONT "Fonts/Default.fnt"
+   .X 150 .Y 338 .SCALE 1.0 
+   .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+ ] # ~TEXT
+ [ .TIPO UIC_TEXT .ID 'LBCA' 
+  .PARAMS 
+  [ 
+   .TEXT LTEXT_UI_MAINMENU_VIDEO_ANIMACION
+   .FONT "Fonts/Default.fnt"
+   .X 550 .Y 308 .SCALE 1.0 
+   .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+ ] # ~TEXT
+ # Slider Calidad de Animaciones 
+ [ .TIPO UIC_SLIDER .ID 'SL_A'
+  .PARAMS
+  [ 
+    .X 450 .Y 338 .MIN 0 .MAX 2 .ACTUAL 2
+    # Estilo del slider
+    %Game/UI/Comun/UIDefs_DefaultSliderHorizontal.sb           
+  ]
+ ] # ~ SLIDER
+  
+ 
+ # Texto Interpolación animaciones
+ [ .TIPO UIC_TEXT .ID 'LB_I' 
+  .PARAMS 
+  [ 
+   .TEXT LTEXT_UI_MAINMENU_VIDEO_INTERP
+   .FONT "Fonts/Default.fnt"
+   .X 150 .Y 406 .SCALE 1.0 
+   .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+ ] # ~TEXT
+ # CheckBox Si/No
+ [ .TIPO UIC_CHECKBOX .ID 'CB_I'
+  .PARAMS
+  [  
+     .COMPORTAMIENTO FIJO
+     # Estilo del CheckBox
+     .FONDO
+     [
+       .X 450 .Y 406 
+       %Game/UI/Comun/UIDefs_DefaultCheckBox.sb
+     ]
+  ]            
+ ] # ~ CHECKBOX                      
+ 
+  
+ # Texto Filtro trilineal
+ [ .TIPO UIC_TEXT .ID 'LB_T' 
+  .PARAMS 
+  [ 
+   .TEXT LTEXT_UI_MAINMENU_VIDEO_TRIFILT
+   .FONT "Fonts/Default.fnt"
+   .X 150 .Y 474 .SCALE 1.0 
+   .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+ ] # ~TEXT
+
+ # CheckBox Si/No
+ [ .TIPO UIC_CHECKBOX .ID 'CB_T'
+  .PARAMS
+  [   
+     .COMPORTAMIENTO FIJO
+     # Estilo del CheckBox
+     .FONDO
+     [
+       .X 450 .Y 474
+       %Game/UI/Comun/UIDefs_DefaultCheckBox.sb
+     ]
+  ]            
+ ] # ~ CHECKBOX                      
+ 
+ 
+ # Texto particulas
+ [ .TIPO UIC_TEXT .ID 'LB_P' 
+  .PARAMS 
+  [ 
+   .TEXT LTEXT_UI_MAINMENU_VIDEO_PARTICULAS
+   .FONT "Fonts/Default.fnt"
+   .X 150 .Y 542 .SCALE 1.0 
+   .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+ ] # ~TEXT
+ [ .TIPO UIC_TEXT .ID 'LBCP' 
+  .PARAMS 
+  [ 
+   .TEXT LTEXT_UI_MAINMENU_VIDEO_PARTICULAS
+   .FONT "Fonts/Default.fnt"
+   .X 550 .Y 512 .SCALE 1.0 
+   .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+ ] # ~TEXT
+ # Slider Particulas
+ [ .TIPO UIC_SLIDER .ID 'SL_P'
+  .PARAMS
+  [ 
+    .X 450 .Y 542 .MIN 0 .MAX 2 .ACTUAL 2
+    # Estilo del slider
+    %Game/UI/Comun/UIDefs_DefaultSliderHorizontal.sb      
+  ]
+ ] # ~ SLIDER
+  
+
+ # Opcion BACK
+ [ .TIPO UIC_OPCIONGRAFICA .ID 'O_BV' 
+  .PARAMS 
+  [ 
+   .COMPORTAMIENTO SIMPLE
+   .X 438 .Y 617 .SX 167 .SY 37 .ALPHA TRUE    
+   .NO_SELECT [ .FILE "Game/UI/MainMenu/SeleccionImperio.tga"        .U 438 .V 617 ]
+   .CLICK     [ .FILE "Game/UI/MainMenu/SeleccionImperioButtons.tga" .U 1   .V 341 ]
+   .SELECT    [ .FILE "Game/UI/MainMenu/SeleccionImperioButtons.tga" .U 1   .V 381 ] 
+   .IDSELECTSOUND "S_MAINMENU_OPTION_SELECT" .IDCLICKSOUND "S_MAINMENU_OPTION_CLICK"                
+  ] 
+ ]
+
+  # Opcion Accept
+ [ .TIPO UIC_OPCIONGRAFICA .ID 'O_AV' 
+  .PARAMS 
+  [ 
+   .COMPORTAMIENTO SIMPLE
+   .X 638 .Y 617 .SX 167 .SY 37 .ALPHA TRUE    
+   .NO_SELECT [ .FILE "Game/UI/MainMenu/SeleccionImperio.tga"        .U 438 .V 617 ]
+   .CLICK     [ .FILE "Game/UI/MainMenu/SeleccionImperioButtons.tga" .U 1   .V 341 ]
+   .SELECT    [ .FILE "Game/UI/MainMenu/SeleccionImperioButtons.tga" .U 1   .V 381 ] 
+   .IDSELECTSOUND "S_MAINMENU_OPTION_SELECT" .IDCLICKSOUND "S_MAINMENU_OPTION_CLICK"                
+  ] 
+ ]
+

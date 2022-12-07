@@ -1,0 +1,432 @@
+###############################################################################################################
+# Tropas Austriacas
+# Mantiene el pool de los botones asociados a las tropas
+# En principio, los botones no deberan de aparecer de forma muy frecuente
+###############################################################################################################
+
+################# FILA 1
+
+[
+ .KEY AUSTRIA_TENIENTE_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 1 .V 1 .ALPHA TRUE ]
+]
+
+[
+ .KEY AUSTRIA_TENIENTE_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 512 .V 1 .ALPHA TRUE ]
+]
+
+[
+ .KEY AUSTRIA_TENIENTE_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 1 .V 310 .ALPHA TRUE ]
+]
+
+[
+ .KEY AUSTRIA_TENIENTE_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 512 .V 310 .ALPHA TRUE ]
+]
+
+[
+ .KEY AUSTRIA_CAPITAN_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 74 .V 1 .ALPHA TRUE ]
+]
+
+[
+ .KEY AUSTRIA_CAPITAN_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 585 .V 1 .ALPHA TRUE ]
+]
+
+[
+ .KEY AUSTRIA_CAPITAN_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 74 .V 310 .ALPHA TRUE ]
+]
+
+[
+ .KEY AUSTRIA_CAPITAN_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 585 .V 310 .ALPHA TRUE ]
+]
+
+[
+ .KEY AUSTRIA_GENERAL_BTN_NORMAL 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 147 .V 1 .ALPHA TRUE ] 
+]
+
+[
+ .KEY AUSTRIA_GENERAL_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 658 .V 1 .ALPHA TRUE ] 
+]
+
+[
+ .KEY AUSTRIA_GENERAL_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 147 .V 310 .ALPHA TRUE ] 
+]
+
+[
+ .KEY AUSTRIA_GENERAL_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 658 .V 310 .ALPHA TRUE ] 
+]
+
+[
+ .KEY AUSTRIA_MARISCAL_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 220 .V 1 .ALPHA TRUE ]
+]
+
+[
+ .KEY AUSTRIA_MARISCAL_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 731 .V 1 .ALPHA TRUE ]
+]
+
+[
+ .KEY AUSTRIA_MARISCAL_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 220 .V 310 .ALPHA TRUE ]
+]
+
+[
+ .KEY AUSTRIA_MARISCAL_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 731 .V 310 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_ELITE_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 293 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_ELITE_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 804 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_ELITE_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 293 .V 310 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_ELITE_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 804 .V 310 .ALPHA TRUE ]
+]
+
+[
+ .KEY AUSTRIA_FUSILERO_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 366 .V 1 .ALPHA TRUE ]
+]
+
+[
+ .KEY AUSTRIA_FUSILERO_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 877 .V 1 .ALPHA TRUE ]
+]
+
+[
+ .KEY AUSTRIA_FUSILERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 366 .V 310 .ALPHA TRUE ]
+]
+
+[
+ .KEY AUSTRIA_FUSILERO_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 877 .V 310 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_GRANADERO_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 439 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_GRANADERO_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 950 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_GRANADERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 439 .V 310 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_GRANADERO_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 950 .V 310 .ALPHA TRUE ]
+]
+
+
+################# FILA 2
+
+[ 
+ .KEY AUSTRIA_CAZADOR_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 1 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_CAZADOR_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 512 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_CAZADOR_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 1 .V 413 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_CAZADOR_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 512 .V 413 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_TIRADOR_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 74 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_TIRADOR_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 585 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_TIRADOR_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 74 .V 413 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_TIRADOR_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 585 .V 413 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_MILICIA_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 147 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_MILICIA_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 658 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_MILICIA_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 147 .V 413 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_MILICIA_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 658 .V 413 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_CAB_HUSAR_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 220 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_CAB_HUSAR_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 731 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_CAB_HUSAR_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 220 .V 413 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_CAB_HUSAR_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 731 .V 413 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_CAB_DRAGON_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 293 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_CAB_DRAGON_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 804 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_CAB_DRAGON_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 293 .V 413 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_CAB_DRAGON_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 804 .V 413 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_CAB_CORACERO_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 366 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_CAB_CORACERO_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 877 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_CAB_CORACERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 366 .V 413 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_CAB_CORACERO_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 877 .V 413 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_CAB_LANCERO_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 439 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_CAB_LANCERO_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 950 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_CAB_LANCERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 439 .V 413 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_CAB_LANCERO_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 950 .V 413 .ALPHA TRUE ]
+]
+
+################# FILA 3
+
+[ 
+ .KEY AUSTRIA_OBUS_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 1 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_OBUS_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 512 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_OBUS_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 1 .V 516 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_OBUS_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 512 .V 516 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_CANON_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 74 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_CANON_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 585 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_CANON_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 74 .V 516 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_CANON_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 585 .V 516 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_CANON_CAMP_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 147 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_CANON_CAMP_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 658 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_CANON_CAMP_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 147 .V 516 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_CANON_CAMP_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 658 .V 516 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_MORTERO_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 220 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_MORTERO_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 731 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_MORTERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 220 .V 516 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_MORTERO_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 731 .V 516 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_OBUS_CAB_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 293 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_OBUS_CAB_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 804 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_OBUS_CAB_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 293 .V 516 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_OBUS_CAB_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 804 .V 516 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_CANON_CAB_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 366 .V 207 .ALPHA  TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_CANON_CAB_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 877 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_CANON_CAB_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 366 .V 516 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_CANON_CAB_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 877 .V 516 .ALPHA TRUE ]
+]
+
+[
+ .KEY AUSTRIA_BARCO_BTN_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 439 .V 207 .ALPHA  TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_BARCO_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 950 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_BARCO_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 439 .V 516 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_BARCO_BTN_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAus.tga" .SX 72 .SY 102 .U 950 .V 516 .ALPHA TRUE ]
+]

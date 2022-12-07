@@ -1,0 +1,27 @@
+###--------------------------------------------------------------------------------------------------
+### Script de Audio. 
+### .IDSOUND: identificador del sonido "S_" o del descriptor de sonido "SE_"
+###--------------------------------------------------------------------------------------------------
+.AUDIOFX
+[
+  [
+    .ID ANDAR
+    .IDSOUND S_ART_ANDAR
+  ]
+  [
+    .ID DISPARAR
+    .IDSOUND S_COHETE_DISPARA
+  ]
+  [
+    .ID IMPACTO
+    .IDSOUND S_COHETE_IMPACTO
+  ]
+  [
+    .ID REFORMAR
+    .IDSOUND S_ART_REFORMAR
+  ]
+  [
+    .ID MUERTE
+    .IDSOUND S_INF_MORIR
+  ]    
+]

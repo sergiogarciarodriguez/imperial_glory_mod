@@ -1,0 +1,98 @@
+.FRANCIA
+[
+  .FILE "Game/UI/ModeloBatalla/MinBattleMap/MinBattleMapiconos.tga"
+  .SX 16 
+  .SY 16 
+  .U 1
+  .V 73
+  .PRIORITY 10
+  .ALPHA TRUE
+]
+
+.INGLATERRA
+[
+  .FILE "Game/UI/ModeloBatalla/MinBattleMap/MinBattleMapiconos.tga"
+  .SX 16 
+  .SY 16 
+  .U 20
+  .V 73
+  .PRIORITY 10
+  .ALPHA TRUE
+]
+
+.AUSTRIA
+[
+  .FILE "Game/UI/ModeloBatalla/MinBattleMap/MinBattleMapiconos.tga"
+  .SX 16 
+  .SY 16 
+  .U 39
+  .V 73
+  .PRIORITY 10
+  .ALPHA TRUE
+]
+
+.PRUSIA
+[
+  .FILE "Game/UI/ModeloBatalla/MinBattleMap/MinBattleMapiconos.tga"
+  .SX 16 
+  .SY 16 
+  .U 58
+  .V 73
+  .PRIORITY 10
+  .ALPHA TRUE
+]
+
+.RUSIA
+[
+  .FILE "Game/UI/ModeloBatalla/MinBattleMap/MinBattleMapiconos.tga"
+  .SX 16 
+  .SY 16 
+  .U 77
+  .V 73
+  .PRIORITY 10
+  .ALPHA TRUE
+]
+
+.NEUTRO
+[
+  .FILE "Game/UI/ModeloBatalla/MinBattleMap/MinBattleMapiconos.tga"
+  .SX 16 
+  .SY 16 
+  .U 96
+  .V 73
+  .PRIORITY 10
+  .ALPHA TRUE
+]
+
+.LIBRE
+[
+  .FILE "Game/UI/ModeloBatalla/MinBattleMap/MinBattleMapiconos.tga"
+  .SX 16 
+  .SY 16 
+  .U 20
+  .V 111
+  .PRIORITY 10
+  .ALPHA TRUE
+]
+
+.LOGRADO
+[
+  .FILE "Game/UI/ModeloBatalla/MinBattleMap/MinBattleMapiconos.tga"
+  .SX 16 
+  .SY 16 
+  .U 38
+  .V 20
+  .PRIORITY 10
+  .ALPHA TRUE
+]
+
+.PERDIDO
+[
+  .FILE "Game/UI/ModeloBatalla/MinBattleMap/MinBattleMapiconos.tga"
+  .SX 16 
+  .SY 16 
+  .U 38
+  .V 1
+  .PRIORITY 10
+  .ALPHA TRUE
+]

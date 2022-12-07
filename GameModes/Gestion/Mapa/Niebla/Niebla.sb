@@ -1,0 +1,52 @@
+#--------------------
+# File: Niebla.sb
+#-----------------------------------------------------------------------------------------------------------
+# Script de definición de la apariencia de la niebla de guerra en el mapa de gestión
+# [RIGHT-CTRL + F] Recarga este script, estando en modelo de gestión
+#
+# Significado de parámetros:
+#
+#      X <----dist----> [] <--------dist-----------> X
+#
+#          X : Punto de control en la posición de los Dummies asociados a una provincia
+#          []: Texel actual de la textura de niebla que se está calculando
+#
+#   - Para cada texel de textura se suma la contribución de todos los puntos X a partir
+#     de su distancia a la posición real del texel en el mundo. La contribución sigue esta
+#     función según la distancia.
+#
+#
+#     |
+#     |
+#  1.0|________
+#     |       |\
+#     |       | \               D1 y D2 se dan en centímetros
+#     |       |  \
+#     |-------|---\---------
+#             D1   D2
+#
+#   - Una vez sumada la contribución, se limita al rango al intervalo [0.0 a 1.0] y se calcula
+#     un valor de alfa para ese texel dentro de ese rango. La función usa un valor de
+#     saturación, a partir del cual el texel será completamente transparente. La respresentación
+#     de la función es la siguiente
+#
+#     |
+#     |
+#  1.0|\
+#     | \
+#     |  \
+#     |   \
+#     |----\------
+#          SAT
+#
+#   - Entonces, los parámetros son:
+#        D1 - distancia del radio de contribución máxima
+#        D2 - distancia del radio de contribución linealmente decreciente
+#       SAT - valor de saturación de la suma de las contribuciones que produce transparencia total
+#
+#-----------------------------------------------------------------------------------------------------------
+
+.MODEL "Game/GameModes/Gestion/Mapa/Niebla/Niebla.v3d"
+.D1  200.0
+.D2  600.0
+.SAT 2.0

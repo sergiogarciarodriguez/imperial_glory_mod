@@ -1,0 +1,95 @@
+.START_PROCS
+[
+  [
+    .NAME MODELO_BATALLA_STARTUP_PROC
+    .PARAMS
+    [ 
+      .CURSORES    "Game/UI/Cursores/Cursores_ModeloBatalla.sb"           
+      
+      .TEXTOS_LOCALES
+      [
+       [ .FILE "Management\TextPaises.sb"                           ]       
+       [ .FILE "Management\TextProvincias.sb"                       ]       
+       [ .FILE "Battle\TextUIBatalla.sb"                            ]
+       [ .FILE "Battle\TextUIBatallaVentanaInicioBatalla.sb"        ]
+       [ .FILE "Battle\TextUIBatallaVentanaResultadoBatalla.sb"     ]
+       [ .FILE "Battle\TextUISecuencias.sb"                         ]
+       [ .FILE "Others\TextUIObjetivos.sb"     		            	    ]
+       [ .FILE "Others\TextUIObjetivosHistoricos.sb"     		        ]
+       [ .FILE "Others\TextTutoriales\TextTutorialBatalla.sb"       ]
+       [ .FILE "Battle\TextObjetosMapas.sb"                         ]
+       
+       
+       # tipos de tropa       
+       [ .FILE "Management\TiposTropas\TiposTropasAustria.sb"   ]
+       [ .FILE "Management\TiposTropas\TiposTropasFrancia.sb"   ]
+       [ .FILE "Management\TiposTropas\TiposTropasBretanya.sb"   ]
+       [ .FILE "Management\TiposTropas\TiposTropasRusia.sb"   ]
+       [ .FILE "Management\TiposTropas\TiposTropasPrusia.sb"   ]
+       [ .FILE "Management\TiposTropas\TiposTropasNeutral.sb"   ]
+       
+       # obsoleto
+       #[ .FILE "Management\TextTiposTropas.sb"                      ]
+      ]
+      
+      .TECLAS_LOCALES		# Estos ficheros siempre se buscan dentro de "teclas\[language]\..."
+      [
+        [ .FILE "ModeloBatalla\UIDefs_HotKeyBatalla.sb" ]
+      ]
+      
+      .AUDIODEF        "Game/GameModes/Batalla/AudioDefBatalla.sb"
+      
+      .UICPARAMS_FILE  "Game/GameModes/Batalla/UICParams.sb"
+      
+      .UI_DEFS         "Game/UI/ModeloBatalla/UI_ModeloBatalla.sb"
+      
+      .PATH_SUCCESS_CACHE_SIZE 50
+      .PATH_FAILURE_CACHE_SIZE 50
+
+      .START_PROCS
+      [
+        [
+          .NAME LOGICA_BATALLA_BASE_PROC
+          .PARAMS
+          [
+            .ESCENARIOS "Game\GameModes\Batalla\Escenarios.sb"
+            .DEF_TROPAS "Game\GameModes\Batalla\DefTropas.sb"
+            .CRIATURAS  "Game\GameModes\Batalla\DefCriaturas.sb"
+            
+            .START_PROCS
+            [
+              [
+                .NAME LOGICA_BATALLA_STARTUP_PROC
+                .PARAMS
+                [
+                  .START_PROCS
+                  [
+                    [
+                      .NAME ELEMENTOS_BATALLA_BASE_PROC
+                      .PARAMS
+                      [
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+              [
+                .NAME AI_JUGADORES_BATALLA_BASE_PROC
+                .PARAMS
+                [
+                  .NOMBRE_UI_BATALLA UI_MODELO_BATALLA                  
+                  %Game\GameModes\Batalla\configAI.sb
+                  
+                  .JUGADORES
+                  [ 
+                    #.DEF_CAMARAS %Game\GameModes\Batalla\DefCamaras.sb
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  ]
+]

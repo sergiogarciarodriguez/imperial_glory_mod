@@ -1,0 +1,10 @@
+###############################################################################################################
+# Archivo con paramas de inicializacion para controles en el modelo de estadisticas de batalla terrestre
+###############################################################################################################
+
+.BTNTEXTO_PARAMS
+[
+  # Definicion de controles standard
+  %Game/UI/Comun/UIDefs_ControlesStandard.sb     
+]
+

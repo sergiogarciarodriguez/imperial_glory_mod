@@ -1,0 +1,123 @@
+#############################################################################################
+# Params Grupo Checkboxes asociados a las propuestas de la ventana Diplomacia
+#############################################################################################
+  .CHECKBOXES
+  [   
+
+    # CheckBox - Alianza
+    [ .TIPO UIC_CHECKBOX .ID 'CBAL'
+      .PARAMS 
+      [        
+        .IDSELECTSOUND "S_FXDIPLOMACIA_CLICK_ICONO"
+        .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"
+	    .STYLE ALIANZA .PRIORITY 2 
+      ]
+    ] # ~ CHECKBOX 
+
+    # CheckBox - Permiso de paso
+    [ .TIPO UIC_CHECKBOX .ID 'CBPP'
+      .PARAMS 
+      [ 
+        .IDSELECTSOUND "S_FXDIPLOMACIA_CLICK_ICONO"
+        .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"
+        .STYLE PERMISO_PASO .PRIORITY 2 
+      ]
+    ] # ~ CHECKBOX                      
+    
+    # CheckBox - Mejora de relaciones
+    [ .TIPO UIC_CHECKBOX .ID 'CBMR'
+      .PARAMS 
+      [ 
+        .IDSELECTSOUND "S_FXDIPLOMACIA_CLICK_ICONO"
+        .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"
+        .STYLE MEJORA_RELACIONES .PRIORITY 2 
+      ]            
+    ] # ~ CHECKBOX                   
+
+    # CheckBox - Declaracion de Guerra
+    [ .TIPO UIC_CHECKBOX .ID 'CBDG'
+      .PARAMS 
+      [ 
+        .IDSELECTSOUND "S_FXDIPLOMACIA_CLICK_ICONO"
+        .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"
+        .STYLE DECLARACION_GUERRA .PRIORITY 2 
+      ]            
+    ] # ~ CHECKBOX 
+
+    # CheckBox - Tregua
+    #[ .TIPO UIC_CHECKBOX .ID 'CBTR'
+    #  .PARAMS 
+    #  [ 
+    #    .IDSELECTSOUND "S_FXDIPLOMACIA_CLICK_ICONO"
+    #    .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"
+    #    .STYLE TREGUA .PRIORITY 2 
+    #  ]
+    #] # ~ CHECKBOX                   
+
+
+    # CheckBox - Armisticio
+    [ .TIPO UIC_CHECKBOX .ID 'CBAR'
+      .PARAMS
+      [ 
+        .IDSELECTSOUND "S_FXDIPLOMACIA_CLICK_ICONO"
+        .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"
+        .STYLE ARMISTICIO .PRIORITY 2 
+      ]
+    ] # ~ CHECKBOX 
+
+    # CheckBox - Pacto de proteccion
+    [ .TIPO UIC_CHECKBOX .ID 'CBPR'
+      .PARAMS 
+      [ 
+        .IDSELECTSOUND "S_FXDIPLOMACIA_CLICK_ICONO"
+        .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"
+        .STYLE PACTO_PROTECCION .PRIORITY 2 
+      ]
+    ] # ~ CHECKBOX                   
+                     
+    # CheckBox - Tratado Comercial
+    [ .TIPO UIC_CHECKBOX .ID 'CBTC'
+      .PARAMS 
+      [ 
+        .IDSELECTSOUND "S_FXDIPLOMACIA_CLICK_ICONO" 
+        .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"
+        .STYLE TRATADO_COMERCIAL .PRIORITY 2 
+      ]            
+    ] # ~ CHECKBOX 
+                                              
+    # CheckBox - Matrimonio
+     [ .TIPO UIC_CHECKBOX .ID 'CBMT'
+       .PARAMS 
+       [ 
+         .IDSELECTSOUND "S_FXDIPLOMACIA_CLICK_ICONO" 
+         .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"
+         .STYLE MATRIMONIO .PRIORITY 2 
+       ]
+     ] # ~ CHECKBOX     
+     
+    # CheckBox - Prestamo de Ejercitos
+     [ .TIPO UIC_CHECKBOX .ID 'CBPE'
+       .PARAMS 
+       [ 
+         .IDSELECTSOUND "S_FXDIPLOMACIA_CLICK_ICONO" 
+         .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"
+         .STYLE PRESTAMO_EJERCITOS .PRIORITY 2 
+       ]
+     ] # ~ CHECKBOX   
+     
+     # CheckBox - Peticion de Ayuda Militar
+     [ .TIPO UIC_CHECKBOX .ID 'CBAM'
+       .PARAMS 
+       [ 
+         .IDSELECTSOUND "S_FXDIPLOMACIA_CLICK_ICONO" 
+         .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"
+         .STYLE AYUDA_MILITAR .PRIORITY 2 
+       ]
+     ] # ~ CHECKBOX        
+                   
+   ] # ~CHECKBOXES
+        
+   .PERMITE_NINGUNA_ACTIVACION TRUE
+   .SELECT_FIRST_ON_ACTIVE	FALSE
+   .TECLAS [ .TECLA_SIGUIENTE KEY_TAB .TECLA_CLICK KEY_SPACE .GESTION_CIRCULAR TRUE ]        
+                     

@@ -1,0 +1,151 @@
+    # controles asociados a la información del nodo
+      	# Parámetros wraptext con slider de descripción de tecnología
+      	.DEPTH 3
+      	
+        .DESCRIPCION_TECNOLOGIA
+        [
+          .X 178 .Y 672 .SX 362 .SY 96
+          
+          .ALPHA TRUE .PRIORITY 203
+          
+          .TEXT
+          [
+           .FONT "Fonts/Times11.fnt" 
+           .COLOR [ .R 255 .G 255 .B 255 ]
+           .MSG  " "        
+          ]
+          
+          .VDX 367 .VDY 5
+          .VSX  6 .VSY 90
+          .SLIDER_VERTICAL
+          [
+            .PRIORITY 204      
+            .STYLE DEFAULT_SLIDER_VERTICAL
+          ]                        
+        ]
+
+	# Descripción de la tecnología        
+        .TITULO_TECNOLOGIA
+        [
+          .ALIGN CENTER
+          
+          .X 98 .Y 628 .SX 391 .SY 25
+          .TEXT
+          [
+            .FONT "Fonts/Times14.fnt"
+            .COLOR [ .R 255 .G 255 .B 255 ] 
+            .MSG " "
+          ]
+        ]
+        
+	# Texto de los puntos que cuesta el quest y los puntos que faltan para acabarlo        
+        .P_RESTANTES
+        [
+          .ALIGN CENTER
+          .X 59 .Y 732 .SX 40 .SY 25
+          
+          .TEXT
+          [
+            .MSG " "
+            .FONT "Fonts/Times12.fnt"
+            .COLOR [ .R 0 .G 250 .B 0 ] 
+          ]
+        ]
+        
+        .P_TOTALES
+        [
+          .ALIGN RIGHT
+          
+          .X 455 .Y 628 .SX 76 .SY 25
+          
+          .TEXT
+          [
+            .FONT "Fonts/Times14.fnt"
+            .COLOR [ .R 42 .G 255 .B 0 ] 
+            .MSG " "
+          ]
+          
+        ]                
+        
+        # Texto "Puntos para completar"
+        .TEXTO_P_RESTANTES
+        [
+          .ALIGN CENTER
+          #.X 10 .Y 726
+          .X 77 .Y 726
+          .TEXT LTEXT_UI_AT_PUNTOS_RESTANTES
+          .FONT "Fonts/Times11.fnt"
+          .COLOR [ .R 255 .G 255 .B 255 ] 
+        ]                
+        
+               
+        # En realidad es una barra de porcentaje, con el gráfico de la tecnología seleccionada
+        .BITMAP_TECNOLOGIA
+        [
+          .X 9 .Y 667
+          .PRIORITY 205
+          .FONDO [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandesApagados.tga" .ALPHA TRUE ]
+          .SUPERIOR [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga" .ALPHA TRUE ]
+          .SX 140 .SY 49
+        ]
+        
+        
+      	# Parámetros wraptext con slider de descripción de edificio
+      	.DESCRIPCION_EDIFICIO
+        [
+          .X 672 .Y 672 .SX 253 .SY 91
+          
+          .ALPHA TRUE .PRIORITY 203
+          
+          .TEXT
+          [
+           .FONT "Fonts/Times11.fnt" 
+           .COLOR [ .R 255 .G 255 .B 255 ]
+           .MSG  " "        
+          ]
+          
+          .VDX 258 .VDY 5
+          .VSX  6 .VSY 85
+          .SLIDER_VERTICAL
+          [
+            .PRIORITY 204      
+            .STYLE DEFAULT_SLIDER_VERTICAL
+          ]                                
+        ]
+        
+        # texto del título de la descripción del edificio
+        .TITULO_EDIFICIO
+        [
+          .ALIGN CENTER
+          
+          .X 576 .Y 628 .SX 381 .SY 25
+          
+          .TEXT
+          [
+            .FONT "Fonts/Times14.fnt"
+            .COLOR [ .R 255 .G 255 .B 255 ] 
+            .MSG " "
+          ]
+        ]
+        
+	# bitmap del edificio asociado a la tecnología. Suponiendo que exista        
+        .BITMAP_EDIFICIO
+        [
+          .X 580 .Y 662 
+          # hay que especificar una textura para que el readparams no falle, pero en realidad nosotros la asignaremos en ejecución, basta con que
+          # sea válida
+          .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/MenuArbolTecnologias.tga" .U 19 .V 656 
+          .ALPHA TRUE 
+          .PRIORITY 204
+          .SX 87 .SY 102
+        ]
+        
+        # icono de ciencia en título de tecnología
+        .ICONO_TECNOLOGIA
+        [
+          .X 532 .Y 630
+          .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/MenuArbolTecnologias.tga" .U 1 .V 920 
+          .SX 29 .SY 26
+          .ALPHA TRUE 
+          .PRIORITY 204
+        ]

@@ -1,0 +1,411 @@
+###############################################################################################################
+# Tropas Inglesas
+# Mantiene el pool de las imagenes asociadas a las tropas
+###############################################################################################################
+
+################# FILA 1
+
+[
+ .KEY GRAN_BRETANYA_TENIENTE_IMG_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 1 .V 1 .ALPHA TRUE ]
+]
+
+[
+ .KEY GRAN_BRETANYA_TENIENTE_IMG_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 512 .V 1 .ALPHA TRUE ]
+]
+
+[
+ .KEY GRAN_BRETANYA_TENIENTE_IMG_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 1 .V 310 .ALPHA TRUE ]
+]
+
+[
+ .KEY GRAN_BRETANYA_TENIENTE_IMG_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 512 .V 310 .ALPHA TRUE ]
+]
+
+[
+ .KEY GRAN_BRETANYA_CAPITAN_IMG_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 74 .V 1 .ALPHA TRUE ]
+]
+
+[
+ .KEY GRAN_BRETANYA_CAPITAN_IMG_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 585 .V 1 .ALPHA TRUE ]
+]
+
+[
+ .KEY GRAN_BRETANYA_CAPITAN_IMG_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 74 .V 310 .ALPHA TRUE ]
+]
+
+[
+ .KEY GRAN_BRETANYA_CAPITAN_IMG_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 585 .V 310 .ALPHA TRUE ]
+]
+
+[
+ .KEY GRAN_BRETANYA_GENERAL_IMG_NORMAL 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 147 .V 1 .ALPHA TRUE ] 
+]
+
+[
+ .KEY GRAN_BRETANYA_GENERAL_IMG_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 658 .V 1 .ALPHA TRUE ] 
+]
+
+[
+ .KEY GRAN_BRETANYA_GENERAL_IMG_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 147 .V 310 .ALPHA TRUE ] 
+]
+
+[
+ .KEY GRAN_BRETANYA_GENERAL_IMG_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 658 .V 310 .ALPHA TRUE ] 
+]
+
+[
+ .KEY GRAN_BRETANYA_MARISCAL_IMG_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 220 .V 1 .ALPHA TRUE ]
+]
+
+[
+ .KEY GRAN_BRETANYA_MARISCAL_IMG_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 731 .V 1 .ALPHA TRUE ]
+]
+
+[
+ .KEY GRAN_BRETANYA_MARISCAL_IMG_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 220 .V 310 .ALPHA TRUE ]
+]
+
+[
+ .KEY GRAN_BRETANYA_MARISCAL_IMG_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 731 .V 310 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_ELITE_IMG_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 293 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_ELITE_IMG_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 804 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_ELITE_IMG_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 293 .V 310 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_ELITE_IMG_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 804 .V 310 .ALPHA TRUE ]
+]
+
+[
+ .KEY GRAN_BRETANYA_FUSILERO_IMG_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 366 .V 1 .ALPHA TRUE ]
+]
+
+[
+ .KEY GRAN_BRETANYA_FUSILERO_IMG_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 877 .V 1 .ALPHA TRUE ]
+]
+
+[
+ .KEY GRAN_BRETANYA_FUSILERO_IMG_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 366 .V 310 .ALPHA TRUE ]
+]
+
+[
+ .KEY GRAN_BRETANYA_FUSILERO_IMG_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 877 .V 310 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_GRANADERO_IMG_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 439 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_GRANADERO_IMG_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 950 .V 1 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_GRANADERO_IMG_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 439 .V 310 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_GRANADERO_IMG_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 950 .V 310 .ALPHA TRUE ]
+]
+
+
+################# FILA 2
+
+[ 
+ .KEY GRAN_BRETANYA_CAZADOR_IMG_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 1 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_CAZADOR_IMG_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 512 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_CAZADOR_IMG_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 1 .V 413 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_CAZADOR_IMG_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 512 .V 413 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_TIRADOR_IMG_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 74 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_TIRADOR_IMG_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 585 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_TIRADOR_IMG_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 74 .V 413 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_TIRADOR_IMG_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 585 .V 413 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_MILICIA_IMG_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 147 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_MILICIA_IMG_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 658 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_MILICIA_IMG_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 147 .V 413 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_MILICIA_IMG_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 658 .V 413 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_CAB_HUSAR_IMG_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 220 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_CAB_HUSAR_IMG_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 731 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_CAB_HUSAR_IMG_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 220 .V 413 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_CAB_HUSAR_IMG_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 731 .V 413 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_CAB_DRAGON_IMG_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 293 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_CAB_DRAGON_IMG_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 804 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_CAB_DRAGON_IMG_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 293 .V 413 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_CAB_DRAGON_IMG_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 804 .V 413 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_CAB_CORACERO_IMG_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 366 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_CAB_CORACERO_IMG_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 877 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_CAB_CORACERO_IMG_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 366 .V 413 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_CAB_CORACERO_IMG_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 877 .V 413 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_CAB_LANCERO_IMG_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 439 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_CAB_LANCERO_IMG_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 950 .V 104 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_CAB_LANCERO_IMG_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 439 .V 413 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_CAB_LANCERO_IMG_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 950 .V 413 .ALPHA TRUE ]
+]
+
+################# FILA 3
+
+[ 
+ .KEY GRAN_BRETANYA_OBUS_IMG_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 1 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_OBUS_IMG_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 512 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_OBUS_IMG_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 1 .V 516 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_OBUS_IMG_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 512 .V 516 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_CANON_IMG_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 74 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_CANON_IMG_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 585 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_CANON_IMG_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 74 .V 516 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_CANON_IMG_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 585 .V 516 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_CANON_CAMP_IMG_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 147 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_CANON_CAMP_IMG_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 658 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_CANON_CAMP_IMG_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 147 .V 516 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_CANON_CAMP_IMG_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 658 .V 516 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_MORTERO_IMG_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 220 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_MORTERO_IMG_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 731 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_MORTERO_IMG_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 220 .V 516 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_MORTERO_IMG_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 731 .V 516 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_OBUS_CAB_IMG_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 293 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_OBUS_CAB_IMG_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 804 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_OBUS_CAB_IMG_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 293 .V 516 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_OBUS_CAB_IMG_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 804 .V 516 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_CANON_CAB_IMG_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 366 .V 207 .ALPHA  TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_CANON_CAB_IMG_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 877 .V 207 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_CANON_CAB_IMG_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 366 .V 516 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY GRAN_BRETANYA_CANON_CAB_IMG_DISABLE
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/PlantillaTropasIng.tga" .SX 72 .SY 102 .U 877 .V 516 .ALPHA TRUE ]
+]

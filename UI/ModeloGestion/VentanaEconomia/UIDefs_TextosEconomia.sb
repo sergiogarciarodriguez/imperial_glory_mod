@@ -1,0 +1,51 @@
+# - Produccion por Provincias
+[
+  .TIPO UIC_TEXT .ID 'TXPP'
+  .PARAMS
+  [
+    .X 237 .Y 112
+    .ALIGN CENTER
+    .TEXT LTEXT_UI_ECONOMIA_PRODUCCION_PROVINCIAS
+    .FONT "Fonts/Times15.fnt"
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+]
+
+# - Otros ingresos       
+[
+  .TIPO UIC_TEXT .ID 'TXOI'
+  .PARAMS
+  [
+    .X 776 .Y 112
+    .ALIGN CENTER
+    .TEXT LTEXT_UI_ECONOMIA_OTROS_INGRESOS
+    .FONT "Fonts/Times15.fnt"
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+]
+
+# - Gastos
+[
+  .TIPO UIC_TEXT .ID 'TXGA'
+  .PARAMS 
+  [
+    .X 776 .Y 314
+    .ALIGN CENTER
+    .TEXT LTEXT_UI_ECONOMIA_GASTOS
+    .FONT "Fonts/Times15.fnt"
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+]
+
+# - Totales
+[
+  .TIPO UIC_TEXT .ID 'TXTO'
+  .PARAMS 
+  [
+    .X 776 .Y 547
+    .ALIGN CENTER
+    .TEXT LTEXT_UI_ECONOMIA_TOTALES
+    .FONT "Fonts/Times15.fnt"
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]    
+]

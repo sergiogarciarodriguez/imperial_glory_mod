@@ -1,0 +1,71 @@
+
+ # Definimos la matriz de vision para los edificios
+ # Nota, es seguro que variara al cambiar de informacion la ventana de contenido
+ .MATRIZ
+ [
+  .FILAS 1
+  .COLUMNAS 7
+ ]     
+ 
+ .CENTER_ICONS TRUE
+ 
+ # Definimos los parametros de dibujado
+ # IMPORTANTE : - Estos params seran cambiados cuando la ventana de contenido cambie de contexto.
+ #                El unico cambio que se mantendra seran las coordenadas.
+ # Nota: - En caso de existir fondo X e Y seran deltas sobre la posicion del mismo y en caso de no definirlo
+ #         serviran para indicar la posicion de inicio de dibujado
+ #       - Al incluirse en un dialogo, las posiciones seran deltas con respecto al mismo.
+ .FONDO
+ [
+   .X 0 .Y 28
+   .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .SX 744 .SY 145 .U 3 .V 773 .ALPHA TRUE
+   .PRIORITY 241
+ ]
+ 
+ .DRAW_PARAMS
+ [
+  # deltas respecto a las coordenadas en las que se coloca el fondo
+  .X 83
+  .Y 30
+  .CELL_XSPACE 1
+  .CELL_YSPACE 0
+  .SLIDER_XSPACE 12
+  .OBJ_WIDTH 72
+  .OBJ_HEIGHT 102
+ ]         
+     
+ # Definimos el Slider
+ #.SLIDER [ .PRIORITY 244 .SUBTIPO "Game/UI/ModeloGestion/VentanasAccionContenidoUIDefs/UIDefs_SliderDlgContenido.sb" ]
+ 
+ # Prioridad base de los elementos en el visor
+ # A los que se les haga un drag tendra una prioridad superior por lo que la prioridad base
+ # no debera de exceder el valor de 254
+ .PRIORITY_BASE 243
+ 
+ # Modo de drag asociado (por defecto esta orientado al HOTSPOT de pulsacion)
+ .HOTSPOT_DRAG TRUE
+ 
+ # Param de ToolTip
+ .TOOL_TIP 
+ [
+  .FONT "Fonts/Times12.fnt" 
+  .COLOR [ .R 255 .G 255 .B 255 ] 
+  .X 32 .Y 32 
+    
+  .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb        
+ ]
+ 
+ .BITMAP_HOTSPOT
+ [
+  .SX 12 .SY 12 .U 1 .V 1
+  .FILE "Game/UI/Comun/HotSpotsIconos.tga" .ALPHA TRUE
+ ]
+
+ # Usamos el cursor de ayuda contextual 
+ .ALTERNATE_CURSOR CUR_CONTEXTHELP
+ 
+ .SOUNDS
+ [
+   .IDSELECTSOUND "S_UI_GENERICO_PULSADO" 
+   #.IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"
+ ]

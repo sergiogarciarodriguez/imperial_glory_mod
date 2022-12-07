@@ -1,0 +1,53 @@
+#=======================================================================================
+# Definición de sonidos para el modelo naval [ MUSICA ]
+#=======================================================================================
+
+%game/gamemodes/navalbattlemode/audio/audiovoldefs.sb
+
+.AUDIO 
+[
+  [ 
+    .IDNAME     "S_MUSICA_BATALLA_01"       
+    .PATH       "Audio/NAVAL/MUSIC/Musica.ogg" 
+    .3D         FALSE
+    .LOOP       TRUE
+    .STREAMING  TRUE
+    .VOLUME     50
+    .TYPE       MUSIC
+    .PAUSE 	FALSE
+  ]
+	
+  [ 
+    .IDNAME     "S_MUSICA_BATALLA_02"
+    .PATH       "Audio/NAVAL/MUSIC/Musica2.ogg" 
+    .3D         FALSE
+    .LOOP       TRUE
+    .STREAMING  TRUE
+    .VOLUME     50
+    .TYPE       MUSIC
+    .PAUSE 	FALSE
+  ]
+	
+	[ 
+    .IDNAME "S_MUSICA_EST_VICTORIA"       
+    .PATH "Audio/NAVAL/Music/Victoria.ogg" 
+    .3D FALSE
+    .LOOP FALSE
+    .STREAMING TRUE
+    .VOLUME 72
+    .TYPE MUSIC
+    .PAUSE 	FALSE
+  ]
+  
+  [ 
+    .IDNAME "S_MUSICA_EST_DERROTA"       
+    .PATH "Audio/NAVAL/Music/Derrota.ogg" 
+    .3D FALSE
+    .LOOP FALSE
+    .STREAMING TRUE
+    .VOLUME 72
+    .TYPE MUSIC
+    .PAUSE 	FALSE
+  ]
+]
+

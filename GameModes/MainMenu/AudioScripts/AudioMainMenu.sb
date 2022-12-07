@@ -1,0 +1,170 @@
+#=======================================================================================
+# Definición de sonidos
+#
+# Param ".3D" es TRUE por defecto.
+#       ".LOOP" es FALSE por defecto.
+#=======================================================================================
+
+###-------------------------------------------------------------------------------------
+### AUDIO
+###-------------------------------------------------------------------------------------
+.AUDIO 
+[
+
+  [
+    .IDNAME "S_MAINMENU_MUSICA"       
+    .PATH "Audio/Menu/MainMenuMusica.ogg" 
+    .3D FALSE
+    .LOOP TRUE
+    .VOLUME 40
+    .STREAMING TRUE
+    .TYPE MUSIC
+  ]
+
+  [ 
+    .IDNAME "S_MAINMENU_OPTION_SELECT"       
+    .PATH "Audio/Menu/OptionSelect.ogg"
+    .3D FALSE
+    .LOOP FALSE
+    .VOLUME 50
+    .POLYPHONY 8
+    .PAUSE FALSE
+  ]
+  
+  [ 
+    .IDNAME "S_MAINMENU_OFERTA_1"       
+    .PATH "Audio/Menu/oferta1.ogg"
+    .3D FALSE
+    .LOOP FALSE
+    .VOLUME 50
+    .POLYPHONY 4
+  ]
+    
+  [ 
+    .IDNAME "S_MAINMENU_OFERTA_2"       
+    .PATH "Audio/Menu/oferta2.ogg"
+    .3D FALSE
+    .LOOP FALSE
+    .VOLUME 50
+    .POLYPHONY 4
+  ]
+
+  [ 
+    .IDNAME "S_MAINMENU_OPTION_CLICK"       
+    .PATH "Audio/Menu/OptionClick.ogg" 
+    .3D FALSE
+    .LOOP FALSE
+    .VOLUME 50
+    .POLYPHONY 1
+    .PAUSE FALSE
+  ]
+    
+  [ 
+    .IDNAME "S_MAINMENU_CREDITS_MUSIC"       
+    .PATH "Audio/Menu/Creditos.ogg"     
+    .3D FALSE
+    .LOOP TRUE
+    .STREAMING TRUE
+    .VOLUME 50
+    .TYPE MUSIC
+  ]
+
+  [ 
+    .IDNAME "S_FXSELECCION_RESALTE_ELEMENTO"       
+    .PATH "Audio/Management/FX/cursor.ogg" 
+    .PAUSE FALSE
+  ]
+
+  [ 
+    .IDNAME "S_FXUI_CLICKBUTTON"       
+    .PATH "Audio/Management/FX/click.ogg" 
+    .PAUSE FALSE
+  ]
+    
+  [ 
+    .IDNAME "S_FXACEPTAR_IMPERIO"       
+    .PATH "Audio/Management/FX/Aceptar_imperio.ogg" 
+  ]
+    
+  [ 
+    .IDNAME "S_FXSELECCION_IMPERIO"       
+    .PATH "Audio/Management/FX/Seleccion_imperio.ogg" 
+  ]
+  
+  [ 
+    .IDNAME "S_PERGAMINO"       
+    .PATH "Audio/Menu/Pergamino.ogg" 
+  ]
+  
+  [ 
+    .IDNAME "S_ACEPTAR"       
+    .PATH "Audio/Menu/Aceptar.ogg" 
+    .PAUSE FALSE
+  ]
+  
+  [ 
+    .IDNAME "S_CANCELAR"       
+    .PATH "Audio/Menu/Cancelar.ogg" 
+    .PAUSE FALSE
+  ]
+  
+  [ 
+    .IDNAME "S_QUITAR_TROPA"       
+    .PATH "Audio/Menu/quitar_tropa.ogg" 
+  ]
+  
+  [ 
+    .IDNAME "S_EXPERIENCIA_TROPA"       
+    .PATH "Audio/management/fx/ExperienciaTropa.ogg" 
+  ]  
+  
+  [ 
+    .IDNAME "S_BOLETIN_NOTICIAS"       
+    .PATH "Audio/management/fx/abrir_noticias.ogg" 
+  ]    
+
+  [ 
+    .IDNAME "S_BOLETIN_ECONOMIA"       
+    .PATH "Audio/management/fx/dinero.ogg" 
+  ]    
+
+  [ 
+    .IDNAME "S_BOLETIN_DIPLOMACIA"       
+    .PATH "Audio/management/fx/boletin_diplomatico.ogg" 
+  ]    
+  
+  [ 
+    .IDNAME "S_PRODUCCION_COMIDA"       
+    .PATH "Audio/management/fx/produccion_comida.ogg" 
+  ]    
+  
+  [ 
+    .IDNAME "S_PRODUCCION_MADERA"       
+    .PATH "Audio/management/fx/produccion_madera.ogg" 
+  ]     
+
+  [ 
+    .IDNAME "S_PRODUCCION_ORO"       
+    .PATH "Audio/management/fx/produccion_oro.ogg" 
+  ]    
+
+  [ 
+    .IDNAME "S_PRODUCCION_POBLACION"       
+    .PATH "Audio/management/fx/produccion_poblacion.ogg" 
+  ]    
+
+  [ 
+    .IDNAME "S_SELECCION_OFICIAL_ENEM"       
+    .PATH "Audio/management/fx/seleccion_oficial_enem.ogg" 
+  ]    
+
+  [ 
+    .IDNAME "S_SELECCION_BARCO_ENEM"       
+    .PATH "Audio/management/fx/seleccion_barco_enem.ogg" 
+  ]    
+
+  [ 
+    .IDNAME "S_BOTON_ECONOMIA"       
+    .PATH "Audio/management/fx/boton_economia.ogg" 
+  ]    
+]

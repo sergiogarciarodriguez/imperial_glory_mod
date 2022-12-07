@@ -1,0 +1,67 @@
+#
+# Estilo del panel de oroTurnosUltimatum
+#
+#
+
+# Fondo panel OroTurnosUltimatum
+[ .TIPO UIC_BITMAP .ID 'FPOU' 
+  .PARAMS 
+  [ 
+    .X 0 .Y 244 .U 573 .V 285 .SX 283 .SY 151 
+    .FILE "Game/UI/ModeloGestion/Diplomacia/VentanasDiplomacia.tga" 
+    .ALPHA TRUE 
+    .PRIORITY 2
+  ]
+] # ~BITMAP 
+
+
+# Label Ofrecer
+[ .TIPO UIC_TEXT .ID 'LBMS'
+  .PARAMS 
+  [ 
+    .ALIGN CENTER
+    .TEXT LTEXT_DIPLOMACIA_OFRECER
+    .FONT "Fonts/Times14.fnt"
+    .X 840 .Y 265 .SCALE 1.0 
+  	.COLOR [ .R 255 .G 255 .B 255 ] 
+  ]    	
+]    
+
+# Label Ultimatum
+[ .TIPO UIC_TEXT .ID 'LBUL'
+  .PARAMS 
+  [ 
+    .ALIGN CENTER
+    .TEXT LTEXT_DIPLOMACIA_ULTIMATUM
+    .FONT "Fonts/Times12.fnt"
+    .X 765 .Y 365 .SCALE 1.0 
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]    	
+]
+
+[ .TIPO UIC_SPIN .ID 'SPOR'
+  .PARAMS
+  [  .X 785 .Y 300 .MIN 0 .MAX 50 .INCREMENTO 10 .VALUE 0 .TIMEOUT 2
+    %Game/UI/ModeloGestion/Diplomacia/UIDefs_SpinDiplomaciaORO.sb
+  ]
+]
+
+# CheckBox ultimatum
+[ .TIPO UIC_CHECKBOX .ID 'CBUL'
+  .PARAMS            
+  [ 
+     .COMPORTAMIENTO FIJO
+     .STYLE ULTIMATUM_BUTTON
+     .FONDO [ .X 132 .Y 357 .PRIORITY 40]
+     
+     .IDSELECTSOUND "S_FXUI_CHECKBUTTON"                                   
+
+      .TOOL_TIP 
+      [ 
+        %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+		.TEXT "LTEXT_DIPLOMACIA_TT_ULTIMATUM"
+      ] 
+  ]            
+] # ~ CHECKBOX 
+
+

@@ -1,0 +1,312 @@
+  
+  #===================================================================
+  # S_ACK_DISPARAR
+  #===================================================================
+  [ 
+    .IDNAME "S_ACK_DISPARAR_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/NavalCommander/NAV_fire_fire_01.ogg" "Audio/Voices/Francia/NavalCommander/NAV_fire_fire_02.ogg"
+            "Audio/Voices/Francia/NavalCommander/NAV_fire_fireroll.ogg" "Audio/Voices/Francia/NavalCommander/NAV_fire_firecannons.ogg"
+            "Audio/Voices/Francia/NavalCommander/NAV_fire_fullbroad.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_DISPARAR_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/NavalCommander/NAV_fire_fire_01.ogg" "Audio/Voices/Inglaterra/NavalCommander/NAV_fire_fire_02.ogg"
+            "Audio/Voices/Inglaterra/NavalCommander/NAV_fire_fireroll.ogg" "Audio/Voices/Inglaterra/NavalCommander/NAV_fire_firecannons.ogg" 
+            "Audio/Voices/Inglaterra/NavalCommander/NAV_fire_fullbroad.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_DISPARAR_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/NavalCommander/NAV_fire_fire_01.ogg" "Audio/Voices/Austria/NavalCommander/NAV_fire_fire_02.ogg"
+            "Audio/Voices/Austria/NavalCommander/NAV_fire_fireroll.ogg" "Audio/Voices/Austria/NavalCommander/NAV_fire_firecannons.ogg" 
+            "Audio/Voices/Austria/NavalCommander/NAV_fire_fullbroad.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_DISPARAR_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/NavalCommander/NAV_fire_fire_01.ogg" "Audio/Voices/Prusia/NavalCommander/NAV_fire_fire_02.ogg"
+            "Audio/Voices/Prusia/NavalCommander/NAV_fire_fireroll.ogg" "Audio/Voices/Prusia/NavalCommander/NAV_fire_firecannons.ogg" 
+            "Audio/Voices/Prusia/NavalCommander/NAV_fire_fullbroad.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_DISPARAR_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/NavalCommander/NAV_fire_fire_01.ogg" "Audio/Voices/Rusia/NavalCommander/NAV_fire_fire_02.ogg"
+            "Audio/Voices/Rusia/NavalCommander/NAV_fire_fireroll.ogg" "Audio/Voices/Rusia/NavalCommander/NAV_fire_firecannons.ogg" 
+            "Audio/Voices/Rusia/NavalCommander/NAV_fire_fullbroad.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  
+  #===================================================================
+  # S_ACK_CAMBIO_MUNICION_BOMBA
+  #===================================================================
+  [ 
+    .IDNAME "S_ACK_CAMBIO_MUNICION_BOMBA_FRANCIA"     
+    .PATH  [ "Audio/Voices/Francia/NavalCommander/NAV_fire_firehull.ogg" "Audio/Voices/Francia/NavalCommander/NAV_ammo_chargeball.ogg"
+             "Audio/Voices/Francia/NavalCommander/NAV_ammo_loadball.ogg" "Audio/Voices/Francia/NavalCommander/NAV_ammo_loadcannons_01.ogg"
+             "Audio/Voices/Francia/NavalCommander/NAV_ammo_loadcannons_02.ogg" "Audio/Voices/Francia/NavalCommander/NAV_ammo_preparecannons_01.ogg"
+             "Audio/Voices/Francia/NavalCommander/NAV_ammo_preparecannons_02.ogg"  ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_CAMBIO_MUNICION_BOMBA_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/NavalCommander/NAV_fire_firehull.ogg"  "Audio/Voices/Inglaterra/NavalCommander/NAV_ammo_chargeball.ogg"
+             "Audio/Voices/Inglaterra/NavalCommander/NAV_ammo_loadball.ogg" "Audio/Voices/Inglaterra/NavalCommander/NAV_ammo_loadcannons_01.ogg"
+             "Audio/Voices/Inglaterra/NavalCommander/NAV_ammo_loadcannons_02.ogg" "Audio/Voices/Inglaterra/NavalCommander/NAV_ammo_preparecannons_01.ogg"
+             "Audio/Voices/Inglaterra/NavalCommander/NAV_ammo_preparecannons_02.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_CAMBIO_MUNICION_BOMBA_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/NavalCommander/NAV_fire_firehull.ogg"  "Audio/Voices/Austria/NavalCommander/NAV_ammo_chargeball.ogg"
+             "Audio/Voices/Austria/NavalCommander/NAV_ammo_loadball.ogg" "Audio/Voices/Austria/NavalCommander/NAV_ammo_loadcannons_01.ogg"
+             "Audio/Voices/Austria/NavalCommander/NAV_ammo_loadcannons_02.ogg" "Audio/Voices/Austria/NavalCommander/NAV_ammo_preparecannons_01.ogg"
+             "Audio/Voices/Austria/NavalCommander/NAV_ammo_preparecannons_02.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_CAMBIO_MUNICION_BOMBA_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/NavalCommander/NAV_fire_firehull.ogg"  "Audio/Voices/Rusia/NavalCommander/NAV_ammo_chargeball.ogg"
+             "Audio/Voices/Rusia/NavalCommander/NAV_ammo_loadball.ogg" "Audio/Voices/Rusia/NavalCommander/NAV_ammo_loadcannons_01.ogg"
+             "Audio/Voices/Rusia/NavalCommander/NAV_ammo_loadcannons_02.ogg" "Audio/Voices/Rusia/NavalCommander/NAV_ammo_preparecannons_01.ogg"
+             "Audio/Voices/Rusia/NavalCommander/NAV_ammo_preparecannons_02.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_CAMBIO_MUNICION_BOMBA_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/NavalCommander/NAV_fire_firehull.ogg"  "Audio/Voices/Prusia/NavalCommander/NAV_ammo_chargeball.ogg"
+             "Audio/Voices/Prusia/NavalCommander/NAV_ammo_loadball.ogg" "Audio/Voices/Prusia/NavalCommander/NAV_ammo_loadcannons_01.ogg"
+             "Audio/Voices/Prusia/NavalCommander/NAV_ammo_loadcannons_02.ogg" "Audio/Voices/Prusia/NavalCommander/NAV_ammo_preparecannons_01.ogg"
+             "Audio/Voices/Prusia/NavalCommander/NAV_ammo_preparecannons_02.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  
+  #===================================================================
+  # S_ACK_CAMBIO_MUNICION_FUEGO
+  #===================================================================
+  [ 
+    .IDNAME "S_ACK_CAMBIO_MUNICION_FUEGO_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/NavalCommander/NAV_fire_firerigging.ogg"  "Audio/Voices/Francia/NavalCommander/NAV_fire_firesails.ogg"
+             "Audio/Voices/Francia/NavalCommander/NAV_ammo_loadchain.ogg" "Audio/Voices/Francia/NavalCommander/NAV_ammo_loadcannons_01.ogg"
+             "Audio/Voices/Francia/NavalCommander/NAV_ammo_loadcannons_02.ogg" "Audio/Voices/Francia/NavalCommander/NAV_ammo_preparecannons_01.ogg"
+             "Audio/Voices/Francia/NavalCommander/NAV_ammo_preparecannons_02.ogg" "Audio/Voices/Francia/NavalCommander/NAV_ammo_chargechain.ogg"  ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_CAMBIO_MUNICION_FUEGO_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/NavalCommander/NAV_fire_firerigging.ogg"  "Audio/Voices/Inglaterra/NavalCommander/NAV_fire_firesails.ogg"
+             "Audio/Voices/Inglaterra/NavalCommander/NAV_ammo_loadchain.ogg" "Audio/Voices/Inglaterra/NavalCommander/NAV_ammo_loadcannons_01.ogg"
+             "Audio/Voices/Inglaterra/NavalCommander/NAV_ammo_loadcannons_02.ogg" "Audio/Voices/Inglaterra/NavalCommander/NAV_ammo_preparecannons_01.ogg"
+             "Audio/Voices/Inglaterra/NavalCommander/NAV_ammo_preparecannons_02.ogg" "Audio/Voices/Inglaterra/NavalCommander/NAV_ammo_chargechain.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_CAMBIO_MUNICION_FUEGO_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/NavalCommander/NAV_fire_firerigging.ogg"  "Audio/Voices/Austria/NavalCommander/NAV_fire_firesails.ogg"
+             "Audio/Voices/Austria/NavalCommander/NAV_ammo_loadchain.ogg" "Audio/Voices/Austria/NavalCommander/NAV_ammo_loadcannons_01.ogg"
+             "Audio/Voices/Austria/NavalCommander/NAV_ammo_loadcannons_02.ogg" "Audio/Voices/Austria/NavalCommander/NAV_ammo_preparecannons_01.ogg"
+             "Audio/Voices/Austria/NavalCommander/NAV_ammo_preparecannons_02.ogg" "Audio/Voices/Austria/NavalCommander/NAV_ammo_chargechain.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_CAMBIO_MUNICION_FUEGO_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/NavalCommander/NAV_fire_firerigging.ogg"  "Audio/Voices/Rusia/NavalCommander/NAV_fire_firesails.ogg"
+             "Audio/Voices/Rusia/NavalCommander/NAV_ammo_loadchain.ogg" "Audio/Voices/Rusia/NavalCommander/NAV_ammo_loadcannons_01.ogg"
+             "Audio/Voices/Rusia/NavalCommander/NAV_ammo_loadcannons_02.ogg" "Audio/Voices/Rusia/NavalCommander/NAV_ammo_preparecannons_01.ogg"
+             "Audio/Voices/Rusia/NavalCommander/NAV_ammo_preparecannons_02.ogg" "Audio/Voices/Rusia/NavalCommander/NAV_ammo_chargechain.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_CAMBIO_MUNICION_FUEGO_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/NavalCommander/NAV_fire_firerigging.ogg"  "Audio/Voices/Prusia/NavalCommander/NAV_fire_firesails.ogg"
+             "Audio/Voices/Prusia/NavalCommander/NAV_ammo_loadchain.ogg" "Audio/Voices/Prusia/NavalCommander/NAV_ammo_loadcannons_01.ogg"
+             "Audio/Voices/Prusia/NavalCommander/NAV_ammo_loadcannons_02.ogg" "Audio/Voices/Prusia/NavalCommander/NAV_ammo_preparecannons_01.ogg"
+             "Audio/Voices/Prusia/NavalCommander/NAV_ammo_preparecannons_02.ogg" "Audio/Voices/Prusia/NavalCommander/NAV_ammo_chargechain.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  
+  #===================================================================
+  # S_ACK_CAMBIO_MUNICION_METRALLA
+  #===================================================================
+  [ 
+    .IDNAME "S_ACK_CAMBIO_MUNICION_METRALLA_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/NavalCommander/NAV_fire_sweepdecks.ogg" "Audio/Voices/Francia/NavalCommander/NAV_fire_cleardecks.ogg"
+             "Audio/Voices/Francia/NavalCommander/NAV_ammo_loadgrape.ogg" "Audio/Voices/Francia/NavalCommander/NAV_ammo_loadcannons_01.ogg"
+             "Audio/Voices/Francia/NavalCommander/NAV_ammo_loadcannons_02.ogg" "Audio/Voices/Francia/NavalCommander/NAV_ammo_preparecannons_01.ogg"
+             "Audio/Voices/Francia/NavalCommander/NAV_ammo_preparecannons_02.ogg" "Audio/Voices/Francia/NavalCommander/NAV_ammo_chargegrape.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_CAMBIO_MUNICION_METRALLA_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/NavalCommander/NAV_fire_sweepdecks.ogg" "Audio/Voices/Inglaterra/NavalCommander/NAV_fire_cleardecks.ogg"
+             "Audio/Voices/Inglaterra/NavalCommander/NAV_ammo_loadgrape.ogg" "Audio/Voices/Inglaterra/NavalCommander/NAV_ammo_loadcannons_01.ogg"
+             "Audio/Voices/Inglaterra/NavalCommander/NAV_ammo_loadcannons_02.ogg" "Audio/Voices/Inglaterra/NavalCommander/NAV_ammo_preparecannons_01.ogg"
+             "Audio/Voices/Inglaterra/NavalCommander/NAV_ammo_preparecannons_02.ogg" "Audio/Voices/Inglaterra/NavalCommander/NAV_ammo_chargegrape.ogg"  ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_CAMBIO_MUNICION_METRALLA_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/NavalCommander/NAV_fire_sweepdecks.ogg" "Audio/Voices/Austria/NavalCommander/NAV_fire_cleardecks.ogg"
+             "Audio/Voices/Austria/NavalCommander/NAV_ammo_loadgrape.ogg" "Audio/Voices/Austria/NavalCommander/NAV_ammo_loadcannons_01.ogg"
+             "Audio/Voices/Austria/NavalCommander/NAV_ammo_loadcannons_02.ogg" "Audio/Voices/Austria/NavalCommander/NAV_ammo_preparecannons_01.ogg"
+             "Audio/Voices/Austria/NavalCommander/NAV_ammo_preparecannons_02.ogg" "Audio/Voices/Austria/NavalCommander/NAV_ammo_chargegrape.ogg"  ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_CAMBIO_MUNICION_METRALLA_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/NavalCommander/NAV_fire_sweepdecks.ogg" "Audio/Voices/Rusia/NavalCommander/NAV_fire_cleardecks.ogg" 
+             "Audio/Voices/Rusia/NavalCommander/NAV_ammo_loadgrape.ogg" "Audio/Voices/Rusia/NavalCommander/NAV_ammo_loadcannons_01.ogg"
+             "Audio/Voices/Rusia/NavalCommander/NAV_ammo_loadcannons_02.ogg" "Audio/Voices/Rusia/NavalCommander/NAV_ammo_preparecannons_01.ogg"
+             "Audio/Voices/Rusia/NavalCommander/NAV_ammo_preparecannons_02.ogg" "Audio/Voices/Rusia/NavalCommander/NAV_ammo_chargegrape.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_CAMBIO_MUNICION_METRALLA_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/NavalCommander/NAV_fire_sweepdecks.ogg" "Audio/Voices/Prusia/NavalCommander/NAV_fire_cleardecks.ogg"
+             "Audio/Voices/Prusia/NavalCommander/NAV_ammo_loadgrape.ogg" "Audio/Voices/Prusia/NavalCommander/NAV_ammo_loadcannons_01.ogg"
+             "Audio/Voices/Prusia/NavalCommander/NAV_ammo_loadcannons_02.ogg" "Audio/Voices/Prusia/NavalCommander/NAV_ammo_preparecannons_01.ogg"
+             "Audio/Voices/Prusia/NavalCommander/NAV_ammo_preparecannons_02.ogg" "Audio/Voices/Prusia/NavalCommander/NAV_ammo_chargegrape.ogg"  ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+
+
+  #===================================================================
+  # S_ACK_ABORDAR
+  #===================================================================
+  [ 
+    .IDNAME "S_ACK_ABORDAR_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/NavalCommander/NAV_board_marinesboard.ogg" "Audio/Voices/Francia/NavalCommander/NAV_board_takeprize.ogg" 
+    	    "Audio/Voices/Francia/NavalCommander/NAV_board_securehulk.ogg" "Audio/Voices/Francia/NavalCommander/NAV_board_allmarinesboard.ogg"
+    	    "Audio/Voices/Francia/NavalCommander/NAV_board_prepareboard.ogg" "Audio/Voices/Francia/NavalCommander/NAV_board_boardenemy.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_ABORDAR_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/NavalCommander/NAV_board_marinesboard.ogg" "Audio/Voices/Inglaterra/NavalCommander/NAV_board_takeprize.ogg" 
+    	    "Audio/Voices/Inglaterra/NavalCommander/NAV_board_securehulk.ogg" "Audio/Voices/Inglaterra/NavalCommander/NAV_board_allmarinesboard.ogg"
+    	    "Audio/Voices/Inglaterra/NavalCommander/NAV_board_prepareboard.ogg" "Audio/Voices/Inglaterra/NavalCommander/NAV_board_boardenemy.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_ABORDAR_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/NavalCommander/NAV_board_marinesboard.ogg" "Audio/Voices/Austria/NavalCommander/NAV_board_takeprize.ogg" 
+    	    "Audio/Voices/Austria/NavalCommander/NAV_board_securehulk.ogg" "Audio/Voices/Austria/NavalCommander/NAV_board_allmarinesboard.ogg"
+    	    "Audio/Voices/Austria/NavalCommander/NAV_board_prepareboard.ogg" "Audio/Voices/Austria/NavalCommander/NAV_board_boardenemy.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_ABORDAR_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/NavalCommander/NAV_board_marinesboard.ogg" "Audio/Voices/Prusia/NavalCommander/NAV_board_takeprize.ogg" 
+    	    "Audio/Voices/Prusia/NavalCommander/NAV_board_securehulk.ogg" "Audio/Voices/Prusia/NavalCommander/NAV_board_allmarinesboard.ogg"
+    	    "Audio/Voices/Prusia/NavalCommander/NAV_board_prepareboard.ogg" "Audio/Voices/Prusia/NavalCommander/NAV_board_boardenemy.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_ABORDAR_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/NavalCommander/NAV_board_marinesboard.ogg" "Audio/Voices/Rusia/NavalCommander/NAV_board_takeprize.ogg" 
+    	    "Audio/Voices/Rusia/NavalCommander/NAV_board_securehulk.ogg" "Audio/Voices/Rusia/NavalCommander/NAV_board_allmarinesboard.ogg"
+    	    "Audio/Voices/Rusia/NavalCommander/NAV_board_prepareboard.ogg" "Audio/Voices/Rusia/NavalCommander/NAV_board_boardenemy.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  
+  #===================================================================
+  # S_ACK_AUTOFIRE
+  #===================================================================
+  [ 
+    .IDNAME "S_ACK_AUTOFIRE_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/NavalCommander/NAV_autofire_choosetarget.ogg" "Audio/Voices/Francia/NavalCommander/NAV_autofire_fireanything.ogg"
+            "Audio/Voices/Francia/NavalCommander/NAV_autofire_firediscretion_01.ogg" "Audio/Voices/Francia/NavalCommander/NAV_autofire_firediscretion_02.ogg"
+            "Audio/Voices/Francia/NavalCommander/NAV_autofire_fireinrange_01.ogg" "Audio/Voices/Francia/NavalCommander/NAV_autofire_fireinrange_02.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_AUTOFIRE_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/NavalCommander/NAV_autofire_choosetarget.ogg" "Audio/Voices/Inglaterra/NavalCommander/NAV_autofire_fireanything.ogg"
+            "Audio/Voices/Inglaterra/NavalCommander/NAV_autofire_firediscretion_01.ogg" "Audio/Voices/Inglaterra/NavalCommander/NAV_autofire_firediscretion_02.ogg" 
+            "Audio/Voices/Inglaterra/NavalCommander/NAV_autofire_fireinrange_01.ogg" "Audio/Voices/Inglaterra/NavalCommander/NAV_autofire_fireinrange_02.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_AUTOFIRE_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/NavalCommander/NAV_autofire_choosetarget.ogg" "Audio/Voices/Austria/NavalCommander/NAV_autofire_fireanything.ogg"
+            "Audio/Voices/Austria/NavalCommander/NAV_autofire_firediscretion_01.ogg" "Audio/Voices/Austria/NavalCommander/NAV_autofire_firediscretion_02.ogg" 
+            "Audio/Voices/Austria/NavalCommander/NAV_autofire_fireinrange_01.ogg" "Audio/Voices/Austria/NavalCommander/NAV_autofire_fireinrange_02.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_AUTOFIRE_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/NavalCommander/NAV_autofire_choosetarget.ogg" "Audio/Voices/Prusia/NavalCommander/NAV_autofire_fireanything.ogg"
+            "Audio/Voices/Prusia/NavalCommander/NAV_autofire_firediscretion_01.ogg" "Audio/Voices/Prusia/NavalCommander/NAV_autofire_firediscretion_02.ogg" 
+            "Audio/Voices/Prusia/NavalCommander/NAV_autofire_fireinrange_01.ogg" "Audio/Voices/Prusia/NavalCommander/NAV_autofire_fireinrange_02.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_AUTOFIRE_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/NavalCommander/NAV_autofire_choosetarget.ogg" "Audio/Voices/Rusia/NavalCommander/NAV_autofire_fireanything.ogg"
+            "Audio/Voices/Rusia/NavalCommander/NAV_autofire_firediscretion_01.ogg" "Audio/Voices/Rusia/NavalCommander/NAV_autofire_firediscretion_02.ogg" 
+            "Audio/Voices/Rusia/NavalCommander/NAV_autofire_fireinrange_01.ogg" "Audio/Voices/Rusia/NavalCommander/NAV_autofire_fireinrange_02.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+
+

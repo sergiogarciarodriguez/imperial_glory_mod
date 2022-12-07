@@ -1,0 +1,109 @@
+#############################################################################################
+# Representa el panel desplegable con información de ingresos y gastos del recurso POBLACION
+#############################################################################################
+
+ 
+ .MODAL FALSE
+ .CENTER FALSE
+ 
+ .DEPTH 2
+  
+ .FONDO 
+ [  
+  .X 272 .Y 45 .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 825 .V 773 .SX 135 .SY 121 .ALPHA TRUE   
+  .PRIORITY 200
+ ]     
+ 
+ .RELATIVE_PRIORITY FALSE         
+            
+ # Controles
+ .CONTROLES
+ [ 
+
+   # Gráficos de ingresos
+   [
+     .TIPO UIC_BITMAP .ID 'BMIN'
+     .PARAMS
+     [
+       .X 13 .Y 23
+       .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga"
+       .U 905 .V 914 .SX 37 .SY 29 .ALPHA TRUE
+       .PRIORITY 201
+     ]
+   ]
+   [
+     .TIPO UIC_BITMAP .ID 'BONU'
+     .PARAMS
+     [
+       .X 9 .Y 25
+       .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga"
+       .U 825 .V 897 .SX 14 .SY 14 .ALPHA TRUE
+       .PRIORITY 202
+     ]
+   ]
+   
+   # Gráficos de gastos
+   [
+     .TIPO UIC_BITMAP .ID 'BMGA'
+     .PARAMS
+     [
+       .X 13 .Y 77
+       .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga"
+       .U 905 .V 914 .SX 37 .SY 29 .ALPHA TRUE
+       .PRIORITY 201
+     ]
+   ]
+   [
+     .TIPO UIC_BITMAP .ID 'MINU'
+     .PARAMS
+     [
+       .X 9 .Y 79
+       .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga"
+       .U 842 .V 897 .SX 14 .SY 14 .ALPHA TRUE
+       .PRIORITY 202
+     ]
+   ]         
+   
+   # Texto variable de ingresos
+   [
+    .TIPO UIC_WRAPTEXT .ID 'INGR'
+    .PARAMS
+    [
+     .X 49 .Y 25 .SX 75 .SY 25 .ALIGN RIGHT .TEXT [ .FONT "Fonts/Times11.fnt" .COLOR [ .R 243 .G 230 .B 153 ] ]
+     .MSG " "
+    ]
+   ]
+   # Texto de Ingresos
+   [
+    .TIPO UIC_TEXT .ID 'TXIN'
+    .PARAMS
+    [
+      .X 13 .Y 5 
+      .TEXT LTEXT_UI_PANELRIQUEZAS_INGRESOS
+      .FONT "Fonts/Times12.fnt"
+      .COLOR [ .R 255 .G 255 .B 255 ]
+    ]
+   ]
+
+   # Texto variable de gastos   
+   [
+    .TIPO UIC_WRAPTEXT .ID 'GAST'
+    .PARAMS
+    [
+     .X 49 .Y 79 .SX 75 .SY 25 .ALIGN RIGHT .TEXT [ .FONT "Fonts/Times11.fnt" .COLOR [ .R 243 .G 230 .B 153 ] ]
+     .MSG " "
+    ]
+   ]   
+   # Texto de Gastos
+   [
+    .TIPO UIC_TEXT .ID 'TXGA'
+    .PARAMS
+    [
+      .X 13 .Y 59 
+      .TEXT LTEXT_UI_PANELRIQUEZAS_GASTOS
+      .FONT "Fonts/Times12.fnt"
+      .COLOR [ .R 255 .G 255 .B 255 ]
+    ]
+   ]   
+    
+ ] # ~ CONTROLES

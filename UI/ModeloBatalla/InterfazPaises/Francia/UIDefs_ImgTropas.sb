@@ -1,0 +1,102 @@
+###############################################################################################################
+# Imagenes asociadas a tropas.
+###############################################################################################################
+
+[ 
+ .KEY FRANCIA_FUSILERO_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Francia/IconosFrancia.tga" .U 407 .V 1 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY FRANCIA_TIRADOR_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Francia/IconosFrancia.tga" .U 1 .V 183 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY FRANCIA_CAZADOR_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Francia/IconosFrancia.tga" .U 233 .V 1 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY FRANCIA_GRANADERO_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Francia/IconosFrancia.tga" .U 291 .V 1 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY FRANCIA_LANCERO_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Francia/IconosFrancia.tga" .U 1 .V 1 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY FRANCIA_MILICIA_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Francia/IconosFrancia.tga" .U 349 .V 1 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY FRANCIA_HUSAR_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Francia/IconosFrancia.tga" .U 59 .V 1 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY FRANCIA_ELITE_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Francia/IconosFrancia.tga" .U 59 .V 183 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY FRANCIA_CAB_LANCERO_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Francia/IconosFrancia.tga" .U 1 .V 1 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY FRANCIA_CAB_HUSAR_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Francia/IconosFrancia.tga" .U 59 .V 1 .SX 57 .SY 91 .ALPHA TRUE ] 
+]
+
+[ 
+ .KEY FRANCIA_CAB_CORACERO_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Francia/IconosFrancia.tga" .U 117 .V 1 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY FRANCIA_CAB_DRAGON_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Francia/IconosFrancia.tga" .U 175 .V 1 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY FRANCIA_CANON_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Francia/IconosFrancia.tga" .U 291 .V 183 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY FRANCIA_CANON8_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Francia/IconosFrancia.tga" .U 233 .V 183 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY FRANCIA_OBUS_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Francia/IconosFrancia.tga" .U 117 .V 183 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY FRANCIA_MORTERO_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Francia/IconosFrancia.tga" .U 407 .V 183 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY FRANCIA_CANON_CAB_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Francia/IconosFrancia.tga" .U 175 .V 183 .SX 57 .SY 91 .ALPHA TRUE  ]
+]
+
+[ 
+ .KEY FRANCIA_OBUS_CAB_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Francia/IconosFrancia.tga" .U 117 .V 183 .SX 57 .SY 91 .ALPHA TRUE  ]
+]
+
+[ 
+ .KEY FRANCIA_CANON_CAMP_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Francia/IconosFrancia.tga" .U 233 .V 183 .ALPHA TRUE ]
+]
+
+
+
+ 

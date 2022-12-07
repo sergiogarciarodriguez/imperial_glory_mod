@@ -1,0 +1,173 @@
+#=======================================================================================
+# Definición de sonidos para el modelo de batalla [ TROPAS ]
+#
+# Param ".3D" es TRUE por defecto.
+#       ".LOOP" es FALSE por defecto.
+#=======================================================================================
+
+
+###-------------------------------------------------------------------------------------
+### AUDIO
+###-------------------------------------------------------------------------------------
+.AUDIO 
+[
+
+  	[ 
+	  .IDNAME "S_MELEE"
+	  .PATH [ "Audio/Battle/Fx/Combat/batalla_infanteria1.ogg"
+	  	"Audio/Battle/Fx/Combat/batalla_infanteria2.ogg"
+	  	"Audio/Battle/Fx/Combat/batalla_infanteria3.ogg"
+	  	"Audio/Battle/Fx/Combat/batalla_infanteria4.ogg"
+	  	"Audio/Battle/Fx/Combat/batalla_infanteria5.ogg"
+	  	"Audio/Battle/Fx/Combat/batalla_infanteria6.ogg" ]
+	  .3D TRUE
+	  .LOOP TRUE
+	  .PREVENT_FLANGER TRUE
+	  .GENERIC FALSE
+	]
+	[ 
+	  .IDNAME "S_MELEE_CABALLERIA"
+	  .PATH [ "Audio/Battle/Fx/Combat/batalla_caballeria1.ogg"
+	  	"Audio/Battle/Fx/Combat/batalla_caballeria2.ogg"
+	  	"Audio/Battle/Fx/Combat/batalla_caballeria3.ogg"
+	  	"Audio/Battle/Fx/Combat/batalla_caballeria4.ogg"
+	  	"Audio/Battle/Fx/Combat/batalla_caballeria5.ogg"
+	  	"Audio/Battle/Fx/Combat/batalla_caballeria6.ogg" ]
+	  .3D TRUE
+	  .LOOP TRUE
+	  .PREVENT_FLANGER TRUE
+	  .GENERIC FALSE
+	]
+	[ 
+	  .IDNAME "S_INF_CARGA_INICIO"     
+	  .PATH "Audio/Battle/Fx/Combat/carga_infanteria_inicio.ogg" 
+	  .3D TRUE
+	  .LOOP TRUE
+	  .PREVENT_FLANGER TRUE
+	  .GENERIC FALSE
+	]
+	[ 
+	  .IDNAME "S_INF_CARGA"     
+	  .PATH "Audio/Battle/Fx/Combat/carga_infanteria_loop.ogg" 
+	  .3D TRUE
+	  .LOOP TRUE
+	  .PREVENT_FLANGER TRUE
+	  .GENERIC FALSE
+	]
+	[ 
+	  .IDNAME "S_CAB_CARGA_INICIO"     
+	  .PATH [ "Audio/Battle/Fx/Combat/carga_caballeria_inicio.ogg" 
+	  	  "Audio/Battle/Fx/Combat/carga_caballeria2_inicio.ogg" ]
+	  .3D TRUE
+	  .LOOP TRUE
+	  .PREVENT_FLANGER TRUE
+	  .GENERIC FALSE
+	]
+	[ 
+	  .IDNAME "S_CAB_CARGA"     
+	  .PATH [ "Audio/Battle/Fx/Combat/carga_caballeria_loop.ogg"
+	          "Audio/Battle/Fx/Combat/carga_caballeria2_loop.ogg" ]
+	  .3D TRUE
+	  .LOOP TRUE
+	  .PREVENT_FLANGER TRUE
+	  .GENERIC FALSE
+	]
+	[ 
+	  .IDNAME "S_CAB_CHOQUE"     
+	  .PATH [ "Audio/Battle/Fx/Combat/choque_caballeria_1.ogg" 
+	   	  "Audio/Battle/Fx/Combat/choque_caballeria_2.ogg" 
+	   	  "Audio/Battle/Fx/Combat/choque_caballeria_3.ogg" ]
+	  .3D TRUE
+	  .LOOP FALSE
+	  .PREVENT_FLANGER TRUE
+	  .GENERIC FALSE
+	]
+	[ 
+	  .IDNAME "S_INF_CHOQUE"     
+	  .PATH "Audio/Battle/Fx/Combat/choque_infanteria.ogg"
+	  .3D TRUE
+	  .LOOP FALSE
+	  .PREVENT_FLANGER TRUE
+	  .GENERIC FALSE
+	]
+	[ 
+	  .IDNAME "S_INF_REFORMAR"
+	  .PATH "Audio/Battle/Fx/Troops/inf_correr_10-30.ogg" 
+	  .3D TRUE
+	  .LOOP TRUE
+	  .PREVENT_FLANGER TRUE
+	  .GENERIC FALSE
+	]
+	[ 
+	  .IDNAME "S_CAB_REFORMAR"
+	  .PATH "Audio/Battle/Fx/Troops/cab_trotar_medio.ogg" 
+	  .3D TRUE
+	  .LOOP TRUE
+	  .PREVENT_FLANGER TRUE
+	  .GENERIC FALSE
+	]
+	[ 
+	  .IDNAME "S_ART_REFORMAR"
+	  .PATH "Audio/Battle/Fx/Troops/Artilleria_girar.ogg" 
+	  .3D TRUE
+	  .LOOP TRUE
+	  .PREVENT_FLANGER TRUE
+	  .GENERIC FALSE
+	]
+	[ 
+	  .IDNAME "S_BANDERAS"
+	  .PATH [ "Audio/Battle/Fx/Troops/bandera1.ogg" 
+	  	"Audio/Battle/Fx/Troops/bandera2.ogg" 
+	  	"Audio/Battle/Fx/Troops/bandera3.ogg" 
+	  	"Audio/Battle/Fx/Troops/bandera4.ogg" 
+	  	"Audio/Battle/Fx/Troops/bandera5.ogg" ] 
+	  .3D TRUE
+	  .LOOP FALSE
+	  .GENERIC FALSE
+	]
+	
+	[ 
+	  .IDNAME "S_INF_AMBIENTE"
+	  .PATH [ "Audio/Battle/Fx/Troops/Tropa_estatico_01.OGG"    
+	  	  "Audio/Battle/Fx/Troops/Tropa_estatico_02.OGG"   
+	  	  "Audio/Battle/Fx/Troops/Tropa_estatico_03.OGG"    
+	  	  "Audio/Battle/Fx/Troops/Tropa_estatico_04.OGG"   
+	  	  "Audio/Battle/Fx/Troops/Tropa_estatico_05.OGG"
+		  "Audio/Battle/Fx/Troops/Tropa_estatico_06.OGG"   
+	  	  "Audio/Battle/Fx/Troops/Tropa_estatico_07.OGG"   
+	  	  "Audio/Battle/Fx/Troops/Tropa_estatico_08.OGG"  
+	  	  "Audio/Battle/Fx/Troops/Tropa_estatico_09.OGG"   
+	  	  "Audio/Battle/Fx/Troops/Tropa_estatico_10.OGG" ]  
+	  	     
+	  	   
+	  .3D TRUE 
+	  .LOOP FALSE
+	  .GENERIC FALSE
+	  .RADIOMIN 800
+	  .RADIOMAX 3000
+	]
+	
+	[ 
+	  ## Unos cuantos de infanteria y los de relinchar
+	  .IDNAME "S_CAB_AMBIENTE"
+	  .PATH [ "Audio/Battle/Fx/Troops/Tropa_estatico_11.OGG"    
+	  	  "Audio/Battle/Fx/Troops/Tropa_estatico_12.OGG"   
+	  	  "Audio/Battle/Fx/Troops/Tropa_estatico_13.OGG"    
+	  	  "Audio/Battle/Fx/Troops/Tropa_estatico_14.OGG"   
+	  	  "Audio/Battle/Fx/Troops/Tropa_estatico_15.OGG"
+		  "Audio/Battle/Fx/Troops/Tropa_estatico_16.OGG"   
+	  	  "Audio/Battle/Fx/Troops/Tropa_estatico_17.OGG"   
+	  	  "Audio/Battle/Fx/Troops/Tropa_estatico_18.OGG"  
+	  	  "Audio/Battle/Fx/Troops/Tropa_estatico_19.OGG"   
+	  	  "Audio/Battle/Fx/Troops/Tropa_estatico_20.OGG" ] 
+	  .3D TRUE
+	  .LOOP FALSE
+	  .GENERIC FALSE
+	  .RADIOMIN 800
+	  .RADIOMAX 3000
+	]
+	
+	
+] ### !AUDIO
+
+

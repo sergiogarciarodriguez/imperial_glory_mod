@@ -1,0 +1,8 @@
+#################################################################################
+# Definición de la barra Fatiga
+#################################################################################
+
+ #.FONDO    [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Francia/IconosFrancia.tga" .U 185 .V 840 .ALPHA TRUE ]
+ .SUPERIOR [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Francia/IconosFrancia.tga" .U 139 .V 498 .ALPHA TRUE ]
+ .X 2 .Y 78
+ .SX 49 .SY 4

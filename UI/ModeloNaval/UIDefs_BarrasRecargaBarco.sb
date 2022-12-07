@@ -1,0 +1,24 @@
+#################################################################################
+# Especificación del control de barras de recarga de barcos en modelo naval
+#################################################################################
+
+.X 0 .Y 0
+
+.BARRA_BABOR
+[
+  .X 22 .Y 125
+  .FORMATO VERTICAL
+  .PRIORITY 34
+  .SUPERIOR [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 83 .V 56 .ALPHA TRUE ]
+  .SX 3 .SY 35
+]
+
+.BARRA_ESTRIBOR
+[
+  .X 94 .Y 125
+  .FORMATO VERTICAL  
+  .PRIORITY 34
+  .SUPERIOR [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 83 .V 56 .ALPHA TRUE ]
+  .SX 3 .SY 35
+]
+

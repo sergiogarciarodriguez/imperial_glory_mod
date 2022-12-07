@@ -1,0 +1,41 @@
+#-----------------------------------------------------------------------------------
+# Define un slider estandar vertical
+#
+# Aqui se definen cosas como:
+#   -las texturas
+#   -las dimensiones del slider
+#   -los controles que tiene (1 ó 3)
+#   - si es horizontal o vertical
+#  
+  
+  .PARAMS
+  [ 
+    .FILE "Game/UI/Comun/DummySlider.tga" .SX 1 .SY 512 .U 482 .V 0 .HORIZONTAL FALSE .PRIORITY 50 .ALPHA TRUE .TRANSPARENCY 200
+      
+     # Boton 1
+    .BTN_1
+    [ .TIPO UIC_BOTONTEXTO
+      .COMPORTAMIENTO SIMPLE       
+      .SOLTADO [ .COLOR [ .R 255   .G 255 .B 255 ] ] 
+      .PULSADO [ .COLOR [ .R 255 .G 0 .B 0 ] ] 
+      .TEXT "[ - ]"                               
+    ]
+
+    # Boton 2                
+    .BTN_2
+    [ .TIPO UIC_BOTONTEXTO
+      .COMPORTAMIENTO SIMPLE       
+      .SOLTADO [ .COLOR [ .R 255   .G 255 .B 255 ] ] 
+      .PULSADO [ .COLOR [ .R 255 .G 0 .B 0 ] ] 
+      .TEXT "[ + ]"                               
+    ]
+  
+    # Boton central
+    .BTN_CENTRAL
+    [ .TIPO UIC_BOTONTEXTO
+      .COMPORTAMIENTO SIMPLE       
+      .SOLTADO [ .COLOR [ .R 255   .G 255 .B 255 ] ] 
+      .PULSADO [ .COLOR [ .R 255 .G 0 .B 0 ] ] 
+      .TEXT "[ X ]"                               
+    ]
+  ]

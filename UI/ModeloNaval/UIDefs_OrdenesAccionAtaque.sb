@@ -1,0 +1,165 @@
+#########################################################################################
+# Botones de Ordenes de Accion de Ataque en Modelo Naval
+#########################################################################################
+
+.BOTONES
+[
+  # Boton de fuego a babor -----------------------------------------------------------------------------
+  [ .ID 'BABO'    
+    .FONDO
+    [
+      .X 402 .Y 622
+      .SX 77 .SY 76 .ALPHA TRUE 
+      .PRIORITY 40
+      .SOLTADO      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 242 .V 56 ] 
+      .SELECCIONADO [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 322 .V 56 ] 
+      .PULSADO      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 402 .V 56 ]
+      .INTERMITENTE [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 322 .V 56 ]
+      .DISABLE      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 562 .V 56 ] 
+    ]
+    .BLINK_TIMER 600.0
+    
+    .IDSELECTSOUND "S_UI_ACCIONATAQUE_PULSADO" 
+    
+    .TOOL_TIP 
+    [ 
+     .TEXT LTEXT_UI_NAVAL_TT_STARBOARDFIRE
+     .FONT "Fonts/gothic.fnt" 
+     .X 32 .Y 32
+     .COLOR [ .R 255 .G 255 .B 255 ] 
+       
+     .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+    ]    
+    
+    .KEY [ .TECLA KEY_K .MKEYS [ ] .EVENTOS [ KEY_UP ] ] 
+
+    .ZSENSIBLE_MANUAL [ .DX 0 .DY 0 .SX 71 .SY 67 ]
+  ]
+  
+  # Boton de autofuego a babor -----------------------------------------------------------------------------
+  [ .ID 'ABAB'    
+    .ACTIVO FALSE
+    .COMPORTAMIENTO MANUAL
+    .BOTON 2 #solo reacciona a los eventos de pulsación del botón derecho
+    .FONDO
+    [
+      .PRIORITY 45
+      .X 402 .Y 622
+      .SX 77 .SY 76 .ALPHA TRUE .PRIORITY 30
+      .PULSADO      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 482 .V 56 ]
+      .INTERMITENTE [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 322 .V 56 ]
+    ]
+    .BLINK_TIMER 600.0
+    
+    .IDSELECTSOUND "S_UI_ACCIONATAQUE_PULSADO" 
+    
+    .TOOL_TIP 
+    [ 
+     .TEXT LTEXT_UI_NAVAL_TT_STARBOARDAUTOFIRE
+     .FONT "Fonts/gothic.fnt" 
+     .X 32 .Y 32
+     .COLOR [ .R 255 .G 255 .B 255 ] 
+       
+     .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+    ]  
+
+    .ZSENSIBLE_MANUAL [ .DX 0 .DY 0 .SX 71 .SY 67 ]            
+  ]  
+  
+ 
+  # Boton de Abordaje -----------------------------------------------------------------------------
+#  [ .ID 'ABOR'
+#    .COMPORTAMIENTO SIMPLE
+#    .ACTIVO TRUE
+#    .BOTON 0
+#    .FONDO
+#    [
+#      .X 487 .Y 709 
+#      .SX 49 .SY 19 .ALPHA TRUE .PRIORITY 30
+#      .SOLTADO      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 1 .V 196 ] 
+#      .SELECCIONADO [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 53 .V 196 ] 
+#      .PULSADO      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 105 .V 196 ] 
+#      .DISABLE      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 157 .V 196 ] 
+#      .INTERMITENTE [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 157 .V 196 ]
+#    ]
+#    .BLINK_TIMER 600.0
+#    
+#    .IDSELECTSOUND "S_UI_ACCIONATAQUE_PULSADO" 
+#    
+#    .TOOL_TIP 
+#    [ 
+#     .TEXT LTEXT_UI_NAVAL_TT_BOARD
+#     .FONT "Fonts/gothic.fnt" 
+#     .X 32 .Y 32
+#     .COLOR [ .R 255 .G 255 .B 255 ] 
+#       
+#     .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+#    ]              
+#  ]
+  
+  # Boton de fuego a Estribor -----------------------------------------------------------------------------
+  [ .ID 'ESTR'
+    .COMPORTAMIENTO SIMPLE
+    .ACTIVO TRUE
+    .BOTON 0
+    .FONDO
+    [
+      .X 550 .Y 622 
+      .SX 77 .SY 76 .ALPHA TRUE 
+      .PRIORITY 40
+      .SOLTADO      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 242 .V 135 ] 
+      .SELECCIONADO [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 322 .V 135 ] 
+      .PULSADO      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 402 .V 135 ]
+      .INTERMITENTE [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 322 .V 135 ]
+      .DISABLE      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 562 .V 135 ] 
+    ]
+    .BLINK_TIMER 600.0
+    
+    .IDSELECTSOUND "S_UI_ACCIONATAQUE_PULSADO" 
+    
+    .TOOL_TIP 
+    [ 
+     .TEXT LTEXT_UI_NAVAL_TT_LARBOARDFIRE
+     .FONT "Fonts/gothic.fnt" 
+     .X 32 .Y 32
+     .COLOR [ .R 255 .G 255 .B 255 ] 
+       
+     .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+    ]              
+    
+    .KEY [ .TECLA KEY_L .MKEYS [ ] .EVENTOS [ KEY_UP ] ]  
+
+    .ZSENSIBLE_MANUAL [ .DX 0 .DY 0 .SX 71 .SY 67 ]  
+  ]
+ 
+  # Boton de autofuego a Estribor -----------------------------------------------------------------------------
+  [ .ID 'AEST'
+    .COMPORTAMIENTO MANUAL
+    .ACTIVO FALSE
+    .BOTON 2 #solo reacciona a los eventos de pulsación del botón derecho
+    .FONDO
+    [
+      .X 550 .Y 622 
+      .SX 77 .SY 76 .ALPHA TRUE 
+      .PRIORITY 45
+      .PULSADO      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 482 .V 135 ]
+      .INTERMITENTE [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 322 .V 135 ]
+    ]
+    .BLINK_TIMER 600.0
+    
+    .IDSELECTSOUND "S_UI_ACCIONATAQUE_PULSADO" 
+    
+    .TOOL_TIP 
+    [ 
+     .TEXT LTEXT_UI_NAVAL_TT_LARBOARDAUTOFIRE
+     .FONT "Fonts/gothic.fnt" 
+     .X 32 .Y 32
+     .COLOR [ .R 255 .G 255 .B 255 ] 
+       
+     .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+    ]              
+
+    .ZSENSIBLE_MANUAL [ .DX 0 .DY 0 .SX 71 .SY 67 ]
+  ]  
+  
+]

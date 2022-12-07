@@ -1,0 +1,612 @@
+[
+  .NAME UI_MAIN_MENU
+  .PROC UI_MAIN_MENU
+  .PARAMS
+  [
+  .CONTROLES
+   [     
+    [ .TIPO UIC_GESTORMENUS
+      .ID 'GMEN'
+      # ATENCIÓN: La descripción de los enlaces del gestor de menús contempla la posibilidad de asignarle a un ID de control
+      # el menú anterior especificándole como ID de destino el 0. En caso de usarse esta característica, y para que funcione
+      # correctamente, TODOS los menús que vuelvan al menú inmediatamente anterior deberán especificar en su zona de enlaces
+      # 0 como el ID de destino en su botón de Volver. Esto es debido a que 0 implica un pop en la pila de pantallas, mientras
+      # que especificar cualquier otro menú equivale a un push.
+      .PARAMS
+      [             
+        .MENUS
+        [
+          # Nota: - El primer menu definido sera el que se active al establecer el gestor de menus
+
+           ######################################################################################### MENU 1 ##
+           # Menu principal
+         [ ######################################################################################### MENU 1 ##
+          .ID 'M__1'
+          .CONTROLES
+          [
+           # Fondo y menu principal
+            [
+              .TIPO UIC_TEXT .ID 'VERS'
+              .PARAMS
+              [
+              	%Game/UI/Comun/TextoVersion.sb
+              	.X 15 .Y 716
+                .FONT "Fonts/Times12.fnt"
+                .COLOR [ .R 255 .G 255 .B 255 ]
+              ]
+            ]
+            
+            # Texto de versión especial, por defecto comentado
+#           [ .TIPO UIC_TEXT .ID 'TEST' .PARAMS [ .TEXT "PREVIEW" .X 15 .Y 30 .FONT "Fonts/Times18.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ] ]
+            
+           
+           %Game/UI/MainMenu/UIDefs_PantallaMainMenu.sb              
+          ] # ~ .CONTROLES
+          
+          .ENLACES
+          [
+           [ .CONTROL_ID 'OP_1' .MENU_ID 'M_CC' ] # M_CC M_SE 'M__2' ] # opciones de campaña antes de imperios, verificar
+           [ .CONTROL_ID 'OP_2' .MENU_ID 'M_JC' ] # M_JC  M_SN  M_SA Comentar esta línea para desactivar multiplayer
+           [ .CONTROL_ID 'OP_8' .MENU_ID 'M_OJ' ]
+           [ .CONTROL_ID 'OP_5' .MENU_ID 'M_SE' ] # M_PR  M_SE MSA1 MSN1        
+           [ .CONTROL_ID 'OP_4' .MENU_ID 'MCRE' ]
+           [ .CONTROL_ID 'OP_6' .MENU_ID 'MPTU' ]
+           [ .CONTROL_ID 'OP_7' .MENU_ID 'M_BH' ]
+          ] # ~ ENLACES         
+          
+         ] # ~ MENU 1
+
+          ######################################################################################### MENU 2.5 ##
+          # Pantalla de seleccion de imperios Version 2
+        [ ######################################################################################### MENU 2.5 ##
+          .ID 'M_25'
+          .CONTROLES
+          [          
+           [
+             # Menu de seleccion de imperios
+             .TIPO UIC_DLGSELECTEMPIRE .ID 'MMS2' 
+             .PARAMS 
+             [ 
+               .MODO_FUNCIONAMIENTO 0
+               %Game\UI\MainMenu\UIDefs_SelectEmpire.sb 
+             ]# ~ .PARAMS
+           ]
+          ] # ~ .CONTROLES
+          
+          .ENLACES
+          [
+            [ .CONTROL_ID 'MSIX' .MENU_ID 'M__3']          
+            [ .CONTROL_ID 'O2_X' .MENU_ID 0 ] # 'M__1'] # desde deslección de imperios volvemos a config campaña, verificar
+          ]
+        ] # ~ MENU 2
+  
+        
+        [ ######################################################################################### MENU 3 ##
+          .ID 'M__3'
+          .CONTROLES
+          [
+            # Menu vacio.
+            # Cuando detectemos que entramos en este menu cambiaremos directamente de interfaz para mostrar
+            # la pantalla de carga. El interfaz al que cambiaremos sera: UI_MAIN_MENU_MODELO_GESTION_LOADING
+
+            # Imagen de fondo
+            # [ .TIPO UIC_BITMAP .ID 'FOND' .PARAMS [ .FILE "Game/UI/ModeloGestion/loading.tga" .X 0 .Y 0 .SX 1024 .SY 768 .U 0 .V 0 ] ] 
+
+          ]
+        ] # ~ MENU 3
+
+        [ ################################################################# MENU CONFIGURACIÓN DE CAMPAÑA ##
+          .ID 'M_CC'
+          .CONTROLES
+          [
+            [
+              .TIPO UIC_DLGCONFIGURACAMPANA .ID 'MMCC'
+              .PARAMS
+              [
+                %Game/UI/MainMenu/UIDefs_PantallaConfiguraCampana.sb
+              ]
+            ]
+          ]
+
+          .ENLACES
+          [
+            [ .CONTROL_ID 'OCCC' .MENU_ID 'M_25'] #CMonterd: M__2
+            [ .CONTROL_ID 'OCCX' .MENU_ID 0 ]
+          ]
+        ] # ~ MENU CONFIGURACIÓN DE CAMPAÑA
+        
+        [ ################################################################### MENU TUTORIALES ##
+          .ID 'MPTU'
+          .CONTROLES
+          [
+            [
+              .TIPO UIC_DLGTUTORIALES .ID 'DLTU'
+              .PARAMS [ %Game/UI/MainMenu/UIDefs_DlgTutoriales.sb ]
+            ]
+          ]
+
+          .ENLACES
+          [
+            #[ .CONTROL_ID 'OTUC' .MENU_ID 0 ]
+            [ .CONTROL_ID 'OTUX' .MENU_ID 0 ]
+          ]
+        ] # ~ MENU TUTORIALES
+          
+#        [ ################################################################# MENU OPCIONES##
+#          .ID 'M_OP'
+#          .CONTROLES
+#          [
+#            %Game/UI/MainMenu/UIDefs_PantallaOpciones.sb              
+#          ]
+#
+#          .ENLACES
+#          [
+#            [ .CONTROL_ID 'O_BC' .MENU_ID 0]
+#            [ .CONTROL_ID 'O_BO' .MENU_ID 0]
+#          ]
+#        ] # ~ MENU OPCIONES 
+        [ ################################################################# MENU OPCIONES##
+          .ID 'M_OJ'
+          .CONTROLES
+          [
+            [
+              .TIPO UIC_DLGOPCIONES .ID 'MOPS' 
+              .PARAMS
+              [
+                %Game/UI/MainMenu/UIDefs_PantallaOpciones.sb              
+              ]
+            ]
+          ]
+
+          .ENLACES
+          [
+            [ .CONTROL_ID 'SBHK' .MENU_ID 0]
+            [ .CONTROL_ID 'SBHX' .MENU_ID 0]
+          ]
+        ] # ~ MENU OPCIONES 
+        [ ################################################################# MENU CRÉDITOS##
+          .ID 'MCRE'
+          .CONTROLES
+          [
+            %Game/UI/MainMenu/UIDefs_PantallaCreditos.sb              
+          ]
+
+          .ENLACES
+          [
+            [ .CONTROL_ID 'CRBK' .MENU_ID 0]
+            [ .CONTROL_ID 'VSFJ' .MENU_ID 0]
+          ]
+        ] # ~ MENU CRÉDITOS         
+
+        [ ####################################### MENU MULTIPLAYER JOIN CREATE ##############################
+          .ID 'M_JC'
+          
+          .CONTROLES
+          [
+            #[ .TIPO UIC_BITMAP .ID 'BMFO' .PARAMS [ .FILE "Game/UI/MainMenu/FondoMenu0000.tga" .SX 1024 .SY 768 .PRIORITY 1 .ALPHA TRUE ] ]
+                      
+            [
+              .TIPO UIC_DLGMULTIPLAYERJOINCREATE .ID 'MMJC'
+              .PARAMS
+              [
+                %Game/UI/Red/UI_DefsMultiplayerJoinCreate.sb
+              ]
+            ]
+          ]
+
+          .ENLACES
+          [
+            [ .CONTROL_ID 'MJCX' .MENU_ID 0]
+            [ .CONTROL_ID 'MJCC' .MENU_ID 'M_CG' ]            
+            [ .CONTROL_ID 'MJCJ' .MENU_ID 'M_CG' ]            
+          ]
+        ] # ~ MENU MULTIPLAYER JOIN CREATE      
+
+        [ ####################################### MENU MULTIPLAYER CONFIG GAME ##############################
+          .ID 'M_CG'
+          
+          .CONTROLES
+          [
+            #[ .TIPO UIC_BITMAP .ID 'BMFO' .PARAMS [ .FILE "Game/UI/MainMenu/FondoMenu0000.tga" .SX 1024 .SY 768 .PRIORITY 1 .ALPHA TRUE ] ]
+                      
+            [
+              .TIPO UIC_DLGMULTIPLAYERCONFIGGAME .ID 'MMCG'
+              .PARAMS
+              [
+                %Game/UI/Red/UI_DefsMultiplayerConfigGame.sb
+              ]
+            ]
+          ]
+
+          .ENLACES
+          [
+            [ .CONTROL_ID 'MCGX' .MENU_ID 'M__1']
+            [ .CONTROL_ID 'MCGC' .MENU_ID 'M_SB']
+            [ .CONTROL_ID 'MCHT' .MENU_ID 'MMHT']
+            [ .CONTROL_ID 'MCHN' .MENU_ID 'MMHN']
+          ]
+        ] # ~ MENU MULTIPLAYER CONFIG GAME
+        
+        [ ####################################### MENU MULTIPLAYER SELECT BANDO #############################
+          .ID 'M_SB'
+          
+          .CONTROLES
+          [
+            #[ .TIPO UIC_BITMAP .ID 'BMFO' .PARAMS [ .FILE "Game/UI/MainMenu/FondoMenu0000.tga" .SX 1024 .SY 768 .PRIORITY 1 .ALPHA TRUE ] ]
+          
+            [
+              .TIPO UIC_DLGMULTIPLAYERSELECTBANDO .ID 'MMSB'
+              .PARAMS
+              [
+                %Game/UI/Red/UI_DefsMultiplayerSelectBando.sb
+              ]
+            ]
+          ]
+
+          .ENLACES
+          [
+            [ .CONTROL_ID 'MSBX' .MENU_ID 'M__1']
+            [ .CONTROL_ID 'MSBN' .MENU_ID 'M_SN']
+            [ .CONTROL_ID 'MSBA' .MENU_ID 'M_SA']
+          ]
+        ] # ~ MENU MULTIPLAYER SELECT BANDO
+        
+        [ ####################################### MENU SELECCION ESCENARIO ##################################
+          .ID 'M_SE'
+          .CONTROLES
+          [          
+          	#[ .TIPO UIC_BITMAP .ID 'BMFO' .PARAMS [ .FILE "Game/UI/MainMenu/FondoMenu0000.tga" .SX 1024 .SY 768 .PRIORITY 1 .ALPHA TRUE ] ]
+						
+						[
+						 .TIPO UIC_DLGSELECTESCENARIO .ID 'MSES' 
+						 .PARAMS 
+						 [ 
+						   %Game\UI\MainMenu\UI_DefsSelectEscenarioQuickGame.sb 
+						 ]
+						]	
+          ]
+          
+          .ENLACES
+          [
+            [ .CONTROL_ID 'MSEX' .MENU_ID 0 ]
+            [ .CONTROL_ID 'MSET' .MENU_ID 'MSE1']  # continuar terrestre
+            [ .CONTROL_ID 'MSEN' .MENU_ID 'MSE1']  # continuar naval
+          ]
+        ] # ~ MENU SELECCION ESCENARIO
+
+        [ ####################################### MENU SELECCION BATALLA HISTORICA ##################################
+          .ID 'M_BH'
+          .CONTROLES
+          [          
+          	#[ .TIPO UIC_BITMAP .ID 'BMFO' .PARAMS [ .FILE "Game/UI/MainMenu/FondoMenu0000.tga" .SX 1024 .SY 768 .PRIORITY 1 .ALPHA TRUE ] ]
+						
+						[
+						 .TIPO UIC_DLGSELECTESCENARIO .ID 'MSBH' 
+						 .PARAMS 
+						 [ 
+						   %Game\UI\MainMenu\UI_DefsSelectEscenarioBatallaHistorica.sb 
+						 ]
+						]	
+          ]
+          
+          .ENLACES
+          [
+            [ .CONTROL_ID 'SBHX' .MENU_ID 0 ]
+            [ .CONTROL_ID 'SBHT' .MENU_ID 'MBHT']  # continuar terrestre
+            [ .CONTROL_ID 'SBHN' .MENU_ID 'MBHN']  # continuar naval
+          ]
+        ] # ~ MENU SELECCION BATALLA HISTORICA
+
+
+        [ ####################################### MENU SELECCION BANDO BATALLA HISTORICA TERRESTRE ##################################
+          .ID 'MBHT'
+          .CONTROLES
+          [          
+          	#[ .TIPO UIC_BITMAP .ID 'BMFO' .PARAMS [ .FILE "Game/UI/MainMenu/FondoMenu0000.tga" .SX 1024 .SY 768 .PRIORITY 1 .ALPHA TRUE ] ]
+						
+						[
+						 .TIPO UIC_DLGSELECCIONBANDOHISTORICA .ID 'MSBB' 
+						 .PARAMS 
+						 [ 
+						   .MODO_FUNCIONAMIENTO 0 # para quick game, 1 para red
+						   %Game\UI\MainMenu\UI_DefsSeleccionBandoHistoricaTerrestre.sb 
+						 ]
+						]	
+          ]
+          
+          .ENLACES
+          [
+            [ .CONTROL_ID 'LEOP' .MENU_ID 0]            
+            [ .CONTROL_ID 'MSEX' .MENU_ID 'M_BH' ]
+          ]
+        ] # ~ MENU SELECCION BANDO BATALLA HISTORICA TERRESTRE
+        [ ####################################### MENU SELECCION BANDO BATALLA HISTORICA NAVAL ##################################
+          .ID 'MBHN'
+          .CONTROLES
+          [          
+          	#[ .TIPO UIC_BITMAP .ID 'BMFO' .PARAMS [ .FILE "Game/UI/MainMenu/FondoMenu0000.tga" .SX 1024 .SY 768 .PRIORITY 1 .ALPHA TRUE ] ]
+						
+						[
+						 .TIPO UIC_DLGSELECCIONBANDOHISTORICA .ID 'MSBB' 
+						 .PARAMS 
+						 [ 
+						   .MODO_FUNCIONAMIENTO 0 # para quick game, 1 para red
+						   %Game\UI\MainMenu\UI_DefsSeleccionBandoHistoricaNaval.sb 
+						 ]
+						]	
+          ]
+          
+          .ENLACES
+          [
+            [ .CONTROL_ID 'LEOP' .MENU_ID 0]            
+            [ .CONTROL_ID 'MSEX' .MENU_ID 'M_BH' ]
+          ]
+        ] # ~ MENU SELECCION BANDO BATALLA HISTORICA NAVAL
+
+        [ ####################################### MENU SELECCION MULTIPLAYER BANDO BATALLA HISTORICA TERRESTRE ##################################
+          .ID 'MMHT'
+          .CONTROLES
+          [          
+          	#[ .TIPO UIC_BITMAP .ID 'BMFO' .PARAMS [ .FILE "Game/UI/MainMenu/FondoMenu0000.tga" .SX 1024 .SY 768 .PRIORITY 1 .ALPHA TRUE ] ]
+						
+						[
+						 .TIPO UIC_DLGSELECCIONBANDOHISTORICA .ID 'MSBB' 
+						 .PARAMS 
+						 [ 
+						    .MODO_FUNCIONAMIENTO 1 # para quick game, 1 para red
+						    
+                .FONDO
+                [
+                  .FILE "Game/UI/Red/SeleccionBandoHistoricaTerrestreMultiplayer.tga"
+                  .X 0	.Y 0 
+                  .U 1 	  .V 1 
+                  .SX 1024 .SY 768 
+                  .ALPHA TRUE
+                  .PRIORITY 10
+                ]
+						    
+ 						    %Game\UI\MainMenu\UI_DefsSeleccionBandoHistoricaTerrestreM.sb 
+						 ]
+						]	
+          ]
+          
+          .ENLACES
+          [
+            [ .CONTROL_ID 'LEOM' .MENU_ID 'M__1']            
+          ]
+        ] # ~ MENU SELECCION BANDO BATALLA HISTORICA TERRESTRE
+        [ ####################################### MENU SELECCION MULTIPLAYER BANDO BATALLA HISTORICA NAVAL ##################################
+          .ID 'MMHN'
+          .CONTROLES
+          [          
+          	#[ .TIPO UIC_BITMAP .ID 'BMFO' .PARAMS [ .FILE "Game/UI/MainMenu/FondoMenu0000.tga" .SX 1024 .SY 768 .PRIORITY 1 .ALPHA TRUE ] ]
+						
+						[
+						 .TIPO UIC_DLGSELECCIONBANDOHISTORICA .ID 'MSBB' 
+						 .PARAMS 
+						 [ 
+						   .MODO_FUNCIONAMIENTO 1 # para quick game, 1 para red
+						   
+                .FONDO
+                [
+                  .FILE "Game/UI/Red/SeleccionBandoHistoricaNavalMultiplayer.tga"
+                  .X 0	.Y 0 
+                  .U 1 	  .V 1 
+                  .SX 1024 .SY 768 
+                  .ALPHA TRUE
+                  .PRIORITY 10
+                ]
+						   
+						   %Game\UI\MainMenu\UI_DefsSeleccionBandoHistoricaNaval.sb 
+						 ]
+						]	
+          ]
+          
+          .ENLACES
+          [
+            [ .CONTROL_ID 'LEOM' .MENU_ID 'M__1']            
+          ]
+        ] # ~ MENU SELECCION BANDO BATALLA HISTORICA NAVAL
+
+        [ ####################################### MENU SELECT ARMY QG PLAYER ################################
+          .ID 'MSA1'
+          
+          .CONTROLES
+          [
+            [
+              .TIPO UIC_DLGSELECTARMY .ID 'SA1_'
+              .PARAMS
+              [
+                %Game\UI\MainMenu\UI_DefsSelectArmyQGPlayer.sb
+              ]
+            ]
+          ]
+
+          .ENLACES
+          [
+            [ .CONTROL_ID 'MSAX' .MENU_ID 0]
+            [ .CONTROL_ID 'MSAR' .MENU_ID 'MSE2'] 
+          ]
+          
+        ] # ~ MENU SELECT ARMY QG PLAYER
+
+        [ ####################################### MENU SELECT ARMY QG ENEMY #################################
+          .ID 'MSA2'
+          
+          .CONTROLES
+          [
+            [
+              .TIPO UIC_DLGSELECTARMY .ID 'SA2_'
+              .PARAMS
+              [
+                %Game\UI\MainMenu\UI_DefsSelectArmyQGEnemy.sb
+              ]
+            ]
+          ]
+
+          .ENLACES
+          [
+            [ .CONTROL_ID 'MSAX' .MENU_ID 0]
+          ]
+          
+        ] # ~ MENU SELECT ARMY    
+
+
+        [ ####################################### MENU SELECT NAVY QG PLAYER ##############################
+          .ID 'MSN1'
+          
+          .CONTROLES
+          [
+            [
+              .TIPO UIC_DLGSELECTNAVY .ID 'SN1_'
+              .PARAMS
+              [
+                %Game\UI\MainMenu\UI_DefsSelectNavyQGPlayer.sb
+              ]
+            ]
+          ]
+
+          .ENLACES
+          [
+            [ .CONTROL_ID 'SNX_' .MENU_ID 0]
+            [ .CONTROL_ID 'SNR_' .MENU_ID 'MSE2']  # al de seleccion de imperio QG Enemy
+          ]
+        ] # ~ MENU MULTIPLAYER SELECT NAVY QG PLAYER
+
+        [ ####################################### MENU SELECT NAVY QG ENEMY ##############################
+          .ID 'MSN2'
+          
+          .CONTROLES
+          [
+            [
+              .TIPO UIC_DLGSELECTNAVY .ID 'SN2_'
+              .PARAMS
+              [
+                %Game\UI\MainMenu\UI_DefsSelectNavyQGEnemy.sb
+              ]
+            ]
+          ]
+
+          .ENLACES
+          [
+            [ .CONTROL_ID 'SNX_' .MENU_ID 0]
+          ]
+        ] # ~ MENU MULTIPLAYER SELECT NAVY QG ENEMY
+
+        [ ####################################### MENU SELECT EMPIRE QG PLAYER ##############################
+          .ID 'MSE1'
+          
+          .CONTROLES
+          [
+            [
+              .TIPO UIC_DLGSELECTEMPIRE .ID 'SE1_'
+              .PARAMS
+              [
+                %Game\UI\MainMenu\UI_DefsSelectEmpireQGPlayer.sb
+              ]
+            ]
+          ]
+
+          .ENLACES
+          [
+            [ .CONTROL_ID 'SIX_' .MENU_ID 0]
+            [ .CONTROL_ID 'SET1' .MENU_ID 'MSA1']
+            [ .CONTROL_ID 'SEN1' .MENU_ID 'MSN1']
+            
+          ]
+        ] # ~ MENU SELECT EMPIRE QG PLAYER
+
+        [ ####################################### MENU SELECT EMPIRE QG ENEMY ##############################
+          .ID 'MSE2'
+          
+          .CONTROLES
+          [
+            [
+              .TIPO UIC_DLGSELECTEMPIRE .ID 'SE2_'
+              .PARAMS
+              [
+                %Game\UI\MainMenu\UI_DefsSelectEmpireQGEnemy.sb
+              ]
+            ]
+          ]
+
+          .ENLACES
+          [
+            [ .CONTROL_ID 'SIX_' .MENU_ID 0]
+            [ .CONTROL_ID 'SET2' .MENU_ID 'MSA2']
+            [ .CONTROL_ID 'SEN2' .MENU_ID 'MSN2']
+          ]
+        ] # ~ MENU SELECT EMPIRE QG ENEMY
+
+        [ ####################################### MENU SELECT ARMY MULTIPLAYER ##############################
+          .ID 'M_SA'
+          
+          .CONTROLES
+          [
+            [
+              .TIPO UIC_DLGSELECTARMYMULTIPLAYER .ID 'MMSA'
+              .PARAMS
+              [
+                %Game\UI\Red\UI_DefsSelectArmyMultiplayer.sb
+              ]
+            ]
+          ]
+
+          .ENLACES
+          [
+            [ .CONTROL_ID 'MSAE' .MENU_ID 'M__1']
+          ]
+          
+        ] # ~ MENU SELECT ARMY MULTIPLAYER
+
+        [ ####################################### MENU SELECT NAVY MULTIPLAYER ##############################
+          .ID 'M_SN'
+          
+          .CONTROLES
+          [
+            [
+              .TIPO UIC_DLGSELECTNAVYMULTIPLAYER .ID 'MMSN'
+              .PARAMS
+              [
+                %Game\UI\Red\UI_DefsSelectNavyMultiplayer.sb
+              ]
+            ]
+          ]
+
+          .ENLACES
+          [
+            [ .CONTROL_ID 'MSNE' .MENU_ID 'M__1']
+          ]
+          
+        ] # ~ MENU SELECT NAVY MULTIPLAYER
+
+
+       ] # ~ .MENUS     
+      ] # ~ .PARAMS     
+    ] # ~ .TIPO UIC_GESTORMENUS    
+    
+     # Vídeo de fondo del menú principal
+     [
+       .TIPO UIC_VIDEO .ID 'VDFO'
+       .PARAMS 
+       [ 
+         .FILE "Videos/FondoMenu.bik" 
+         .X 0 .Y 0 .SX 1024 .SY 768
+         .LOOP TRUE .ALPHA FALSE .PRIORITY 1
+         .NOSOUND TRUE
+         #indica que no va a ser necesario que se sincronice estrictamente con el tiempo de sistema
+         .NOSYNC TRUE
+       ]
+     ]   
+   
+    
+   ] # ~ CONTROLES
+
+   .UI_DATA
+   [
+     .CURSOR CUR_DEFAULT
+     .MUSIC  "S_MAINMENU_MUSICA" 
+   
+   ]   
+  ] # ~ PARAMS  
+]

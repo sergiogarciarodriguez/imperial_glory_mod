@@ -1,0 +1,464 @@
+##################################################
+## Diálogo de noticias generales de juego
+## -
+## Las coordenadas son extrañas debido a que son relativas a la posición del diálogo de noticias economía tomadas como absolutas
+## esto es debido a un defecto en la carga de los diálogos que da problemas en sus posiciones relativas cuando están anidados en más de dos niveles
+##################################################
+
+.MODAL FALSE
+.CENTER FALSE
+.DEPTH 3
+
+.FONDO
+[
+  .X 200 .Y 112 .U 1 .V 154 .SX 640 .SY 500
+  .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinEstadisticas2.tga" 
+  .ALPHA TRUE .PRIORITY 202
+]
+
+.CONTROLES
+[
+  [ 
+    .TIPO UIC_GESTORCHECKBOX .ID 'GCE1'
+    .PARAMS
+    [
+      .CHECKBOXES
+      [      
+	      # Botón de Francia        
+        [ .TIPO UIC_CHECKBOX .ID 'CBFR'
+          .PARAMS
+          [ 
+            .COMPORTAMIENTO FIJO
+
+            .FONDO
+            [
+              .PRIORITY 203
+              .X 130 .Y 14
+              .SX 49 .SY 50
+              .DISABLE      [ .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinEstadisticas2.tga" .U 17 .V 822 ]
+              .SOLTADO      [ .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinEstadisticas2.tga" .U 17 .V 663 ]
+              .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinEstadisticas2.tga" .U 17 .V 716 ]
+              .PULSADO      [ .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinEstadisticas2.tga" .U 17 .V 769 ]     
+              .ALPHA TRUE          
+            ]
+            
+            .TOOL_TIP
+            [ 
+              .TEXT LTEXT_JUGADOR_FRANCIA
+       	      .X 32 .Y 32
+       	        
+              
+              .STYLE DEFAULT_TOOLTIP 
+            ]
+            
+    	    .IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK"                              
+    	    .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"
+
+          ]            
+        ] # ~ CHECKBOX         
+        
+        # Botón de Inglaterra
+        [ .TIPO UIC_CHECKBOX .ID 'CBIN'
+          .PARAMS
+          [ 
+            .COMPORTAMIENTO FIJO
+
+            .FONDO
+            [
+              .PRIORITY 203
+              .X 209 .Y 14
+              .SX 49 .SY 50
+              .DISABLE      [ .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinEstadisticas2.tga" .U 69 .V 822 ]
+              .SOLTADO      [ .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinEstadisticas2.tga" .U 69 .V 663 ]
+              .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinEstadisticas2.tga" .U 69 .V 716 ]
+              .PULSADO      [ .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinEstadisticas2.tga" .U 69 .V 769 ]     
+              .ALPHA TRUE          
+            ]
+            
+            .TOOL_TIP
+            [ 
+              .TEXT LTEXT_JUGADOR_GRAN_BRETANYA
+       	      .X 32 .Y 32
+       	        
+       	      .DEPTH 3
+       	      .PRIORITY 203
+              
+              .STYLE DEFAULT_TOOLTIP 
+            ]
+            
+    	    .IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK"                              
+    	    .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"
+
+          ]            
+        ] # ~ CHECKBOX
+        
+	      # Botón de Rusia        
+        [ .TIPO UIC_CHECKBOX .ID 'CBRU'
+          .PARAMS
+          [ 
+            .COMPORTAMIENTO FIJO
+
+            .FONDO
+            [
+              .PRIORITY 203
+              .X 288 .Y 14
+              .SX 49 .SY 50
+              .DISABLE      [ .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinEstadisticas2.tga" .U 121 .V 822 ]
+              .SOLTADO      [ .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinEstadisticas2.tga" .U 121 .V 663 ]
+              .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinEstadisticas2.tga" .U 121 .V 716 ]
+              .PULSADO      [ .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinEstadisticas2.tga" .U 121 .V 769 ]     
+              .ALPHA TRUE          
+            ]
+            
+            .TOOL_TIP
+            [ 
+              .TEXT LTEXT_JUGADOR_RUSIA
+       	      .X 32 .Y 32
+       	        
+              
+              .STYLE DEFAULT_TOOLTIP 
+            ]
+            
+    	    .IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK"                              
+    	    .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"
+
+          ]            
+        ] # ~ CHECKBOX                 
+      
+        # Botón de Hungría/Austria
+        [ .TIPO UIC_CHECKBOX .ID 'CBHU'
+          .PARAMS
+          [ 
+            .COMPORTAMIENTO FIJO
+
+            .FONDO
+            [
+              .PRIORITY 203
+              .X 367 .Y 14
+              .SX 49 .SY 50
+              .DISABLE      [ .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinEstadisticas2.tga" .U 173 .V 822 ]
+              .SOLTADO      [ .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinEstadisticas2.tga" .U 173 .V 663 ]
+              .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinEstadisticas2.tga" .U 173 .V 716 ]
+              .PULSADO      [ .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinEstadisticas2.tga" .U 173 .V 769 ]     
+              .ALPHA TRUE          
+            ]
+            
+            .TOOL_TIP
+            [ 
+              .TEXT LTEXT_JUGADOR_AUSTRIA
+ 	            .X 32 .Y 32
+
+              .SHOW_TIME 0  
+              .STYLE DEFAULT_TOOLTIP 
+            ]
+            
+    	    .IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK"                              
+    	    .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"                                     
+          ]            
+        ] # ~ CHECKBOX         
+
+	      # Botón de Prusia        
+        [ .TIPO UIC_CHECKBOX .ID 'CBPR'
+          .PARAMS
+          [ 
+            .COMPORTAMIENTO FIJO
+
+            .FONDO
+            [
+              .PRIORITY 203
+              .X 446 .Y 14
+              .SX 49 .SY 50
+              .DISABLE      [ .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinEstadisticas2.tga" .U 225 .V 822 ]
+              .SOLTADO      [ .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinEstadisticas2.tga" .U 225 .V 663 ]
+              .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinEstadisticas2.tga" .U 225 .V 716 ]
+              .PULSADO      [ .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinEstadisticas2.tga" .U 225 .V 769 ]     
+              .ALPHA TRUE          
+            ]
+            
+            .TOOL_TIP
+            [ 
+              .TEXT LTEXT_JUGADOR_PRUSIA
+       	      .X 32 .Y 32
+       	        
+              
+              .STYLE DEFAULT_TOOLTIP 
+            ]
+            
+      	      .IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK"                              
+    	      .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"
+
+          ]            
+        ] # ~ CHECKBOX         
+
+      ] # ~ CHECKBOXES
+        
+      # siempre debe estar activada una opción
+      .PERMITE_NINGUNA_ACTIVACION FALSE
+      
+    ] # ~ PARAMS
+  ]
+  
+  # zonas sensibles con tooltip para cuando los checkboxes están desactivados
+  [ 
+    .TIPO UIC_ZONASENSIBLE  .ID 'FRTT' 
+    .PARAMS 
+    [ 
+      .RECT [ 130 14 179 64 ] 
+      .DBCLICK_AS_RELEASE FALSE 
+      .EVENTOS [ MOUSE ] 
+
+      .TOOL_TIP
+      [ 
+        .TEXT LTEXT_JUGADOR_FRANCIA
+        .X 32 .Y 32
+          
+        
+        .STYLE DEFAULT_TOOLTIP 
+      ]
+    ]
+  ]                          
+  
+  [ 
+    .TIPO UIC_ZONASENSIBLE  .ID 'INTT' 
+    .PARAMS 
+    [ 
+      .RECT [ 209 14 258 64 ] 
+      .DBCLICK_AS_RELEASE FALSE 
+      .EVENTOS [ MOUSE ] 
+      
+      .TOOL_TIP
+      [ 
+        .TEXT LTEXT_JUGADOR_GRAN_BRETANYA
+        .X 32 .Y 32
+          
+        
+        .STYLE DEFAULT_TOOLTIP 
+      ]
+    ]
+  ]                          
+  
+  [ 
+    .TIPO UIC_ZONASENSIBLE  .ID 'RUTT' 
+    .PARAMS 
+    [ 
+      .RECT [ 288 14 337 64 ] 
+      .DBCLICK_AS_RELEASE FALSE 
+      .EVENTOS [ MOUSE ] 
+      
+      .TOOL_TIP
+      [ 
+        .TEXT LTEXT_JUGADOR_RUSIA
+        .X 32 .Y 32
+          
+        
+        .STYLE DEFAULT_TOOLTIP 
+      ]
+    ]
+  ]                          
+  
+  [ 
+    .TIPO UIC_ZONASENSIBLE  .ID 'HUTT' 
+    .PARAMS 
+    [ 
+      .RECT [ 367 14 416 64 ] 
+      .DBCLICK_AS_RELEASE FALSE 
+      .EVENTOS [ MOUSE ] 
+      
+      .TOOL_TIP
+      [ 
+        .TEXT LTEXT_JUGADOR_AUSTRIA
+        .X 32 .Y 32
+          
+        
+        .STYLE DEFAULT_TOOLTIP 
+      ]      
+    ]
+  ]                      
+    
+  [ 
+    .TIPO UIC_ZONASENSIBLE  .ID 'PRTT' 
+    .PARAMS 
+    [ 
+      .RECT [ 446 14 495 64 ] 
+      .DBCLICK_AS_RELEASE FALSE 
+      .EVENTOS [ MOUSE ] 
+      
+      .TOOL_TIP
+      [ 
+        .TEXT LTEXT_JUGADOR_PRUSIA
+        .X 32 .Y 32
+          
+        
+        .STYLE DEFAULT_TOOLTIP 
+      ]      
+    ]
+  ]                          
+  
+  # función gráfica que representa las materias primas del imperio  
+  [
+    .TIPO UIC_FUNCIONGRAFICA .ID 'MAPR'
+    .PARAMS
+    [
+      .RECUADRO_PINTADO 
+      [
+        .X1  86 .Y1 101
+        .X2 554 .Y2 363
+      ]
+      
+      .RELACION_PINTADO
+      [
+        .X 2.583  #cada 31 pixels equivalen a 12 unidades lógicas
+        .Y 0.00261  # 100000 unidades lógicas equivalen a 262 pixels
+      ]
+      
+      .INIT_X 0
+      
+      .COLOR [ .R 133 .G  56 .B 149 ]
+      
+      .THICKNESS 2.0
+    ]
+  ]
+  
+  # función gráfica que representa el oro del imperio  
+  [
+    .TIPO UIC_FUNCIONGRAFICA .ID 'GOLD'
+    .PARAMS
+    [
+      .RECUADRO_PINTADO 
+      [
+        .X1  86 .Y1 101
+        .X2 554 .Y2 363
+      ]
+      
+      .RELACION_PINTADO
+      [
+        .X 2.583  #cada 31 pixels equivalen a 12 unidades lógicas
+        .Y 0.00261  # 100000 unidades lógicas equivalen a 262 pixels
+      ]
+      
+      .INIT_X 0
+      
+      .COLOR [ .R 204 .G 143 .B 2 ]
+      
+      .THICKNESS 2.0
+    ]
+  ]
+  
+  # función gráfica que representa la población del imperio  
+  [
+    .TIPO UIC_FUNCIONGRAFICA .ID 'POBL'
+    .PARAMS
+    [
+      .RECUADRO_PINTADO 
+      [
+        .X1  86 .Y1 101
+        .X2 554 .Y2 363
+      ]
+      
+      .RELACION_PINTADO
+      [
+        .X 2.583  #cada 31 pixels equivalen a 12 unidades lógicas
+        .Y 0.00261  # 100000 unidades lógicas equivalen a 262 pixels
+      ]
+      
+      .INIT_X 0
+      
+      .COLOR [ .R 206 .G 34 .B 43 ]
+      
+      .THICKNESS 2.0
+    ]
+  ]  
+  # función gráfica que representa la comida del imperio  
+  [
+    .TIPO UIC_FUNCIONGRAFICA .ID 'FOOD'
+    .PARAMS
+    [
+      .RECUADRO_PINTADO 
+      [
+        .X1  86 .Y1 101
+        .X2 554 .Y2 363
+      ]
+      
+      .RELACION_PINTADO
+      [
+        .X 2.583  #cada 31 pixels equivalen a 12 unidades lógicas
+        .Y 0.00261  # 100000 unidades lógicas equivalen a 262 pixels
+      ]
+      
+      .INIT_X 0      
+      
+      .COLOR [ .R  29 .G 124 .B 177 ]
+      
+      .THICKNESS 2.0
+    ]
+  ]  
+  # función gráfica que representa la ciencia del imperio  
+  [
+    .TIPO UIC_FUNCIONGRAFICA .ID 'CIEN'
+    .PARAMS
+    [
+      .RECUADRO_PINTADO 
+      [
+        .X1  86 .Y1 101
+        .X2 554 .Y2 363
+      ]
+      
+      .RELACION_PINTADO
+      [
+        .X 2.583    #cada 31(anchura de separadores en el eje X) pixels equivalen a 12 unidades lógicas(1 año) 
+        .Y 0.0349   #262 pixels(altura del gráfico) equivalen a 7500 unidades lógicas
+      ]
+
+      .INIT_X 0
+      
+      .COLOR [ .R 41 .G 165 .B 89 ]
+      
+      .THICKNESS 2.0
+    ]
+  ]
+  
+  #Leyenda
+  %Game/UI/ModeloGestion/BoletinNoticias/UIDefs_LeyendaDlgNoticiasEconomia.sb
+  
+] #~ CONTROLES
+
+.EJE_ANYOS
+[
+  #estas coordenadas no son relativas por limitaciones del control de texto
+  .X 235 .Y 572
+
+  # pixels por unidad lógica    
+  .REL_PINTADO 31.0 
+  
+  # valor lógico inicial
+  .INIT_VALUE 1789
+  
+  # número de valores lógicos representados a la vez
+  .NUM_TEXTOS 16 
+  
+  .TEXT_PARAMS
+  [
+    .TEXT 
+    [ 
+      .FONT "Fonts/MonotypeCorsiva9.fnt" 
+      .COLOR [ .R 255 .G 255 .B 255 ]    
+    ]
+    .Y 424
+    .SX 40 .SY 40
+    .ALIGN CENTER
+    .MSG " "
+    .SLIDER_VERTICAL [ .STYLE DEFAULT_SLIDER_VERTICAL  ] 
+  ]
+  
+  .BOTON_UP
+  [
+    .FONDO [ .X 562 .Y 394 ]
+    .STYLE GREATER_THAN_BORDER_BUTTON
+  ]
+  
+  .BOTON_DOWN
+  [
+    .FONDO [ .X 46 .Y 394 ]
+    .STYLE LESSER_THAN_BORDER_BUTTON
+  ]  
+]

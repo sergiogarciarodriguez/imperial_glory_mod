@@ -1,0 +1,39 @@
+#
+# LEYENDA DE LA BARRA DE CIENCIA DEL MODO DE ESTADISTICAS
+#
+#
+
+
+#TITULO
+[
+  .TIPO UIC_WRAPTEXT .ID 'WTTI'
+  .PARAMS
+  [     
+    .X 0 .Y 10 .SX 320 .SY 50
+    .ALIGN CENTER
+    .TEXT
+    [
+      .FONT "Fonts/Times10.fnt" 
+      .COLOR [ .R 255 .G 255 .B 255 ]          
+    ]
+    .MSG LTEXT_LEYENDA_CIENCIA
+  ]
+]
+
+
+#COLOR DE LA BARRA DE CIENCIA
+[ .TIPO UIC_BITMAP .ID 'BMBC'
+  .PARAMS
+  [ .X 30 .Y 45 .U 771 .V 162 .SX 22 .SY 22
+    .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .PRIORITY 255 .ALPHA TRUE  
+  ]      
+]
+   
+#TEXTO DE LA BARRA DE CIENCIA
+[
+  .TIPO UIC_TEXT .ID 'TXBC' 
+  .PARAMS 
+  [ .ALIGN LEFT .X 60 .Y 50 .TEXT LTEXT_LEYENDA_BARRA_CIENCIA
+    .FONT "Fonts/Times9.fnt"  .COLOR [ .R 255 .G 255 .B 255 ]
+  ]
+] 

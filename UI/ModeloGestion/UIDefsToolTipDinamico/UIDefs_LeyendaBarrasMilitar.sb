@@ -1,0 +1,76 @@
+#
+# LEYENDA DE LA BARRA DE RECURSOS DEL MODO DE ESTADISTICAS
+#
+#
+
+
+#TITULO
+[
+  .TIPO UIC_WRAPTEXT .ID 'WTTI'
+  .PARAMS
+  [     
+    .X 0 .Y 10 .SX 320 .SY 50
+    .ALIGN CENTER
+    .TEXT
+    [
+      .FONT "Fonts/Times10.fnt" 
+      .COLOR [ .R 255 .G 255 .B 255 ]          
+    ]
+    .MSG LTEXT_LEYENDA_POTENCIA_MILITAR
+  ]
+]
+
+
+#COLOR DE LA BARRA DE POTENCIA TERRESTRE
+[ .TIPO UIC_BITMAP .ID 'BMPT'
+  .PARAMS
+  [ .X 30 .Y 45 .U 771 .V 116 .SX 22 .SY 22
+    .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .PRIORITY 255 .ALPHA TRUE  
+  ]      
+]
+   
+#TEXTO DE LA BARRA DE POTENCIA TERRESTRE
+[
+  .TIPO UIC_TEXT .ID 'TXPT' 
+  .PARAMS 
+  [ .ALIGN LEFT .X 60 .Y 50 .TEXT LTEXT_LEYENDA_BARRA_POTENCIA_TERRESTRE
+    .FONT "Fonts/Times9.fnt"  .COLOR [ .R 255 .G 255 .B 255 ]
+  ]
+] 
+
+
+#COLOR DE LA BARRA DE POTENCIA MARITIMA
+[ .TIPO UIC_BITMAP .ID 'BMPM'
+  .PARAMS
+  [ .X 30 .Y 70 .U 771 .V 47 .SX 22 .SY 22
+    .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .PRIORITY 255 .ALPHA TRUE  
+  ]      
+]
+   
+#TEXTO DE LA BARRA DE POTENCIA MARITIMA
+[
+  .TIPO UIC_TEXT .ID 'TXPM' 
+  .PARAMS 
+  [ .ALIGN LEFT .X 60 .Y 75 .TEXT LTEXT_LEYENDA_BARRA_POTENCIA_MARITIMA
+    .FONT "Fonts/Times9.fnt"  .COLOR [ .R 255 .G 255 .B 255 ]
+  ]
+]
+
+#COLOR DE LA BARRA DE POTENCIA TOTAL
+[ .TIPO UIC_BITMAP .ID 'BMTO'
+  .PARAMS
+  [ .X 30 .Y 95 .U 771 .V 70 .SX 22 .SY 22
+    .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .PRIORITY 255 .ALPHA TRUE  
+  ]      
+]
+   
+#TEXTO DE LA BARRA DE POTENCIA TOTAL
+[
+  .TIPO UIC_TEXT .ID 'TXTO' 
+  .PARAMS 
+  [ .ALIGN LEFT .X 60 .Y 100 .TEXT LTEXT_LEYENDA_BARRA_POTENCIA_TOTAL
+    .FONT "Fonts/Times9.fnt"  .COLOR [ .R 255 .G 255 .B 255 ]
+  ]
+] 
+ 
+ 

@@ -1,0 +1,52 @@
+#===========================================================================================
+# Definiciones de movimiento y fisica para los diferentes tipos de barco
+#-------------------------------------------------------------------------------------------
+# TIPO: Fragata
+#===========================================================================================
+
+  # (float) Masa del barco
+  .MASA                           82000.0
+    
+  # (float) Velocidad mínima para poder efectuar un giro
+  .MIN_VEL_GIRO                   3.5
+    
+  # (float) Coeficiente hidrodinámico. A mayor, mas resistencia al agua. 
+  .COEF_HIDRODINAMICO             23000.0
+    
+  # (float) Fuerza centrífuga máxima soportable. A mayor, menos radio de giro
+  .FUERZA_CENTRIFUGA_MAX          35000.0
+    
+  # (float) Eficacia de conversión de viento en fuerza de las velas 
+  .EFICACIA_VELAS                 17000.0
+    
+  # (float) Velocidad mínima con el viento en contra
+  .VELOCIDAD_MINIMA               4.0
+    
+  # (float) Tamaño del barco. Este valor se puede aumentar para que el barco reaccione mas lentamente al mar.
+  .LONGITUD                       50.0
+  .ANCHURA                        14.0
+  
+  # (float) indice de flotacion del barco (normal = 170.0)
+  .FLOTACION                      170.0
+  
+  # (float) radio con el que iniciará la curva a partir de velocidad = 0
+  .RADIO_GIRO_INICIAL             30.0
+  
+  # Poligono de colisión
+  .POLI_COLISION
+  [
+	[-2.0  28.0]
+	[ 2.0  28.0]
+	[ 8.0  10.0]
+    [ 8.0 -28.0]
+    [-8.0 -28.0]
+    [-8.0  10.0]
+  ]
+
+ # Valores anteriores
+ #.MASA                           40000.0
+ #.MIN_VEL_GIRO                   4.5
+ #.COEF_HIDRODINAMICO             10000.0
+ #.FUERZA_CENTRIFUGA_MAX          45000.0
+ #.EFICACIA_VELAS                 25000.0
+ #.VELOCIDAD_MINIMA               6.0

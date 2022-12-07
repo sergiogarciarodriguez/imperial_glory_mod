@@ -1,0 +1,48 @@
+
+.PRIORITY 1             
+
+.DXCURSOR 32 .DYCURSOR 32			## no usado
+
+.FONDO [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .X 802 .Y 467 .SX 222 .SY 200 .U 659 .V 98 .ALPHA TRUE .TRANSPARENCY 255 ]
+
+.TITULO [ .FONT "Fonts/gothic.fnt" .DY 8 .COLOR [ .R 255 .G 194 .B 93 ]  .SCALE 0.8 ]			## no usado
+
+.INFOGRUPOS
+[
+
+	.BITMAP_FORM_IAC
+	[ 
+		.TIPO UIC_BITMAP .ID 'BIAC'
+		.PARAMS [ .FILE "Game\UI\ModeloBatalla\InterfazBatalla.tga" .X 830 .Y 470 .SX 180 .SY 150 .U 209 .V 446 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] 
+	]
+	
+	.BITMAP_FORM_CIA
+	[ 
+		.TIPO UIC_BITMAP .ID 'BCIA'
+		.PARAMS [ .FILE "Game\UI\ModeloBatalla\InterfazBatalla.tga" .X 830 .Y 470 .SX 180 .SY 150 .U 392 .V 446 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] 
+	]
+	
+	.BITMAP_FORM_ACI
+	[ 
+		.TIPO UIC_BITMAP .ID 'BACI'
+		.PARAMS [ .FILE "Game\UI\ModeloBatalla\InterfazBatalla.tga" .X 830 .Y 470 .SX 180 .SY 150 .U 575 .V 446 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] 
+	]
+	
+	.BITMAP_FORM_TGA
+	[ 
+		.TIPO UIC_BITMAP .ID 'BTGA'
+		.PARAMS [ .FILE "Game\UI\ModeloBatalla\InterfazBatalla.tga" .X 830 .Y 470 .SX 180 .SY 150 .U 209 .V 599 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] 
+	]
+	
+	.BITMAP_FORM_TGB
+	[ 
+		.TIPO UIC_BITMAP .ID 'BTGB'
+		.PARAMS [ .FILE "Game\UI\ModeloBatalla\InterfazBatalla.tga" .X 830 .Y 470 .SX 180 .SY 150 .U 392 .V 599 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] 
+	]
+	
+	.BITMAP_FORM_TGC
+	[ 
+		.TIPO UIC_BITMAP .ID 'BTGC'
+		.PARAMS [ .FILE "Game\UI\ModeloBatalla\InterfazBatalla.tga" .X 830 .Y 470 .SX 180 .SY 150 .U 575 .V 599 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] 
+	]
+]

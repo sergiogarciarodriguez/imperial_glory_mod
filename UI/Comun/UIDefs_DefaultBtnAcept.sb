@@ -1,0 +1,21 @@
+  #############################################################################################
+  # Definimos un boton por defecto para los message box
+  #############################################################################################
+  
+  .TIPO UIC_BOTONTEXTO
+  
+  .COMPORTAMIENTO SIMPLE
+  .ACEPTAR TRUE
+  
+  .SOLTADO [ .COLOR [ .R 220 .G 220 .B 220 ] ] 
+  .PULSADO [ .COLOR [ .R 158 .G 0 .B 0 ] ] 
+  
+  .TEXT LTEXT_UI_OK
+  
+  .FONT "Fonts/Default.fnt" .SCALE 1.0
+  
+  .FONDO [ .PRIORITY 255 ]
+  
+  .STYLE DEFAULT_RECTANGLE_BUTTON_SMALL
+  
+  .KEY [ .TECLA KEY_RETURN .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ]

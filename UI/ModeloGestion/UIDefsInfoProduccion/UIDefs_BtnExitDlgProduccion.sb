@@ -1,0 +1,13 @@
+ # Btn para la salida de los dlg de produccion de edificios
+ 
+ .FONDO
+ [ 
+  .X 741 .Y 542 .PRIORITY 201 
+ ]              
+ 
+ .IDSELECTSOUND "S_FXUI_CLICKBUTTON" 
+ .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"
+ 
+ .STYLE DEFAULT_OK_BUTTON
+ 
+ .KEY [ .TECLA KEY_ESCAPE .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ]

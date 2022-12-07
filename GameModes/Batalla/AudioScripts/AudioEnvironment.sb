@@ -1,0 +1,94 @@
+#=======================================================================================
+# Definición de sonidos para el modelo de batalla [ ENVIRONMENT ]
+#
+# Param ".3D" es TRUE por defecto.
+#       ".LOOP" es FALSE por defecto.
+#=======================================================================================
+# WARNING: ESTE FICHERO DE SONIDOS ES ESPECIAL, YA QUE SE MAPEAN LAS PROPIEDADES
+#          DESDE EL PROPIO EDITOR PARA CADA MAPA. NO SOPORTA NADA MAS QUE NOMBRE Y PATH
+#          Y EL PATH SOLO PUEDE SER UN FICHERO UNICAMENTE
+#=======================================================================================
+
+
+###-------------------------------------------------------------------------------------
+### AUDIO
+###-------------------------------------------------------------------------------------
+.AUDIO 
+[
+  [ 
+    .IDNAME "S_VIENTO"       
+    .PATH "Audio/Battle/Fx/Climatology/viento standard.ogg" 
+    .3D FALSE
+    .LOOP TRUE
+    .PAUSE FALSE
+    .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_LAGO"       
+    .PATH "Audio/Battle/Fx/Climatology/rio peque.ogg" 
+    .3D TRUE
+    .LOOP TRUE
+    .VOLUME 85
+    .PAUSE FALSE
+  ]
+  [ 
+    .IDNAME "S_MOLINO"     
+    .PATH "Audio/Battle/Fx/Constructions/Molino.ogg" 
+    .3D TRUE
+    .VOLUME 75
+    .LOOP TRUE
+    
+  ]
+  [ 
+    .IDNAME "S_MOLINO_ROTO"     
+    .PATH "Audio/Battle/Fx/Constructions/MolinoRoto.ogg" 
+    .3D TRUE
+    .VOLUME 75
+    .LOOP TRUE
+    
+  ]
+  [ 
+    .IDNAME "S_RIO"     
+    .PATH "Audio/Battle/Fx/Climatology/rio peque.ogg"  
+    .3D TRUE
+    .LOOP TRUE
+    .VOLUME 40
+    .PAUSE FALSE
+  ]
+  [ 
+    .IDNAME "S_FOSO"     
+    .PATH "Audio/Battle/Fx/Climatology/foso.ogg"  
+    .3D TRUE
+    .LOOP TRUE
+    .VOLUME 40
+    .PAUSE FALSE
+  ]
+  [ 
+    .IDNAME "S_PAJAROS1"     
+    .PATH "Audio/Battle/Fx/Climatology/Ambiente_pajaros1.ogg"
+    .3D TRUE
+    .LOOP TRUE
+    .PAUSE FALSE
+  ]
+  [ 
+    .IDNAME "S_PAJAROS2"     
+    .PATH "Audio/Battle/Fx/Climatology/Ambiente_pajaros2.ogg"
+    .3D TRUE
+    .LOOP TRUE
+    .PAUSE FALSE
+  ]
+  [ 
+    .IDNAME "S_PAJAROS3"     
+    .PATH "Audio/Battle/Fx/Climatology/Ambiente_pajaros3.ogg"
+    .3D TRUE
+    .LOOP TRUE
+    .PAUSE FALSE
+  ]
+  [ 
+    .IDNAME "S_MAR"
+    .PATH "Audio/Battle/Fx/Climatology/Mar.ogg"
+    .3D TRUE
+    .LOOP TRUE
+    .PAUSE FALSE
+  ]
+] ### !AUDIO

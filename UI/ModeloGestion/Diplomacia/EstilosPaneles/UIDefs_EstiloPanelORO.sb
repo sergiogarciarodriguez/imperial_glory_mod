@@ -1,0 +1,34 @@
+#
+# Estilo del panel de oro
+#
+#
+
+# Fondo panel Oro
+[ .TIPO UIC_BITMAP .ID 'FORO' 
+  .PARAMS 
+  [ 
+    .X 0 .Y 285 .U 1 .V 369 .SX 283 .SY 100 
+    .FILE "Game/UI/ModeloGestion/Diplomacia/VentanasDiplomacia.tga" 
+    .ALPHA TRUE 
+    .PRIORITY 2
+  ]
+] # ~BITMAP 
+
+[ .TIPO UIC_SPIN .ID 'SPOR'
+  .PARAMS
+  [  .X 785 .Y 341 .MIN 0 .MAX 50 .INCREMENTO 10 .VALUE 0 .TIMEOUT 2
+    %Game/UI/ModeloGestion/Diplomacia/UIDefs_SpinDiplomaciaORO.sb
+  ]
+]
+
+# Label Ofrecer
+[ .TIPO UIC_TEXT .ID 'LBMS'
+  .PARAMS 
+  [ 
+    .ALIGN CENTER
+    .TEXT LTEXT_DIPLOMACIA_OFRECER
+    .FONT "Fonts/Times14.fnt"
+    .X 840 .Y 305 .SCALE 1.0 
+  	.COLOR [ .R 255 .G 255 .B 255 ] 
+  ]    	
+] 

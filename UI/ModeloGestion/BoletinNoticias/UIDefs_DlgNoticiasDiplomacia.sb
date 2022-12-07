@@ -1,0 +1,51 @@
+##################################################
+##  Diálogo de noticias diplomáticas 
+##################################################
+
+.MODAL FALSE
+.CENTER FALSE
+.DEPTH 3
+
+.FONDO
+[
+  .X 0 .Y 93 .U 1 .V 94 .SX 640 .SY 564
+  .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinDiplomacia.tga" 
+  .ALPHA TRUE .PRIORITY 202
+]
+
+.CONTROLES
+[
+ 
+  # textos de las diferentes listas
+  [
+    .TIPO UIC_TEXT .ID 'LBAL'
+    .PARAMS
+    [
+      .TEXT LTEXT_NEWS_DIPLO_ALIADOS
+      .FONT "Fonts/Times14.fnt"
+      .X 370 .Y 174
+      .COLOR [ .R 255 .G 255 .B 255 ]     
+      .ALIGN CENTER      
+    ]
+  ]
+  [
+    .TIPO UIC_TEXT .ID 'LBEN'
+    .PARAMS
+    [
+      .TEXT LTEXT_NEWS_DIPLO_ENEMIGOS
+      .FONT "Fonts/Times14.fnt"
+      .X 663 .Y 174 
+      .COLOR [ .R 255 .G 255 .B 255 ]     
+      .ALIGN CENTER
+    ]
+  ]
+
+  # Visor de jugadores
+  [ .TIPO UIC_VISORMATRIZCTRLS .ID 'VMJD' 
+    .PARAMS [ %Game/UI/ModeloGestion/BoletinNoticias/UIDefs_VisorMatrizJugadoresDiplomacia.sb ] 
+  ]
+  
+] #~ CONTROLES
+
+# definiciones para el icono de diplomacia
+.ICONO_DIPLOMACIA "Game/UI/ModeloGestion/BoletinNoticias/UIDefs_IconosDiplomacia.sb"

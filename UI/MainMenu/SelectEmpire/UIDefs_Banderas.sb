@@ -1,0 +1,246 @@
+#############################################################################################
+# Definicion de Banderas
+#############################################################################################
+
+[
+  .KEY JUG_DEFAULT_BANDERA_INFO
+  .PARAMS
+  [ 
+    .FILE "Game/UI/MainMenu/SelectEmpire/SeleccionImperioA_.tga" 
+    .SX 57 .SY 57 .U 437 .V 705 .ALPHA TRUE
+    .PRIORITY 45
+  ] 
+]
+
+[
+  .KEY JUG_AUSTRIA_BANDERA_INFO
+  .PARAMS
+  [
+    .FILE "Game/UI/MainMenu/SelectEmpire/SeleccionImperioA_.tga" 
+    .SX 57 .SY 57 .U 437 .V 705 .ALPHA TRUE
+    .PRIORITY 45
+  ] 
+]
+
+[
+  .KEY JUG_PRUSIA_BANDERA_INFO
+  .PARAMS 
+  [ 
+    .FILE "Game/UI/MainMenu/SelectEmpire/SeleccionImperioA_.tga" 
+    .SX 57 .SY 57 .U 437 .V 765 .ALPHA TRUE
+    .PRIORITY 45
+  ] 
+]
+
+[
+  .KEY JUG_FRANCIA_BANDERA_INFO
+  .PARAMS 
+  [ 
+    .FILE "Game/UI/MainMenu/SelectEmpire/SeleccionImperioA_.tga" 
+    .SX 57 .SY 57 .U 437 .V 825 .ALPHA TRUE
+    .PRIORITY 45
+  ] 
+]
+ 
+[
+  .KEY JUG_RUSIA_BANDERA_INFO
+  .PARAMS
+  [ 
+    .FILE "Game/UI/MainMenu/SelectEmpire/SeleccionImperioA_.tga" 
+    .SX 57 .SY 57 .U 437 .V 885 .ALPHA TRUE
+    .PRIORITY 45
+  ] 
+]
+
+[
+  .KEY JUG_GRAN_BRETANYA_BANDERA_INFO
+  .PARAMS 
+  [ 
+    .FILE "Game/UI/MainMenu/SelectEmpire/SeleccionImperioA_.tga" 
+    .SX 57 .SY 57 .U 437 .V 945 .ALPHA TRUE
+    .PRIORITY 45
+  ] 
+]
+
+
+[
+  .KEY JUG_DEFAULT_BANDERA_SEL
+  .PARAMS
+  [ 
+    .FILE "Game/UI/MainMenu/SelectEmpire/SeleccionImperioB_.tga" 
+    .SX 297 .SY 57 .U 102 .V 191 .ALPHA TRUE
+    .PRIORITY 45
+  ] 
+]
+
+[
+  .KEY JUG_AUSTRIA_BANDERA_SEL
+  .PARAMS
+  [
+    .FILE "Game/UI/MainMenu/SelectEmpire/SeleccionImperioB_.tga" 
+    .SX 297 .SY 57 .U 102 .V 191 .ALPHA TRUE
+    .PRIORITY 45
+  ] 
+]
+
+[
+  .KEY JUG_PRUSIA_BANDERA_SEL
+  .PARAMS 
+  [ 
+    .FILE "Game/UI/MainMenu/SelectEmpire/SeleccionImperioB_.tga" 
+    .SX 297 .SY 57 .U 102 .V 251 .ALPHA TRUE
+    .PRIORITY 45
+  ] 
+]
+
+[
+  .KEY JUG_FRANCIA_BANDERA_SEL
+  .PARAMS 
+  [ 
+    .FILE "Game/UI/MainMenu/SelectEmpire/SeleccionImperioB_.tga" 
+    .SX 297 .SY 57 .U 102 .V 311 .ALPHA TRUE
+    .PRIORITY 45
+  ] 
+]
+ 
+[
+  .KEY JUG_RUSIA_BANDERA_SEL
+  .PARAMS
+  [ 
+    .FILE "Game/UI/MainMenu/SelectEmpire/SeleccionImperioB_.tga" 
+    .SX 297 .SY 57 .U 102 .V 371 .ALPHA TRUE
+    .PRIORITY 45
+  ] 
+]
+
+[
+  .KEY JUG_GRAN_BRETANYA_BANDERA_SEL
+  .PARAMS 
+  [ 
+    .FILE "Game/UI/MainMenu/SelectEmpire/SeleccionImperioB_.tga" 
+    .SX 297 .SY 57 .U 102 .V 431 .ALPHA TRUE
+    .PRIORITY 45
+  ] 
+]
+
+[
+  .KEY JUG_DEFAULT_BANDERA_FONDO
+  .PARAMS
+  [ 
+    .FILE "Game/UI/MainMenu/SelectEmpire/SeleccionImperioA_.tga" 
+    .SX 297 .SY 57 .U 23 .V 689 .ALPHA TRUE
+    .PRIORITY 40
+  ] 
+]
+
+[
+  .KEY JUG_AUSTRIA_BANDERA_FONDO
+  .PARAMS
+  [
+    .FILE "Game/UI/MainMenu/SelectEmpire/SeleccionImperioA_.tga" 
+    .SX 297 .SY 57 .U 23 .V 689 .ALPHA TRUE
+    .PRIORITY 40
+  ] 
+]
+
+[
+  .KEY JUG_PRUSIA_BANDERA_FONDO
+  .PARAMS 
+  [ 
+    .FILE "Game/UI/MainMenu/SelectEmpire/SeleccionImperioA_.tga" 
+    .SX 297 .SY 57 .U 23 .V 749 .ALPHA TRUE
+    .PRIORITY 40
+  ] 
+]
+
+[
+  .KEY JUG_FRANCIA_BANDERA_FONDO
+  .PARAMS 
+  [ 
+    .FILE "Game/UI/MainMenu/SelectEmpire/SeleccionImperioA_.tga" 
+    .SX 297 .SY 57 .U 23 .V 809 .ALPHA TRUE
+    .PRIORITY 40
+  ] 
+]
+ 
+[
+  .KEY JUG_RUSIA_BANDERA_FONDO
+  .PARAMS
+  [ 
+    .FILE "Game/UI/MainMenu/SelectEmpire/SeleccionImperioA_.tga" 
+    .SX 297 .SY 57 .U 23 .V 869 .ALPHA TRUE
+    .PRIORITY 40
+  ] 
+]
+
+[
+  .KEY JUG_GRAN_BRETANYA_BANDERA_FONDO
+  .PARAMS 
+  [ 
+    .FILE "Game/UI/MainMenu/SelectEmpire/SeleccionImperioA_.tga" 
+    .SX 297 .SY 57 .U 23 .V 929 .ALPHA TRUE
+    .PRIORITY 40
+  ] 
+]
+
+
+[
+  .KEY JUG_DEFAULT_BANDERA_DISABLE
+  .PARAMS
+  [ 
+    .FILE "Game/UI/MainMenu/SelectEmpire/SeleccionImperioA_.tga" 
+    .SX 297 .SY 57 .U 23 .V 689 .ALPHA TRUE
+    .PRIORITY 75
+  ] 
+]
+
+[
+  .KEY JUG_AUSTRIA_BANDERA_DISABLE
+  .PARAMS
+  [
+    .FILE "Game/UI/MainMenu/SelectEmpire/SeleccionImperioA_.tga" 
+    .SX 297 .SY 57 .U 23 .V 689 .ALPHA TRUE
+    .PRIORITY 75
+  ] 
+]
+
+[
+  .KEY JUG_PRUSIA_BANDERA_DISABLE
+  .PARAMS 
+  [ 
+    .FILE "Game/UI/MainMenu/SelectEmpire/SeleccionImperioA_.tga" 
+    .SX 297 .SY 57 .U 23 .V 749 .ALPHA TRUE
+    .PRIORITY 75
+  ] 
+]
+
+[
+  .KEY JUG_FRANCIA_BANDERA_DISABLE
+  .PARAMS 
+  [ 
+    .FILE "Game/UI/MainMenu/SelectEmpire/SeleccionImperioA_.tga" 
+    .SX 297 .SY 57 .U 23 .V 809 .ALPHA TRUE
+    .PRIORITY 75
+  ] 
+]
+ 
+[
+  .KEY JUG_RUSIA_BANDERA_DISABLE
+  .PARAMS
+  [ 
+    .FILE "Game/UI/MainMenu/SelectEmpire/SeleccionImperioA_.tga" 
+    .SX 297 .SY 57 .U 23 .V 869 .ALPHA TRUE
+    .PRIORITY 75
+  ] 
+]
+
+[
+  .KEY JUG_GRAN_BRETANYA_BANDERA_DISABLE
+  .PARAMS 
+  [ 
+    .FILE "Game/UI/MainMenu/SelectEmpire/SeleccionImperioA_.tga" 
+    .SX 297 .SY 57 .U 23 .V 929 .ALPHA TRUE
+    .PRIORITY 75
+  ] 
+]
+

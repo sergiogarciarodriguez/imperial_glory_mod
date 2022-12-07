@@ -1,0 +1,14 @@
+##############################################################################################################
+# 
+# Pantalla de selección de escenario para batalla historica
+#
+##############################################################################################################
+
+#--------------------------------------------- MODO DE FUNCIONAMIENTO----------------------------------------
+# Modo 0 -> Seleccion para Quick Game
+# Modo 1 -> Seleccion para batalla historica
+.MODO_FUNCIONAMIENTO 1
+
+#------------------------------------------------ DATOS COMUNES ---------------------------------------------
+%Game\UI\MainMenu\UIDefs_SelectEscenario.sb
+

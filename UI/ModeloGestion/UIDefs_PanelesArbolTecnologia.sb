@@ -1,0 +1,136 @@
+#############################################################################################
+# Paneles de las ramas asociado al interfaz del Árbol de Tecnologías
+# 
+# 
+# 
+# Muestra la información de un nodo del árbol
+#
+#############################################################################################
+
+  .X 1000 .Y 0 .SX 256 .SY 768
+  .ANIMADO FALSE
+  .PANELES
+  [
+    # PANEL RAMA FASE I
+    [
+      .ID 'PF1_'
+      .PARAMS
+      [ 
+        .X 0 .Y 47 .SX 1024 .SY 37
+        .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/MenuArbolTecnologias.tga" .U 0 .V 771
+        .PRIORITY 128 .ALPHA TRUE      
+        .PESTANIA 
+        [ 
+          .TIPO UIC_BOTONTEXTO
+          .PARAMS
+          [
+            .COMPORTAMIENTO MANUAL
+            
+            .SOLTADO [ .COLOR [ .R 230 .G 200 .B 140 ] ]
+            .PULSADO [ .COLOR [ .R 255 .G 255 .B 255 ] ]
+            
+	          .FONT "Fonts/Times14.fnt"            
+            .TEXT LTEXT_LABEL_RAMA_I 
+	          .CENTER_AREA [ .X1 0 .Y1 0 .X2 200 .Y2 39 ]           
+                        
+            .FONDO
+            [
+      	      .X 78 .Y 2 .SX 200 .SY 45    
+      	      .ALPHA TRUE
+              .ALPHA_ADITIVO TRUE
+      	      # como soltado ponemos un alpha transparente, puesto que no queremos que se pinte ningún tipo de imagen
+      	      .SOLTADO 	 	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/MenuArbolTecnologias.tga" .U 360 .V 892 ] 
+      	      .PULSADO     	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/Brillo.tga" 	      .U   1 .V   1 ] 
+            ]
+            
+            .IDSELECTSOUND "S_FXUI_CLICKBUTTON"                    
+            
+          ]        
+        ] # ~PESTANIA  
+      ]
+    ] # Panel I
+    
+    # PANEL RAMA FASE IIa
+    [
+      .ID 'PF2A'
+      .PARAMS
+      [ 
+        .X 0 .Y 47 .SX 1024 .SY 37
+        .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/MenuArbolTecnologias.tga" .U 0 .V 811
+        .PRIORITY 129 .ALPHA TRUE
+        .PESTANIA 
+        [ 
+          .TIPO UIC_BOTONTEXTO
+          .PARAMS
+          [
+            .COMPORTAMIENTO MANUAL
+            
+            .SOLTADO [ .COLOR [ .R 230 .G 200 .B 140 ] ]
+            .PULSADO [ .COLOR [ .R 255 .G 255 .B 255 ] ]
+            
+	          .FONT "Fonts/Times14.fnt"            
+            .TEXT LTEXT_LABEL_RAMA_II 
+	          .CENTER_AREA [ .X1 0 .Y1 0 .X2 200 .Y2 39 ]           
+            
+            .FONDO
+            [
+      	      .X 407 .Y 2 .SX 200 .SY 45    
+      	      .ALPHA TRUE
+              .ALPHA_ADITIVO TRUE
+      	      # como soltado ponemos un alpha transparente, puesto que no queremos que se pinte ningún tipo de imagen
+      	      .SOLTADO 	 	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/MenuArbolTecnologias.tga" .U 360 .V 892 ] 
+      	      .PULSADO     	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/Brillo.tga" 	  .U   1 .V   1 ] 
+            ]
+            
+            .ZSENSIBLE_MANUAL [ .DX 0 .DY 0 .SX 204 .SY 42 ]
+            .CENTER_AREA      [ .X1 0 .Y1 0 .X2 204 .Y2 42 ]
+            
+            .IDSELECTSOUND "S_FXUI_CLICKBUTTON"                    
+            
+          ]
+        ] # ~PESTANIA
+        
+        .CONTROLES  "Game/UI/ModeloGestion/UIDefs_PanelRamaII.sb"
+      ]
+    ] # Panel IIa
+    
+    # PANEL RAMA FASE IIIa
+    [
+      .ID 'PF3A'
+      .PARAMS
+      [
+        .X 0 .Y 47 .SX 1024 .SY 37
+        .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/MenuArbolTecnologias.tga" .U 0 .V 851 
+        .PRIORITY 130 .ALPHA TRUE
+        .PESTANIA 
+        [ 
+          .TIPO UIC_BOTONTEXTO
+          .PARAMS
+          [
+            .COMPORTAMIENTO MANUAL
+            
+            .SOLTADO [ .COLOR [ .R 230 .G 200 .B 140 ] ]
+            .PULSADO [ .COLOR [ .R 255 .G 255 .B 255 ] ]
+            
+	          .FONT "Fonts/Times14.fnt"            
+            .TEXT LTEXT_LABEL_RAMA_III 
+	          .CENTER_AREA [ .X1 0 .Y1 0 .X2 200 .Y2 39 ]           
+            
+            .FONDO
+            [
+      	      .X 709 .Y 2 .SX 200 .SY 45    
+      	      .ALPHA TRUE
+              .ALPHA_ADITIVO TRUE
+      	      # como soltado ponemos un alpha transparente, puesto que no queremos que se pinte ningún tipo de imagen
+      	      .SOLTADO 	 	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/MenuArbolTecnologias.tga" .U 360 .V 892 ] 
+      	      .PULSADO     	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/Brillo.tga" 	  .U   1 .V   1 ] 
+            ]
+            
+            .IDSELECTSOUND "S_FXUI_CLICKBUTTON"                    
+          ]
+        ] # ~PESTANIA
+        
+        .CONTROLES  "Game/UI/ModeloGestion/UIDefs_PanelRamaIII.sb"
+      ] 
+    ] # Panel IIIa    
+  ] # ~PANELES

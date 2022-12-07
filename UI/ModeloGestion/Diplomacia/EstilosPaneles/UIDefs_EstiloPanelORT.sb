@@ -1,0 +1,58 @@
+#
+# Estilo del panel de oroTurnos
+#
+#
+
+# Fondo panel OroTurnos
+[ .TIPO UIC_BITMAP .ID 'FORT' 
+  .PARAMS 
+  [ 
+    .X 0 .Y 244 .U 573 .V 131 .SX 283 .SY 151 
+    .FILE "Game/UI/ModeloGestion/Diplomacia/VentanasDiplomacia.tga" 
+    .ALPHA TRUE 
+    .PRIORITY 2
+  ]
+] # ~BITMAP 
+
+[ .TIPO UIC_SPIN .ID 'SPOR'
+  .PARAMS
+  [  .X 785 .Y 300 .MIN 0 .MAX 50 .INCREMENTO 10 .VALUE 0 .TIMEOUT 2
+    %Game/UI/ModeloGestion/Diplomacia/UIDefs_SpinDiplomaciaORO.sb
+  ]
+]
+
+# Label Ofrecer
+[ .TIPO UIC_TEXT .ID 'LBMS'
+  .PARAMS 
+  [ 
+    .ALIGN CENTER
+    .TEXT LTEXT_DIPLOMACIA_OFRECER
+    .FONT "Fonts/Times14.fnt"
+    .X 840 .Y 265 .SCALE 1.0 
+  	.COLOR [ .R 255 .G 255 .B 255 ] 
+  ]    	
+] 
+
+# Label Turnos
+[ .TIPO UIC_TEXT .ID 'LBTU'
+  .PARAMS 
+  [ 
+    .ALIGN CENTER
+    .TEXT LTEXT_DIPLOMACIA_TURNOS
+    .FONT "Fonts/Times12.fnt"
+    .X 750 .Y 365 .SCALE 1.0 
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]    	
+]
+
+# Label Numero Turnos
+[ .TIPO UIC_TEXT .ID 'LBNT'
+  .PARAMS 
+  [ 
+    .ALIGN CENTER
+    .TEXT "0"
+    .FONT "Fonts/Times12.fnt"
+    .X 843 .Y 365 .SCALE 1.0 
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]    	
+]

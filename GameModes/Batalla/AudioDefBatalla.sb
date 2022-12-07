@@ -1,0 +1,23 @@
+#=======================================================================================
+# Definición de sonidos para el modelo de batalla
+#=======================================================================================
+
+.FILES
+[
+  [ .PATH "Game/GameModes/Batalla/AudioScripts/AudioTropas.sb" ]
+  [ .PATH "Game/GameModes/Batalla/AudioScripts/AudioTropas_Inf.sb" ]
+  [ .PATH "Game/GameModes/Batalla/AudioScripts/AudioTropas_Cab.sb" ]
+  [ .PATH "Game/GameModes/Batalla/AudioScripts/AudioTropas_Art.sb" ]
+  [ .PATH "Game/GameModes/Batalla/AudioScripts/AudioOrdenes.sb" ]
+  [ .PATH "Game/GameModes/Batalla/AudioScripts/AudioEnvironment.sb" ]
+  [ .PATH "Game/GameModes/Batalla/AudioScripts/AudioUI.sb" ]
+  [ .PATH "Game/GameModes/Batalla/AudioScripts/AudioMusica.sb" ]
+  [ .PATH "Game/GameModes/Batalla/AudioScripts/AudioCrowds.sb" ]
+  [ .PATH "Game/GameModes/Batalla/AudioScripts/AudioWeather.sb" ]
+  [ .PATH "Game/GameModes/Batalla/AudioScripts/AudioNarrator.sb" ]
+  [ .PATH "Game/GameModes/Batalla/AudioScripts/AudioConstrucciones.sb" ]
+  
+  # Locuciones de presentaciones de batallas históricas
+  
+  [ .PATH "Game/GameModes/Batalla/AudioScripts/AudioBatallasHistoricas.sb" ]
+]

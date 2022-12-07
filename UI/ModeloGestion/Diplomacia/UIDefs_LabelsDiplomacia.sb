@@ -1,0 +1,51 @@
+# Label Diplomacia
+[ .TIPO UIC_TEXT .ID 'LDIP' 
+  .PARAMS 
+  [ 
+   .ALIGN CENTER      
+   .TEXT LTEXT_DIPLOMACIA_DIPLOMACIA
+   .FONT "Fonts/Times17.fnt"
+   .X 515 .Y 70 .ALIGN RIGHT
+   .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+] # ~TEXT
+
+# Label Destinatario
+[ .TIPO UIC_TEXT .ID 'LBDS'
+  .PARAMS 
+  [ 
+    .ALIGN CENTER
+    #.TEXT LTEXT_DIPLOMACIA_DESTINATARIO
+    .FONT "Fonts/Times14.fnt"
+    .X 408 .Y 128 .SCALE 1.0 
+  	.COLOR [ .R 255 .G 255 .B 255 ] 
+  ]    	
+]
+
+#TEXTO DE LA OPINION SOBRE LA OFERTA
+[
+  .TIPO UIC_WRAPTEXT .ID 'WTOF'
+  .PARAMS
+  [     
+    .X 679 .Y 601 .SX 323 .SY 60
+    .ALIGN CENTER
+    .TEXT
+    [
+      .FONT "Fonts/Times10.fnt" 
+      .COLOR [ .R 255 .G 255 .B 255 ]          
+    ]
+    .MSG "Texto con la opinion del ministro sobre la oferta realizada, da una idea de como de buena o de mala es una oferta asdf kasd kahs alfk sdhf askjdfkals hdfklas hdlfka sdkj fak dkfla hksdhflka hsdlfk as dlkfha jkdhjfk haskdhf alksjdfha slkdfa sdlkf halk sd 11111111 2222222222 33333333333 4444444444 5555555555555 666666666 777777777 888888 999999999"
+  ]
+]  
+
+# Informa de la cantidad de la oferta que pide el destinatario
+[ .TIPO UIC_TEXT .ID 'LBID'
+  .PARAMS 
+  [ 
+    .ALIGN CENTER
+    #.TEXT LTEXT_DIPLOMACIA_DESTINATARIO
+    .FONT "Fonts/Times12.fnt"
+    .X 926 .Y 582 .SCALE 1.0 
+  	.COLOR [ .R 255 .G 255 .B 255 ] 
+  ]    	
+]

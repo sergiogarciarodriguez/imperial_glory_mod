@@ -1,0 +1,52 @@
+#===========================================================================================
+# Definiciones de movimiento y fisica para los diferentes tipos de barco
+#-------------------------------------------------------------------------------------------
+# TIPO: Navío de línea
+#===========================================================================================
+
+  # (float) Masa del barco
+  .MASA                           100000.0
+    
+  # (float) Velocidad mínima para poder efectuar un giro
+  .MIN_VEL_GIRO                   3.0
+    
+  # (float) Coeficiente hidrodinámico. A mayor, mas resistencia al agua. 
+  .COEF_HIDRODINAMICO             21000.0
+    
+  # (float) Fuerza centrífuga máxima soportable. A mayor, menos radio de giro
+  .FUERZA_CENTRIFUGA_MAX          45000.0
+    
+  # (float) Eficacia de conversión de viento en fuerza de las velas 
+  .EFICACIA_VELAS                 19500.0
+    
+  # (float) Velocidad mínima con el viento en contra
+  .VELOCIDAD_MINIMA               5.5
+    
+  # (float) Tamaño del barco. Este valor se puede aumentar para que el barco reaccione mas lentamente al mar.
+  .LONGITUD                       55.0
+  .ANCHURA                        17.0
+
+  # (float) indice de flotacion del barco (normal = 170.0)
+  .FLOTACION                      170.0
+  
+  # (float) radio con el que iniciará la curva a partir de velocidad = 0
+  .RADIO_GIRO_INICIAL             30.0
+  
+  # Poligono de colisión
+  .POLI_COLISION
+  [
+	[-4.0  33.0]
+	[ 4.0  33.0]
+	[ 9.0  10.0]
+    [ 9.0 -37.0]
+    [-9.0 -37.0]
+    [-9.0  10.0]
+  ]
+
+ # Valores anteriores
+ #.MASA                           60000.0
+ #.MIN_VEL_GIRO                   5.0
+ #.COEF_HIDRODINAMICO             15000.0
+ #.FUERZA_CENTRIFUGA_MAX          35000.0
+ #.EFICACIA_VELAS                 25000.0
+ #.VELOCIDAD_MINIMA               5.5

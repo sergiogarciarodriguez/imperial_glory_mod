@@ -1,0 +1,9 @@
+#############################################################################################
+# El fondo pulsado del boton default tileable
+#############################################################################################
+
+.MODO_TILEADO LATERAL
+
+.IMG_LATERAL_IZQ      [ .FILE "Game/UI/ModeloBatalla/DummyDialogMessageBoxBatalla.tga" .U 298 .V 282 .SX 34 .SY 22 .ALPHA TRUE .PRIORITY 255 ]
+.IMG_CENTRAL          [ .FILE "Game/UI/ModeloBatalla/DummyDialogMessageBoxBatalla.tga" .U 332 .V 282 .SX 34 .SY 22 .ALPHA TRUE .PRIORITY 255 ]
+.IMG_LATERAL_DCHA     [ .FILE "Game/UI/ModeloBatalla/DummyDialogMessageBoxBatalla.tga" .U 366 .V 282 .SX 34 .SY 22 .ALPHA TRUE .PRIORITY 255 ]

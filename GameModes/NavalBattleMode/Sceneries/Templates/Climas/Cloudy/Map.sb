@@ -1,0 +1,66 @@
+# Parametros generales --------------------------------------------------------
+
+.SKYBOX         "game/gamemodes/navalbattlemode/sceneries/templates/climas/cloudy/SKYBOX.V3D"
+.FOG_ENABLE     TRUE
+.FOG_COLOR      [ 169 176 182 ]
+.FOG_START      0.1
+.FOG_END        1.0
+.FOG_DENSITY    0.5
+
+.LIGHT_DIR      [ 1.0 -1.0 -1.0 ]         # Dirección de la luz
+.LIGHT_COLOR    [ 1.0 1.0 1.0 1.0 ]       # Color de la luz
+
+.TOTAL_SIZE     [ 200000.0 200000.0 ]                   # Tamaño total del mapa
+.WORK_SIZE      [ 180000.0 180000.0 ]                   # Tamaño jugable del mapa
+
+# Parametros del oceano --------------------------------------------------------
+.OCEAN_PARAMS
+[
+  .GRID_SIZE       64                         # Número de vértices de un lado de la rejilla de la malla del oceano
+  .TEX_BUMP_SIZE   64                         # Tamaño de la textura para el bump map
+  .TEX_ENV_MAP     "game/gamemodes/navalbattlemode/sceneries/templates/climas/cloudy/skysmall.dds"             # Fichero de textura para los efectos de reflexión
+  .TEX_SPHERE      "game/gamemodes/navalbattlemode/sceneries/templates/climas/cloudy/sky_sphere.bmp"           # Fichero para la versión sin cube-map
+  .BUMP_SCALE      [10.0  10.0]               # Escalado de la textura de bump map
+  .MESH_SCALE      [32000.0  128.0  32000.0]  # Escalado de la malla (tamaño real de un tile de oceano)
+  .LIGHT_COLOR     [0.16 0.24  0.30 0.0]       # Color del mar suave
+  .DEEP_COLOR      [0.04 0.13 0.19 0.0]      # Color del mar profundo
+  .WIND_DIR        0.78                       # Dirección del viento
+  .WIND_SPEED      11.6                        # Velocidad del viento
+  .WAVE_SIZE     300.0                        # Altura del las olas
+  .WIND_DEPND      2.0                        # Dependencia con la dirección del viento (debe ser multiplo de 2 y >=2)
+  .HORIZ_DESP      0.0000                      # Factor de desplazamiento horizontal de la malla (olas de vaivén)
+  .SMOOTH_FACTOR   0.00006                    # Factor de suavizado de las olas (mayor-->menos olas pequeñas)
+  .UTIL_SIZE       [200000.0 200000.0]        # Tamaño del area de juego
+  .TILE_SIZE       [16 16]                    # Tamaño total de la geometría del mar (num. tiles ancho x num. tiles alto) (deben ser potencia de 2)
+  .VELOC_MAR       0.10                        # Coeficiente de velocidad del mar (a valores mas pequeños el mar se mueve mas lento)
+]
+
+ # Audio --------------------------------------------------------
+.AUDIO 
+[
+  .MUSIC
+  [
+    .IDNAME "S_MUSICA_BATALLA_02"
+  ]
+  
+  .SOUNDS
+  [
+  
+    [ 
+      .IDNAME "S_MAR"
+    ]
+    
+    [ 
+      .IDNAME "S_GAVIOTAS"
+      .MIN_SECS     5.0
+      .MAX_SECS     35.0
+    ]
+    
+    [ 
+      .IDNAME "S_MADERAS"
+      .MIN_SECS     5.0
+      .MAX_SECS     10.0
+    ]
+    
+  ]
+]

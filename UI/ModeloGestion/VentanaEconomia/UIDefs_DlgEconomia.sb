@@ -1,0 +1,119 @@
+.MODAL TRUE
+.CENTER FALSE
+
+.DEPTH 3
+
+.RELATIVE_PRIORITY FALSE
+
+.FONDO
+[
+  .FILE "Game/UI/ModeloGestion/VentanaEconomia/PantallaEconomia.tga"
+  .SX 1024 .SY 768
+  .ALPHA TRUE
+  .PRIORITY 1
+]
+
+# Titulo 
+.CAPTION
+[
+ .XMARGEN 80 .YMARGEN 51
+ .HEIGHT 37
+ .TITLE 
+ [ 
+  .ALINEACION CENTER 
+  .TEXT LTEXT_UI_ECONOMIA_TITLE
+  .FONT "Fonts/Times19.fnt" 
+  .COLOR [ .R 255 .G 255 .B 255 ] 
+ ]
+ .MOVIBLE FALSE
+]
+ 
+# Se definen los parametros de centrado de los botones
+# Nota: - Solo trabajaremos con botones custom y por defecto
+.BOTONES
+[           
+ .CENTER FALSE
+ 
+ .LIST 
+ [ 
+  # usamos el estilo definido para los botones de los menús de multijugador puesto que es el mismo que el de esta pantalla,
+  # y al estar incluído en UIDefs_controlesStandard.sb podemos tener acceso a él
+  [
+   .TIPO UIC_BOTONTEXTO
+   .FONDO [ .X 970 .Y 714 ]
+   .STYLE DEFAULT_X_BUTTON
+   .CANCELAR TRUE
+   .IDSELECTSOUND "S_CANCELAR" 
+   .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"                         
+   .KEY [ .TECLA KEY_ESCAPE .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ]                                                              
+  ]
+ ]
+] # ~ BOTONES
+
+
+.CONTROLES
+[
+  # --Textos estáticos de los apartados de las tablas
+  %Game/UI/ModeloGestion/VentanaEconomia/UIDefs_TextosEconomia.sb
+  
+  # --Definición de tablas
+  # - Tabla de Produccion por provincias
+  [
+    .TIPO UIC_TABLA .ID 'TBPP'
+    .PARAMS
+    [
+      # posición y altura de la tabla
+      .X 18 .Y 173 .HEIGHT 465
+      
+      %Game/UI/ModeloGestion/VentanaEconomia/UIDefs_TablasEconomiaProvincias.sb
+    ]
+  ]
+  
+  # - Tabla anexa con los totales de producción por provincias
+  [
+    .TIPO UIC_TABLA .ID 'TBTP'
+    .PARAMS
+    [
+      # posición y altura de la tabla
+      .X 18 .Y 654 .HEIGHT 30
+      
+      %Game/UI/ModeloGestion/VentanaEconomia/UIDefs_TablasEconomiaProvincias.sb
+    ]
+  ]  
+  
+  # - Tabla de Otros Ingresos
+  [
+    .TIPO UIC_TABLA .ID 'TBOI'
+    .PARAMS
+    [
+      # posición y altura de la tabla
+      .X 518 .Y 173 .HEIGHT 120
+      
+      %Game/UI/ModeloGestion/VentanaEconomia/UIDefs_TablasEconomiaIngresosGastos.sb
+    ]
+  ]
+    
+  # - Tabla de Gastos
+  [
+    .TIPO UIC_TABLA .ID 'TBGS'
+    .PARAMS
+    [
+      # posición y altura de la tabla
+      .X 518 .Y 361 .HEIGHT 165
+      
+      %Game/UI/ModeloGestion/VentanaEconomia/UIDefs_TablasEconomiaIngresosGastos.sb
+    ]
+  ]
+  
+  # - Tabla de Totales
+  [
+    .TIPO UIC_TABLA .ID 'TBTS'
+    .PARAMS
+    [
+      # posición y altura de la tabla
+      .X 518 .Y 594 .HEIGHT 90
+      
+      %Game/UI/ModeloGestion/VentanaEconomia/UIDefs_TablasEconomiaIngresosGastos.sb
+    ]
+  ]  
+]

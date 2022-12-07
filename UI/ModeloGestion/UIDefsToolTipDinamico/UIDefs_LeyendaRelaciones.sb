@@ -1,0 +1,109 @@
+#
+# LEYENDA DE ESTADO DE RELACIONES DEL MODO DE ESTADISTICAS
+#
+#
+
+
+#TITULO
+[
+  .TIPO UIC_WRAPTEXT .ID 'WTTI'
+  .PARAMS
+  [     
+    .X 0 .Y 10 .SX 320 .SY 50
+    .ALIGN CENTER
+    .TEXT
+    [
+      .FONT "Fonts/Times10.fnt" 
+      .COLOR [ .R 255 .G 255 .B 255 ]          
+    ]
+    .MSG LTEXT_LEYENDA_RELACIONES
+  ]
+]
+
+
+#COLOR AMISTAD FETEN
+[ .TIPO UIC_BITMAP .ID 'BMGA'
+  .PARAMS
+  [ .X 30 .Y 45 .U 771 .V 162 .SX 22 .SY 22
+    .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .PRIORITY 255 .ALPHA TRUE  
+  ]      
+]
+   
+#TEXTO DE AMISTAD FETEN
+[
+  .TIPO UIC_TEXT .ID 'TXGA' 
+  .PARAMS 
+  [ .ALIGN LEFT .X 60 .Y 50 .TEXT LTEXT_LEYENDA_GRAN_AMISTAD
+    .FONT "Fonts/Times9.fnt"  .COLOR [ .R 255 .G 255 .B 255 ]
+  ]
+] 
+
+
+#COLOR AMISTAD NORMAL
+[ .TIPO UIC_BITMAP .ID 'BMAN'
+  .PARAMS
+  [ .X 30 .Y 70 .U 748 .V 47 .SX 22 .SY 22
+    .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .PRIORITY 255 .ALPHA TRUE  
+  ]      
+]
+   
+#TEXTO DE AMISTAD NORMAL
+[
+  .TIPO UIC_TEXT .ID 'TXAN' 
+  .PARAMS 
+  [ .ALIGN LEFT .X 60 .Y 75 .TEXT LTEXT_LEYENDA_AMISTAD_NORMAL
+    .FONT "Fonts/Times9.fnt"  .COLOR [ .R 255 .G 255 .B 255 ]
+  ]
+]
+
+#COLOR DE NEUTRALIDAD
+[ .TIPO UIC_BITMAP .ID 'BMNE'
+  .PARAMS
+  [ .X 30 .Y 95 .U 771 .V 1 .SX 22 .SY 22
+    .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .PRIORITY 255 .ALPHA TRUE  
+  ]      
+]
+   
+#TEXTO DE NEUTRALIDAD
+[
+  .TIPO UIC_TEXT .ID 'TXNE' 
+  .PARAMS 
+  [ .ALIGN LEFT .X 60 .Y 100 .TEXT LTEXT_LEYENDA_NEUTRALIDAD
+    .FONT "Fonts/Times9.fnt"  .COLOR [ .R 255 .G 255 .B 255 ]
+  ]
+] 
+ 
+ 
+#COLOR DE ENEMISTAD
+[ .TIPO UIC_BITMAP .ID 'BMEN'
+  .PARAMS
+  [ .X 30 .Y 120 .U 771 .V 24 .SX 22 .SY 22
+    .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .PRIORITY 255 .ALPHA TRUE  
+  ]      
+]
+   
+#TEXTO DE ENEMISTAD
+[
+  .TIPO UIC_TEXT .ID 'TXEN' 
+  .PARAMS 
+  [ .ALIGN LEFT .X 60 .Y 125 .TEXT LTEXT_LEYENDA_ENEMISTAD_NORMAL
+    .FONT "Fonts/Times9.fnt"  .COLOR [ .R 255 .G 255 .B 255 ]
+  ]
+] 
+ 
+#COLOR DE ENEMISTAD TOTAL
+[ .TIPO UIC_BITMAP .ID 'BMGE'
+  .PARAMS
+  [ .X 160 .Y 45 .U 771 .V 185 .SX 22 .SY 22
+    .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .PRIORITY 255 .ALPHA TRUE  
+  ]      
+]
+   
+#TEXTO DE ENEMISTAD TOTAL
+[
+  .TIPO UIC_TEXT .ID 'TXGE' 
+  .PARAMS 
+  [ .ALIGN LEFT .X 190 .Y 50 .TEXT LTEXT_LEYENDA_GRAN_ENEMISTAD
+    .FONT "Fonts/Times9.fnt"  .COLOR [ .R 255 .G 255 .B 255 ]
+  ]
+] 

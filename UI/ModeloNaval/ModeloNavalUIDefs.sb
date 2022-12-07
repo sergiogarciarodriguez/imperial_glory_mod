@@ -1,0 +1,433 @@
+[
+  .NAME MODELO_NAVAL_MAIN_UI
+  .PROC NAVAL_MODEL_MAIN_UI
+  .PARAMS
+  [
+   .CONTROLES 
+   [ 
+    
+    # HotKeys
+    [ .TIPO UIC_TECLA  .ID 'KEYP' .PARAMS [ .TECLA KEY_SPACE .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+    [ .TIPO UIC_TECLA  .ID 'KESC' .PARAMS [ .TECLA KEY_ESCAPE .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP] ] ]
+    
+    # Teclas de Debug 
+    [ .TIPO UIC_TECLA  .ID 'KEYX' .PARAMS [ .TECLA KEY_X .MKEYS [ L_SHIFT ]  .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+    [ .TIPO UIC_TECLA  .ID 'KESP' .PARAMS [ .TECLA KEY_SPACE .MKEYS [ L_CTRL ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]        # tecla para efectuar un cambio de bando
+    [ .TIPO UIC_TECLA	 .ID 'KHID' .PARAMS [ .TECLA KEY_I .MKEYS [ L_CTRL ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] #tecla para ocultar(desactivar) los controles
+    [ .TIPO UIC_TECLA	 .ID 'KHID' .PARAMS [ .TECLA KEY_I .MKEYS [ R_CTRL ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] #tecla para ocultar(desactivar) los controles
+  
+    # teclas de seleccion de barcos
+    [ .TIPO UIC_TECLA	 .ID 'SEL1' .PARAMS [ .TECLA KEY_1 .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+    [ .TIPO UIC_TECLA	 .ID 'SEL2' .PARAMS [ .TECLA KEY_2 .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+    [ .TIPO UIC_TECLA	 .ID 'SEL3' .PARAMS [ .TECLA KEY_3 .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP] ] ]
+    [ .TIPO UIC_TECLA	 .ID 'SEL4' .PARAMS [ .TECLA KEY_4 .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+    [ .TIPO UIC_TECLA	 .ID 'SEL5' .PARAMS [ .TECLA KEY_5 .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+    [ .TIPO UIC_TECLA	 .ID 'SEL6' .PARAMS [ .TECLA KEY_6 .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+   
+    # teclas para el autofire
+    [ .TIPO UIC_TECLA  .ID 'AFES' .PARAMS [ .TECLA KEY_L .MKEYS [ L_SHIFT ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+    [ .TIPO UIC_TECLA  .ID 'AFES' .PARAMS [ .TECLA KEY_L .MKEYS [ R_SHIFT ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+    [ .TIPO UIC_TECLA  .ID 'AFBA' .PARAMS [ .TECLA KEY_K .MKEYS [ L_SHIFT ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+    [ .TIPO UIC_TECLA  .ID 'AFBA' .PARAMS [ .TECLA KEY_K .MKEYS [ R_SHIFT ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+    
+    # teclas para control de barcos cuando el interface esta oculto
+    [ .TIPO UIC_TECLA	 .ID 'IODB' .PARAMS [ .TECLA KEY_K .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] # fuego babor
+    [ .TIPO UIC_TECLA	 .ID 'IODE' .PARAMS [ .TECLA KEY_L .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] # fuego estribor
+    [ .TIPO UIC_TECLA	 .ID 'IODG' .PARAMS [ .TECLA KEY_G .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] # municion metralla
+    [ .TIPO UIC_TECLA	 .ID 'IODF' .PARAMS [ .TECLA KEY_F .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] # municion cadenas
+    [ .TIPO UIC_TECLA	 .ID 'IODH' .PARAMS [ .TECLA KEY_H .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] # municion balas
+
+    [ .TIPO UIC_TECLA	 .ID 'IODA' .PARAMS [ .TECLA KEY_BACK .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] # ancla
+    [ .TIPO UIC_TECLA	 .ID 'IODV' .PARAMS [ .TECLA KEY_V .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] # seguir
+    [ .TIPO UIC_TECLA	 .ID 'IODJ' .PARAMS [ .TECLA KEY_B .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] # abordar
+    
+    # muesta / oculta minimapa con el interface oculto
+    [ .TIPO UIC_TECLA	 .ID 'IODM' .PARAMS [ .TECLA KEY_M .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] # minimapa
+    
+    
+   
+    # Zonas sensibles (Debe ir antes de las zonas sensibles de camara)
+    [ .TIPO UIC_ZONASENSIBLE  .ID 'ZSCN' .PARAMS [ .RECT [ 0 0 1023 767 ] .DBCLICK_AS_RELEASE FALSE .EVENTOS [ MOUSE ] ] ]                      
+
+    # Teclas/Zonas sensibles cámara
+    %Game/UI/ModeloNaval/UIDefs_CtrlMovCamara.sb      
+    
+    # Tecla de seleccion multiple, tambien usada para agregar puntos de destino
+    [ .TIPO UIC_TECLA .ID 'TEMU' .PARAMS [ .TECLA KEY_LCONTROL .MKEYS [ L_CTRL ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] 
+    
+    #fondo para los botones y barras
+    [ 
+      .TIPO UIC_BITMAP .ID 'BKPO' 
+      .PARAMS 
+      [ 
+        .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" 
+        .X 350 .Y 572 .SX 325 .SY 196 .U 350 .V 315 
+        .ALPHA TRUE .PRIORITY 1
+      ] 
+    ]
+    #fondo para el selector
+    [ 
+      .TIPO UIC_BITMAP .ID 'BKSL' 
+      .PARAMS 
+      [ 
+        .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" 
+        .X 0 .Y 739 .SX 1024 .SY 29 .U 0 .V 483
+        .ALPHA TRUE .PRIORITY 1
+      ] 
+    ]    
+    
+    [ .TIPO UIC_MINNAVALMAP .ID 'MMNA'
+      .PARAMS
+      [
+        %Game/UI/ModeloNaval/UIDefs_MinNavalMap.sb 
+      ]
+    ]
+    
+    [ .TIPO UIC_BRUJULA .ID 'BRUJ'
+      .PARAMS
+      [
+        .ACTIVO TRUE
+        .X 3 .Y 54 #83,190 relativa al gráfico del mapa
+        .AGUJA
+        [
+          .IMAGEN
+          [
+            .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" 
+            .X 35 .Y 199 .SX 14 .SY 46 .U 998 .V 226
+            .ALPHA TRUE 
+            .PRIORITY 35
+          ]
+          
+          .PIVOTE [ .X 8 .Y 28 ]
+          #.PIVOTE [ .X 0 .Y 0 ]
+        ]
+      ]
+    ]
+    
+    
+    [ .TIPO UIC_BARRACONTROLBARCOS .ID 'BCBA'      
+      .PARAMS
+      [
+        %Game\UI\ModeloNaval\UIDefs_BarraCtrlBarcos.sb
+      ]
+    ]
+    
+    [ .TIPO UIC_GESTORCONTROLESBARCOS .ID 'GRBA'
+      .PARAMS 
+      [ 
+        .DEF_RECARGA [ %Game\UI\ModeloNaval\UIDefs_BarrasRecargaBarco.sb ] 
+        .ICONO_CAPTURADO        [ .U 71 .V 1  .SX 32 .SY 32 .FILE "Game\UI\ModeloNaval\IconosNavales.tga" .ALPHA TRUE ]
+        .ICONO_DERIVA           [ .U 71 .V 1  .SX 32 .SY 32 .FILE "Game\UI\ModeloNaval\IconosNavales.tga" .ALPHA TRUE ]
+        .ICONO_INTENTO_ABORDAJE [ .U 1  .V 36 .SX 32 .SY 32 .FILE "Game\UI\ModeloNaval\IconosNavales.tga" .ALPHA TRUE ]
+        .ICONO_ABORDANDO        [ .U 1  .V 36 .SX 32 .SY 32 .FILE "Game\UI\ModeloNaval\IconosNavales.tga" .ALPHA TRUE ]
+        .ICONO_SIN_VELAS        [ .U 36 .V 1  .SX 32 .SY 32 .FILE "Game\UI\ModeloNaval\IconosNavales.tga" .ALPHA TRUE ]
+        .ICONO_FUERA_MAPA       [ .U 1  .V 1  .SX 32 .SY 32 .FILE "Game\UI\ModeloNaval\IconosNavales.tga" .ALPHA TRUE ]
+        .ICONO_SEGUIMIENTO      [ .U 36 .V 36 .SX 32 .SY 32 .FILE "Game\UI\ModeloNaval\IconosNavales.tga" .ALPHA TRUE ]
+        .MIN_BLINK_TIME  100    # tiempo minimo entre parpadeo de los iconos de "fuera de mapa" (en ms)
+        .MAX_BLINK_TIME  1000   # tiempo maximo entre parpadeo de los iconos de "fuera de mapa" (en ms)
+      ]
+    ]
+    
+    # Informacion sobre el barco seleccionado
+    [ .TIPO UIC_VISORINFOBARCOSELECTED .ID 'VIBS'
+      .PARAMS [ %Game\UI\ModeloNaval\UIDefs_VisorInfoBarcoSelected.sb ]
+    ]
+    
+    # Marco de informacion con los contadores de bajas en combate naval
+    [ .TIPO UIC_CONTADORBAJASNAVAL .ID 'CBNA'
+      .PARAMS [ %Game\UI\ModeloNaval\UIDefs_ContadorBajasNaval.sb ]
+    ]
+    
+    # Ventana de informacion bajo el cursor para los barcos
+    [ .TIPO UIC_DIALOGO .ID 'CURB'           
+      .PARAMS [ %Game\UI\ModeloNaval\UIDefs_VentanaInfoCursorBarco.sb ]
+    ] 
+    
+    # botón que activa la pantalla de opciones
+    [
+      .TIPO UIC_BOTONGRAFICO .ID 'OPNA'
+      .PARAMS
+      [
+        .FONDO
+        [
+          .X 295 .Y 0
+          .SX 33 .SY 32 .ALPHA TRUE .PRIORITY 32
+          .SELECCIONADO [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 647 .V 234 .ALPHA TRUE ] 
+          .SOLTADO 	[ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 295 .V 0   .ALPHA TRUE ] 
+          .PULSADO      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 647 .V 269 .ALPHA TRUE ]    
+        ]      
+        
+  	    .IDSELECTSOUND "S_FXUI_CLICKBUTTON"       
+        .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_CLICK"       
+        
+        .TOOL_TIP 
+        [ 
+         .TEXT LTEXT_UI_NAVAL_TT_OPTIONS
+         .FONT "Fonts/gothic.fnt" 
+         .X 32 .Y 32
+         .COLOR [ .R 255 .G 255 .B 255 ] 
+           
+         .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+        ]                  
+      ]
+    ]
+    
+    # Texto Pausa
+     [ .TIPO UIC_WRAPTEXT .ID 'TPAU'
+       .PARAMS
+       [
+         #.COMPORTAMIENTO FIJO        
+         .X 260
+         .Y 40
+         .SX 500 .SY 70
+         .MSG "LTEXT_UI_PAUSA"
+	 .TEXT 
+      	 [
+           .FONT "Fonts/MonotypeCorsiva45.fnt"    
+         ]
+         .ALIGN CENTER
+       ]
+     ]
+    
+    # Activacion / Desactivacion del mini mapa
+    #[ .TIPO UIC_TECLA .ID 'KMAP' .PARAMS [ .TECLA KEY_F5 .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+    
+    # botón que activa el minimapa
+    [
+      .TIPO UIC_BOTONGRAFICO .ID 'BMAP'
+      .PARAMS
+      [
+      	.COMPORTAMIENTO SIMPLE
+        .FONDO
+        [
+          .X 11 .Y 5
+          .SX 34 .SY 26 .ALPHA TRUE .PRIORITY 32
+          .SOLTADO      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 11  .V 5   .ALPHA TRUE ] 
+          .SELECCIONADO [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 610 .V 234 .ALPHA TRUE ] 
+          .PULSADO      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 610 .V 263 .ALPHA TRUE ]    
+        ]
+        
+  	  .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK"                
+      .IDHIGHLIGHTSOUND  "S_MAINMENU_OPTION_SELECT"                
+        
+        .TOOL_TIP 
+        [ 
+         .TEXT LTEXT_UI_NAVAL_TT_MINMAP
+         .FONT "Fonts/gothic.fnt" 
+         .X 32 .Y 32
+         .COLOR [ .R 255 .G 255 .B 255 ] 
+           
+         .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+        ]                          
+        
+        .KEY [ .TECLA KEY_M .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ]
+      ]
+    ]        
+    
+#    # Barra del temporizador
+#    [
+#      .TIPO UIC_BARRAPORCENTAJE .ID 'TIME'
+#      .PARAMS
+#      [
+#        .FORMATO HORIZONTAL
+#        .SUPERIOR [ .FILE "Game/UI/ModeloNaval/InterfazBarcos.tga" .U 464 .V 598 .ALPHA TRUE ]
+#       	.PRIORITY 31         
+#         .X 424 .Y 9 .SX 218 .SY 14
+#         .MAX_VALUE 6000
+#      ]
+#    ]
+    
+    # dialogo de espera de jugadores para partidas de red
+    [ .TIPO UIC_DLGESPERANDOJUGADORES .ID 'EJRE' 
+      .PARAMS [ %Game\UI\ModeloNaval\UIDefs_DlgEsperandoJugadores.sb ]
+    ]  
+      
+    # visor de lag para partidas de red
+    [ .TIPO UIC_VISORLAG .ID 'VLAG'
+      .PARAMS [ %Game\UI\ModeloNaval\UIDefs_VisorLag.sb ]
+    ]           
+
+     # gestor de eventos de caida/abandono de jugadores, perdidad de semilla y perdida de conexion
+     [
+      .TIPO UIC_GESTORPLAYERS .ID 'GPLY'
+      .ACTIVO TRUE
+     ]
+
+    # dialogo de perdida de semilla para partidas de red
+#    [ .TIPO UIC_DLGSEEDLOST .ID 'SEED'
+#      .PARAMS [ %Game\UI\Comun\UIDefs_DlgSeedLost.sb ]
+#    ]           
+          
+    # dialogo de perdida de semilla para partidas de red
+#    [ .TIPO UIC_DLGPLAYERDROP .ID 'PDRP'
+#      .PARAMS [ %Game\UI\Comun\UIDefs_DlgPlayerDrop.sb ]
+#    ]           
+
+    # dialogo de perdida de conexion para partidas de red
+#    [ .TIPO UIC_DLGDISCONNECTED .ID 'DISC'
+#      .PARAMS [ %Game\UI\Comun\UIDefs_DlgDisconnected.sb ]
+#    ]     
+    
+    # visor de textos emergentes
+    [ .TIPO UI_VISOR_TEXTO_EMERGENTE .ID 'VTEM'
+      .PARAMS [ %Game\UI\ModeloNaval\UIDefs_VisorTextoEmergente.sb ]
+    ]
+
+    # Ventana de Opciones
+    # [ .TIPO UIC_DLGOPCIONES .ID 'OPCS'           
+    #   .PARAMS [ %Game/UI/MainMenu/UIDefs_PantallaOpciones.sb ]
+    # ]
+             
+      #---------------------------------------------- GESTOR DE FOCO CHAT ---------------------------------------
+     [ 
+       .TIPO UIC_CHAT .ID 'CHAT'
+       .PARAMS
+       [
+   		   #---------------------------------------- EDITBOX CHAT ------------------------------------------
+         .INPUT
+         [
+           .SIMPLE TRUE
+           .BATALLA TRUE
+           .X -10 .Y 545 .SX 600 .SY 22 .MAX 100
+           .FONT "Fonts/Default.fnt" 
+           .COLOR [ .R 255 .G 255 .B 128 ]
+           .SHADOW TRUE
+           .TECLA_FOCO [ .TECLA KEY_C .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ]    
+         ]
+
+         .INPUT_BANDO # envio de mensajes a los jugadores del mismo bando
+         [
+           .SIMPLE TRUE
+           .BATALLA TRUE
+           .X -10 .Y 545 .SX 600 .SY 22 .MAX 100
+           .FONT "Fonts/Default.fnt" 
+           .COLOR [ .R 128 .G 255 .B 128 ]
+           .SHADOW TRUE
+           .TECLA_FOCO [ .TECLA KEY_C .MKEYS [ L_SHIFT ] .EVENTOS [ KEY_DOWN KEY_UP ] ]    
+         ]      
+           
+         #---------------------------------------- LISTBOX CHAT ------------------------------------------       
+         .OUTPUT_EMERGENTE
+         [
+          .X 4 
+          .Y 542
+          
+          .ACTIVO TRUE
+          
+          .HALIGN LEFT   # RIGHT CENTER
+          .VALIGN BOTTOM # BOTTOM CENTER
+          
+          .DEFAULT_FONT "Fonts/Default.fnt"
+          .DEFAULT_SCALE 1.0
+          .DEFAULT_COLOR [ .R 255 .G 255 .B 255 ]
+          
+          .MAX_LINES 50          
+         ]
+         
+         .LIFE_TIME 15000
+         .FADE_TIME 15000
+         .FORMAT "[%s]: %s"
+       ]
+     ]             
+             
+   ] # ~ Controles
+    
+   .UI_DATA
+   [
+    .MOV_ARROW "Game/UI/ModeloNaval/FlechaDireccion.v3d" 
+    .WIND_ARROW "Game/UI/ModeloNaval/FlechaViento.v3d" 
+    .CENTER_ARROW "Game/UI/ModeloNaval/FlechaCentroMapa.v3d" 
+    
+    .SECUENCIA_TUTORIAL "Game\LuaScripts\Secuencias\SecuenciaTutorialNaval.lua"    
+   ]     
+  
+  ] # ~ Params
+] # ~ UI
+
+[
+  ##########################################################################################################
+  # Este interfaz representa el menu de juego que aparece en el modelo naval al pulsar ESC.
+  # Desde este menu podremos: 
+  #
+  #   - Entrar en Opciones. (entrar en opciones, se supone)
+  #   - Volver a la partida. (volver a batalla naval)
+  #   - Abandonar Partida (Abandonar batalla naval)
+  #
+  ##########################################################################################################
+
+  .NAME UI_ESC_MENU_MODELO_NAVAL
+  .PROC UI_GENERICO
+  .PARAMS
+  [  
+   .CONTROLES
+   [
+    
+    [ # Gestor de menus con las opciones a mostrar
+      # ToDo: - Pendiente migrar este esquema a otro tipo Dialogo con un control de gestor de menus.
+     .TIPO UIC_GESTORMENUS .ID 'GMEN'
+     .PARAMS [ %Game/UI/ModeloNaval/UIDefs_MenuJuego.sb ]
+    ]
+    
+   ]
+
+   .UI_DATA
+   [
+    .CURSOR CUR_DEFAULT
+   ]   
+  ] # ~ PARAMS  
+]
+
+##########################################################################################################
+# Representa la ventana de resultado de una batalla, tanto para victoria como para derrota. Unicamente
+# sera obligatorio poner el texto que se debera de mostrar cuando se gane / pierda.    
+[
+  .NAME UI_MODELO_BATALLA_VENTANA_RESULTADO_BATALLA
+  .PROC UI_GENERICO
+  .PARAMS
+  [
+   .CONTROLES
+   [
+   
+    [ # Ventana de resultado de batalla
+     .TIPO UIC_VENTANARESULTADOBATALLA .ID 'VRES'
+     .PARAMS [ %Game/UI/ModeloNaval/UIDefs_VentanaResultadoNaval.sb ]     
+    ] 
+             
+   ] # ~ CONTROLES     
+    
+   .UI_DATA
+   [
+    .CURSOR CUR_DEFAULT
+   ]      
+   
+ ] # ~ PARAMS
+]
+
+##########################################################################################################
+# Representa la ventana inicial, esta ventana debera de anular cualquier evento que pudiera llegar
+# a UI_GAME_BATTLE_MAIN. Los de mouse con zona sensible y el resto replicando teclas que hay en
+# UI_GAME_BATTLE_MAIN notese que las de movimiento de camara no se replicaran pues interesara que esta
+# se pueda mover tiendo activa la ventana.
+
+[
+ .NAME UI_MODELO_BATALLA_VENTANA_INICIO_BATALLA
+ .PROC UI_GENERICO
+ .PARAMS
+ [
+  .CONTROLES
+  [
+   
+   [ # Ventana de inicio de batalla    
+    .TIPO UIC_VENTANAINICIOBATALLA .ID 'VINI'
+    .PARAMS [ %Game/UI/ModeloNaval/UIDefs_VentanaInicioBatalla.sb ]
+   ]      
+   
+  ] # ~ CONTROLES
+  
+  .UI_DATA
+  [
+   .CURSOR CUR_DEFAULT    
+  ] # ~ UI_DATA
+ 
+ ] # ~ PARAMS 
+]

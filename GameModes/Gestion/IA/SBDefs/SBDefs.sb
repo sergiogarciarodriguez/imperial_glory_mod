@@ -1,0 +1,14 @@
+################################################################################################
+# Fichero sb que contendra definiciones de constantes a poder ser insertadas en otros sb.
+################################################################################################
+
+# Tipos de gobierno
+# Cada tipo de gobierno estara asociado a una etiqueta de texto que sera con lo que trabaje
+# el arbol de tecnologias a la hora de distinguir gobiernos.
+
+.DEMOCRACIA               [ LTEXT_RAMA_IIA  ]
+.ABSOLUTISMO              [ LTEXT_RAMA_IIB  ]
+.REPUBLICA                [ LTEXT_RAMA_IIIA ]
+.MONARQUIA_ABSOLUTA       [ LTEXT_RAMA_IIIB ]
+.MONARQUIA_PARLAMENTARIA  [ LTEXT_RAMA_IIIC ]
+.DICTADURA                [ LTEXT_RAMA_IIID ]

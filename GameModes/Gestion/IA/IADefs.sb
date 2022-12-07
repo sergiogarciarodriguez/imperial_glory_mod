@@ -1,0 +1,157 @@
+###########################################################################################################
+# Archivo de configuracion de IA para los distintos jugadores.
+# Cada jugador tendra una entrada en donde se enlazaran los ficheros con sus configuraciones unicas
+###########################################################################################################
+
+.DEFAULT 
+[  
+ .DEFS_PRESIDENTE                   "Game/GameModes/Gestion/IA/Default/IADefsPresidente.sb"
+ .DEFS_MINISTRO_TECNOLOGICO         "Game/GameModes/Gestion/IA/Default/IADefsMinistroTecnologico.sb"
+ .DEFS_MINISTRO_ECONOMIA_INTERIOR   "Game/GameModes/Gestion/IA/Default/IADefsMinistroEconomiaInterior.sb"
+ .DEFS_MINISTRO_MILITAR             "Game/GameModes/Gestion/IA/Default/IADefsMinistroMilitar.sb"
+ .DEFS_MINISTRO_DIPLOMATICO         "Game/GameModes/Gestion/IA/Default/IADefsMinistroDiplomatico.sb"
+]
+
+.JUG_GRAN_BRETANYA 
+[
+ .DEFS_PRESIDENTE                   "Game/GameModes/Gestion/IA/Inglaterra/IADefsPresidente.sb"
+ .DEFS_MINISTRO_TECNOLOGICO         "Game/GameModes/Gestion/IA/Default/IADefsMinistroTecnologico.sb"
+ .DEFS_MINISTRO_ECONOMIA_INTERIOR   "Game/GameModes/Gestion/IA/Default/IADefsMinistroEconomiaInterior.sb"
+ .DEFS_MINISTRO_MILITAR             "Game/GameModes/Gestion/IA/Default/IADefsMinistroMilitar.sb"
+ .DEFS_MINISTRO_DIPLOMATICO         "Game/GameModes/Gestion/IA/Default/IADefsMinistroDiplomatico.sb"
+]
+
+.JUG_FRANCIA 
+[ 
+ .DEFS_PRESIDENTE                   "Game/GameModes/Gestion/IA/Francia/IADefsPresidente.sb"
+ .DEFS_MINISTRO_TECNOLOGICO         "Game/GameModes/Gestion/IA/Default/IADefsMinistroTecnologico.sb"
+ .DEFS_MINISTRO_ECONOMIA_INTERIOR   "Game/GameModes/Gestion/IA/Default/IADefsMinistroEconomiaInterior.sb"
+ .DEFS_MINISTRO_MILITAR             "Game/GameModes/Gestion/IA/Default/IADefsMinistroMilitar.sb"
+ .DEFS_MINISTRO_DIPLOMATICO         "Game/GameModes/Gestion/IA/Default/IADefsMinistroDiplomatico.sb"
+]
+
+.JUG_AUSTRIA 
+[ 
+ .DEFS_PRESIDENTE                   "Game/GameModes/Gestion/IA/Austria/IADefsPresidente.sb"
+ .DEFS_MINISTRO_TECNOLOGICO         "Game/GameModes/Gestion/IA/Default/IADefsMinistroTecnologico.sb"
+ .DEFS_MINISTRO_ECONOMIA_INTERIOR   "Game/GameModes/Gestion/IA/Default/IADefsMinistroEconomiaInterior.sb"
+ .DEFS_MINISTRO_MILITAR             "Game/GameModes/Gestion/IA/Default/IADefsMinistroMilitar.sb"
+ .DEFS_MINISTRO_DIPLOMATICO         "Game/GameModes/Gestion/IA/Default/IADefsMinistroDiplomatico.sb"
+]
+
+.JUG_PRUSIA
+[ 
+ .DEFS_PRESIDENTE                   "Game/GameModes/Gestion/IA/Prusia/IADefsPresidente.sb"
+ .DEFS_MINISTRO_TECNOLOGICO         "Game/GameModes/Gestion/IA/Default/IADefsMinistroTecnologico.sb"
+ .DEFS_MINISTRO_ECONOMIA_INTERIOR   "Game/GameModes/Gestion/IA/Default/IADefsMinistroEconomiaInterior.sb"
+ .DEFS_MINISTRO_MILITAR             "Game/GameModes/Gestion/IA/Default/IADefsMinistroMilitar.sb"
+ .DEFS_MINISTRO_DIPLOMATICO         "Game/GameModes/Gestion/IA/Default/IADefsMinistroDiplomatico.sb"
+]
+
+.JUG_RUSIA
+[ 
+ .DEFS_PRESIDENTE                   "Game/GameModes/Gestion/IA/Rusia/IADefsPresidente.sb"
+ .DEFS_MINISTRO_TECNOLOGICO         "Game/GameModes/Gestion/IA/Default/IADefsMinistroTecnologico.sb"
+ .DEFS_MINISTRO_ECONOMIA_INTERIOR   "Game/GameModes/Gestion/IA/Default/IADefsMinistroEconomiaInterior.sb"
+ .DEFS_MINISTRO_MILITAR             "Game/GameModes/Gestion/IA/Default/IADefsMinistroMilitar.sb"
+ .DEFS_MINISTRO_DIPLOMATICO         "Game/GameModes/Gestion/IA/Default/IADefsMinistroDiplomatico.sb"
+]
+
+#.JUG_ESPANYA
+[
+.DEFS_PRESIDENTE                   "Game/GameModes/Gestion/IA/Espanya/IADefsPresidente.sb"
+]
+
+#.JUG_OTOMANO
+[
+ .DEFS_PRESIDENTE                   "Game/GameModes/Gestion/IA/Otomano/IADefsPresidente.sb"
+ .DEFS_MINISTRO_MILITAR             "Game/GameModes/Gestion/IA/Otomano/IADefsMinistroMilitar.sb"
+]
+
+#.JUG_EGIPTO
+[ 
+ .DEFS_PRESIDENTE                   "Game/GameModes/Gestion/IA/Egipto/IADefsPresidente.sb"
+]
+
+#.JUG_DOS_SICILIAS
+[ 
+ .DEFS_PRESIDENTE                   "Game/GameModes/Gestion/IA/DosSicilias/IADefsPresidente.sb"
+]
+
+#.JUG_DINAMARCA
+[ 
+ .DEFS_PRESIDENTE                   "Game/GameModes/Gestion/IA/Dinamarca/IADefsPresidente.sb"
+]
+
+#.JUG_SUECIA
+[ 
+ .DEFS_PRESIDENTE                   "Game/GameModes/Gestion/IA/Suecia/IADefsPresidente.sb"
+]
+
+#.JUG_PORTUGAL
+[ 
+ .DEFS_PRESIDENTE                   "Game/GameModes/Gestion/IA/Portugal/IADefsPresidente.sb"
+]
+
+#.JUG_LOMBARDIA
+[ 
+ .DEFS_PRESIDENTE                   "Game/GameModes/Gestion/IA/Lombardia/IADefsPresidente.sb"
+ .DEFS_MINISTRO_MILITAR             "Game/GameModes/Gestion/IA/Lombardia/IADefsMinistroMilitar.sb"
+]
+
+#.JUG_PIAMONTE
+[ 
+ .DEFS_PRESIDENTE                   "Game/GameModes/Gestion/IA/Piamonte/IADefsPresidente.sb"
+]
+
+#.JUG_EPAPALES
+[ 
+ .DEFS_PRESIDENTE                   "Game/GameModes/Gestion/IA/EstadosPapales/IADefsPresidente.sb"
+]
+
+#.JUG_RHELVETICA
+[ 
+ .DEFS_PRESIDENTE                   "Game/GameModes/Gestion/IA/RepublicaHelvetica/IADefsPresidente.sb"
+]
+
+#.JUG_HANNOVER
+[ 
+ .DEFS_PRESIDENTE                   "Game/GameModes/Gestion/IA/Hannover/IADefsPresidente.sb"
+]
+
+#.JUG_BATAVIA
+[ 
+ .DEFS_PRESIDENTE                   "Game/GameModes/Gestion/IA/Batavia/IADefsPresidente.sb"
+]
+
+#.JUG_SAJONIA
+[ 
+ .DEFS_PRESIDENTE                   "Game/GameModes/Gestion/IA/Sajonia/IADefsPresidente.sb"
+]
+
+#.JUG_POLONIA
+[ 
+ .DEFS_MINISTRO_MILITAR             "Game/GameModes/Gestion/IA/Polonia/IADefsMinistroMilitar.sb"
+ .DEFS_PRESIDENTE                   "Game/GameModes/Gestion/IA/Polonia/IADefsPresidente.sb"
+]
+
+#.JUG_MOLDAVIA
+[ 
+ .DEFS_PRESIDENTE                   "Game/GameModes/Gestion/IA/Moldavia/IADefsPresidente.sb"
+]
+
+#.JUG_MARRUECOS
+[ 
+ .DEFS_PRESIDENTE                   "Game/GameModes/Gestion/IA/Marruecos/IADefsPresidente.sb"
+]
+
+#.JUG_TUNEZ
+[ 
+ .DEFS_PRESIDENTE                   "Game/GameModes/Gestion/IA/Tunez/IADefsPresidente.sb"
+]
+
+#.JUG_TRIPOLITANIA
+[ 
+ .DEFS_PRESIDENTE                   "Game/GameModes/Gestion/IA/Tripolitania/IADefsPresidente.sb"
+]
+

@@ -1,0 +1,34 @@
+##########################################################################################################
+# Control con la secuencia de video de los creditos
+[ 
+ .TIPO UIC_VIDEOSECUENCIA .ID 'VSFJ'
+ .PARAMS [ %Game\UI\MainMenu\UIDefs_SecuenciaCreditos.sb ]
+]  
+
+#[ .TIPO UIC_TECLA .ID 'CRBK' .PARAMS [ .TECLA KEY_ESCAPE .MKEYS [ ] .EVENTOS [ KEY_DOWN ] ] ]     
+
+# Se ha sustituido por la tecla de escape
+#[ .TIPO UIC_BOTONTEXTO .ID 'CRBK'
+#  .PARAMS
+#  [
+#    .PX 943 .PY 719
+#    .STYLE DEFAULT_MAINMENU_VOLVER_BUTTON
+#  ]
+#]
+# BOTON DE SALIDA
+[
+  .TIPO UIC_BOTONTEXTO  .ID 'CRBK'  
+  .PARAMS
+  [
+    .CANCELAR TRUE
+    .STYLE DEFAULT_X_BUTTON
+    .PX 943 .PY 719
+#Por ahora el volver al menu principal no hace ningun sonido
+#    .IDSELECTSOUND "S_FXQUEST_CERRAR_VENTANA" 
+#    .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"
+    .KEY
+    [
+      .TECLA KEY_ESCAPE .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ]          
+    ]
+  ]        
+]

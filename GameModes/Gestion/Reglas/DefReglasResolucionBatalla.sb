@@ -1,0 +1,132 @@
+#########################################################################################
+# Contiene las reglas asociadas a la resolucion de batallas
+# Se incluiran:
+# - Valores de incremento como recompensa de ganar una batalla
+# - Reglas de ascenso de los mandos que partipan en una batalla y pertenecen al bando ganador.
+#########################################################################################
+
+# Incremento de la experiencia segun los tipos de combate en tierra
+ .INC_EXP_COMBATES_TIERRA
+ [
+  .COMBATE_FACIL_VICTORIA    1  # Puntos de experiencia obtenidos por una victoria facil
+  .COMBATE_MEDIO_VICTORIA    2  # Puntos de experiencia obtenidos por una victoria media
+  .COMBATE_DIFICIL_VICTORIA  3  # Puntos de experiencia obtenidos por una victoria dificil
+  .COMBATE_HUIDA             0  # Puntos de experiencia obtenidos por una huida
+ ]
+ 
+ # Incremento de la experiencia segun los tipos de combate en mar
+ .INC_EXP_COMBATES_MAR
+ [
+  .COMBATE_FACIL_VICTORIA    1  # Puntos de experiencia obtenidos por una victoria facil
+  .COMBATE_MEDIO_VICTORIA    2  # Puntos de experiencia obtenidos por una victoria media
+  .COMBATE_DIFICIL_VICTORIA  3  # Puntos de experiencia obtenidos por una victoria dificil
+  .COMBATE_HUIDA             0  # Puntos de experiencia obtenidos por una huida
+ ]
+ 
+ # Rango con el que calcular la dificultad de un combate
+ # Nota: - Para comprobar como de dificil es un combate se dividen las fuerzas del jugador A entre las
+ #         fuerzas del jugador B. Este valor nos dara 1 si ambas fuerzas estan igualadas, mayor que 1
+ #         si el jugador A es mas poderoso y menor que 1 si el jugador A es mas debil. Con el valor que
+ #         especificamos aqui establecemos un domino alrededor del 1 mediante el cual decidimos cuantas
+ #         veces ha de ser superior o inferior A para considerar un combate facil o dificil respectivamente.
+ #         Ejemplo:
+ #         Si el rango es R con A / B = C:
+ #         * Si C > 1 + R               -> Es combate facil para A.
+ #         * Si C < 1 - R               -> Es combate dificil para A.
+ #         * Si C >= 1 - R y C <= 1 + R -> Es combate igualado entre A y B.
+ #
+ #         Notese que un valor de 1.0 supondria que estamos ante combates dificiles o faciles si A es
+ #         el doble de grande o el doble de pequeño con respecto a B.
+ .RANGO_DIFICULTAD_COMBATE
+ [
+  .RANGO 0.3
+ ] 
+
+ # Experiencia asociada a cada uno de los rangos a los que puede aspirar un mando
+ .EXP_RANGOS_MANDOS
+ [
+  .TENIENTE 0   # Exp necesaria para ser teniente
+  .CAPITAN  6   # Exp necesaria para ser capitan
+  .GENERAL  17   # Exp necesaria para ser general
+  .MARISCAL 25  # Exp necesaria para ser mariscal
+ ]
+ 
+ # Incremento de la moral en los mandos por batalla ganada
+ .INC_MORAL_MANDOS 1 
+ 
+ # Experiencia asociada a cada uno de los rangos a los que puede aspirar un batallon
+ .EXP_RANGOS_BATALLON
+ [
+  .NOVATO        0   # Exp necesaria para el rango novato de los batallones
+  .MEDIO         6   # Exp necesaria para el rango medio de los batallones
+  .EXPERIMENTADO 12  # Exp necesaria para el rango experimentado de los batallones
+  .VETERANO      18  # Exp necesaria para el rango veterano de los batallones
+  .ELITE         25  # Exp necesaria para el rango elite de los batallones
+ ]
+ 
+ # Experiencia asociada a cada uno de los rangos a los que puede aspirar una tripulacion
+ .EXP_CALIDAD_TRIPULACION
+ [
+  .NOVATO         0  # Exp necesaria para la tripulacion novata
+  .MEDIO          6  # Exp necesaria para la tripulacion media
+  .EXPERIMENTADO  14  # Exp necesaria para la tripulacion experimentada
+  .VETERANO       18 # Exp necesaria para la tripulacion veterana
+  .ELITE          25 # Exp necesaria para la tripulacion de elite
+ ]
+ 
+ # Reglas asociadas a la captura de prisioneros por huidas / retiradas
+ .CAPTURAS_POR_HUIDA
+ [
+  .FACTOR_EXITO_HUIDA
+  [
+   # Factor de exito en la huida por tipo de tropa. 
+   # Se esperara que los valores oscilen entre 0 y 100.
+   .CABALLERIA 55.0
+   .INFANTERIA 15.0
+   .ARTILLERIA 5.0
+  ]
+  
+  .FACTOR_EXITO_PERSECUCION
+  [
+   # Factor de exito en la persecucion por tipo de tropa a un ejercito que huye.
+   # Se esperara que los valores oscilen entre 0 y 100.
+   .CABALLERIA 65.0
+   .INFANTERIA 18.0
+   .ARTILLERIA 5.0
+  ]
+  
+  .MODIFICADORES_PROBABILIDAD_EXITO_HUIDA_EJERCITO
+  [
+   # Modificadores a aplicar al valor de probabilidad de huida de un ejercito
+   # Valores positivos aumentan la probabilidad y negativos la disminuyen
+   .PROVINCIA_DESTINO_PROPIA     10.0 # Cuando la provincia destino es propia
+   .PROVINCIA_DESTINO_NO_PROPIA -6.0 # Cuando la provincia destino no es propia (permiso de paso)
+   .PROVINCIA_ORIGEN_PROPIA      10.0 # Cuando la provincia origen es propia 
+   .PROVINCIA_ORIGEN_NO_PROPIA  -6.0 # Cuando la provincia origen no es propia (invasion o permiso de paso)
+  ]
+  
+  .EMBOSCADA
+  [
+   # Valores asociados a emboscadas para ejercitos perseguidores   
+   .PROBABILIDAD           25.0  # Probabilidad de que aparezca una emboscada
+   .BAJAS_MINIMAS_UNIDADES 5.0   # Minimo numero de unidades muertas por batallon
+   .BAJAS_MAXIMAS_UNIDADES 45.0  # Maximo numero de unidades muertas por batallon
+  ]
+  
+  .TRATAMIENTO_PRISIONEROS
+  [
+   # Valores asociados al tratamiento de los prisioneros
+   # Nota: - Los valores de hostilidad negativos empeoran y los positivos mejoran.
+   #       - NO poner valores muy altos pues se multiplicaran por unidades capturadas
+   
+   # Hostilidad por unidad ajusticiada global
+   .HOSTILIDAD_UNIDAD_AJUSTICIADA -0.009
+   
+   # Hostilidad por unidad desterrada global
+   .HOSTILIDAD_UNIDAD_DESTERRADA   0.007
+   
+   # Del total de capturados el porcentaje devuelto por destierro
+   .PORCENTAJE_REGRESO_UNIDADES_DESTERRADAS 0.5
+  ]
+ 
+ ]

@@ -1,0 +1,52 @@
+# altura de las filas
+.ROW_HEIGHT 15
+
+# definición de las columnas      
+.CELDAS
+[
+  # columna Nombre del Ingreso/Gasto
+  [
+    # anchura
+    .SX 201
+    
+    # --parámetros del texto
+    # - alineación
+    .ALIGN LEFT
+    # - color
+    .COLOR [ .R 255 .G 255 .B 255 ]
+    # - tipo de fuente
+    .FONT "Fonts/Times10.fnt"
+  ]
+  
+  # columna Recurso oro
+  [
+    .SX 72
+    .ALIGN CENTER
+    .COLOR [ .R 255 .G 255 .B 255 ]
+    .FONT "Fonts/Times10.fnt"
+  ]
+  
+  # columna Recurso materia prima
+  [
+    .SX 72
+    .ALIGN CENTER
+    .COLOR [ .R 255 .G 255 .B 255 ]
+    .FONT "Fonts/Times10.fnt"
+  ]                
+  
+  # columna Recurso población
+  [
+    .SX 72
+    .ALIGN CENTER
+    .COLOR [ .R 255 .G 255 .B 255 ]
+    .FONT "Fonts/Times10.fnt"
+  ]                        
+  
+  # columna Recurso Comida
+  [
+    .SX 72
+    .ALIGN CENTER
+    .COLOR [ .R 255 .G 255 .B 255 ]
+    .FONT "Fonts/Times10.fnt"
+  ]                          
+] # ~ CELDAS

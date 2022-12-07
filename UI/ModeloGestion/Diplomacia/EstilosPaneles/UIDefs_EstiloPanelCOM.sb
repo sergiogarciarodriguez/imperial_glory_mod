@@ -1,0 +1,145 @@
+#
+# Estilo del panel de Comercio
+#
+#
+
+# Fondo panel ComercioOferta
+[ .TIPO UIC_BITMAP .ID 'FCOO' 
+  .PARAMS 
+  [ 
+    .X 0 .Y 108 .U 287 .V 1 .SX 283 .SY 191 
+    .FILE "Game/UI/ModeloGestion/Diplomacia/VentanasDiplomacia.tga" 
+    .ALPHA TRUE 
+    .PRIORITY 2
+  ]
+] # ~BITMAP 
+
+# Fondo panel ComercioDemanda
+[ .TIPO UIC_BITMAP .ID 'FCOD' 
+  .PARAMS 
+  [ 
+    .X 0 .Y 316 .U 287 .V 1 .SX 283 .SY 191 
+    .FILE "Game/UI/ModeloGestion/Diplomacia/VentanasDiplomacia.tga" 
+    .ALPHA TRUE 
+    .PRIORITY 2
+  ]
+] # ~BITMAP
+
+# Label Exigir
+[ .TIPO UIC_TEXT .ID 'LBMS'
+  .PARAMS 
+  [ 
+    .ALIGN CENTER
+    .TEXT LTEXT_DIPLOMACIA_EXIGIR
+    .FONT "Fonts/Times14.fnt"
+    .X 840 .Y 339 .SCALE 1.0 
+  	.COLOR [ .R 255 .G 255 .B 255 ] 
+  ]    	
+] 
+
+# Label Ofrecer
+[ .TIPO UIC_TEXT .ID 'LBMD'
+  .PARAMS 
+  [ 
+    .ALIGN CENTER
+    .TEXT LTEXT_DIPLOMACIA_OFRECER
+    .FONT "Fonts/Times14.fnt"
+    .X 840 .Y 130 .SCALE 1.0 
+  	.COLOR [ .R 255 .G 255 .B 255 ] 
+  ]    	
+] 
+
+[ .TIPO UIC_SPIN .ID 'SPOR'
+  .PARAMS
+  [  .X 785 .Y 156 .MIN 0 .MAX 50 .INCREMENTO 10 .VALUE 0 .TIMEOUT 2
+    %Game/UI/ModeloGestion/Diplomacia/UIDefs_SpinDiplomaciaORO.sb
+  ]
+]
+
+[ .TIPO UIC_SPIN .ID 'SPOD'
+  .PARAMS
+  [  .X 785 .Y 364 .MIN 0 .MAX 50 .INCREMENTO 10 .VALUE 0 .TIMEOUT 2
+    %Game/UI/ModeloGestion/Diplomacia/UIDefs_SpinDiplomaciaORO.sb
+  ]
+]
+
+[ .TIPO UIC_SPIN .ID 'SPCO'
+  .PARAMS
+  [  .X 785 .Y 216 .MIN 0 .MAX 50 .INCREMENTO 10 .VALUE 0 .TIMEOUT 2
+    %Game/UI/ModeloGestion/Diplomacia/UIDefs_SpinDiplomacia.sb
+  ]
+]
+
+[ .TIPO UIC_SPIN .ID 'SPCD'
+  .PARAMS
+  [  .X 785 .Y 424 .MIN 0 .MAX 50 .INCREMENTO 10 .VALUE 0 .TIMEOUT 2
+    %Game/UI/ModeloGestion/Diplomacia/UIDefs_SpinDiplomacia.sb
+  ]
+]
+
+[ .TIPO UIC_SPIN .ID 'SPMP'
+  .PARAMS
+  [  .X 785 .Y 186 .MIN 0 .MAX 50 .INCREMENTO 10 .VALUE 0 .TIMEOUT 2
+    %Game/UI/ModeloGestion/Diplomacia/UIDefs_SpinDiplomacia.sb
+  ]
+]
+
+[ .TIPO UIC_SPIN .ID 'SPMD'
+  .PARAMS
+  [  .X 785 .Y 394 .MIN 0 .MAX 50 .INCREMENTO 10 .VALUE 0 .TIMEOUT 2
+    %Game/UI/ModeloGestion/Diplomacia/UIDefs_SpinDiplomacia.sb
+  ]
+]
+
+
+
+# CheckBox Territorios ofertados
+[ .TIPO UIC_CHECKBOX
+  .ID 'CBOT'
+  .PARAMS
+  [
+    .COMPORTAMIENTO FIJO
+    .STYLE DEFAULT_DIPLOMACIA_BUTTON_GRANDE
+    .FONDO [ .X 36 .Y 254 ]
+    
+    .IDSELECTSOUND "S_FXUI_CLICKBUTTON"                    
+    
+    .TEXT LTEXT_DIPLOMACIA_TERRITORIOS_CEDER
+    .CENTER_AREA [ .X 0 .Y 0 .SX 209 .SY 39 ]    
+    .SOLTADO [ .COLOR [ .R 0 .G 0 .B 0 ] ]
+    .PULSADO [ .COLOR [ .R 0 .G 0 .B 0 ] ]
+    .SELECCIONADO [ .COLOR [ .R 0 .G 0 .B 0 ] ]
+    .DISABLE [ .COLOR [ .R 0 .G 0 .B 0 ] ]
+    .TOOL_TIP 
+    [ 
+      .TEXT LTEXT_DIPLOMACIA_TERRITORIOS_CEDER
+      %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+    ]       
+  ]
+] # ~CheckBox TERRITORIOS OFERTADOS
+
+
+# CheckBox Territorios exigidos
+[ .TIPO UIC_CHECKBOX
+  .ID 'CBCT'
+  .PARAMS
+  [
+    .COMPORTAMIENTO FIJO
+    .STYLE DEFAULT_DIPLOMACIA_BUTTON_GRANDE
+    .FONDO [ .X 36 .Y 462 ]
+    
+    .IDSELECTSOUND "S_FXUI_CLICKBUTTON"                    
+    
+    .TEXT LTEXT_DIPLOMACIA_TERRITORIOS_EXIGIR
+    .CENTER_AREA [ .X 0 .Y 0 .SX 209 .SY 39 ]    
+    .SOLTADO [ .COLOR [ .R 0 .G 0 .B 0 ] ]
+    .PULSADO [ .COLOR [ .R 0 .G 0 .B 0 ] ]
+    .SELECCIONADO [ .COLOR [ .R 0 .G 0 .B 0 ] ]
+    .DISABLE [ .COLOR [ .R 0 .G 0 .B 0 ] ]
+    .TOOL_TIP 
+    [ 
+      .TEXT LTEXT_DIPLOMACIA_TERRITORIOS_EXIGIR
+      %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+    ]       
+  ]
+] # ~CheckBox TERRITORIOS OFERTADOS

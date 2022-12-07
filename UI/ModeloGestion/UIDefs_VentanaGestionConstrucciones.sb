@@ -1,0 +1,153 @@
+#############################################################################################
+# Representa el cuerpo PARAMS del control encargado de representar la ventana para la
+# gestion de las construcciones.
+#############################################################################################
+
+ # Se define la ventana                   
+ .VENTANA
+ [ 
+  .CENTER FALSE
+  .MODAL FALSE 
+  
+  .FONDO 
+  [   
+   .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga"    
+   .X 0 .Y 615 .U 0 .V 871 .SX 296 .SY 153 .ALPHA TRUE  
+  ]              
+  
+  .CAPTION
+  [
+   .XMARGEN 52
+   .YMARGEN 2
+   .HEIGHT 19
+   .TITLE 
+   [ 
+    .ALINEACION CENTER 
+    .TEXT "Construcciones" 
+    .FONT "Fonts/Default.fnt" 
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+   ]
+   .MOVIBLE FALSE
+  ] 
+ ]
+ 
+ # Se definen el control tab con los paneles
+ .TAB
+ [
+  .ID 'TCON'
+  .PARAMS
+  [
+   .X 11 .Y 645 .SX 278 .SY 98
+   .ANIMADO FALSE
+   
+   .PANELES
+   [
+   
+    # Panel Construcciones Politica
+    [ 
+     .ID 'PCRP'
+     .PARAMS
+     [
+      .X 11 .Y 665 .X2 11 .Y2 665 .SX 278 .SY 98
+      .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 560 .V 687 
+      .PRIORITY 1 .ALPHA TRUE
+      .PESTANIA 
+      [ 
+       .TIPO UIC_BOTONGRAFICO
+       .PARAMS
+       [       
+       	.COMPORTAMIENTO MANUAL       	
+       	.FONDO
+       	[
+        	.PRIORITY 1
+         	.X 1 .Y -15 .SX 82 .SY 16 .ALPHA TRUE .ACEPTAR TRUE 
+         	.SOLTADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga"  .U 841 .V 691 ]
+         	.PULSADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga"  .U 841 .V 615 ]      
+        ]
+       	#.ZSENSIBLE_MANUAL [ .DX .DY .SX .SY ]
+       ]
+      ]
+     
+      .CONTROLES "Game/UI/ModeloGestion/UIDefs_ControlesPanelConstruccionesPoliticas.sb"
+     ] 
+    ]   
+    
+    # Panel Construcciones Militar
+    [ 
+     .ID 'PCRM'
+     .PARAMS
+     [
+      .X 11 .Y 665 .X2 11 .Y2 665 .SX 278 .SY 98
+      .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 560 .V 687 
+      .PRIORITY 2 .ALPHA TRUE
+      .PESTANIA
+      [ 
+       .TIPO UIC_BOTONGRAFICO
+       .PARAMS
+       [
+        .COMPORTAMIENTO MANUAL
+        .FONDO
+        [
+          .X 83 .Y -15 .SX 82 .SY 16 .ALPHA TRUE .ACEPTAR TRUE .PRIORITY 1
+          .SOLTADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga"  .U 841 .V 691 ]
+          .PULSADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga"  .U 841 .V 615 ]      
+        ]
+        #.ZSENSIBLE_MANUAL [ .DX .DY .SX .SY ]
+       ]        
+      ]
+     
+      .CONTROLES "Game/UI/ModeloGestion/UIDefs_ControlesPanelConstruccionesMilitares.sb"
+     ]
+    ]   
+    
+    # Panel Construcciones Comercial
+    [ 
+     .ID 'PCRC'
+     .PARAMS
+     [
+      .X 11 .Y 665 .X2 11 .Y2 665 .SX 278 .SY 98
+      .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 560 .V 687 
+      .PRIORITY 3 .ALPHA TRUE
+      .PESTANIA
+      [ 
+       .TIPO UIC_BOTONGRAFICO
+       .PARAMS
+       [
+        .COMPORTAMIENTO MANUAL
+        .FONDO
+        [
+          .PRIORITY 1
+          .X 166 .Y -15 .SX 82 .SY 16 .ALPHA TRUE .ACEPTAR TRUE 
+          .SOLTADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga"  .U 841 .V 691 ]
+          .PULSADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga"  .U 841 .V 615 ]      
+        ]
+        #.ZSENSIBLE_MANUAL [ .DX .DY .SX .SY ]
+       ]               
+      ]
+     
+      .CONTROLES "Game/UI/ModeloGestion/UIDefs_ControlesPanelConstruccionesComerciales.sb"
+     ] 
+    ]   
+    
+    # Panel Construcciones Economicas
+    #[ 
+     #.X 11 .Y 665 .X2 11 .Y2 665 .SX 278 .SY 98
+     #.FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 560 .V 687 
+     #.PRIORITY 4 .ALPHA TRUE
+     #.PESTANIA_BOTON_GRAFICO 
+     #[ 
+     # .COMPORTAMIENTO MANUAL
+     # .X 249 .Y -15 .SX 82 .SY 16 .ALPHA TRUE .ACEPTAR TRUE .PRIORITY 1
+     # .SOLTADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga"  .U 841 .V 691 ]
+     # .PULSADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga"  .U 841 .V 615 ]      
+     #]
+    #]   
+    
+   ]
+  ]
+ ]
+  
+   
+ 
+
+

@@ -1,0 +1,185 @@
+.MODES
+[
+  [
+    .MODO 'PRES'                # inicio del juego, vídeos eidos-pyro, presentación, ...
+    .START_PROCS
+    [
+      [
+        .NAME PRESENTACION_BASE_PROC
+        .PARAMS
+        [
+          .ID 'PRES'
+          .STARTUP "Game/GameModes/Start/Presentacion.sb"
+        ]
+      ]
+    ]
+  ]
+  
+  [
+    .MODO 'MENU'                # main menú, no válido para ingame menú
+    .START_PROCS
+    [
+      [
+        .NAME MAIN_MENU_BASE_PROC
+        .PARAMS
+        [
+          .ID 'MENU'
+          .STARTUP "Game/GameModes/MainMenu/MainMenu.sb"
+        ]
+      ]
+    ]
+  ]
+  
+  [
+    .MODO 'LOBY'                # lobby launched 
+    .START_PROCS
+    [
+      [
+        .NAME MAIN_MENU_BASE_PROC
+        .PARAMS
+        [
+          .ID 'LOBY'
+          .STARTUP "Game\GameModes\Lobby\Lobby.sb"
+        ]
+      ]
+    ]
+  ]
+    
+  [
+    .MODO 'GELO'                # Modelo puente para cargar el modelo de gestion
+    .START_PROCS
+    [
+      [
+        .NAME MODELO_GESTION_BASE_PROC_LOADING
+        .PARAMS
+        [
+          .ID 'GELO'
+          .STARTUP "Game/GameModes/GestionLoading/ModeloGestionLoading.sb"
+        ]
+      ]
+    ]
+  ]
+  
+  [                             # modelo de gestión
+    .MODO 'GEST'                
+    .START_PROCS
+    [
+      [
+        .NAME MODELO_GESTION_BASE_PROC
+        .PARAMS
+        [
+          .ID 'GEST'
+          .STARTUP "Game/GameModes/Gestion/ModeloGestion.sb"
+        ]
+      ]
+    ]
+  ]
+  
+  [                             # modelo de batalla
+    .MODO 'BATL'
+    .START_PROCS
+    [
+      [
+        .NAME MODELO_BATALLA_BASE_PROC
+        .PARAMS
+        [
+          .ID 'BATL'
+          .STARTUP "Game/GameModes/Batalla/ModeloBatalla.sb"
+        ]
+      ]
+    ]
+  ]
+  
+  [                             # naval battle mode
+    .MODO 'NBAT'
+    .START_PROCS
+    [
+      [
+        .NAME NAVAL_BATTLE_MODEL_BASE_PROC
+        .PARAMS
+        [
+          .ID 'NBAT'
+          .STARTUP "Game/GameModes/NavalBattleMode/NavalBattle.sb"
+        ]
+      ]
+    ]
+  ]
+
+  [                             # modelo de estadisticas de batalla
+    .MODO 'EBAT'
+    .START_PROCS
+    [
+      [
+        .NAME MODELO_ESTADISTICA_BATALLA_BASE_PROC
+        .PARAMS
+        [
+          .ID 'EBAT'
+          .STARTUP "Game/GameModes/EstadisticasBatalla/EstadisticasBatalla.sb"
+        ]
+      ]
+    ]
+  ]
+  
+  [                             # modelo de estadisticas naval
+    .MODO 'ENAV'
+    .START_PROCS
+    [
+      [
+        .NAME MODELO_ESTADISTICA_NAVAL_BASE_PROC
+        .PARAMS
+        [
+          .ID 'ENAV'
+          .STARTUP "Game/GameModes/EstadisticasNaval/EstadisticasNaval.sb"
+        ]
+      ]
+    ]
+  ]  
+  
+  [                             # modelo de batalla en red
+    .MODO 'BATN'
+    .START_PROCS
+    [
+      [
+        .NAME MODELO_BATALLA_RED_BASE_PROC
+        .PARAMS
+        [
+          .ID 'BATN'
+          .STARTUP "Game/GameModes/Red/ModeloBatallaRed.sb"
+        ]
+      ]
+    ]
+  ]
+
+  [                             # modelo de batalla en red naval
+    .MODO 'NBAN'
+    .START_PROCS
+    [
+      [
+        .NAME MODELO_BATALLA_RED_NAVAL_BASE_PROC
+        .PARAMS
+        [
+          .ID 'NBAN'
+          .STARTUP "Game/GameModes/Red/ModeloBatallaRedNaval.sb"
+        ]
+      ]
+    ]
+  ]
+  
+  # DEMO DEL JUEGO
+  [
+    .MODO 'DEMO'
+    .START_PROCS
+    [
+      [
+        .NAME DEMO_BASE_PROC
+        .PARAMS
+        [
+          .ID 'DEMO'
+          .STARTUP "Game/GameModes/Demo/Demo.sb"
+        ]
+      ]
+    ]
+  ]
+  
+  
+]

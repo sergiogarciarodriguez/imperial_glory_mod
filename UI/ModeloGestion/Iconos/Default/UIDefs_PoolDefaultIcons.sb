@@ -1,0 +1,73 @@
+###############################################################################################################
+# Img por defecto
+###############################################################################################################
+
+[
+ .KEY DEFAULT_CONSTRUCCION_IMG_NORMAL  
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .U 881 .V 722 .ALPHA TRUE ]
+]
+
+[
+ .KEY DEFAULT_TROPA_IMG_NORMAL  
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Francia/PlantillaTropasFr.tga" .SX 72 .SY 102 .U 731 .V 516 .ALPHA TRUE ]
+]
+
+
+[ 
+ .KEY DEFAULT_BARCO_IMG_NORMAL  
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Francia/PlantillaTropasFr.tga" .SX 72 .SY 102 .U 147 .V 619 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY DEFAULT_BARCO_IMG_SELECCIONADO  
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Francia/PlantillaTropasFr.tga" .SX 72 .SY 102 .U 658 .V 619 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY DEFAULT_BARCO_IMG_PULSADO  
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Francia/PlantillaTropasFr.tga" .SX 72 .SY 102 .U 147 .V 722 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY DEFAULT_BARCO_IMG_DISABLE  
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Francia/PlantillaTropasFr.tga" .SX 72 .SY 102 .U 658 .V 722 .ALPHA TRUE ]
+]
+
+#Barcos pequeños
+[ 
+ .KEY DEFAULT_BARCO_IMG_NORMAL_SMALL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Francia/PlantillaTropasFrMini.tga" .SX 32 .SY 45 .U 1 .V 277 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY DEFAULT_BARCO_IMG_SELECCIONADO_SMALL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Francia/PlantillaTropasFrMini.tga" .SX 32 .SY 45 .U 232 .V 277 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY DEFAULT_BARCO_IMG_PULSADO_SMALL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Francia/PlantillaTropasFrMini.tga" .SX 32 .SY 45 .U 1 .V 323 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY DEFAULT_BARCO_IMG_DISABLE_SMALL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Francia/PlantillaTropasFrMini.tga" .SX 32 .SY 45 .U 232 .V 323 .ALPHA TRUE ]
+]
+
+# usados en el visor de gestión
+[ 
+ .KEY DEFAULT_HUECO_IMG_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .SX 72 .SY 115 .U 750 .V 773 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY DEFAULT_HUECO_BARCO_IMG_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .SX 107 .SY 115 .U 889 .V 53 .ALPHA TRUE ]
+]
+
+# usado en el visor de intercambio de tropas
+[ 
+ .KEY DEFAULT_SLOT_IMG_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/PantallaIntercambioTropas.tga" .SX 78 .SY 105 .U 142 .V 660 .ALPHA TRUE ]
+]
+

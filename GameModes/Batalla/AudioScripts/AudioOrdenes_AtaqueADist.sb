@@ -1,0 +1,598 @@
+  #===============================================================================
+  # S_ATACAR_DISTANCIA_INF
+  #===============================================================================
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_INF_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/InfantryCommander/Inf_attackack_engageinfantry.ogg"   "Audio/Voices/Francia/InfantryCommander/Inf_attackack_advanceengage_01.ogg"
+            "Audio/Voices/Francia/InfantryCommander/Inf_attackack_advanceengage_02.ogg" "Audio/Voices/Francia/InfantryCommander/Inf_attackack_engage_01.ogg" 
+            "Audio/Voices/Francia/InfantryCommander/Inf_attackack_engage_02.ogg"        "Audio/Voices/Francia/InfantryCommander/Inf_attackack_engageenemy_01.ogg"
+            "Audio/Voices/Francia/InfantryCommander/Inf_attackack_engageenemy_02.ogg"   ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_INF_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/InfantryCommander/Inf_attackack_engageinfantry.ogg"   "Audio/Voices/Inglaterra/InfantryCommander/Inf_attackack_advanceengage_01.ogg"
+            "Audio/Voices/Inglaterra/InfantryCommander/Inf_attackack_advanceengage_02.ogg" "Audio/Voices/Inglaterra/InfantryCommander/Inf_attackack_engage_01.ogg" 
+            "Audio/Voices/Inglaterra/InfantryCommander/Inf_attackack_engage_02.ogg"        "Audio/Voices/Inglaterra/InfantryCommander/Inf_attackack_engageenemy_01.ogg"
+            "Audio/Voices/Inglaterra/InfantryCommander/Inf_attackack_engageenemy_02.ogg"   ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [           
+    .IDNAME "S_ATACAR_DISTANCIA_INF_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/InfantryCommander/Inf_attackack_engageinfantry.ogg"   "Audio/Voices/Austria/InfantryCommander/Inf_attackack_advanceengage_01.ogg"
+            "Audio/Voices/Austria/InfantryCommander/Inf_attackack_advanceengage_02.ogg" "Audio/Voices/Austria/InfantryCommander/Inf_attackack_engage_01.ogg" 
+            "Audio/Voices/Austria/InfantryCommander/Inf_attackack_engage_02.ogg"        "Audio/Voices/Austria/InfantryCommander/Inf_attackack_engageenemy_01.ogg"
+            "Audio/Voices/Austria/InfantryCommander/Inf_attackack_engageenemy_02.ogg"   ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_INF_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/InfantryCommander/Inf_attackack_engageinfantry.ogg"   "Audio/Voices/Rusia/InfantryCommander/Inf_attackack_advanceengage_01.ogg"
+            "Audio/Voices/Rusia/InfantryCommander/Inf_attackack_advanceengage_02.ogg" "Audio/Voices/Rusia/InfantryCommander/Inf_attackack_engage_01.ogg" 
+            "Audio/Voices/Rusia/InfantryCommander/Inf_attackack_engage_02.ogg"        "Audio/Voices/Rusia/InfantryCommander/Inf_attackack_engageenemy_01.ogg"
+            "Audio/Voices/Rusia/InfantryCommander/Inf_attackack_engageenemy_02.ogg"   ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_INF_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/InfantryCommander/Inf_attackack_engageinfantry.ogg"   "Audio/Voices/Prusia/InfantryCommander/Inf_attackack_advanceengage_01.ogg"
+            "Audio/Voices/Prusia/InfantryCommander/Inf_attackack_advanceengage_02.ogg" "Audio/Voices/Prusia/InfantryCommander/Inf_attackack_engage_01.ogg" 
+            "Audio/Voices/Prusia/InfantryCommander/Inf_attackack_engage_02.ogg"        "Audio/Voices/Prusia/InfantryCommander/Inf_attackack_engageenemy_01.ogg"
+            "Audio/Voices/Prusia/InfantryCommander/Inf_attackack_engageenemy_02.ogg"   ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_ATACAR_DISTANCIA_INF_ON_INF
+  #===============================================================================
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_INF_ON_INF_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/InfantryCommander/Inf_attackack_advinfantry.ogg"   "Audio/Voices/Francia/InfantryCommander/Inf_attackack_engageinfantry.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_INF_ON_INF_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/InfantryCommander/Inf_attackack_advinfantry.ogg"   "Audio/Voices/Inglaterra/InfantryCommander/Inf_attackack_engageinfantry.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [           
+    .IDNAME "S_ATACAR_DISTANCIA_INF_ON_INF_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/InfantryCommander/Inf_attackack_advinfantry.ogg"   "Audio/Voices/Austria/InfantryCommander/Inf_attackack_engageinfantry.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_INF_ON_INF_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/InfantryCommander/Inf_attackack_advinfantry.ogg"   "Audio/Voices/Rusia/InfantryCommander/Inf_attackack_engageinfantry.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_INF_ON_INF_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/InfantryCommander/Inf_attackack_advinfantry.ogg"   "Audio/Voices/Prusia/InfantryCommander/Inf_attackack_engageinfantry.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_ATACAR_DISTANCIA_INF_ON_CAB
+  #===============================================================================
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_INF_ON_CAB_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/InfantryCommander/Inf_attackack_advcavalry.ogg"   "Audio/Voices/Francia/InfantryCommander/Inf_attackack_engagecavalry.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_INF_ON_CAB_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/InfantryCommander/Inf_attackack_advcavalry.ogg"   "Audio/Voices/Inglaterra/InfantryCommander/Inf_attackack_engagecavalry.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [           
+    .IDNAME "S_ATACAR_DISTANCIA_INF_ON_CAB_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/InfantryCommander/Inf_attackack_advcavalry.ogg"   "Audio/Voices/Austria/InfantryCommander/Inf_attackack_engagecavalry.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_INF_ON_CAB_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/InfantryCommander/Inf_attackack_advcavalry.ogg"   "Audio/Voices/Rusia/InfantryCommander/Inf_attackack_engagecavalry.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_INF_ON_CAB_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/InfantryCommander/Inf_attackack_advcavalry.ogg"   "Audio/Voices/Prusia/InfantryCommander/Inf_attackack_engagecavalry.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_ATACAR_DISTANCIA_INF_ON_ART
+  #===============================================================================
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_INF_ON_ART_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/InfantryCommander/Inf_attackack_advartillery.ogg"   "Audio/Voices/Francia/InfantryCommander/Inf_attackack_engageartillery.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_INF_ON_ART_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/InfantryCommander/Inf_attackack_advartillery.ogg"   "Audio/Voices/Inglaterra/InfantryCommander/Inf_attackack_engageartillery.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [           
+    .IDNAME "S_ATACAR_DISTANCIA_INF_ON_ART_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/InfantryCommander/Inf_attackack_advartillery.ogg"   "Audio/Voices/Austria/InfantryCommander/Inf_attackack_engageartillery.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_INF_ON_ART_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/InfantryCommander/Inf_attackack_advartillery.ogg"   "Audio/Voices/Rusia/InfantryCommander/Inf_attackack_engageartillery.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_INF_ON_ART_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/InfantryCommander/Inf_attackack_advartillery.ogg"   "Audio/Voices/Prusia/InfantryCommander/Inf_attackack_engageartillery.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_ATACAR_DISTANCIA_CAB
+  #===============================================================================
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_CAB_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/CavalryCommander/Cav_attackack_engageenemy.ogg" "Audio/Voices/Francia/CavalryCommander/Cav_attackack_engage.ogg"
+            "Audio/Voices/Francia/CavalryCommander/Cav_attackack_advanceengage.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_CAB_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/CavalryCommander/Cav_attackack_engageenemy.ogg" "Audio/Voices/Inglaterra/CavalryCommander/Cav_attackack_engage.ogg"
+            "Audio/Voices/Inglaterra/CavalryCommander/Cav_attackack_advanceengage.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_CAB_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/CavalryCommander/Cav_attackack_engageenemy.ogg" "Audio/Voices/Austria/CavalryCommander/Cav_attackack_engage.ogg"
+            "Audio/Voices/Austria/CavalryCommander/Cav_attackack_advanceengage.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_CAB_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/CavalryCommander/Cav_attackack_engageenemy.ogg" "Audio/Voices/Rusia/CavalryCommander/Cav_attackack_engage.ogg"
+            "Audio/Voices/Rusia/CavalryCommander/Cav_attackack_advanceengage.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_CAB_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/CavalryCommander/Cav_attackack_engageenemy.ogg" "Audio/Voices/Prusia/CavalryCommander/Cav_attackack_engage.ogg"
+            "Audio/Voices/Prusia/CavalryCommander/Cav_attackack_advanceengage.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_ATACAR_DISTANCIA_CAB_ON_INF
+  #===============================================================================
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_CAB_ON_INF_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/CavalryCommander/Cav_attackack_engageinfantry.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_CAB_ON_INF_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/CavalryCommander/Cav_attackack_engageinfantry.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_CAB_ON_INF_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/CavalryCommander/Cav_attackack_engageinfantry.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_CAB_ON_INF_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/CavalryCommander/Cav_attackack_engageinfantry.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_CAB_ON_INF_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/CavalryCommander/Cav_attackack_engageinfantry.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_ATACAR_DISTANCIA_CAB_ON_CAB
+  #===============================================================================
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_CAB_ON_CAB_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/CavalryCommander/Cav_attackack_engagecavalry.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_CAB_ON_CAB_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/CavalryCommander/Cav_attackack_engagecavalry.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_CAB_ON_CAB_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/CavalryCommander/Cav_attackack_engagecavalry.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_CAB_ON_CAB_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/CavalryCommander/Cav_attackack_engagecavalry.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_CAB_ON_CAB_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/CavalryCommander/Cav_attackack_engagecavalry.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_ATACAR_DISTANCIA_CAB_ON_ART
+  #===============================================================================
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_CAB_ON_ART_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/CavalryCommander/Cav_attackack_engageartillery.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_CAB_ON_ART_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/CavalryCommander/Cav_attackack_engageartillery.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_CAB_ON_ART_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/CavalryCommander/Cav_attackack_engageartillery.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_CAB_ON_ART_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/CavalryCommander/Cav_attackack_engageartillery.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_CAB_ON_ART_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/CavalryCommander/Cav_attackack_engageartillery.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_ATACAR_DISTANCIA_ART
+  #===============================================================================
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_ART_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/ArtilleryCommander/Art_firepos_firepos_01.ogg" 	 "Audio/Voices/Francia/ArtilleryCommander/Art_firepos_firepos_02.ogg"
+            "Audio/Voices/Francia/ArtilleryCommander/Art_AttackAcknowl_estrange_01.ogg"  "Audio/Voices/Francia/ArtilleryCommander/Art_AttackAcknowl_estrange_02.ogg"
+            "Audio/Voices/Francia/ArtilleryCommander/Art_AttackAcknowl_calcrange_01.ogg" "Audio/Voices/Francia/ArtilleryCommander/Art_AttackAcknowl_calcrange_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_ART_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/ArtilleryCommander/Art_firepos_firepos_01.ogg"	    "Audio/Voices/Inglaterra/ArtilleryCommander/Art_firepos_firepos_02.ogg"
+            "Audio/Voices/Inglaterra/ArtilleryCommander/Art_AttackAcknowl_estrange_01.ogg"  "Audio/Voices/Inglaterra/ArtilleryCommander/Art_AttackAcknowl_estrange_02.ogg"
+            "Audio/Voices/Inglaterra/ArtilleryCommander/Art_AttackAcknowl_calcrange_01.ogg" "Audio/Voices/Inglaterra/ArtilleryCommander/Art_AttackAcknowl_calcrange_02.ogg"]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_ART_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/ArtilleryCommander/Art_firepos_firepos_01.ogg" 	 "Audio/Voices/Austria/ArtilleryCommander/Art_firepos_firepos_02.ogg"
+            "Audio/Voices/Austria/ArtilleryCommander/Art_AttackAcknowl_estrange_01.ogg"  "Audio/Voices/Austria/ArtilleryCommander/Art_AttackAcknowl_estrange_02.ogg"
+            "Audio/Voices/Austria/ArtilleryCommander/Art_AttackAcknowl_calcrange_01.ogg" "Audio/Voices/Austria/ArtilleryCommander/Art_AttackAcknowl_calcrange_02.ogg"]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_ART_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/ArtilleryCommander/Art_firepos_firepos_01.ogg" 	       "Audio/Voices/Rusia/ArtilleryCommander/Art_firepos_firepos_02.ogg"
+            "Audio/Voices/Rusia/ArtilleryCommander/Art_AttackAcknowl_estrange_01.ogg"  "Audio/Voices/Rusia/ArtilleryCommander/Art_AttackAcknowl_estrange_02.ogg"
+            "Audio/Voices/Rusia/ArtilleryCommander/Art_AttackAcknowl_calcrange_01.ogg" "Audio/Voices/Rusia/ArtilleryCommander/Art_AttackAcknowl_calcrange_02.ogg"]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ATACAR_DISTANCIA_ART_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/ArtilleryCommander/Art_firepos_firepos_01.ogg" 	"Audio/Voices/Prusia/ArtilleryCommander/Art_firepos_firepos_02.ogg"
+            "Audio/Voices/Prusia/ArtilleryCommander/Art_AttackAcknowl_estrange_01.ogg"  "Audio/Voices/Prusia/ArtilleryCommander/Art_AttackAcknowl_estrange_02.ogg"
+            "Audio/Voices/Prusia/ArtilleryCommander/Art_AttackAcknowl_calcrange_01.ogg" "Audio/Voices/Prusia/ArtilleryCommander/Art_AttackAcknowl_calcrange_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+
+  #===============================================================================
+  # S_ADIST_READY_INF
+  #===============================================================================
+  [ 
+    .IDNAME "S_ADIST_READY_INF_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/InfantryCommander/Inf_RangedAttack_Ready.ogg" "Audio/Voices/Francia/InfantryCommander/Inf_RangedAttack_ReadyArms.ogg"
+            "Audio/Voices/Francia/InfantryCommander/Inf_RangedAttack_Fire.ogg" "Audio/Voices/Francia/InfantryCommander/Inf_RangedAttack_Wait.ogg"
+            "Audio/Voices/Francia/InfantryCommander/Inf_RangedAttack_Close.ogg" "Audio/Voices/Francia/InfantryCommander/Inf_OpenFire_present_01.ogg"
+            "Audio/Voices/Francia/InfantryCommander/Inf_OpenFire_present_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ADIST_READY_INF_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/InfantryCommander/Inf_RangedAttack_Ready.ogg" "Audio/Voices/Inglaterra/InfantryCommander/Inf_RangedAttack_ReadyArms.ogg"
+            "Audio/Voices/Inglaterra/InfantryCommander/Inf_RangedAttack_Fire.ogg" "Audio/Voices/Inglaterra/InfantryCommander/Inf_RangedAttack_Wait.ogg"
+            "Audio/Voices/Inglaterra/InfantryCommander/Inf_RangedAttack_Close.ogg" "Audio/Voices/Inglaterra/InfantryCommander/Inf_OpenFire_present_01.ogg"
+            "Audio/Voices/Inglaterra/InfantryCommander/Inf_OpenFire_present_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ADIST_READY_INF_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/InfantryCommander/Inf_RangedAttack_Ready.ogg" "Audio/Voices/Austria/InfantryCommander/Inf_RangedAttack_ReadyArms.ogg"
+            "Audio/Voices/Austria/InfantryCommander/Inf_RangedAttack_Fire.ogg" "Audio/Voices/Austria/InfantryCommander/Inf_RangedAttack_Wait.ogg"
+            "Audio/Voices/Austria/InfantryCommander/Inf_RangedAttack_Close.ogg" "Audio/Voices/Austria/InfantryCommander/Inf_OpenFire_present_01.ogg"
+            "Audio/Voices/Austria/InfantryCommander/Inf_OpenFire_present_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ADIST_READY_INF_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/InfantryCommander/Inf_RangedAttack_Ready.ogg" "Audio/Voices/Rusia/InfantryCommander/Inf_RangedAttack_ReadyArms.ogg"
+            "Audio/Voices/Rusia/InfantryCommander/Inf_RangedAttack_Fire.ogg" "Audio/Voices/Rusia/InfantryCommander/Inf_RangedAttack_Wait.ogg"
+            "Audio/Voices/Rusia/InfantryCommander/Inf_RangedAttack_Close.ogg" "Audio/Voices/Rusia/InfantryCommander/Inf_OpenFire_present_01.ogg"
+            "Audio/Voices/Rusia/InfantryCommander/Inf_OpenFire_present_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ADIST_READY_INF_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/InfantryCommander/Inf_RangedAttack_Ready.ogg" "Audio/Voices/Prusia/InfantryCommander/Inf_RangedAttack_ReadyArms.ogg"
+            "Audio/Voices/Prusia/InfantryCommander/Inf_RangedAttack_Fire.ogg" "Audio/Voices/Prusia/InfantryCommander/Inf_RangedAttack_Wait.ogg"
+            "Audio/Voices/Prusia/InfantryCommander/Inf_RangedAttack_Close.ogg" "Audio/Voices/Prusia/InfantryCommander/Inf_OpenFire_present_01.ogg"
+            "Audio/Voices/Prusia/InfantryCommander/Inf_OpenFire_present_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_ADIST_READY_CAB
+  #===============================================================================
+  [ 
+    .IDNAME "S_ADIST_READY_CAB_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/CavalryCommander/Cav_openfire_present.ogg" "Audio/Voices/Francia/CavalryCommander/Cav_RangedAttack_ready.ogg"
+            "Audio/Voices/Francia/CavalryCommander/Cav_RangedAttack_wait.ogg" "Audio/Voices/Francia/CavalryCommander/Cav_RangedAttack_closer.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ADIST_READY_CAB_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/CavalryCommander/Cav_openfire_present.ogg" "Audio/Voices/Inglaterra/CavalryCommander/Cav_RangedAttack_ready.ogg"
+            "Audio/Voices/Inglaterra/CavalryCommander/Cav_RangedAttack_wait.ogg" "Audio/Voices/Inglaterra/CavalryCommander/Cav_RangedAttack_closer.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ADIST_READY_CAB_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/CavalryCommander/Cav_openfire_present.ogg" "Audio/Voices/Austria/CavalryCommander/Cav_RangedAttack_ready.ogg"
+            "Audio/Voices/Austria/CavalryCommander/Cav_RangedAttack_wait.ogg" "Audio/Voices/Austria/CavalryCommander/Cav_RangedAttack_closer.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ADIST_READY_CAB_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/CavalryCommander/Cav_openfire_present.ogg" "Audio/Voices/Rusia/CavalryCommander/Cav_RangedAttack_ready.ogg"
+            "Audio/Voices/Rusia/CavalryCommander/Cav_RangedAttack_wait.ogg" "Audio/Voices/Rusia/CavalryCommander/Cav_RangedAttack_closer.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ADIST_READY_CAB_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/CavalryCommander/Cav_openfire_present.ogg" "Audio/Voices/Prusia/CavalryCommander/Cav_RangedAttack_ready.ogg"
+            "Audio/Voices/Prusia/CavalryCommander/Cav_RangedAttack_wait.ogg" "Audio/Voices/Prusia/CavalryCommander/Cav_RangedAttack_closer.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_ADIST_FIRE_INF
+  #===============================================================================
+  [ 
+    .IDNAME "S_ADIST_FIRE_INF_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/InfantryCommander/Inf_OpenFire_Fire_01.ogg" "Audio/Voices/Francia/InfantryCommander/Inf_OpenFire_Fire_02.ogg"
+            "Audio/Voices/Francia/InfantryCommander/Inf_OpenFire_OpenFire.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ADIST_FIRE_INF_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/InfantryCommander/Inf_OpenFire_Fire_01.ogg" "Audio/Voices/Inglaterra/InfantryCommander/Inf_OpenFire_Fire_02.ogg"
+            "Audio/Voices/Inglaterra/InfantryCommander/Inf_OpenFire_OpenFire.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ADIST_FIRE_INF_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/InfantryCommander/Inf_OpenFire_Fire_01.ogg" "Audio/Voices/Austria/InfantryCommander/Inf_OpenFire_Fire_02.ogg"
+            "Audio/Voices/Austria/InfantryCommander/Inf_OpenFire_OpenFire.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ADIST_FIRE_INF_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/InfantryCommander/Inf_OpenFire_Fire_01.ogg" "Audio/Voices/Rusia/InfantryCommander/Inf_OpenFire_Fire_02.ogg"
+            "Audio/Voices/Rusia/InfantryCommander/Inf_OpenFire_OpenFire.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ADIST_FIRE_INF_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/InfantryCommander/Inf_OpenFire_Fire_01.ogg" "Audio/Voices/Prusia/InfantryCommander/Inf_OpenFire_Fire_02.ogg"
+            "Audio/Voices/Prusia/InfantryCommander/Inf_OpenFire_OpenFire.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  
+  
+  #===============================================================================
+  # S_ADIST_FIRE_CAB
+  #===============================================================================
+  [ 
+    .IDNAME "S_ADIST_FIRE_CAB_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/CavalryCommander/Cav_OpenFire_Fire_01.ogg" "Audio/Voices/Francia/CavalryCommander/Cav_OpenFire_Fire_02.ogg"
+            "Audio/Voices/Francia/CavalryCommander/Cav_OpenFire_OpenFire.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ADIST_FIRE_CAB_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/CavalryCommander/Cav_OpenFire_Fire_01.ogg" "Audio/Voices/Inglaterra/CavalryCommander/Cav_OpenFire_Fire_02.ogg"
+            "Audio/Voices/Inglaterra/CavalryCommander/Cav_OpenFire_OpenFire.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ADIST_FIRE_CAB_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/CavalryCommander/Cav_OpenFire_Fire_01.ogg" "Audio/Voices/Austria/CavalryCommander/Cav_OpenFire_Fire_02.ogg"
+            "Audio/Voices/Austria/CavalryCommander/Cav_OpenFire_OpenFire.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ADIST_FIRE_CAB_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/CavalryCommander/Cav_OpenFire_Fire_01.ogg" "Audio/Voices/Rusia/CavalryCommander/Cav_OpenFire_Fire_02.ogg"
+            "Audio/Voices/Rusia/CavalryCommander/Cav_OpenFire_OpenFire.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ADIST_FIRE_CAB_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/CavalryCommander/Cav_OpenFire_Fire_01.ogg" "Audio/Voices/Prusia/CavalryCommander/Cav_OpenFire_Fire_02.ogg"
+            "Audio/Voices/Prusia/CavalryCommander/Cav_OpenFire_OpenFire.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_ADIST_FIRE_ART
+  #===============================================================================
+  [ 
+    .IDNAME "S_ADIST_FIRE_ART_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/ArtilleryCommander/Art_openfire_fire_01.ogg" "Audio/Voices/Francia/ArtilleryCommander/Art_openfire_fire_02.ogg"
+            "Audio/Voices/Francia/ArtilleryCommander/Art_openfire_openfire_01.ogg" "Audio/Voices/Francia/ArtilleryCommander/Art_openfire_openfire_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ADIST_FIRE_ART_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/ArtilleryCommander/Art_openfire_fire_01.ogg" "Audio/Voices/Inglaterra/ArtilleryCommander/Art_openfire_fire_02.ogg"
+            "Audio/Voices/Inglaterra/ArtilleryCommander/Art_openfire_openfire_01.ogg" "Audio/Voices/Inglaterra/ArtilleryCommander/Art_openfire_openfire_02.ogg"]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ADIST_FIRE_ART_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/ArtilleryCommander/Art_openfire_fire_01.ogg" "Audio/Voices/Austria/ArtilleryCommander/Art_openfire_fire_02.ogg"
+            "Audio/Voices/Austria/ArtilleryCommander/Art_openfire_openfire_01.ogg" "Audio/Voices/Austria/ArtilleryCommander/Art_openfire_openfire_02.ogg"]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ADIST_FIRE_ART_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/ArtilleryCommander/Art_openfire_fire_01.ogg" "Audio/Voices/Rusia/ArtilleryCommander/Art_openfire_fire_02.ogg"
+            "Audio/Voices/Rusia/ArtilleryCommander/Art_openfire_openfire_01.ogg" "Audio/Voices/Rusia/ArtilleryCommander/Art_openfire_openfire_02.ogg"]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ADIST_FIRE_ART_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/ArtilleryCommander/Art_openfire_fire_01.ogg" "Audio/Voices/Prusia/ArtilleryCommander/Art_openfire_fire_02.ogg"
+            "Audio/Voices/Prusia/ArtilleryCommander/Art_openfire_openfire_01.ogg" "Audio/Voices/Prusia/ArtilleryCommander/Art_openfire_openfire_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_ADIST_AIM_INF
+  #===============================================================================
+  [ 
+    .IDNAME "S_ADIST_AIM_INF_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/InfantryCommander/Inf_RangedAttack_Aim.ogg" "Audio/Voices/Francia/InfantryCommander/Inf_OpenFire_aim_01.ogg"
+            "Audio/Voices/Francia/InfantryCommander/Inf_OpenFire_aim_02.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ADIST_AIM_INF_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/InfantryCommander/Inf_RangedAttack_Aim.ogg" "Audio/Voices/Inglaterra/InfantryCommander/Inf_OpenFire_aim_01.ogg"
+            "Audio/Voices/Inglaterra/InfantryCommander/Inf_OpenFire_aim_02.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ADIST_AIM_INF_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/InfantryCommander/Inf_RangedAttack_Aim.ogg" "Audio/Voices/Austria/InfantryCommander/Inf_OpenFire_aim_01.ogg"
+            "Audio/Voices/Austria/InfantryCommander/Inf_OpenFire_aim_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ADIST_AIM_INF_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/InfantryCommander/Inf_RangedAttack_Aim.ogg" "Audio/Voices/Rusia/InfantryCommander/Inf_OpenFire_aim_01.ogg"
+            "Audio/Voices/Rusia/InfantryCommander/Inf_OpenFire_aim_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ADIST_AIM_INF_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/InfantryCommander/Inf_RangedAttack_Aim.ogg" "Audio/Voices/Prusia/InfantryCommander/Inf_OpenFire_aim_01.ogg"
+            "Audio/Voices/Prusia/InfantryCommander/Inf_OpenFire_aim_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+ 
+  
+  #===============================================================================
+  # S_ADIST_AIM_CAB
+  #===============================================================================
+  [ 
+    .IDNAME "S_ADIST_AIM_CAB_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/CavalryCommander/Cav_openfire_aim.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ADIST_AIM_CAB_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/CavalryCommander/Cav_openfire_aim.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ADIST_AIM_CAB_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/CavalryCommander/Cav_openfire_aim.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ADIST_AIM_CAB_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/CavalryCommander/Cav_openfire_aim.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ADIST_AIM_CAB_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/CavalryCommander/Cav_openfire_aim.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_ADIST_RELOAD_INF
+  #===============================================================================
+  [ 
+    .IDNAME "S_ADIST_RELOAD_INF_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/InfantryCommander/Inf_RangedAttack_reload.ogg" "Audio/Voices/Francia/InfantryCommander/Inf_OpenFire_reload_01.ogg"
+            "Audio/Voices/Francia/InfantryCommander/Inf_OpenFire_reload_02.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ADIST_RELOAD_INF_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/InfantryCommander/Inf_RangedAttack_reload.ogg" "Audio/Voices/Inglaterra/InfantryCommander/Inf_OpenFire_reload_01.ogg"
+            "Audio/Voices/Inglaterra/InfantryCommander/Inf_OpenFire_reload_02.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ADIST_RELOAD_INF_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/InfantryCommander/Inf_RangedAttack_reload.ogg" "Audio/Voices/Austria/InfantryCommander/Inf_OpenFire_reload_01.ogg"
+            "Audio/Voices/Austria/InfantryCommander/Inf_OpenFire_reload_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ADIST_RELOAD_INF_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/InfantryCommander/Inf_RangedAttack_reload.ogg" "Audio/Voices/Rusia/InfantryCommander/Inf_OpenFire_reload_01.ogg"
+            "Audio/Voices/Rusia/InfantryCommander/Inf_OpenFire_reload_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ADIST_RELOAD_INF_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/InfantryCommander/Inf_RangedAttack_reload.ogg" "Audio/Voices/Prusia/InfantryCommander/Inf_OpenFire_reload_01.ogg"
+            "Audio/Voices/Prusia/InfantryCommander/Inf_OpenFire_reload_02.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_ADIST_RELOAD_CAB
+  #===============================================================================
+  [ 
+    .IDNAME "S_ADIST_RELOAD_CAB_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/CavalryCommander/Cav_openfire_reload.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ADIST_RELOAD_CAB_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/CavalryCommander/Cav_openfire_reload.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ADIST_RELOAD_CAB_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/CavalryCommander/Cav_openfire_reload.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ADIST_RELOAD_CAB_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/CavalryCommander/Cav_openfire_reload.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_ADIST_RELOAD_CAB_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/CavalryCommander/Cav_openfire_reload.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]  

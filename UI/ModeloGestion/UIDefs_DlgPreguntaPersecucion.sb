@@ -1,0 +1,370 @@
+#################################################################################################
+# Dlg con la pregunta relativa a si se desea realizar persecucion en batalla o no
+#################################################################################################
+
+ # Se define la ventana                   
+ .MODAL TRUE
+ .CENTER TRUE      
+ .DEPTH 3
+  
+ .FONDO 
+ [ 
+   .X 200 .Y 84 
+   .FILE "Game/UI/ModeloGestion/DirigirBatalla.tga" 
+   .U 0 .V 0 .TRANSPARENCY 220 .PRIORITY 140 .ALPHA TRUE .SX 625 .SY 600 
+ ]              
+ 
+ .CAPTION
+ [
+  .XMARGEN 0
+  .YMARGEN 0
+  .HEIGHT 58
+  .TITLE 
+  [ 
+    .ALINEACION CENTER 
+    .TEXT " " 
+    .FONT "Fonts/MonoTypeCorsiva19.fnt" 
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+  .MOVIBLE FALSE
+ ]
+ .MODAL TRUE 
+
+ # Bandera país atacante
+ .ATTACKER_FLAG [ .X 10  .Y 96 ]
+ # Bandera país defensor
+ .DEFENDER_FLAG [ .X 458 .Y 96 ]
+ 
+ # Datos del visor que contabiliza el número de tropas titulares
+ .VISOR_TROPAS 
+ [
+   .PARAMS_VISOR [ %Game/UI/ModeloGestion/UIDefs_VisorMatrizDlgResConflictosTropas.sb ]
+   
+   .ICONO
+   [
+     .FILE "Game/UI/ModeloGestion/DirigirBatalla.tga"
+     .U 84 .V 759 .SX 11 .SY 23
+     .PRIORITY 34 .ALPHA TRUE 
+   ]
+ ]
+ 
+ # Datos del visor que muestra los ejercitos/flotas titulares
+ .VISOR_EJERCITOS_TITULARES 
+ [
+   %Game/UI/ModeloGestion/UIDefs_VisorMatrizDlgResConflictosEjerTitulares.sb
+ ]
+ 
+ # Datos del visor que muestra los ejercitos/flotas de refuerzo
+ .VISOR_EJERCITOS_REFUERZOS 
+ [
+   %Game/UI/ModeloGestion/UIDefs_VisorMatrizDlgResConflictosEjerRefuerzos.sb
+ ] 
+ 
+ // información acerca de las imágenes de las estrellas de experiencia para los iconos de ejército
+ .ICONOS_EXPERIENCIA
+ [
+   #1
+   [
+     .FILE "Game/UI/ModeloGestion/DirigirBatalla.tga"
+     .X 42 .Y 67
+     .U 84 .V 659 .SX 23 .SY 17
+     .PRIORITY 211 .ALPHA TRUE 
+   ]
+   #2
+   [
+     .FILE "Game/UI/ModeloGestion/DirigirBatalla.tga"
+     .X 42 .Y 67     
+     .U 84 .V 679 .SX 23 .SY 17
+     .PRIORITY 211 .ALPHA TRUE 
+   ]   
+   #3
+   [
+     .FILE "Game/UI/ModeloGestion/DirigirBatalla.tga"
+     .X 42 .Y 67     
+     .U 84 .V 699 .SX 23 .SY 17
+     .PRIORITY 211 .ALPHA TRUE 
+   ]   
+   #4
+   [
+     .FILE "Game/UI/ModeloGestion/DirigirBatalla.tga"
+     .X 42 .Y 67     
+     .U 84 .V 719 .SX 23 .SY 17
+     .PRIORITY 211 .ALPHA TRUE 
+   ]   
+   #5
+   [
+     .FILE "Game/UI/ModeloGestion/DirigirBatalla.tga"
+     .X 42 .Y 67
+     .U 84 .V 739 .SX 23 .SY 17
+     .PRIORITY 211 .ALPHA TRUE 
+   ]   
+ ]
+ 
+
+ .CONTROLES
+ [
+   # ---Controles interactivos o dinámicos
+   # Botón "Objetivos"
+   [
+     .TIPO UIC_BOTONTEXTO .ID 'BTOB'
+     .PARAMS
+     [
+       .SOLTADO [ .COLOR [ .R 0 .G 0 .B 0  ] ] 
+       .SELECCIONADO [ .COLOR [ .R 0 .G 0 .B 0  ] ] 
+       .PULSADO [ .COLOR [ .R 0 .G 0 .B 0  ]  .DX 5 .DY 2 ] 
+       .TEXT LTEXT_UI_GESTIONMAPA_DLG_CONFLICTO_BTN_OBJETIVOS
+       .FONT "Fonts/MonotypeCorsiva15.fnt"
+       .CENTER_AREA [ .X1 0 .Y1 0 .X2 124 .Y2 25 ]
+       .FONDO
+       [ 
+        .PRIORITY 211
+        .X 249 .Y 87
+        .SX 124 .SY 25
+        .SOLTADO [ .FILE "Game/UI/ModeloGestion/DirigirBatalla.tga" .U 249 .V 87 ] 
+        #.SELECCIONADO [ .FILE "Game/UI/ModeloGestion/DirigirBatalla.tga" .U 266 .V 603 ]
+	.SELECCIONADO [ .FILE "Game/UI/ModeloGestion/DirigirBatalla.tga" .U 12 .V 603 ]        
+        .PULSADO [ .FILE "Game/UI/ModeloGestion/DirigirBatalla.tga" .U 12  .V 631 ]
+        .ALPHA TRUE
+       ]
+       
+       .IDSELECTSOUND "S_FXUI_CLICKBUTTON"           
+       .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"         
+     ]
+   ]    
+   
+   # Texto de número de unidades atacantes
+   [
+     .TIPO UIC_TEXT .ID 'UATX'
+     .PARAMS
+     [
+       .TEXT " "
+       .FONT "Fonts/MonotypeCorsiva15.fnt"
+       .COLOR [ .R 0 .G 0 .B 0 ]    
+       .X 337 .Y 190
+       .ALIGN CENTER
+     ]     
+   ]    
+   
+   # Texto de número de unidades defensoras
+   [
+     .TIPO UIC_TEXT .ID 'UDTX'
+     .PARAMS
+     [
+       .TEXT " "
+       .FONT "Fonts/MonotypeCorsiva15.fnt"
+       .COLOR [ .R 0 .G 0 .B 0 ]    
+       .X 783 .Y 190
+       .ALIGN CENTER
+     ]     
+   ]   
+   
+   # Texto de número de tropas titulares/tropas titulares máximas
+   [
+     .TIPO UIC_TEXT .ID 'PTTX'
+     .PARAMS
+     [
+       .TEXT LTEXT_UI_GESTIONMAPA_DLG_CONFLICTO_TROPAS-MAX_TROPAS
+       .FONT "Fonts/MonotypeCorsiva15.fnt"
+       .COLOR [ .R 0 .G 0 .B 0 ]    
+       .X 298 .Y 262
+       .ALIGN CENTER
+     ]     
+   ]   
+   
+   # Texto de número de tropas de refuerzos
+   [
+     .TIPO UIC_TEXT .ID 'RETX'
+     .PARAMS
+     [
+       .TEXT " "
+       .FONT "Fonts/MonotypeCorsiva15.fnt"
+       .COLOR [ .R 0 .G 0 .B 0 ]    
+       .X 585 .Y 432
+       .ALIGN CENTER
+     ]     
+   ]   
+   
+   
+   # Visor de matriz de controles para mostrar ejércitos de refuerzo
+   
+   # Botón de Deshacer cambios
+   [
+     .TIPO UIC_BOTONTEXTO .ID 'BTDC'
+     .PARAMS
+     [
+       .SOLTADO [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+       .SELECCIONADO [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+       .PULSADO [ .COLOR [ .R 0 .G 0 .B 0 ] .DX 5 .DY 2 ] 
+       .TEXT LTEXT_UI_GESTIONMAPA_DLG_CONFLICTO_BTN_DESHACER_CAMBIOS
+       .FONT "Fonts/MonotypeCorsiva15.fnt"
+       .CENTER_AREA [ .X1 0 .Y1 0 .X2 184 .Y2 25 ]
+       .FONDO
+       [ 
+    	.PRIORITY 211
+        .X 218 .Y 481
+        .SX 184 .SY 25
+        .SOLTADO [ .FILE "Game/UI/ModeloGestion/DirigirBatalla.tga" .U 218 .V 481 ]
+	.SELECCIONADO [ .FILE "Game/UI/ModeloGestion/DirigirBatalla.tga" .U 393 .V 603 ]        
+        .PULSADO [ .FILE "Game/UI/ModeloGestion/DirigirBatalla.tga" .U 393  .V 631 ]
+        .ALPHA TRUE
+       ]
+       
+       .IDSELECTSOUND "S_FXUI_CLICKBUTTON"                    
+       .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"
+     ]
+   ]
+   
+   [
+     .TIPO UIC_DIALOGO .ID 'DLOB'
+     .PARAMS [ %Game/UI/ModeloGestion/UIDefs_DlgObjetivosDlgResConflictos.sb ]
+   ]
+
+   # ---Controles estáticos no interactivos
+   # texto "Atacante"
+   [
+    .TIPO UIC_TEXT .ID 'ATTX'
+    .PARAMS
+    [
+      .TEXT LTEXT_UI_GESTIONMAPA_DLG_CONFLICTO_ATACANTE
+      .FONT "Fonts/MonotypeCorsiva15.fnt"
+      .COLOR [ .R 0 .G 0 .B 0 ]    
+      .X 301 .Y 155 
+      .ALIGN CENTER
+    ]     
+   ]
+   # texto "Defensor"
+   [
+     .TIPO UIC_TEXT .ID 'DETX'
+     .PARAMS
+     [
+       .TEXT LTEXT_UI_GESTIONMAPA_DLG_CONFLICTO_DEFENSOR
+       .FONT "Fonts/MonotypeCorsiva15.fnt"
+       .COLOR [ .R 0 .G 0 .B 0 ]    
+       .X 717 .Y 155 
+       .ALIGN CENTER
+     ]     
+   ]
+   # texto "Tropas de salida"
+   [
+     .TIPO UIC_TEXT .ID 'TSTX'
+     .PARAMS
+     [
+       .TEXT LTEXT_UI_GESTIONMAPA_DLG_CONFLICTO_TROPAS_SALIDA
+       .FONT "Fonts/MonotypeCorsiva15.fnt"
+       .COLOR [ .R 255 .G 255 .B 255 ]    
+       .X 514 .Y 232
+       .ALIGN CENTER
+     ]     
+   ]
+   # texto "Tropas de refuerzos"
+   [
+     .TIPO UIC_TEXT .ID 'RETX'
+     .PARAMS
+     [
+       .TEXT LTEXT_UI_GESTIONMAPA_DLG_CONFLICTO_TROPAS_REFUERZO
+       .FONT "Fonts/MonotypeCorsiva15.fnt"
+       .COLOR [ .R 255 .G 255 .B 255 ]    
+       .X 461 .Y 432 
+       .ALIGN CENTER
+     ]     
+   ]
+   # texto "Total" de atacante
+   [
+     .TIPO UIC_TEXT .ID 'TOTX'
+     .PARAMS
+     [
+       .TEXT LTEXT_UI_GESTIONMAPA_DLG_CONFLICTO_TOTAL
+       .FONT "Fonts/MonotypeCorsiva15.fnt"
+       .COLOR [ .R 255 .G 255 .B 255 ]    
+       .X 273 .Y 190
+       .ALIGN CENTER
+     ]     
+   ]
+   # texto "Total" de defensor
+   [
+     .TIPO UIC_TEXT .ID 'TDTX'
+     .PARAMS
+     [
+       .TEXT LTEXT_UI_GESTIONMAPA_DLG_CONFLICTO_TOTAL
+       .FONT "Fonts/MonotypeCorsiva15.fnt"
+       .COLOR [ .R 255 .G 255 .B 255 ]    
+       .X 723 .Y 190
+       .ALIGN CENTER
+     ]     
+   ]               
+   # Texto ¿Desea ordenar personalmente el combate?
+   [
+     .TIPO UIC_TEXT .ID 'CTXT'
+     .PARAMS
+     [
+       .TEXT LTEXT_UI_GESTIONMAPA_DLG_CONFLICTO_BODY
+       .FONT "Fonts/MonotypeCorsiva19.fnt"
+       .COLOR [ .R 255 .G 255 .B 255 ]    
+       .X 513 .Y 616
+       .ALIGN CENTER
+     ]     
+   ]
+ ]
+              
+ # Se definen los botones
+ .BOTONES
+ [           
+  # Info de centrado automatico
+  .CENTER FALSE           
+  
+  # Lista de Botones
+  .LIST
+  [
+   [
+    .TIPO UIC_BOTONTEXTO
+    .COMPORTAMIENTO SIMPLE
+    .FONT "Fonts/MonotypeCorsiva15.fnt"
+    .TEXT LTEXT_UI_GESTIONMAPA_DLG_CONFLICTO_YES
+    .SOLTADO 		[ .COLOR [ .R 0 .G 0 .B 0 ] ]
+    .SELECCIONADO 	[ .COLOR [ .R 0 .G 0 .B 0 ] ]
+    .PULSADO 		[ .COLOR [ .R 0 .G 0 .B 0 ] .DX 5 .DY 2]
+    .CENTER_AREA [ .X1 0 .Y1 0 .X2 124 .Y2 25 ]
+    .FONDO
+    [
+      .X 51 .Y 557 .SX 124 .SY 25            
+      .ALPHA TRUE       
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/DirigirBatalla.tga" .U 51 .V 557 ]
+      .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/DirigirBatalla.tga" .U 139 .V 603 ]
+      .PULSADO [ .FILE "Game/UI/ModeloGestion/DirigirBatalla.tga" .U 139 .V 631 ]
+    ]
+    
+    .IDSELECTSOUND "S_FXUI_CLICKBUTTON"                    
+    .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"
+    
+    .ACEPTAR TRUE
+               
+    .KEY [ .TECLA KEY_Y .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ]                                                              
+   ]                   
+              
+   [
+    .TIPO UIC_BOTONTEXTO
+    .COMPORTAMIENTO SIMPLE
+    .FONT "Fonts/MonoTypeCorsiva15.fnt"
+    .TEXT LTEXT_UI_GESTIONMAPA_DLG_CONFLICTO_NO
+    .SOLTADO 		[ .COLOR [ .R 0 .G 0 .B 0 ] ]
+    .SELECCIONADO 	[ .COLOR [ .R 0 .G 0 .B 0 ] ]
+    .PULSADO 		[ .COLOR [ .R 0 .G 0 .B 0 ] .DX 5 .DY 2]
+    .CENTER_AREA [ .X1 0 .Y1 0 .X2 124 .Y2 25 ]
+    .FONDO
+    [
+      .X 450 .Y 557 .SX 124 .SY 25
+      .ALPHA TRUE
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/DirigirBatalla.tga" .U 450 .V 557 ]
+      .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/DirigirBatalla.tga" .U 266 .V 603 ]
+      .PULSADO [ .FILE "Game/UI/ModeloGestion/DirigirBatalla.tga" .U 266 .V 631 ]
+    ]
+    .IDSELECTSOUND "S_FXUI_CLICKBUTTON"                        
+    .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"
+    
+    .CANCELAR TRUE
+               
+    .KEY [ .TECLA KEY_N .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ]
+   ]
+              
+  ] # ~ LIST
+ ] # ~ BOTONES

@@ -1,0 +1,21 @@
+
+[
+ .KEY TEXT_NOMBRE_IMPERIO_MENU_SELECCION
+ .PARAMS 
+ [ 
+  .ALIGN LEFT 
+  .FONT "Fonts/Times14.fnt" 
+  .COLOR [ .R 255 .G 255 .B 255 ] 
+ ]
+]
+
+
+[
+ .KEY TEXT_NOMBRE_IMPERIO_MENU_DISABLE
+ .PARAMS 
+ [ 
+  .ALIGN LEFT 
+  .FONT "Fonts/Times14.fnt" 
+  .COLOR [ .R 170 .G 170 .B 170 ] 
+ ]
+]

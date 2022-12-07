@@ -1,0 +1,40 @@
+########################################################################################################
+# Params asociados al contador de bajas de combate en el modelo naval
+########################################################################################################
+
+ .IMG_FONDO [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .X 0 .Y 0 .SX 1024 .SY 50 .U 0 .V 0 .ALPHA TRUE .PRIORITY 5 ]
+
+  .ATACANTE
+ [
+   .IMG [ .X 65 .Y 9 ] 
+
+   .BARRA 
+    [ 
+     .SUPERIOR [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 714 .V 349 .ALPHA TRUE ]          
+     .X 107 .Y 12 .SX 165 .SY 14	
+     .PRIORITY 10
+    ] 
+ ]
+ 
+ .DEFENSOR
+ [
+   .IMG [ .X 931 .Y 9 ] 
+
+   .BARRA 
+    [ 
+     .SUPERIOR [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 714 .V 328 .ALPHA TRUE  ]          
+     .X 757 .Y 12 .SX 165 .SY 14	
+     .PRIORITY 10
+    ] 
+ ]
+ 
+ # Rob: esto es nuevo, lo usamos para saber las coords de las distintas barras de los imperios
+ .DEFINICION_BARRAS 
+ [
+   .BARRA_INGLATERRA_U 714 .BARRA_INGLATERRA_V 349
+   .BARRA_FRANCIA_U 714 .BARRA_FRANCIA_V 328
+   .BARRA_PRUSIA_U 714 .BARRA_PRUSIA_V 265
+   .BARRA_RUSIA_U 714 .BARRA_RUSIA_V 286
+   .BARRA_AUSTRIA_U 714 .BARRA_AUSTRIA_V 307
+   .BARRA_NEUTRAL_U 714 .BARRA_NEUTRAL_V 265
+ ]

@@ -1,0 +1,31 @@
+.START_PROCS
+[
+  [
+    .NAME MODELO_ESTADISTICA_BATALLA_MAIN_PROC
+    .PARAMS
+    [
+      .CURSORES    "Game\UI\Cursores\Cursores_ModeloEstadisticas.sb"           
+      
+      .TEXTOS_LOCALES
+      [
+       [ .FILE "Management\TextPaises.sb" ]   
+       [ .FILE "Management\TextProvincias.sb"     ]                                   
+       [ .FILE "Management\TextDescripcionesProvincias.sb" ]
+       [ .FILE "Battle\TextUIEstadisticasBatalla.sb" ]       
+      ]
+      
+      .BANDERA_START_POS_X           130
+      .BANDERA_START_POS_Y_PLAYER    302
+      .BANDERA_START_POS_Y_NO_PLAYER 422 
+      
+      .UI_DEFS         "Game\UI\EstadisticasBatalla\UI_ModeloEstadisticas.sb"
+      
+      .UICPARAMS_FILE  "Game\GameModes\EstadisticasBatalla\UICParams.sb"
+      
+      .UI_VICTORY     UI_ESTADISTICAS_BATALLA_VICTORY
+      .UI_DEFEAT      UI_ESTADISTICAS_BATALLA_DEFEAT
+      .UI_DISCONNECT  UI_ESTADISTICAS_BATALLA_DISCONNECT
+    ]
+  ]
+]
+

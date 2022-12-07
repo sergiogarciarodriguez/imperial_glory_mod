@@ -1,0 +1,21 @@
+# ----------------------------------------------------------------------------------
+# Descriptor de animaciones para las fichas de gestión
+#   --> ID               = Identificador de la animacion (debe existir)
+#   --> FILE             = Ruta y nombre de la animacion
+#   --> LOOP             = Animacion ciclica?
+#   --> MOVBYSEC        = Cantidad de movimiento de la animacion en un tick 
+#                         (usado para adaptar velocidad de reproduccion)
+#   --> FACTORTRANSITION = Multiplicador (>=0) de los milisegundos de transicion
+#                          de entrada de la animacion                     
+# ----------------------------------------------------------------------------------
+#                      Descriptor para el Navio
+# ----------------------------------------------------------------------------------
+
+.ANIMATIONS
+[
+  [
+    .ID   "SELECCION"
+    .FILE "Game/GameModes/Gestion/Figuras/00Generico/NavioSeleccion.v3d"
+  ]
+
+]

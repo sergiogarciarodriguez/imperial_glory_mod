@@ -1,0 +1,49 @@
+#==================================================================================================
+  Parametros del visor de lag para partidas multiplayer
+#==================================================================================================
+
+#---------- POSICION ----------
+.X  917 
+.Y  48
+
+#---------- VALORES MAXIMO Y MINIMO ----------
+.MIN_PERCENT   15.0      # % minimo que mostrara la barra de progreso
+.MAX_LAG_TIME  5000.0    # tiempo maximo de lag (en ms)
+
+#---------- FONDO ----------
+.USE_FONDO TRUE
+.PARAMS_FONDO
+[
+  .X 0 .Y 0 .SX 105 .SY 28 .U 897 .V 57 
+  .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" 
+  .ALPHA TRUE 
+  .PRIORITY 100
+]
+
+#---------- BARRA DE PROGRESO ----------
+.USE_BARRA TRUE
+.PARAMS_BARRA
+[
+  .X 25 .Y 8
+  .PRIORITY 101
+  .SUPERIOR [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 897 .V 90 .ALPHA TRUE ]
+  .SX 73 .SY 8
+]
+
+#--------- TOOL TIP ----------
+.ZONA_TOOL_TIP
+[ 
+  .RECT [ 0 0 105 28 ] 
+  .DBCLICK_AS_RELEASE FALSE 
+  .EVENTOS [ MOUSE ] 
+  
+  .TOOL_TIP
+  [ 
+    .TEXT LTEXT_UI_MULTIPLAYER_INDICADOR_LAG
+    .X 32 .Y 32
+    .FONT "Fonts/gothic.fnt" 
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+    .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+  ]      
+]
+

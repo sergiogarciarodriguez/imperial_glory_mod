@@ -1,0 +1,115 @@
+ ########################################################################################################
+ # Teclas asociadas al UI del modelo de batalla
+ ########################################################################################################
+ 
+  # Las teclas de control de camara estaran en el sb UIDefs_CtrlMovCamara.sb
+
+  
+  # Tecla para ocultar el UI al completo
+  [ .TIPO UIC_TECLA         .ID 'KDOC'    .PARAMS [ .TECLA KEY_I .MKEYS [ L_CTRL ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]  
+  [ .TIPO UIC_TECLA         .ID 'KDOC'    .PARAMS [ .TECLA KEY_I .MKEYS [ R_CTRL ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]  
+       
+  # Tecla para activar el menu de juego
+  [ .TIPO UIC_TECLA         .ID 'MESC'    .PARAMS [ .TECLA KEY_ESCAPE .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+
+  # Activacion / Desactivacion del mini mapa
+  [ .TIPO UIC_TECLA .ID 'KMAP' .PARAMS [ .TECLA KEY_M .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+  
+  # Boton de orientar
+  [ .TIPO UIC_TECLA .ID 'KORI' .PARAMS [ .TECLA KEY_N .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+
+  # Cambio del cursor de modo de ataque y cambio de angulo de tropa junto al boton central  
+  # toda esta movidilla extraña es para q se reciba el evento en caso de q se pulse CTRL + SHIFT
+  [ .TIPO UIC_TECLA  .ID 'K_CA' .PARAMS [ .TECLA KEY_LSHIFT .MKEYS [ L_SHIFT ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+  [ .TIPO UIC_TECLA  .ID 'K_CA' .PARAMS [ .TECLA KEY_LSHIFT .MKEYS [ L_SHIFT L_CTRL ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+  [ .TIPO UIC_TECLA  .ID 'K_CA' .PARAMS [ .TECLA KEY_LCONTROL .MKEYS [ L_CTRL L_SHIFT ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+  [ .TIPO UIC_TECLA  .ID 'K_CA' .PARAMS [ .TECLA KEY_RSHIFT .MKEYS [ R_SHIFT ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+ 
+  
+  # Tecla de seleccion multiple, tambien usada para agregar puntos de destino
+  [ .TIPO UIC_TECLA .ID 'KSMU' .PARAMS [ .TECLA KEY_LCONTROL .MKEYS [ L_CTRL ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] 
+  
+  # R Ctrl, usada para agregar puntos de destino
+  [ .TIPO UIC_TECLA .ID 'KSCD' .PARAMS [ .TECLA KEY_RCONTROL .MKEYS [ R_CTRL ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]            
+  
+  # Tecla de ventana de objetivos
+  [ .TIPO UIC_TECLA .ID 'KMVO' .PARAMS [ .TECLA KEY_TAB .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] 
+  
+  # Pintado de rangos
+  [ .TIPO UIC_TECLA .ID 'KPRA' .PARAMS [ .TECLA KEY_V .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]            
+  
+  # Teclas de gestión de grupos de selección :)
+  [ .TIPO UIC_TECLA .ID 'K_BG' .PARAMS [ .TECLA KEY_0 .MKEYS [ L_CTRL ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] 
+  [ .TIPO UIC_TECLA .ID 'KCG1' .PARAMS [ .TECLA KEY_1 .MKEYS [ L_CTRL ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] 
+  [ .TIPO UIC_TECLA .ID 'KCG2' .PARAMS [ .TECLA KEY_2 .MKEYS [ L_CTRL ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] 
+  [ .TIPO UIC_TECLA .ID 'KCG3' .PARAMS [ .TECLA KEY_3 .MKEYS [ L_CTRL ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] 
+  [ .TIPO UIC_TECLA .ID 'KCG4' .PARAMS [ .TECLA KEY_4 .MKEYS [ L_CTRL ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] 
+  [ .TIPO UIC_TECLA .ID 'KCG5' .PARAMS [ .TECLA KEY_5 .MKEYS [ L_CTRL ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] 
+  [ .TIPO UIC_TECLA .ID 'KCG6' .PARAMS [ .TECLA KEY_6 .MKEYS [ L_CTRL ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] 
+  [ .TIPO UIC_TECLA .ID 'KCG7' .PARAMS [ .TECLA KEY_7 .MKEYS [ L_CTRL ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] 
+  [ .TIPO UIC_TECLA .ID 'KCG8' .PARAMS [ .TECLA KEY_8 .MKEYS [ L_CTRL ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] 
+  [ .TIPO UIC_TECLA .ID 'KCG9' .PARAMS [ .TECLA KEY_9 .MKEYS [ L_CTRL ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] 
+  [ .TIPO UIC_TECLA .ID 'K_BG' .PARAMS [ .TECLA KEY_0 .MKEYS [ R_CTRL ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] 
+  [ .TIPO UIC_TECLA .ID 'KCG1' .PARAMS [ .TECLA KEY_1 .MKEYS [ R_CTRL ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] 
+  [ .TIPO UIC_TECLA .ID 'KCG2' .PARAMS [ .TECLA KEY_2 .MKEYS [ R_CTRL ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] 
+  [ .TIPO UIC_TECLA .ID 'KCG3' .PARAMS [ .TECLA KEY_3 .MKEYS [ R_CTRL ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] 
+  [ .TIPO UIC_TECLA .ID 'KCG4' .PARAMS [ .TECLA KEY_4 .MKEYS [ R_CTRL ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] 
+  [ .TIPO UIC_TECLA .ID 'KCG5' .PARAMS [ .TECLA KEY_5 .MKEYS [ R_CTRL ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] 
+  [ .TIPO UIC_TECLA .ID 'KCG6' .PARAMS [ .TECLA KEY_6 .MKEYS [ R_CTRL ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] 
+  [ .TIPO UIC_TECLA .ID 'KCG7' .PARAMS [ .TECLA KEY_7 .MKEYS [ R_CTRL ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] 
+  [ .TIPO UIC_TECLA .ID 'KCG8' .PARAMS [ .TECLA KEY_8 .MKEYS [ R_CTRL ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] 
+  [ .TIPO UIC_TECLA .ID 'KCG9' .PARAMS [ .TECLA KEY_9 .MKEYS [ R_CTRL ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] 
+  [ .TIPO UIC_TECLA .ID 'KSG1' .PARAMS [ .TECLA KEY_1 .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] 
+  [ .TIPO UIC_TECLA .ID 'KSG2' .PARAMS [ .TECLA KEY_2 .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] 
+  [ .TIPO UIC_TECLA .ID 'KSG3' .PARAMS [ .TECLA KEY_3 .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] 
+  [ .TIPO UIC_TECLA .ID 'KSG4' .PARAMS [ .TECLA KEY_4 .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] 
+  [ .TIPO UIC_TECLA .ID 'KSG5' .PARAMS [ .TECLA KEY_5 .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] 
+  [ .TIPO UIC_TECLA .ID 'KSG6' .PARAMS [ .TECLA KEY_6 .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] 
+  [ .TIPO UIC_TECLA .ID 'KSG7' .PARAMS [ .TECLA KEY_7 .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] 
+  [ .TIPO UIC_TECLA .ID 'KSG8' .PARAMS [ .TECLA KEY_8 .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] 
+  [ .TIPO UIC_TECLA .ID 'KSG9' .PARAMS [ .TECLA KEY_9 .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] 
+  
+  # Teclas para seleccionar toda la inf, cab, art
+  [ .TIPO UIC_TECLA .ID 'KSAI' .PARAMS [ .TECLA KEY_I .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] 
+  [ .TIPO UIC_TECLA .ID 'KSAC' .PARAMS [ .TECLA KEY_O .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] 
+  [ .TIPO UIC_TECLA .ID 'KSAA' .PARAMS [ .TECLA KEY_P .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] 
+  
+  # Selecciona/Deselecciona TODAS las tropas
+  [ .TIPO UIC_TECLA .ID 'KSAT' .PARAMS [ .TECLA KEY_T .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ] 
+  
+  # HotKeys
+  # Tecla de Pausa
+  [ .TIPO UIC_TECLA         .ID 'KEYP'    .PARAMS [ .TECLA KEY_SPACE .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+  
+  # Teclas de 'trapi' para permitir q se puedan pulsar estas hotkeys independientemente del estado del botón de tactics (controles inactivos)
+  [ .TIPO UIC_TECLA .ID 'ROT1' .PARAMS [ .TECLA KEY_F1 .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+  [ .TIPO UIC_TECLA .ID 'ROT2' .PARAMS [ .TECLA KEY_F2 .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+  [ .TIPO UIC_TECLA .ID 'ROT3' .PARAMS [ .TECLA KEY_F3 .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+  [ .TIPO UIC_TECLA .ID 'ROT4' .PARAMS [ .TECLA KEY_F4 .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+  [ .TIPO UIC_TECLA .ID 'ROT5' .PARAMS [ .TECLA KEY_F5 .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+  [ .TIPO UIC_TECLA .ID 'ROT6' .PARAMS [ .TECLA KEY_F6 .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+  [ .TIPO UIC_TECLA .ID 'RORU' .PARAMS [ .TECLA KEY_R .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+  [ .TIPO UIC_TECLA .ID 'ROMO' .PARAMS [ .TECLA KEY_F .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+  [ .TIPO UIC_TECLA .ID 'ROCU' .PARAMS [ .TECLA KEY_K .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+  [ .TIPO UIC_TECLA .ID 'ROLI' .PARAMS [ .TECLA KEY_L .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+  [ .TIPO UIC_TECLA .ID 'ROCO' .PARAMS [ .TECLA KEY_J .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+  
+  [ .TIPO UIC_TECLA .ID 'TRDI' .PARAMS [ .TECLA LKEY_BATALLA_KEY_RANGED_ATTACK .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+  [ .TIPO UIC_TECLA .ID 'TRCU' .PARAMS [ .TECLA KEY_X .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+  [ .TIPO UIC_TECLA .ID 'TRDE' .PARAMS [ .TECLA LKEY_BATALLA_KEY_ABANDON_POSITION .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+  [ .TIPO UIC_TECLA .ID 'TRST' .PARAMS [ .TECLA KEY_BACK .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+  [ .TIPO UIC_TECLA .ID 'TRIR' .PARAMS [ .TECLA KEY_G .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+  [ .TIPO UIC_TECLA .ID 'TRAN' .PARAMS [ .TECLA KEY_B .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+  
+  
+  #-------------------------------------------------------------------------------------------------------------------------     
+  # Rob: Teclas de Debug. 
+  # PROCURAR PONER SIEMPRE UNA O DOS TECLAS MODIF CTRL, SHIFT o ALT PARA QUE NO COLISIONEN CON LAS HOTKEYS REALES DEL JUEGO 
+  #-------------------------------------------------------------------------------------------------------------------------
+  [ .TIPO UIC_TECLA         .ID 'KEYX'    .PARAMS [ .TECLA KEY_X .MKEYS [ L_SHIFT ]  .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+  [ .TIPO UIC_TECLA         .ID 'KEYM'    .PARAMS [ .TECLA KEY_M .MKEYS [ L_CTRL L_SHIFT ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+  [ .TIPO UIC_TECLA         .ID 'KCAI'    .PARAMS [ .TECLA KEY_Q .MKEYS [ L_CTRL ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]  # tecla creacion de AI Bando del jugador 
+  [ .TIPO UIC_TECLA         .ID 'KXXX'    .PARAMS [ .TECLA KEY_BACK .MKEYS [ L_CTRL L_SHIFT ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]         # tecla de batalla automática en batalla
+  [ .TIPO UIC_TECLA         .ID 'CBAN'    .PARAMS [ .TECLA KEY_SPACE .MKEYS [ L_CTRL ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]        # tecla para efectuar un cambio de bando  
+  [ .TIPO UIC_TECLA         .ID 'CHCH'    .PARAMS [ .TECLA KEY_Z .MKEYS [ L_CTRL L_SHIFT ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]    # tecla para recargar script de tutorial
+  [ .TIPO UIC_TECLA         .ID 'RTAI'    .PARAMS [ .TECLA KEY_L .MKEYS [ L_CTRL L_SHIFT ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]    # tecla para hacer que la IA se retire

@@ -1,0 +1,143 @@
+#=======================================================================================
+# Definición de sonidos para el modelo de batalla [ ORDENES, ACKS, VOCES ]
+#
+# Param ".3D" es TRUE por defecto.
+#       ".LOOP" es FALSE por defecto.
+#=======================================================================================
+
+###-------------------------------------------------------------------------------------
+### AUDIO
+###-------------------------------------------------------------------------------------
+.AUDIO 
+[
+  #===============================================================================
+  # S_NAR_BATTLE_WINNING
+  #===============================================================================
+  [ 
+    .IDNAME "S_NAR_BATTLE_WINNING"
+    .PATH [ "Narrator/Nar_winning_menwinning.ogg"      "Narrator/Nar_winning_armywinning.ogg" ]
+    .TYPE VOICE .GENERIC FALSE .3D FALSE .TRANSLATABLE TRUE .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_NAR_BATTLE_WINNING_SLAUGHTER"
+    .PATH [ "Narrator/Nar_winning_forcesslaughtering.ogg"      "Narrator/Nar_winning_forcesdestroying.ogg" ]
+    .TYPE VOICE .GENERIC FALSE .3D FALSE .TRANSLATABLE TRUE .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_NAR_BATTLE_LOSING
+  #===============================================================================
+  [ 
+    .IDNAME "S_NAR_BATTLE_LOSING"
+    .PATH [ "Narrator/Nar_losing_armylosing.ogg"      "Narrator/Nar_losing_menlosing.ogg" ]
+    .TYPE VOICE .GENERIC FALSE .3D FALSE .TRANSLATABLE TRUE .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_NAR_BATTLE_LOSING_SLAUGHTER"
+    .PATH [ "Narrator/Nar_losing_forcesannihilated.ogg"     "Narrator/Nar_losing_forcesslaughtered.ogg" ]
+    .TYPE VOICE .GENERIC FALSE .3D FALSE .TRANSLATABLE TRUE .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_NAR_BATTLE_EVEN
+  #===============================================================================
+  [ 
+    .IDNAME "S_NAR_BATTLE_EVEN"
+    .PATH [ "Narrator/Nar_even_battleeven.ogg"     "Narrator/Nar_even_engagementyet.ogg" 
+            "Narrator/Nar_even_forcesmatched.ogg"  "Narrator/Nar_even_outcomehangs.ogg" ]
+    .TYPE VOICE .GENERIC FALSE .3D FALSE .TRANSLATABLE TRUE .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_NAR_BATTLE_ALMOST_WIN
+  #===============================================================================
+  [ 
+    .IDNAME "S_NAR_BATTLE_ALMOST_WIN"
+    .PATH [ "Narrator/Nar_almostwon_armycontrols.ogg"     "Narrator/Nar_almostwon_menonverge.ogg" 
+            "Narrator/Nar_almostwon_soontriumph.ogg"  "Narrator/Nar_almostwon_victorysoon.ogg" ]
+    .TYPE VOICE .GENERIC FALSE .3D FALSE .TRANSLATABLE TRUE .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_NAR_BATTLE_ALMOST_LOST
+  #===============================================================================
+  [ 
+    .IDNAME "S_NAR_BATTLE_ALMOST_LOST"
+    .PATH [ "Narrator/Nar_almostlost_armysoon.ogg"     "Narrator/Nar_almostlost_defeatsoon.ogg" 
+            "Narrator/Nar_almostlost_soonslaughtered.ogg"  "Narrator/Nar_almostlost_sufferterrible.ogg" ]
+    .TYPE VOICE .GENERIC FALSE .3D FALSE .TRANSLATABLE TRUE .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_NAR_BATTLE_OBJ_TAKEN
+  #===============================================================================
+  [ 
+    .IDNAME "S_NAR_BATTLE_OBJ_TAKEN"
+    .PATH [ "Narrator/Nar_ObjTaken_BattObjTaken.ogg"     "Narrator/Nar_ObjTaken_ObjTaken_1.ogg" 
+            "Narrator/Nar_ObjTaken_ObjTaken_2.ogg"  "Narrator/Nar_ObjTaken_Youhavetaken.ogg" ]
+    .TYPE VOICE .GENERIC FALSE .3D FALSE .TRANSLATABLE TRUE .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_NAR_BATTLE_OBJ_LOST
+  #===============================================================================
+  [ 
+    .IDNAME "S_NAR_BATTLE_OBJ_LOST"
+    .PATH [ "Narrator/Nar_ObjLost_BattObjLost.ogg"     "Narrator/Nar_ObjLost_ObjLost_1.ogg" 
+            "Narrator/Nar_ObjLost_ObjLost_2.ogg"  "Narrator/Nar_ObjLost_Youhavelost.ogg" ]
+    .TYPE VOICE .GENERIC FALSE .3D FALSE .TRANSLATABLE TRUE .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_NAR_BATTLE_ENEMY_OBJ_TAKEN
+  #===============================================================================
+  [ 
+    .IDNAME "S_NAR_BATTLE_ENEMY_OBJ_TAKEN"
+    .PATH [ "Narrator/Nar_EnemyObj_enemytakenkeyposition.ogg"     "Narrator/Nar_EnemyObj_enemytakenobjective.ogg" 
+            "Narrator/Nar_EnemyObj_enemytakenstrategic.ogg"  ]
+    .TYPE VOICE .GENERIC FALSE .3D FALSE .TRANSLATABLE TRUE .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_NAR_BATTLE_ENEMY_OBJ_LOST
+  #===============================================================================
+  [ 
+    .IDNAME "S_NAR_BATTLE_ENEMY_OBJ_LOST"
+    .PATH [ "Narrator/Nar_EnemyLoseObj_lostkeyposition.ogg"     "Narrator/Nar_EnemyLoseObj_lostobjective.ogg" 
+            "Narrator/Nar_EnemyLoseObj_loststrategic.ogg"  ]
+    .TYPE VOICE .GENERIC FALSE .3D FALSE .TRANSLATABLE TRUE .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_NAR_BATTLE_UNDER_FIRE
+  #===============================================================================
+  [ 
+    .IDNAME "S_NAR_BATTLE_UNDER_FIRE"
+    .PATH [ "Narrator/Nar_underfire_forcesunderattack.ogg"  "Narrator/Nar_underfire_forcesunderfire.ogg" 
+            "Narrator/Nar_underfire_menunderattack.ogg"     "Narrator/Nar_underfire_menunderfire.ogg" 
+            "Narrator/Nar_underfire_troopsunderattack.ogg" ]
+    .TYPE VOICE .GENERIC FALSE .3D FALSE .TRANSLATABLE TRUE .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_NAR_BATTLE_RETIRE
+  #===============================================================================
+  [ 
+    .IDNAME "S_NAR_BATTLE_RETIRE"
+    .PATH [ "Narrator/Nar_routed_forcesfleeing.ogg"     "Narrator/Nar_routed_menflee.ogg" 
+            "Narrator/Nar_routed_menfleeingterror.ogg"  ]
+    .TYPE VOICE .GENERIC FALSE .3D FALSE .TRANSLATABLE TRUE .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_NAR_BATTLE_ENEMY_RETIRE
+  #===============================================================================
+  [ 
+    .IDNAME "S_NAR_BATTLE_ENEMY_RETIRE"
+    .PATH [ "Narrator/Nar_enemyrout_attemptdisengage.ogg"     "Narrator/Nar_enemyrout_enemyfleeing.ogg" 
+            "Narrator/Nar_enemyrout_enemyflees.ogg"  ]
+    .TYPE VOICE .GENERIC FALSE .3D FALSE .TRANSLATABLE TRUE .POLYPHONY 1
+  ]
+
+] ### !AUDIO
+

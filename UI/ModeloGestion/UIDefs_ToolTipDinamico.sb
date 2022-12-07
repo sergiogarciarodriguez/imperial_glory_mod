@@ -1,0 +1,169 @@
+
+.X 730 
+.Y 456
+
+.FONDO 
+[
+  .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga"
+  .X 0 .Y 0 .U 648 .V 593 .SX 326 .SY 208
+  .ALPHA TRUE .PRIORITY 0
+] # ~FONDO
+
+.ESTILOS
+[
+  ############################################################
+  # ESTILO DE TOOLTIP LEYENDA MODO ECONOMICO (RUTAS)
+  [ .ID 'LYRU' .TIMEOUT -1
+    .CONTROLES
+    [
+      %Game\UI\ModeloGestion\UIDefsToolTipDinamico\UIDefs_LeyendaEconomicoRutas.sb
+    ]
+  ]
+
+  ############################################################
+  # ESTILO DE TOOLTIP LEYENDA MODO ECONOMICO (RUTAS INTERNAS)
+  [ .ID 'LYRI' .TIMEOUT -1
+    .CONTROLES
+    [
+      %Game\UI\ModeloGestion\UIDefsToolTipDinamico\UIDefs_LeyendaEconomicoRutasInternas.sb
+    ]
+  ]
+
+  ############################################################
+  # ESTILO DE TOOLTIP LEYENDA BARRAS RECURSOS ACTUALES 
+  [ .ID 'LYBR' .TIMEOUT -1
+    .CONTROLES
+    [
+      %Game\UI\ModeloGestion\UIDefsToolTipDinamico\UIDefs_LeyendaBarrasRecursos.sb
+    ]
+  ]
+
+  ############################################################
+  # ESTILO DE TOOLTIP LEYENDA BARRAS PRODUCCION
+  [ .ID 'LYBP' .TIMEOUT -1
+    .CONTROLES
+    [
+      %Game\UI\ModeloGestion\UIDefsToolTipDinamico\UIDefs_LeyendaBarrasProduccion.sb
+    ]
+  ]
+  
+  ############################################################
+  # ESTILO DE TOOLTIP LEYENDA BARRAS CIENCIA
+  [ .ID 'LYBC' .TIMEOUT -1
+    .CONTROLES
+    [
+      %Game\UI\ModeloGestion\UIDefsToolTipDinamico\UIDefs_LeyendaBarrasCiencia.sb
+    ]
+  ]  
+
+  ############################################################
+  # ESTILO DE TOOLTIP LEYENDA BARRAS POTENCIA MILITAR
+  [ .ID 'LYPM' .TIMEOUT -1
+    .CONTROLES
+    [
+      %Game\UI\ModeloGestion\UIDefsToolTipDinamico\UIDefs_LeyendaBarrasMilitar.sb
+    ]
+  ]  
+
+  ############################################################
+  # ESTILO DE TOOLTIP LEYENDA BARRAS GLORIA
+  [ .ID 'LYBG' .TIMEOUT -1
+    .CONTROLES
+    [
+      %Game\UI\ModeloGestion\UIDefsToolTipDinamico\UIDefs_LeyendaBarrasGloria.sb
+    ]
+  ]  
+
+  ############################################################
+  # ESTILO DE TOOLTIP LEYENDA BARRAS QUEST
+  [ .ID 'LYBQ' .TIMEOUT -1
+    .CONTROLES
+    [
+      %Game\UI\ModeloGestion\UIDefsToolTipDinamico\UIDefs_LeyendaBarrasQuest.sb
+    ]
+  ]  
+
+  ############################################################
+  # ESTILO DE TOOLTIP LEYENDA BARRAS NIVEL COMERCIAL
+  [ .ID 'LYNC' .TIMEOUT -1
+    .CONTROLES
+    [
+      %Game\UI\ModeloGestion\UIDefsToolTipDinamico\UIDefs_LeyendaBarrasComercio.sb
+    ]
+  ]  
+
+  ############################################################
+  # ESTILO DE TOOLTIP LEYENDA BARRAS VICTORIAS DERROTAS
+  [ .ID 'LYVD' .TIMEOUT -1
+    .CONTROLES
+    [
+      %Game\UI\ModeloGestion\UIDefsToolTipDinamico\UIDefs_LeyendaBarrasVictorias.sb
+    ]
+  ]  
+
+  ############################################################
+  # ESTILO DE TOOLTIP LEYENDA BARRAS PRESENCIA MILITAR
+  [ .ID 'LYPR' .TIMEOUT -1
+    .CONTROLES
+    [
+      %Game\UI\ModeloGestion\UIDefsToolTipDinamico\UIDefs_LeyendaPresenciaMilitar.sb
+    ]
+  ]  
+
+  ############################################################
+  # ESTILO DE TOOLTIP LEYENDA BARRAS DESARROLLO CIENTIFICO
+  [ .ID 'LYDC' .TIMEOUT -1
+    .CONTROLES
+    [
+      %Game\UI\ModeloGestion\UIDefsToolTipDinamico\UIDefs_LeyendaBarrasNivelCientifico.sb
+    ]
+  ]  
+
+  ############################################################
+  # ESTILO DE TOOLTIP LEYENDA BARRAS NIVEL DESARROLLO
+  [ .ID 'LYND' .TIMEOUT -1
+    .CONTROLES
+    [
+      %Game\UI\ModeloGestion\UIDefsToolTipDinamico\UIDefs_LeyendaBarrasDesarrollo.sb
+    ]
+  ]  
+
+  ############################################################
+  # ESTILO DE TOOLTIP LEYENDA BARRAS ESTADO RELACIONES
+  [ .ID 'LYER' .TIMEOUT -1
+    .CONTROLES
+    [
+      %Game\UI\ModeloGestion\UIDefsToolTipDinamico\UIDefs_LeyendaRelaciones.sb
+    ]
+  ]  
+
+  ############################################################
+  # ESTILO DE TOOLTIP LEYENDA BARRAS PROTECCION MUTUA
+  [ .ID 'LYMU' .TIMEOUT -1
+    .CONTROLES
+    [
+      %Game\UI\ModeloGestion\UIDefsToolTipDinamico\UIDefs_LeyendaProteccionMutua.sb
+    ]
+  ]  
+  
+  ############################################################
+  # ESTILO DE TOOLTIP LEYENDA BARRAS PERMISO DE PASO
+  [ .ID 'LYPP' .TIMEOUT -1
+    .CONTROLES
+    [
+      %Game\UI\ModeloGestion\UIDefsToolTipDinamico\UIDefs_LeyendaPermisosPaso.sb
+    ]
+  ]  
+  
+  ############################################################
+  # ESTILO DE TOOLTIP LEYENDA BARRAS SISTEMAS POLITICOS
+  [ .ID 'LYSP' .TIMEOUT -1
+    .CONTROLES
+    [
+      %Game\UI\ModeloGestion\UIDefsToolTipDinamico\UIDefs_LeyendaSistemasGobierno.sb
+    ]
+  ]  
+    
+]
+  
+  

@@ -1,0 +1,127 @@
+########################################################################################################
+# MessageBox para errores de red
+########################################################################################################
+
+ # Se define la ventana                   
+ .ACTIVO FALSE
+ .CENTER TRUE       
+ .MODAL TRUE
+ 
+ .PRIORITY 255
+ .DEPTH 2
+ 
+  # características de fundido
+ .FADE_IN TRUE
+ .FADE_OUT FALSE
+ 
+ .FADE_TIME 0.7
+ .FADE_IN_DELAY 0.6
+ 
+ .FONDO_VIDEO
+ [
+   .FILE "Videos/PNotificacionB00.bik"      
+   .U 0 .V 0 .SX 512 .SY 256 .ALPHA TRUE .PRIORITY 202
+   .LOOP FALSE .NOSOUND TRUE 
+   
+   # el vídeo no recibe fundido
+   .FADE FALSE
+ ]           
+
+
+ # Titulo 
+ .CAPTION
+ [
+  .XMARGEN 101 .YMARGEN 40
+  .HEIGHT 25
+  .TITLE 
+  [ 
+   .ALINEACION CENTER 
+   .TEXT LTEXT_UI_WAITINGPLAYERS
+   .FONT "Fonts/Times12.fnt" 
+   .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+  
+  .MOVIBLE FALSE
+ ]  
+ 
+ # Texto
+ .TEXT 
+ [
+  .CENTER
+  [
+   .YTOPMARGEN   87
+   .YBASEMARGEN  85
+   .XLEFTMARGEN  75
+   .XRIGHTMARGEN 75
+  ]   
+    
+  #.ALIGN CENTER
+  
+  .TEXT 
+  [ 
+    .FONT "Fonts/Times12.fnt" 
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+    .MSG  " " 
+  ]
+  
+  .VDX 361 .VDY 5
+  .VSX  6  .VSY 79
+  .SLIDER_VERTICAL
+  [
+    .FILE "Game/UI/Comun/ControlesStandard.tga" 
+    .SX 2 .SY 15 .U 59 .V 200 .HORIZONTAL FALSE .ALPHA TRUE .PRIORITY 251
+      
+      # Boton 1
+    .BTN_1
+    [ .TIPO UIC_BOTONGRAFICO
+      .COMPORTAMIENTO SIMPLE 
+      .FONDO
+      [
+        .SX 14 .SY 15 .ALPHA TRUE    
+        .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 4 .V 200 ]
+        .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 22 .V 200 ]
+        .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 40 .V 200 ]
+      ]
+    ]
+  
+    # Boton 2                
+    .BTN_2
+    [ .TIPO UIC_BOTONGRAFICO
+      .COMPORTAMIENTO SIMPLE
+      .FONDO
+      [
+        .SX 14 .SY 15 .ALPHA TRUE
+        .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 4 .V 219  ] 
+        .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 22 .V 219 ]
+        .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 40 .V 219 ]
+      ]
+    ]
+  
+    # Boton central
+    .BTN_CENTRAL
+    [ .TIPO UIC_BOTONGRAFICO
+      .COMPORTAMIENTO SIMPLE    
+      .FONDO
+      [
+        .SX 20 .SY 21 .ALPHA TRUE
+        .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 4 .V 99 ]
+        .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 30 .V 99 ]
+        .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 56 .V 99 ]
+      ]
+    ]    
+  ]        
+ ]
+ 
+  .CONTROLES
+ [
+   [
+     .TIPO UIC_BITMAP .ID 'BMCP'
+     .PARAMS
+     [
+       .PRIORITY 203
+       .X 101 .Y 35 
+       .FILE "Game/UI/ModeloGestion/UIDefsMsgBoxNotificaciones/NotificacionEdificios.tga" .ALPHA TRUE 
+       .U 10 .V 14 .SX 310 .SY 40 
+     ]
+   ]
+ ]

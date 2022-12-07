@@ -1,0 +1,74 @@
+# -- Botones de las pestañas para Era I, Era II, Era III de los paneles de la ventana de construcción de tropas
+.CHECKBOXES
+[      
+  #  - Botón Era I
+  [
+    .TIPO UIC_CHECKBOX .ID 'ERA1'
+    .PARAMS
+    [
+      .X 18 .Y 93 
+      .ZSENSIBLE_MANUAL [ .SX 140 .SY 21 ]
+    
+      .COMPORTAMIENTO FIJO
+      .DISABLE      [ .COLOR [ .R 150 .G 150 .B 190 ] ]
+      .SOLTADO      [ .COLOR [ .R 230 .G 200 .B 140 ] ]
+      .SELECCIONADO [ .COLOR [ .R 230 .G 200 .B 140 ] ]
+      .PULSADO      [ .COLOR [ .R 255 .G 255 .B 255 ] ]
+      
+      .FONT "Fonts/Times12.fnt"              
+      .TEXT LTEXT_LABEL_RAMA_I
+      
+      .CENTER_AREA      [ .X1 0 .Y1 0 .X2 140 .Y2 21 ]
+      
+      .IDSELECTSOUND "S_FXUI_CLICKBUTTON"              
+    ]
+  ]
+
+  #  - Botón Era II
+  [
+    .TIPO UIC_CHECKBOX .ID 'ERA2'
+    .PARAMS
+    [
+      .X 177 .Y 93 
+      .ZSENSIBLE_MANUAL [ .SX 140 .SY 21 ]
+     
+      .COMPORTAMIENTO FIJO
+      .DISABLE      [ .COLOR [ .R 150 .G 150 .B 190 ] ]
+      .SOLTADO      [ .COLOR [ .R 230 .G 200 .B 140 ] ]
+      .SELECCIONADO [ .COLOR [ .R 230 .G 200 .B 140 ] ]
+      .PULSADO      [ .COLOR [ .R 255 .G 255 .B 255 ] ]
+      
+      .FONT "Fonts/Times12.fnt"              
+      .TEXT LTEXT_LABEL_RAMA_II
+      
+      .CENTER_AREA      [ .X1 0 .Y1 0 .X2 140 .Y2 21 ]
+      
+      .IDSELECTSOUND "S_FXUI_CLICKBUTTON"              
+    ]
+  ]
+
+  #  - Botón Era III
+  [
+    .TIPO UIC_CHECKBOX .ID 'ERA3'
+    .PARAMS
+    [
+      .X 336 .Y 93 
+      .ZSENSIBLE_MANUAL [ .SX 140 .SY 21 ]
+      
+      .COMPORTAMIENTO FIJO
+      .DISABLE      [ .COLOR [ .R 150 .G 150 .B 190 ] ]
+      .SOLTADO      [ .COLOR [ .R 230 .G 200 .B 140 ] ]
+      .SELECCIONADO [ .COLOR [ .R 230 .G 200 .B 140 ] ]
+      .PULSADO      [ .COLOR [ .R 255 .G 255 .B 255 ] ]
+      
+      .FONT "Fonts/Times12.fnt"              
+      .TEXT LTEXT_LABEL_RAMA_III
+      
+      .CENTER_AREA      [ .X1 0 .Y1 0 .X2 140 .Y2 21 ]
+      
+      .IDSELECTSOUND "S_FXUI_CLICKBUTTON"              
+    ]
+  ]
+] # ~ Checkboxes
+
+.PERMITE_NINGUNA_ACTIVACION FALSE

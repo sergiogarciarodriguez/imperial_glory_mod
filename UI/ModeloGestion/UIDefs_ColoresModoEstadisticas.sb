@@ -1,0 +1,28 @@
+#
+# NOTA: El color 0,0,0 indica que no ponga ningun color y deje el color orginal del pais
+#
+
+#colores nivel amistad
+.COLOR_AMISTAD_MUY_ALTA [ .R 94  .G 135 .B 52 ]
+.COLOR_AMISTAD_ALTA     [ .R 58  .G 85  .B 32 ]
+.COLOR_AMISTAD_NEUTRA   [ .R 129 .G 115 .B 20 ]
+.COLOR_AMISTAD_BAJA     [ .R 104 .G 78  .B 28 ]
+.COLOR_AMISTAD_MUY_BAJA [ .R 96  .G 32  .B 32 ]
+
+#colores permiso de paso
+.COLOR_PERMISO_DE_PASO      [ .R 43  .G 94  .B 155 ]
+.COLOR_NO_PERMISO_DE_PASO   [ .R 150  .G 128  .B 52 ] #[ .R 89  .G 38  .B 38  ]
+
+#colores proteccion mutua
+.COLOR_PROTECCION_MUTUA     [ .R 66   .G 96  .B 49 ]
+.COLOR_NO_PROTECCION_MUTUA  [ .R 150  .G 128  .B 52 ] #[ .R 116  .G 48  .B 48 ]
+
+
+#colores de los sistemas politicos
+.COLOR_REGIMEN_PRE_PREVOLUCIONARIO     [ .R 150 .G 128 .B 52  ]
+.COLOR_REGIMEN_DEMOCRACIA              [ .R 41  .G 88  .B 39  ]
+.COLOR_REGIMEN_ABSOLUTISMO             [ .R 138 .G 36  .B 136 ]
+.COLOR_REGIMEN_REPUBLICA               [ .R 142 .G 34  .B 34  ]
+.COLOR_REGIMEN_MONARQUIA_ABSOLUTA      [ .R 63  .G 100 .B 186 ]
+.COLOR_REGIMEN_MONARQUIA_PARLAMENTARIA [ .R 89  .G 119 .B 77  ]
+.COLOR_REGIMEN_DICTADURA               [ .R 109 .G 63  .B 141 ]

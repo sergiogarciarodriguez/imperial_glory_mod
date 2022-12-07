@@ -1,0 +1,317 @@
+#############################################################################################
+# Dialogo de Produccion de Edificios
+# Fondo NO Tileado.
+# Centrado.
+# Modal.
+# No Movible.
+#############################################################################################
+
+ .MODAL TRUE
+ .CENTER FALSE
+ .DEPTH 4
+  
+ .FONDO
+ [
+   .FILE "Game/UI/ModeloGestion/UIDefsInfoProduccion/MenuComprarEdificios.tga"
+   .X 115 .Y 72
+   .U 1 .V 1 
+   .SX 811 .SY 609 
+   .ALPHA TRUE .PRIORITY 200
+ ]           
+  
+ .CAPTION
+ [
+  .XMARGEN 0 .YMARGEN 9 .HEIGHT 34
+  .TITLE 
+  [ 
+   .ALINEACION CENTER 
+   .TEXT LTEXT_TITLE_DLG_PRODUCCION_EDIFICIOS 
+   .FONT "Fonts/Times17.fnt" 
+   .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+  
+  .MOVIBLE FALSE
+ ]   
+             
+ # Controles
+ .CONTROLES
+ [ 
+ 
+  # WrapText del nombre del elemento seleccionado
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WTNS'
+   .PARAMS [ %Game/UI/ModeloGestion/UIDefsInfoProduccion/UIDefs_WrapTextNameSeleccionado.sb ]   
+  ] 
+  
+  # WrapText de descripcion
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WPIN'
+   .PARAMS [ .SX 434 .SY 106 %Game/UI/ModeloGestion/UIDefsInfoProduccion/UIDefs_WrapTextInfo.sb ]   
+  ]
+  
+  # WrapText de coste de dinero
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WTCD'
+   .PARAMS 
+   [ 
+     .X 59 .Y 383 
+     .SX 68 .SY 25
+     .ALIGN RIGHT
+     .TEXT [ .FONT "Fonts/Times11.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+   ]   
+  ]
+  
+  # WrapText de coste de recursos
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WTCR'
+   .PARAMS 
+   [ 
+     .X 177 .Y 383 
+     .SX 60 .SY 25
+     .ALIGN RIGHT
+     .TEXT [ .FONT "Fonts/Times11.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+   ]   
+  ]
+  
+  # WrapText de coste de población
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WTCP'
+   .PARAMS 
+   [ 
+     .X 275 .Y 383 
+     .SX 60 .SY 25
+     .ALIGN RIGHT
+     .TEXT [ .FONT "Fonts/Times11.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+   ]   
+  ]
+
+  
+  # WrapText de turnos
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WTIT'
+   .PARAMS 
+   [ 
+     .X 367 .Y 383 
+     .SX 65 .SY 25
+     .ALIGN CENTER
+     .TEXT [ .FONT "Fonts/Times11.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+   ]   
+  ]
+  
+  # Texto de Titulo asociado a la cola de produccion
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WTTP'
+   .PARAMS [ %Game/UI/ModeloGestion/UIDefsInfoProduccion/UIDefs_WrapTextInfoTituloColaProd.sb ]   
+  ]
+ 
+  # Visor de producibles
+  [
+   .TIPO UIC_VISORMATRIZCTRLS .ID 'VPRO'
+   .PARAMS [ %Game/UI/ModeloGestion/UIDefsInfoProduccion/UIDefs_VisorMatrizProduciblesEdificios.sb ]   
+  ]         
+  
+  # Visor de cola de produccion
+  [
+   .TIPO UIC_VISORMATRIZCTRLS .ID 'VCPR'
+   .PARAMS [ %Game/UI/ModeloGestion/UIDefsInfoProduccion/UIDefs_VisorMatrizProduciendoseEdificios.sb ]   
+  ]           
+  
+  # Btn de salida
+  [
+   .TIPO UIC_BOTONTEXTO .ID 'EXIT'
+   .PARAMS [ %Game/UI/ModeloGestion/UIDefsInfoProduccion/UIDefs_BtnExitDlgProduccion.sb ]
+  ]
+  
+  # Botón "mayor que" para navegar entre provincias
+  [
+    .TIPO UIC_BOTONTEXTO .ID 'NEXT'
+    .PARAMS 
+    [ 
+      .IDSELECTSOUND "S_FXUI_CLICKBUTTON"  
+      .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"  
+      
+      .X 648 .Y 50
+      .STYLE GREATER_THAN_BUTTON 
+
+      .KEY
+      [
+        .TECLA KEY_RIGHT .EVENTOS [ KEY_DOWN KEY_UP ]          
+      ]  
+      
+      .TOOL_TIP
+      [ 
+        .TEXT LTEXT_TT_CONSTRUCCION_DERECHA
+        .X 32 .Y 32
+        
+        .STYLE DEFAULT_TOOLTIP 
+      ]
+
+    ]
+  ]
+  
+  # Botón "menor que" para navegar entre provincias
+  [
+    .TIPO UIC_BOTONTEXTO .ID 'PREV'
+    .PARAMS 
+    [ 
+      .IDSELECTSOUND "S_FXUI_CLICKBUTTON"  
+      .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"  
+    
+      .X 130 .Y 50
+      .STYLE LESSER_THAN_BUTTON 
+
+      .KEY
+      [
+        .TECLA KEY_LEFT .EVENTOS [ KEY_DOWN KEY_UP ]          
+      ]  
+      
+      .TOOL_TIP
+      [ 
+        .TEXT LTEXT_TT_CONSTRUCCION_IZQUIERDA
+        .X 32 .Y 32
+        
+        .STYLE DEFAULT_TOOLTIP 
+      ]
+    ]
+  ]
+
+  # Gestor de Checkboxes con los botones asociados a las pestañas de los paneles de la ventana de producción de edificios  
+  [
+    .TIPO UIC_GESTORCHECKBOX .ID 'G_CB'
+    .PARAMS [ %Game/UI/ModeloGestion/UIDefsInfoProduccion/UIDefs_BotonesPestanasEdificios.sb ]
+  ]
+  
+  # Wraptext para poner la provincia en la que se está centrando la producción
+  [
+    .TIPO UIC_WRAPTEXT .ID 'WTIN'
+    .PARAMS
+    [
+      .X 10 .Y 48
+      .SX 794 .SY 39
+      .ALIGN CENTER
+      .TEXT [ .FONT "Fonts/Times17.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]    
+    ]
+  ]
+  
+  # Wraptext para la descripción corta del edificio
+  [
+    .TIPO UIC_WRAPTEXT .ID 'WTDC'
+    .PARAMS
+    [
+      .X 484 .Y 288
+      .SX 294 .SY 86
+      .TEXT [ .FONT "Fonts/Times11.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]    
+    ]
+  ]  
+  
+  # Wraptext con el número de turnos que necesita para construirse el icono actual
+  [
+    .TIPO UIC_WRAPTEXT .ID 'WTTR'
+    .PARAMS
+    [
+      .X 38 .Y 533
+      .SX 38 .SY 38
+      .ALIGN CENTER
+      .TEXT [ .FONT "Fonts/Times17.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]    
+    ]
+  ]  
+  
+  # Zona sensible 
+  [
+    .TIPO UIC_ZONASENSIBLE .ID 'ZSIE'
+    .PARAMS
+    [
+      .RECT [ 94 479 181 581 ] 
+      .DBCLICK_AS_RELEASE FALSE 
+      .EVENTOS [ MOUSE ] 
+      
+      .TOOL_TIP
+      [ 
+        # estaremos cambiándolo cada poco, asi que el texto aquí nos da un poco igual
+        .TEXT LTEXT_UI_TT_PANELRIQUEZAS_TOTALCOMIDA
+        .X 32 .Y 32
+          
+        
+        .STYLE DEFAULT_TOOLTIP 
+      ]      
+      
+      # esta zona sensible tendrá un cursor propio de ayuda contextual
+      #.ALTERNATE_CURSOR CUR_CONTEXTHELP
+    ]
+  ]
+  
+  
+  # Referencias estáticas a las texturas de construcciones
+  [
+    .TIPO UIC_STATICREFERENCE .ID 'SRTX'
+    .PARAMS
+    [
+      [ .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" ]
+      [ .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" ]
+      [ .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesPulsado.tga" ]
+    ]
+  ]
+  
+  # Visor de matriz de controles para los efectivos que pueden producir los edificios seleccionados
+  [
+    .TIPO UIC_VISORMATRIZCTRLS .ID 'VMEE'
+    .PARAMS
+    [
+      .MATRIZ
+      [
+       .FILAS 1
+       .COLUMNAS 6
+      ]     
+      
+      .PRIORITY_BASE 202
+     
+      .DRAW_PARAMS
+      [
+        .X 64
+        .Y 545
+        .CELL_XSPACE 0
+        .CELL_YSPACE 0
+        .SLIDER_XSPACE 12
+        .OBJ_WIDTH 32
+        .OBJ_HEIGHT 45
+      ]         
+    
+      .HOTSPOT_DRAG FALSE
+      
+      # Param de ToolTip
+      .TOOL_TIP 
+      [
+       .FONT "Fonts/Times11.fnt" 
+       .COLOR [ .R 255 .G 255 .B 255 ] 
+       .X 32 .Y 32 
+         
+       .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb        
+      ]      
+    ]
+  ]
+  
+  
+ ] # ~ CONTROLES
+ 
+ # Info de colores
+ .INFO_COLOR
+ [
+  .DESC                         [ .R 0   .G 0   .B 0   ]
+  .RIQUEZAS                     [ .R 255 .G 255 .B 255 ]
+  .RIQUEZAS_NEC                 [ .R 255 .G 0   .B 0   ]
+  .ICON_PRODUCCION_PARADA_COLOR [ .R 255 .G 0   .B 0   ]
+ ]
+ 
+ .ENLACES
+  [
+    [ .ID 'ERA1' .BMAP [ .ACTIVO FALSE .FILE "Game/UI/ModeloGestion/UIDefsInfoProduccion/ComprarTropas3.tga" .X 13 .Y 88 .U 1 .V 1   .SX 785 .SY 152 .ALPHA TRUE .PRIORITY 201 ] ]
+    [ .ID 'ERA2' .BMAP [ .ACTIVO FALSE .FILE "Game/UI/ModeloGestion/UIDefsInfoProduccion/ComprarTropas3.tga" .X 13 .Y 88 .U 1 .V 156 .SX 785 .SY 152 .ALPHA TRUE .PRIORITY 201 ] ]
+    [ .ID 'ERA3' .BMAP [ .ACTIVO FALSE .FILE "Game/UI/ModeloGestion/UIDefsInfoProduccion/ComprarTropas3.tga" .X 13 .Y 88 .U 1 .V 311 .SX 785 .SY 152 .ALPHA TRUE .PRIORITY 201 ] ]
+  ]
+  
+  .ICON_POS
+  [ .X 94 .Y 479 ]
+
+  # posición sobre la que se centrará el visor con los efectivos que puede llegar a producir el edificio   
+  .ICON_TROPA_POS
+  [ .X 630 .Y 365 ]

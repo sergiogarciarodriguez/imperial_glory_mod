@@ -1,0 +1,83 @@
+########################################################################################
+# Definición del control Info Barco
+########################################################################################
+
+  .NOMBRE_BARCO
+  [ 
+    .X 0 .Y 0 
+    .TEXT   [ .FONT "Fonts/Arial.fnt" .SCALE 0.5 .COLOR [ .R 0 .G 255 .B 0 ] ]
+    .FONDO  [ .FILE "Game/UI/ModeloNaval/BlackImage.tga" .U 0 .V 0 .SX 150 .SY 20 .TRANSPARENCY 200 .ALPHA TRUE ]
+  ]
+  .TIPO_BARCO
+  [
+    .X 0 .Y 20 
+    .TEXT   [ .FONT "Fonts/Arial.fnt" .SCALE 0.5 .COLOR [ .R 0 .G 255 .B 0 ] ]
+    .FONDO  [ .FILE "Game/UI/ModeloNaval/BlackImage.tga" .U 0 .V 0 .SX 150 .SY 20 .TRANSPARENCY 200 .ALPHA TRUE ]
+  ]
+  .TRIPULACION
+  [
+    .TEXT
+    [
+      .X 0 .Y 40            
+      .TEXT   [ .TEXT LTEXT_UI_TRIPULACION .FONT "Fonts/Arial.fnt" .SCALE 0.5 .COLOR [ .R 255 .G 255 .B 255 ] ]
+      .FONDO  [ .FILE "Game/UI/ModeloNaval/BlackImage.tga" .U 0 .V 0 .SX 150 .SY 20 .TRANSPARENCY 200  .ALPHA TRUE ]
+    ]
+    .CALIDAD
+    [
+      .X 0 .Y 60  
+      .TEXT   [ .FONT "Fonts/Arial.fnt" .SCALE 0.5 .COLOR [ .R 0 .G 255 .B 0 ] ]                       
+      .FONDO  [ .FILE "Game/UI/ModeloNaval/BlackImage.tga" .U 0 .V 0 .SX 150 .SY 20 .TRANSPARENCY 200  .ALPHA TRUE ]
+  ]
+    .PUNTOS_VIDA
+    [
+      .X 0 .Y 80
+      .TEXT   [ .FONT "Fonts/Arial.fnt" .SCALE 0.5 .COLOR [ .R 0 .G 255 .B 0 ] ]         
+      .FONDO  [ .FILE "Game/UI/ModeloNaval/BlackImage.tga" .U 0 .V 0 .SX 150 .SY 20 .TRANSPARENCY 200  .ALPHA TRUE ]
+    ]
+  ]
+  .VELAS
+  [
+    .TEXT
+    [
+      .X 0 .Y 100            
+      .TEXT   [ .TEXT LTEXT_UI_VELAS .FONT "Fonts/Arial.fnt" .SCALE 0.5 .COLOR [ .R 255 .G 255 .B 255 ] ]
+      .FONDO  [ .FILE "Game/UI/ModeloNaval/BlackImage.tga" .U 0 .V 0 .SX 150 .SY 20 .TRANSPARENCY 200 .ALPHA TRUE ]
+    ]
+    .PUNTOS_VIDA
+    [
+      .X 0 .Y 120
+      .TEXT   [ .FONT "Fonts/Arial.fnt" .SCALE 0.5 .COLOR [ .R 0 .G 255 .B 0 ] ]         
+      .FONDO  [ .FILE "Game/UI/ModeloNaval/BlackImage.tga" .U 0 .V 0 .SX 150 .SY 20 .TRANSPARENCY 200 .ALPHA TRUE ]
+    ]
+  ]
+  .CASCO
+  [
+    .TEXT
+    [
+      .X 0 .Y 140
+      .TEXT   [ .TEXT LTEXT_UI_CASCO .FONT "Fonts/Arial.fnt" .SCALE 0.5 .COLOR [ .R 255 .G 255 .B 255 ] ]
+      .FONDO  [ .FILE "Game/UI/ModeloNaval/BlackImage.tga" .U 0 .V 0 .SX 150 .SY 20 .TRANSPARENCY 200 .ALPHA TRUE ]
+    ]
+    .PUNTOS_VIDA
+    [
+      .X 0 .Y 160
+      .TEXT   [ .FONT "Fonts/Arial.fnt" .SCALE 0.5 .COLOR [ .R 0 .G 255 .B 0 ] ]
+      .FONDO  [ .FILE "Game/UI/ModeloNaval/BlackImage.tga" .U 0 .V 0 .SX 150 .SY 20 .TRANSPARENCY 200 .ALPHA TRUE ]
+    ]
+  ]
+  
+  .VELOCIDAD
+  [
+    .TEXT
+    [
+      .X 0 .Y 180
+      .TEXT   [ .TEXT LTEXT_UI_VELOCIDAD .FONT "Fonts/Arial.fnt" .SCALE 0.5 .COLOR [ .R 255 .G 255 .B 255 ] ]
+      .FONDO  [ .FILE "Game/UI/ModeloNaval/BlackImage.tga" .U 0 .V 0 .SX 150 .SY 20 .TRANSPARENCY 200 .ALPHA TRUE ]
+    ]
+    .VELOCIDAD
+    [
+      .X 0 .Y 200
+      .TEXT   [ .FONT "Fonts/Arial.fnt" .SCALE 0.5 .COLOR [ .R 0 .G 255 .B 0 ] ]
+      .FONDO  [ .FILE "Game/UI/ModeloNaval/BlackImage.tga" .U 0 .V 0 .SX 150 .SY 20 .TRANSPARENCY 200 .ALPHA TRUE ]    
+    ]
+  ]

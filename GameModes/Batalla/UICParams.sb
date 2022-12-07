@@ -1,0 +1,82 @@
+###############################################################################################################
+# Archivo con paramas de inicializacion para controles en el modelo de batalla
+###############################################################################################################
+
+.BTNTEXTO_PARAMS
+[
+
+  [
+    .KEY MB_DEFAULTTEXT_BTN
+    .PARAMS [ %Game/UI/Comun/UIDefs_CommonMsgBoxBtn.sb ]
+  ] 
+  
+  # Definicion de controles standard
+  %Game/UI/Comun/UIDefs_ControlesStandard.sb     
+
+  # Definicion de controles de batalla    
+  %Game/UI/ModeloBatalla/UIDefs_BotonesBatalla.sb
+]
+
+.BTNGRAFICO_PARAMS
+[
+
+]
+ 
+.BITMAP_PARAMS
+[
+  # Params de las imagenes que representan a las tropas
+  # ToDo: Esta carga deberia de ser selectiva segun los paises que entren en conflicto.
+  #       Por ahora cargamos todo en el pool.
+  
+  %Game/UI/ModeloBatalla/InterfazPaises/Default/UIDefs_ImgTropas.sb
+  %Game/UI/ModeloBatalla/InterfazPaises/Francia/UIDefs_ImgTropas.sb
+  %Game/UI/ModeloBatalla/InterfazPaises/Inglaterra/UIDefs_ImgTropas.sb
+  %Game/UI/ModeloBatalla/InterfazPaises/Prusia/UIDefs_ImgTropas.sb
+  %Game/UI/ModeloBatalla/InterfazPaises/Rusia/UIDefs_ImgTropas.sb
+  %Game/UI/ModeloBatalla/InterfazPaises/Austria/UIDefs_ImgTropas.sb
+  %Game/UI/ModeloBatalla/UIDefs_Banderas.sb
+  %Game/UI/ModeloBatalla/UIDefs_EfectivosMinBattleMap.sb
+  
+  # Francia   
+  %Game/UI/ModeloGestion/Iconos/Tropas/Francia/UIDefs_PoolTropasIcons.sb  
+  %Game/UI/ModeloGestion/Iconos/Tropas/Francia/UIDefs_PoolTropasBtnIcons.sb
+  %Game/UI/ModeloGestion/Iconos/Tropas/Francia/UIDefs_PoolTropasBtnIconsSmall.sb
+
+  # Inglaterra   
+  %Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/UIDefs_PoolTropasIcons.sb  
+  %Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/UIDefs_PoolTropasBtnIcons.sb
+  %Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/UIDefs_PoolTropasBtnIconsSmall.sb
+
+  # Rusia
+  %Game/UI/ModeloGestion/Iconos/Tropas/Rusia/UIDefs_PoolTropasIcons.sb  
+  %Game/UI/ModeloGestion/Iconos/Tropas/Rusia/UIDefs_PoolTropasBtnIcons.sb
+  %Game/UI/ModeloGestion/Iconos/Tropas/Rusia/UIDefs_PoolTropasBtnIconsSmall.sb
+
+  # Prusia   
+  %Game/UI/ModeloGestion/Iconos/Tropas/Prusia/UIDefs_PoolTropasIcons.sb  
+  %Game/UI/ModeloGestion/Iconos/Tropas/Prusia/UIDefs_PoolTropasBtnIcons.sb  
+  %Game/UI/ModeloGestion/Iconos/Tropas/Prusia/UIDefs_PoolTropasBtnIconsSmall.sb  
+
+  # Austria
+  %Game/UI/ModeloGestion/Iconos/Tropas/Austria/UIDefs_PoolTropasIcons.sb  
+  %Game/UI/ModeloGestion/Iconos/Tropas/Austria/UIDefs_PoolTropasBtnIcons.sb  
+  %Game/UI/ModeloGestion/Iconos/Tropas/Austria/UIDefs_PoolTropasBtnIconsSmall.sb  
+  
+]
+
+.BTNTROPA_PARAMS
+[
+  # Params asociados a los botones de las tropas
+  # ToDo: Esta carga deberia de ser selectiva segun los paises que entren en conflicto. 
+  #       Por ahora cargamos todo en el pool.
+
+  %Game/UI/ModeloBatalla/InterfazPaises/Default/UIDefs_BtnTropas.sb
+  %Game/UI/ModeloBatalla/InterfazPaises/Francia/UIDefs_BtnTropas.sb
+  %Game/UI/ModeloBatalla/InterfazPaises/Inglaterra/UIDefs_BtnTropas.sb 
+  %Game/UI/ModeloBatalla/InterfazPaises/Austria/UIDefs_BtnTropas.sb
+  %Game/UI/ModeloBatalla/InterfazPaises/Prusia/UIDefs_BtnTropas.sb
+  %Game/UI/ModeloBatalla/InterfazPaises/Rusia/UIDefs_BtnTropas.sb
+  %Game/UI/ModeloBatalla/InterfazPaises/Especiales/UIDefs_BtnTropas.sb
+] 
+
+%Game/GameModes/Comun/UICParams.sb

@@ -1,0 +1,51 @@
+ # Definimos la matriz de vision para los edificios de las embajadas del resto de imperios
+ # Nota, es seguro que variara al cambiar de informacion la ventana de contenido
+ .MATRIZ
+ [
+  .FILAS 2
+  .COLUMNAS 2
+ ]     
+ 
+ # Definimos los parametros de dibujado
+ # IMPORTANTE : - Estos params seran cambiados cuando la ventana de contenido cambie de contexto.
+ #                El unico cambio que se mantendra seran las coordenadas.
+ # Nota: - En caso de existir fondo X e Y seran deltas sobre la posicion del mismo y en caso de no definirlo
+ #         serviran para indicar la posicion de inicio de dibujado
+ #       - Al incluirse en un dialogo, las posiciones seran deltas con respecto al mismo.
+ .DRAW_PARAMS
+ [
+  .X 641
+  .Y 40
+  .CELL_XSPACE 1
+  .CELL_YSPACE 1
+  .SLIDER_XSPACE 17
+  .OBJ_WIDTH 42    # en realidad el tamaño de los iconos de construcciones es de 43, pero si lo ponemos a 43 se junta demasiado con el visor de edificios
+  .OBJ_HEIGHT 51
+ ]         
+     
+ # Prioridad base de los elementos en el visor
+ # A los que se les haga un drag tendra una prioridad superior por lo que la prioridad base
+ # no debera de exceder el valor de 254
+ .PRIORITY_BASE 241
+
+ # Modo de drag asociado (por defecto esta orientado al HOTSPOT de pulsacion)
+ .HOTSPOT_DRAG FALSE
+ 
+  # Usamos el cursor de ayuda contextual 
+ .ALTERNATE_CURSOR CUR_CONTEXTHELP
+ 
+ # Param de ToolTip
+ .TOOL_TIP 
+ [
+  .FONT "Fonts/Times12.fnt" 
+  .COLOR [ .R 255 .G 255 .B 255 ] 
+  .X 32 .Y 32 
+    
+  .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb        
+ ]
+ 
+ .SOUNDS
+ [
+   .IDSELECTSOUND "S_UI_GENERICO_PULSADO" 
+   #.IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"
+ ] 

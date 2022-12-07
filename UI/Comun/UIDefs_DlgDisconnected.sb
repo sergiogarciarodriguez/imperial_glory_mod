@@ -1,0 +1,113 @@
+#################################################################################################
+# Dialogo de informacion de perdidada de conexion para partidas de red
+#################################################################################################
+
+.MODAL  TRUE
+
+.CENTER FALSE
+
+.ACTIVO TRUE
+
+.DEPTH  4
+
+#---------- FONDO ----------
+.FONDO 
+[ 
+ .X 350 .Y 125 .TRANSPARENCY 220 .PRIORITY 0 .ALPHA TRUE
+ .FILE "Game/UI/ModeloBatalla/DummyDialogMessageBoxBatalla.tga" .U 4 .V 6 .SX 324 .SY 149 
+]              
+
+#---------- CAPTION ----------
+.CAPTION
+[
+ .XMARGEN 4
+ .YMARGEN 4
+ .HEIGHT 23
+ .TITLE [ .ALINEACION CENTER .TEXT LTEXT_UI_CAPTION_DISCONNECTED .FONT "Fonts/Times12.fnt" .SCALE 1.0 .COLOR [ .R 255 .G 255 .B 255 ] ]
+ .MOVIBLE FALSE
+]
+
+.CONTROLES
+[
+	[
+  	.TIPO UIC_WRAPTEXT .ID 'TXWP'
+  	.PARAMS
+  	[
+  	  .X 10 .Y 30 .SX 314 .SY 70
+  	  .ALIGN CENTER
+  	  
+ 	    .MSG "LTEXT_UI_DISCONNECTED"
+  	  .TEXT
+  	  [
+  	   .FONT "Fonts/Times10.fnt" 
+  	   .COLOR [ .R 255 .G 255 .B 255 ]
+  	  ]
+  	]
+	]  
+]
+        
+#---------- BOTONES ----------
+.BOTONES
+[           
+  .CENTER
+  [                
+    .YMARGEN 116
+    .XSPACE  1          
+  ]           
+         
+  .LIST
+  [
+    #---------- BOTON OK ----------
+#    [
+#      .TIPO UIC_BOTONTEXTO        
+#      .ACEPTAR TRUE        
+#      .COMPORTAMIENTO SIMPLE
+#      .SOLTADO [ .COLOR [ .R 255 .G 255 .B 255 ] ] 
+#      .PULSADO [ .COLOR [ .R 158 .G 158 .B 158 ] ] 
+#      .SCALE 1.0
+#      .TEXT LTEXT_UI_CONTINUAR_JUEGO
+#               
+#      .FONDO
+#      [ 
+#        .SX 102 .SY 22
+#        .ALPHA TRUE
+#        .SOLTADO [ .FILE "Game/UI/ModeloBatalla/DummyDialogMessageBoxBatalla.tga" .U 298 .V 201 ]
+#        .PULSADO [ .FILE "Game/UI/ModeloBatalla/DummyDialogMessageBoxBatalla.tga" .U 298 .V 282 ]
+#        .PRIORITY 1
+#        .ALPHA TRUE
+#      ]    
+#      
+#      #.CENTER_AREA [ .X1 0 .Y1 0 .X2 102 .Y2 22 ]
+#              
+#      .KEY [ .TECLA KEY_RETURN .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ]                                                                   
+#    ]                         
+
+    #---------- BOTON CANCEL ----------
+    [
+      .TIPO UIC_BOTONTEXTO        
+      .CANCELAR TRUE        
+      .COMPORTAMIENTO SIMPLE
+      .SOLTADO [ .COLOR [ .R 255 .G 255 .B 255 ] ] 
+      .PULSADO [ .COLOR [ .R 158 .G 158 .B 158 ] ] 
+      .SCALE 1.0
+      .TEXT LTEXT_UI_ABANDONAR_JUEGO
+      
+      .FONDO
+      [ 
+        .SX 102 .SY 22
+        .ALPHA TRUE
+        .SOLTADO [ .FILE "Game/UI/ModeloBatalla/DummyDialogMessageBoxBatalla.tga" .U 298 .V 201 ]
+        .PULSADO [ .FILE "Game/UI/ModeloBatalla/DummyDialogMessageBoxBatalla.tga" .U 298 .V 282 ]
+        .PRIORITY 1
+        .ALPHA TRUE
+      ]    
+
+      .CENTER_AREA [ .X1 0 .Y1 0 .X2 102 .Y2 22 ]
+              
+      .KEY [ .TECLA KEY_ESCAPE .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ]                                                                   
+    ]                         
+        
+  ] # ~ LIST
+    
+] # ~ BOTONES               
+

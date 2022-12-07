@@ -1,0 +1,33 @@
+#############################################################################################
+# Dialogo de contenido de un ejercito
+#############################################################################################
+
+ .MODAL FALSE
+ .CENTER FALSE
+  
+ .FONDO 
+ [   
+  .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga"    
+  .X 365 .Y 615 .U 365 .V 871 .SX 380 .SY 153 .ALPHA TRUE  
+ ]              
+  
+ .CAPTION
+ [
+  .XMARGEN 1 .YMARGEN 1 .HEIGHT 19
+  .TITLE 
+  [ 
+   .ALINEACION CENTER .TEXT "Contenido Ejercitos" .FONT "Fonts/Default.fnt" .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+  .MOVIBLE FALSE
+ ]   
+             
+ # Controles
+ .CONTROLES
+ [  
+ 
+  [
+   .TIPO UIC_VISORMATRIZCTRLS .ID 'VMCC'
+   .PARAMS [ %Game/UI/ModeloGestion/VentanasAccionContenidoUIDefs/UIDefs_VisorMatrizContenido.sb ]   
+  ]         
+   
+ ] # ~ CONTROLES

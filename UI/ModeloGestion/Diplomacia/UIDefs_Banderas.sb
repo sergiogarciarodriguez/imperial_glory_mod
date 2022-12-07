@@ -1,0 +1,592 @@
+#################################################################################################
+# Estilos para las banderas de diplomacia
+#################################################################################################
+
+####################### FILA 1 ##############################################################
+
+[
+  .KEY BANDERA_FRANCIA
+  .PARAMS
+  [
+    .COMPORTAMIENTO FIJO
+    .FONDO
+    [
+      .X 217 .Y 166
+      .SX 54 .SY 54
+      .ALPHA TRUE
+      .DISABLE [.FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 1  .V 1 .ALPHA TRUE]
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 1 .V 172 .ALPHA TRUE]
+      .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 1  .V 1 .ALPHA TRUE]
+      .PULSADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 1  .V 172 .ALPHA TRUE]
+      .PRIORITY 100
+    ]
+  
+    .TOOL_TIP 
+    [ 
+      .TEXT LTEXT_PAIS_FRANCIA 
+      %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+    ]
+  ]       
+]
+
+[
+  .KEY BANDERA_GRAN_BRETANYA
+  .PARAMS
+  [
+    .COMPORTAMIENTO FIJO
+    .FONDO
+    [
+      .X 277 .Y 166
+      .SX 54 .SY 54
+      .ALPHA TRUE
+      .DISABLE [.FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 58  .V 1 ]
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 58 .V 172]
+      .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 58  .V 1 ]
+      .PULSADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 58  .V 172]
+      .PRIORITY 100
+    ]
+  
+    .TOOL_TIP 
+    [ 
+      .TEXT LTEXT_PAIS_GRAN_BRETANYA %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+    ]
+  ]       
+]
+
+[
+  .KEY BANDERA_RUSIA
+  .PARAMS
+  [
+    .COMPORTAMIENTO FIJO
+    .FONDO
+    [
+      .X 337 .Y 166
+      .SX 54 .SY 54
+      .ALPHA TRUE
+      .DISABLE [.FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 115  .V 1 ]
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 115 .V 172]
+      .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 115  .V 1 ]
+      .PULSADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 115  .V 172]
+      .PRIORITY 100
+    ]
+  
+    .TOOL_TIP 
+    [ 
+      .TEXT LTEXT_PAIS_RUSIA %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+    ]
+  ]       
+]
+
+[
+  .KEY BANDERA_AUSTRIA
+  .PARAMS
+  [
+    .COMPORTAMIENTO FIJO
+    .FONDO
+    [
+      .X 397 .Y 166
+      .SX 54 .SY 54
+      .ALPHA TRUE
+      .DISABLE [.FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 172  .V 1 ]
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 172 .V 172]
+      .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 172  .V 1 ]
+      .PULSADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 172  .V 172]
+      .PRIORITY 100
+    ]
+  
+    .TOOL_TIP 
+    [ 
+      .TEXT LTEXT_PAIS_AUSTRIA %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+    ]
+  ]       
+]
+
+[
+  .KEY BANDERA_PRUSIA
+  .PARAMS
+  [
+    .COMPORTAMIENTO FIJO
+    .FONDO
+    [
+      .X 457 .Y 166
+      .SX 54 .SY 54
+      .ALPHA TRUE
+      .DISABLE [.FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 229  .V 1 ]
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 229 .V 172]
+      .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 229  .V 1 ]
+      .PULSADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 229  .V 172]
+      .PRIORITY 100
+    ]
+  
+    .TOOL_TIP 
+    [ 
+      .TEXT LTEXT_PAIS_PRUSIA %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+    ]
+  ]       
+]
+
+[
+  .KEY BANDERA_ESPANYA
+  .PARAMS
+  [
+    .COMPORTAMIENTO FIJO
+    .FONDO
+    [
+      .X 517 .Y 166
+      .SX 54 .SY 54
+      .ALPHA TRUE
+      .DISABLE [.FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 286 .V 1 ]
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 286 .V 172]
+      .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 286 .V 1 ]
+      .PULSADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 286 .V 172]
+      .PRIORITY 100
+    ]
+  
+    .TOOL_TIP 
+    [ 
+      .TEXT LTEXT_PAIS_ESPANYA %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+    ]
+  ]       
+]
+
+[
+  .KEY BANDERA_OTOMANO
+  .PARAMS
+  [
+    .COMPORTAMIENTO FIJO
+    .FONDO
+    [
+      .X 577 .Y 166
+      .SX 54 .SY 54
+      .ALPHA TRUE
+      .DISABLE [.FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 343  .V 1 ]
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 343 .V 172]
+      .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 343  .V 1 ]
+      .PULSADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 343  .V 172]
+      .PRIORITY 100
+    ]
+  
+    .TOOL_TIP 
+    [ 
+      .TEXT LTEXT_PAIS_OTOMANO %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+    ]
+  ]       
+]
+
+####################### FILA 2 ##############################################################
+
+[
+  .KEY BANDERA_EGIPTO
+  .PARAMS
+  [
+    .COMPORTAMIENTO FIJO
+    .FONDO
+    [
+      .X 217 .Y 226
+      .SX 54 .SY 54
+      .ALPHA TRUE
+      .DISABLE [.FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 400  .V 1 ]
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 400 .V 172]
+      .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 400  .V 1 ]
+      .PULSADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 400  .V 172]
+      .PRIORITY 100
+    ]
+  
+    .TOOL_TIP 
+    [ 
+      .TEXT LTEXT_PAIS_EGIPTO %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+    ]
+  ]       
+]
+
+[
+  .KEY BANDERA_DOS_SICILIAS
+  .PARAMS
+  [
+    .COMPORTAMIENTO FIJO
+    .FONDO
+    [
+      .X 277 .Y 226
+      .SX 54 .SY 54
+      .ALPHA TRUE
+      .DISABLE [.FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 457 .V 1 ]
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 457 .V 172]
+      .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 457  .V 1 ]
+      .PULSADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 457 .V 172]
+      .PRIORITY 100
+    ]
+  
+    .TOOL_TIP 
+    [ 
+      .TEXT LTEXT_PAIS_DOS_SICILIAS %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+    ]
+  ]       
+]
+
+[
+  .KEY BANDERA_DINAMARCA
+  .PARAMS
+  [
+    .COMPORTAMIENTO FIJO
+    .FONDO
+    [
+      .X 337 .Y 226
+      .SX 54 .SY 54
+      .ALPHA TRUE
+      .DISABLE [.FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 1  .V 58 ]
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 1 .V 229 ]
+      .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 1  .V 58 ]
+      .PULSADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 1  .V 229 ]
+      .PRIORITY 100
+    ]
+  
+    .TOOL_TIP 
+    [ 
+      .TEXT LTEXT_PAIS_DINAMARCA %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+    ]
+  ]       
+]
+
+[
+  .KEY BANDERA_SUECIA
+  .PARAMS
+  [
+    .COMPORTAMIENTO FIJO
+    .FONDO
+    [
+      .X 397 .Y 226
+      .SX 54 .SY 54
+      .ALPHA TRUE
+      .DISABLE [.FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 58 .V 58 ]
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 58 .V 229 ]
+      .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 58 .V 58 ]
+      .PULSADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 58 .V 229 ]
+      .PRIORITY 100
+    ]
+  
+    .TOOL_TIP 
+    [ 
+      .TEXT LTEXT_PAIS_SUECIA %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+    ]
+  ]       
+]
+
+
+[
+  .KEY BANDERA_PORTUGAL
+  .PARAMS
+  [
+    .COMPORTAMIENTO FIJO
+    .FONDO
+    [
+      .X 457 .Y 226
+      .SX 54 .SY 54
+      .ALPHA TRUE
+      .DISABLE [.FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 115 .V 58 ]
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 115 .V 229 ]
+      .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 115  .V 58 ]
+      .PULSADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 115  .V 229 ]
+      .PRIORITY 100
+    ]
+  
+    .TOOL_TIP 
+    [ 
+      .TEXT LTEXT_PAIS_PORTUGAL %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+    ]
+  ]       
+]
+
+
+[
+  .KEY BANDERA_LOMBARDIA
+  .PARAMS
+  [
+    .COMPORTAMIENTO FIJO
+    .FONDO
+    [
+      .X 517 .Y 226
+      .SX 54 .SY 54
+      .ALPHA TRUE
+      .DISABLE [.FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 172  .V 58 ]
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 172 .V 229 ]
+      .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 172  .V 58 ]
+      .PULSADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 172  .V 229 ]
+      .PRIORITY 100
+    ]
+  
+    .TOOL_TIP 
+    [ 
+      .TEXT LTEXT_PAIS_LOMBARDIA %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+    ]
+  ]       
+]
+
+[
+  .KEY BANDERA_PIAMONTE
+  .PARAMS
+  [
+    .COMPORTAMIENTO FIJO
+    .FONDO
+    [
+      .X 577 .Y 226
+      .SX 54 .SY 54
+      .ALPHA TRUE
+      .DISABLE [.FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 229  .V 58 ]
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 229 .V 229 ]
+      .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 229  .V 58 ]
+      .PULSADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 229  .V 229 ]
+      .PRIORITY 100
+    ]
+  
+    .TOOL_TIP 
+    [ 
+      .TEXT LTEXT_PAIS_PIAMONTE %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+    ]
+  ]       
+]
+
+####################### FILA 3 ##############################################################
+
+[
+  .KEY BANDERA_E_PAPALES
+  .PARAMS
+  [
+    .COMPORTAMIENTO FIJO
+    .FONDO
+    [
+      .X 217 .Y 287
+      .SX 54 .SY 54
+      .ALPHA TRUE
+      .DISABLE [.FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 286 .V 58 ]
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 286 .V 229 ]
+      .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 286 .V 58 ]
+      .PULSADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 286 .V 229 ]
+      .PRIORITY 100
+    ]
+  
+    .TOOL_TIP 
+    [ 
+      .TEXT LTEXT_PAIS_E_PAPALES %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+    ]
+  ]       
+]
+
+
+[
+  .KEY BANDERA_R_HELVETICA
+  .PARAMS
+  [
+    .COMPORTAMIENTO FIJO
+    .FONDO
+    [
+      .X 277 .Y 287
+      .SX 54 .SY 54
+      .ALPHA TRUE
+      .DISABLE [.FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 343 .V 58 ]
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 343 .V 229 ]
+      .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 343 .V 58 ]
+      .PULSADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 343 .V 229 ]
+      .PRIORITY 100
+    ]
+  
+    .TOOL_TIP 
+    [ 
+      .TEXT LTEXT_PAIS_R_HELVETICA %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+    ]
+  ]       
+]
+
+
+[
+  .KEY BANDERA_HANNOVER
+  .PARAMS
+  [
+    .COMPORTAMIENTO FIJO
+    .FONDO
+    [
+      .X 337 .Y 287
+      .SX 54 .SY 54
+      .ALPHA TRUE
+      .DISABLE [.FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 400 .V 58 ]
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 400 .V 229 ]
+      .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 400 .V 58 ]
+      .PULSADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 400 .V 229 ]
+      .PRIORITY 100
+    ]
+  
+    .TOOL_TIP 
+    [ 
+      .TEXT LTEXT_PAIS_HANNOVER %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+    ]
+  ]       
+]
+
+[
+  .KEY BANDERA_BATAVIA
+  .PARAMS
+  [
+    .COMPORTAMIENTO FIJO
+    .FONDO
+    [
+      .X 397 .Y 287
+      .SX 54 .SY 54
+      .ALPHA TRUE
+      .DISABLE [.FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 457 .V 58 ]
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 457 .V 229 ]
+      .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 457 .V 58 ]
+      .PULSADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 457 .V 229 ]
+      .PRIORITY 100
+    ]
+  
+    .TOOL_TIP 
+    [ 
+      .TEXT LTEXT_PAIS_BATAVIA %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+    ]
+  ]       
+]
+
+[
+  .KEY BANDERA_SAJONIA
+  .PARAMS
+  [
+    .COMPORTAMIENTO FIJO
+    .FONDO
+    [
+      .X 457 .Y 287
+      .SX 54 .SY 54
+      .ALPHA TRUE
+      .DISABLE [.FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 1 .V 115  ]
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 1 .V 286 ]
+      .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 1 .V 115  ]
+      .PULSADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 1 .V 287]
+      .PRIORITY 100
+    ]
+  
+    .TOOL_TIP 
+    [ 
+      .TEXT LTEXT_PAIS_SAJONIA %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+    ]
+  ]       
+]
+
+[
+  .KEY BANDERA_POLONIA
+  .PARAMS
+  [
+    .COMPORTAMIENTO FIJO
+    .FONDO
+    [
+      .X 517 .Y 287
+      .SX 54 .SY 54
+      .ALPHA TRUE
+      .DISABLE [.FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 58 .V 115  ]
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 58 .V 286 ]
+      .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 58 .V 115  ]
+      .PULSADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 58 .V 287]
+      .PRIORITY 100
+    ]
+  
+    .TOOL_TIP 
+    [ 
+      .TEXT LTEXT_PAIS_POLONIA %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+    ]
+  ]       
+]
+
+[
+  .KEY BANDERA_MOLDAVIA
+  .PARAMS
+  [
+    .COMPORTAMIENTO FIJO
+    .FONDO
+    [
+      .X 577 .Y 287
+      .SX 54 .SY 54
+      .ALPHA TRUE
+      .DISABLE [.FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 115 .V 115  ]
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 115 .V 286 ]
+      .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 115 .V 115  ]
+      .PULSADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 115 .V 287]
+      .PRIORITY 100
+    ]
+  
+    .TOOL_TIP 
+    [ 
+      .TEXT LTEXT_PAIS_MOLDAVIA %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+    ]
+  ]       
+]
+
+####################### FILA 4 ##############################################################
+
+[
+  .KEY BANDERA_MARRUECOS
+  .PARAMS
+  [
+    .COMPORTAMIENTO FIJO
+    .FONDO
+    [
+      .X 336 .Y 347
+      .SX 54 .SY 54
+      .ALPHA TRUE
+      .DISABLE [.FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 172 .V 115  ]
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 172 .V 286 ]
+      .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 172 .V 115  ]
+      .PULSADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 172 .V 287]
+      .PRIORITY 100
+    ]
+  
+    .TOOL_TIP 
+    [ 
+      .TEXT LTEXT_PAIS_MARRUECOS %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+    ]
+  ]       
+]
+
+[
+  .KEY BANDERA_TUNEZ
+  .PARAMS
+  [
+    .COMPORTAMIENTO FIJO
+    .FONDO
+    [
+      .X 396 .Y 347
+      .SX 54 .SY 54
+      .ALPHA TRUE
+      .DISABLE [.FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 229 .V 115  ]
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 229 .V 286 ]
+      .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 229 .V 115  ]
+      .PULSADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 229 .V 287]
+      .PRIORITY 100
+    ]
+  
+    .TOOL_TIP 
+    [ 
+      .TEXT LTEXT_PAIS_TUNEZ %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+    ]
+  ]       
+]
+
+[
+  .KEY BANDERA_TRIPOLITANIA
+  .PARAMS
+  [
+    .COMPORTAMIENTO FIJO
+    .FONDO
+    [
+      .X 456 .Y 347
+      .SX 54 .SY 54
+      .ALPHA TRUE
+      .DISABLE [.FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 286 .V 115  ]
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia1.tga" .U 286 .V 286 ]
+      .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 286 .V 115  ]
+      .PULSADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/BanderasDiplomacia2.tga" .U 286 .V 287]
+      .PRIORITY 100
+    ]
+  
+    .TOOL_TIP 
+    [ 
+      .TEXT LTEXT_PAIS_TRIPOLITANIA %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+    ]
+  ]       
+]

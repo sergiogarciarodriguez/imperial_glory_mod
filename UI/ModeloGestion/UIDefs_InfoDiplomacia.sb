@@ -1,0 +1,94 @@
+#############################################################################################
+# Ventana (dialogo) de información de las diferentes acciones en la ventana de diplomacia
+# Muestra la información de un tipo de mensaje diplomático
+#############################################################################################
+
+  .ACTIVO FALSE
+  .MODAL  TRUE
+  .CENTER TRUE
+  
+  .DEPTH 4
+  
+  .FONDO
+  [
+    .FILE "Game/UI/ModeloGestion/UIDefsMsgBoxNotificaciones/PNotificacionEdificio0020.tga"      
+    .U 0 .V 0 .SX 512 .SY 360 .ALPHA TRUE .PRIORITY 202
+  ]           
+  
+   # Titulo 
+   .CAPTION
+   [
+    .XMARGEN 98 .YMARGEN 58
+    .HEIGHT 25
+    .TITLE 
+    [ 
+     .ALINEACION CENTER 
+     .TEXT " " 
+     .FONT "Fonts/Times12.fnt" 
+     .COLOR [ .R 255 .G 255 .B 255 ] 
+    ]
+    
+    .MOVIBLE FALSE
+   ]
+ 
+  
+  
+ # Se definen los parametros de centrado de los botones
+ # Nota: - Solo trabajaremos con botones custom y por defecto
+ .BOTONES
+ [           
+  # Info de centrado automatico
+  .CENTER
+  [                   
+   .YMARGEN 304
+   .XSPACE  8   
+  ]                   
+ ] # ~ BOTONES         
+ 
+ # Se definen los parametros para el trabajo con los botones del MessageBox (MB)
+ .MB_BUTTONS  
+ [
+  # Clave en el UICPool para la base de botones a utilizar
+  .KEY_PARAMS MBGESTION_DEFAULT_BTN
+  #.LIST [ "Ok" ] # "Yes" ] # "No" "Cancel" ]
+ ]
+   
+    
+ # Texto
+ .TEXT 
+ [
+  .CENTER
+  [
+   .YTOPMARGEN   95
+   .YBASEMARGEN  58
+   .XLEFTMARGEN  80
+   .XRIGHTMARGEN 120
+  ]   
+    
+  #.ALIGN CENTER
+  
+  .TEXT [ .FONT "Fonts/Times12.fnt" .COLOR [ .R 255 .G 255 .B 255 ] .MSG  " " ]
+  
+  .VDX 292 .VDY 5
+  .VSX  6  .VSY 164
+  .SLIDER_VERTICAL
+  [
+    .PRIORITY 204
+    .STYLE DEFAULT_SLIDER_VERTICAL
+  ]    
+ ]
+ 
+  .CONTROLES
+ [
+   [
+     .TIPO UIC_BITMAP .ID 'BMCP'
+     .PARAMS
+     [
+       .PRIORITY 203
+       .X 98 .Y 52
+       .FILE "Game/UI/ModeloGestion/UIDefsMsgBoxNotificaciones/NotificacionEdificios.tga" .ALPHA TRUE 
+       .U 10 .V 14 .SX 310 .SY 40 
+     ]
+   ]
+ ]
+ 

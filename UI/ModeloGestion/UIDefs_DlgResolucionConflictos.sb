@@ -1,0 +1,513 @@
+#################################################################################################
+# Dlg con las opciones posibles de resolucion de conflictos.
+#################################################################################################
+ # Se define la ventana                   
+ .MODAL TRUE
+ .CENTER TRUE      
+ .DEPTH 3
+ .RELATIVE_PRIORITY FALSE
+ 
+ .FONDO 
+ [ 
+   .X 0 .Y 0
+   .FILE "Game/UI/ModeloGestion/Refuerzos.tga" 
+   .U 0 .V 0 .TRANSPARENCY 220 .PRIORITY 10 .ALPHA TRUE .SX 695 .SY 695 
+ ]              
+ 
+ .CAPTION
+ [
+  .XMARGEN 0 .YMARGEN 0 .HEIGHT 58
+  .TITLE 
+  [ 
+    .ALINEACION CENTER 
+    .TEXT " " 
+    .FONT "Fonts/Times14.fnt" 
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+  .MOVIBLE FALSE
+ ]
+
+ # Bandera país atacante
+ .ATTACKER_FLAG [ .X 35  .Y 105 ]
+ # Bandera país defensor
+ .DEFENDER_FLAG [ .X 488 .Y 105 ]
+ 
+.ICONOS_MANDOS
+[
+  #.FONDO
+  #[
+  #  .FILE "Game/UI/ModeloGestion/InformacionEjercito/MenuInformacionEjercitos.tga"
+  #  .X 0 .Y 0 .U 1 .V 773 .SX 308 .SY 107 
+  #  .ALPHA TRUE .PRIORITY 3
+  #]
+  
+  .ICONO_DX -1 .ICONO_DY 0
+  
+  .CREAR_ZONA_SENSIBLE_ICONO FALSE
+
+  .TEXTO_NOMBRE
+  [
+    .X 0 .Y 0 .SX 226 .SY 42 .DX 77 .DY 1 .ALIGN CENTER
+    .TEXT [ .FONT "Fonts/Times12.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+  ]    
+  .TEXTO_NOMBRE_DISABLE
+  [
+    .X 0 .Y 0 .SX 226 .SY 42 .DX 77 .DY 1 .ALIGN CENTER  
+    .TEXT [ .FONT "Fonts/Times12.fnt" .COLOR [ .R 150 .G 150 .B 150 ] ]
+   
+  ]  
+      
+  .TEXTO_PROVINCIA
+  [
+    .X 0 .Y 0 .SX 226 .SY 41 .DX 77 .DY 26 .ALIGN CENTER     
+    .TEXT [ .FONT "Fonts/Times12.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+   
+  ]        
+  .TEXTO_PROVINCIA_DISABLE
+  [
+    .X 0 .Y 0 .SX 226 .SY 41 .DX 77 .DY 26 .ALIGN CENTER      
+    .TEXT [ .FONT "Fonts/Times12.fnt" .COLOR [ .R 150 .G 150 .B 150 ] ]
+   
+  ]        
+  
+  .MATRIZ_TROPAS
+  [
+   	.MATRIZ_ICONOS
+  	[
+      .CENTER_ICONS FALSE
+  
+      # Definimos la matriz de vision
+      .MATRIZ
+      [
+       .FILAS 1
+       .COLUMNAS 6
+      ]     
+ 
+      .DRAW_PARAMS
+      [
+        .X 0 .Y 0
+        .CELL_XSPACE 3 .CELL_YSPACE 0 
+        .SLIDER_XSPACE 10
+        .OBJ_WIDTH 32 .OBJ_HEIGHT 45
+      ]         
+     
+      .TOOL_TIP 
+      [ 
+        %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+      ]
+            	     
+      .PRIORITY_BASE 214  		
+    ]
+  	
+    # Los iconos insertados se podran seleccionar con el cursor
+    .AUTO_SELECCION FALSE
+
+    # Desplazamientos
+    .DX 82 .DY 45
+  ]   
+   
+] # ~ICONOS_MANDO   
+
+.ICONOS_ACUARTELADAS
+[
+  #.FONDO
+  #[
+  #  .FILE "Game/UI/ModeloGestion/InformacionEjercito/MenuInformacionEjercitos.tga"
+  #  .X 0 .Y 0 .U 1 .V 773 .SX 308 .SY 107 
+  #  .ALPHA TRUE .PRIORITY 3
+  #]
+  
+  .ICONO_DX -8 .ICONO_DY 0
+  
+  .CREAR_ZONA_SENSIBLE_ICONO FALSE
+
+  .TEXTO_NOMBRE
+  [
+    .X 0 .Y 0 .SX 226 .SY 42 .DX 77 .DY 1 .ALIGN CENTER
+    .TEXT [ .FONT "Fonts/Times12.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+  ]    
+  .TEXTO_NOMBRE_DISABLE
+  [
+    .X 0 .Y 0 .SX 226 .SY 42 .DX 77 .DY 1 .ALIGN CENTER  
+    .TEXT [ .FONT "Fonts/Times12.fnt" .COLOR [ .R 150 .G 150 .B 150 ] ]
+   
+  ]  
+      
+  .TEXTO_PROVINCIA
+  [
+    .X 0 .Y 0 .SX 226 .SY 41 .DX 77 .DY 26 .ALIGN CENTER     
+    .TEXT [ .FONT "Fonts/Times12.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+   
+  ]        
+  .TEXTO_PROVINCIA_DISABLE
+  [
+    .X 0 .Y 0 .SX 226 .SY 41 .DX 77 .DY 26 .ALIGN CENTER      
+    .TEXT [ .FONT "Fonts/Times12.fnt" .COLOR [ .R 150 .G 150 .B 150 ] ]
+   
+  ]        
+  
+  .MATRIZ_TROPAS
+  [
+   	.MATRIZ_ICONOS
+  	[
+      .CENTER_ICONS FALSE
+  
+      # Definimos la matriz de vision
+      .MATRIZ
+      [
+       .FILAS 1
+       .COLUMNAS 6
+      ]     
+ 
+      .DRAW_PARAMS
+      [
+        .X 0 .Y 0
+        .CELL_XSPACE 3 .CELL_YSPACE 0 
+        .SLIDER_XSPACE 10
+        .OBJ_WIDTH 32 .OBJ_HEIGHT 45
+      ]         
+     
+      .TOOL_TIP 
+      [ 
+        %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+      ]
+            	     
+      .PRIORITY_BASE 214  		
+    ]
+  	
+    # Los iconos insertados se podran seleccionar con el cursor
+    .AUTO_SELECCION FALSE
+
+    # Desplazamientos
+    .DX 82 .DY 45
+  ]   
+   
+] # ~ICONOS_ACUARTELADAS
+  
+##################
+#TROPAS CON MANDOS
+.MATRIZ_ICONOS_MANDOS
+[
+ .CENTER_ICONS FALSE
+
+ # Definimos la matriz de vision
+ .MATRIZ
+ [
+  .FILAS 3
+  .COLUMNAS 1
+ ]     
+ 
+ .DRAW_PARAMS
+ [
+  .X 199 #antes 75
+  .Y 192
+  .CELL_XSPACE 4 
+  .CELL_YSPACE 1 
+  .SLIDER_XSPACE 1
+  .OBJ_WIDTH 308 
+  .OBJ_HEIGHT 99 
+ ]         
+     
+ .PRIORITY_BASE 210  	
+] 
+
+##################
+#REFUERZOS
+.MATRIZ_ICONOS_REFUERZOS
+[
+ .CENTER_ICONS FALSE
+
+ # Definimos la matriz de vision
+ .MATRIZ
+ [
+  .FILAS 1
+  .COLUMNAS 1
+ ]     
+ 
+ .DRAW_PARAMS
+ [
+  .X 365 #antes 75
+  .Y 508
+  .CELL_XSPACE 4 
+  .CELL_YSPACE 1 
+  .SLIDER_XSPACE 1
+  .OBJ_WIDTH 308 
+  .OBJ_HEIGHT 99 
+ ]         
+     
+ .PRIORITY_BASE 210  	
+] 
+
+##################
+#DEFENSORES
+.MATRIZ_ICONOS_DEFENSORES
+[
+ .CENTER_ICONS FALSE
+
+ # Definimos la matriz de vision
+ .MATRIZ
+ [
+  .FILAS 3
+  .COLUMNAS 1
+ ]     
+ 
+ .DRAW_PARAMS
+ [
+  .X 527 #antes 75
+  .Y 192
+  .CELL_XSPACE 4 
+  .CELL_YSPACE 1 
+  .SLIDER_XSPACE 1
+  .OBJ_WIDTH 308 
+  .OBJ_HEIGHT 99 
+ ]         
+     
+ .PRIORITY_BASE 210  	
+] 
+
+ .CONTROLES
+ [
+   # ---Controles interactivos o dinámicos
+   # Botón "Objetivos"
+   [
+     .TIPO UIC_BOTONTEXTO .ID 'BTOB'
+     .PARAMS
+     [
+       .TEXT LTEXT_UI_GESTIONMAPA_DLG_CONFLICTO_BTN_OBJETIVOS
+       .FONT "Fonts/Times12.fnt"
+
+       .COMPORTAMIENTO SIMPLE      
+       .SOLTADO [ .COLOR [ .R 0 .G 0 .B 0  ] ] 
+       .SELECCIONADO [ .COLOR [ .R 0 .G 0 .B 0  ] ] 
+       .PULSADO [ .COLOR [ .R 0 .G 0 .B 0  ]  ]
+       .CENTER_AREA [ .X1 0 .Y1 -5 .X2 139 .Y2 39 ]
+        .FONDO
+        [
+          .X 275 .Y 52
+          .SX 139 .SY 39
+          .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 113 .V 329 ]
+          .DISABLE [.FILE "Game/UI/Comun/ControlesStandard.tga" .U 255  .V 329 ]
+          .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 113  .V 375 ]
+          .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 255  .V 375 ]
+          .ALPHA TRUE
+          .PRIORITY 211
+        ]
+       
+       .IDSELECTSOUND "S_FXUI_CLICKBUTTON"           
+       .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"         
+     ]
+   ]    
+   
+   # Texto de número de unidades atacantes
+   [
+     .TIPO UIC_TEXT .ID 'UATX'
+     .PARAMS
+     [
+       .TEXT " "
+       .FONT "Fonts/MonotypeCorsiva15.fnt"
+       .COLOR [ .R 255 .G 255 .B 255 ]    
+       .X 344 .Y 148
+       .ALIGN CENTER
+     ]     
+   ]    
+   
+   # Texto de número de unidades defensoras
+   [
+     .TIPO UIC_TEXT .ID 'UDTX'
+     .PARAMS
+     [
+       .TEXT " "
+       .FONT "Fonts/MonotypeCorsiva15.fnt"
+       .COLOR [ .R 255 .G 255 .B 255 ]    
+       .X 800 .Y 148
+       .ALIGN CENTER
+     ]     
+   ]   
+   
+   # Texto de número de tropas de refuerzos
+   [
+     .TIPO UIC_TEXT .ID 'RETX'
+     .PARAMS
+     [
+       .TEXT " "
+       .FONT "Fonts/MonotypeCorsiva15.fnt"
+       .COLOR [ .R 0 .G 0 .B 0 ]    
+       .X 585 .Y 432
+       .ALIGN CENTER
+     ]     
+   ]   
+
+   # Texto de como de equilibradas estan las fuerzas
+   [
+     .TIPO UIC_TEXT .ID 'EQTX'
+     .PARAMS
+     [
+       .TEXT ""
+       .FONT "Fonts/Times12.fnt"
+       .COLOR [ .R 255 .G 255 .B 255 ]    
+       .X 503 .Y 155
+       .ALIGN CENTER
+     ]     
+   ]   
+   # Botón de Retirada
+   [
+     .TIPO UIC_BOTONTEXTO .ID 'BTDC'
+     .PARAMS
+     [
+       .TEXT LTEXT_UI_GESTIONMAPA_DLG_CONFLICTO_RETIRADA
+       .FONT "Fonts/Times12.fnt"
+       .COMPORTAMIENTO SIMPLE      
+       .SOLTADO [ .COLOR [ .R 0 .G 0 .B 0  ] ] 
+       .SELECCIONADO [ .COLOR [ .R 0 .G 0 .B 0  ] ] 
+       .PULSADO [ .COLOR [ .R 0 .G 0 .B 0  ]  ]
+       .CENTER_AREA [ .X1 0 .Y1 -5 .X2 139 .Y2 39 ]
+        .FONDO
+        [
+          .X 476 .Y 628
+          .SX 139 .SY 39
+          .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 113 .V 329 ]
+          .DISABLE [.FILE "Game/UI/Comun/ControlesStandard.tga" .U 255  .V 329 ]
+          .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 113  .V 375 ]
+          .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 255  .V 375 ]
+          .ALPHA TRUE
+          .PRIORITY 211
+        ]
+
+       .IDSELECTSOUND "S_FXUI_CLICKBUTTON"                    
+       .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"
+     ]
+   ]
+   
+   # ---Controles estáticos no interactivos
+   # texto "Atacante"
+   [
+    .TIPO UIC_TEXT .ID 'ATTX'
+    .PARAMS
+    [
+      .TEXT LTEXT_UI_GESTIONMAPA_DLG_CONFLICTO_ATACANTE
+      .FONT "Fonts/Times14.fnt"
+      .COLOR [ .R 255 .G 255 .B 255 ]    
+      .X 278 .Y 105 
+      .ALIGN CENTER
+    ]     
+   ]
+   # texto "Defensor"
+   [
+     .TIPO UIC_TEXT .ID 'DETX'
+     .PARAMS
+     [
+       .TEXT LTEXT_UI_GESTIONMAPA_DLG_CONFLICTO_DEFENSOR
+      .FONT "Fonts/Times14.fnt"
+      .COLOR [ .R 255 .G 255 .B 255 ]   
+       .X 734 .Y 105 
+       .ALIGN CENTER
+     ]     
+   ]
+
+   # texto "Total" de atacante
+   [
+     .TIPO UIC_TEXT .ID 'TOTX'
+     .PARAMS
+     [
+       .TEXT LTEXT_UI_GESTIONMAPA_DLG_CONFLICTO_TOTAL
+       .FONT "Fonts/Times12.fnt"
+       .COLOR [ .R 255 .G 255 .B 255 ]    
+       .X 278 .Y 145
+       .ALIGN CENTER
+     ]     
+   ]
+   # texto "Total" de defensor
+   [
+     .TIPO UIC_TEXT .ID 'TDTX'
+     .PARAMS
+     [
+       .TEXT LTEXT_UI_GESTIONMAPA_DLG_CONFLICTO_TOTAL
+       .FONT "Fonts/Times12.fnt"
+       .COLOR [ .R 255 .G 255 .B 255 ]    
+       .X 734 .Y 145
+       .ALIGN CENTER
+     ]     
+   ]               
+   # Texto ¿Desea ordenar personalmente el combate?
+   [
+     .TIPO UIC_TEXT .ID 'CTXT'
+     .PARAMS
+     [
+       .TEXT LTEXT_UI_GESTIONMAPA_DLG_CONFLICTO_BODY
+       .FONT "Fonts/Times14.fnt"
+       .COLOR [ .R 255 .G 255 .B 255 ]    
+       .X 500 .Y 635
+       .ALIGN CENTER
+     ]     
+   ]
+ ]
+              
+ # Se definen los botones
+ .BOTONES
+ [           
+  # Info de centrado automatico
+  .CENTER FALSE           
+  
+  # Lista de Botones
+  .LIST
+  [
+   [
+    .TIPO UIC_BOTONTEXTO
+    .FONT "Fonts/Times12.fnt"
+    .TEXT LTEXT_UI_GESTIONMAPA_DLG_CONFLICTO_YES
+     .COMPORTAMIENTO SIMPLE      
+     .SOLTADO [ .COLOR [ .R 0 .G 0 .B 0  ] ] 
+     .SELECCIONADO [ .COLOR [ .R 0 .G 0 .B 0  ] ] 
+     .PULSADO [ .COLOR [ .R 0 .G 0 .B 0  ]  ]
+     .CENTER_AREA [ .X1 0 .Y1 -5 .X2 139 .Y2 39 ]
+      .FONDO
+      [
+        .X 76 .Y 628
+        .SX 139 .SY 39
+        .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 113 .V 329 ]
+        .DISABLE [.FILE "Game/UI/Comun/ControlesStandard.tga" .U 255  .V 329 ]
+        .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 113  .V 375 ]
+        .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 255  .V 375 ]
+        .ALPHA TRUE
+        .PRIORITY 211
+      ]    
+        
+    .IDSELECTSOUND "S_FXUI_CLICKBUTTON"                    
+    .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"
+    
+    .ACEPTAR TRUE
+               
+    .KEY [ .TECLA KEY_Y .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ]                                                              
+   ]                   
+              
+   [
+    .TIPO UIC_BOTONTEXTO
+    .FONT "Fonts/Times12.fnt"
+    .TEXT LTEXT_UI_GESTIONMAPA_DLG_CONFLICTO_NO
+     .COMPORTAMIENTO SIMPLE      
+     .SOLTADO [ .COLOR [ .R 0 .G 0 .B 0  ] ] 
+     .SELECCIONADO [ .COLOR [ .R 0 .G 0 .B 0  ] ] 
+     .PULSADO [ .COLOR [ .R 0 .G 0 .B 0  ]  ]
+     .CENTER_AREA [ .X1 0 .Y1 -5 .X2 139 .Y2 39 ]
+      .FONDO
+      [
+        .X 276 .Y 628
+        .SX 139 .SY 39
+        .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 113 .V 329 ]
+        .DISABLE [.FILE "Game/UI/Comun/ControlesStandard.tga" .U 255  .V 329 ]
+        .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 113  .V 375 ]
+        .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 255  .V 375 ]
+        .ALPHA TRUE
+        .PRIORITY 211
+      ]    
+
+    .IDSELECTSOUND "S_FXUI_CLICKBUTTON"                        
+    .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"
+    
+    .CANCELAR TRUE
+               
+    .KEY [ .TECLA KEY_N .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ]
+   ]
+              
+  ] # ~ LIST
+ ] # ~ BOTONES

@@ -1,0 +1,115 @@
+#####################################################################################################
+# Representación de efectivos en Mini-Mapa
+#####################################################################################################
+
+[
+  .KEY JUGADOR_ATACANTE_DEFECTO
+  .PARAMS
+  [
+    .FILE "Game\UI\ModeloBatalla\InterfazPaises\Inglaterra\RepresentacionTropas.tga" .U 1 .V 10 .ALPHA TRUE
+    .SX 7
+    .SY 7
+  ]
+]
+
+[
+  .KEY JUGADOR_ATACANTE_MOVIENDOSE
+  .PARAMS
+  [
+    .FILE "Game\UI\ModeloBatalla\InterfazPaises\Inglaterra\RepresentacionTropas.tga" .U 10 .V 10 .ALPHA TRUE
+    .SX 7
+    .SY 7
+  ]
+]
+
+[
+  .KEY JUGADOR_ATACANTE_COMBATE
+  .PARAMS
+  [
+    .FILE "Game\UI\ModeloBatalla\InterfazPaises\Inglaterra\RepresentacionTropas.tga" .U 19 .V 10 .ALPHA TRUE
+    .SX 7
+    .SY 7
+  ]
+]
+
+[
+  .KEY JUGADOR_ATACANTE_SELECCIONADO
+  .PARAMS
+  [
+    .FILE "Game\UI\ModeloBatalla\InterfazPaises\Inglaterra\RepresentacionTropas.tga" .U 28 .V 10 .ALPHA TRUE
+    .SX 7
+    .SY 7
+  ]
+]
+
+[
+  .KEY JUGADOR_DEFENSOR_DEFECTO
+  .PARAMS
+  [
+    .FILE "Game\UI\ModeloBatalla\InterfazPaises\Francia\RepresentacionTropas.tga" .U 1 .V 1 .ALPHA TRUE
+    .SX 7
+    .SY 7
+  ]
+]
+
+[
+  .KEY JUGADOR_DEFENSOR_MOVIENDOSE
+  .PARAMS
+  [
+    .FILE "Game\UI\ModeloBatalla\InterfazPaises\Francia\RepresentacionTropas.tga" .U 10 .V 1 .ALPHA TRUE
+    .SX 7
+    .SY 7
+  ]
+]
+
+[
+  .KEY JUGADOR_DEFENSOR_COMBATE
+  .PARAMS
+  [
+    .FILE "Game\UI\ModeloBatalla\InterfazPaises\Francia\RepresentacionTropas.tga" .U 19 .V 1 .ALPHA TRUE
+    .SX 7
+    .SY 7
+  ]
+]
+
+[
+  .KEY JUGADOR_DEFENSOR_SELECCIONADO
+  .PARAMS
+  [
+    .FILE "Game\UI\ModeloBatalla\InterfazPaises\Francia\RepresentacionTropas.tga" .U 28 .V 1 .ALPHA TRUE
+    .SX 7
+    .SY 7
+  ]
+]
+
+
+
+[ .KEY JUG_FRANCIA_DEFECTO      .PARAMS [ .U 1  .V 1 .SX 7 .SY 7 .ALPHA TRUE .FILE "Game\UI\ModeloBatalla\MinBattleMap\MinBattleMapIconos.tga" ] ]
+[ .KEY JUG_FRANCIA_MOVIENDOSE   .PARAMS [ .U 10 .V 1 .SX 7 .SY 7 .ALPHA TRUE .FILE "Game\UI\ModeloBatalla\MinBattleMap\MinBattleMapIconos.tga" ] ]
+[ .KEY JUG_FRANCIA_COMBATE      .PARAMS [ .U 19 .V 1 .SX 7 .SY 7 .ALPHA TRUE .FILE "Game\UI\ModeloBatalla\MinBattleMap\MinBattleMapIconos.tga" ] ]
+[ .KEY JUG_FRANCIA_SELECCIONADO .PARAMS [ .U 28 .V 1 .SX 7 .SY 7 .ALPHA TRUE .FILE "Game\UI\ModeloBatalla\MinBattleMap\MinBattleMapIconos.tga" ] ]
+
+[ .KEY JUG_INGLATERRA_DEFECTO      .PARAMS [ .U 1  .V 10 .SX 7 .SY 7 .ALPHA TRUE .FILE "Game\UI\ModeloBatalla\MinBattleMap\MinBattleMapIconos.tga" ] ]
+[ .KEY JUG_INGLATERRA_MOVIENDOSE   .PARAMS [ .U 10 .V 10 .SX 7 .SY 7 .ALPHA TRUE .FILE "Game\UI\ModeloBatalla\MinBattleMap\MinBattleMapIconos.tga" ] ]
+[ .KEY JUG_INGLATERRA_COMBATE      .PARAMS [ .U 19 .V 10 .SX 7 .SY 7 .ALPHA TRUE .FILE "Game\UI\ModeloBatalla\MinBattleMap\MinBattleMapIconos.tga" ] ]
+[ .KEY JUG_INGLATERRA_SELECCIONADO .PARAMS [ .U 28 .V 10 .SX 7 .SY 7 .ALPHA TRUE .FILE "Game\UI\ModeloBatalla\MinBattleMap\MinBattleMapIconos.tga" ] ]
+
+[ .KEY JUG_AUSTRIA_DEFECTO      .PARAMS [ .U 1  .V 19 .SX 7 .SY 7 .ALPHA TRUE .FILE "Game\UI\ModeloBatalla\MinBattleMap\MinBattleMapIconos.tga" ] ]
+[ .KEY JUG_AUSTRIA_MOVIENDOSE   .PARAMS [ .U 10 .V 19 .SX 7 .SY 7 .ALPHA TRUE .FILE "Game\UI\ModeloBatalla\MinBattleMap\MinBattleMapIconos.tga" ] ]
+[ .KEY JUG_AUSTRIA_COMBATE      .PARAMS [ .U 19 .V 19 .SX 7 .SY 7 .ALPHA TRUE .FILE "Game\UI\ModeloBatalla\MinBattleMap\MinBattleMapIconos.tga" ] ]
+[ .KEY JUG_AUSTRIA_SELECCIONADO .PARAMS [ .U 28 .V 19 .SX 7 .SY 7 .ALPHA TRUE .FILE "Game\UI\ModeloBatalla\MinBattleMap\MinBattleMapIconos.tga" ] ]
+
+[ .KEY JUG_PRUSIA_DEFECTO      .PARAMS [ .U 1  .V 28 .SX 7 .SY 7 .ALPHA TRUE .FILE "Game\UI\ModeloBatalla\MinBattleMap\MinBattleMapIconos.tga" ] ]
+[ .KEY JUG_PRUSIA_MOVIENDOSE   .PARAMS [ .U 10 .V 28 .SX 7 .SY 7 .ALPHA TRUE .FILE "Game\UI\ModeloBatalla\MinBattleMap\MinBattleMapIconos.tga" ] ]
+[ .KEY JUG_PRUSIA_COMBATE      .PARAMS [ .U 19 .V 28 .SX 7 .SY 7 .ALPHA TRUE .FILE "Game\UI\ModeloBatalla\MinBattleMap\MinBattleMapIconos.tga" ] ]
+[ .KEY JUG_PRUSIA_SELECCIONADO .PARAMS [ .U 28 .V 28 .SX 7 .SY 7 .ALPHA TRUE .FILE "Game\UI\ModeloBatalla\MinBattleMap\MinBattleMapIconos.tga" ] ]
+
+[ .KEY JUG_RUSIA_DEFECTO      .PARAMS [ .U 1  .V 37 .SX 7 .SY 7 .ALPHA TRUE .FILE "Game\UI\ModeloBatalla\MinBattleMap\MinBattleMapIconos.tga" ] ]
+[ .KEY JUG_RUSIA_MOVIENDOSE   .PARAMS [ .U 10 .V 37 .SX 7 .SY 7 .ALPHA TRUE .FILE "Game\UI\ModeloBatalla\MinBattleMap\MinBattleMapIconos.tga" ] ]
+[ .KEY JUG_RUSIA_COMBATE      .PARAMS [ .U 19 .V 37 .SX 7 .SY 7 .ALPHA TRUE .FILE "Game\UI\ModeloBatalla\MinBattleMap\MinBattleMapIconos.tga" ] ]
+[ .KEY JUG_RUSIA_SELECCIONADO .PARAMS [ .U 28 .V 37 .SX 7 .SY 7 .ALPHA TRUE .FILE "Game\UI\ModeloBatalla\MinBattleMap\MinBattleMapIconos.tga" ] ]
+
+[ .KEY JUG_NEUTRO_DEFECTO      .PARAMS [ .U 1  .V 46 .SX 7 .SY 7 .ALPHA TRUE .FILE "Game\UI\ModeloBatalla\MinBattleMap\MinBattleMapIconos.tga" ] ]
+[ .KEY JUG_NEUTRO_MOVIENDOSE   .PARAMS [ .U 10 .V 46 .SX 7 .SY 7 .ALPHA TRUE .FILE "Game\UI\ModeloBatalla\MinBattleMap\MinBattleMapIconos.tga" ] ]
+[ .KEY JUG_NEUTRO_COMBATE      .PARAMS [ .U 19 .V 46 .SX 7 .SY 7 .ALPHA TRUE .FILE "Game\UI\ModeloBatalla\MinBattleMap\MinBattleMapIconos.tga" ] ]
+[ .KEY JUG_NEUTRO_SELECCIONADO .PARAMS [ .U 28 .V 46 .SX 7 .SY 7 .ALPHA TRUE .FILE "Game\UI\ModeloBatalla\MinBattleMap\MinBattleMapIconos.tga" ] ]

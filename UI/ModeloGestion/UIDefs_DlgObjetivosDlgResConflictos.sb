@@ -1,0 +1,112 @@
+#############################################################################################
+# Ventana (dialogo) que muestra los objetivos del mapa actual en el diálogo de resolución de conflictos
+#############################################################################################
+
+  .MODAL  TRUE
+  .CENTER FALSE
+  .DEPTH 4
+        
+  .FONDO
+  [
+    .X 56 .Y 120
+    .FILE "Game/UI/ModeloGestion/UIDefsMsgBoxNotificaciones/PNotificacionEdificio0020.tga"      
+    .U 0 .V 0 .SX 512 .SY 360 .ALPHA TRUE .PRIORITY 250
+  ]           
+  
+ # Titulo 
+ .CAPTION
+ [
+  .XMARGEN 98 .YMARGEN 58
+  .HEIGHT 25
+  .TITLE 
+  [ 
+   .ALINEACION CENTER 
+   .TEXT " " 
+   .FONT "Fonts/Times12.fnt" 
+   .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+  
+  .MOVIBLE FALSE
+ ]
+  
+  # Definición del botón de ACEPTAR
+  .BOTONES
+  [
+    # Info de centrado automatico
+    .CENTER
+    [                
+     .YMARGEN 310
+     .XSPACE  0        
+    ]
+    
+    # Lista de Botones
+    .LIST
+    [
+      [
+       .TIPO UIC_BOTONTEXTO
+       
+       .ACEPTAR TRUE
+       
+       .COMPORTAMIENTO SIMPLE
+       
+       .SOLTADO [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+       .SELECCIONADO [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+       .PULSADO [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+       
+       .TEXT LTEXT_UI_OK
+       
+       .FONT "Fonts/Times12.fnt"
+         
+       .FONDO
+       [ 
+         .SOLTADO [ .FILE "Game/UI/ModeloGestion/UIDefsMsgBoxNotificaciones/NotificacionEdificios.tga" .U 92 .V 89 ]
+         .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/UIDefsMsgBoxNotificaciones/NotificacionEdificios.tga" .U 92 .V 129 ]
+         .PULSADO [ .FILE "Game/UI/ModeloGestion/UIDefsMsgBoxNotificaciones/NotificacionEdificios.tga" .U 92 .V 169 ]
+         .SX 136 .SY 37
+         .ALPHA TRUE
+       ]              
+                         
+       .CENTER_AREA [ .X1 0 .Y1 0 .X2 136 .Y2 37 ]
+       
+       .IDSELECTSOUND "S_FXUI_CLICKBUTTON"
+       .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"  
+       
+       .KEY [ .TECLA LKEY_GENERIC_MB_OK_KEY .EVENTOS [ KEY_DOWN KEY_UP ] ]           
+      ]
+      
+    ] # ~ LIST
+  ] # ~ BOTONES         
+    
+  # Los controles que lleva son texto, principalmente
+  .CONTROLES
+  [
+    # Aqui se muestra el texto del Objetivo
+    [
+      .TIPO UIC_WRAPTEXT .ID 'TXOB'
+      .PARAMS
+      [     
+        .TEXT
+        [
+          .FONT "Fonts/Times12.fnt" 
+          .COLOR [ .R 255 .G 255 .B 255 ]
+        ]
+       
+        .X 80 .Y 113 .SX 372 .SY 250
+        .ALIGN LEFT
+        .MSG  " "        
+	      .SLIDER_VERTICAL [ .STYLE DEFAULT_SLIDER_VERTICAL  ]         
+      ]
+    ]
+    
+   [
+     .TIPO UIC_BITMAP .ID 'BMCP'
+     .PARAMS
+     [
+       .PRIORITY 203
+       .X 98 .Y 52
+       .FILE "Game/UI/ModeloGestion/UIDefsMsgBoxNotificaciones/NotificacionEdificios.tga" .ALPHA TRUE 
+       .U 10 .V 14 .SX 310 .SY 40 
+     ]
+   ]    
+  ] # ~ CONTROLES
+  

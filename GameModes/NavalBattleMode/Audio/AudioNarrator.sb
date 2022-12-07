@@ -1,0 +1,65 @@
+###-------------------------------------------------------------------------------------
+### AUDIO
+###-------------------------------------------------------------------------------------
+.AUDIO 
+[
+  #===============================================================================
+  # S_NAR_NAVAL_WINNING
+  #===============================================================================
+  [ 
+    .IDNAME "S_NAR_NAVAL_WINNING"
+    .PATH [ "Narrator/NAV_Nar_winning_menwinning.ogg"        "Narrator/NAV_Nar_winning_navywinning.ogg" ]
+    .TYPE VOICE .GENERIC FALSE .3D FALSE .TRANSLATABLE TRUE .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_NAR_NAVAL_WINNING_SLAUGHTER"
+    .PATH [ "Narrator/NAV_Nar_winning_forcesslaughtering.ogg"     "Narrator/NAV_Nar_winning_forcesdestroying.ogg" ]
+    .TYPE VOICE .GENERIC FALSE .3D FALSE .TRANSLATABLE TRUE .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_NAR_NAVAL_LOSING
+  #===============================================================================
+  [ 
+    .IDNAME "S_NAR_NAVAL_LOSING"
+    .PATH [ "Narrator/NAV_Nar_losing_menlosing.ogg" "Narrator/NAV_Nar_losing_navylosing.ogg" ]
+    .TYPE VOICE .GENERIC FALSE .3D FALSE .TRANSLATABLE TRUE .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_NAR_NAVAL_LOSING_SLAUGHTER"
+    .PATH [ "Narrator/NAV_Nar_losing_fleetbeingdestroyed.ogg"        "Narrator/NAV_Nar_losing_forcesannihilated.ogg" ]
+    .TYPE VOICE .GENERIC FALSE .3D FALSE .TRANSLATABLE TRUE .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_NAR_NAVAL_EVEN
+  #===============================================================================
+  [ 
+    .IDNAME "S_NAR_NAVAL_EVEN"
+    .PATH [ "Narrator/NAV_Nar_even_encountereven.ogg"     "Narrator/NAV_Nar_even_engagementyet.ogg" 
+            "Narrator/NAV_Nar_even_naviesmatched.ogg"  "Narrator/NAV_Nar_even_outcomehangs.ogg" ]
+    .TYPE VOICE .GENERIC FALSE .3D FALSE .TRANSLATABLE TRUE .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_NAR_NAVAL_ALMOST_WIN
+  #===============================================================================
+  [ 
+    .IDNAME "S_NAR_NAVAL_ALMOST_WIN"
+    .PATH [ "Narrator/NAV_Nar_almostwon_fleetannihilate.ogg"     "Narrator/NAV_Nar_almostwon_navyabouttowin.ogg" 
+            "Narrator/NAV_Nar_almostwon_soontriumphant.ogg"  "Narrator/NAV_Nar_almostwon_victorysoon.ogg" ]
+    .TYPE VOICE .GENERIC FALSE .3D FALSE .TRANSLATABLE TRUE .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_NAR_NAVAL_ALMOST_LOST
+  #===============================================================================
+  [ 
+    .IDNAME "S_NAR_NAVAL_ALMOST_LOST"
+    .PATH [ "Narrator/NAV_Nar_almostlost_abouttosuffer.ogg"     "Narrator/NAV_Nar_almostlost_defeatsoon.ogg" 
+            "Narrator/NAV_Nar_almostlost_fleetsoonannihilated.ogg"  "Narrator/NAV_Nar_almostlost_fleetsoonnomore.ogg" ]
+    .TYPE VOICE .GENERIC FALSE .3D FALSE .TRANSLATABLE TRUE .POLYPHONY 1
+  ]
+  
+
+] ### !AUDIO

@@ -1,0 +1,68 @@
+ #############################################################################################
+ # Ventana con la informacion de las provincias militarmente visibles por el jugador.
+ # La ventana sera NO MODAL y MOVIBLE y se actualizará a cada turno para indicar que jugador
+ # posee el turno en cada momento.
+ #############################################################################################
+ 
+ # Se define la ventana                   
+ .ACTIVO FALSE
+ .CENTER TRUE
+ .MODAL FALSE
+ 
+ .FONDO_TILEADO 
+ [
+  .MODO_TILEADO CENTRAL  
+  .IMG_CENTRAL [ .FILE "Game/UI/ModeloBatalla/DummyDialogMessageBoxBatalla.tga" .U 44 .V 47 .SX 39 .SY 42 .ALPHA TRUE .PRIORITY 0 ]
+  .X 312 .Y 100 
+  .ANCHO 200
+  .ALTO  530
+ ]              
+  
+ # Titulo 
+ .CAPTION
+ [
+  .XMARGEN 5 .YMARGEN 4
+  .HEIGHT 23
+  .TITLE 
+  [ 
+   .ALINEACION CENTER 
+   .TEXT "Jugadores por Turno" 
+   .FONT "Fonts/Default.fnt" 
+   .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+  .MOVIBLE TRUE
+ ]        
+ 
+  # Se definen los botones
+ .BOTONES
+ [           
+  # Info de centrado automatico
+  .CENTER
+  [                
+   .YMARGEN 240
+   .XSPACE  0          
+  ]                        
+ 
+  # Lista de Botones
+  #.LIST
+  #[   
+   #[
+    #%Game/UI/Comun/UIDefs_DefaultBtnTile.sb    
+   #]
+   
+  #] # ~ LIST           
+ ] # ~ BOTONES           
+ 
+ # Controles
+ .CONTROLES
+ [ 
+  [ .TIPO UIC_LISTBOXTEXT .ID 'DLBG'
+    .PARAMS
+    [
+     .PRIORITY 0
+     .X 5 .Y 33 .SX 189 .SY 490  
+     .TEXT [ .FONT "Fonts/Times12.fnt" .SCALE 0.8 .COLOR [ .R 255 .G 225 .B 225 ] ]  
+     .SLIDER_VERTICAL [ .SUBTIPO "Game/UI/Comun/UIDefs_DefinicionSliderVertical.sb" ]            
+    ]
+   ]   
+ ] 

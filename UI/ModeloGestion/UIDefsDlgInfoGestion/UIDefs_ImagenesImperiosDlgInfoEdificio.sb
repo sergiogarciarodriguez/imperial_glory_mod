@@ -1,0 +1,129 @@
+[
+  .TIPO UIC_BOTONTEXTO .ID 'BTFR'
+  .PARAMS
+  [
+    .COMPORTAMIENTO MANUAL
+    .FONDO
+    [
+      .X 137 .Y 468
+      .SX 33 .SY 18
+      .ALPHA TRUE
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/UIDefsDlgInfoGestion/InformacionTerritorios.tga" .U 58 .V 611 ]
+      .PULSADO [ .FILE "Game/UI/ModeloGestion/UIDefsDlgInfoGestion/InformacionTerritorios.tga" .U 15 .V 611 ]
+      .PRIORITY 204
+    ]    
+    
+    .TOOL_TIP
+    [ 
+      .TEXT LTEXT_JUGADOR_FRANCIA
+      .X 32 .Y 32
+        
+      
+      .STYLE DEFAULT_TOOLTIP 
+    ]
+  ]
+]
+
+[
+  .TIPO UIC_BOTONTEXTO .ID 'BTGB'
+  .PARAMS
+  [
+    .COMPORTAMIENTO MANUAL
+    .FONDO
+    [
+      .X 137 .Y 491
+      .SX 33 .SY 18
+      .ALPHA TRUE
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/UIDefsDlgInfoGestion/InformacionTerritorios.tga" .U 58 .V 634 ]
+      .PULSADO [ .FILE "Game/UI/ModeloGestion/UIDefsDlgInfoGestion/InformacionTerritorios.tga" .U 15 .V 634 ]
+      .PRIORITY 204
+    ]    
+    
+    .TOOL_TIP
+    [ 
+      .TEXT LTEXT_JUGADOR_GRAN_BRETANYA
+      .X 32 .Y 32
+        
+      
+      .STYLE DEFAULT_TOOLTIP 
+    ]    
+  ]
+]
+
+[
+  .TIPO UIC_BOTONTEXTO .ID 'BTAU'
+  .PARAMS
+  [
+    .COMPORTAMIENTO MANUAL
+    .FONDO
+    [
+      .X 137 .Y 514
+      .SX 33 .SY 18
+      .ALPHA TRUE
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/UIDefsDlgInfoGestion/InformacionTerritorios.tga" .U 58 .V 657 ]
+      .PULSADO [ .FILE "Game/UI/ModeloGestion/UIDefsDlgInfoGestion/InformacionTerritorios.tga" .U 15 .V 657 ]
+      .PRIORITY 204
+    ]    
+    
+    .TOOL_TIP
+    [ 
+      .TEXT LTEXT_JUGADOR_AUSTRIA
+      .X 32 .Y 32
+        
+      
+      .STYLE DEFAULT_TOOLTIP 
+    ]    
+  ]
+]
+
+[
+  .TIPO UIC_BOTONTEXTO .ID 'BTRU'
+  .PARAMS
+  [
+    .COMPORTAMIENTO MANUAL
+    .FONDO
+    [
+      .X 137 .Y 537
+      .SX 33 .SY 18
+      .ALPHA TRUE
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/UIDefsDlgInfoGestion/InformacionTerritorios.tga" .U 58 .V 680 ]
+      .PULSADO [ .FILE "Game/UI/ModeloGestion/UIDefsDlgInfoGestion/InformacionTerritorios.tga" .U 15 .V 680 ]
+      .PRIORITY 204
+    ]    
+    
+    .TOOL_TIP
+    [ 
+      .TEXT LTEXT_JUGADOR_RUSIA
+      .X 32 .Y 32
+        
+      
+      .STYLE DEFAULT_TOOLTIP 
+    ]    
+  ]
+]
+
+[
+  .TIPO UIC_BOTONTEXTO .ID 'BTPR'
+  .PARAMS
+  [
+    .COMPORTAMIENTO MANUAL
+    .FONDO
+    [
+      .X 137 .Y 560
+      .SX 33 .SY 18
+      .ALPHA TRUE
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/UIDefsDlgInfoGestion/InformacionTerritorios.tga" .U 58 .V 703 ]
+      .PULSADO [ .FILE "Game/UI/ModeloGestion/UIDefsDlgInfoGestion/InformacionTerritorios.tga" .U 15 .V 703 ]
+      .PRIORITY 204
+    ]    
+    
+    .TOOL_TIP
+    [ 
+      .TEXT LTEXT_JUGADOR_PRUSIA
+      .X 32 .Y 32
+        
+      
+      .STYLE DEFAULT_TOOLTIP 
+    ]    
+  ]
+]

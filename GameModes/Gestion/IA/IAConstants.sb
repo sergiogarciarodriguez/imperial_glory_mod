@@ -1,0 +1,17 @@
+###########################################################################################################
+# Constantes globales usadas en la IA
+###########################################################################################################
+
+# Ventana de contingencia para no endeudarnos demasiado como para ser eliminados por estar 
+# en números rojos demasiado tiempo.
+.PORCENTAJE_SEGURIDAD_CREDITO 20.0
+
+# Los siguientes valores indican la proporción de importancia de los diversos factores
+# que se tienen en cuenta a la hora de calcular la preferencia de anexión de un país,
+# ya sea de forma militar o de forma pacífica.
+#   - La anexionabilidad representa la facilidad de anexionar el país en cuestión.
+#     En el caso de anexión pacífica será lo cerca que estemos de anexionarlo por nuestro
+#     grado de relación, y en el caso de anexión militar será lo débil que se ese país.
+#   - La molabilidad representa el enriquecimiento que nos generará el país si lo anexionamos.
+.IMPORTANCIA_ANEXIONABILIDAD  0.7
+.IMPORTANCIA_MOLABILIDAD      0.3

@@ -1,0 +1,68 @@
+################################################################################################
+# En este punto se leeran las reglas que puedan estar asociadas a puntuaciones del juego
+################################################################################################
+
+.PUNTOS_CONSERVAR_CAPITAL             150
+.PUNTOS_CONSERVAR_PROVINCIAS          300
+.PUNTOS_DOMINAR_CAPITAL_IMPERIAL      100
+.PUNTOS_DOMINAR_TERRITORIO_IMPERIAL   60
+.PUNTOS_DOMINAR_CAPITAL_NEUTRAL       50
+.PUNTOS_DOMINAR_TERRITORIO_NEUTRAL    30
+.PUNTOS_QUEST_REALIZADO               50
+.PUNTOS_BANDERAS_CAPTURADAS
+[
+  .PRIMERO 450
+  .SEGUNDO  150
+  .TERCERO  50
+]
+.PUNTOS_PODER_MILITAR
+[
+  .PRIMERO 450
+  .SEGUNDO  150
+  .TERCERO  50
+]
+.PUNTOS_PODER_ECONOMICO
+[
+  .PRIMERO 450
+  .SEGUNDO  150
+  .TERCERO  50
+]
+
+.TIPOS_VICTORIA
+[
+        .PUNTUACIONES
+        [
+                0                                               # Derrota Absoluta
+                251                                               # Derrota
+                501                                              # Empate
+                1001                                              # Pequeña Victoria
+                1751                                              # Victoria Moderada
+                2501                                             # Gran Victoria
+                3551                                             # Victoria Extraordinaria
+                4495                                            # Victoria Máxima
+        ]
+        
+        .TEXTOS_CABECERA
+        [
+                LTEXT_UI_NEWS_FINAL_DERROTA_ABSOLUTA
+                LTEXT_UI_NEWS_FINAL_DERROTA
+                LTEXT_UI_NEWS_FINAL_EMPATE
+                LTEXT_UI_NEWS_FINAL_PEQUENYA_VICTORIA
+                LTEXT_UI_NEWS_FINAL_MODERADA_VICTORIA
+                LTEXT_UI_NEWS_FINAL_GRAN_VICTORIA
+                LTEXT_UI_NEWS_FINAL_EXTRAORDINARIA_VICTORIA
+                LTEXT_UI_NEWS_FINAL_MAXIMA_VICTORIA
+        ]
+
+        .TEXTOS_DESCRIPCION
+        [
+                LTEXT_UI_NEWS_FINAL_DESC_DERROTA_ABSOLUTA
+                LTEXT_UI_NEWS_FINAL_DESC_DERROTA
+                LTEXT_UI_NEWS_FINAL_DESC_EMPATE
+                LTEXT_UI_NEWS_FINAL_DESC_PEQUENYA_VICTORIA
+                LTEXT_UI_NEWS_FINAL_DESC_MODERADA_VICTORIA
+                LTEXT_UI_NEWS_FINAL_DESC_GRAN_VICTORIA
+                LTEXT_UI_NEWS_FINAL_DESC_EXTRAORDINARIA_VICTORIA
+                LTEXT_UI_NEWS_FINAL_DESC_MAXIMA_VICTORIA
+        ]
+]

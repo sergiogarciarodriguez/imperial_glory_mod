@@ -1,0 +1,98 @@
+#############################################################################################
+# Ventana / Dlg de contenido Politico Militar del modelo de gestion
+#############################################################################################
+
+ .MODAL FALSE
+ .CENTER FALSE
+  
+ .FONDO 
+ [   
+  .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga"    
+  #.X 365 .Y 615 .U 144 .V 627 .SX 736 .SY 141 .ALPHA TRUE  
+  .X 140 .Y 595 .U 140 .V 595 .SX 741 .SY 173 .ALPHA TRUE  
+  .PRIORITY 240
+ ]              
+   
+ .CAPTION
+ [
+  .XMARGEN 136 .YMARGEN 8 .HEIGHT 25
+  .TITLE 
+  [ 
+   .ALINEACION CENTER .TEXT "Ventana Contenido" .FONT "Fonts/Times14.fnt" .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+  .MOVIBLE FALSE
+ ]   
+             
+ # Controles
+ .CONTROLES
+ [  
+   [ .TIPO UIC_EDITBOX .ID 'EBNI'
+     .PARAMS
+     [
+       .X 136 .Y 8 .SX 463 .SY 23 .MAX 11 
+       
+       #.DX 228 .DY 7
+       #.ALIGN CENTER
+       .FONT "Fonts/Times14.fnt" 
+       .COLOR [ .R 255 .G 255 .B 255 ]
+       .FONDO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 384 .V 556 ]                 
+       .PRIORITY 150
+       
+       #.CENTER_AREA [ .X1 361 .Y1 6 .X2 457 .Y2 20 ]
+       
+       .SIMPLE TRUE
+     ]
+   ] 
+
+# Visores asociados a los efectivos 
+  [
+   # Visor para los huecos detrás de los efectivos
+   .TIPO UIC_VISORMATRIZCTRLS .ID 'VMEH'
+   .PARAMS [ %Game/UI/ModeloGestion/VentanasAccionContenidoUIDefs/UIDefs_VisorMatrizHuecos.sb ]
+  ]         
+
+  [
+   # Visor para los efectivos
+   .TIPO UIC_VISORMATRIZCTRLS .ID 'VMEF'
+   .PARAMS [ %Game/UI/ModeloGestion/VentanasAccionContenidoUIDefs/UIDefs_VisorEfectivos.sb ]
+  ]         
+
+  [
+   # Visor para los barcos
+   .TIPO UIC_VISORMATRIZCTRLS .ID 'VMBA'
+   .PARAMS [ %Game/UI/ModeloGestion/VentanasAccionContenidoUIDefs/UIDefs_VisorBarcos.sb ]
+  ]
+  
+  # control del visor de edificios por eras
+  [
+    .TIPO UIC_DLGVISOREDIFICIOS .ID 'DLED'
+    .PARAMS [ %Game/UI/ModeloGestion/VentanasAccionContenidoUIDefs/UIDefs_VisorEdificiosEras.sb ]
+  ]
+  
+  ########################################################################
+  # Precargas de texturas para añadir referencias estáticas
+  ########################################################################
+  [
+    .TIPO UIC_STATICREFERENCE .ID 'SR01'
+    .PARAMS 
+    [ 
+      [ .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" ]
+      [ .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" ]
+      [ .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" ]
+    ]
+  ]
+  
+ ] # ~ CONTROLES 
+ 
+  # Cfg para el visor de matriz
+  .CFG_VISOR_EDIFICIOS
+  [
+   .FILAS         1
+   .COLUMNAS      8
+   .CELL_XSPACE   5
+   .CELL_YSPACE   0
+   .SLIDER_XSPACE 17
+   .OBJ_WIDTH     82
+   .OBJ_HEIGHT    102   
+  ]
+  

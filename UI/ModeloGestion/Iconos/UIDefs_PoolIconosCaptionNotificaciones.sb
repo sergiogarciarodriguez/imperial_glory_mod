@@ -1,0 +1,79 @@
+# definiciones para el Pool de captions gráficos de notificaciones de gestión y para el script del servicio de messagebox comunes
+.CAPTION_DEFAULT
+[
+  .KEY CAPTION_DEFAULT
+  .PARAMS
+  [
+    .PRIORITY 203
+    .FILE "Game/UI/ModeloGestion/UIDefsMsgBoxNotificaciones/NotificacionEdificios.tga" .ALPHA TRUE 
+    .U 10 .V 14 .SX 310 .SY 40 
+  ]
+]
+
+.CAPTION_GUERRA
+[
+  .KEY CAPTION_GUERRA
+  .PARAMS
+  [
+    .PRIORITY 203
+    .FILE "Game/UI/ModeloGestion/UIDefsMsgBoxNotificaciones/NotificacionEdificios.tga" .ALPHA TRUE 
+    .U 10 .V 220 .SX 310 .SY 40 
+  ]
+]
+
+.CAPTION_DIPLOMACIA
+[
+  .KEY CAPTION_DIPLOMACIA
+  .PARAMS
+  [
+    .PRIORITY 203
+    .FILE "Game/UI/ModeloGestion/UIDefsMsgBoxNotificaciones/NotificacionEdificios.tga" .ALPHA TRUE 
+    .U 10 .V 264 .SX 310 .SY 40 
+  ]
+]
+   
+   
+.CAPTION_SISTEMA
+[
+  .KEY CAPTION_SISTEMA
+  .PARAMS
+  [
+    .PRIORITY 203
+    .FILE "Game/UI/ModeloGestion/UIDefsMsgBoxNotificaciones/NotificacionEdificios.tga" .ALPHA TRUE 
+    .U 10 .V 308 .SX 310 .SY 40 
+  ]
+]
+   
+   
+.CAPTION_IMPERIAL
+[
+  .KEY CAPTION_IMPERIAL
+  .PARAMS
+  [
+    .PRIORITY 203
+    .FILE "Game/UI/ModeloGestion/UIDefsMsgBoxNotificaciones/NotificacionEdificios.tga" .ALPHA TRUE 
+    .U 10 .V 352 .SX 310 .SY 40 
+  ]
+]
+   
+.CAPTION_ECONOMIA
+[
+  .KEY CAPTION_ECONOMIA
+  .PARAMS
+  [
+    .PRIORITY 203
+    .FILE "Game/UI/ModeloGestion/UIDefsMsgBoxNotificaciones/NotificacionEdificios.tga" .ALPHA TRUE 
+    .U 10 .V 396 .SX 310 .SY 40 
+  ]
+]
+   
+.CAPTION_EDIFICIOS
+[
+  .KEY CAPTION_EDIFICIOS
+  .PARAMS
+  [
+    .PRIORITY 203
+    .FILE "Game/UI/ModeloGestion/UIDefsMsgBoxNotificaciones/NotificacionEdificios.tga" .ALPHA TRUE 
+    .U 10 .V 440 .SX 310 .SY 40 
+  ]
+]

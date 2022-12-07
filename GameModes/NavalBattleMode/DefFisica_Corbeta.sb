@@ -1,0 +1,52 @@
+#===========================================================================================
+# Definiciones de movimiento y fisica para los diferentes tipos de barco
+#-------------------------------------------------------------------------------------------
+# TIPO: Corbeta
+#===========================================================================================
+ 	  
+  # (float) Masa del barco
+  .MASA                           40000.0
+  
+  # (float) Velocidad mínima para poder efectuar un giro
+  .MIN_VEL_GIRO                   5.0
+  
+  # (float) Coeficiente hidrodinámico. A mayor, mas resistencia al agua. 
+  .COEF_HIDRODINAMICO             9800.0 #10000.0
+  
+  # (float) Fuerza centrífuga máxima soportable. A mayor, menos radio de giro
+  .FUERZA_CENTRIFUGA_MAX          48000.0
+  
+  # (float) Eficacia de conversión de viento en fuerza de las velas 
+  .EFICACIA_VELAS                 20000.0 #18000.0
+  
+  # (float) Velocidad mínima con el viento en contra
+  .VELOCIDAD_MINIMA               5.5
+  
+  # (float) Tamaño del barco. Este valor se puede aumentar para que el barco reaccione mas lentamente al mar.
+  .LONGITUD                       30.0
+  .ANCHURA                        10.0
+  
+  # (float) indice de flotacion del barco (normal = 170.0)
+  .FLOTACION                      180.0
+ 
+  # (float) radio con el que iniciará la curva a partir de velocidad = 0
+  .RADIO_GIRO_INICIAL             32.0 #30.0
+ 
+  # Poligono de colisión
+  .POLI_COLISION
+  [
+	[-1.5  24.0]
+	[ 1.5  24.0]
+	[ 6.0  8.0]
+    [ 6.0 -23.0]
+    [-6.0 -23.0]
+    [-6.0  8.0]
+  ]
+ 
+ # Valores anteriores
+ #.MASA                           30000.0
+ #.MIN_VEL_GIRO                   4.0
+ #.COEF_HIDRODINAMICO             7500.0
+ #.FUERZA_CENTRIFUGA_MAX          55000.0
+ #.EFICACIA_VELAS                 25000.0
+ #.VELOCIDAD_MINIMA               6.5

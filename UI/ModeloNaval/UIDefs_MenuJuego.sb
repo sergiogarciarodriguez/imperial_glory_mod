@@ -1,0 +1,106 @@
+ ########################################################################################################
+ # Menu de juego del modelo naval
+ ########################################################################################################
+
+.MENUS
+[
+  # Nota: - El primer menu definido sera el que se active al establecer el gestor de menus
+[ ######################################################################################### MENU 1 ##
+  .ID 'EM_1'
+  .CONTROLES 
+  [   
+    [ .TIPO UIC_DIALOGO 'FEO2'
+      .PARAMS
+      [
+        .FONDO [ .FILE "Game/UI/Comun/PIngame0030.tga" .X 256 .Y 156 .SX 512 .SY 375 .U 0 .V 0 .ALPHA TRUE ] 
+        .CENTER FALSE
+        .MODAL FALSE
+        .DEPTH 2
+        
+        .CONTROLES
+        [
+          # Tecla de desactivacion automatica (equivaldra a pulsar la opcion de regresar a juego)
+          [ .TIPO UIC_TECLA .ID 'KESC' .PARAMS [ .TECLA KEY_ESCAPE .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]            
+      
+          # Gestor de las opciones de menu (-> EMGO -> "Esc Menu Gestor Opciones")
+          [ .TIPO UIC_GESTOROPCIONES .ID 'EMGO'
+            .PARAMS
+            [ 
+          
+             .OPCIONES
+             [
+              [ .TIPO_OPCION UIC_BOTONTEXTO .ID 'EMOV' 
+                .PARAMS 
+                [ 
+                  .IDSELECTSOUND "S_FXUI_CLICKBUTTON"  
+                  .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_CLICK"
+                  .BOTON 0
+                  .TEXT LTEXT_UI_NAVAL_VOLVER_JUEGO
+                  .FONDO [ .X 381 .Y 350 ] 
+                  
+                  .STYLE ESC_MENU_BUTTON
+                ]
+              ]
+             
+              [ 
+                .TIPO_OPCION UIC_BOTONTEXTO .ID 'EMOO' 
+                .PARAMS 
+                [ 
+                  .IDSELECTSOUND "S_FXUI_CLICKBUTTON"  
+                  .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_CLICK"
+                  .TEXT LTEXT_UI_NAVAL_OPCIONES 
+                  .FONDO [ .X 381 .Y 390 ] 
+                  
+                  .STYLE ESC_MENU_BUTTON
+                ]
+              ]
+              
+              [ .TIPO_OPCION UIC_BOTONTEXTO .ID 'EMOX' 
+                .PARAMS 
+                [ 
+             	    .IDSELECTSOUND "S_FXUI_CLICKBUTTON"  
+                  .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_CLICK"
+                  .TEXT LTEXT_UI_NAVAL_ABANDONAR 
+                  .FONDO [ .X 381 .Y 430 ] 
+                  
+                  .STYLE ESC_MENU_BUTTON
+                ]
+              ]
+      
+            ]#~OPCIONES
+            
+            .TECLAS [ .TECLA_SUBIR KEY_UP .TECLA_BAJAR KEY_DOWN .TECLA_CLICK KEY_RETURN .GESTION_CIRCULAR TRUE ]         
+          ]#~PARAMS
+        ]
+      ]
+    ]
+  ]#~CONTROLES
+ ]
+ 
+  .ENLACES
+  [
+    [ .CONTROL_ID 'EMOO' .MENU_ID 'OPCS' ]
+  ]
+ 
+]#MENU 1
+
+[ #######################################################################################
+  .ID 'OPCS'
+  .CONTROLES
+  [
+    [
+      .TIPO UIC_DLGOPCIONES .ID 'OPCS' 
+      .PARAMS
+      [
+        %Game/UI/MainMenu/UIDefs_PantallaOpciones.sb              
+      ]
+    ]
+  ]
+  .ENLACES
+  [
+    [ .CONTROL_ID 'SBHK' .MENU_ID 0]
+    [ .CONTROL_ID 'SBHX' .MENU_ID 0]
+  ]
+]
+
+] # ~ .MENUS     

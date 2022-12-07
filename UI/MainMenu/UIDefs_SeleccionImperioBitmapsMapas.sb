@@ -1,0 +1,6 @@
+ #Bitmaps asociados al estado de seleccionado de las zonas del mapa enlazadas a Hungría, Prusia, Francia, Inglaterra y Rusia, respectivamente
+ .SIBIHU [ .FILE "Game/UI/MainMenu/SeleccionImperioA.tga" .X 761 .Y 416 .SX 222 .SY 147 .U 311 .V 771 .PRIORITY 255 ]
+ .SIBIPR [ .FILE "Game/UI/MainMenu/SeleccionImperioA.tga" .X 794 .Y 350 .SX 130 .SY 100 .U 178 .V 771 .PRIORITY 255 ]
+ .SIBIFR [ .FILE "Game/UI/MainMenu/SeleccionImperioA.tga" .X 589 .Y 383 .SX 174 .SY 174 .U   1 .V 771 .PRIORITY 255 ]
+ .SIBIIN [ .FILE "Game/UI/MainMenu/SeleccionImperioA.tga" .X 553 .Y 208 .SX 143 .SY 181 .U 639 .V 771 .PRIORITY 255 ]
+ .SIBIRU [ .FILE "Game/UI/MainMenu/SeleccionImperioA.tga" .X 924 .Y 284 .SX 100 .SY 214 .U 536 .V 771 .PRIORITY 255 ]

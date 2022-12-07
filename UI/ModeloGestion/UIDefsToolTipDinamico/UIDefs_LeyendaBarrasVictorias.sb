@@ -1,0 +1,76 @@
+#
+# LEYENDA DE LA BARRA DE VICTORIAS/DERROTAS DEL MODO DE ESTADISTICAS
+#
+#
+
+
+#TITULO
+[
+  .TIPO UIC_WRAPTEXT .ID 'WTTI'
+  .PARAMS
+  [     
+    .X 0 .Y 10 .SX 320 .SY 50
+    .ALIGN CENTER
+    .TEXT
+    [
+      .FONT "Fonts/Times10.fnt" 
+      .COLOR [ .R 255 .G 255 .B 255 ]          
+    ]
+    .MSG LTEXT_LEYENDA_VICTORIAS
+  ]
+]
+
+
+#COLOR DE LA BARRA DE VICTORIAS TOTALES
+[ .TIPO UIC_BITMAP .ID 'BMVT'
+  .PARAMS
+  [ .X 30 .Y 45 .U 771 .V 47 .SX 22 .SY 22
+    .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .PRIORITY 255 .ALPHA TRUE  
+  ]      
+]
+   
+#TEXTO DE LA BARRA DE VICTORIAS TOTALES
+[
+  .TIPO UIC_TEXT .ID 'TXVT' 
+  .PARAMS 
+  [ .ALIGN LEFT .X 60 .Y 50 .TEXT LTEXT_LEYENDA_BARRA_VICTORIAS
+    .FONT "Fonts/Times9.fnt"  .COLOR [ .R 255 .G 255 .B 255 ]
+  ]
+] 
+
+
+#COLOR DE LA BARRA DE DERROTAS TOTALES
+[ .TIPO UIC_BITMAP .ID 'BMDT'
+  .PARAMS
+  [ .X 30 .Y 70 .U 771 .V 1 .SX 22 .SY 22
+    .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .PRIORITY 255 .ALPHA TRUE  
+  ]      
+]
+   
+#TEXTO DE LA BARRA DE DERROTAS TOTALES
+[
+  .TIPO UIC_TEXT .ID 'TXDT' 
+  .PARAMS 
+  [ .ALIGN LEFT .X 60 .Y 75 .TEXT LTEXT_LEYENDA_BARRA_DERROTAS
+    .FONT "Fonts/Times9.fnt"  .COLOR [ .R 255 .G 255 .B 255 ]
+  ]
+]
+ 
+
+#COLOR DE LA BARRA DE BATALLAS TOTAL
+[ .TIPO UIC_BITMAP .ID 'BMTO'
+  .PARAMS
+  [ .X 30 .Y 95 .U 771 .V 70 .SX 22 .SY 22
+    .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .PRIORITY 255 .ALPHA TRUE  
+  ]      
+]
+   
+#TEXTO DE LA BARRA DE BATALLAS TOTAL
+[
+  .TIPO UIC_TEXT .ID 'TXTO' 
+  .PARAMS 
+  [ .ALIGN LEFT .X 60 .Y 100 .TEXT LTEXT_LEYENDA_BARRA_BATALLAS_TOTAL
+    .FONT "Fonts/Times9.fnt"  .COLOR [ .R 255 .G 255 .B 255 ]
+  ]
+] 
+  

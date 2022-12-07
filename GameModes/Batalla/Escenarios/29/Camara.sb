@@ -1,0 +1,17 @@
+#---------------------------------------------
+#    Script de definición de camara de mapa
+#---------------------------------------------
+.ATACANTE
+[
+  .ANGLE     [ 15.2    1.0    ]
+  .TARGET    [ 30928.0  16139.0   ]
+  .MIN_HEIGHT                  500.0        # altura minima absoluta
+
+]
+.DEFENSOR
+[
+  .ANGLE     [ 25.9    178.6    ]
+  .TARGET    [ 34645.0  63873.0   ]
+  .MIN_HEIGHT                  500.0        # altura minima absoluta
+
+]

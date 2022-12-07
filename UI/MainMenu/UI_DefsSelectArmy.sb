@@ -1,0 +1,637 @@
+##############################################################################################################
+# 
+# Pantalla de configuracion de ejercito para partidas multiplayer
+#
+##############################################################################################################
+
+.MODAL TRUE
+.CENTER FALSE
+
+.FONDO
+[
+  .PRIORITY 10
+  .FILE "Game\UI\MainMenu\PantallaComprarTropas.tga"
+  .X 0 .Y 0 .U 0 .V 0 .SX 1024 .SY 768 .ALPHA TRUE
+]
+
+#------------------------------------------------ COSTE UPGRADES EXPERIENCIA --------------------------------
+.COSTE_UPGRADE_EXPERIENCIA 10   # en % sobre el precio de la tropa
+
+#------------------------------------------------ COSTES TECNOLOGIAS ----------------------------------------
+.COSTE_TECNOLOGIA_1 1000  # tecnologia ...
+.COSTE_TECNOLOGIA_2 2000  # tecnologia ...
+.COSTE_TECNOLOGIA_3 3000  # tecnologia ...
+.COSTE_TECNOLOGIA_4 4000  # tecnologia ...
+.COSTE_TECNOLOGIA_5 5000  # tecnologia ...
+
+.CONTROLES 
+[
+	#---------------------------------------------- BITMAP RANGO ----------------------------------------------
+	[ .TIPO UIC_BITMAP .ID 'BRAN' 
+	 .PARAMS 
+	 [ 
+	  .X 642 .Y 384 
+	  .FILE "Game\UI\MainMenu\PantallaComprarTropas.tga" 
+	  .U 2 .V 797 
+	  .SX 46 .SY 28 
+	  .PRIORITY 40
+	  .ALPHA TRUE
+	 ] 
+	]
+
+	#---------------------------------------------- BITMAP DEFENSA --------------------------------------------
+	[ .TIPO UIC_BITMAP .ID 'BDEF' 
+	 .PARAMS 
+	 [ 
+	  .X 642 .Y 413 
+	  .FILE "Game\UI\MainMenu\PantallaComprarTropas.tga" 
+	  .U 2 .V 826 
+	  .SX 46 .SY 28 
+	  .PRIORITY 40
+	  .ALPHA TRUE
+	 ] 
+	]
+
+	#---------------------------------------------- BITMAP CARGA ----------------------------------------------
+	[ .TIPO UIC_BITMAP .ID 'BCAR' 
+	 .PARAMS 
+	 [ 
+	  .X 765 .Y 384 
+	  .FILE "Game\UI\MainMenu\PantallaComprarTropas.tga" 
+	  .U 51 .V 797 
+	  .SX 46 .SY 28 
+	  .PRIORITY 40
+	  .ALPHA TRUE
+	 ] 
+	]
+
+	#---------------------------------------------- BITMAP DISPARO --------------------------------------------
+	[ .TIPO UIC_BITMAP .ID 'BDIS' 
+	 .PARAMS 
+	 [ 
+	  .X 765 .Y 413 
+	  .FILE "Game\UI\MainMenu\PantallaComprarTropas.tga" 
+	  .U 51 .V 826 
+	  .SX 46 .SY 28 
+	  .PRIORITY 40
+	  .ALPHA TRUE
+	 ] 
+	]
+
+	#---------------------------------------------- WRAP RANGO ------------------------------------------------
+  [
+    .TIPO UIC_WRAPTEXT .ID 'WRAN'
+    .PARAMS
+    [
+      .ALIGN LEFT
+      .TEXT
+      [
+        .FONT "Fonts/Times12.fnt"
+        .COLOR [ .R 255 .G 255 .B 255 ]
+      ]
+      .X 695 .Y 384 .SX 65 .SY 40
+      .PRIORITY 50      
+    ]
+  ]
+
+	#---------------------------------------------- WRAP DEFENSA ----------------------------------------------
+  [
+    .TIPO UIC_WRAPTEXT .ID 'WDEF'
+    .PARAMS
+    [
+      .ALIGN LEFT
+      .TEXT
+      [
+        .FONT "Fonts/Times12.fnt"
+        .COLOR [ .R 255 .G 255 .B 255 ]
+      ]
+      .X 695 .Y 413 .SX 65 .SY 40
+      .PRIORITY 50      
+    ]
+  ]
+
+	#---------------------------------------------- WRAP CARGA ------------------------------------------------
+  [
+    .TIPO UIC_WRAPTEXT .ID 'WCAR'
+    .PARAMS
+    [
+      .ALIGN LEFT
+      .TEXT
+      [
+        .FONT "Fonts/Times12.fnt"
+        .COLOR [ .R 255 .G 255 .B 255 ]
+      ]
+      .X 835 .Y 384 .SX 65 .SY 40
+      .PRIORITY 50      
+    ]
+  ]
+
+	#---------------------------------------------- WRAP DISPARO ----------------------------------------------
+  [
+    .TIPO UIC_WRAPTEXT .ID 'WDIS'
+    .PARAMS
+    [
+      .ALIGN LEFT
+      .TEXT
+      [
+        .FONT "Fonts/Times12.fnt"
+        .COLOR [ .R 255 .G 255 .B 255 ]
+      ]
+      .X 835 .Y 413 .SX 65 .SY 40
+      .PRIORITY 50      
+    ]
+  ]
+
+	#---------------------------------------------- WRAP DINERO TROPA -----------------------------------------
+  [
+    .TIPO UIC_WRAPTEXT .ID 'WDTR'
+    .PARAMS
+    [
+      .ALIGN RIGHT
+      .TEXT
+      [
+        .FONT "Fonts/Times14.fnt"
+        .COLOR [ .R 255 .G 255 .B 255 ]
+      ]
+      .X 785 .Y 341 .SX 75 .SY 40
+      .PRIORITY 50      
+    ]
+  ]
+
+	#---------------------------------------------- WRAP NOMBRE TROPA -----------------------------------------
+  [
+    .TIPO UIC_WRAPTEXT .ID 'WNTR'
+    .PARAMS
+    [
+      .ALIGN LEFT
+      .TEXT
+      [
+        .FONT "Fonts/Times12.fnt"
+        .COLOR [ .R 255 .G 255 .B 255 ]
+      ]
+      .X 600 .Y 340 .SX 250 .SY 40
+      .PRIORITY 50      
+    ]
+  ]
+
+  #---------------------------------------------- WRAP TITLE ------------------------------------------------
+  [
+    .TIPO UIC_WRAPTEXT .ID 'TITL'
+    .PARAMS
+    [
+      .ALIGN RIGHT
+      .TEXT
+      [
+        .FONT "Fonts/MonotypeCorsiva29.fnt"
+        .COLOR [ .R 255 .G 255 .B 255 ]
+      ]
+      .X 375 .Y 139 .SX 541 .SY 60
+      .PRIORITY 50      
+    ]
+  ]
+  
+  #---------------------------------------------- LABEL EXPERIENCIA -----------------------------------------
+  [
+    .TIPO UIC_TEXT .ID 'LEXP'
+    .PARAMS
+    [
+      .TEXT LTEXT_UI_MENUMULTIPLAYER_EXPERIENCE
+      .ALIGN CENTER
+      .FONT "Fonts/Times15.fnt"
+      .X 516 .Y 392
+      .COLOR [ .R 255 .G 255 .B 255] 
+    ]
+  ]
+  
+
+	#---------------------------------------------- WRAP IMPERIO ----------------------------------------------
+  [
+    .TIPO UIC_WRAPTEXT .ID 'WTIM'
+    .PARAMS
+    [
+      .ALIGN CENTER
+      .MSG "FRANCIA"
+      .TEXT
+      [
+        .FONT "Fonts/Times15.fnt"
+        .COLOR [ .R 255 .G 255 .B 255 ]
+      ]
+      .X 155 .Y 210 .SX 238 .SY 40
+      .PRIORITY 15      
+    ]
+  ]
+
+	#---------------------------------------------- WRAP DINERO -----------------------------------------------
+  [
+    .TIPO UIC_WRAPTEXT .ID 'WTMO'
+    .PARAMS
+    [
+      .ALIGN CENTER
+      .TEXT
+      [
+        .FONT "Fonts/Times15.fnt"
+        .COLOR [ .R 255 .G 255 .B 255 ]
+      ]
+      .X 710 .Y 210 .SX 70 .SY 40
+      .PRIORITY 15      
+    ]
+  ]
+
+	#---------------------------------------------- WRAP INFO -------------------------------------------------
+  [
+    .TIPO UIC_WRAPTEXT .ID 'WINF'
+    .PARAMS
+    [
+      .ALIGN CENTER
+      .TEXT
+      [
+        .FONT "Fonts/Times12.fnt"
+        .COLOR [ .R 255 .G 255 .B 255 ]
+      ]
+      .SLIDER_VERTICAL [ .STYLE DEFAULT_SLIDER_VERTICAL  ]       
+      .X 150 .Y 378 .SX 260 .SY 65
+      .PRIORITY 15      
+    ]
+  ]
+  
+	#-------------------------------------------- BOTON AUTOBUY ----------------------------------------------
+	[ 
+		.TIPO UIC_BOTONTEXTO .ID 'AUTO' 
+	 	.PARAMS
+	 	[ 
+	 		.STYLE DEFAULT_MULTIPLAYER_SMALL_BUTTON
+			.COMPORTAMIENTO NORMAL				 	
+	 		.TEXT LTEXT_UI_AUTOBUY
+		  .FONDO
+		  [
+		    .PRIORITY 120
+		    .X 448 .Y 335
+			]
+	 	]
+	]
+    	  
+	#-------------------------------------------- BOTON CANCEL ------------------------------------------------	
+	[ 
+		.TIPO UIC_BOTONTEXTO .ID 'MSAX' 
+	 	.PARAMS
+	 	[ 
+	 	.IDSELECTSOUND "S_CANCELAR"     
+     		.IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"    
+
+	 	.STYLE DEFAULT_X_BUTTON
+	   .FONDO
+		  [
+		    .X 885 .Y 715
+			]
+      .KEY [ .TECLA LKEY_MAINMENU_CANCELKEY .EVENTOS [ KEY_DOWN KEY_UP ] ]  		  
+	 	]
+	]
+	#-------------------------------------------- BOTON OK ----------------------------------------------------	
+#	[ 
+#		.TIPO UIC_BOTONTEXTO .ID 'MSAK' 
+#	 	.PARAMS
+#	 	[ 
+#	 		.STYLE DEFAULT_OK_BUTTON
+#	   .FONDO
+#		  [
+#		    .X 935 .Y 715
+#			]
+#	 	]
+#	]
+
+	#---------------------------------------------- BOTON EXP1 ------------------------------------------------
+  [ 
+  	.TIPO UIC_BOTONGRAFICO .ID 'EXP1'
+	  .PARAMS
+	  [
+ 			.COMPORTAMIENTO MANUAL
+			.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+			.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"   	  
+	    .FONDO
+	    [
+	      .PRIORITY 20
+	      .X  467 .Y  414 
+	      .SX 17  .SY 15 
+	      .ALPHA TRUE          
+				.DISABLE      [ .FILE "Game\UI\MainMenu\PlantillaIconosComprarTropas.tga" .U 21	.V 281 ] 
+				.SOLTADO      [ .FILE "Game\UI\MainMenu\PlantillaIconosComprarTropas.tga" .U 41 .V 281 ] 
+				.SELECCIONADO [ .FILE "Game\UI\MainMenu\PlantillaIconosComprarTropas.tga" .U 41 .V 281 ] 
+				.PULSADO      [ .FILE "Game\UI\MainMenu\PlantillaIconosComprarTropas.tga" .U 1  .V 281 ] 
+	    ]
+	  ]
+	]
+
+	#---------------------------------------------- BOTON EXP2 ------------------------------------------------
+  [ 
+  	.TIPO UIC_BOTONGRAFICO .ID 'EXP2'
+	  .PARAMS
+	  [
+ 			.COMPORTAMIENTO MANUAL
+			.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+			.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"   	  
+	    .FONDO
+	    [
+	      .PRIORITY 20
+	      .X  487 .Y  414 
+	      .SX 17  .SY 15 
+	      .ALPHA TRUE          
+				.DISABLE      [ .FILE "Game\UI\MainMenu\PlantillaIconosComprarTropas.tga" .U 21	.V 281 ] 
+				.SOLTADO      [ .FILE "Game\UI\MainMenu\PlantillaIconosComprarTropas.tga" .U 41 .V 281 ] 
+				.SELECCIONADO [ .FILE "Game\UI\MainMenu\PlantillaIconosComprarTropas.tga" .U 41 .V 281 ] 
+				.PULSADO      [ .FILE "Game\UI\MainMenu\PlantillaIconosComprarTropas.tga" .U 1  .V 281 ] 
+	    ]
+	  ]
+	]
+
+	#---------------------------------------------- BOTON EXP3 ------------------------------------------------
+  [ 
+  	.TIPO UIC_BOTONGRAFICO .ID 'EXP3'
+	  .PARAMS
+	  [
+ 			.COMPORTAMIENTO MANUAL
+			.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+			.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"   	  
+	    .FONDO
+	    [
+	      .PRIORITY 20
+	      .X  507 .Y  414 
+	      .SX 17  .SY 15 
+	      .ALPHA TRUE          
+				.DISABLE      [ .FILE "Game\UI\MainMenu\PlantillaIconosComprarTropas.tga" .U 21	.V 281 ] 
+				.SOLTADO      [ .FILE "Game\UI\MainMenu\PlantillaIconosComprarTropas.tga" .U 41 .V 281 ] 
+				.SELECCIONADO [ .FILE "Game\UI\MainMenu\PlantillaIconosComprarTropas.tga" .U 41 .V 281 ] 
+				.PULSADO      [ .FILE "Game\UI\MainMenu\PlantillaIconosComprarTropas.tga" .U 1  .V 281 ] 
+	    ]
+	  ]
+	]
+
+	#---------------------------------------------- BOTON EXP4 ------------------------------------------------
+  [ 
+  	.TIPO UIC_BOTONGRAFICO .ID 'EXP4'
+	  .PARAMS
+	  [
+ 			.COMPORTAMIENTO MANUAL
+			.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+			.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"   	  
+	    .FONDO
+	    [
+	      .PRIORITY 20
+	      .X  527 .Y  414 
+	      .SX 17  .SY 15 
+	      .ALPHA TRUE          
+				.DISABLE      [ .FILE "Game\UI\MainMenu\PlantillaIconosComprarTropas.tga" .U 21	.V 281 ] 
+				.SOLTADO      [ .FILE "Game\UI\MainMenu\PlantillaIconosComprarTropas.tga" .U 41 .V 281 ] 
+				.SELECCIONADO [ .FILE "Game\UI\MainMenu\PlantillaIconosComprarTropas.tga" .U 41 .V 281 ] 
+				.PULSADO      [ .FILE "Game\UI\MainMenu\PlantillaIconosComprarTropas.tga" .U 1  .V 281 ] 
+	    ]
+	  ]
+	]
+
+	#---------------------------------------------- BOTON EXP5 ------------------------------------------------
+  [ 
+  	.TIPO UIC_BOTONGRAFICO .ID 'EXP5'
+	  .PARAMS
+	  [
+ 			.COMPORTAMIENTO MANUAL
+			.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+			.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"   	  
+	    .FONDO
+	    [
+	      .PRIORITY 20
+	      .X  547 .Y  414 
+	      .SX 17  .SY 15 
+	      .ALPHA TRUE          
+				.DISABLE      [ .FILE "Game\UI\MainMenu\PlantillaIconosComprarTropas.tga" .U 21	.V 281 ] 
+				.SOLTADO      [ .FILE "Game\UI\MainMenu\PlantillaIconosComprarTropas.tga" .U 41 .V 281 ] 
+				.SELECCIONADO [ .FILE "Game\UI\MainMenu\PlantillaIconosComprarTropas.tga" .U 41 .V 281 ] 
+				.PULSADO      [ .FILE "Game\UI\MainMenu\PlantillaIconosComprarTropas.tga" .U 1  .V 281 ] 
+	    ]
+	  ]
+	]
+
+	#---------------------------------------------- BOTON TECH1 -----------------------------------------------
+  [ 
+  	.TIPO UIC_BOTONGRAFICO .ID 'MTE1'
+	  .PARAMS
+	  [
+ 			.COMPORTAMIENTO FIJO
+			.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+			.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"   	  
+	    .FONDO
+	    [
+	      .PRIORITY 20
+	      .X  142 .Y  341 
+	      .SX 57  .SY 34 
+	      .ALPHA TRUE          
+				.SOLTADO 			[ .FILE "Game\UI\MainMenu\Tropas\IconosTecnologiasComprarTropas.tga" .U 1 	.V 1 ] 
+				.SELECCIONADO [ .FILE "Game\UI\MainMenu\Tropas\IconosTecnologiasComprarTropas.tga" .U 1 	.V 36 ] 
+				.PULSADO    	[ .FILE "Game\UI\MainMenu\Tropas\IconosTecnologiasComprarTropas.tga" .U 1 	.V 71 ] 
+	    ]
+	  ]
+	]
+
+	#---------------------------------------------- BOTON TECH2 -----------------------------------------------
+  [ 
+  	.TIPO UIC_BOTONGRAFICO .ID 'MTE2'
+	  .PARAMS
+	  [
+ 			.COMPORTAMIENTO FIJO
+			.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+			.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"   	  
+	    .FONDO
+	    [
+	      .PRIORITY 20
+	      .X  200 .Y  341 
+	      .SX 57  .SY 34 
+	      .ALPHA TRUE          
+				.SOLTADO 			[ .FILE "Game\UI\MainMenu\Tropas\IconosTecnologiasComprarTropas.tga" .U 59 	.V 1 ] 
+				.SELECCIONADO [ .FILE "Game\UI\MainMenu\Tropas\IconosTecnologiasComprarTropas.tga" .U 59 	.V 36 ] 
+				.PULSADO    	[ .FILE "Game\UI\MainMenu\Tropas\IconosTecnologiasComprarTropas.tga" .U 59 	.V 71 ] 
+	    ]
+	  ]
+	]
+
+	#---------------------------------------------- BOTON TECH3 -----------------------------------------------
+  [ 
+  	.TIPO UIC_BOTONGRAFICO .ID 'MTE3'
+	  .PARAMS
+	  [
+ 			.COMPORTAMIENTO FIJO
+			.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+			.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"   	  
+	    .FONDO
+	    [
+	      .PRIORITY 20
+	      .X  258 .Y  341 
+	      .SX 57  .SY 34 
+	      .ALPHA TRUE          
+				.SOLTADO 			[ .FILE "Game\UI\MainMenu\Tropas\IconosTecnologiasComprarTropas.tga" .U 117 	.V 1 ] 
+				.SELECCIONADO [ .FILE "Game\UI\MainMenu\Tropas\IconosTecnologiasComprarTropas.tga" .U 117 	.V 36 ] 
+				.PULSADO    	[ .FILE "Game\UI\MainMenu\Tropas\IconosTecnologiasComprarTropas.tga" .U 117 	.V 71 ] 
+	    ]
+	  ]
+	]
+
+	#---------------------------------------------- BOTON TECH4 -----------------------------------------------
+  [ 
+  	.TIPO UIC_BOTONGRAFICO .ID 'MTE4'
+	  .PARAMS
+	  [
+ 			.COMPORTAMIENTO FIJO
+			.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+			.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"   	  
+	    .FONDO
+	    [
+	      .PRIORITY 20
+	      .X  316 .Y  341 
+	      .SX 57  .SY 34 
+	      .ALPHA TRUE          
+				.SOLTADO 			[ .FILE "Game\UI\MainMenu\Tropas\IconosTecnologiasComprarTropas.tga" .U 175 	.V 1 ] 
+				.SELECCIONADO [ .FILE "Game\UI\MainMenu\Tropas\IconosTecnologiasComprarTropas.tga" .U 175 	.V 36 ] 
+				.PULSADO    	[ .FILE "Game\UI\MainMenu\Tropas\IconosTecnologiasComprarTropas.tga" .U 175 	.V 71 ] 
+	    ]
+	  ]
+	]
+
+	#---------------------------------------------- BOTON TECH5 -----------------------------------------------
+  [ 
+  	.TIPO UIC_BOTONGRAFICO .ID 'MTE5'
+	  .PARAMS
+	  [
+ 			.COMPORTAMIENTO FIJO
+			.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+			.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"   	  
+	    .FONDO
+	    [
+	      .PRIORITY 20
+	      .X  374 .Y  341 
+	      .SX 57  .SY 34 
+	      .ALPHA TRUE          
+				.SOLTADO 			[ .FILE "Game\UI\MainMenu\Tropas\IconosTecnologiasComprarTropas.tga" .U 233 	.V 1 ] 
+				.SELECCIONADO [ .FILE "Game\UI\MainMenu\Tropas\IconosTecnologiasComprarTropas.tga" .U 233 	.V 36 ] 
+				.PULSADO    	[ .FILE "Game\UI\MainMenu\Tropas\IconosTecnologiasComprarTropas.tga" .U 233 	.V 71 ] 
+	    ]
+	  ]
+	]
+	
+	#---------------------------------------------- BOTON READY -----------------------------------------------
+  [ 
+  	.TIPO UIC_BOTONTEXTO .ID 'MSAR'
+	  .PARAMS
+	  [
+	    .STYLE DEFAULT_OK_BUTTON
+		  .IDSELECTSOUND "S_ACEPTAR"    
+      .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"    
+	    .FONDO
+	    [
+	      .PRIORITY 20
+	      .X 935 .Y 715
+	    ]
+      .KEY [ .TECLA LKEY_MAINMENU_OPTION_SELECT .EVENTOS [ KEY_DOWN KEY_UP ] ]  	    
+	  ]
+	]
+	
+	#---------------------------------------------- GESTOR CHECKBOX -------------------------------------------
+	[ 
+		.TIPO UIC_GESTORCHECKBOX .ID 'GCB1'
+		.PARAMS
+		[
+			.CHECKBOXES
+			[      
+	
+      	#---------------------------------------------- BOTON INFANTERIA ------------------------------------------
+      	[	 	
+      		.TIPO UIC_CHECKBOX .ID 'BINF' 
+      		.PARAMS
+      		[ 
+      			.COMPORTAMIENTO FIJO
+      	 		.IDSELECTSOUND 			"S_MAINMENU_OPTION_CLICK" 
+      			       
+            .PRIORITY 15  
+            .FONDO
+      			[
+      				.X 424	.Y 190
+      				.SOLTADO 			[ .FILE "Game\UI\MainMenu\PlantillaIconosComprarTropas.tga" .U 1 .V 2 ] 
+      				.SELECCIONADO	[ .FILE "Game\UI\MainMenu\PlantillaIconosComprarTropas.tga" .U 1 .V 71 ] 
+      				.PULSADO 			[ .FILE "Game\UI\MainMenu\PlantillaIconosComprarTropas.tga" .U 1 .V 140 ] 
+      				.SX 55 .SY 66 
+      				.ALPHA TRUE  
+      			]
+      		]
+      	]
+
+      	#---------------------------------------------- BOTON CABALLERIA ------------------------------------
+      	[	 	
+      		.TIPO UIC_CHECKBOX .ID 'BCAB' 
+      		.PARAMS
+      		[ 
+      			.COMPORTAMIENTO FIJO
+      	 		.IDSELECTSOUND 			"S_MAINMENU_OPTION_CLICK" 
+      			         
+            .PRIORITY 15  
+            .FONDO
+      			[
+      				.X 486  .Y 190
+      				.SOLTADO 			[ .FILE "Game\UI\MainMenu\PlantillaIconosComprarTropas.tga" .U 59 .V 2 ] 
+      				.SELECCIONADO	[ .FILE "Game\UI\MainMenu\PlantillaIconosComprarTropas.tga" .U 59 .V 71 ] 
+      				.PULSADO 			[ .FILE "Game\UI\MainMenu\PlantillaIconosComprarTropas.tga" .U 59 .V 140 ] 
+      				.SX 55 .SY 66 
+      				.ALPHA TRUE  
+      			]
+      		]
+      	]
+
+      	#---------------------------------------------- BOTON ARTILLERIA ------------------------------------
+      	[	 	
+      		.TIPO UIC_CHECKBOX .ID 'BART' 
+      		.PARAMS
+      		[ 
+      			.COMPORTAMIENTO FIJO
+      	 		.IDSELECTSOUND 			"S_MAINMENU_OPTION_CLICK" 
+      			        
+            .PRIORITY 15  
+            .FONDO
+      			[
+      				.X 548	.Y 190
+      				.SOLTADO 			[ .FILE "Game\UI\MainMenu\PlantillaIconosComprarTropas.tga" .U 117 .V 2 ] 
+      				.SELECCIONADO	[ .FILE "Game\UI\MainMenu\PlantillaIconosComprarTropas.tga" .U 117 .V 71 ] 
+      				.PULSADO 			[ .FILE "Game\UI\MainMenu\PlantillaIconosComprarTropas.tga" .U 117 .V 140 ] 
+      				.SX 55 .SY 66 
+      				.ALPHA TRUE  
+      			]
+      		]
+      	]
+
+			]	# CHECKBOXES
+			
+			.PERMITE_NINGUNA_ACTIVACION FALSE
+			
+		] # PARAMS
+	] # GESTOR CHECKBOX
+
+	#---------------------------------------------- BITMAP IMPERIAL GLORY -------------------------------------	
+	[ .TIPO UIC_BITMAP .ID 'BMIG' 
+	 .PARAMS 
+	 [ 
+	  .FILE "Game/UI/MainMenu/ImperialGloryLogo.tga" .U 0 .V 0 
+	  .X 0 .Y 0 
+	  .SX 465 .SY 188 
+	  .PRIORITY 201
+	  .ALPHA TRUE
+	 ] 
+	]
+			
+  #---------------------------------------------- VISOR MATRIZ TROPAS ---------------------------------------
+  [
+   .TIPO UIC_VISORMATRIZCTRLS .ID 'VMTR'
+   .PARAMS [ %Game\UI\MainMenu\Tropas\UIDefs_VisorMatrizArmy.sb ]   
+  ]   	
+			
+				
+] # .CONTROLES
+
+#---------------------------------------------- BOTONES DE TROPAS -------------------------------------	
+%Game\UI\MainMenu\UI_DefsSelectArmyButtons.sb
+
+#---------------------------------------------- AUTOBUY -------------------------------------------
+%Game\UI\MainMenu\UIDefs_SelectArmyAutoBuy.sb

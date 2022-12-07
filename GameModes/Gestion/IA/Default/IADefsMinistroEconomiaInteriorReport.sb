@@ -1,0 +1,45 @@
+##################################################################################################
+# Definiciones para el report del ministro de economia e interior
+##################################################################################################
+
+ # Turnos sobre los que se evaluara los VRs de cada tipo de riqueza
+ # Nota: El VR de una riqueza sera el constraste de gastos e ingresos de la misma durante los
+ #       los NUM_TURNOS_EVALUACION_VR ultimos turnos.
+ 
+.NUM_TURNOS_EVALUACION_VR     20   
+
+# Pesos asociados a la formula que nos da la importancia de un pais sobre otro
+.PESOS_IMPORTANCIA_PAIS
+[
+ .ANTIGUEDAD_PAIS           0.3 # Importancia por la antiguedad
+ .ZONA_INFLUENCIA           0.2 # Importancia por la zona de influencia a la que pertenece
+ .NIVEL_DESARROLLO          0.2 # Importancia en el nivel de desarrollo en todas las ramas
+ .PRODUCCION_RIQUEZA        0.2 # Importancia en la produccion de riqueza
+ .PRESENCIA_ENEMIGA         0.1 # Se traduce como capital de riesgo, a mayor presencia menos interes
+]
+
+
+
+##################################################################################################
+# Valores relacionados con la oferta/demanda de recursos de la IA
+##################################################################################################
+
+# Una IA considerará que quiere vender un recurso cuando se cumple lo siguiente:
+#   - Necesita dinero, es decir, su VR de dinero es mayor que el valor de VR problemático (ver VR_PROBLEMATICO)
+#   - No tiene problemas con ese recurso, es decir, su VR del recurso en cuestión es menor que el VR no problemático (ver VR_NO_PROBLEMATICO)
+#   - Tiene disponible para intercambios una cantidad de recursos mayor que el valor mínimo definido más abajo.
+
+# Una IA considerará que quiere comprar un recurso cuando se cumple lo siguiente:
+#   - Necesita ese recurso, es decir, su VR es mayor que el valor de VR problemático.
+#   - No tiene problemas de dinero, es decir, su VR de dinero es menor que el VR no problemático.
+#   - Tiene disponible para intercambios una cantidad de dinero mayor que el valor mínimo definido más abajo.
+
+# El VR problemático indica el VR mínimo que hace que la IA considere que tiene problemas con cierto recurso.
+.VR_PROBLEMATICO      1.3
+# El VR no problemático indica el VR máximo que hace que la IA considere desprenderse de cierta cantidad de ese recurso.
+.VR_NO_PROBLEMATICO   1.0
+
+# Cantidad mínima de cierto recurso que tiene que tener para considerar que quiere venderlo
+.CANTIDAD_MINIMA_RECURSOS_PARA_OFERTA  100
+# Cantidad mínima de dinero que tiene que tener para considerar que quiere comprar otros recursos
+.CANTIDAD_MINIMA_DINERO_PARA_DEMANDA   100

@@ -1,0 +1,203 @@
+##################################################
+## Diálogo de noticias generales de juego
+## -
+## Las coordenadas son extrañas debido a que son relativas a la posición del diálogo de noticias economía tomadas como absolutas
+## esto es debido a un defecto en la carga de los diálogos que da problemas en sus posiciones relativas cuando están anidados en más de dos niveles
+## lo mismo ocurre con el Spin
+##################################################
+
+.MODAL FALSE
+.CENTER FALSE
+.DEPTH 3
+
+.FONDO
+[
+  .X 200 .Y 112 .U 1 .V 154 .SX 640 .SY 500
+  .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinEstadisticas1.tga" 
+  .ALPHA TRUE .PRIORITY 202
+]
+
+.CONTROLES
+[
+  # spin de los años
+  [ .TIPO UIC_SPIN .ID 'SPNY'
+    .PARAMS
+    [   
+        .X 483 .Y 139 .MIN 1789 .MAX 2004 .INCREMENTO 1 .VALUE 1789
+    	  .PRIORITY 203
+    	  
+        .BTN_UP
+        [ 
+          .IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK"
+          .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"
+          
+          .COMPORTAMIENTO SIMPLE
+          .FONDO
+          [
+            .X 595 .Y 137
+    	      .PRIORITY 203
+          ]
+          
+    	    .STYLE GREATER_THAN_BORDER_BUTTON
+        ]
+        
+        .BTN_DOWN
+        [ 
+          .IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+	        .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"
+	        
+          .COMPORTAMIENTO SIMPLE 
+          .FONDO
+          [
+            .X 408 .Y 137
+    	      .PRIORITY 203
+    	    ]  
+    	  
+	        .STYLE LESSER_THAN_BORDER_BUTTON
+        ]
+        
+        .EDIT
+        [
+          .X 483 .Y 139 .SX 94 .SY 24 .MAX 4
+          
+          .FONT "Fonts/Times12.fnt"
+          .COLOR [ .R 255 .G 255 .B 255 ]
+    	    .PRIORITY 205
+          .FONDO  [ .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinEstadisticas1.tga" .U 259 .V 182 .ALHA TRUE .PRIORITY 205 ]
+          
+          .SIMPLE TRUE
+        ]
+    ]
+  ]
+  
+  # funciones
+  # función gráfica que representa las materias primas del imperio  
+  [
+    .TIPO UIC_FUNCIONGRAFICA .ID 'MAPR'
+    .PARAMS
+    [
+      .RECUADRO_PINTADO 
+      [
+        .X1  86 .Y1 101
+        .X2 554 .Y2 363
+      ]
+      
+      .RELACION_PINTADO
+      [
+        .X 39.0 #cada 40 pixels equivalen a 1 unidad lógica(1 turno)
+        .Y 0.00261  # 100000 unidades lógicas equivalen a 262 pixels
+    ]
+      
+      .INIT_X 0
+      
+      .COLOR [ .R 133 .G  56 .B 149 ]
+      
+      .THICKNESS 2.0
+    ]
+  ]
+  
+  # función gráfica que representa el oro del imperio  
+  [
+    .TIPO UIC_FUNCIONGRAFICA .ID 'GOLD'
+    .PARAMS
+    [
+      .RECUADRO_PINTADO 
+      [
+        .X1  86 .Y1 101
+        .X2 554 .Y2 363
+      ]
+      
+      .RELACION_PINTADO
+      [
+        .X 39.0     #cada 40 pixels equivalen a 1 unidad lógica(1 turno)
+        .Y 0.00261  # 100000 unidades lógicas equivalen a 262 pixels
+      ]
+      
+      .INIT_X 0
+      
+      .COLOR [ .R 204 .G 143 .B 2 ]
+      
+      .THICKNESS 2.0
+    ]
+  ]
+  
+  # función gráfica que representa la población del imperio  
+  [
+    .TIPO UIC_FUNCIONGRAFICA .ID 'POBL'
+    .PARAMS
+    [
+      .RECUADRO_PINTADO 
+      [
+        .X1  86 .Y1 101
+        .X2 554 .Y2 363
+      ]
+      
+      .RELACION_PINTADO
+      [
+        .X 39.0 #cada 40 pixels equivalen a 1 unidad lógica(1 turno)
+        .Y 0.00261  # 100000 unidades lógicas equivalen a 262 pixels
+      ]
+      
+      .INIT_X 0
+      
+      .COLOR [ .R 206 .G 34 .B 43 ]
+      
+      .THICKNESS 2.0
+    ]
+  ]  
+  # función gráfica que representa la comida del imperio  
+  [
+    .TIPO UIC_FUNCIONGRAFICA .ID 'FOOD'
+    .PARAMS
+    [
+      .RECUADRO_PINTADO 
+      [
+        .X1  86 .Y1 101
+        .X2 554 .Y2 363
+      ]
+      
+      .RELACION_PINTADO
+      [
+        .X 39.0     #cada 40 pixels equivalen a 1 unidad lógica(1 turno)
+        .Y 0.00261  # 100000 unidades lógicas equivalen a 262 pixels
+      ]
+      
+      .INIT_X 0
+      
+      .COLOR [ .R  29 .G 124 .B 177 ]
+      
+      .THICKNESS 2.0
+    ]
+  ]  
+  # función gráfica que representa la ciencia del imperio  
+  [
+    .TIPO UIC_FUNCIONGRAFICA .ID 'CIEN'
+    .PARAMS
+    [
+      .RECUADRO_PINTADO 
+      [
+        .X1  86 .Y1 101
+        .X2 554 .Y2 363
+      ]
+      
+      .RELACION_PINTADO
+      [
+        .X 39.0     #cada 40 pixels equivalen a 1 unidad lógica(1 turno)
+        .Y 0.0349   #262 pixels(altura del gráfico) equivalen a 7500 unidades lógicas
+      ]
+      
+      .INIT_X 0
+      
+      .COLOR [ .R 41 .G 165 .B 89 ]
+      
+      .THICKNESS 2.0
+    ]
+  ]  
+  
+  #Leyenda
+  %Game/UI/ModeloGestion/BoletinNoticias/UIDefs_LeyendaDlgNoticiasEconomia.sb
+  
+  #Textos del eje de las X
+  %Game/UI/ModeloGestion/BoletinNoticias/UIDefs_TextosGraficasEconomiaAnual.sb
+  
+] #~ CONTROLES

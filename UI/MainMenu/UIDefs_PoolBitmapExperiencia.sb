@@ -1,0 +1,40 @@
+###############################################################################################################
+# Escenarios 
+# Mantiene el pool de las imagenes asociadas a los niveles de experiencia
+###############################################################################################################
+
+[
+ .KEY EXPERIENCIA_1
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Austria\IconosAustria.tga" .X 0 .Y 58 .U 4 .V 493 .SX 26 .SY 14 .ALPHA TRUE .PRIORITY 200 ]
+]
+
+[
+ .KEY EXPERIENCIA_2
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Austria\IconosAustria.tga" .X 0 .Y 58 .U 32 .V 493 .SX 26 .SY 14 .ALPHA TRUE .PRIORITY 200 ]
+]
+
+[
+ .KEY EXPERIENCIA_3
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Austria\IconosAustria.tga" .X 0 .Y 58 .U 59 .V 493 .SX 26 .SY 14 .ALPHA TRUE .PRIORITY 200 ]
+]
+
+[
+ .KEY EXPERIENCIA_4
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Austria\IconosAustria.tga" .X 0 .Y 58 .U 85 .V 493 .SX 26 .SY 14 .ALPHA TRUE .PRIORITY 200 ]
+]
+
+[
+ .KEY EXPERIENCIA_5
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\Austria\IconosAustria.tga" .X 0 .Y 58 .U 113 .V 493 .SX 26 .SY 14 .ALPHA TRUE .PRIORITY 200 ]
+]
+
+[
+ .KEY EXPERIENCIA_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\PlantillaIconosComprarTropas.tga" .X 11 .Y 122 .U 41 .V 281 .SX 17 .SY 15 .ALPHA TRUE .PRIORITY 200 ]
+]
+
+[
+ .KEY EXPERIENCIA_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\PlantillaIconosComprarTropas.tga" .X 11 .Y 122 .U 1 .V 281 .SX 17 .SY 15 .ALPHA TRUE .PRIORITY 200 ]
+]
+ 

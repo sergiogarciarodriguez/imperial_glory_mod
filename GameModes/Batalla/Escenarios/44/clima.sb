@@ -1,0 +1,19 @@
+.VERSION 2
+
+#----------------------------------------
+#  Archivo de clima: Piamonte (44)
+#----------------------------------------
+
+.CLIMA
+[
+]
+#--------------------------------------------------
+# Para poner animales voladores en el escenario
+#--------------------------------------------------
+.FAUNA
+[
+  [.FILE "Models\Criaturas\Aves\BandadaPajarillos01.V3D" .POS [0.0 2000.0 0.0]]
+  [.FILE "Models\Criaturas\Aves\BandadaPajarillos02.V3D" .POS [16000.0 1500.0 -30000.0]]
+  [.FILE "Models\Criaturas\Aves\BandadaPajarillos02.V3D" .POS [0.0 1500.0 0.0]]
+  [.FILE "Models\Criaturas\Aves\BandadaPajarillos03.V3D" .POS [0.0 1000.0 0.0]]
+]

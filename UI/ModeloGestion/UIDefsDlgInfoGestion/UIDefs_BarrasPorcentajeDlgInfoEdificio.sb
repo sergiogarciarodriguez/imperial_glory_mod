@@ -1,0 +1,155 @@
+#en realidad son barras de porcentaje para el diálogo de información de provincia, pero me confundí ^_^U
+[   
+  .TIPO UIC_BARRAPORCENTAJE .ID 'BPFR'
+  .PARAMS
+  [
+    .X 179 .Y 468
+    .PRIORITY 205
+    #.FONDO [ .FILE "Game/UI/ModeloGestion/UIDefsDlgInfoGestion/InformacionTerritorios.tga" .U 131 .V 610 .ALPHA TRUE ]
+    .SUPERIOR [ .FILE "Game/UI/ModeloGestion/UIDefsDlgInfoGestion/InformacionTerritorios.tga" .U 131 .V 610 .ALPHA TRUE ]
+    .SX 278 .SY 20
+  ]
+]
+
+[
+ .TIPO UIC_WRAPTEXT .ID 'WTFR'
+ .PARAMS
+ [
+  .X 461 .Y 465 .SX 80 .SY 25
+  .ALIGN CENTER
+  
+  .PRIORITY 203
+  
+  .TEXT
+  [
+   .FONT "Fonts/Times9.fnt" 
+   #.COLOR [ .R 255 .G 255 .B 195 ] <- Mola más este color :P
+   .COLOR [ .R 255 .G 255 .B 255 ]
+   .MSG  " "        
+  ]
+ ]   
+]      
+
+[
+  .TIPO UIC_BARRAPORCENTAJE .ID 'BPGB'
+  .PARAMS
+  [
+    .X 179 .Y 491
+    .PRIORITY 205
+    #.FONDO [ .FILE "Game/UI/ModeloGestion/UIDefsDlgInfoGestion/InformacionTerritorios.tga" .U 131 .V 633 .ALPHA TRUE ]
+    .SUPERIOR [ .FILE "Game/UI/ModeloGestion/UIDefsDlgInfoGestion/InformacionTerritorios.tga" .U 131 .V 633 .ALPHA TRUE ]
+    .SX 278 .SY 20    
+  ]
+]
+
+[
+ .TIPO UIC_WRAPTEXT .ID 'WTGB'
+ .PARAMS
+ [
+  .X 461 .Y 488 .SX 80 .SY 25
+  .ALIGN CENTER
+  
+  .PRIORITY 203
+  
+  .TEXT
+  [
+   .FONT "Fonts/Times9.fnt" 
+   #.COLOR [ .R 255 .G 255 .B 195 ] <- Mola más este color :P
+   .COLOR [ .R 255 .G 255 .B 255 ]
+   .MSG  " "        
+  ]
+ ]   
+]      
+
+[
+  .TIPO UIC_BARRAPORCENTAJE .ID 'BPAU'
+  .PARAMS
+  [
+    .X 179 .Y 514
+    .PRIORITY 205
+    #.FONDO [ .FILE "Game/UI/ModeloGestion/UIDefsDlgInfoGestion/InformacionTerritorios.tga" .U 131 .V 656 .ALPHA TRUE ]
+    .SUPERIOR [ .FILE "Game/UI/ModeloGestion/UIDefsDlgInfoGestion/InformacionTerritorios.tga" .U 131 .V 656 .ALPHA TRUE ]
+    .SX 278 .SY 20    
+  ]
+]
+
+[
+ .TIPO UIC_WRAPTEXT .ID 'WTAU'
+ .PARAMS
+ [
+  .X 461 .Y 511 .SX 80 .SY 25
+  .ALIGN CENTER
+  
+  .PRIORITY 203
+  
+  .TEXT
+  [
+   .FONT "Fonts/Times9.fnt" 
+   #.COLOR [ .R 255 .G 255 .B 195 ] <- Mola más este color :P
+   .COLOR [ .R 255 .G 255 .B 255 ]
+   .MSG  " "        
+  ]
+ ]   
+]      
+
+[
+  .TIPO UIC_BARRAPORCENTAJE .ID 'BPRU'
+  .PARAMS
+  [
+    .X 179 .Y 537
+    .PRIORITY 205
+    #.FONDO [ .FILE "Game/UI/ModeloGestion/UIDefsDlgInfoGestion/InformacionTerritorios.tga" .U 131 .V 679 .ALPHA TRUE ]
+    .SUPERIOR [ .FILE "Game/UI/ModeloGestion/UIDefsDlgInfoGestion/InformacionTerritorios.tga" .U 131 .V 679 .ALPHA TRUE ]
+    .SX 278 .SY 20    
+  ]
+]
+
+[
+ .TIPO UIC_WRAPTEXT .ID 'WTRU'
+ .PARAMS
+ [
+  .X 461 .Y 534 .SX 80 .SY 25
+  .ALIGN CENTER
+  
+  .PRIORITY 203
+  
+  .TEXT
+  [
+   .FONT "Fonts/Times9.fnt" 
+   #.COLOR [ .R 255 .G 255 .B 195 ] <- Mola más este color :P
+   .COLOR [ .R 255 .G 255 .B 255 ]
+   .MSG  " "        
+  ]
+ ]   
+]      
+
+[
+  .TIPO UIC_BARRAPORCENTAJE .ID 'BPPR'
+  .PARAMS
+  [
+    .X 179 .Y 560
+    .PRIORITY 205
+    #.FONDO [ .FILE "Game/UI/ModeloGestion/UIDefsDlgInfoGestion/InformacionTerritorios.tga" .U 18 .V 532 .ALPHA TRUE ]
+    .SUPERIOR [ .FILE "Game/UI/ModeloGestion/UIDefsDlgInfoGestion/InformacionTerritorios.tga" .U 131 .V 702 .ALPHA TRUE ]
+    .SX 278 .SY 20    
+  ]
+]         
+
+[
+ .TIPO UIC_WRAPTEXT .ID 'WTPR'
+ .PARAMS
+ [
+  .X 461 .Y 557 .SX 80 .SY 25
+  .ALIGN CENTER
+  
+  .PRIORITY 203
+  
+  .TEXT
+  [
+   .FONT "Fonts/Times9.fnt" 
+   #.COLOR [ .R 255 .G 255 .B 195 ] <- Mola más este color :P
+   .COLOR [ .R 255 .G 255 .B 255 ]
+   .MSG  " "        
+  ]
+ ]   
+]      

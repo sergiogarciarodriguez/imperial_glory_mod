@@ -1,0 +1,201 @@
+#############################################################################################
+# Ventana (dialogo) asociado al interfaz del Árbol de Tecnologías
+#############################################################################################
+
+  .MODAL TRUE
+  .CENTER TRUE
+  
+  .DEPTH 3
+  
+  .RELATIVE_PRIORITY FALSE
+    
+  .FONDO 
+  [
+    .X 0 .Y 0 .U 0 .V 0 .SX 1024 .SY 768 
+    .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/MenuArbolTecnologias.tga" 
+    .ALPHA TRUE .PRIORITY 10
+  ] # ~FONDO
+  
+  .FASE "Fase I"
+   
+  # Definición de las fechas de prueba
+  .FLECHA
+  [
+    .ORIGEN   [ .X 0 .Y 0 ]
+    .DESTINO  [ .X 0 .Y 0 ]
+    .PUNTA    [ .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga" .SX 13 .SY 10 .U 15 .V 353 .PRIORITY 255 .ALPHA TRUE ] 
+    .CUERPO   
+    [
+      .MODO_TILEADO CENTRAL
+      .IMG_CENTRAL  [ .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga" .U 1 .V 353 .SX 13 .SY 10 .ALPHA TRUE .PRIORITY 255 .TRANSPARENCY 150  ]
+      .ANCHO 12
+      .ALTO 9
+    ]
+  ]
+  
+  # Definición de los tooltips de los nodos
+  .TOOLTIP_NODOS
+  [
+    .FONT "Fonts/Times12.fnt" 
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+    .X 32 .Y 32 
+      
+    .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+  ] 
+  
+  # El campo .BOTONES esta reservado a aquellos que se localicen de forma automatica
+  # por lo que aquellos que ubiquemos manualmente los pondremos en el campo .CONTROLES.
+  .BOTONES
+  [
+    .CENTER
+    [ 
+     .XMARGEN 967
+     .YMARGEN 714
+     .XSPACE  0
+     .YSPACE  0
+    ]
+    
+    .LIST
+    [      
+      [
+        .CANCELAR TRUE
+        .TIPO UIC_BOTONTEXTO     
+        .COMPORTAMIENTO SIMPLE
+        #.X 900 .Y 720
+        
+        .IDSELECTSOUND "S_FXUI_CLICKBUTTON"     
+        .IDHIGHLIGHTSOUND "S_FXSELECCION_RESALTE_ELEMENTO"  
+
+        .KEY
+        [
+         .TECLA KEY_ESCAPE .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ]          
+        ]
+        
+        .STYLE DEFAULT_OK_BUTTON
+      ]      
+      
+    ] # ~ LIST  
+  ] # ~BOTONES
+  
+  #Controles
+  .CONTROLES
+  [     
+    # Control de los paneles
+    [
+      .TIPO UIC_TABS .ID 'TPAN'
+      .PARAMS [ %Game/UI/ModeloGestion/UIDefs_PanelesArbolTecnologia.sb ]
+    ]
+    
+    # Bitmap de fondo para la barra de progreso
+    [
+      .TIPO UIC_BITMAP .ID 'BMBP'
+      .PARAMS
+      [
+        .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/MenuArbolTecnologias.tga" 
+        #.X 692 .Y 6
+        #.U 1 .V 891 .SX 136 .SY 26 .ALPHA TRUE
+        .X 689 .Y 6
+        .U 1 .V 890 .SX 139 .SY 28 .ALPHA TRUE
+      ]
+    ]
+    
+    [
+      .TIPO UIC_INFOTECNOLOGIA .ID 'INTE'
+      .PARAMS [ %Game/UI/ModeloGestion/UIDefs_CtrlInfoTecnologia.sb ]
+    ]
+    
+    # botón de puntos de ciencia
+    [
+      .TIPO UIC_BOTONTEXTO .ID 'BCIE'
+      .PARAMS
+      [
+        .FONDO
+        [
+  	      .X 685 .Y 2 .SX 37 .SY 37    
+          .PRIORITY 210
+      	  .ALPHA TRUE
+      	  .DISABLE 	    [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/MenuArbolTecnologias.tga" .U 282 .V 892 ] 
+      	  .SOLTADO 	    [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/MenuArbolTecnologias.tga" .U 162 .V 892 ] 
+      	  .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/MenuArbolTecnologias.tga" .U 202 .V 892 ] 
+      	  .PULSADO     	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/MenuArbolTecnologias.tga" .U 242 .V 892 ] 
+        ]
+        
+        .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK"                    
+        .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"                  
+        
+        # tooltip
+        .TOOL_TIP 
+        [ 
+         .TEXT LTEXT_UI_CONVERTIR_CIENCIA
+         .X 32 .Y 32
+           
+         
+         .STYLE DEFAULT_TOOLTIP
+        ]
+      ]
+    ]
+    
+    # Barra discreta para los puntos de ciencia por turno
+    [
+      .TIPO UIC_BARRAPROGRESODISCRETA .ID 'BPCI'
+      .PARAMS
+      [
+        .X 721 .Y 8
+        .MAX_VALUE 13
+        .INTERSPACE_X 1
+        
+        .FRAME
+        [
+      	  .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/MenuArbolTecnologias.tga" 
+      	  .U 142 .V 892 .SX 7 .SY 24 .ALPHA TRUE
+        ]
+        
+        .HDR_FRAME
+        [
+      	  .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/MenuArbolTecnologias.tga" 
+    	    .U 152 .V 892 .SX 7 .SY 24 .ALPHA TRUE
+        ]
+        
+      ]
+    ]
+    
+   [
+     .TIPO UIC_DLGCONVERTIRCIENCIA .ID 'DLCC'
+     .PARAMS [ %Game/UI/ModeloGestion/UIDefs_DlgConvertirCiencia.sb ]
+   ]    
+   
+   # Leyenda del arbol de tecnologías
+   %Game/UI/ModeloGestion/UIDefs_LeyendaArbolTecnologias.sb
+   
+   
+   ########################################################################
+   # Precargas de texturas para añadir referencias estáticas
+   ########################################################################
+   [
+     .TIPO UIC_STATICREFERENCE .ID 'SR01'
+     .PARAMS 
+     [ 
+       [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandes.tga" ]
+       [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaGrandesApagados.tga" ]
+     ]
+   ]
+   
+   # El control necesario para que aparezca el tooltip de la ciencia que se "construye"
+   [
+    .TIPO UIC_ZONASENSIBLE .ID 'TTCI'
+    .PARAMS
+    [
+      .RECT [ 722 10 824 30 ]
+      .DBCLICK_AS_RELEASE FALSE
+      .EVENTOS [ MOUSE ]
+      
+      .TOOL_TIP
+      [
+        .TEXT LTEXT_TT_PUNTOS_CIENCIA
+        .X 32 .Y 32
+        
+        .STYLE DEFAULT_TOOLTIP
+      ]
+    ]
+   ]
+  ] # ~CONTROLES

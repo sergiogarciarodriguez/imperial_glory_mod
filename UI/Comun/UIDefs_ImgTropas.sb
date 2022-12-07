@@ -1,0 +1,426 @@
+###############################################################################################################
+# Mantiene las imagenes de las tropas que podran salir en varios controles:
+# - Visor de tropas del mapa de gestion
+# - Ventana de organizacion de ejercitos en mapa de gestion
+# - Ventana de informacion de edificios en modelo de batalla
+# - ...
+###############################################################################################################
+
+# Imagen por defecto
+.DEFAULT 
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .SX 54 .SY 71 .U 773 .V 485 .ALPHA TRUE   
+]
+
+###############################################################################################################
+# Tropas Francesas
+
+.FRANCIA_FUSILERO
+[
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .SX 54 .SY 71 .U 541 .V 485 .ALPHA TRUE   
+]
+
+.FRANCIA_TIRADOR
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .SX 54 .SY 71 .U 599 .V 485 .ALPHA TRUE   
+]
+
+.FRANCIA_CAZADOR
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .SX 54 .SY 71 .U 367 .V 485 .ALPHA TRUE
+]
+
+.FRANCIA_GRANADERO
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 425 .V 485 .SX 54 .SY 71 .ALPHA TRUE   
+]
+
+.FRANCIA_CORACERO
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 483 .V 485 .SX 54 .SY 71 .ALPHA TRUE   
+]
+
+.FRANCIA_ELITE
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 657 .V 485 .SX 54 .SY 71 .ALPHA TRUE   
+]
+
+.FRANCIA_CAB_HUSAR
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 309 .V 333 .SX 54 .SY 71 .ALPHA TRUE   
+]
+
+.FRANCIA_CAB_LANCERO
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 251 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.FRANCIA_CAB_DRAGON
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 425 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.FRANCIA_CAB_CORACERO
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 367 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.FRANCIA_MORTERO
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 773 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.FRANCIA_CANON
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 657 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.FRANCIA_OBUS
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 715 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.FRANCIA_CANON_CAB
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 541 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.FRANCIA_OBUS_CAB
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 483 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.FRANCIA_CANON_CAMP
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 599 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+###############################################################################################################
+# Tropas Inglesas
+
+.INGLATERRA_FUSILERO
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 19 .V 485 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.INGLATERRA_TIRADOR
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 77 .V 485 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.INGLATERRA_CAZADOR
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 831 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.INGLATERRA_GRANADERO
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 889 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.INGLATERRA_CORACERO
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 947 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.INGLATERRA_ELITE
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 309 .V 485 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.INGLATERRA_CAB_HUSAR
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 77 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.INGLATERRA_CAB_LANCERO
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 19 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.INGLATERRA_CAB_DRAGON
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 193 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.INGLATERRA_CAB_CORACERO 
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 135 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.INGLATERRA_MORTERO
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 773 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.INGLATERRA_CANON
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 657 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.INGLATERRA_OBUS
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 715 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.INGLATERRA_CANON_CAB
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 541 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.INGLATERRA_OBUS_CAB
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 483 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.INGLATERRA_CANON_CAMP
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 599 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+###############################################################################################################
+# Tropas Austriacas
+
+.AUSTRIA_FUSILERO
+[
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .SX 54 .SY 71 .U 541 .V 485 .ALPHA TRUE   
+]
+
+.AUSTRIA_TIRADOR
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .SX 54 .SY 71 .U 599 .V 485 .ALPHA TRUE   
+]
+
+.AUSTRIA_CAZADOR
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .SX 54 .SY 71 .U 367 .V 485 .ALPHA TRUE
+]
+
+.AUSTRIA_GRANADERO
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 425 .V 485 .SX 54 .SY 71 .ALPHA TRUE   
+]
+
+.AUSTRIA_CORACERO
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 483 .V 485 .SX 54 .SY 71 .ALPHA TRUE   
+]
+
+.AUSTRIA_ELITE
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 657 .V 485 .SX 54 .SY 71 .ALPHA TRUE   
+]
+
+.AUSTRIA_CAB_HUSAR
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 309 .V 333 .SX 54 .SY 71 .ALPHA TRUE   
+]
+
+.AUSTRIA_CAB_LANCERO
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 251 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.AUSTRIA_CAB_DRAGON
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 425 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.AUSTRIA_CAB_CORACERO
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 367 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.AUSTRIA_MORTERO
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 773 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.AUSTRIA_CANON
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 657 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.AUSTRIA_OBUS
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 715 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.AUSTRIA_CANON_CAB
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 541 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.AUSTRIA_OBUS_CAB
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 483 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.AUSTRIA_CANON_CAMP
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 599 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+###############################################################################################################
+# Tropas Prusianas
+.PRUSIA_FUSILERO
+[
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .SX 54 .SY 71 .U 541 .V 485 .ALPHA TRUE   
+]
+
+.PRUSIA_TIRADOR
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .SX 54 .SY 71 .U 599 .V 485 .ALPHA TRUE   
+]
+
+.PRUSIA_CAZADOR
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .SX 54 .SY 71 .U 367 .V 485 .ALPHA TRUE
+]
+
+.PRUSIA_GRANADERO
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 425 .V 485 .SX 54 .SY 71 .ALPHA TRUE   
+]
+
+.PRUSIA_CORACERO
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 483 .V 485 .SX 54 .SY 71 .ALPHA TRUE   
+]
+
+.PRUSIA_ELITE
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 657 .V 485 .SX 54 .SY 71 .ALPHA TRUE   
+]
+
+.PRUSIA_CAB_HUSAR
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 309 .V 333 .SX 54 .SY 71 .ALPHA TRUE   
+]
+
+.PRUSIA_CAB_LANCERO
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 251 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.PRUSIA_CAB_DRAGON
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 425 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.PRUSIA_CAB_CORACERO
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 367 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.PRUSIA_MORTERO
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 773 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.PRUSIA_CANON
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 657 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.PRUSIA_OBUS
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 715 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.PRUSIA_CANON_CAB
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 541 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.PRUSIA_OBUS_CAB
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 483 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.PRUSIA_CANON_CAMP
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 599 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+###############################################################################################################
+# Tropas Rusas
+.RUSIA_FUSILERO
+[
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .SX 54 .SY 71 .U 541 .V 485 .ALPHA TRUE   
+]
+
+.RUSIA_TIRADOR
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .SX 54 .SY 71 .U 599 .V 485 .ALPHA TRUE   
+]
+
+.RUSIA_CAZADOR
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .SX 54 .SY 71 .U 367 .V 485 .ALPHA TRUE
+]
+
+.RUSIA_GRANADERO
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 425 .V 485 .SX 54 .SY 71 .ALPHA TRUE   
+]
+
+.RUSIA_CORACERO
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 483 .V 485 .SX 54 .SY 71 .ALPHA TRUE   
+]
+
+.RUSIA_ELITE
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 657 .V 485 .SX 54 .SY 71 .ALPHA TRUE   
+]
+
+.RUSIA_CAB_HUSAR
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 309 .V 333 .SX 54 .SY 71 .ALPHA TRUE   
+]
+
+.RUSIA_CAB_LANCERO
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 251 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.RUSIA_CAB_DRAGON
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 425 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.RUSIA_CAB_CORACERO
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 367 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.RUSIA_MORTERO
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 773 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.RUSIA_CANON
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 657 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.RUSIA_OBUS
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 715 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.RUSIA_CANON_CAB
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 541 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.RUSIA_OBUS_CAB
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 483 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]
+
+.RUSIA_CANON_CAMP
+[ 
+ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 599 .V 333 .SX 54 .SY 71 .ALPHA TRUE  
+]

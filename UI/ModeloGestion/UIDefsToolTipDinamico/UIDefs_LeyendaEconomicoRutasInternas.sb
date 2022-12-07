@@ -1,0 +1,13 @@
+#
+# LEYENDA DE LAS RUTAS EN EL MODO ECONOMICO PARA RUTAS INTERNAS
+#
+
+[
+  .TIPO UIC_WRAPTEXT .ID 'WTES'
+  .PARAMS
+  [     
+    .X 0 .Y 70 .SX 320 .SY 50
+    .ALIGN CENTER
+    .TEXT [ .FONT "Fonts/Times9.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+  ]
+]

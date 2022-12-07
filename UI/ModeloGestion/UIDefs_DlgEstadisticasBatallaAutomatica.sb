@@ -1,0 +1,147 @@
+#################################################################################################
+# Dlg que muestra las estadísticas de batallas automáticas
+#################################################################################################
+
+ # Se define la ventana                   
+ .MODAL TRUE
+ .CENTER TRUE      
+ .DEPTH 3
+ .ACTIVO FALSE
+ 
+  
+ .FONDO 
+ [ 
+   .X 200 .Y 84 
+   .FILE "Game/UI/ModeloGestion/VictoriaDerrota.tga" 
+   .U 1 .V 1 .PRIORITY 140 .ALPHA TRUE .SX 670 .SY 350 
+ ]              
+ 
+ .CAPTION
+ [
+  .XMARGEN 0
+  .YMARGEN 0
+  .HEIGHT 58
+  .TITLE 
+  [ 
+    .ALINEACION CENTER 
+    .TEXT " " 
+    .FONT "Fonts/MonoTypeCorsiva19.fnt" 
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+  .MOVIBLE FALSE
+ ]
+ .MODAL TRUE 
+
+ 
+ 
+
+ .CONTROLES
+ [
+ 
+  [ .TIPO UIC_BITMAP .ID 'IMG0'
+    .PARAMS 
+    [
+      .FILE "Game\UI\ModeloBatalla\InterfazBatalla.tga" .SX 33 .SY 18 .U 583 .V 98 .ALPHA TRUE
+      .X 53 .Y 194
+      .PRIORITY 240 
+    ]
+  ]
+  
+  [ .TIPO UIC_BITMAP .ID 'IMG1'
+    .PARAMS 
+    [ 
+      .FILE "Game\UI\ModeloBatalla\InterfazBatalla.tga" .SX 33 .SY 18 .U 583 .V 98 .ALPHA TRUE
+      .X 53 .Y 240
+      .PRIORITY 240 
+    ]
+  ]
+   
+  [ .TIPO UIC_WRAPTEXT .ID 'LBRS'        
+    .PARAMS [ .TEXT [ .FONT "Fonts/MonotypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ] .MSG LTEXT_UI_VICTORIA .X 237 .Y 35 .SX 200 .SY 100 .ALIGN CENTER ]
+  ]
+
+  [ .TIPO UIC_WRAPTEXT .ID 'LBBT'        
+    .PARAMS [ .TEXT [ .FONT "Fonts/MonotypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ] .MSG LTEXT_UI_BATALLA_DE .X 237 .Y 89 .SX 200 .SY 100 .ALIGN CENTER ]
+  ]
+  
+  # BAJAS CAUSADAS
+
+  [ .TIPO UIC_WRAPTEXT .ID 'LBCX'        
+    .PARAMS [ .TEXT [ .FONT "Fonts/MonotypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ] .MSG LTEXT_UI_BAJAS_CAUSADAS .X 111 .Y 139 .SX 100 .SY 100 .ALIGN CENTER ]
+  ]
+  
+  [ .TIPO UIC_WRAPTEXT .ID 'LBCA'        
+    .PARAMS [ .TEXT [ .FONT "Fonts/MonotypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ] .X 111 .Y 188 .SX 100 .SY 100 .ALIGN CENTER ]
+  ]
+
+  [ .TIPO UIC_WRAPTEXT .ID 'LBCD'        
+    .PARAMS [ .TEXT [ .FONT "Fonts/MonotypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ] .X 111 .Y 234 .SX 100 .SY 100 .ALIGN CENTER ]
+  ]
+  
+  
+
+  # BANDERAS CAPTURADAS
+  
+  [ .TIPO UIC_WRAPTEXT .ID 'LFCX'        
+    .PARAMS [ .TEXT [ .FONT "Fonts/MonotypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ] .MSG LTEXT_UI_BANDERAS_CAPTURADAS .X 243 .Y 139 .SX 100 .SY 100 .ALIGN CENTER ]
+  ]
+
+  [ .TIPO UIC_WRAPTEXT .ID 'LFCA'        
+    .PARAMS [ .TEXT [ .FONT "Fonts/MonotypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ] .X 243 .Y 188 .SX 100 .SY 100 .ALIGN CENTER ]
+  ]
+
+  [ .TIPO UIC_WRAPTEXT .ID 'LFCD'        
+    .PARAMS [ .TEXT [ .FONT "Fonts/MonotypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ] .X 243 .Y 234 .SX 100 .SY 100 .ALIGN CENTER ]
+  ]
+
+  # ENEMIGOS CAPTURADOS
+  
+  [ .TIPO UIC_WRAPTEXT .ID 'LECX'        
+    .PARAMS [ .TEXT [ .FONT "Fonts/MonotypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ] .MSG LTEXT_UI_ENEMIGOS_CAPTURADOS .X 378 .Y 139 .SX 100 .SY 100 .ALIGN CENTER ]
+  ]
+
+  [ .TIPO UIC_WRAPTEXT .ID 'LECA'        
+    .PARAMS [ .TEXT [ .FONT "Fonts/MonotypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ] .X 378 .Y 188 .SX 100 .SY 100 .ALIGN CENTER ]
+  ]
+
+  [ .TIPO UIC_WRAPTEXT .ID 'LECD'        
+    .PARAMS [ .TEXT [ .FONT "Fonts/MonotypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ] .X 378 .Y 234 .SX 100 .SY 100 .ALIGN CENTER ]
+  ]
+
+  # ARTILLERIA CAPTURADA
+  
+  [ .TIPO UIC_WRAPTEXT .ID 'LACX'        
+    .PARAMS [ .TEXT [ .FONT "Fonts/MonotypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ] .MSG LTEXT_UI_ARTILLERIA_CAPTURADA .X 512 .Y 139 .SX 100 .SY 100 .ALIGN CENTER ]
+  ]
+
+  [ .TIPO UIC_WRAPTEXT .ID 'LACA'        
+    .PARAMS [ .TEXT [ .FONT "Fonts/MonotypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ] .X 512 .Y 188 .SX 100 .SY 100 .ALIGN CENTER ]
+  ]
+
+  [ .TIPO UIC_WRAPTEXT .ID 'LACD'        
+    .PARAMS [ .TEXT [ .FONT "Fonts/MonotypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ] .X 512 .Y 234 .SX 100 .SY 100 .ALIGN CENTER ]
+  ]
+ ]
+              
+ # Se definen los botones
+ .BOTONES
+ [           
+  # Info de centrado automatico
+  .CENTER FALSE           
+  
+  # Lista de Botones
+  .LIST
+  [
+   [
+    .TIPO UIC_BOTONTEXTO
+    .STYLE MBGESTION_DEFAULT_BTN
+    .TEXT "OK" # Quitar!!!!
+    .FONDO [ .X 264 .Y 291 ]
+    
+    .ACEPTAR TRUE
+               
+    .KEY [ .TECLA KEY_RETURN .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ]                                                              
+   ]                                 
+              
+  ] # ~ LIST
+ ] # ~ BOTONES

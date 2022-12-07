@@ -1,0 +1,16 @@
+########################################################################################################
+# Params de la Ventana asociada a la informacion de la tropa actualmente seleccionada
+########################################################################################################
+
+ .FONDO [ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .X 0 .Y 601 .SX 188 .SY 165 .U 2 .V 857 .ALPHA TRUE ]
+            
+ .MORAL_FICTICIA [ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .DX 0 .DY 47 .U 550 .V 638 .SX 172 .SY 32 .ALPHA TRUE ]            
+            
+ .BARRA_RESISTENCIA 
+ [ 
+  .FONDO    [ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 292 .V 657 .ALPHA TRUE ]
+  .SUPERIOR [ .FILE "Game/UI/ModeloBatalla/Interfaz.tga" .U 292 .V 622 .ALPHA TRUE ]
+  .DX 0 .DY 79 .SX 172 .SY 32
+ ]
+            
+ .GRAFICOS_TROPAS "Game/UI/ModeloBatalla/UIDefs_GraficosTropasMax.sb"          

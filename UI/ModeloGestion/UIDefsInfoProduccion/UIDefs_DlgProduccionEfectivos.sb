@@ -1,0 +1,365 @@
+#############################################################################################
+# Dialogo de produccion de efectivos (batallones & barcos)
+# Fondo NO Tileado.
+# No Centrado.
+# Modal.
+# No Movible
+#############################################################################################
+
+.MODAL TRUE
+.CENTER TRUE
+.DEPTH 4
+  
+ .FONDO
+ [
+   .X 115 .Y 72
+   .FILE "Game/UI/ModeloGestion/UIDefsInfoProduccion/MenuComprarTropas.tga"      
+   .U 1 .V 1 .SX 811 .SY 609 .ALPHA TRUE .PRIORITY 200
+ ]           
+  
+ .CAPTION
+ [
+  .XMARGEN 0 .YMARGEN 9 .HEIGHT 34
+  .TITLE 
+  [ 
+   .ALINEACION CENTER 
+   .TEXT LTEXT_TITLE_DLG_PRODUCCION_EFECTIVOS
+   .FONT "Fonts/Times17.fnt" 
+   .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+  
+  .MOVIBLE FALSE
+ ]                 
+  
+ # Controles
+ .CONTROLES
+ [  
+  # WrapText del nombre del elemento seleccionado
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WTNS'
+   .PARAMS [ %Game/UI/ModeloGestion/UIDefsInfoProduccion/UIDefs_WrapTextNameSeleccionado.sb ]   
+  ] 
+  
+  # WrapText de descripcion
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WPIN'
+   .PARAMS [ .SX 623 .SY 106 %Game/UI/ModeloGestion/UIDefsInfoProduccion/UIDefs_WrapTextInfo.sb ]   
+  ]
+  
+  # WrapText de coste de dinero
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WTCD'
+   .PARAMS 
+   [ 
+     .X 70 .Y 383 
+     .SX 68 .SY 25
+     .ALIGN RIGHT
+     .TEXT [ .FONT "Fonts/Times11.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+   ]   
+  ]
+  
+  # WrapText de coste de poblacion
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WTCP'
+   .PARAMS 
+   [ 
+     .X 320 .Y 383 
+     .SX 60 .SY 25
+     .ALIGN RIGHT
+     .TEXT [ .FONT "Fonts/Times11.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+   ]   
+  ]
+  
+  # WrapText de coste de recursos
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WTCR'
+   .PARAMS 
+   [ 
+     .X 200 .Y 383 
+     .SX 60 .SY 25
+     .ALIGN RIGHT
+     .TEXT [ .FONT "Fonts/Times11.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+   ]   
+  ]
+  
+  # WrapText de coste de comida
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WTCC'
+   .PARAMS 
+   [ 
+     .X 564 .Y 383 
+     .SX 60 .SY 25
+     .ALIGN RIGHT
+     .TEXT [ .FONT "Fonts/Times11.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+   ]   
+  ]
+  
+  # WrapText de turnos
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WTIT'
+   .PARAMS 
+   [ 
+     .X 444 .Y 383 
+     .SX 60 .SY 25
+     .ALIGN CENTER
+     .TEXT [ .FONT "Fonts/Times11.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+   ]   
+  ]
+  
+  # Texto de Titulo asociado a la cola de produccion
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WTTP'
+   .PARAMS [ %Game/UI/ModeloGestion/UIDefsInfoProduccion/UIDefs_WrapTextInfoTituloColaProd.sb ]   
+  ]
+ 
+  # Visor de producibles
+  [
+   .TIPO UIC_VISORMATRIZCTRLS .ID 'VPRO'
+   .PARAMS [ %Game/UI/ModeloGestion/UIDefsInfoProduccion/UIDefs_VisorMatrizProduciblesEfectivos.sb ]   
+  ]           
+  
+  # Visor de cola de produccion
+  [
+   .TIPO UIC_VISORMATRIZCTRLS .ID 'VCPR'
+   .PARAMS [ %Game/UI/ModeloGestion/UIDefsInfoProduccion/UIDefs_VisorMatrizProduciendoseEfectivos.sb ]   
+  ]    
+  
+  # Btn de salida
+  [
+   .TIPO UIC_BOTONTEXTO .ID 'EXIT'
+   .PARAMS [ %Game/UI/ModeloGestion/UIDefsInfoProduccion/UIDefs_BtnExitDlgProduccion.sb ]
+  ]      
+  
+  # Botón "mayor que" para navegar entre provincias
+  [
+    .TIPO UIC_BOTONTEXTO .ID 'NEXT'
+    .PARAMS 
+    [ 
+      .IDSELECTSOUND "S_FXUI_CLICKBUTTON"  
+      .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"  
+      
+      
+      .X 648 .Y 50
+      .STYLE GREATER_THAN_BUTTON 
+
+      .KEY
+      [
+        .TECLA KEY_RIGHT .EVENTOS [ KEY_DOWN KEY_UP ]          
+      ]  
+      
+      .TOOL_TIP
+      [ 
+        .TEXT LTEXT_TT_CONSTRUCCION_DERECHA
+        .X 32 .Y 32
+        
+        .STYLE DEFAULT_TOOLTIP 
+      ]
+    ]
+    
+  ]
+  
+  # Botón "menor que" para navegar entre provincias
+  [
+    .TIPO UIC_BOTONTEXTO .ID 'PREV'
+    .PARAMS 
+    [ 
+      .IDSELECTSOUND "S_FXUI_CLICKBUTTON"  
+      .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"  
+      
+      .X 130 .Y 50
+      .STYLE LESSER_THAN_BUTTON 
+      
+      .KEY
+      [
+        .TECLA KEY_LEFT .EVENTOS [ KEY_DOWN KEY_UP ]          
+      ]  
+      
+      .TOOL_TIP
+      [ 
+        .TEXT LTEXT_TT_CONSTRUCCION_IZQUIERDA
+        .X 32 .Y 32
+        
+        .STYLE DEFAULT_TOOLTIP 
+      ]
+    ]
+  ]
+  
+  # Wraptext para poner la provincia en la que se está centrando la producción
+  [
+    .TIPO UIC_WRAPTEXT .ID 'WTIN'
+    .PARAMS
+    [
+      .X 10 .Y 48
+      .SX 794 .SY 39
+      .ALIGN CENTER
+      .TEXT [ .FONT "Fonts/Times17.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]    
+    ]
+  ]  
+  
+  # Wraptext con el número de turnos que necesita para construirse el icono actual
+  [
+    .TIPO UIC_WRAPTEXT .ID 'WTTR'
+    .PARAMS
+    [
+      .X 38 .Y 533
+      .SX 38 .SY 38
+      .ALIGN CENTER
+      .TEXT [ .FONT "Fonts/Times17.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]    
+    ]
+  ]  
+  
+  # Zona sensible 
+  [
+    .TIPO UIC_ZONASENSIBLE .ID 'ZSIE'
+    .PARAMS
+    [
+      .RECT [ 83 479 155 581 ] 
+      .DBCLICK_AS_RELEASE FALSE 
+      .EVENTOS [ MOUSE ] 
+      
+      .TOOL_TIP
+      [ 
+        # estaremos cambiándolo cada poco, asi que el texto aquí nos da un poco igual
+        .TEXT LTEXT_UI_TT_PANELRIQUEZAS_TOTALCOMIDA
+        .X 32 .Y 32
+          
+        
+        .STYLE DEFAULT_TOOLTIP 
+      ]      
+    ]
+  ]
+  
+  # bitmap de las características de los barcos
+  [
+    .TIPO UIC_BITMAP .ID 'BMST'
+    .PARAMS
+    [
+      .X 673 .Y 287 .SX 104 .SY 125
+      .FILE "Game/UI/ModeloGestion/UIDefsInfoProduccion/MenuComprarTropas.tga"      
+      .U 1 .V 613 .ALPHA TRUE
+    ]
+  ]
+  
+  # -- Controles de Wraptext con características del efectivo
+  # -  Texto para el rango de la tropa
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WTRA'
+   .PARAMS
+   [
+    .X 715 .Y 291 .SX 55 .SY 25
+    .ALIGN CENTER
+    
+    .TEXT
+    [
+     .FONT "Fonts/Times10.fnt" 
+     .COLOR [ .R 255 .G 255 .B 255 ]
+     .MSG  " "        
+    ]
+   ]   
+  ] 
+  
+  # -  Texto para la defensa de la tropa
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WTDE'
+   .PARAMS
+   [
+    .X 715 .Y 322 .SX 55 .SY 25
+    .ALIGN CENTER
+    
+    .TEXT
+    [
+     .FONT "Fonts/Times10.fnt" 
+     .COLOR [ .R 255 .G 255 .B 255 ]
+     .MSG  " "        
+    ]
+   ]   
+  ] 
+  
+  # -  Texto para la carga de la tropa
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WTCA'
+   .PARAMS
+   [
+    .X 715 .Y 353 .SX 55 .SY 25
+    .ALIGN CENTER
+    
+    .TEXT
+    [
+     .FONT "Fonts/Times10.fnt" 
+     .COLOR [ .R 255 .G 255 .B 255 ]
+     .MSG  " "        
+    ]
+   ]   
+  ] 
+  
+  # -  Texto para la puntería de la tropa
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WTPU'
+   .PARAMS
+   [
+    .X 715 .Y 384 .SX 55 .SY 25
+    .ALIGN CENTER
+    
+    .TEXT
+    [
+     .FONT "Fonts/Times10.fnt" 
+     .COLOR [ .R 255 .G 255 .B 255 ]
+     .MSG  " "        
+    ]
+   ]   
+  ]   
+  
+  
+  
+  # Gestor de Checkboxes con los botones asociados a las pestañas de los paneles de la ventana de producción de efectivos
+  [
+    .TIPO UIC_GESTORCHECKBOX .ID 'G_CB'
+    .PARAMS [ %Game/UI/ModeloGestion/UIDefsInfoProduccion/UIDefs_BotonesPestanasEfectivos.sb ]
+  ]
+  
+  # barra de progreso mostrando las estrellas correspondientes al nivel con el que va a salir la tropa
+  [
+    .TIPO UIC_BARRAPROGRESODISCRETA .ID 'BDXP'
+    .PARAMS
+    [
+      .X 161 .Y 560
+      .MAX_VALUE 3
+      .INTERSPACE_X 5
+      .TIPO VERTICAL
+      
+      .FRAME
+      [
+    	  .FILE "Game/UI/ModeloGestion/UIDefsDlgInfoGestion/InformacionTropas.tga" 
+    	  .U 287 .V 608 .SX 17 .SY 15 .ALPHA TRUE
+      ]
+    ]
+  ]
+  
+  
+  
+ ] # ~ CONTROLES
+ 
+ # Info de colores
+ .INFO_COLOR
+ [
+  .DESC                         [ .R 0   .G 0   .B 0   ]
+  .RIQUEZAS                     [ .R 255 .G 255 .B 255 ]
+  .RIQUEZAS_NEC                 [ .R 255 .G 0   .B 0   ]
+  .ICON_PRODUCCION_PARADA_COLOR [ .R 255 .G 0   .B 0   ]
+ ]
+ 
+ .ENLACES
+  [
+    [ .ID 'INFA' .BMAP [ .ACTIVO FALSE .FILE "Game/UI/ModeloGestion/UIDefsInfoProduccion/ComprarTropas5.tga" .X 13 .Y 88 .U 1 .V 1   .SX 785 .SY 152 .ALPHA TRUE .PRIORITY 202 ] ]
+    [ .ID 'CABA' .BMAP [ .ACTIVO FALSE .FILE "Game/UI/ModeloGestion/UIDefsInfoProduccion/ComprarTropas5.tga" .X 13 .Y 88 .U 1 .V 156 .SX 785 .SY 152 .ALPHA TRUE .PRIORITY 202 ] ]
+    [ .ID 'ARTI' .BMAP [ .ACTIVO FALSE .FILE "Game/UI/ModeloGestion/UIDefsInfoProduccion/ComprarTropas5.tga" .X 13 .Y 88 .U 1 .V 311 .SX 785 .SY 152 .ALPHA TRUE .PRIORITY 202 ] ]
+    [ .ID 'MAND' .BMAP [ .ACTIVO FALSE .FILE "Game/UI/ModeloGestion/UIDefsInfoProduccion/ComprarTropas5.tga" .X 13 .Y 88 .U 1 .V 466 .SX 785 .SY 152 .ALPHA TRUE .PRIORITY 202 ] ]
+    [ .ID 'BARC' .BMAP [ .ACTIVO FALSE .FILE "Game/UI/ModeloGestion/UIDefsInfoProduccion/ComprarTropas5.tga" .X 13 .Y 88 .U 1 .V 621 .SX 785 .SY 152 .ALPHA TRUE .PRIORITY 202 ] ]
+  ]
+ 
+   .ICON_POS
+  [ .X 83 .Y 479 ]
+
+  # datos con los que rellenaremos los datos de la barra de porcentaje de construcción de tropas
+  .BARRA_PORCENTAJE
+  [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 93 .V 921 .SX 72 .SY 102 .ALPHA TRUE]

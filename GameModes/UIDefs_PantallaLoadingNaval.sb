@@ -1,0 +1,35 @@
+[
+  .TIPO UIC_CARGADORBITMAPS .ID 'BMLO'
+  .PARAMS
+  [
+    .BITMAPS_FILE "Game/GameModes/UIDefs_BitmapsLoadingNaval.sb"
+  ]
+]
+
+[ 
+  .TIPO UIC_WRAPTEXT .ID 'TXLO' 
+  .PARAMS
+  [
+    .TEXT 
+    [ 
+      .FONT "Fonts/Times18.fnt" 
+      .COLOR [ .R 255 .G 255 .B 255 ]    
+    ] 
+    .X 0 .Y 669 .SX 1024 .SY 63
+    .ALIGN CENTER
+    .MSG "LTEXT_UI_LOADING"
+  ]
+]
+
+[
+  .TIPO UIC_BARRAPORCENTAJE .ID 'BPLO'
+  .PARAMS
+  [
+    .X 235 .Y 708
+    .SX 564 .SY 19
+    .PRIORITY 254
+    
+
+    .SUPERIOR [ .FILE "Game/UI/Comun/Loading/Loading1.tga" .U 235 .V 864 .ALPHA TRUE ]
+  ] 
+]

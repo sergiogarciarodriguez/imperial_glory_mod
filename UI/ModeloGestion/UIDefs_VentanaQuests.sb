@@ -1,0 +1,217 @@
+#############################################################################################
+# Ventana Quests
+#
+#############################################################################################
+
+  .MODAL TRUE
+  .CENTER TRUE
+  .DEPTH 3
+    
+  .FONDO 
+  [
+    .FILE "Game/UI/ModeloGestion/MenuQuest.tga"
+    .X 0 .Y 0 .U 0 .V 0 .SX 1024 .SY 768 
+    .ALPHA TRUE .PRIORITY 1
+  ] # ~FONDO
+   
+   
+  .POS_BITMAP_COBRADOR [ .X 439 .Y 536 ]
+  # El campo .BOTONES esta reservado a aquellos que se localicen de forma automatica
+  # por lo que aquellos que ubiquemos manualmente los pondremos en el campo .CONTROLES.
+  .QUEST_LIST
+  [
+    %Game/UI/ModeloGestion/Quests/UIDefs_VisorMatrizQuest.sb    
+  ]
+  
+  .CONDICIONES_LIST
+  [
+    .MAX_NUM_CONDICIONES 20
+  
+    .VISOR_OBJETIVOS
+    [
+      %Game/UI/ModeloGestion/Quests/UIDefs_VisorMatrizCondicionesQuest.sb
+    ]   
+    
+    .BITMAP_CONDICION
+    [
+      .CUMPLIDA     [ .FILE "Game/UI/Comun/ControlesStandard.tga" .SX 24 .SY 23 .U 99 .V 68 .DX 4 .DY 5 .ALPHA TRUE .PRIORITY 5]      
+      .NO_CUMPLIDA  [ .FILE "Game/UI/Comun/ControlesStandard.tga" .SX 24 .SY 23 .U 99 .V  4 .DX 4 .DY 5 .ALPHA TRUE .PRIORITY 5]
+    ]
+    
+    .TEXTO_CONDICION 
+    [ 
+      .SX 246 .SY 55
+      .ALIGN LEFT 
+      .TEXT [ .FONT "Fonts/Times12.fnt" .COLOR [ .R 0 .G 0 .B 0 ] ]
+      .DX 24 .DY -2 
+    ]
+  ]  
+  
+  .COBRAR
+  [
+    .DISABLE [ .COLOR [ .R 180 .G 180 .B 180 ] ]
+    .SOLTADO [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+    .PULSADO [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+    .TEXT LTEXT_BOTON_COBRAR
+    .FONT "Fonts/Times12.fnt"
+    .CENTER_AREA [ .X1 0 .Y1 0 .X2 139 .Y2 39 ]
+    .FONDO
+    [ 
+     .X 387 .Y 695 .SX 139 .SY 39 .ALPHA TRUE .PRIORITY 10
+     .DISABLE [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 323 .V 528 ]
+     .SOLTADO [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 181 .V 528 ]
+     .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 181 .V 574 ]
+     .PULSADO [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 181 .V 620 ]     
+    ]
+    
+     .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+     .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"  
+
+  ]
+  
+   .SELECCION_EFECTIVOS
+   [
+    .FONDO
+    [ 
+     .X 574 .Y 704 .SX 54 .SY 26 .ALPHA TRUE .PRIORITY 10
+     .DISABLE [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 516 .V 588 ]
+     .SOLTADO [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 345 .V 588 ]
+     .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 402 .V 588 ]
+     .PULSADO [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 459 .V 588 ]     
+    ]
+    
+     .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+     .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"  
+     
+      .TOOL_TIP 
+      [ 
+       .TEXT LTEXT_UI_BATALLA_TT_PCMAPA_EJERCITOS
+       .X 32 .Y 32
+       .STYLE DEFAULT_TOOLTIP
+      ]
+      
+      .KEY
+      [
+        .TECLA KEY_F7 .EVENTOS [ KEY_DOWN KEY_UP ]          
+      ]  
+  ]
+  
+  .MENSAJES_QUEST
+  [
+    #%Game/UI/ModeloGestion/UIDefs_MensajesQuest.sb
+    %Game\UI\ModeloGestion\UIDefsMsgBoxNotificaciones\UIDefs_MsgBoxNotificaciones.sb
+  ]  
+
+  .MENSAJES_QUEST_GRANDE
+  [
+    %Game\UI\ModeloGestion\UIDefsMsgBoxNotificaciones\UIDefs_MsgBoxGrandeNotificaciones.sb
+  ]  
+
+  .DESCRIPCION
+  [
+    .X 50 .Y 350 .SX 385 .SY 105
+    .TEXT [ .FONT "Fonts/Times12.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+  ]
+  
+  .RECOMPENSA
+  [  
+    .X 540 .Y 350 .SX 385 .SY 105
+    .TEXT [ .FONT "Fonts/Times12.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+  ]
+  
+  .NOMBREQUEST
+  [
+    .X 345 .Y 280 .SX 336 .SY 30
+    .ALIGN CENTER
+    .TEXT [ .FONT "Fonts/Times14.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+  ]  
+  
+   .BOTONES
+  [
+    .CENTER
+    [ 
+     .XMARGEN 970
+     .YMARGEN 711
+     .XSPACE  0
+     .YSPACE  0
+    ]
+    
+    .LIST
+    [      
+      [
+        .CANCELAR TRUE
+        .TIPO UIC_BOTONTEXTO     
+        #.STYLE DEFAULT_GESTION_VOLVER_BUTTON
+        .STYLE DEFAULT_X_BUTTON 
+        .IDSELECTSOUND "S_CANCELAR" 
+        .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"
+        .KEY
+        [
+         .TECLA KEY_ESCAPE .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ]          
+        ]        
+      ]            
+    ] # ~ LIST  
+  ] # ~BOTONES
+  
+  #Controles
+  .CONTROLES
+  [     
+    [ .TIPO UIC_TEXT .ID 'LBQS'
+      .PARAMS
+      [
+        .X 512 .Y 69
+        .ALIGN CENTER
+        .TEXT LTEXT_LABEL_QUESTS_DISPONIBLES
+        .FONT "Fonts/Times19.fnt"
+        .COLOR [ .R 255 .G 255 .B 255 ] 
+      ]
+    ] # ~TEXT
+    
+    [ .TIPO UIC_TEXT .ID 'LBDS' 
+      .PARAMS 
+      [
+        .X 220 .Y 326
+        .ALIGN CENTER
+        .TEXT LTEXT_LABEL_DESCRIPCION
+        .FONT "Fonts/Times14.fnt"
+        .COLOR [ .R 255 .G 255 .B 255 ] 
+      ]
+    ] # ~TEXT
+  
+    [ .TIPO UIC_TEXT .ID 'LBRC' 
+      .PARAMS 
+      [ 
+        .X 775 .Y 326
+        .ALIGN CENTER
+        .TEXT LTEXT_LABEL_RECOMPENSA
+        .FONT "Fonts/Times14.fnt"
+        .COLOR [ .R 255 .G 255 .B 255 ] 
+      ]
+    ] # ~TEXT    
+        
+    [ .TIPO UIC_TEXT .ID 'LBOB' 
+      .PARAMS 
+      [ 
+        .X 516 .Y 512
+        .ALIGN CENTER 
+        .TEXT LTEXT_LABEL_OBJETIVOS
+        .FONT "Fonts/Times14.fnt"
+        .COLOR [ .R 255 .G 255 .B 255 ] 
+      ]
+    ] # ~TEXT
+    
+
+    [ .TIPO UIC_BITMAP .ID 'BQCO' 
+      .PARAMS 
+      [ 
+        .FILE "Game/UI/ModeloGestion/IconosQuest.tga"
+        .X 436 .Y 552
+        .U 576 .V 505 .SX 154 .SY 154 
+        .ALPHA TRUE .PRIORITY 25]          
+      ]
+    ] # ~BITMAP 
+  ] # ~CONTROLES
+   
+   
+
+   

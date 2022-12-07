@@ -1,0 +1,67 @@
+############################################################################################
+# Estilos para los controles de la ventana de diplomacia
+############################################################################################
+
+[
+  .KEY DEFAULT_DIPLOMACIA_BUTTON
+  .PARAMS
+  [    
+    .FONT "Fonts/Times12.fnt"
+    .COLOR [ .R 0 .G 0 .B 0 ]
+    .FONDO
+    [
+      .SX 139 .SY 39
+      .ALPHA TRUE
+      .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 113 .V 329 ]
+      .DISABLE [.FILE "Game/UI/Comun/ControlesStandard.tga" .U 255  .V 329 ]
+      .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 113  .V 375 ]
+      .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 255  .V 375 ]
+      .PRIORITY 100
+    ]
+    .ALIGN CENTER
+    .DX 65 .DY 19
+  ]       
+]
+
+[
+  .KEY DEFAULT_DIPLOMACIA_BUTTON_GRANDE
+  .PARAMS
+  [
+    .FONT "Fonts/Times12.fnt"
+    .COLOR [ .R 0 .G 0 .B 0 ]
+    .FONDO
+    [
+      .SX 209 .SY 39
+      .ALPHA TRUE          
+      .SOLTADO      [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 43 .V 417 ]
+      .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 43 .V 463 ]
+      .DISABLE      [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 255 .V 463 ]                      
+      .PULSADO      [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 255 .V 417 ]                      
+      .PRIORITY 100
+    ]
+    .ALIGN CENTER
+    .DX 104 .DY 19
+  ]    
+]
+
+[
+  .KEY ULTIMATUM_BUTTON
+  .PARAMS
+  [
+    .FONDO
+    [
+      .SX 24 .SY 23
+      .ALPHA TRUE
+      .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 99 .V 4 ]
+      .DISABLE [.FILE "Game/UI/Comun/ControlesStandard.tga" .U 198 .V 4 ]
+      .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 132 .V 4 ]
+      .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 99 .V 68 ]
+      .PRIORITY 100
+    ]
+    .TOOL_TIP 
+    [  .TEXT LTEXT_DIPLOMACIA_ULTIMATUM %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+    ] 
+
+  ]
+]
+

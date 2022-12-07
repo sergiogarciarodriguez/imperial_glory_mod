@@ -1,0 +1,54 @@
+#-----------------------------------------------------------------------------------
+# Define un slider estandar vertical
+#
+# Aqui se definen cosas como:
+#   -las texturas
+#   -las dimensiones del slider
+#   -los controles que tiene (1 ó 3)
+#   - si es horizontal o vertical
+#  
+  
+  .PARAMS
+  [ 
+    .FILE "Game/UI/Comun/ControlesStandard.tga" 
+    .SX 2 .SY 15 .U 59 .V 200 .HORIZONTAL FALSE .ALPHA TRUE .PRIORITY 1
+      
+     # Boton 1
+    .BTN_1
+    [ .TIPO UIC_BOTONGRAFICO
+      .COMPORTAMIENTO SIMPLE 
+      .FONDO
+      [
+        .SX 14 .SY 15 .ALPHA TRUE    
+        .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 4 .V 200 ]
+        .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 22 .V 200 ]
+        .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 40 .V 200 ]
+      ]
+    ]
+
+    # Boton 2                
+    .BTN_2
+    [ .TIPO UIC_BOTONGRAFICO
+      .COMPORTAMIENTO SIMPLE
+      .FONDO
+      [
+        .SX 14 .SY 15 .ALPHA TRUE
+        .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 4 .V 219  ] 
+        .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 22 .V 219 ]
+        .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 40 .V 219 ]
+      ]
+    ]
+  
+    # Boton central
+    .BTN_CENTRAL
+    [ .TIPO UIC_BOTONGRAFICO
+      .COMPORTAMIENTO SIMPLE    
+      .FONDO
+      [
+        .SX 20 .SY 21 .ALPHA TRUE
+        .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 4 .V 99 ]
+        .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 30 .V 99 ]
+        .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 56 .V 99 ]
+      ]
+    ]
+  ]

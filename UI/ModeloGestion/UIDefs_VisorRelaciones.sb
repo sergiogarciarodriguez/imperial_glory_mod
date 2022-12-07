@@ -1,0 +1,272 @@
+.CENTER FALSE
+.MODAL FALSE
+
+# Fondo texto
+.FONDO
+[  
+  .X 0 .Y 45
+  .U 0 .V 804 .SX 1024 .SY 71
+  .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" 
+  .ALPHA TRUE .PRIORITY 201
+]              
+
+
+# posición de bandera del jugador hostil 1º
+.POS_BANDERA_HOSTIL_1 [ .X 8 .Y 8 ]
+# posición de bandera del jugador hostil 2º
+.POS_BANDERA_HOSTIL_2 [ .X 8 .Y 35 ]
+
+#posición de bandera del jugador amistoso 1º
+.POS_BANDERA_AMIGA_1 [ .X 828 .Y 8 ]
+#posición de bandera del jugador amistoso 2º
+.POS_BANDERA_AMIGA_2 [ .X 828 .Y 35 ]
+
+.CONTROLES
+[ 
+  # Nombre del jugador hostil 1º
+  [
+    .TIPO UIC_WRAPTEXT .ID 'TJH1'
+    .PARAMS
+    [
+      .X 44 .Y 3 .SX 106 .SY 28
+      .ALIGN CENTER
+      .TEXT 
+      [ 
+        .FONT "Fonts/Times11.fnt" 
+        .COLOR [ .R 255 .G 255 .B 255 ] 
+      ]
+      .MSG "HOSTIL_1"
+    ]
+  ]
+  
+  # Nombre del jugador hostil 2º
+  [
+    .TIPO UIC_WRAPTEXT .ID 'TJH2'
+    .PARAMS
+    [
+      .X 44 .Y 30 .SX 106 .SY 28
+      .ALIGN CENTER
+      .TEXT 
+      [ 
+        .FONT "Fonts/Times11.fnt" 
+        .COLOR [ .R 255 .G 255 .B 255 ] 
+      ]
+      .MSG "HOSTIL_2"
+    ]
+  ]  
+  
+  # Puntos de hostilidad jugador 1
+  [
+    .TIPO UIC_WRAPTEXT .ID 'TPH1'
+    .PARAMS
+    [
+      .X 150 .Y 3 .SX 45 .SY 25
+      .ALIGN CENTER
+      .TEXT 
+      [ 
+        .FONT "Fonts/Times11.fnt" 
+        .COLOR [ .R 255 .G 255 .B 255 ] 
+      ]
+      .MSG "99"
+    ]
+  ]  
+  
+  # Puntos de hostilidad jugador 2
+  [
+    .TIPO UIC_WRAPTEXT .ID 'TPH2'
+    .PARAMS
+    [
+      .X 150 .Y 30 .SX 45 .SY 25
+      .ALIGN CENTER 
+      .TEXT 
+      [ 
+        .FONT "Fonts/Times11.fnt" 
+        .COLOR [ .R 255 .G 255 .B 255 ] 
+      ]
+      .MSG "98"
+    ]
+  ]  
+  
+  
+  # Puntos de popularidad del jugador
+  [
+    .TIPO UIC_WRAPTEXT .ID 'TPPJ'
+    .PARAMS
+    [
+      .X 489 .Y 3 .SX 46 .SY 26
+      .ALIGN CENTER
+      .TEXT 
+      [ 
+        .FONT "Fonts/Times14.fnt" 
+        .COLOR [ .R 255 .G 255 .B 255 ] 
+      ]
+      .MSG "100"
+    ]
+  ]
+  
+  
+  # Barra progreso de amistad
+  [
+    .TIPO UIC_BARRAPROGRESODISCRETA .ID 'BPAM'
+    .PARAMS
+    [
+      .PRIORITY 201
+      .X 566 .Y 6
+      .MAX_VALUE 31
+      .INTERSPACE_X 1
+      
+      .FRAME
+      [
+        .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" 
+    	  .U 11 .V 878 .SX 7 .SY 20 .ALPHA TRUE
+      ]
+    ]
+  ]     
+  
+  # Barra progreso de hostilidad
+  [
+    .TIPO UIC_BARRAPROGRESODISCRETA .ID 'BPHO'
+    .PARAMS
+    [
+      .PRIORITY 201
+      .X 211 .Y 6
+      .MAX_VALUE 31
+      .INTERSPACE_X 1
+      
+      .TIPO HORIZONTAL_INVERSA
+      
+      .FRAME
+      [
+        .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" 
+    	  .U 1 .V 878 .SX 7 .SY 20 .ALPHA TRUE
+      ]
+    ]
+  ]       
+  
+
+  # Nombre del jugador amistoso 1º
+    [
+    .TIPO UIC_WRAPTEXT .ID 'TJA1'
+    .PARAMS
+    [
+      .X 863 .Y 3 .SX 106 .SY 28
+      .ALIGN CENTER
+      .TEXT 
+      [ 
+        .FONT "Fonts/Times11.fnt" 
+        .COLOR [ .R 255 .G 255 .B 255 ] 
+      ]
+      .MSG "FRIEND_1"
+    ]
+  ]
+  
+  # Nombre del jugador amistoso 2º
+  [
+    .TIPO UIC_WRAPTEXT .ID 'TJA2'
+    .PARAMS
+    [
+      .X 863 .Y 30 .SX 106 .SY 28
+      .ALIGN CENTER
+      .TEXT 
+      [ 
+        .FONT "Fonts/Times11.fnt" 
+        .COLOR [ .R 255 .G 255 .B 255 ] 
+      ]
+      .MSG "FRIEND_2"
+    ]
+  ]  
+  
+  # Puntos de amistad jugador 1
+  [
+    .TIPO UIC_WRAPTEXT .ID 'TPA1'
+    .PARAMS
+    [
+      .X 971 .Y 3 .SX 45 .SY 25
+      .ALIGN CENTER
+      .TEXT 
+      [ 
+        .FONT "Fonts/Times11.fnt" 
+        .COLOR [ .R 255 .G 255 .B 255 ] 
+      ]
+      .MSG "01"
+    ]
+  ]  
+  
+  # Puntos de amistad jugador 2
+  [
+    .TIPO UIC_WRAPTEXT .ID 'TPA2'
+    .PARAMS
+    [
+      .X 971 .Y 30 .SX 45 .SY 25
+      .ALIGN CENTER 
+      .TEXT 
+      [ 
+        .FONT "Fonts/Times11.fnt" 
+        .COLOR [ .R 255 .G 255 .B 255 ] 
+      ]
+      .MSG "02"
+    ]
+  ]  
+  
+  # zonas sensibles con tooltips descriptivos
+  # enemigos
+  [ 
+    .TIPO UIC_ZONASENSIBLE  .ID 'AMTT' 
+    .PARAMS 
+    [ 
+      .RECT [ 0 0 211 69 ] 
+      .DBCLICK_AS_RELEASE FALSE 
+      .EVENTOS [ MOUSE ] 
+
+      .TOOL_TIP
+      [ 
+        .TEXT LTEXT_UI_GESTIONMAPA_TT_MAS_ENEMIGOS
+        .X 32 .Y 32
+          
+        
+        .STYLE DEFAULT_TOOLTIP 
+      ]
+    ]
+  ]                              
+  
+  # amigos
+  [ 
+    .TIPO UIC_ZONASENSIBLE  .ID 'ENTT' 
+    .PARAMS 
+    [ 
+      .RECT [ 815 0 1026 69 ] 
+      .DBCLICK_AS_RELEASE FALSE 
+      .EVENTOS [ MOUSE ] 
+
+      .TOOL_TIP
+      [ 
+        .TEXT LTEXT_UI_GESTIONMAPA_TT_MAS_AMIGOS
+        .X 32 .Y 32
+          
+        
+        .STYLE DEFAULT_TOOLTIP 
+      ]
+    ]
+  ]                                
+  
+  # barra de popularidad
+  [ 
+    .TIPO UIC_ZONASENSIBLE  .ID 'BPTT' 
+    .PARAMS 
+    [ 
+      .RECT [ 213 0 813 34 ] 
+      .DBCLICK_AS_RELEASE FALSE 
+      .EVENTOS [ MOUSE ] 
+
+      .TOOL_TIP
+      [ 
+        .TEXT LTEXT_UI_GESTIONMAPA_TT_SIMPATIA_GENERAL
+        .X 32 .Y 32
+          
+        
+        .STYLE DEFAULT_TOOLTIP 
+      ]
+    ]
+  ]                                  
+]
+ 

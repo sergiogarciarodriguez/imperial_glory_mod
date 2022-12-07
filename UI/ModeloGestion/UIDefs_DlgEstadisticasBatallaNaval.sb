@@ -1,0 +1,187 @@
+#################################################################################################
+# Dlg que muestra las estadísticas de batallas automáticas en modo terrestre
+# Este Dlg tendra la particularidad de que los botones de salida podran tener dos modos:
+# - Si NO han existido capturas, unicamente tendra el modo ACEPTAR
+# - Si SI han existido capturas, podra tener el boton de AJUSTICIAR y el de DESTERRAR.
+#################################################################################################
+
+ # Se define la ventana                   
+ .MODAL TRUE
+ .CENTER TRUE      
+ .DEPTH 3
+ .ACTIVO FALSE
+ 
+  
+ .FONDO 
+ [ 
+   .X 200 .Y 84 
+   .FILE "Game\UI\ModeloGestion\ResultadoBatallaBarcos.tga" 
+   .U 1 .V 1 .PRIORITY 140 .ALPHA TRUE .SX 969 .SY 651 
+ ]              
+ 
+ .CAPTION
+ [
+  .XMARGEN 0
+  .YMARGEN 0
+  .HEIGHT 58
+  .TITLE 
+  [ 
+    .ALINEACION CENTER 
+    .TEXT " " 
+    .FONT "Fonts/MonoTypeCorsiva19.fnt" 
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+  .MOVIBLE FALSE
+ ]
+ 
+ .MODAL TRUE 
+
+ .CONTROLES
+ [
+  #---------------------------------------------- TITULO ------------------------------------------
+  [ 
+    .TIPO UIC_WRAPTEXT .ID 'WRES' 
+    .PARAMS [ .TEXT [ .FONT "Fonts\MonoTypeCorsiva19.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ] .X 164 .Y 19 .SX 600 .SY 40 .ALIGN CENTER  ]
+  ]    
+    
+  #---------------------------------------------- BANDERAS ----------------------------------------
+  [ .TIPO UIC_BITMAP .ID 'IMG0' 
+    .PARAMS [ .FILE "Game\UI\ModeloGestion\ResultadoBatallaBarcos.tga" .SX 33 .SY 18 .U 191 .V 670 .ALPHA TRUE .X 100 .Y 103 .PRIORITY 140 ]
+  ]
+  
+  [ .TIPO UIC_BITMAP .ID 'IMG1'
+    .PARAMS [ .FILE "Game\UI\ModeloGestion\ResultadoBatallaBarcos.tga" .SX 33 .SY 18 .U 191 .V 670 .ALPHA TRUE .X 100 .Y 348 .PRIORITY 140 ]
+  ]
+  
+  #---------------------------------------------- LABELS FIJAS ------------------------------------
+  # player
+  [ 
+    .TIPO UIC_WRAPTEXT .ID 'LABL' 
+    .PARAMS [ .MSG LTEXT_UI_SHIP_CAPTURES .TEXT [ .FONT "Fonts\MonoTypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ] .X 350 .Y 64 .SX 300 .SY 40 .ALIGN CENTER  ]
+  ]    
+
+  [ 
+    .TIPO UIC_WRAPTEXT .ID 'LABL' 
+    .PARAMS [ .MSG LTEXT_UI_SHIP_LOST .TEXT [ .FONT "Fonts\MonoTypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ] .X 583 .Y 64 .SX 300 .SY 40 .ALIGN CENTER  ]
+  ]    
+
+  [ 
+    .TIPO UIC_WRAPTEXT .ID 'LABL' 
+    .PARAMS [ .MSG LTEXT_UI_EXPERIENCE_GAINED .TEXT [ .FONT "Fonts\MonoTypeCorsiva11.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ] .X 350 .Y 125 .SX 300 .SY 40 .ALIGN CENTER  ]
+  ]    
+
+  [ 
+    .TIPO UIC_WRAPTEXT .ID 'LABL' 
+    .PARAMS [ .MSG LTEXT_UI_TOTAL_EXPERIENCE .TEXT [ .FONT "Fonts\MonoTypeCorsiva11.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ] .X 510 .Y 125 .SX 300 .SY 40 .ALIGN CENTER  ]
+  ]    
+
+  [ 
+    .TIPO UIC_WRAPTEXT .ID 'LABL' 
+    .PARAMS [ .MSG LTEXT_UI_LEVEL .TEXT [ .FONT "Fonts\MonoTypeCorsiva11.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ] .X 657 .Y 125 .SX 300 .SY 40 .ALIGN CENTER  ]
+  ]    
+
+  # enemy
+  [ 
+    .TIPO UIC_WRAPTEXT .ID 'LABL' 
+    .PARAMS [ .MSG LTEXT_UI_SHIP_CAPTURES .TEXT [ .FONT "Fonts\MonoTypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ] .X 350 .Y 309 .SX 300 .SY 40 .ALIGN CENTER  ]
+  ]    
+
+  [ 
+    .TIPO UIC_WRAPTEXT .ID 'LABL' 
+    .PARAMS [ .MSG LTEXT_UI_SHIP_LOST .TEXT [ .FONT "Fonts\MonoTypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ] .X 583 .Y 309 .SX 300 .SY 40 .ALIGN CENTER  ]
+  ]    
+
+  [ 
+    .TIPO UIC_WRAPTEXT .ID 'LABL' 
+    .PARAMS [ .MSG LTEXT_UI_EXPERIENCE_GAINED .TEXT [ .FONT "Fonts\MonoTypeCorsiva11.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ] .X 350 .Y 370 .SX 300 .SY 40 .ALIGN CENTER  ]
+  ]    
+
+  [ 
+    .TIPO UIC_WRAPTEXT .ID 'LABL' 
+    .PARAMS [ .MSG LTEXT_UI_TOTAL_EXPERIENCE .TEXT [ .FONT "Fonts\MonoTypeCorsiva11.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ] .X 510 .Y 370 .SX 300 .SY 40 .ALIGN CENTER  ]
+  ]    
+
+  [ 
+    .TIPO UIC_WRAPTEXT .ID 'LABL' 
+    .PARAMS [ .MSG LTEXT_UI_LEVEL .TEXT [ .FONT "Fonts\MonoTypeCorsiva11.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ] .X 657 .Y 370 .SX 300 .SY 40 .ALIGN CENTER  ]
+  ]    
+   
+  #---------------------------------------------- BARCOS CAPTURADOS -----------------------------
+  [ 
+    .TIPO UIC_WRAPTEXT .ID 'WEC1'        
+    .PARAMS [ .TEXT [ .FONT "Fonts/MonotypeCorsiva15.fnt" .COLOR [ .R 0 .G 0 .B 0 ] ] .X 462 .Y 95 .SX 78 .SY 40 .ALIGN CENTER ]
+  ]
+
+  [ 
+    .TIPO UIC_WRAPTEXT .ID 'WEC2'        
+    .PARAMS [ .TEXT [ .FONT "Fonts/MonotypeCorsiva15.fnt" .COLOR [ .R 0 .G 0 .B 0 ] ] .X 462 .Y 340 .SX 78 .SY 40 .ALIGN CENTER ]
+  ]
+
+  #---------------------------------------------- BARCOS PERDIDOS -----------------------------
+  [ 
+    .TIPO UIC_WRAPTEXT .ID 'WCA1'        
+    .PARAMS [ .TEXT [ .FONT "Fonts/MonotypeCorsiva15.fnt" .COLOR [ .R 0 .G 0 .B 0 ] ] .X 694 .Y 95 .SX 78 .SY 40 .ALIGN CENTER ]
+  ]
+
+  [ 
+    .TIPO UIC_WRAPTEXT .ID 'WCA2'        
+    .PARAMS [ .TEXT [ .FONT "Fonts/MonotypeCorsiva15.fnt" .COLOR [ .R 0 .G 0 .B 0 ] ] .X 694 .Y 340 .SX 78 .SY 40 .ALIGN CENTER ]
+  ]
+  
+  #---------------------------------------------- BOTONES -------------------------------------------
+  [
+   # Boton de ACEPTAR
+   .TIPO UIC_BOTONTEXTO .ID 'BTOK'
+   .PARAMS [ .STYLE DEFAULT_RECTANGLE_BUTTON_BIG .TEXT "LTEXT_UI_ACEPTAR" .FONDO [ .X 375 .Y 573 ] .CENTER_AREA [ .X1 0 .Y1 0 .X2 209 .Y2 39 ] ]
+   .IDSELECTSOUND "S_ACEPTAR" 
+   .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"
+
+  ]
+  
+  [ 
+   # Boton de AJUSTICIAR   
+   .TIPO UIC_BOTONTEXTO .ID 'BTAJ'
+   .PARAMS [ .STYLE DEFAULT_RECTANGLE_BUTTON_BIG .TEXT "LTEXT_UI_AJUSTICIAR" .FONDO [ .X 219 .Y 565 ] .CENTER_AREA [ .X1 0 .Y1 0 .X2 209 .Y2 39 ] ]
+   .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+   .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"
+
+  ]
+  
+  [
+   # Boton de DESTERRAR
+   .TIPO UIC_BOTONTEXTO .ID 'BTDE'
+   .PARAMS [ .STYLE DEFAULT_RECTANGLE_BUTTON_BIG .TEXT "LTEXT_UI_DESTERRAR" .FONDO [ .X 601 .Y 565 ] .CENTER_AREA [ .X1 0 .Y1 0 .X2 209 .Y2 39 ] ]
+   .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+   .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"
+
+  ]
+  
+ ]
+
+#------------------------------------------------ POSICIONES DE INICIO ----------------------------
+.INC_Y_ROW    27 
+.INC_Y_PLAYER 245 
+ 
+#----------------------------------------------- ICONOS BARCOS ------------------------------------
+.ICONO_CORBETA [ .FILE "Game\UI\ModeloGestion\ResultadoBatallaBarcos.tga" .SX 49 .SY 27 .U 55 .V 691 .ALPHA TRUE .X 48 .Y 151 .PRIORITY 100 ] 
+.ICONO_FRAGATA [ .FILE "Game\UI\ModeloGestion\ResultadoBatallaBarcos.tga" .SX 49 .SY 27 .U 55 .V 721 .ALPHA TRUE .X 48 .Y 151 .PRIORITY 100 ]
+.ICONO_NAVIO   [ .FILE "Game\UI\ModeloGestion\ResultadoBatallaBarcos.tga" .SX 49 .SY 27 .U 55 .V 751 .ALPHA TRUE .X 48 .Y 151 .PRIORITY 100 ]
+  
+.ICONO_REPARAR [ .FILE "Game\UI\ModeloGestion\ResultadoBatallaBarcos.tga" .SX 29 .SY 24 .U 17 .V 673 .ALPHA TRUE .X 307 .Y 153 .PRIORITY 100 ]
+.ICONO_PERDIDO [ .FILE "Game\UI\ModeloGestion\ResultadoBatallaBarcos.tga" .SX 29 .SY 24 .U 17 .V 699 .ALPHA TRUE .X 307 .Y 153 .PRIORITY 100 ]
+
+#------------------------------------------------ NOMBRE BARCOS -----------------------------------
+.NOMBRE  [ .TEXT [ .FONT "Fonts\MonotypeCorsiva11.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ] .X 88 .Y 149 .SX 178 .SY 40 .ALIGN CENTER ]
+
+#------------------------------------------------ % DAÑOS BARCOS -----------------------------------
+.DANOS  [ .TEXT [ .FONT "Fonts\MonotypeCorsiva11.fnt" .COLOR [ .R 0 .G 0 .B 0 ] ] .X 203 .Y 149 .SX 158 .SY 40 .ALIGN CENTER ]
+
+#------------------------------------------------ EXPERIENCE GAINED BARCOS -----------------------------------
+.EXP_GAINED  [ .TEXT [ .FONT "Fonts\MonotypeCorsiva11.fnt" .COLOR [ .R 0 .G 0 .B 0 ] ] .X 408 .Y 149 .SX 158 .SY 40 .ALIGN CENTER ]
+
+#------------------------------------------------ EXPERIENCE BARCOS -----------------------------------
+.EXPERIENCE  [ .TEXT [ .FONT "Fonts\MonotypeCorsiva11.fnt" .COLOR [ .R 0 .G 0 .B 0 ] ] .X 582 .Y 149 .SX 158 .SY 40 .ALIGN CENTER ] 
+
+#------------------------------------------------ ICONO EXPERIENCIA -------------------------------
+.ICONO_EXPERIENCIA [ .FILE "Game\UI\ModeloGestion\ResultadoBatallaBarcos.tga" .SX 23 .SY 15 .U 55 .V 673 .ALPHA TRUE .X 799 .Y 157 .PRIORITY 100 ]
+

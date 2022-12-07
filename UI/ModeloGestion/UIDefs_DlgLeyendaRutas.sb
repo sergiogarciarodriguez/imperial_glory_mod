@@ -1,0 +1,58 @@
+#############################################################################################
+# Leyenda de rutas comerciales en el modo económico
+#############################################################################################
+
+ .MODAL FALSE
+ .CENTER FALSE
+  
+ .FONDO 
+ [  
+  .X 4 .Y 510 .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga" .U 38 .V 159 .SX 36 .SY 91 .ALPHA TRUE   
+  .PRIORITY 200
+ ]              
+            
+ # Controles
+ .CONTROLES
+ [
+   # Textos descriptivos de la leyenda
+   [
+     .TIPO UIC_TEXT .ID 'TACT'
+     .PARAMS
+     [
+      .X 37 .Y 7 .TEXT LTEXT_UI_EXTERNANIVELES
+      .FONT "Fonts/Times9.fnt"
+      .COLOR [ .R 255 .G 255 .B 255 ]
+     ]
+   ] 
+   
+   [
+     .TIPO UIC_TEXT .ID 'TAN1'
+     .PARAMS
+     [
+      .X 37 .Y 28 .TEXT LTEXT_UI_INTERNANIVELES
+      .FONT "Fonts/Times9.fnt"
+      .COLOR [ .R 255 .G 255 .B 255 ]
+     ]
+   ] 
+   
+   [
+     .TIPO UIC_TEXT .ID 'TAN2'
+     .PARAMS
+     [
+      .X 37 .Y 49 .TEXT LTEXT_UI_NO_ACTIVA
+      .FONT "Fonts/Times9.fnt"
+      .COLOR [ .R 255 .G 255 .B 255 ]
+     ]
+   ] 
+   
+   [
+     .TIPO UIC_TEXT .ID 'TAN3'
+     .PARAMS
+     [
+      .X 37 .Y 70 .TEXT LTEXT_UI_BLOQUEADA
+      .FONT "Fonts/Times9.fnt"
+      .COLOR [ .R 255 .G 255 .B 255 ]
+     ]
+   ] 
+   
+ ] # ~ CONTROLES

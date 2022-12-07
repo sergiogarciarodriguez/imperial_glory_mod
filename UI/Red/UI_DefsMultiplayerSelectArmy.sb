@@ -1,0 +1,276 @@
+##############################################################################################################
+# 
+# Pantalla de configuracion de ejercito para partidas multiplayer
+#
+##############################################################################################################
+
+.MODAL TRUE
+.CENTER FALSE
+
+.FONDO
+[
+  .PRIORITY 10
+  .FILE "Game/UI/Red/PantallaComprarTropas.tga"
+  .X 0 .Y 0 .U 0 .V 0 .SX 1024 .SY 768 .ALPHA FALSE
+]
+
+.CONTROLES 
+[
+  #---------------------------------------------- LABEL CUSTOM ARMY -----------------------------------------
+  [
+    .TIPO UIC_TEXT .ID 'LCNA'
+    .PARAMS
+    [
+      .TEXT LTEXT_UI_MENUMULTIPLAYER_LBL_CUSTOMARMY
+      .ALIGN RIGHT
+      .FONT "Fonts/MonotypeCorsiva29.fnt"
+      .X 900 .Y 148 
+      .COLOR [ .R 255 .G 255 .B 255] 
+    ]
+  ]
+  
+  #---------------------------------------------- LABEL EXPERIENCIA -----------------------------------------
+  [
+    .TIPO UIC_TEXT .ID 'LEXP'
+    .PARAMS
+    [
+      .TEXT LTEXT_UI_MENUMULTIPLAYER_LBL_EXPERIENCIA
+      .ALIGN CENTER
+      .FONT "Fonts/Times15.fnt"
+      .X 516 .Y 396
+      .COLOR [ .R 255 .G 255 .B 255] 
+    ]
+  ]
+  
+
+	#---------------------------------------------- WRAP IMPERIO ----------------------------------------------
+  [
+    .TIPO UIC_WRAPTEXT .ID 'WTIM'
+    .PARAMS
+    [
+      .ALIGN LEFT
+      .MSG "FRANCIA"
+      .TEXT
+      [
+        .FONT "Fonts/Times15.fnt"
+        .COLOR [ .R 255 .G 255 .B 255 ]
+      ]
+      .X 155 .Y 210 .SX 238 .SY 40
+      .PRIORITY 15      
+    ]
+  ]
+
+	#---------------------------------------------- WRAP DINERO -----------------------------------------------
+  [
+    .TIPO UIC_WRAPTEXT .ID 'WTMO'
+    .PARAMS
+    [
+      .ALIGN CENTER
+      .MSG "15000"
+      .TEXT
+      [
+        .FONT "Fonts/Times15.fnt"
+        .COLOR [ .R 255 .G 255 .B 255 ]
+      ]
+      .X 710 .Y 210 .SX 70 .SY 40
+      .PRIORITY 15      
+    ]
+  ]
+  
+	#-------------------------------------------- BOTON CANCEL ------------------------------------------------	
+	[ 
+		.TIPO UIC_BOTONTEXTO .ID 'MSAX' 
+	 	.PARAMS
+	 	[ 
+	 		.STYLE DEFAULT_X_BUTTON
+	   .FONDO
+		  [
+		    .X 885 .Y 715
+			]
+	 	]
+	]
+	#-------------------------------------------- BOTON OK ----------------------------------------------------	
+	[ 
+		.TIPO UIC_BOTONTEXTO .ID 'MSAK' 
+	 	.PARAMS
+	 	[ 
+	 		.STYLE DEFAULT_OK_BUTTON
+	   .FONDO
+		  [
+		    .X 935 .Y 715
+			]
+	 	]
+	]
+	
+	#---------------------------------------------- BOTON READY -----------------------------------------------
+  [ 
+  	.TIPO UIC_BOTONGRAFICO .ID 'MSNR'
+	  .PARAMS
+	  [
+			.IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+			.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"   	  
+	    .FONDO
+	    [
+	      .PRIORITY 215
+	      .X  875 .Y  570 
+	      .SX 32  .SY 33 
+	      .ALPHA TRUE          
+				.SOLTADO 					[ .FILE "Game/UI/Red/ComprarBarcos.tga" .U 305 	.V 922 ] 
+				.SELECCIONADO   	[ .FILE "Game/UI/Red/ComprarBarcos.tga" .U 340 	.V 922 ]
+				.PULSADO    			[ .FILE "Game/UI/Red/ComprarBarcos.tga" .U 375 	.V 922 ]
+	     	.DISABLE					[ .FILE "Game/UI/Red/ComprarBarcos.tga" .U 305 	.V 958 ]					                  
+	    ]
+	  ]
+	]
+	
+	#-------------------------------------------- BOTON BUY ---------------------------------------------------
+#	[ 
+#		.TIPO UIC_BOTONTEXTO .ID 'MSNB' 
+#	 	.PARAMS
+#	 	[ 
+#	 		.STYLE DEFAULT_MULTIPLAYER_SMALL_BUTTON
+#	 		.TEXT LTEXT_UI_COMPRAR
+#		  .FONDO
+#		  [
+#		    .X 734 .Y 400
+#			]
+#	 	]
+#	]
+				  
+	#---------------------------------------------- BITMAP IMPERIAL GLORY -------------------------------------	
+	[ .TIPO UIC_BITMAP .ID 'BMIG' 
+	 .PARAMS 
+	 [ 
+	  .FILE "Game/UI/MainMenu/ImperialGloryLogo.tga" .U 0 .V 0 
+	  .X 0 .Y 0 
+	  .SX 465 .SY 188 
+	  .PRIORITY 201
+	  .ALPHA TRUE
+	 ] 
+	]
+		
+	#---------------------------------------------- GESTOR DE FOCO CHAT ---------------------------------------
+  [ 
+  	.TIPO UIC_GESTORFOCUS .ID 'GF_C'
+    .PARAMS
+    [
+      .CONTROLES
+      [
+        [ 
+        	.TIPO UIC_CHAT .ID 'CHAT'
+          .PARAMS
+          [
+      			#---------------------------------------- EDITBOX CHAT ------------------------------------------
+            .INPUT
+            [
+              .X 166 .Y 745 .SX 695 .SY 22 .MAX 100
+              .FONT "Fonts/Times12.fnt" 
+              .COLOR [ .R 255 .G 255 .B 255 ]
+            ]
+   
+      			#---------------------------------------- LISTBOX CHAT ------------------------------------------
+            .OUTPUT
+            [
+              .X 172 .Y 632 .SX 695 .SY 130
+	            .CAN_SELECT FALSE
+              .TEXT 
+              [
+                .FONT "Fonts/Times12.fnt" 
+                .DX 14 .DY 81 
+                .COLOR [ .R 255 .G 255 .B 255 ]               
+                .ALIGN CENTER
+              ] 
+              
+              .VDX 685 .VDY 12
+              .VSX 2   .VSY 95
+              .SLIDER_VERTICAL
+              [
+                .PRIORITY 100
+                .STYLE DEFAULT_SLIDER_VERTICAL
+              ]
+            ]
+            
+            .FORMAT "[%s]: %s"
+          ]
+        ]      
+      ]
+      .TECLAS
+      [
+      .TECLA_SIGUIENTE_FOCO [ .TECLA KEY_TAB 		.MKEYS [ ]        .EVENTOS [ KEY_UP KEY_DOWN ] ]
+      .TECLA_ANTERIOR_FOCO  [ .TECLA KEY_TAB 		.MKEYS [L_SHIFT]  .EVENTOS [ KEY_UP KEY_DOWN ] ]
+      .TECLA_CAMBIO_ESTADO  [ .TECLA KEY_RETURN .MKEYS [ ]     		.EVENTOS [ KEY_UP KEY_DOWN ] ]
+      ]        
+    ]
+  ] # GestorFocus	
+	
+	#---------------------------------------------- LISTA JUGADORES CONECTADOS --------------------------------	
+  [ 
+  	.TIPO UIC_LISTAJUGRED .ID 'USER'
+    .PARAMS
+    [   
+      .MODAL FALSE
+      .CENTER FALSE
+
+      .FONDO
+      [
+        .PRIORITY 10
+        .FILE "Game/UI/Red/PantallaConfiguracionPartida.tga"
+        .X 28 .Y 640 .U 28 .V 640 .SX 145 .SY 125 .ALPHA FALSE
+      ]
+
+      .CONTROLES 
+      [
+      
+      	#---------------------------------------- LISTBOX JUGADORES -----------------------------------------
+        [ 
+        	.TIPO UIC_LISTBOXTEXT .ID 'USER'
+          .PARAMS
+          [ 
+          	.X -2 .Y -4 .SX 145 .SY 125
+	          .CAN_SELECT FALSE  # PET TODO esto es temporal, hasta que funcione todo...
+            .TEXT 
+            [
+              .FONT "Fonts/Times17.fnt"
+              .DX 14 .DY 81 
+              .COLOR [ .R 255 .G 255 .B 255 ] 
+              .ALIGN CENTER
+            ] # ~ TEXT
+            
+            .SLIDER_VERTICAL
+            [
+              .STYLE DEFAULT_SLIDER_VERTICAL
+            ]
+          ]            
+        ]
+        
+        #---------------------------------------- KICK BUTTON -----------------------------------------------
+        
+        [ .TIPO UIC_BOTONGRAFICO .ID 'KILL'
+          .PARAMS
+          [
+            .FONDO
+            [
+              .PRIORITY 15
+              .X 143 .Y 139 
+              .SX 32 .SY 33 
+              .ALPHA TRUE          
+              .SOLTADO 			[ .FILE "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga" .U 14 .V 805 ]
+              .SELECCIONADO [ .FILE "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga" .U 51 .V 805 ]
+              .PULSADO 			[ .FILE "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga" .U 88 .V 805 ]      
+              
+	      			.IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+	      			.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"               
+            ]
+          ]
+        ]
+                
+               
+      ] # controles
+    ] # params
+  ] # lista jugadores conectados
+	
+		
+] # .CONTROLES
+
+#---------------------------------------------- BOTONES DE TROPAS -------------------------------------	
+%Game/UI/Red/UI_DefsSelectArmyButtons.sb

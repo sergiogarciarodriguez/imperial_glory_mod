@@ -1,0 +1,33 @@
+###--------------------------------------------------------------------------------------------------
+### Script de Audio. 
+### .IDSOUND: identificador del sonido "S_" o del descriptor de sonido "SE_"
+###--------------------------------------------------------------------------------------------------
+.AUDIOFX
+[
+  [
+    .ID ANDAR
+    .IDSOUND S_ART_ANDAR
+  ]
+  [
+    .ID DISPARAR
+    .IDSOUND S_OBUS_DISPARA
+  ]
+  [
+    .ID IMPACTO
+    .IDSOUND
+    [
+      [ .NAME S_CANON_IMPACTO .TERRAIN TT_DEFAULT ]
+      [ .NAME S_CANON_IMPACTO_NIEVE .TERRAIN TT_NIEVE ]
+      [ .NAME S_CANON_IMPACTO_AGUA .TERRAIN TT_AGUA ]
+      [ .NAME S_CANON_IMPACTO_DESIERTO .TERRAIN TT_DESIERTO ]
+    ]
+  ]
+  [
+    .ID REFORMAR
+    .IDSOUND S_ART_REFORMAR
+  ]
+  [
+    .ID MUERTE
+    .IDSOUND S_INF_MORIR
+  ]    
+]

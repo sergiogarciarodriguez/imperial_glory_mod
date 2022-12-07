@@ -1,0 +1,23 @@
+# Formacion de doble linia en zona atacante
+
+[
+  .POS      [    0.0 -35000.0 ]      # Pos inicial expresada como distancia DESDE EL CENTRO DEL MAPA
+  .SPACING  [22000.0      0.0 ]      # espacio entre los barcos (ATENCION, que no sea menor que el tamaño sumado de los barcos!)
+  .ANGLE    0                        # Angulo 0 -> derecha
+  .GROW     0                        # 0-> espaciar por arriba y por abajo 1-> por arriba solo 2-> por abajo
+  .NAVIOS   TRUE                     # Esta linia acepta navios ?
+  .FRAGATAS TRUE                     # Esta linia acepta fragatas ?
+  .CORBETAS TRUE                     # Esta linia acepta Corbetas ?
+  .MAX      3
+]
+
+[
+  .POS      [11000.0 -45000.0 ]      # Pos inicial expresada como distancia DESDE EL CENTRO DEL MAPA
+  .SPACING  [22000.0      0.0 ]      # espacio entre los barcos (ATENCION, que no sea menor que el tamaño sumado de los barcos!)
+  .ANGLE    0                        # Angulo 0 -> derecha
+  .GROW     0                        # 0-> espaciar por arriba y por abajo 1-> por arriba solo 2-> por abajo
+  .NAVIOS   TRUE                     # Esta linia acepta navios ?
+  .FRAGATAS TRUE                     # Esta linia acepta fragatas ?
+  .CORBETAS TRUE                     # Esta linia acepta Corbetas ?
+  .MAX      3
+]

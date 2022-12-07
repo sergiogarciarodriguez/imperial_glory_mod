@@ -1,0 +1,125 @@
+###############################################################################################################
+# Barcos Austriacos
+# Mantiene el pool de los botones asociados a las tropas
+# En principio, los botones no deberan de aparecer de forma muy frecuente
+###############################################################################################################
+
+[ 
+ .KEY AUSTRIA_FRAGATA_BTN_NORMAL_SMALL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAusMini.tga" .SX 32 .SY 45 .U 1 .V 277 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_FRAGATA_BTN_SELECCIONADO_SMALL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAusMini.tga" .SX 32 .SY 45 .U 232 .V 277 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_FRAGATA_BTN_PULSADO_SMALL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAusMini.tga" .SX 32 .SY 45 .U 1 .V 323 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_FRAGATA_BTN_DISABLE_SMALL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAusMini.tga" .SX 32 .SY 45 .U 232 .V 323 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_CORBETA_BTN_NORMAL_SMALL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAusMini.tga" .SX 32 .SY 45 .U 34 .V 277 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_CORBETA_BTN_SELECCIONADO_SMALL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAusMini.tga" .SX 32 .SY 45 .U 265 .V 277 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_CORBETA_BTN_PULSADO_SMALL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAusMini.tga" .SX 32 .SY 45 .U 34 .V 323 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_CORBETA_BTN_DISABLE_SMALL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAusMini.tga" .SX 32 .SY 45 .U 265 .V 323 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_NAVIO_BTN_NORMAL_SMALL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAusMini.tga" .SX 32 .SY 45 .U 67 .V 277 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_NAVIO_BTN_SELECCIONADO_SMALL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAusMini.tga" .SX 32 .SY 45 .U 298 .V 277 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_NAVIO_BTN_PULSADO_SMALL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAusMini.tga" .SX 32 .SY 45 .U 67 .V 323 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_NAVIO_BTN_DISABLE_SMALL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAusMini.tga" .SX 32 .SY 45 .U 298 .V 323 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_BERGANTIN_BTN_NORMAL_SMALL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAusMini.tga" .SX 32 .SY 45 .U 100 .V 277 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_BERGANTIN_BTN_SELECCIONADO_SMALL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAusMini.tga" .SX 32 .SY 45 .U 331 .V 277 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_BERGANTIN_BTN_PULSADO_SMALL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAusMini.tga" .SX 32 .SY 45 .U 100 .V 323 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_BERGANTIN_BTN_DISABLE_SMALL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAusMini.tga" .SX 32 .SY 45 .U 331 .V 323 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_PAQUEBOTE_BTN_NORMAL_SMALL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAusMini.tga" .SX 32 .SY 45 .U 133 .V 277 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_PAQUEBOTE_BTN_SELECCIONADO_SMALL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAusMini.tga" .SX 32 .SY 45 .U 364 .V 277 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_PAQUEBOTE_BTN_PULSADO_SMALL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAusMini.tga" .SX 32 .SY 45 .U 133 .V 323 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_PAQUEBOTE_BTN_DISABLE_SMALL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAusMini.tga" .SX 32 .SY 45 .U 364 .V 323 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_URCA_BTN_NORMAL_SMALL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAusMini.tga" .SX 32 .SY 45 .U 199 .V 277 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_URCA_BTN_SELECCIONADO_SMALL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAusMini.tga" .SX 32 .SY 45 .U 430 .V 277 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_URCA_BTN_PULSADO_SMALL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAusMini.tga" .SX 32 .SY 45 .U 199 .V 323 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY AUSTRIA_URCA_BTN_DISABLE_SMALL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Austria/PlantillaTropasAusMini.tga" .SX 32 .SY 45 .U 430 .V 323 .ALPHA TRUE ]
+]

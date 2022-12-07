@@ -1,0 +1,53 @@
+.START_PROCS
+[
+  [
+    .NAME MAIN_MENU_MAIN_PROC
+    .PARAMS
+    [
+      .CURSORES    "Game/UI/Cursores/Cursores_MainMenu.sb"     
+      
+      .TEXTOS_LOCALES
+      [
+       [ .FILE "Others\TextUIMainMenu.sb" ]          
+       [ .FILE "Management\TextTiposBarcos.sb" ]
+       [ .FILE "Management\TextPaises.sb" ]
+       [ .FILE "Management\TextProvincias.sb" ]
+       [ .FILE "Management\TextDescripcionesProvincias.sb" ]
+       [ .FILE "Management\TextDescripcionesTecnologias.sb" ]
+       [ .FILE "Management\TextTerritoriosMaritimos.sb" ]
+       [ .FILE "Management\TextTecnologias.sb" ]
+       [ .FILE "Management\TextUIGestionMapa.sb" ]
+       [ .FILE "Others\TextUIObjetivos.sb" ]        
+       [ .FILE "Others\TextUIObjetivosHistoricos.sb" ]         
+       [ .FILE "Others\TextCreditos.sb" ]         
+       
+       
+       # tipos de tropa       
+       [ .FILE "Management\TiposTropas\TiposTropasAustria.sb"   ]
+       [ .FILE "Management\TiposTropas\TiposTropasFrancia.sb"   ]
+       [ .FILE "Management\TiposTropas\TiposTropasBretanya.sb"   ]
+       [ .FILE "Management\TiposTropas\TiposTropasRusia.sb"   ]
+       [ .FILE "Management\TiposTropas\TiposTropasPrusia.sb"   ]
+       [ .FILE "Management\TiposTropas\TiposTropasNeutral.sb"   ]
+
+       # Obsoleto       
+       #[ .FILE "Management\TextTiposTropas.sb" ]
+      ]
+      
+      .TECLAS_LOCALES				# Estos ficheros son mapeados a "Teclas\[language]\..."
+      [
+        [ .FILE "MainMenu/TeclasUIMainMenu.sb" ]
+      ]
+      
+      .AUDIODEF        "Game/GameModes/MainMenu/AudioDefMainMenu.sb"
+      
+      .UI_DEFS         "Game/UI/MainMenu/UI_MenuPrincipal.sb"      
+      
+      .UICPARAMS_FILE  "Game/GameModes/MainMenu/UICParams.sb"
+            
+      .START_UI    UI_MAIN_MENU
+      .START_MODE  'GEST'
+    ]
+  ]
+]
+

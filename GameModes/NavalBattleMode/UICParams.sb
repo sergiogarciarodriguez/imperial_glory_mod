@@ -1,0 +1,42 @@
+###############################################################################################################
+# Fichero que contiene las claves asociadas a las estructuras de inicializacion de los controles para usar con
+# CtrlParamsServer.
+###############################################################################################################
+
+
+ .BTNTEXTO_PARAMS
+ [
+  
+  [
+   .KEY MB_DEFAULTTEXT_BTN
+   .PARAMS [ %Game/UI/Comun/UIDefs_CommonMsgBoxBtn.sb ]
+  ] 
+  
+  %Game/UI/Comun/UIDefs_ControlesStandard.sb  
+ ]
+ 
+ .BTNGRAFICO_PARAMS
+ [
+  
+ ]
+ 
+ .BITMAP_PARAMS
+ [
+  %Game/UI/ModeloNaval/UIDefs_Banderas.sb
+  %Game/UI/ModeloNaval/UIDefs_EfectivosMinNavalMap.sb
+ ]
+ 
+ .BTNTROPA_PARAMS
+ [
+    
+ ]
+ 
+ .BTNBARCO_PARAMS
+ [
+  %Game/UI/ModeloNaval/UIDefs_PoolBtnsBarcos.sb   
+ ]
+ 
+ %Game/GameModes/Comun/UICParams.sb
+ 
+ 
+ 

@@ -1,0 +1,153 @@
+# Archivo que contiene datos generales para que el control para la representacion del mini mapa naval
+# sepa donde acudir cuando tenga que mostrar ciertos graficos relacionados con:
+#
+# -> La imagen del escenario de juego
+# -> La representacion de las diferentes tropas en el mapa de juego
+
+
+################################ REPRESENTACION DE LA CAMARA ##
+.CAMARA
+[
+ .FILE "Game\UI\ModeloNaval\MinNavalMap\Camara.tga" .SX 24 .SY 32 .U 0 .V 0 .ALPHA TRUE
+]
+
+################################ REPRESENTACION DE LOS ESCENARIOS ##
+.ESCENARIOS
+[
+ 
+ # Por defecto
+ [ 
+  .NAME "DEFAULT" 
+  .IMG   [ .FILE "Game\UI\ModeloNaval\MinNavalMap\MiniMapaAgua.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ] 
+ ]
+
+]
+
+################################ REPRESENTACION DE LAS TROPAS ##
+.TROPAS
+[
+ #
+ # La representacion en el mini mapa sera la misma para tropas pertenecientes a un pais
+ # Una tropa tendra una representacion por su estado y por una serie de cualificadores.
+ # Los cualificadores seran graficos AÑADIDOS al que se este usando para representar 
+ # el estado de la tropa.
+ #
+ # Todos deberan de tener las mismas dimensiones
+ #
+ 
+ .DEFAULT
+ [
+  # Son los datos de francia
+   .ESTADOS
+   [
+    .DEFECTO    [ .IMG [ .FILE "Game\UI\ModeloNaval\MinNavalMap\RepresentacionTropas.tga" .U 2 .V 1 .ALPHA TRUE ] ]
+    .MOVIENDOSE [ .IMG [ .FILE "Game\UI\ModeloNaval\MinNavalMap\RepresentacionTropas.tga" .U 2 .V 1 .ALPHA TRUE ] ]
+    .COMBATE    [ .IMG [ .FILE "Game\UI\ModeloNaval\MinNavalMap\RepresentacionTropas.tga" .U 71 .V 1 .ALPHA TRUE ] ]
+   ]
+
+  .CUALIFICADORES
+  [
+   .SELECCIONADA [ .IMG [ .FILE "Game\UI\ModeloNaval\MinNavalMap\RepresentacionTropas.tga" .U 36 .V 1 .ALPHA TRUE ] ]
+  ]
+
+  .SX 7
+  .SY 10
+ ]
+ 
+
+ .FRANCIA 
+ [
+   .ESTADOS
+   [
+    .DEFECTO    [ .IMG [ .FILE "Game\UI\ModeloNaval\MinNavalMap\RepresentacionTropas.tga" .U 2 .V 21 .ALPHA TRUE ] ]
+    .MOVIENDOSE [ .IMG [ .FILE "Game\UI\ModeloNaval\MinNavalMap\RepresentacionTropas.tga" .U 2 .V 21 .ALPHA TRUE ] ]
+    .COMBATE    [ .IMG [ .FILE "Game\UI\ModeloNaval\MinNavalMap\RepresentacionTropas.tga" .U 71 .V 21 .ALPHA TRUE ] ]
+   ]
+
+  .CUALIFICADORES
+  [
+   .SELECCIONADA [ .IMG [ .FILE "Game\UI\ModeloNaval\MinNavalMap\RepresentacionTropas.tga" .U 36 .V 1 .ALPHA TRUE ] ]
+  ]
+
+  .SX 7
+  .SY 10
+ ]
+
+
+ .GRAN_BRETANYA
+ [
+   .ESTADOS
+   [
+    .DEFECTO [ .IMG [ .FILE "Game\UI\ModeloNaval\MinNavalMap\RepresentacionTropas.tga" .U 2 .V 41 .ALPHA TRUE ] ]
+    .MOVIENDOSE [ .IMG [ .FILE "Game\UI\ModeloNaval\MinNavalMap\RepresentacionTropas.tga" .U 2 .V 41 .ALPHA TRUE ] ]
+    .COMBATE [ .IMG [ .FILE "Game\UI\ModeloNaval\MinNavalMap\RepresentacionTropas.tga" .U 71 .V 41 .ALPHA TRUE ] ]
+   ]
+
+  .CUALIFICADORES
+  [
+   .SELECCIONADA [ .IMG [ .FILE "Game\UI\ModeloNaval\MinNavalMap\RepresentacionTropas.tga" .U 36 .V 1 .ALPHA TRUE ] ]
+  ]
+
+  .SX 7
+  .SY 10
+ ]
+ 
+ .RUSIA
+ [
+   .ESTADOS
+   [
+    .DEFECTO [ .IMG [ .FILE "Game\UI\ModeloNaval\MinNavalMap\RepresentacionTropas.tga" .U 2 .V 61 .ALPHA TRUE ] ]
+    .MOVIENDOSE [ .IMG [ .FILE "Game\UI\ModeloNaval\MinNavalMap\RepresentacionTropas.tga" .U 2 .V 61 .ALPHA TRUE ] ]
+    .COMBATE [ .IMG [ .FILE "Game\UI\ModeloNaval\MinNavalMap\RepresentacionTropas.tga" .U 71 .V 61 .ALPHA TRUE ] ]
+   ]
+
+  .CUALIFICADORES
+  [
+   .SELECCIONADA [ .IMG [ .FILE "Game\UI\ModeloNaval\MinNavalMap\RepresentacionTropas.tga" .U 36 .V 1 .ALPHA TRUE ] ]
+  ]
+
+  .SX 7
+  .SY 10
+ ]
+ 
+ .PRUSIA
+ [
+   .ESTADOS
+   [
+    .DEFECTO [ .IMG [ .FILE "Game\UI\ModeloNaval\MinNavalMap\RepresentacionTropas.tga" .U 2 .V 81 .ALPHA TRUE ] ]
+    .MOVIENDOSE [ .IMG [ .FILE "Game\UI\ModeloNaval\MinNavalMap\RepresentacionTropas.tga" .U 2 .V 81 .ALPHA TRUE ] ]
+    .COMBATE [ .IMG [ .FILE "Game\UI\ModeloNaval\MinNavalMap\RepresentacionTropas.tga" .U 71 .V 81 .ALPHA TRUE ] ]
+   ]
+
+  .CUALIFICADORES
+  [
+   .SELECCIONADA [ .IMG [ .FILE "Game\UI\ModeloNaval\MinNavalMap\RepresentacionTropas.tga" .U 36 .V 1 .ALPHA TRUE ] ]
+  ]
+
+  .SX 7
+  .SY 10
+ ]
+ 
+ .AUSTRIA
+ [
+   .ESTADOS
+   [
+    .DEFECTO [ .IMG [ .FILE "Game\UI\ModeloNaval\MinNavalMap\RepresentacionTropas.tga" .U 2 .V 101 .ALPHA TRUE ] ]
+    .MOVIENDOSE [ .IMG [ .FILE "Game\UI\ModeloNaval\MinNavalMap\RepresentacionTropas.tga" .U 2 .V 101 .ALPHA TRUE ] ]
+    .COMBATE [ .IMG [ .FILE "Game\UI\ModeloNaval\MinNavalMap\RepresentacionTropas.tga" .U 71 .V 101 .ALPHA TRUE ] ]
+   ]
+
+  .CUALIFICADORES
+  [
+   .SELECCIONADA [ .IMG [ .FILE "Game\UI\ModeloNaval\MinNavalMap\RepresentacionTropas.tga" .U 36 .V 1 .ALPHA TRUE ] ]
+  ]
+
+  .SX 7
+  .SY 10
+ ]
+
+
+ 
+
+]

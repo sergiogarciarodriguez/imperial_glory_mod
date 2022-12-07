@@ -1,0 +1,160 @@
+#=======================================================================================
+# Definición de sonidos para el modelo de batalla [ TROPAS CABALLERIA ]
+#
+# Param ".3D" es TRUE por defecto.
+#       ".LOOP" es FALSE por defecto.
+#=======================================================================================
+
+
+###-------------------------------------------------------------------------------------
+### AUDIO
+###-------------------------------------------------------------------------------------
+.AUDIO 
+[
+	
+	##### ANDAR #########################################################
+	[ 
+	  .IDNAME "S_CAB_ANDAR_10"     
+	  .PATH "Audio/Battle/Fx/Troops/cab_trotar_peque.ogg" 
+	  .3D TRUE
+	  .LOOP TRUE
+    	  .PREVENT_FLANGER TRUE
+    	  .GENERIC FALSE
+          .TRANSPOSE 10
+          .POLYPHONY 2
+	]
+	[ 
+	  .IDNAME "S_CAB_ANDAR_30"     
+	  .PATH "Audio/Battle/Fx/Troops/cab_trotar_medio.ogg" 
+	  .3D TRUE
+	  .LOOP TRUE
+    	  .PREVENT_FLANGER TRUE
+    	  .GENERIC FALSE
+          .TRANSPOSE 10
+          .POLYPHONY 2
+	]
+	[ 
+	  .IDNAME "S_CAB_ANDAR_40"     
+	  .PATH "Audio/Battle/Fx/Troops/cab_trotar_grande.ogg" 
+	  .3D TRUE
+	  .LOOP TRUE
+    	  .PREVENT_FLANGER TRUE
+    	  .GENERIC FALSE
+          .TRANSPOSE 10
+          .POLYPHONY 2
+	]
+	[ 
+	  .IDNAME "S_CAB_ANDAR_AGUA_10"     
+	  .PATH "Audio/Battle/Fx/Troops/cab_trotaragua_peque.ogg" 
+	  .3D TRUE
+	  .LOOP TRUE
+    	  .PREVENT_FLANGER TRUE
+    	  .GENERIC FALSE
+          .TRANSPOSE 10
+          .POLYPHONY 2
+	]
+	[ 
+	  .IDNAME "S_CAB_ANDAR_AGUA_30"     
+	  .PATH "Audio/Battle/Fx/Troops/cab_trotaragua_medio.ogg" 
+	  .3D TRUE
+	  .LOOP TRUE
+    	  .PREVENT_FLANGER TRUE
+    	  .GENERIC FALSE
+          .TRANSPOSE 10
+          .POLYPHONY 2
+	]
+	[ 
+	  .IDNAME "S_CAB_ANDAR_AGUA_40"     
+	  .PATH "Audio/Battle/Fx/Troops/cab_trotaragua_grande.ogg" 
+	  .3D TRUE
+	  .LOOP TRUE
+    	  .PREVENT_FLANGER TRUE
+    	  .GENERIC FALSE
+          .TRANSPOSE 10
+          .POLYPHONY 2
+	]
+	
+	##### CORRER #########################################################	
+	
+	[ 
+	  .IDNAME "S_CAB_CORRER_10"     
+	  .PATH "Audio/Battle/Fx/Troops/cab_galopar_peque.ogg" 
+	  .3D TRUE
+	  .LOOP TRUE
+    	  .PREVENT_FLANGER TRUE
+    	  .GENERIC FALSE
+          .TRANSPOSE 10
+          .POLYPHONY 2
+	]
+	[ 
+	  .IDNAME "S_CAB_CORRER_30"     
+	  .PATH "Audio/Battle/Fx/Troops/cab_galopar_medio.ogg" 
+	  .3D TRUE
+	  .LOOP TRUE
+    	  .PREVENT_FLANGER TRUE
+    	  .GENERIC FALSE
+          .TRANSPOSE 10
+          .POLYPHONY 2
+	]
+	[ 
+	  .IDNAME "S_CAB_CORRER_40"     
+	  .PATH "Audio/Battle/Fx/Troops/cab_galopar_grande.ogg" 
+	  .3D TRUE
+	  .LOOP TRUE
+    	  .PREVENT_FLANGER TRUE
+    	  .GENERIC FALSE
+          .TRANSPOSE 10
+          .POLYPHONY 2
+	]
+	[ 
+	  .IDNAME "S_CAB_CORRER_AGUA_10"     
+	  .PATH "Audio/Battle/Fx/Troops/cab_galoparagua_peque.ogg" 
+	  .3D TRUE
+	  .LOOP TRUE
+    	  .PREVENT_FLANGER TRUE
+    	  .GENERIC FALSE
+          .TRANSPOSE 10
+          .POLYPHONY 2
+	]
+	[ 
+	  .IDNAME "S_CAB_CORRER_AGUA_30"     
+	  .PATH "Audio/Battle/Fx/Troops/cab_galoparagua_medio.ogg" 
+	  .3D TRUE
+	  .LOOP TRUE
+    	  .PREVENT_FLANGER TRUE
+    	  .GENERIC FALSE
+          .TRANSPOSE 10
+          .POLYPHONY 2
+	]
+	[ 
+	  .IDNAME "S_CAB_CORRER_AGUA_40"     
+	  .PATH "Audio/Battle/Fx/Troops/cab_galoparagua_grande.ogg" 
+	  .3D TRUE
+	  .LOOP TRUE
+    	  .PREVENT_FLANGER TRUE
+    	  .GENERIC FALSE
+          .TRANSPOSE 10
+          .POLYPHONY 2
+	]
+	
+	##### AMBIENTACION #########################################################
+	
+	[ 
+	  .IDNAME "S_CAB_RELINCHAR"     
+	  .PATH [ "Audio/Battle/Fx/Troops/relinchar1.ogg"
+	  	"Audio/Battle/Fx/Troops/relinchar2.ogg" 
+	  	"Audio/Battle/Fx/Troops/relinchar3.ogg" 
+	  	"Audio/Battle/Fx/Troops/relinchar4.ogg" 
+	  	"Audio/Battle/Fx/Troops/relinchar5.ogg" 
+	  	"Audio/Battle/Fx/Troops/relinchar6.ogg" 
+	  	"Audio/Battle/Fx/Troops/relinchar7.ogg" 
+	  	"Audio/Battle/Fx/Troops/relinchar8.ogg" ]
+	  .3D TRUE
+	  .LOOP FALSE
+    	  .GENERIC FALSE
+          .POLYPHONY 1
+	]
+
+	
+] ### !AUDIO
+

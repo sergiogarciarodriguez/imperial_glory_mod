@@ -1,0 +1,360 @@
+#############################################################################################
+# Representa los params del panel de las riquezas.
+# Estara implementado como un dialogo.
+#############################################################################################
+
+# Control de WrapText asociado a las ventanas de produccion para mostrar informacion
+
+ 
+ .MODAL FALSE
+ .CENTER FALSE
+  
+ .FONDO 
+ [  
+  .X 0 .Y 0 .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 0 .V 0 .SX 1024 .SY 50 .ALPHA TRUE   
+  .PRIORITY 200
+ ]              
+ 
+ .RELATIVE_PRIORITY FALSE
+            
+ # Controles
+ # En este apartado iran incluidas todas las celdas con las que se trabajara
+ .CONTROLES
+ [ 
+  
+  # Btn de Esc Menu
+  [
+   .TIPO UIC_BOTONTEXTO .ID 'BESC'
+   .PARAMS [ %Game/UI/ModeloGestion/UIDefs_BtnEscMenu.sb ]
+  ]  
+  
+  # botón que activa el panel de producción y gastos del recurso Oro
+  [
+    .TIPO UIC_BOTONTEXTO .ID 'BPOR'
+    .PARAMS
+    [
+      .COMPORTAMIENTO FIJO
+      
+      .FONDO
+      [
+       .X 4 .Y 8 .SX 43 .SY 25 .ALPHA TRUE 
+       .PRIORITY 201
+       
+       .SOLTADO      [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 750 .V 53 ] 
+       .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 796 .V 53 ]   
+       .PULSADO      [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 842 .V 53 ]    
+      ]   
+      
+      .IDSELECTSOUND "S_PRODUCCION_ORO"      
+      .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"                          
+      
+      .TOOL_TIP
+      [ 
+        .TEXT LTEXT_UI_TT_PANELRIQUEZAS_ORO
+        .X 32 .Y 32
+          
+        
+        .STYLE DEFAULT_TOOLTIP 
+      ]
+      
+      .KEY
+      [
+        .TECLA KEY_1 .EVENTOS [ KEY_DOWN KEY_UP ]          
+      ]  
+      
+    ]
+  ]  
+  # Celdas de dinero    
+  [
+   .TIPO UIC_WRAPTEXT .ID 'CDVA'
+   .PARAMS
+   [
+    .X 50 .Y 6 .SX 75 .SY 25 .ALIGN RIGHT .TEXT [ .FONT "Fonts/Times11.fnt" .COLOR [ .R 243 .G 230 .B 153 ] ]
+   ]
+  ]
+  [ 
+    .TIPO UIC_ZONASENSIBLE  .ID 'TOTT' 
+    .PARAMS 
+    [ 
+      .RECT [ 50 7 125 32 ] 
+      .DBCLICK_AS_RELEASE FALSE 
+      .EVENTOS [ MOUSE ] 
+      
+      .TOOL_TIP
+      [ 
+        .TEXT LTEXT_UI_TT_PANELRIQUEZAS_TOTALORO
+        .X 32 .Y 32
+        
+        .STYLE DEFAULT_TOOLTIP 
+      ]      
+    ]
+  ]                        
+
+  
+  # botón que activa el panel de producción y gastos del recurso Materia Prima
+  [
+    .TIPO UIC_BOTONTEXTO .ID 'BPMP'
+    .PARAMS
+    [
+      .COMPORTAMIENTO FIJO
+      
+      .FONDO
+      [
+       .X 140 .Y 8 .SX 43 .SY 25 .ALPHA TRUE 
+       .PRIORITY 201
+              
+       .SOLTADO      [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 750 .V 81 ] 
+       .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 796 .V 81 ]   
+       .PULSADO      [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 842 .V 81 ]    
+      ]   
+      
+      .IDSELECTSOUND "S_PRODUCCION_MADERA"      
+      .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"                      
+      
+      .TOOL_TIP
+      [ 
+        .TEXT LTEXT_UI_TT_PANELRIQUEZAS_MATERIASPRIMAS
+        .X 32 .Y 32
+          
+        
+        .STYLE DEFAULT_TOOLTIP 
+      ]
+      
+      .KEY
+      [
+        .TECLA KEY_2 .EVENTOS [ KEY_DOWN KEY_UP ]          
+      ]  
+      
+    ]
+  ]    
+  # Celdas de Materias Primas
+  [
+   .TIPO UIC_WRAPTEXT .ID 'CMVA'
+   .PARAMS
+   [
+    .X 186 .Y 6 .SX 75 .SY 25 .ALIGN RIGHT .TEXT [ .FONT "Fonts/Times11.fnt" .COLOR [ .R 243 .G 230 .B 153 ] ]
+   ]
+  ]
+  [ 
+    .TIPO UIC_ZONASENSIBLE  .ID 'TMTT' 
+    .PARAMS 
+    [ 
+      .RECT [ 186 7 261 32 ] 
+      .DBCLICK_AS_RELEASE FALSE 
+      .EVENTOS [ MOUSE ] 
+      
+      .TOOL_TIP
+      [ 
+        .TEXT LTEXT_UI_TT_PANELRIQUEZAS_TOTALMATERIASPRIMAS
+        .X 32 .Y 32
+        
+        .STYLE DEFAULT_TOOLTIP 
+      ]      
+    ]
+  ]                        
+  
+  # botón que activa el panel de producción y gastos del recurso Población
+  [
+    .TIPO UIC_BOTONTEXTO .ID 'BPPO'
+    .PARAMS
+    [
+      .COMPORTAMIENTO FIJO
+      
+      .FONDO
+      [
+       .X 276 .Y 8 .SX 43 .SY 25 .ALPHA TRUE 
+       .PRIORITY 201
+       
+       .SOLTADO      [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 750 .V 109 ] 
+       .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 796 .V 109 ]   
+       .PULSADO      [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 842 .V 109 ]    
+      ]   
+      
+      .IDSELECTSOUND "S_PRODUCCION_POBLACION"      
+      .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"                           
+      
+      .TOOL_TIP
+      [ 
+        .TEXT LTEXT_UI_TT_PANELRIQUEZAS_POBLACION
+        .X 32 .Y 32
+          
+        
+        .STYLE DEFAULT_TOOLTIP 
+      ]
+      
+      .KEY
+      [
+        .TECLA KEY_3 .EVENTOS [ KEY_DOWN KEY_UP ]          
+      ]  
+      
+    ]
+  ]  
+  # Celdas de Poblacion
+  [
+   .TIPO UIC_WRAPTEXT .ID 'CPVA'
+   .PARAMS
+   [
+    .X 322 .Y 6 .SX 75 .SY 25 .ALIGN RIGHT .TEXT [ .FONT "Fonts/Times11.fnt" .COLOR [ .R 243 .G 230 .B 153 ] ]
+   ]
+  ]
+  [ 
+    .TIPO UIC_ZONASENSIBLE  .ID 'TPTT' 
+    .PARAMS 
+    [ 
+      .RECT [ 322 7 397 32 ] 
+      .DBCLICK_AS_RELEASE FALSE 
+      .EVENTOS [ MOUSE ] 
+      
+      .TOOL_TIP
+      [ 
+        .TEXT LTEXT_UI_TT_PANELRIQUEZAS_TOTALPOBLACION
+        .X 32 .Y 32
+          
+        
+        .STYLE DEFAULT_TOOLTIP 
+      ]      
+    ]
+  ]                          
+  
+  # botón que activa el panel de producción y gastos del recurso Comida
+  [
+    .TIPO UIC_BOTONTEXTO .ID 'BPCO'
+    .PARAMS
+    [
+      .COMPORTAMIENTO FIJO
+      
+      .FONDO
+      [
+       .X 412 .Y 8 .SX 43 .SY 25 .ALPHA TRUE 
+       .PRIORITY 201
+       
+       .SOLTADO      [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 750 .V 137 ] 
+       .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 796 .V 137 ]   
+       .PULSADO      [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 842 .V 137 ]    
+      ]   
+      
+      .IDSELECTSOUND "S_PRODUCCION_COMIDA"      
+      .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"              
+      
+      .TOOL_TIP
+      [ 
+        .TEXT LTEXT_UI_TT_PANELRIQUEZAS_COMIDA
+        .X 32 .Y 32
+          
+        
+        .STYLE DEFAULT_TOOLTIP 
+      ]
+      
+      .KEY
+      [
+        .TECLA KEY_4 .EVENTOS [ KEY_DOWN KEY_UP ]          
+      ]  
+      
+    ]
+  ]  
+  # Celdas de Comida
+  # - Total
+  [
+   .TIPO UIC_WRAPTEXT .ID 'CCVA'
+   .PARAMS
+   [
+    .X 452 .Y 6 .SX 60 .SY 25 .ALIGN RIGHT .TEXT [ .FONT "Fonts/Times11.fnt" .COLOR [ .R 243 .G 230 .B 153 ] ]
+   ]
+  ]
+  [ 
+    .TIPO UIC_ZONASENSIBLE  .ID 'TCTT' 
+    .PARAMS 
+    [ 
+      .RECT [ 452 7 512 32 ] 
+      .DBCLICK_AS_RELEASE FALSE 
+      .EVENTOS [ MOUSE ] 
+      
+      .TOOL_TIP
+      [ 
+        .TEXT LTEXT_UI_TT_PANELRIQUEZAS_TOTALCOMIDA
+        .X 32 .Y 32
+          
+        
+        .STYLE DEFAULT_TOOLTIP 
+      ]      
+    ]
+  ]                        
+  # - Ingresos / Gastos
+  [
+   .TIPO UIC_WRAPTEXT .ID 'CVAI'
+   .PARAMS
+   [
+    .X 512 .Y 6 .SX 98 .SY 25 .ALIGN RIGHT .TEXT [ .FONT "Fonts/Times11.fnt" .COLOR [ .R 243 .G 230 .B 153 ] ]
+   ]
+  ]  
+  [ 
+    .TIPO UIC_ZONASENSIBLE  .ID 'ICTT' 
+    .PARAMS 
+    [ 
+      .RECT [ 512 7 610 32 ] 
+      .DBCLICK_AS_RELEASE FALSE 
+      .EVENTOS [ MOUSE ] 
+      
+      .TOOL_TIP
+      [ 
+        .TEXT LTEXT_UI_GESTIONMAPA_TT_COMIDA
+        .X 32 .Y 32
+          
+        
+        .STYLE DEFAULT_TOOLTIP 
+      ]      
+    ]
+  ]                        
+  
+  # Texto de fecha
+  [
+    .TIPO UIC_WRAPTEXT .ID 'FEXA'
+    .PARAMS
+    [
+      .X 881 .Y 0 .SX 143 .SY 39
+      .ALIGN CENTER
+      .TEXT
+      [
+        .FONT "Fonts/MonoTypeCorsiva15.fnt"
+        .COLOR [ .R 255 .G 255 .B 255 ]
+      ]
+    ]
+  ]
+  
+  # paneles desplegables
+  [
+    .TIPO UIC_DIALOGO .ID 'PORO'
+    .PARAMS [ %Game/UI/ModeloGestion/UIDefs_PanelRiquezas_Oro.sb ]
+  ]
+  [
+    .TIPO UIC_DIALOGO .ID 'PMAP'
+    .PARAMS [ %Game/UI/ModeloGestion/UIDefs_PanelRiquezas_MP.sb ]
+  ]
+  [
+    .TIPO UIC_DIALOGO .ID 'PPOB'
+    .PARAMS [ %Game/UI/ModeloGestion/UIDefs_PanelRiquezas_Poblacion.sb ]
+  ]
+  [
+    .TIPO UIC_DIALOGO .ID 'PCOM'
+    .PARAMS [ %Game/UI/ModeloGestion/UIDefs_PanelRiquezas_Comida.sb ]
+  ]
+   
+ ] # ~ CONTROLES
+ 
+ .COLOR_SALDO_NEGATIVO [ .R 255 .G 0 .B 0 ]
+
+ # Posición y parámetros del tooltip del icono de tecnología investigándose actualmente
+ .ICONO_TECNOLOGIA 
+ [ 
+   .X 713 .Y 4
+   .TOOLTIP
+   [
+     .TEXT " "
+     .X 32 .Y 32
+       
+     
+     .STYLE DEFAULT_TOOLTIP 
+   ]
+ ]
+
+ 

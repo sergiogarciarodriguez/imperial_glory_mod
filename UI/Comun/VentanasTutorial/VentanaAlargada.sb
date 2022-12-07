@@ -1,0 +1,68 @@
+  #
+  # Ventana que muestra los textos del tutorial
+  #
+  
+  .FONDO 
+  [
+    .X 0 .Y 0 .U 1 .V 1 .SX 276 .SY 510 
+    .FILE "Game/UI/Comun/VentanasTutorial/Tutorial3.tga" 
+    .ALPHA TRUE 
+    .PRIORITY 1
+  ] # ~FONDO
+  
+  .TITULO
+  [
+    .ALIGN LEFT
+    .TEXT
+    [
+      .FONT "Fonts/Times15.fnt"
+      .SCALE 1.0 
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+    ]
+    
+    .X 135 .Y 35  .SX 125 .SY 50
+    .PRIORITY 2         
+  ] 
+
+  .TEXTO
+  [
+    .ALIGN LEFT
+    .TEXT
+    [
+      .FONT "Fonts/Times12.fnt"
+      .SCALE 1.0 
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+    ]
+    
+    .X 50 .Y 135  .SX 205 .SY 305
+    .PRIORITY 2         
+  ]  
+    
+  .TEXTO_CORTO
+  [
+    .ALIGN CENTER
+    .TEXT
+    [
+      .FONT "Fonts/Times12.fnt"
+      .SCALE 1.0 
+      .COLOR [ .R 225 .G 225 .B 155 ] 
+    ]
+    
+    .X 35 .Y 435  .SX 175 .SY 55
+    .PRIORITY 2         
+  ] 
+      
+  .BOTON
+  [
+    .COMPORTAMIENTO SIMPLE
+    .STYLE DEFAULT_OK_BUTTON
+    .FONDO [ .X 208 .Y 444 ]
+    
+    .IDSELECTSOUND "S_FXUI_CLICKBUTTON"                    
+    .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO" 
+    
+    .KEY [ .TECLA KEY_RETURN .EVENTOS [ KEY_DOWN KEY_UP ] ]                     
+    
+    .PRIORITY 25         
+  ]       
+          

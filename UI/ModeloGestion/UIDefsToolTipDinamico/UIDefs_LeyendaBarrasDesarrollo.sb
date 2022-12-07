@@ -1,0 +1,89 @@
+#
+# LEYENDA DE LA BARRA DE DESARROLLO DEL MODO DE ESTADISTICAS
+#
+#
+
+#TITULO
+[
+  .TIPO UIC_WRAPTEXT .ID 'WTTI'
+  .PARAMS
+  [     
+    .X 0 .Y 10 .SX 320 .SY 50
+    .ALIGN CENTER
+    .TEXT
+    [
+      .FONT "Fonts/Times10.fnt" 
+      .COLOR [ .R 255 .G 255 .B 255 ]          
+    ]
+    .MSG  LTEXT_LEYENDA_DESARROLLO
+  ]
+]
+
+#COLOR DE LA BARRA DE RECURSOS
+[ .TIPO UIC_BITMAP .ID 'BMDR'
+  .PARAMS
+  [ .X 30 .Y 45 .U 771 .V 1 .SX 22 .SY 22
+    .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .PRIORITY 255 .ALPHA TRUE  
+  ]      
+]
+   
+#TEXTO DE LA BARRA DE RECURSOS
+[
+  .TIPO UIC_TEXT .ID 'TXDR' 
+  .PARAMS 
+  [ .ALIGN LEFT .X 60 .Y 50 .TEXT LTEXT_LEYENDA_DESARROLLO_RECURSOS
+    .FONT "Fonts/Times9.fnt"  .COLOR [ .R 255 .G 255 .B 255 ]
+  ]
+]
+
+#COLOR DE LA BARRA DE COMERCIO
+[ .TIPO UIC_BITMAP .ID 'BMDC'
+  .PARAMS
+  [ .X 30 .Y 70 .U 771 .V 162 .SX 22 .SY 22
+    .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .PRIORITY 255 .ALPHA TRUE  
+  ]      
+]
+   
+#TEXTO DE LA BARRA DE COMERCIO
+[
+  .TIPO UIC_TEXT .ID 'TXDC' 
+  .PARAMS 
+  [ .ALIGN LEFT .X 60 .Y 75 .TEXT LTEXT_LEYENDA_DESARROLLO_COMERCIO
+    .FONT "Fonts/Times9.fnt"  .COLOR [ .R 255 .G 255 .B 255 ]
+  ]
+] 
+ 
+#COLOR DE LA BARRA DE DIPLOMACIA
+[ .TIPO UIC_BITMAP .ID 'BMDD'
+  .PARAMS
+  [ .X 30 .Y 95 .U 771 .V 47 .SX 22 .SY 22
+    .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .PRIORITY 255 .ALPHA TRUE  
+  ]      
+]
+   
+#TEXTO DE LA BARRA DE DIPLOMACIA
+[
+  .TIPO UIC_TEXT .ID 'TXDD' 
+  .PARAMS 
+  [ .ALIGN LEFT .X 60 .Y 100 .TEXT LTEXT_LEYENDA_DESARROLLO_DIPLOMACIA
+    .FONT "Fonts/Times9.fnt"  .COLOR [ .R 255 .G 255 .B 255 ]
+  ]
+]
+ 
+#COLOR DE LA BARRA MILITAR
+[ .TIPO UIC_BITMAP .ID 'BMDM'
+  .PARAMS
+  [ .X 30 .Y 120 .U 771 .V 185 .SX 22 .SY 22
+    .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .PRIORITY 255 .ALPHA TRUE  
+  ]      
+]
+   
+#TEXTO DE LA BARRA MILITAR
+[
+  .TIPO UIC_TEXT .ID 'TXDM' 
+  .PARAMS 
+  [ .ALIGN LEFT .X 60 .Y 125 .TEXT LTEXT_LEYENDA_DESARROLLO_MILITAR
+    .FONT "Fonts/Times9.fnt"  .COLOR [ .R 255 .G 255 .B 255 ]
+  ]
+] 
+ 

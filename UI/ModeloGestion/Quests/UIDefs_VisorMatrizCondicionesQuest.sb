@@ -1,0 +1,44 @@
+###############################################################################
+# Mostrará los quest
+###############################################################################
+
+
+ # Definimos la matriz de vision
+ .CENTER_ICONS FALSE
+
+ .MATRIZ
+ [
+  .FILAS 5
+  .COLUMNAS 1
+ ]     
+ 
+ # Definimos el fondo (opcional)
+ #.FONDO
+ #[      
+  #.FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" 
+  #.X 365 .Y 615 .U 365 .V 871 .SX 380 .SY 153 .ALPHA TRUE  
+ #] 
+ 
+ # Definimos los parametros de dibujado
+ # Nota: - En caso de existir fondo X e Y seran deltas sobre la posicion del mismo y en caso de no definirlo
+ #         serviran para indicar la posicion de inicio de dibujado
+ .DRAW_PARAMS
+ [
+  .X 367
+  .Y 535
+  .CELL_XSPACE 0
+  .CELL_YSPACE 10
+  .SLIDER_XSPACE 10
+  .OBJ_WIDTH 281
+  .OBJ_HEIGHT 25
+ ]         
+     
+ # Definimos el Slider
+ .SLIDER [ .SUBTIPO "Game/UI/Comun/UIDefs_DefinicionSliderVertical.sb" ]
+ 
+ # Prioridad base de los elementos en el visor
+ # A los que se les haga un drag tendra una prioridad superior por lo que la prioridad base
+ # no debera de exceder el valor de 254
+ .PRIORITY_BASE 254
+ 
+ 

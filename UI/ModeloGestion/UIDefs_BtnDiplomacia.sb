@@ -1,0 +1,33 @@
+# Boton de Diplomacia
+
+.COMPORTAMIENTO SIMPLE
+
+.FONDO
+[
+ .X 895 .Y 660 .SX 36 .SY 38 .ALPHA TRUE .PRIORITY 10
+ 
+ .SOLTADO      [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 750 .V 196 ] 
+ .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 789 .V 196 ]    
+ .PULSADO      [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 828 .V 196 ]    
+ .DISABLE      [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 867 .V 196 ]    
+]    
+
+#PASADO A CODIGO
+#.IDSELECTSOUND "S_FXDIPLOMACIA_ABRIR_VENTANA"
+.IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"
+
+.TOOL_TIP 
+[ 
+ .TEXT LTEXT_UI_BATALLA_TT_PCMAPA_BTNDIPLOMACIA
+ .FONT "Fonts/Default.fnt" 
+ .X 32 .Y 32
+ .COLOR [ .R 255 .G 255 .B 255 ] 
+   
+ .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+]
+
+.KEY
+[
+  .TECLA KEY_F3 .EVENTOS [ KEY_DOWN KEY_UP ]          
+]  
+        

@@ -1,0 +1,13 @@
+
+
+  .TIEMPO 0 # poner a 0 para tiempo iliminado
+
+  .CONTROL
+  [
+    # .PRIORITY 200
+    .ALIGN CENTER
+    .FONT "Fonts/Times29.fnt"
+    .X 512 .Y 100
+    .COLOR [ .R 255 .G 255 .B 255] 
+  ]
+

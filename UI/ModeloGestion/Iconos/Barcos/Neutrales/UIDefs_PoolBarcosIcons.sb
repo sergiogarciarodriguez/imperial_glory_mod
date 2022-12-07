@@ -1,0 +1,125 @@
+###############################################################################################################
+# Barcos Genéricos
+# Mantiene el pool de las imagenes asociadas a los barcos
+###############################################################################################################
+[ 
+ .KEY NEUTRAL_NAVIO_IMG_NORMAL 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 147 .V 619 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_NAVIO_IMG_SELECCIONADO 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 658 .V 619 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_NAVIO_IMG_PULSADO 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 147 .V 722 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_NAVIO_IMG_DISABLE 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 658 .V 722 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_CORBETA_IMG_NORMAL 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 74 .V 619 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_CORBETA_IMG_SELECCIONADO 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 585 .V 619 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_CORBETA_IMG_PULSADO 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 74 .V 722 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_CORBETA_IMG_DISABLE 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 585 .V 722 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_FRAGATA_IMG_NORMAL 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 1 .V 619 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_FRAGATA_IMG_SELECCIONADO 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 512 .V 619 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_FRAGATA_IMG_PULSADO 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 1 .V 722 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_FRAGATA_IMG_DISABLE 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 512 .V 722 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_BERGANTIN_IMG_NORMAL 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 220 .V 619 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_BERGANTIN_IMG_SELECCIONADO 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 731 .V 619 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_BERGANTIN_IMG_PULSADO 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 220 .V 722 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_BERGANTIN_IMG_DISABLE 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 731 .V 722 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_PAQUEBOTE_IMG_NORMAL 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 293 .V 619 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_PAQUEBOTE_IMG_SELECCIONADO 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 804 .V 619 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_PAQUEBOTE_IMG_PULSADO 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 293 .V 722 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_PAQUEBOTE_IMG_DISABLE 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 804 .V 722 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_URCA_IMG_NORMAL 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 439 .V 619 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_URCA_IMG_SELECCIONADO 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 950 .V 619 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_URCA_IMG_PULSADO 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 439 .V 722 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY NEUTRAL_URCA_IMG_DISABLE 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/PlantillaTropasGenerico.tga" .SX 72 .SY 102 .U 950 .V 722 .ALPHA TRUE ]
+]
+
+

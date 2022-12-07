@@ -1,0 +1,666 @@
+#=================================================================================================
+#================================================ UI VICTORY =====================================
+#=================================================================================================
+# UI para mostar las estadisticas de victoria
+[
+
+  .NAME UI_ESTADISTICAS_NAVAL_VICTORY
+  .PROC UI_GENERICO
+  .PARAMS
+  [
+    .CONTROLES
+    [      
+      #================================================ FONDO =====================================
+      [ .TIPO UIC_BITMAP .ID 'BFON' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgameGanarN.tga" .U 0 .V 0 .X 0 .Y 0 .SX 1024 .SY 768 .ALPHA TRUE .PRIORITY 1 ] ]            
+        
+      #================================================ TEXTOS PLAYER 1 =====================================      
+      [         
+       .TIPO UIC_TEXT .ID 'TTIT' 
+       .PARAMS [ .TEXT LTEXT_ESTADISNAVAL_TOTALARMY .X 419 .Y 255 .ALIGN CENTER .FONT "Fonts\MonoTypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+      ]
+
+      [         
+       .TIPO UIC_TEXT .ID 'TTIT' 
+       .PARAMS [ .TEXT LTEXT_ESTADISNAVAL_ENEMYDROPS .X 598 .Y 255 .ALIGN CENTER .FONT "Fonts\MonoTypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+      ]
+      
+      [         
+       .TIPO UIC_TEXT .ID 'TTIT' 
+       .PARAMS [ .TEXT LTEXT_ESTADISNAVAL_CAPTUREDENEMIES .X 777 .Y 255 .ALIGN CENTER .FONT "Fonts\MonoTypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+      ]
+            
+      #================================================ TEXTOS PLAYER 2 =====================================
+      [         
+       .TIPO UIC_TEXT .ID 'TTIT' 
+       .PARAMS [ .TEXT LTEXT_ESTADISNAVAL_TOTALARMY .X 419 .Y 379 .ALIGN CENTER .FONT "Fonts\MonoTypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+      ]
+
+      [         
+       .TIPO UIC_TEXT .ID 'TTIT' 
+       .PARAMS [ .TEXT LTEXT_ESTADISNAVAL_ENEMYDROPS .X 598 .Y 379 .ALIGN CENTER .FONT "Fonts\MonoTypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+      ]
+      
+      [         
+       .TIPO UIC_TEXT .ID 'TTIT' 
+       .PARAMS [ .TEXT LTEXT_ESTADISNAVAL_CAPTUREDENEMIES .X 777 .Y 379 .ALIGN CENTER .FONT "Fonts\MonoTypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+      ]
+            
+      #================================================ TIEMPO =====================================
+      [         
+       .TIPO UIC_TEXT .ID 'TTIT' 
+       .PARAMS [ .TEXT LTEXT_ESTADISNAVAL_DURATION .X 508 .Y 502 .ALIGN CENTER .FONT "Fonts\MonoTypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+      ]
+      
+      [
+       .TIPO UIC_WRAPTEXT .ID 'TDUR'       
+       .PARAMS [ .TEXT [ .FONT "Fonts\MonoTypeCorsiva12.fnt" .COLOR [ .R 0 .G 0 .B 0 ] ] .X 382 .Y 542 .SX 257 .SY 35 .ALIGN CENTER  ]
+      ]
+      
+      #================================================ BOTONES =====================================
+      [
+       # Boton de volver a jugar
+       .TIPO UIC_BOTONTEXTO .ID 'BREP'
+       .PARAMS 
+       [ 
+         .STYLE DEFAULT_RECTANGLE_BUTTON_BIG 
+         .TEXT "LTEXT_ESTADISNAVAL_REPLAY" 
+         .FONDO [ .X 191 .Y 610 .PRIORITY 50] 
+         .CENTER_AREA [ .X1 0 .Y1 0 .X2 209 .Y2 39 ] 
+         .IDSELECTSOUND "S_FXUI_CLICKBUTTON"
+         .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"    
+       ]
+      ]
+
+      [
+       # Boton de volver al menu principal
+       .TIPO UIC_BOTONTEXTO .ID 'BMEN'
+       .PARAMS 
+       [ 
+         .STYLE DEFAULT_RECTANGLE_BUTTON_BIG 
+         .TEXT "LTEXT_ESTADISNAVAL_MENU" 
+         .FONDO [ .X 638 .Y 610 .PRIORITY 50 ] 
+         .CENTER_AREA [ .X1 0 .Y1 0 .X2 209 .Y2 39 ] 
+         .IDSELECTSOUND "S_FXUI_CLICKBUTTON"
+         .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"
+       ]
+      ]
+
+      #================================================ TITULO =====================================
+      [         
+       .TIPO UIC_WRAPTEXT .ID 'LTIT' 
+       .PARAMS 
+       [ 
+         .TEXT [ .FONT "Fonts\MonoTypeCorsiva19.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ] 
+         .X 212 .Y 193 .SX 600 .SY 55 .ALIGN CENTER  
+       ]
+      ]
+
+      #================================================ PAISES ====================================
+      [ .TIPO UIC_WRAPTEXT .ID 'PAI1'
+        .PARAMS [ .TEXT [ .FONT "Fonts\MonoTypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ] .X 95 .Y 239 .SX 250 .SY 35 .ALIGN CENTER  ]
+      ]
+
+      # Nombre del pais
+      [ .TIPO UIC_WRAPTEXT .ID 'PAI2'
+        .PARAMS [ .TEXT [ .FONT "Fonts\MonoTypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ] .X 95 .Y 363 .SX 250 .SY 35 .ALIGN CENTER  ]
+      ]
+                  
+      #================================================ ESTADISTICAS PLAYER 1 =====================================                    
+      # Total Army
+      [ .TIPO UIC_WRAPTEXT .ID 'LTOA'
+        .PARAMS [ .TEXT [ .FONT "Fonts\MonoTypeCorsiva12.fnt" .COLOR [ .R 0 .G 0 .B 0 ] ] .X 364 .Y 298 .SX 110 .SY 35 .ALIGN CENTER  ]
+      ]
+
+      # Enemy Drops
+      [ .TIPO UIC_WRAPTEXT .ID 'LBED'
+        .PARAMS [ .TEXT [ .FONT "Fonts\MonoTypeCorsiva12.fnt" .COLOR [ .R 0 .G 0 .B 0 ] ] .X 543 .Y 298 .SX 110 .SY 35 .ALIGN CENTER  ]
+      ]
+            
+      # Obtained Flags
+      [ .TIPO UIC_WRAPTEXT .ID 'LBCA'
+        .PARAMS [ .TEXT [ .FONT "Fonts\MonoTypeCorsiva12.fnt" .COLOR [ .R 0 .G 0 .B 0 ] ] .X 722 .Y 298 .SX 110 .SY 35 .ALIGN CENTER ]
+      ]
+                  
+      #================================================ ESTADISTICAS PLAYER 2 =====================================                                
+      # Total Army
+      [ .TIPO UIC_WRAPTEXT .ID 'L_TO'
+        .PARAMS [ .TEXT [ .FONT "Fonts\MonoTypeCorsiva12.fnt" .COLOR [ .R 0 .G 0 .B 0 ] ] .X 364 .Y 417 .SX 110 .SY 35 .ALIGN CENTER  ]
+      ]
+
+      # Label - Estadisticas - Enemy Drops
+      [ .TIPO UIC_WRAPTEXT .ID 'L_ED'        
+        .PARAMS [ .TEXT [ .FONT "Fonts\MonoTypeCorsiva12.fnt" .COLOR [ .R 0 .G 0 .B 0 ] ] .X 543 .Y 417 .SX 110 .SY 35 .ALIGN CENTER ]        
+      ]      
+      
+      # Label - Estadisticas - Obtained Flags
+      [ .TIPO UIC_WRAPTEXT .ID 'L_CA'        
+        .PARAMS [ .TEXT [ .FONT "Fonts\MonoTypeCorsiva12.fnt" .COLOR [ .R 0 .G 0 .B 0 ] ] .X 722 .Y 417 .SX 110 .SY 35 .ALIGN CENTER ]        
+      ]       
+                              
+      #================================================ BANDERAS =====================================                    
+      # Estaran pre - creadas y cada jugador tendra un identificador especifico[ 
+
+      # JUG_DEFAULT
+      [ .TIPO UIC_BITMAP .ID 'JDEF' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgameGanarN.tga" .SX 33 .SY 18 .U 42 .V 771 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+            
+      # JUG_AUSTRIA
+      [ .TIPO UIC_BITMAP .ID 'JAUS' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgameGanarN.tga" .SX 33 .SY 18 .U 42 .V 771 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_FRANCIA
+      [ .TIPO UIC_BITMAP .ID 'JFRA' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgameGanarN.tga" .SX 33 .SY 18 .U 78 .V 771 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_RUSIA
+      [ .TIPO UIC_BITMAP .ID 'JRUS' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgameGanarN.tga" .SX 33 .SY 18 .U 42 .V 792 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_GRAN_BRETANYA
+      [ .TIPO UIC_BITMAP .ID 'JGBR' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgameGanarN.tga" .SX 33 .SY 18 .U 78 .V 792 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_PRUSIA
+      [ .TIPO UIC_BITMAP .ID 'JGPR' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgameGanarN.tga" .SX 33 .SY 18 .U 42 .V 813 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_SUECIA
+      [ .TIPO UIC_BITMAP .ID 'JSUE' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgameGanarN.tga" .SX 33 .SY 18 .U 78 .V 813 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_DINAMARCA
+      [ .TIPO UIC_BITMAP .ID 'JDIN' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgameGanarN.tga" .SX 33 .SY 18 .U 42 .V 834 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_DOS_SICILIAS
+      [ .TIPO UIC_BITMAP .ID 'JDSI' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgameGanarN.tga" .SX 33 .SY 18 .U 78 .V 834 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_PORTUGAL
+      [ .TIPO UIC_BITMAP .ID 'JPOR' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgameGanarN.tga" .SX 33 .SY 18 .U 42 .V 855 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_OTOMANO
+      [ .TIPO UIC_BITMAP .ID 'JOTO' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgameGanarN.tga" .SX 33 .SY 18 .U 78 .V 855 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_ESPANYA
+      [ .TIPO UIC_BITMAP .ID 'JESP' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgameGanarN.tga" .SX 33 .SY 18 .U 42 .V 876 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_SAJONIA
+      [ .TIPO UIC_BITMAP .ID 'JSAJ' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgameGanarN.tga" .SX 33 .SY 18 .U 78 .V 876 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_LOMBARDIA
+      [ .TIPO UIC_BITMAP .ID 'JLOM' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgameGanarN.tga" .SX 33 .SY 18 .U 42 .V 897 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_RHELVETICA
+      [ .TIPO UIC_BITMAP .ID 'JRHE' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgameGanarN.tga" .SX 33 .SY 18 .U 78 .V 897 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_EGIPTO     
+      [ .TIPO UIC_BITMAP .ID 'JEGI' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgameGanarN.tga" .SX 33 .SY 18 .U 42 .V 918 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_BATAVIA
+      [ .TIPO UIC_BITMAP .ID 'JBAT' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgameGanarN.tga" .SX 33 .SY 18 .U 78 .V 918 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_HANNOVER
+      [ .TIPO UIC_BITMAP .ID 'JHAN' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgameGanarN.tga" .SX 33 .SY 18 .U 42 .V 939 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_POLONIA
+      [ .TIPO UIC_BITMAP .ID 'JPOL' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgameGanarN.tga" .SX 33 .SY 18 .U 78 .V 939 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_EPAPALES
+      [ .TIPO UIC_BITMAP .ID 'JEPA' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgameGanarN.tga" .SX 33 .SY 18 .U 42 .V 960 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_MARRUECOS
+      [ .TIPO UIC_BITMAP .ID 'JMAR' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgameGanarN.tga" .SX 33 .SY 18 .U 78 .V 960 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_MOLDAVIA
+      [ .TIPO UIC_BITMAP .ID 'JMOL' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgameGanarN.tga" .SX 33 .SY 18 .U 42 .V 981 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_TRIPOLITANIA
+      [ .TIPO UIC_BITMAP .ID 'JTRI' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgameGanarN.tga" .SX 33 .SY 18 .U 78 .V 981 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_TUNEZ
+      [ .TIPO UIC_BITMAP .ID 'JTUN' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgameGanarN.tga" .SX 33 .SY 18 .U 42 .V 1002 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_PIAMONTE
+      [ .TIPO UIC_BITMAP .ID 'JPIA' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgameGanarN.tga" .SX 33 .SY 18 .U 78 .V 1002 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+    ]
+    
+    .UI_DATA [ .CURSOR DEFAULT ]   
+  ]
+]
+
+#=================================================================================================
+#================================================ UI DEFEAT ======================================
+#=================================================================================================
+[
+
+  .NAME UI_ESTADISTICAS_NAVAL_DEFEAT
+  .PROC UI_GENERICO
+  .PARAMS
+  [
+    .CONTROLES
+    [      
+      #================================================ FONDO =====================================
+      [ .TIPO UIC_BITMAP .ID 'BFON' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .U 0 .V 0 .X 0 .Y 0 .SX 1024 .SY 768 .ALPHA TRUE .PRIORITY 1] ]            
+        
+      #================================================ TEXTOS PLAYER 1 =====================================      
+      [         
+       .TIPO UIC_TEXT .ID 'TTIT' 
+       .PARAMS [ .TEXT LTEXT_ESTADISNAVAL_TOTALARMY .X 419 .Y 255 .ALIGN CENTER .FONT "Fonts\MonoTypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+      ]
+
+      [         
+       .TIPO UIC_TEXT .ID 'TTIT' 
+       .PARAMS [ .TEXT LTEXT_ESTADISNAVAL_ENEMYDROPS .X 598 .Y 255 .ALIGN CENTER .FONT "Fonts\MonoTypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+      ]
+      
+      [         
+       .TIPO UIC_TEXT .ID 'TTIT' 
+       .PARAMS [ .TEXT LTEXT_ESTADISNAVAL_CAPTUREDENEMIES .X 777 .Y 255 .ALIGN CENTER .FONT "Fonts\MonoTypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+      ]
+            
+      #================================================ TEXTOS PLAYER 2 =====================================
+      [         
+       .TIPO UIC_TEXT .ID 'TTIT' 
+       .PARAMS [ .TEXT LTEXT_ESTADISNAVAL_TOTALARMY .X 419 .Y 379 .ALIGN CENTER .FONT "Fonts\MonoTypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+      ]
+
+      [         
+       .TIPO UIC_TEXT .ID 'TTIT' 
+       .PARAMS [ .TEXT LTEXT_ESTADISNAVAL_ENEMYDROPS .X 598 .Y 379 .ALIGN CENTER .FONT "Fonts\MonoTypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+      ]
+      
+      [         
+       .TIPO UIC_TEXT .ID 'TTIT' 
+       .PARAMS [ .TEXT LTEXT_ESTADISNAVAL_CAPTUREDENEMIES .X 777 .Y 379 .ALIGN CENTER .FONT "Fonts\MonoTypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+      ]
+            
+      #================================================ TIEMPO =====================================
+      [         
+       .TIPO UIC_TEXT .ID 'TTIT' 
+       .PARAMS [ .TEXT LTEXT_ESTADISNAVAL_DURATION .X 508 .Y 502 .ALIGN CENTER .FONT "Fonts\MonoTypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+      ]
+      
+      [
+       .TIPO UIC_WRAPTEXT .ID 'TDUR'       
+       .PARAMS [ .TEXT [ .FONT "Fonts\MonoTypeCorsiva12.fnt" .COLOR [ .R 0 .G 0 .B 0 ] ] .X 382 .Y 542 .SX 257 .SY 35 .ALIGN CENTER  ]
+      ]
+      
+      #================================================ BOTONES =====================================
+      [
+       # Boton de volver a jugar
+       .TIPO UIC_BOTONTEXTO .ID 'BREP'
+       .PARAMS 
+       [ 
+         .STYLE DEFAULT_RECTANGLE_BUTTON_BIG 
+         .TEXT "LTEXT_ESTADISNAVAL_REPLAY" 
+         .FONDO [ .X 191 .Y 610 .PRIORITY 50] 
+         .CENTER_AREA [ .X1 0 .Y1 0 .X2 209 .Y2 39 ] 
+         .IDSELECTSOUND "S_FXUI_CLICKBUTTON"
+         .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"    
+       ]
+      ]
+
+      [
+       # Boton de volver al menu principal
+       .TIPO UIC_BOTONTEXTO .ID 'BMEN'
+       .PARAMS 
+       [ 
+         .STYLE DEFAULT_RECTANGLE_BUTTON_BIG 
+         .TEXT "LTEXT_ESTADISNAVAL_MENU" 
+         .FONDO [ .X 638 .Y 610 .PRIORITY 50] 
+         .CENTER_AREA [ .X1 0 .Y1 0 .X2 209 .Y2 39 ] 
+         .IDSELECTSOUND "S_FXUI_CLICKBUTTON"
+         .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"    
+       ]
+      ]
+
+      #================================================ TITULO =====================================
+      [         
+       .TIPO UIC_WRAPTEXT .ID 'LTIT' 
+       .PARAMS 
+       [ 
+         .TEXT [ .FONT "Fonts\MonoTypeCorsiva19.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ] 
+         .X 212 .Y 193 .SX 600 .SY 55 .ALIGN CENTER  
+       ]
+      ]
+            
+      #================================================ PAISES ====================================
+      [ .TIPO UIC_WRAPTEXT .ID 'PAI1'
+        .PARAMS [ .TEXT [ .FONT "Fonts\MonoTypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ] .X 95 .Y 239 .SX 250 .SY 35 .ALIGN CENTER  ]
+      ]
+
+      # Nombre del pais
+      [ .TIPO UIC_WRAPTEXT .ID 'PAI2'
+        .PARAMS [ .TEXT [ .FONT "Fonts\MonoTypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ] .X 95 .Y 363 .SX 250 .SY 35 .ALIGN CENTER  ]
+      ]
+
+      #================================================ ESTADISTICAS PLAYER 1 =====================================                    
+      # Total Army
+      [ .TIPO UIC_WRAPTEXT .ID 'LTOA'
+        .PARAMS [ .TEXT [ .FONT "Fonts\MonoTypeCorsiva12.fnt" .COLOR [ .R 0 .G 0 .B 0 ] ] .X 364 .Y 298 .SX 110 .SY 35 .ALIGN CENTER  ]
+      ]
+
+      # Enemy Drops
+      [ .TIPO UIC_WRAPTEXT .ID 'LBED'
+        .PARAMS [ .TEXT [ .FONT "Fonts\MonoTypeCorsiva12.fnt" .COLOR [ .R 0 .G 0 .B 0 ] ] .X 543 .Y 298 .SX 110 .SY 35 .ALIGN CENTER  ]
+      ]
+            
+      # Obtained Flags
+      [ .TIPO UIC_WRAPTEXT .ID 'LBCA'
+        .PARAMS [ .TEXT [ .FONT "Fonts\MonoTypeCorsiva12.fnt" .COLOR [ .R 0 .G 0 .B 0 ] ] .X 722 .Y 298 .SX 110 .SY 35 .ALIGN CENTER ]
+      ]
+                  
+      #================================================ ESTADISTICAS PLAYER 2 =====================================                                
+      # Total Army
+      [ .TIPO UIC_WRAPTEXT .ID 'L_TO'
+        .PARAMS [ .TEXT [ .FONT "Fonts\MonoTypeCorsiva12.fnt" .COLOR [ .R 0 .G 0 .B 0 ] ] .X 364 .Y 417 .SX 110 .SY 35 .ALIGN CENTER  ]
+      ]
+
+      # Label - Estadisticas - Enemy Drops
+      [ .TIPO UIC_WRAPTEXT .ID 'L_ED'        
+        .PARAMS [ .TEXT [ .FONT "Fonts\MonoTypeCorsiva12.fnt" .COLOR [ .R 0 .G 0 .B 0 ] ] .X 543 .Y 417 .SX 110 .SY 35 .ALIGN CENTER ]        
+      ]      
+      
+      # Label - Estadisticas - Obtained Flags
+      [ .TIPO UIC_WRAPTEXT .ID 'L_CA'        
+        .PARAMS [ .TEXT [ .FONT "Fonts\MonoTypeCorsiva12.fnt" .COLOR [ .R 0 .G 0 .B 0 ] ] .X 722 .Y 417 .SX 110 .SY 35 .ALIGN CENTER ]        
+      ]       
+                              
+      #================================================ BANDERAS =====================================                    
+      # Estaran pre - creadas y cada jugador tendra un identificador especifico[ 
+
+      # JUG_DEFAULT
+      [ .TIPO UIC_BITMAP .ID 'JDEF' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 42 .V 771 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+            
+      # JUG_AUSTRIA
+      [ .TIPO UIC_BITMAP .ID 'JAUS' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 42 .V 771 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_FRANCIA
+      [ .TIPO UIC_BITMAP .ID 'JFRA' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 78 .V 771 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_RUSIA
+      [ .TIPO UIC_BITMAP .ID 'JRUS' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 42 .V 792 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_GRAN_BRETANYA
+      [ .TIPO UIC_BITMAP .ID 'JGBR' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 78 .V 792 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_PRUSIA
+      [ .TIPO UIC_BITMAP .ID 'JGPR' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 42 .V 813 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_SUECIA
+      [ .TIPO UIC_BITMAP .ID 'JSUE' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 78 .V 813 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_DINAMARCA
+      [ .TIPO UIC_BITMAP .ID 'JDIN' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 42 .V 834 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_DOS_SICILIAS
+      [ .TIPO UIC_BITMAP .ID 'JDSI' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 78 .V 834 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_PORTUGAL
+      [ .TIPO UIC_BITMAP .ID 'JPOR' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 42 .V 855 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_OTOMANO
+      [ .TIPO UIC_BITMAP .ID 'JOTO' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 78 .V 855 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_ESPANYA
+      [ .TIPO UIC_BITMAP .ID 'JESP' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 42 .V 876 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_SAJONIA
+      [ .TIPO UIC_BITMAP .ID 'JSAJ' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 78 .V 876 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_LOMBARDIA
+      [ .TIPO UIC_BITMAP .ID 'JLOM' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 42 .V 897 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_RHELVETICA
+      [ .TIPO UIC_BITMAP .ID 'JRHE' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 78 .V 897 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_EGIPTO     
+      [ .TIPO UIC_BITMAP .ID 'JEGI' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 42 .V 918 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_BATAVIA
+      [ .TIPO UIC_BITMAP .ID 'JBAT' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 78 .V 918 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_HANNOVER
+      [ .TIPO UIC_BITMAP .ID 'JHAN' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 42 .V 939 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_POLONIA
+      [ .TIPO UIC_BITMAP .ID 'JPOL' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 78 .V 939 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_EPAPALES
+      [ .TIPO UIC_BITMAP .ID 'JEPA' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 42 .V 960 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_MARRUECOS
+      [ .TIPO UIC_BITMAP .ID 'JMAR' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 78 .V 960 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_MOLDAVIA
+      [ .TIPO UIC_BITMAP .ID 'JMOL' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 42 .V 981 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_TRIPOLITANIA
+      [ .TIPO UIC_BITMAP .ID 'JTRI' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 78 .V 981 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_TUNEZ
+      [ .TIPO UIC_BITMAP .ID 'JTUN' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 42 .V 1002 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_PIAMONTE
+      [ .TIPO UIC_BITMAP .ID 'JPIA' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 78 .V 1002 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+    ]
+    
+    .UI_DATA [ .CURSOR DEFAULT ]   
+  ]
+]
+
+#=================================================================================================
+#================================================ UI DISCONNECT ==================================
+#=================================================================================================
+[
+
+  .NAME UI_ESTADISTICAS_NAVAL_DISCONNECT
+  .PROC UI_GENERICO
+  .PARAMS
+  [
+    .CONTROLES
+    [      
+      #================================================ FONDO =====================================
+      [ .TIPO UIC_BITMAP .ID 'BFON' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .U 0 .V 0 .X 0 .Y 0 .SX 1024 .SY 768 .ALPHA TRUE .PRIORITY 1] ]            
+        
+      #================================================ TEXTOS PLAYER 1 =====================================      
+      [         
+       .TIPO UIC_TEXT .ID 'TTIT' 
+       .PARAMS [ .TEXT LTEXT_ESTADISNAVAL_TOTALARMY .X 419 .Y 255 .ALIGN CENTER .FONT "Fonts\MonoTypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+      ]
+
+      [         
+       .TIPO UIC_TEXT .ID 'TTIT' 
+       .PARAMS [ .TEXT LTEXT_ESTADISNAVAL_ENEMYDROPS .X 598 .Y 255 .ALIGN CENTER .FONT "Fonts\MonoTypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+      ]
+      
+      [         
+       .TIPO UIC_TEXT .ID 'TTIT' 
+       .PARAMS [ .TEXT LTEXT_ESTADISNAVAL_CAPTUREDENEMIES .X 777 .Y 255 .ALIGN CENTER .FONT "Fonts\MonoTypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+      ]
+            
+      #================================================ TEXTOS PLAYER 2 =====================================
+      [         
+       .TIPO UIC_TEXT .ID 'TTIT' 
+       .PARAMS [ .TEXT LTEXT_ESTADISNAVAL_TOTALARMY .X 419 .Y 379 .ALIGN CENTER .FONT "Fonts\MonoTypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+      ]
+
+      [         
+       .TIPO UIC_TEXT .ID 'TTIT' 
+       .PARAMS [ .TEXT LTEXT_ESTADISNAVAL_ENEMYDROPS .X 598 .Y 379 .ALIGN CENTER .FONT "Fonts\MonoTypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+      ]
+      
+      [         
+       .TIPO UIC_TEXT .ID 'TTIT' 
+       .PARAMS [ .TEXT LTEXT_ESTADISNAVAL_CAPTUREDENEMIES .X 777 .Y 379 .ALIGN CENTER .FONT "Fonts\MonoTypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+      ]
+            
+      #================================================ TIEMPO =====================================
+      [         
+       .TIPO UIC_TEXT .ID 'TTIT' 
+       .PARAMS [ .TEXT LTEXT_ESTADISNAVAL_DURATION .X 508 .Y 502 .ALIGN CENTER .FONT "Fonts\MonoTypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+      ]
+      
+      [
+       .TIPO UIC_WRAPTEXT .ID 'TDUR'       
+       .PARAMS [ .TEXT [ .FONT "Fonts\MonoTypeCorsiva12.fnt" .COLOR [ .R 0 .G 0 .B 0 ] ] .X 382 .Y 542 .SX 257 .SY 35 .ALIGN CENTER  ]
+      ]
+      
+      #================================================ BOTONES =====================================
+      [
+       # Boton de volver a jugar
+       .TIPO UIC_BOTONTEXTO .ID 'BREP'
+       .PARAMS 
+       [ 
+         .STYLE DEFAULT_RECTANGLE_BUTTON_BIG 
+         .TEXT "LTEXT_ESTADISNAVAL_REPLAY" 
+         .FONDO [ .X 191 .Y 610 .PRIORITY 50] 
+         .CENTER_AREA [ .X1 0 .Y1 0 .X2 209 .Y2 39 ] 
+         .IDSELECTSOUND "S_FXUI_CLICKBUTTON"
+         .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"    
+       ]
+      ]
+
+      [
+       # Boton de volver al menu principal
+       .TIPO UIC_BOTONTEXTO .ID 'BMEN'
+       .PARAMS 
+       [ 
+         .STYLE DEFAULT_RECTANGLE_BUTTON_BIG 
+         .TEXT "LTEXT_ESTADISNAVAL_MENU" 
+         .FONDO [ .X 638 .Y 610 .PRIORITY 50] 
+         .CENTER_AREA [ .X1 0 .Y1 0 .X2 209 .Y2 39 ] 
+         .IDSELECTSOUND "S_FXUI_CLICKBUTTON"
+         .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"    
+       ]
+      ]
+
+      #================================================ TITULO =====================================
+      [         
+       .TIPO UIC_WRAPTEXT .ID 'LTIT' 
+       .PARAMS 
+       [ 
+         .TEXT [ .FONT "Fonts\MonoTypeCorsiva19.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ] 
+         .X 212 .Y 193 .SX 600 .SY 55 .ALIGN CENTER  
+       ]
+      ]
+            
+      #================================================ PAISES ====================================
+      [ .TIPO UIC_WRAPTEXT .ID 'PAI1'
+        .PARAMS [ .TEXT [ .FONT "Fonts\MonoTypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ] .X 95 .Y 239 .SX 250 .SY 35 .ALIGN CENTER  ]
+      ]
+
+      # Nombre del pais
+      [ .TIPO UIC_WRAPTEXT .ID 'PAI2'
+        .PARAMS [ .TEXT [ .FONT "Fonts\MonoTypeCorsiva15.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ] .X 95 .Y 363 .SX 250 .SY 35 .ALIGN CENTER  ]
+      ]
+
+      #================================================ ESTADISTICAS PLAYER 1 =====================================                    
+      # Total Army
+      [ .TIPO UIC_WRAPTEXT .ID 'LTOA'
+        .PARAMS [ .TEXT [ .FONT "Fonts\MonoTypeCorsiva12.fnt" .COLOR [ .R 0 .G 0 .B 0 ] ] .X 364 .Y 298 .SX 110 .SY 35 .ALIGN CENTER  ]
+      ]
+
+      # Enemy Drops
+      [ .TIPO UIC_WRAPTEXT .ID 'LBED'
+        .PARAMS [ .TEXT [ .FONT "Fonts\MonoTypeCorsiva12.fnt" .COLOR [ .R 0 .G 0 .B 0 ] ] .X 543 .Y 298 .SX 110 .SY 35 .ALIGN CENTER  ]
+      ]
+            
+      # Obtained Flags
+      [ .TIPO UIC_WRAPTEXT .ID 'LBCA'
+        .PARAMS [ .TEXT [ .FONT "Fonts\MonoTypeCorsiva12.fnt" .COLOR [ .R 0 .G 0 .B 0 ] ] .X 722 .Y 298 .SX 110 .SY 35 .ALIGN CENTER ]
+      ]
+                  
+      #================================================ ESTADISTICAS PLAYER 2 =====================================                                
+      # Total Army
+      [ .TIPO UIC_WRAPTEXT .ID 'L_TO'
+        .PARAMS [ .TEXT [ .FONT "Fonts\MonoTypeCorsiva12.fnt" .COLOR [ .R 0 .G 0 .B 0 ] ] .X 364 .Y 417 .SX 110 .SY 35 .ALIGN CENTER  ]
+      ]
+
+      # Label - Estadisticas - Enemy Drops
+      [ .TIPO UIC_WRAPTEXT .ID 'L_ED'        
+        .PARAMS [ .TEXT [ .FONT "Fonts\MonoTypeCorsiva12.fnt" .COLOR [ .R 0 .G 0 .B 0 ] ] .X 543 .Y 417 .SX 110 .SY 35 .ALIGN CENTER ]        
+      ]      
+      
+      # Label - Estadisticas - Obtained Flags
+      [ .TIPO UIC_WRAPTEXT .ID 'L_CA'        
+        .PARAMS [ .TEXT [ .FONT "Fonts\MonoTypeCorsiva12.fnt" .COLOR [ .R 0 .G 0 .B 0 ] ] .X 722 .Y 417 .SX 110 .SY 35 .ALIGN CENTER ]        
+      ]       
+                              
+      #================================================ BANDERAS =====================================                    
+      # Estaran pre - creadas y cada jugador tendra un identificador especifico[ 
+
+      # JUG_DEFAULT
+      [ .TIPO UIC_BITMAP .ID 'JDEF' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 42 .V 771 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+            
+      # JUG_AUSTRIA
+      [ .TIPO UIC_BITMAP .ID 'JAUS' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 42 .V 771 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_FRANCIA
+      [ .TIPO UIC_BITMAP .ID 'JFRA' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 78 .V 771 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_RUSIA
+      [ .TIPO UIC_BITMAP .ID 'JRUS' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 42 .V 792 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_GRAN_BRETANYA
+      [ .TIPO UIC_BITMAP .ID 'JGBR' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 78 .V 792 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_PRUSIA
+      [ .TIPO UIC_BITMAP .ID 'JGPR' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 42 .V 813 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_SUECIA
+      [ .TIPO UIC_BITMAP .ID 'JSUE' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 78 .V 813 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_DINAMARCA
+      [ .TIPO UIC_BITMAP .ID 'JDIN' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 42 .V 834 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_DOS_SICILIAS
+      [ .TIPO UIC_BITMAP .ID 'JDSI' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 78 .V 834 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_PORTUGAL
+      [ .TIPO UIC_BITMAP .ID 'JPOR' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 42 .V 855 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_OTOMANO
+      [ .TIPO UIC_BITMAP .ID 'JOTO' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 78 .V 855 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_ESPANYA
+      [ .TIPO UIC_BITMAP .ID 'JESP' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 42 .V 876 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_SAJONIA
+      [ .TIPO UIC_BITMAP .ID 'JSAJ' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 78 .V 876 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_LOMBARDIA
+      [ .TIPO UIC_BITMAP .ID 'JLOM' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 42 .V 897 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_RHELVETICA
+      [ .TIPO UIC_BITMAP .ID 'JRHE' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 78 .V 897 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_EGIPTO     
+      [ .TIPO UIC_BITMAP .ID 'JEGI' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 42 .V 918 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_BATAVIA
+      [ .TIPO UIC_BITMAP .ID 'JBAT' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 78 .V 918 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_HANNOVER
+      [ .TIPO UIC_BITMAP .ID 'JHAN' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 42 .V 939 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_POLONIA
+      [ .TIPO UIC_BITMAP .ID 'JPOL' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 78 .V 939 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_EPAPALES
+      [ .TIPO UIC_BITMAP .ID 'JEPA' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 42 .V 960 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_MARRUECOS
+      [ .TIPO UIC_BITMAP .ID 'JMAR' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 78 .V 960 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_MOLDAVIA
+      [ .TIPO UIC_BITMAP .ID 'JMOL' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 42 .V 981 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_TRIPOLITANIA
+      [ .TIPO UIC_BITMAP .ID 'JTRI' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 78 .V 981 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_TUNEZ
+      [ .TIPO UIC_BITMAP .ID 'JTUN' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 42 .V 1002 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+      # JUG_PIAMONTE
+      [ .TIPO UIC_BITMAP .ID 'JPIA' .PARAMS [ .FILE "Game\UI\EstadisticasNaval\EstadisticasQuickgamePerderN.tga" .SX 33 .SY 18 .U 78 .V 1002 .ALPHA TRUE .ACTIVO FALSE .PRIORITY 10 ] ]
+      
+    ]
+    
+    .UI_DATA [ .CURSOR DEFAULT ]   
+  ]
+]

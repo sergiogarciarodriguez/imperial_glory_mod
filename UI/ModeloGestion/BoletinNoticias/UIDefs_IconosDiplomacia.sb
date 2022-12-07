@@ -1,0 +1,62 @@
+# Textura de fondo de las celdas del visor de jugadores de la ventana de noticias diplomáticas
+ 
+.FONDO_CELDA
+[
+  .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinDiplomacia.tga" .U 189 .V 735
+  .SX 559 .SY 51
+  .ALPHA TRUE
+]
+
+.BTN_BANDERA
+[
+  .COMPORTAMIENTO MANUAL
+  
+  .FONDO
+  [
+    .X 260 .Y 8
+    .SX 38 .SY 38 .ALPHA TRUE
+    
+    .SOLTADO [ .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga" .U 5 .V 1 ]
+    .PULSADO [ .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga" .U 5 .V 1 ]
+  ]
+  
+  .TOOL_TIP
+  [ 
+    .TEXT LTEXT_JUGADOR_AUSTRIA
+    .X 32 .Y 32
+
+    .SHOW_TIME 0
+    
+    .STYLE DEFAULT_TOOLTIP 
+  ]
+]
+
+.VISOR_ALIADOS
+[
+  .DRAW_PARAMS
+  [
+    .X 23 .Y 5
+    .CELL_XSPACE 1
+    .CELL_YSPACE 3
+    .SLIDER_XSPACE -220
+    .OBJ_WIDTH 33
+    .OBJ_HEIGHT 18
+  ]         
+  
+  %Game/UI/ModeloGestion/BoletinNoticias/UIDefs_VisorMatrizNoticiasDiplomacia.sb 
+]
+
+.VISOR_ENEMIGOS
+[
+    .DRAW_PARAMS
+    [
+      .X 321 .Y 5
+      .CELL_XSPACE 1
+      .CELL_YSPACE 3
+      .SLIDER_XSPACE 18
+      .OBJ_WIDTH 33
+      .OBJ_HEIGHT 18
+    ]         
+    
+  %Game/UI/ModeloGestion/BoletinNoticias/UIDefs_VisorMatrizNoticiasDiplomacia.sb 
+]

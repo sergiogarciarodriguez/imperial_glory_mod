@@ -1,0 +1,4 @@
+# Wraptext con el nombre del elemento seleccionado en el visor de producibles o produciendose
+.X 13 .Y 243 .SX 789 .SY 40
+.ALIGN CENTER
+.TEXT [ .FONT "Fonts/Times17.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]

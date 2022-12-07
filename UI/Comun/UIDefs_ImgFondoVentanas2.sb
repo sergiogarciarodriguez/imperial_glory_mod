@@ -1,0 +1,20 @@
+#############################################################################################
+# Definimos el fondo tileado para ventanas. A diferencia de UIDefs_ImgFondoVentanas.sb,
+# en este la ventana no tiene el gráfico de la barra inf.
+# El ancho (.ANCHO) y alto (.ALTO) se esperara que sean definidos desde el exterior.
+#############################################################################################
+
+.MODO_TILEADO COMPLETO 
+ 
+.IMG_ESQUINA_SUP_IZQ  [ .FILE "Game/UI/ModeloBatalla/DummyDialogMessageBoxBatalla.tga" .U 4   .V 6 .SX 108 .SY 50 .ALPHA TRUE .PRIORITY 250 ]
+.IMG_LATERAL_SUP      [ .FILE "Game/UI/ModeloBatalla/DummyDialogMessageBoxBatalla.tga" .U 112 .V 6 .SX 108 .SY 50 .ALPHA TRUE .PRIORITY 250 ]
+.IMG_ESQUINA_SUP_DCHA [ .FILE "Game/UI/ModeloBatalla/DummyDialogMessageBoxBatalla.tga" .U 220 .V 6 .SX 108 .SY 50 .ALPHA TRUE .PRIORITY 250 ]
+
+.IMG_LATERAL_IZQ      [ .FILE "Game/UI/ModeloBatalla/DummyDialogMessageBoxBatalla.tga" .U 4   .V 56 .SX 108 .SY 50 .ALPHA TRUE .PRIORITY 250 ]
+.IMG_CENTRAL          [ .FILE "Game/UI/ModeloBatalla/DummyDialogMessageBoxBatalla.tga" .U 112 .V 56 .SX 108 .SY 50 .ALPHA TRUE .PRIORITY 250 ]
+.IMG_LATERAL_DCHA     [ .FILE "Game/UI/ModeloBatalla/DummyDialogMessageBoxBatalla.tga" .U 220 .V 56 .SX 108 .SY 50 .ALPHA TRUE .PRIORITY 250 ]
+
+.IMG_ESQUINA_INF_IZQ  [ .FILE "Game/UI/ModeloBatalla/DummyDialogMessageBoxBatalla.tga" .U 4   .V 106 .SX 108 .SY 50 .ALPHA TRUE .PRIORITY 250 ]
+.IMG_LATERAL_INF      [ .FILE "Game/UI/ModeloBatalla/DummyDialogMessageBoxBatalla.tga" .U 112 .V 106 .SX 108 .SY 50 .ALPHA TRUE .PRIORITY 250 ]
+.IMG_ESQUINA_INF_DCHA [ .FILE "Game/UI/ModeloBatalla/DummyDialogMessageBoxBatalla.tga" .U 220 .V 106 .SX 108 .SY 50 .ALPHA TRUE .PRIORITY 250 ]
+

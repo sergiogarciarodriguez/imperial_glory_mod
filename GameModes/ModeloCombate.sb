@@ -1,0 +1,2 @@
+.MODELO_COMBATE "Game/GameModes/ModeloCombate.dt"
+.MODELO_COMBATE_AUTOMATICO "Game/GameModes/Gestion/CombateAutomatico/ModeloCombateAutomatico.dt"

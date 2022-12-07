@@ -1,0 +1,32 @@
+#======================================================================
+#  Definiciones de sonido para el gestor climático 'WeatherManager'
+#======================================================================
+.AUDIO 
+[
+  [
+    .IDNAME "S_LLUVIA"       
+    .PATH "Audio/Battle/Fx/Climatology/lluvia fuerte.ogg" 
+    .3D FALSE
+    .LOOP TRUE
+    .PAUSE TRUE
+  ]
+
+  [
+  .IDNAME "S_TRUENO"
+  .PATH
+  [
+	"Audio/Battle/Fx/Climatology/trueno cerca_1.ogg"
+	"Audio/Battle/Fx/Climatology/trueno cerca_2.ogg"
+	"Audio/Battle/Fx/Climatology/trueno cerca_3.ogg"
+	"Audio/Battle/Fx/Climatology/trueno cerca_4.ogg"
+	"Audio/Battle/Fx/Climatology/trueno cerca_5.ogg"
+	"Audio/Battle/Fx/Climatology/trueno cerca_6.ogg"
+	"Audio/Battle/Fx/Climatology/trueno lejos_1.ogg"
+	"Audio/Battle/Fx/Climatology/trueno lejos_2.ogg"
+	"Audio/Battle/Fx/Climatology/trueno lejos_3.ogg"
+  ]
+    .3D FALSE
+    .LOOP FALSE
+    .PAUSE TRUE
+  ]
+]

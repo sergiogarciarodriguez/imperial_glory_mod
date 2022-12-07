@@ -1,0 +1,91 @@
+##################################################################################################################
+### Params asociados a la Ventana de objetivos
+### Esta ventana se gestiona en el archivo "UIC_VentanaObjetivosBatalla.h"
+##################################################################################################################
+
+.CENTER TRUE
+.FONDO 
+[ 
+  .X 0 .Y 0 
+  .SX 324 .SY 439 .ALPHA TRUE
+  .FILE "Game/UI/ModeloBatalla/VentanaInformacionObjetivos.tga"
+  .PRIORITY 10
+]
+
+.CAPTION
+[
+	.XMARGEN 0 .YMARGEN 35
+  .HEIGHT 5
+  .TITLE 
+  [ 
+   .ALINEACION CENTER 
+   .TEXT LTEXT_UI_BATALLA_TITULO_OBJETIVOS
+   .FONT "Fonts/Times15.fnt" 
+   .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+]
+
+
+.CONTROLES
+[
+	
+	##############################################################
+ 	### Título 1
+ 	##############################################################
+	[
+	  .TIPO UIC_TEXT
+	  .PARAMS 
+	  [ 
+	    .ALIGN CENTER .X 512 .Y 254 .TEXT LTEXT_UI_BATALLA_OBJETIVOS_ATA
+	    .FONT "Fonts/Times15.fnt"
+	    .COLOR [ .R 255 .G 255 .B 255 ]
+	  ]
+ 	]
+ 	
+ 	##############################################################
+ 	### Título 2
+ 	##############################################################
+	[
+	  .TIPO UIC_TEXT
+	  .PARAMS 
+	  [ 
+	    .ALIGN CENTER .X 512 .Y 428 .TEXT LTEXT_UI_BATALLA_OBJETIVOS_DEF
+	    .FONT "Fonts/Times15.fnt"
+	    .COLOR [ .R 255 .G 255 .B 255 ]
+	  ]
+ 	]
+ 	
+ 	##############################################################
+ 	### Texto de objetivos atacantes
+ 	##############################################################
+ 	[
+	  .TIPO UIC_WRAPTEXT .ID 'VOOA'
+	  .PARAMS 
+	  [ 
+	    .ALIGN CENTER .X 32 .Y 122 .SX 250 .SY 200 
+	    .TEXT
+	    [
+	    	.FONT "Fonts/Times11.fnt"
+	    	.COLOR [ .R 255 .G 255 .B 255 ]
+	    ]
+	  ]
+ 	]
+ 	
+ 	##############################################################
+ 	### Texto de objetivos defensores
+ 	##############################################################
+ 	[
+	  .TIPO UIC_WRAPTEXT .ID 'VOOD'
+	  .PARAMS 
+	  [ 
+	    .ALIGN CENTER .X 32 .Y 296 .SX 250 .SY 200 
+	    .TEXT 
+	    [
+	    	.FONT "Fonts/Times11.fnt"
+	    	.COLOR [ .R 255 .G 255 .B 255 ]
+	    ]
+	  ]
+ 	]
+]
+ 
+ 

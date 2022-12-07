@@ -1,0 +1,29 @@
+  #############################################################################################
+  # Definimos un boton por defecto tileable
+  #############################################################################################
+  
+  .TIPO UIC_BOTONTEXTO
+  
+  .COMPORTAMIENTO SIMPLE
+  .ACEPTAR TRUE
+  
+  .SOLTADO [ .COLOR [ .R 220 .G 220 .B 220 ] ] 
+  .PULSADO [ .COLOR [ .R 158 .G 0 .B 0 ] ] 
+  
+  .TEXT LTEXT_UI_OK
+  
+  .FONT "Fonts/Default.fnt" .SCALE 1.0
+    
+  .FONDO
+  [ 
+   .X 0 .Y 0 .PRIORITY 255
+   .TILEABLE TRUE
+   .SOLTADO %Game/UI/Comun/UIDefs_ImgFondoBotonSoltado.sb   
+   .PULSADO %Game/UI/Comun/UIDefs_ImgFondoBotonPulsado.sb   
+   .SX 154 .SY 22
+   .ALPHA TRUE
+  ]              
+                    
+  .CENTER_AREA [ .X1 0 .Y1 0 .X2 154 .Y2 22 ]
+        
+  .KEY [ .TECLA LKEY_GENERIC_MB_OK_KEY .EVENTOS [ KEY_DOWN KEY_UP ] ]

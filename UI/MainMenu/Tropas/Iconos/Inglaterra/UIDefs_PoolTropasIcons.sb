@@ -1,0 +1,180 @@
+###############################################################################################################
+# Tropas INGLATERRA
+# Mantiene el pool de los botones que representan a los combatientes en el modelo de batalla.
+###############################################################################################################
+
+#------------------------------------------------ CAB_LANCERO -----------------------------------------------
+[
+ .KEY GRAN_BRETANYA_CAB_LANCERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\INGLATERRA\IconosINGLATERRA.tga" .U 1 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY GRAN_BRETANYA_CAB_LANCERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\INGLATERRA\IconosINGLATERRA.tga" .U 1 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ CAB_HUSAR -------------------------------------------------
+[
+ .KEY GRAN_BRETANYA_CAB_HUSAR_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\INGLATERRA\IconosINGLATERRA.tga" .U 117 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY GRAN_BRETANYA_CAB_HUSAR_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\INGLATERRA\IconosINGLATERRA.tga" .U 117 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ CAB_CORACERO ----------------------------------------------
+[
+ .KEY GRAN_BRETANYA_CAB_CORACERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\INGLATERRA\IconosINGLATERRA.tga" .U 59 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY GRAN_BRETANYA_CAB_CORACERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\INGLATERRA\IconosINGLATERRA.tga" .U 59 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ CAB_DRAGON ------------------------------------------------
+[
+ .KEY GRAN_BRETANYA_CAB_DRAGON_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\INGLATERRA\IconosINGLATERRA.tga" .U 175 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY GRAN_BRETANYA_CAB_DRAGON_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\INGLATERRA\IconosINGLATERRA.tga" .U 175 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ CAZADOR ---------------------------------------------------
+[
+ .KEY GRAN_BRETANYA_CAZADOR_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\INGLATERRA\IconosINGLATERRA.tga" .U 233 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY GRAN_BRETANYA_CAZADOR_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\INGLATERRA\IconosINGLATERRA.tga" .U 233 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ GRANADERO ---------------------------------------------
+[
+ .KEY GRAN_BRETANYA_GRANADERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\INGLATERRA\IconosINGLATERRA.tga" .U 291 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY GRAN_BRETANYA_GRANADERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\INGLATERRA\IconosINGLATERRA.tga" .U 291 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ MILICIA --------------------------------------------------
+[
+ .KEY GRAN_BRETANYA_MILICIA_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\INGLATERRA\IconosINGLATERRA.tga" .U 349 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY GRAN_BRETANYA_MILICIA_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\INGLATERRA\IconosINGLATERRA.tga" .U 349 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ FUSILERO --------------------------------------------------
+[
+ .KEY GRAN_BRETANYA_FUSILERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\INGLATERRA\IconosINGLATERRA.tga" .U 407 .V 1 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY GRAN_BRETANYA_FUSILERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\INGLATERRA\IconosINGLATERRA.tga" .U 407 .V 80 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ TIRADOR ---------------------------------------------------
+[
+ .KEY GRAN_BRETANYA_TIRADOR_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\INGLATERRA\IconosINGLATERRA.tga" .U 1 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY GRAN_BRETANYA_TIRADOR_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\INGLATERRA\IconosINGLATERRA.tga" .U 1 .V 238 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ ELITE ---------------------------------------------------
+[
+ .KEY GRAN_BRETANYA_ELITE_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\INGLATERRA\IconosINGLATERRA.tga" .U 59 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY GRAN_BRETANYA_ELITE_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\INGLATERRA\IconosINGLATERRA.tga" .U 59 .V 238 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ OBUS_CAB --------------------------------------------------
+[
+ .KEY GRAN_BRETANYA_OBUS_CAB_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\INGLATERRA\IconosINGLATERRA.tga" .U 117 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY GRAN_BRETANYA_OBUS_CAB_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\INGLATERRA\IconosINGLATERRA.tga" .U 117 .V 238 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ CANON_CAB -------------------------------------------------
+[
+ .KEY GRAN_BRETANYA_CANON_CAB_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\INGLATERRA\IconosINGLATERRA.tga" .U 175 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY GRAN_BRETANYA_CANON_CAB_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\INGLATERRA\IconosINGLATERRA.tga" .U 175 .V 238 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ CANON_CAMP ------------------------------------------------
+[
+ .KEY GRAN_BRETANYA_CANON_CAMP_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\INGLATERRA\IconosINGLATERRA.tga" .U 233 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY GRAN_BRETANYA_CANON_CAMP_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\INGLATERRA\IconosINGLATERRA.tga" .U 233 .V 238 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ CANON -----------------------------------------------------
+[
+ .KEY GRAN_BRETANYA_CANON_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\INGLATERRA\IconosINGLATERRA.tga" .U 291 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY GRAN_BRETANYA_CANON_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\INGLATERRA\IconosINGLATERRA.tga" .U 291 .V 238 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ OBUS ------------------------------------------------------
+[
+ .KEY GRAN_BRETANYA_OBUS_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\INGLATERRA\IconosINGLATERRA.tga" .U 349 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY GRAN_BRETANYA_OBUS_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\INGLATERRA\IconosINGLATERRA.tga" .U 349 .V 238 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+#------------------------------------------------ MORTERO ---------------------------------------------------
+[
+ .KEY GRAN_BRETANYA_MORTERO_BTN_SOLTADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\INGLATERRA\IconosINGLATERRA.tga" .U 407 .V 159 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]
+
+[
+ .KEY GRAN_BRETANYA_MORTERO_BTN_PULSADO
+ .PARAMS [ .FILE "Game\UI\MainMenu\Tropas\Iconos\INGLATERRA\IconosINGLATERRA.tga" .U 407 .V 238 .SX 57 .SY 79 .ALPHA TRUE .PRIORITY 40 ]
+]

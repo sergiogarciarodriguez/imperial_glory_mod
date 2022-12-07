@@ -1,0 +1,17 @@
+.VERSION 2
+
+#----------------------------------------
+#  Archivo de clima: Algarve (29)
+#----------------------------------------
+
+.CLIMA
+[
+]
+#--------------------------------------------------
+# Para poner animales voladores en el escenario
+#--------------------------------------------------
+.FAUNA
+[
+  [.FILE "Models\Criaturas\Aves\BandadaPajarillos01.V3D" .POS [3000.0 -2000.0 15000.0]]
+
+]

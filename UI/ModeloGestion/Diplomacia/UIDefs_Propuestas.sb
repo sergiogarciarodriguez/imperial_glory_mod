@@ -1,0 +1,311 @@
+############################################################################################################
+# Estilos para los botones de propuesta diplomática
+############################################################################################################
+
+[
+  .KEY ALIANZA
+  .PARAMS
+  [
+    .COMPORTAMIENTO FIJO
+    .FONDO
+    [
+      .X 24 .Y 140
+      .SX 98 .SY 51
+      .ALPHA TRUE
+      .DISABLE [ .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 1 .V 1 ]
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 1  .V 105 ]
+      .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 1  .V 209 ]
+      .PULSADO [.FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 1  .V 314 ]
+      .PRIORITY 100
+    ]
+  
+    .TOOL_TIP 
+    [ 
+      .TEXT LTEXT_DIPLOMACIA_ALIANZA 
+      %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+    ]
+    
+     # Usamos el cursor de ayuda contextual 
+    .ALTERNATE_CURSOR CUR_CONTEXTHELP
+  ]       
+]
+
+[
+  .KEY PERMISO_PASO
+  .PARAMS
+  [
+    .COMPORTAMIENTO FIJO
+    .FONDO
+    [
+      .X 24 .Y 200
+      .SX 98 .SY 51
+      .ALPHA TRUE
+      .PRIORITY 100
+      .DISABLE [ .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 100 .V 1 ]
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 100  .V 105 ]
+      .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 100  .V 209 ]
+      .PULSADO [.FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 100  .V 314 ]
+    ]
+
+    .TOOL_TIP 
+    [ 
+      .TEXT LTEXT_DIPLOMACIA_PERMISO_PASO 
+      %Game/UI/Comun/UIDefs_DefaultToolTip.sb      
+    ]       
+    
+     # Usamos el cursor de ayuda contextual 
+    .ALTERNATE_CURSOR CUR_CONTEXTHELP
+  ]
+]
+
+[
+  .KEY MEJORA_RELACIONES
+  .PARAMS
+  [
+    .COMPORTAMIENTO FIJO
+    .FONDO
+    [
+      .X 24 .Y 260
+      .SX 98 .SY 51
+      .ALPHA TRUE
+      .PRIORITY 100
+      .DISABLE [ .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 199 .V 1 ]
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 199  .V 105 ]
+      .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 199  .V 209 ]
+      .PULSADO [.FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 199  .V 314 ]
+    ]
+
+    .TOOL_TIP 
+    [ 
+      .TEXT LTEXT_DIPLOMACIA_MEJORA_RELACIONES 
+      %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+    ]       
+    
+     # Usamos el cursor de ayuda contextual 
+    .ALTERNATE_CURSOR CUR_CONTEXTHELP
+  ]
+]
+
+[
+  .KEY DECLARACION_GUERRA
+  .PARAMS
+  [
+    .COMPORTAMIENTO FIJO
+    .FONDO
+    [
+      .X 24 .Y 320
+      .SX 98 .SY 51
+      .ALPHA TRUE
+      .PRIORITY 100
+      .DISABLE [ .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 298 .V 1 ]
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 298  .V 105 ]
+      .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 298  .V 209 ]
+      .PULSADO [.FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 298  .V 314 ]
+    ]
+
+    .TOOL_TIP 
+    [ 
+      .TEXT LTEXT_DIPLOMACIA_DECLARACION_GUERRA 
+      %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+    ]       
+    
+     # Usamos el cursor de ayuda contextual 
+    .ALTERNATE_CURSOR CUR_CONTEXTHELP
+  ]
+]
+
+#[
+#  .KEY TREGUA
+#  .PARAMS
+#  [
+#    .COMPORTAMIENTO FIJO
+#    .FONDO
+#    [
+#      .X 24 .Y 380
+#      .SX 98 .SY 51
+#      .ALPHA TRUE
+#      .PRIORITY 100
+#      .DISABLE [ .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 397 .V 1 ]
+#      .SOLTADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 397  .V 105 ]
+#      .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 397  .V 209 ]
+#      .PULSADO [.FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 397  .V 314 ]
+#    ]
+#
+#    .TOOL_TIP 
+#    [ 
+#      .TEXT LTEXT_DIPLOMACIA_TREGUA 
+#      %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+#    ]       
+#  ]
+#]
+
+[
+  .KEY ARMISTICIO
+  .PARAMS
+  [
+    .COMPORTAMIENTO FIJO
+    .FONDO
+    [
+      .X 24 .Y 380
+      .SX 98 .SY 51
+      .ALPHA TRUE
+      .PRIORITY 100
+      .DISABLE [ .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 1 .V 53 ]
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 1  .V 157 ]
+      .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 1  .V 261 ]
+      .PULSADO [.FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 1  .V 366 ]
+    ]
+
+    .TOOL_TIP 
+    [ 
+      .TEXT LTEXT_DIPLOMACIA_ARMISTICIO 
+      %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+    ]       
+    
+     # Usamos el cursor de ayuda contextual 
+    .ALTERNATE_CURSOR CUR_CONTEXTHELP
+  ]
+]
+
+[
+  .KEY PACTO_PROTECCION
+  .PARAMS
+  [
+    .COMPORTAMIENTO FIJO
+    .FONDO
+    [
+      .X 24 .Y 440
+      .SX 98 .SY 51
+      .ALPHA TRUE
+      .PRIORITY 100
+      .DISABLE [ .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 100 .V 53 ]
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 100  .V 157 ]
+      .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 100  .V 261 ]
+      .PULSADO [.FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 100  .V 366 ]
+    ]
+
+    .TOOL_TIP 
+    [ 
+      .TEXT LTEXT_DIPLOMACIA_PACTO_PROTECCION 
+      %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+    ]       
+    
+     # Usamos el cursor de ayuda contextual 
+    .ALTERNATE_CURSOR CUR_CONTEXTHELP
+  ]
+]
+
+[
+  .KEY TRATADO_COMERCIAL
+  .PARAMS
+  [
+    .COMPORTAMIENTO FIJO
+    .FONDO
+    [
+      .X 24 .Y 500
+      .SX 98 .SY 51
+      .ALPHA TRUE
+      .PRIORITY 100
+      .DISABLE [ .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 199 .V 53 ]
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 199  .V 157 ]
+      .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 199  .V 261 ]
+      .PULSADO [.FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 199  .V 366 ]
+    ]
+
+    .TOOL_TIP 
+    [ 
+      .TEXT LTEXT_DIPLOMACIA_TRATADO_COMERCIAL 
+      %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+    ]       
+    
+     # Usamos el cursor de ayuda contextual 
+    .ALTERNATE_CURSOR CUR_CONTEXTHELP
+  ]
+]
+
+[
+  .KEY MATRIMONIO
+  .PARAMS
+  [
+    .COMPORTAMIENTO FIJO
+    .FONDO
+    [
+      .X 24 .Y 560
+      .SX 98 .SY 51
+      .ALPHA TRUE
+      .PRIORITY 100
+      .DISABLE [ .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 298 .V 53 ]
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 298  .V 157 ]
+      .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 298  .V 261 ]
+      .PULSADO [.FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 298  .V 366 ]
+    ]
+
+    .TOOL_TIP 
+    [ 
+      .TEXT LTEXT_DIPLOMACIA_MATRIMONIO 
+      %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+    ]       
+    
+     # Usamos el cursor de ayuda contextual 
+    .ALTERNATE_CURSOR CUR_CONTEXTHELP
+  ]
+]
+
+[
+  .KEY PRESTAMO_EJERCITOS
+  .PARAMS
+  [
+    .COMPORTAMIENTO FIJO
+    .FONDO
+    [
+      .X 24 .Y 620
+      .SX 98 .SY 51
+      .ALPHA TRUE
+      .PRIORITY 100
+      .DISABLE [ .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 397 .V 53 ]
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 397  .V 157 ]
+      .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 397  .V 261 ]
+      .PULSADO [.FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 397  .V 366 ]
+    ]
+
+    .TOOL_TIP 
+    [ 
+      .TEXT LTEXT_DIPLOMACIA_PRESTAMO_EJERCITOS 
+      %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+    ]       
+    
+     # Usamos el cursor de ayuda contextual 
+    .ALTERNATE_CURSOR CUR_CONTEXTHELP
+  ]
+]
+
+[
+  .KEY AYUDA_MILITAR
+  .PARAMS
+  [
+    .COMPORTAMIENTO FIJO
+    .FONDO
+    [
+      .X 24 .Y 680
+      .SX 98 .SY 51
+      .ALPHA TRUE
+      .PRIORITY 100
+      .DISABLE [ .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 1 .V 417 ]
+      .SOLTADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 100  .V 417 ]
+      .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 199  .V 417 ]
+      .PULSADO [.FILE "Game/UI/ModeloGestion/Diplomacia/PlantillaIconosDiplomacia.tga" .U 298  .V 417 ]
+    ]
+
+    .TOOL_TIP 
+    [ 
+      .TEXT LTEXT_DIPLOMACIA_AYUDA_MILITAR 
+      %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+    ]       
+    
+     # Usamos el cursor de ayuda contextual 
+    .ALTERNATE_CURSOR CUR_CONTEXTHELP
+  ]
+]
+
+
+

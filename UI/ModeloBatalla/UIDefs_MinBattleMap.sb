@@ -1,0 +1,9 @@
+########################################################################################################
+# Params asociados al mini mapa de batalla
+########################################################################################################
+
+ # Archivo con los datos donde obtener como representar los escenarios y las tropas
+ .INFOMINMAP_FILE "Game/UI/ModeloBatalla/UIDefs_MinBattleMapInfo.sb"
+           
+ # Datos concretos para mostrar el mini mapa
+ .X 5 .Y 49 .TRANSPARENCY 200 .ACTIVO TRUE

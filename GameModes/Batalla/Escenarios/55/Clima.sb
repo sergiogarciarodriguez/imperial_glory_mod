@@ -1,0 +1,58 @@
+#---------------------------------------
+#    Script de definición de clima
+#---------------------------------------
+#    ESCENARIO: Marruecos (55)
+#---------------------------------------
+.VERSION 2                         # En la versión 2 se pueden definir varios grupos de parámetros
+.CLIMA
+[
+  #-------------------
+  # Estado despejado
+  #-------------------
+  [
+	.TYPE "DESPEJADO"
+	.DURAC 6.0                     # En despejado solo afecta la duración
+  ] 	 
+
+  #----------------------
+  # Tormenta de arena
+  #----------------------
+  [
+	.TYPE  "SAND"
+	
+	.PROB      1.0                # Probabilidad
+    .INTERP    2.0                # Tiempo de interpolación con los parámetros anteriores (en segundos)
+    .DURAC   1200.0               # Tiempo de duración del efecto
+    .DENSIDAD  1.0                # Densidad del alfa respecto al de la textura [0.0 - 1.0]
+    .ROT_MAX   0.15                # Angulo máximo de rotación del plano de arena debido a la posicion/angulo de la cámara
+    .INCL_CAM  0.5                # Inclinación de la cámara a partir de la cual la rotación del plano es nula
+    .OFF_CAM  5000.0              # Distancia a la cámara a la que se produce la rotación  (si la cámara corta al plano --> aumentar)
+    
+    .TEX  "Textures/arena.tga"    # Textura del fenómeno (aplicada a todas las capas)
+    .GRID_SIZE  3                 # Tamaño de la rejilla (vertices por lado)
+    
+    .WIND
+	[
+	  #------------------
+	  # Primera capa
+	  #------------------
+	  [
+		.OFFS     -50.0               # Altura de la rejilla
+		.SPEED   25.0               # Velocidad del viento
+		.DIR      0.2               # Dirección del viento (angulo en radianes)
+		.VDIR    [0.1  0.9]         # Variación de la dirección [ amplitud  frecuencia_variacion ]
+		.VSPEED  [35.0  0.8]        # Variación de la velocidad [ amplitud  frecuencia_variacion ]
+	  ]
+	  #------------------
+	  # Segunda capa
+	  #------------------
+	  [
+		.OFFS  -350.0               # Altura de la rejilla
+		.SPEED   20.0               # Velocidad del viento
+		.DIR      0.2               # Dirección del viento (angulo en radianes)
+		.VDIR    [0.2  0.5]         # Variación de la dirección [ amplitud  frecuencia_variacion ]
+		.VSPEED  [20.0  0.6]        # Variación de la velocidad [ amplitud  frecuencia_variacion ]
+	  ]
+	]
+  ]
+]

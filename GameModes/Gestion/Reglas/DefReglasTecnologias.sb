@@ -1,0 +1,154 @@
+################################################################################################
+# En este punto se leeran las reglas que puedan estar asociadas a ciertas tecnologias.
+# Notese que no todas las tecnologias tendras reglas vinculadas.
+################################################################################################
+
+
+#.SAQUEO
+#[
+ #.PORCENTAJE_SAQUEO					 600.0 # Porcentaje de riqueza saqueada
+ #.TURNOS_ESPERA    					 15   # Turnos de espera entre dos saqueos
+#]
+
+.REPRESION
+[
+ .PORCENTAJE_REDUCCION_ANEX_MILITAR  30.0 # Porcentaje de reduccion en los turnos de espera para anexion militar
+]
+
+.MECENAZGO
+[
+ .PORCENTAJE_AUMENTO_PROD_CIENCIA    10.0 # Porcentaje en el aumento de produccion de ciencia en provincias
+]
+
+.ILUSTRACION
+[
+ .PORCENTAJE_AUMENTO_PROD_CIENCIA    10.0 # Porcentaje en el aumento de produccion de ciencia en provincias
+]
+
+.CATASTRO
+[
+ .PORCENTAJE_AUMENTO_PROD_ORO        10.0 # Porcentaje en el aumento de produccion de oro
+]
+
+.CAPITALISMO
+[
+ .PORCENTAJE_AUMENTO_PROD_ORO        10.0 # Porcentaje en el aumento de produccion de oro
+]
+
+.SINDICALISMO
+[
+ .PORCENTAJE_AUMENTO_PROD_RECURSOS   75.0 # Porcentaje en el aumento de produccion de recursos
+]
+
+.REVOLUCION_INDUSTRIAL
+[
+ .PORCENTAJE_AUMENTO_PROD_RECURSOS   75.0 # Porcentaje en el aumento de produccion de recursos
+]
+
+.DIEZMO
+[
+ .PORCENTAJE_AUMENTO_PROD_COMIDA     50.0 # Porcentaje en el aumento de produccion de comida
+]
+
+.PREFECTURA
+[
+ .PORCENTAJE_AUMENTO_PROD_COMIDA     50.0 # Porcentaje en el aumento de produccion de comida
+]
+
+.PROTECCIONISMO
+[
+ .PORCENTAJE_AUMENTO                 50.0 # Porcentaje en el aumento del valor comercial del pais
+]
+
+.LIBERALISMO
+[
+ .PORCENTAJE_AUMENTO                 50.0 # Porcentaje en el aumento del valor comercial del pais
+]
+
+.CUERPO_VOLUNTARIOS
+[
+  .PORCENTAJE_REDUCCION_DINERO      20.0  # Porcentaje de reducción de coste en dinero en la producción de unidades
+  .PORCENTAJE_REDUCCION_MAT_PRIMAS   0.0  # Porcentaje de reducción de coste en materias primas en la producción de barcos
+  .PORCENTAJE_REDUCCION_POBLACION    0.0  # Porcentaje de reducción de coste en población en la producción de unidades
+]
+
+.NACIONALISMO
+[
+  .PORCENTAJE_REDUCCION_DINERO      20.0  # Porcentaje de reducción de coste en dinero en la producción de unidades
+  .PORCENTAJE_REDUCCION_MAT_PRIMAS   0.0  # Porcentaje de reducción de coste en materias primas en la producción de barcos
+  .PORCENTAJE_REDUCCION_POBLACION    0.0  # Porcentaje de reducción de coste en población en la producción de unidades
+]
+
+#.CODIGO_CIVIL
+#[
+  #.PORCENTAJE_AUMENTO_AMISTAD       20.0  # Bonus a los puntos de amistad ganados por acciones positivas, ya sean puntuales o por turno
+#]
+
+.RECLUTAMIENTO_FORZOSO
+[
+  .TURNOS_ESPERA      18    # Turnos que se tiene que esperar para que se active
+  .TURNOS_ACTIVO      6     # Turnos en que la prima de enganche está funcionando
+  .PORCENTAJE_AHORRO  50.0  # Porcentaje de ahorro sobre el coste de la tropa
+]
+
+#.LEVA
+#[
+  #.TURNOS_ESPERA                    20    # Turnos que se tiene que esperar para que se active
+  #.TURNOS_ACTIVO                    6     # Turnos en que la leva está funcionando
+  #.PORCENTAJE_REDUCCION_DINERO     100.0  # Porcentaje de reducción de dinero usando la leva
+#]
+
+.INSTRUCCION_OFICIALES
+[
+ .MEJORA_DANYO_CARGA                10.0    # % de la mejora de la carga de la caballeria
+]
+
+.INFRAESTRUCTURA_NAVAL
+[
+ .ESPACIO_PUERTO                    3    # Espacio que habilita en el puerto la construccion vinculada
+]
+
+.ORGANIZACION_NAVAL
+[
+ .ESPACIO_PUERTO                    6    # Espacio que habilita en el puerto la construccion vinculada
+]
+
+.ARMADA_MODERNA
+[
+ .ESPACIO_PUERTO                    9    # Espacio que habilita en el puerto la construccion vinculada
+]
+
+.CONTRABANDO
+[
+ .PORCENTAJE_EXPLOTACION_RUTAS_BLOQUEADAS        50.0   # Porcentaje de explotación de rutas comerciales terrestres bloqueadas
+]
+
+.PIRATERIA
+[
+ .PORCENTAJE_EXPLOTACION_RUTAS_BLOQUEADAS        50.0   # Porcentaje de explotación de rutas comerciales maritimas bloqueadas
+]
+
+.MANIOBRAS_MILITARES
+[
+ .EXP_INICIAL                                     5      # Exp. inicial de los batallones reclutados (rango medio)
+ .MEJORA_RESISTENCIA_CUERPO_A_CUERPO              10.0    # % de la mejora de la resistencia cuerpo a cuerpo de infanterias
+ .MEJORA_DANYO_DIST_FUSILES                       10.0    # % de la mejora del daño a distancia de los fusiles
+]
+
+.MANIOBRAS_NAVALES
+[
+ .EXP_INICIAL                                      5     # Exp. inicial de la tripulacion recultada (rango medio)
+]
+
+.MANIOBRAS_NACIONALES
+[
+ .EXP_INICIAL                                      11    # Exp. inicial de los batallones recultados (rango experimentado)
+ .MEJORA_AREA_DANYO_ARTILLERIA                    10.0    # % de la mejora del area de danyo de los canones
+ .MEJORA_RESISTENCIA_ARTILLERIA                   10.0    # % de la mejora la resistencia de los canones
+]
+
+.ALTO_MANDO
+[
+ .MEJORA_DANYO_CUERPO_A_CUERPO                    10.0    # % de la mejora del danyo cuerpo a cuerpo (infanteria)
+ .MEJORA_DANYO_CARGA                              10.0    # % de la mejora de la carga de la caballeria
+]

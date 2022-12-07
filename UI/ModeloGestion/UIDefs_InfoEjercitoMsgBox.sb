@@ -1,0 +1,60 @@
+ #############################################################################################
+ # MsgBox para info de ejercitos
+ # Se usara un fondo tileado 
+ #############################################################################################
+ 
+ # Se define la ventana                   
+ .ACTIVO FALSE
+ .CENTER TRUE       
+ .MODAL TRUE
+ 
+ .FONDO_TILEADO 
+ [  
+  %Game/UI/Comun/UIDefs_ImgFondoVentanas.sb
+  .ANCHO 340
+  .ALTO  165
+ ]              
+  
+ # Titulo 
+ .CAPTION
+ [
+  .XMARGEN 5 .YMARGEN 5
+  .HEIGHT 23
+  .TITLE 
+  [ 
+   .ALINEACION CENTER 
+   .TEXT " " 
+   .FONT "Fonts/Default.fnt" 
+   .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+  .MOVIBLE FALSE
+ ]
+ 
+ # Se definen los botones
+ .BOTONES
+ [           
+  # Info de centrado automatico
+  .CENTER
+  [                
+   .YMARGEN 127        
+  ]              
+ 
+  # Lista de Botones
+  .LIST
+  [   
+   [
+    %Game/UI/Comun/UIDefs_DefaultBtnAcept.sb      
+    .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO" 
+    .IDSELECTSOUND "S_FXUI_CLICKBUTTON"
+   ]   
+  ] # ~ LIST           
+ ] # ~ BOTONES           
+
+
+ # Texto
+ .TEXT 
+ [   
+  #.X 10 .Y 41 .SX 330 .SY 80
+  .ALIGN LEFT
+  .TEXT [ .FONT "Fonts/Times12.fnt" .COLOR [ .R 255 .G 255 .B 255 ] .MSG  " " ]
+ ]  

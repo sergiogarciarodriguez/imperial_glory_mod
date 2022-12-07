@@ -1,0 +1,42 @@
+#################################################################################################
+# Dialogo de espera de jugadores para partidas de red
+#################################################################################################
+
+# Se define la ventana                   
+
+.MODAL TRUE
+.CENTER TRUE
+
+.ACTIVO FALSE
+
+.DEPTH 4
+
+.FONDO 
+[ 
+  .FILE "Game/UI/Comun/men_waiting.tga" 
+  .X 0 .Y 0 
+  .SX 1024 .SY 768 
+  .U 0 .V 0 
+  # .TRANSPARENCY 220
+  .PRIORITY 200
+  .ALPHA TRUE
+]              
+
+.CONTROLES
+[
+    [ .TIPO UIC_BITMAP .ID 'BLOA' 
+       .PARAMS 
+       [ 
+        .FILE "Game/UI/Comun/men_waiting.tga" .X 0 .Y 0 .SX 1024 .SY 768 .U 0 .V 0 
+       ] 
+     ]
+     [
+      .TIPO UIC_TEXT .ID 'TLOA' 
+      .PARAMS 
+      [ 
+        .ALIGN CENTER .X 510 .Y 375 .TEXT LTEXT_UI_LOADING
+        .FONT "Fonts/Times18.fnt"
+        .COLOR [ .R 0 .G 0 .B 0 ]
+      ]
+     ]  
+]

@@ -1,0 +1,251 @@
+################################################################################################
+# Definicion de tablas de puntuación de ejercitos
+# NOTA: Este script está obsoleto.
+#       - Para calibrar los datos relacionados con la resolución automática de batallas terrestres,
+#         usar la Tabla de Tropas del editor. Si no se desean compartir los datos de las tropas
+#         entre el Modelo de Batalla y la resolución automática, se puede guardar una nueva 
+#         tabla en Game/GameModes/Gestion/CombateAutomatico/ModeloCombateAutomatico.dt.
+#         Si esta tabla no existe se cogerán los datos de la tabla de batalla.
+#       - Para calibrar los datos de la resolución automática de batallas marítimas, usar el
+#         script Game/GameModes/Gestion/CombateAutomatico/DefReglasCombateAutomatico.sb
+################################################################################################
+
+.VALOR_TROPAS
+[
+# Infanteria
+
+  [.INF_MILICIA		        20]
+  [.INF_FUSILEROS          40]		
+  [.INF_GRANADEROS	        50]		
+  [.INF_TIRADORES          40]			
+  [.INF_CAZADORES          50]		
+  [.INF_ELITE              70]	
+  
+# Caballeria
+
+  [.CAB_HUSARES     40]		
+  [.CAB_LANCEROS    40]		
+  [.CAB_DRAGONES    40]		
+  [.CAB_CORACEROS   60]		
+  [.CAM_TIRADORES   40]		
+  [.CAM_LANCEROS    40]	
+  [.CAB_ELITE       60]
+  
+# Tropas Artilleria
+
+  [.ART_MORTERO      40]
+  [.ART_CANON_CAMP   60]
+  [.ART_CANON        60]	
+  [.ART_OBUS         60]	
+  [.ART_CANON_CAB    60]	
+  [.ART_OBUS_CAB     60]
+
+# Mandos
+  
+  [.MAN_TENIENTE 100]
+  [.MAN_CAPITAN  100]	
+  [.MAN_GENERAL  100]	
+  [.MAN_MARISCAL 100]
+]
+
+.VALOR_EXPERIENCIA
+[
+
+  [.RANGO_NOVATO 0]
+  [.RANGO_MEDIO  10]
+  [.RANGO_EXPERIMENTADO 20]
+  [.RANGO_VETERANO   30]
+  [.RANGO_ELITE  40]
+
+]
+
+# Ojo: Ordenado de Limite menor a Limite mayor
+.MALUS_N_SOLDADOS
+[
+
+  .CLASE_INFANTERIA
+  [
+    [
+      .LIMITE 10
+      .VALOR 30
+    ]
+    
+    [
+      .LIMITE 20
+      .VALOR 20
+    ]
+    
+    [
+      .LIMITE 30
+      .VALOR  10
+    ]
+    
+  ]
+  
+  .CLASE_CABALLERIA
+  [
+    [
+      .LIMITE 6
+      .VALOR 30
+    ]
+    
+    [
+      .LIMITE 12
+      .VALOR 20
+    ]
+    
+    [
+      .LIMITE 18
+      .VALOR  10
+    ]
+  ]
+
+  .CLASE_ARTILLERIA
+  [
+    [
+      .LIMITE 1
+      .VALOR 30
+    ]
+    
+    [
+      .LIMITE 2
+      .VALOR 20
+    ]
+    
+    [
+      .LIMITE 3
+      .VALOR  10
+    ]
+  ]
+]
+
+
+.BONIFICADORES_PROVINCIA
+[
+  .AUTOCTONO  1.1
+  .DEFENSOR   1.15
+]
+
+.MALUS_COMPENSACION
+[
+  # Ojo: Ordenados de Limite mayor a Limite menor
+  .SUPERAR
+  [
+    [
+      .LIMITE 80
+      .VALOR  15
+    ]
+
+    [
+      .LIMITE 70
+      .VALOR  10
+    ]
+
+    [
+      .LIMITE 50
+      .VALOR 5
+    ]   
+    
+  ]
+  
+  # Ojo: Ordenados de Limite menor a Limite mayor
+  .NO_SUPERAR
+  [
+    [
+      .LIMITE 10
+      .VALOR  10
+    ]
+    [
+      .LIMITE 15
+      .VALOR  5
+    ]
+  ]
+]
+
+.MALUS_TIPO_TROPA
+[
+  .INFANTERIA_CABALLERIA
+  [
+    [
+      .LIMITE 40
+      .VALOR 20
+    ]
+    [
+      .LIMITE 20
+      .VALOR 15
+    ]
+    [
+      .LIMITE 0
+      .VALOR 10
+    ]    
+    [
+      .LIMITE -20
+      .VALOR 5
+    ]
+  ]
+  
+  .CABALLERIA_ARTILLERIA
+  [
+    [
+      .LIMITE 40
+      .VALOR 25
+    ]
+    [
+      .LIMITE 20
+      .VALOR  20
+    ]
+    [
+      .LIMITE 0
+      .VALOR 15
+    ]    
+    [
+      .LIMITE -20
+      .VALOR 10
+    ]
+  ]
+  
+  .ARTILLERIA_INFANTERIA
+  [
+    [
+      .LIMITE 40
+      .VALOR 30
+    ]
+    [
+      .LIMITE 20
+      .VALOR 15
+    ]
+    [
+      .LIMITE 0
+      .VALOR 10
+    ]    
+    [
+      .LIMITE -20
+      .VALOR 5
+    ]
+  ]
+]
+
+.NUMERO_PRISIONEROS_PERDEDOR 15
+
+.BAJAS_GANADOR
+[
+  [
+    .LIMITE 1
+    .VALOR  70
+  ]
+  [
+    .LIMITE 2
+    .VALOR 50
+  ]
+  
+  [
+    .LIMITE 3
+    .VALOR  30
+  ]
+  
+]
+
+.DEFAULT_BAJAS_GANADOR 10
+
+.MIN_ALEATORIO 10
+.MAX_ALEATORIO 50

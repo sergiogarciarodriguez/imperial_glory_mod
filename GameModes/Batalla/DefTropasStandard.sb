@@ -1,0 +1,177 @@
+#_______________________________________________________
+#
+#                  <<<< STANDARD >>>>
+#_______________________________________________________
+
+#_______________________________________________________
+#
+#                Infanteria Standard
+#_______________________________________________________
+
+.MILICIA
+[
+  .PROC "TROPA_INFANTERIA"
+  .AI "AI_TROPA_INFANTERIA"
+  .GENERADOR_FORMACIONES "GF_TROPA_GENERICO"
+  .TIPO_UNIDADES MILICIA
+  .AUDIOSET "Game\GameModes\Batalla\AudioScripts\Infanteria\AudioFX.sb"
+]
+.FUSILERO
+[
+  .PROC "TROPA_INFANTERIA"
+  .AI "AI_TROPA_INFANTERIA"
+  .GENERADOR_FORMACIONES "GF_TROPA_GENERICO"
+  .TIPO_UNIDADES FUSILERO
+  .AUDIOSET "Game\GameModes\Batalla\AudioScripts\Infanteria\AudioFX.sb"
+]
+.TIRADOR
+[
+  .PROC "TROPA_INFANTERIA"
+  .AI "AI_TROPA_INFANTERIA"
+  .GENERADOR_FORMACIONES "GF_TROPA_GENERICO"
+  .TIPO_UNIDADES TIRADOR
+  .AUDIOSET "Game\GameModes\Batalla\AudioScripts\Infanteria\AudioFX.sb"
+]
+.CAZADOR
+[
+  .PROC "TROPA_INFANTERIA"
+  .AI "AI_TROPA_INFANTERIA"
+  .GENERADOR_FORMACIONES "GF_TROPA_GENERICO"
+  .TIPO_UNIDADES CAZADOR
+  .AUDIOSET "Game\GameModes\Batalla\AudioScripts\Infanteria\AudioFX.sb"
+]
+.GRANADERO
+[
+  .PROC "TROPA_INFANTERIA"
+  .AI "AI_TROPA_INFANTERIA"
+  .GENERADOR_FORMACIONES "GF_TROPA_GENERICO"
+  .TIPO_UNIDADES GRANADERO
+  .AUDIOSET "Game\GameModes\Batalla\AudioScripts\Infanteria\AudioFX.sb"
+]
+.ELITE
+[
+  .PROC "TROPA_INFANTERIA"
+  .AI "AI_TROPA_INFANTERIA"
+  .GENERADOR_FORMACIONES "GF_TROPA_GENERICO"
+  .TIPO_UNIDADES ELITE
+  .AUDIOSET "Game\GameModes\Batalla\AudioScripts\Infanteria\AudioFX.sb"
+]
+#_______________________________________________________
+#
+#                Caballeria Standard
+#_______________________________________________________
+
+   
+.CAB_HUSAR
+[
+  .PROC "TROPA_CABALLERIA"
+  .AI "AI_TROPA_CABALLERIA"
+  .GENERADOR_FORMACIONES "GF_TROPA_GENERICO"
+  .TIPO_UNIDADES CAB_HUSAR
+  .AUDIOSET "Game\GameModes\Batalla\AudioScripts\Caballeria\AudioFX.sb"
+]
+.CAB_LANCERO
+[
+  .PROC "TROPA_CABALLERIA"
+  .AI "AI_TROPA_CABALLERIA"
+  .GENERADOR_FORMACIONES "GF_TROPA_GENERICO"
+  .TIPO_UNIDADES CAB_LANCERO
+  .AUDIOSET "Game\GameModes\Batalla\AudioScripts\Caballeria\AudioFX.sb"
+]
+.CAB_DRAGON
+[
+  .PROC "TROPA_CABALLERIA"
+  .AI "AI_TROPA_CABALLERIA"
+  .GENERADOR_FORMACIONES "GF_TROPA_GENERICO"
+  .TIPO_UNIDADES CAB_DRAGON
+  .AUDIOSET "Game\GameModes\Batalla\AudioScripts\Caballeria\AudioFX.sb"
+]
+.CAB_CORACERO
+[
+  .PROC "TROPA_CABALLERIA"
+  .AI "AI_TROPA_CABALLERIA"
+  .GENERADOR_FORMACIONES "GF_TROPA_GENERICO"
+  .TIPO_UNIDADES CAB_CORACERO
+  .AUDIOSET "Game\GameModes\Batalla\AudioScripts\Caballeria\AudioFX.sb"
+]
+# Tirador a camello
+.CAM_TIRADOR
+[
+  .PROC "TROPA_CABALLERIA"
+  .AI "AI_TROPA_CABALLERIA"
+  .GENERADOR_FORMACIONES "GF_TROPA_GENERICO"
+  .TIPO_UNIDADES CAM_TIRADOR
+  .AUDIOSET "Game\GameModes\Batalla\AudioScripts\Caballeria\AudioFX.sb"
+]
+# Lancero a camello
+.CAM_LANCERO
+[
+  .PROC "TROPA_CABALLERIA"
+  .AI "AI_TROPA_CABALLERIA"
+  .GENERADOR_FORMACIONES "GF_TROPA_GENERICO"
+  .TIPO_UNIDADES CAM_LANCERO
+  .AUDIOSET "Game\GameModes\Batalla\AudioScripts\Caballeria\AudioFX.sb"
+]
+.CAB_ELITE
+[
+  .PROC "TROPA_CABALLERIA"
+  .AI "AI_TROPA_CABALLERIA"
+  .GENERADOR_FORMACIONES "GF_TROPA_GENERICO"
+  .TIPO_UNIDADES CAB_ELITE
+  .AUDIOSET "Game\GameModes\Batalla\AudioScripts\Caballeria\AudioFX.sb"
+]
+
+#_______________________________________________________
+#
+#                Artilleria Standard
+#_______________________________________________________
+
+.CANON
+[
+  .PROC "TROPA_ARTILLERIA"
+  .AI "AI_TROPA_ARTILLERIA"
+  .GENERADOR_FORMACIONES "GF_TROPA_GENERICO"
+  .TIPO_UNIDADES CANON
+  .AUDIOSET "Game\GameModes\Batalla\AudioScripts\Artilleria\Canon\AudioFX.sb"
+]
+.OBUS
+[
+  .PROC "TROPA_ARTILLERIA"
+  .AI "AI_TROPA_ARTILLERIA"
+  .GENERADOR_FORMACIONES "GF_TROPA_GENERICO"
+  .TIPO_UNIDADES OBUS
+  .AUDIOSET "Game\GameModes\Batalla\AudioScripts\Artilleria\Obus\AudioFX.sb"
+]
+.MORTERO
+[
+  .PROC "TROPA_ARTILLERIA"
+  .AI "AI_TROPA_ARTILLERIA"
+  .GENERADOR_FORMACIONES "GF_TROPA_GENERICO"
+  .TIPO_UNIDADES MORTERO
+  .AUDIOSET "Game\GameModes\Batalla\AudioScripts\Artilleria\Mortero\AudioFX.sb"
+]
+.CANON_CAMP
+[
+  .PROC "TROPA_ARTILLERIA"
+  .AI "AI_TROPA_ARTILLERIA"
+  .GENERADOR_FORMACIONES "GF_TROPA_GENERICO"
+  .TIPO_UNIDADES CANON_CAMP
+  .AUDIOSET "Game\GameModes\Batalla\AudioScripts\Artilleria\Canon\AudioFX.sb"
+]
+.CANON_CAB
+[
+  .PROC "TROPA_ARTILLERIA"
+  .AI "AI_TROPA_ARTILLERIA"
+  .GENERADOR_FORMACIONES "GF_TROPA_GENERICO"
+  .TIPO_UNIDADES CANON_CABALLOS
+  .AUDIOSET "Game\GameModes\Batalla\AudioScripts\Artilleria\Canon\AudioFX.sb"
+]
+.OBUS_CAB
+[
+  .PROC "TROPA_ARTILLERIA"
+  .AI "AI_TROPA_ARTILLERIA"
+  .GENERADOR_FORMACIONES "GF_TROPA_GENERICO"
+  .TIPO_UNIDADES OBUS_CABALLOS
+  .AUDIOSET "Game\GameModes\Batalla\AudioScripts\Artilleria\Obus\AudioFX.sb"
+]
+

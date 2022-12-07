@@ -1,0 +1,296 @@
+#=======================================================================================
+# Definición de sonidos para el modelo naval [ COMBATE ]
+#=======================================================================================
+
+%game/gamemodes/navalbattlemode/audio/audiovoldefs.sb
+
+.AUDIO 
+[
+
+# DISPAROS DE CANYONES - BOMBA ===============================================
+  [ 
+    .IDNAME "S_DISPARAR_CANYONES"
+    .PATH 
+    [ 
+      "audio/naval/fx/combat/cannon_dispara1.ogg" 
+      "audio/naval/fx/combat/cannon_dispara2.ogg" 
+      "audio/naval/fx/combat/cannon_dispara3.ogg" 
+      "audio/naval/fx/combat/cannon_dispara4.ogg" 
+      "audio/naval/fx/combat/cannon_dispara5.ogg" 
+    ]
+    .GENERIC          TRUE
+    .TRANSPOSE        25
+    .VOLUME           !VOL_MAX
+    .TYPE             EFFECT
+    .PREVENT_FLANGER  FALSE
+    .POLYPHONY        8
+    .3D               TRUE
+    .RADIOMIN         2000
+    .RADIOMAX         100000
+  ]
+
+# DISPAROS DE CANYONES - METRALLA ===============================================
+  [ 
+    .IDNAME "S_DISPARAR_METRALLA"
+    .PATH 
+    [ 
+      "audio/naval/fx/combat/cannon_dispara1.ogg" 
+      "audio/naval/fx/combat/cannon_dispara2.ogg" 
+      "audio/naval/fx/combat/cannon_dispara3.ogg" 
+      "audio/naval/fx/combat/cannon_dispara4.ogg" 
+      "audio/naval/fx/combat/cannon_dispara5.ogg" 
+    ]
+    .GENERIC          TRUE
+    .TRANSPOSE        25
+    .VOLUME           !VOL_MAX
+    .TYPE             EFFECT
+    .PREVENT_FLANGER  FALSE
+    .POLYPHONY        8
+    .3D               TRUE
+    .RADIOMIN         2000
+    .RADIOMAX         100000
+  ]
+
+  
+# DISPAROS DE CANYONES - FUEGO ===========================================================
+  [ 
+    .IDNAME "S_DISPARAR_FUEGO"
+    .PATH 
+    [ 
+      "audio/naval/fx/combat/Fuego_desarbolamiento_1.ogg" 
+      "audio/naval/fx/combat/Fuego_desarbolamiento_2.ogg" 
+      "audio/naval/fx/combat/Fuego_desarbolamiento_3.ogg" 
+      "audio/naval/fx/combat/Fuego_desarbolamiento_4.ogg" 
+    ]
+    .GENERIC          TRUE
+    .TRANSPOSE        25
+    .VOLUME           !VOL_MAX
+    .TYPE             EFFECT
+    .PREVENT_FLANGER  FALSE
+    .POLYPHONY        8
+    .3D               TRUE
+    .RADIOMIN         2000
+    .RADIOMAX         100000
+  ]
+
+# DISPAROS SURCAN AIRE ===================================================================
+  [
+    .IDNAME "S_SURCAR_AIRE"
+    .PATH 
+    [ 
+      "audio/naval/fx/combat/surcaaire1.ogg" 
+      "audio/naval/fx/combat/surcaaire2.ogg" 
+      "audio/naval/fx/combat/surcaaire3.ogg" 
+      "audio/naval/fx/combat/surcaaire4.ogg" 
+      "audio/naval/fx/combat/surcaaire5.ogg" 
+      "audio/naval/fx/combat/surcaaire6.ogg" 
+      "audio/naval/fx/combat/surcaaire7.ogg" 
+      "audio/naval/fx/combat/surcaaire8.ogg" 
+      "audio/naval/fx/combat/surcaaire9.ogg" 
+      "audio/naval/fx/combat/surcaaire10.ogg" 
+      "audio/naval/fx/combat/surcaaire11.ogg" 
+    ]
+    .GENERIC          TRUE
+    .TRANSPOSE        25
+    .VOLUME           !VOL_MAX
+    .TYPE             EFFECT
+    .PREVENT_FLANGER  FALSE
+    .POLYPHONY        8
+    .3D               TRUE
+    .RADIOMIN         2000
+    .RADIOMAX         100000
+  ]
+
+# IMPACTOS EN EL AGUA ===================================================================
+  [
+    .IDNAME "S_IMPACTO_AGUA"
+    .PATH 
+    [ 
+      "audio/naval/fx/combat/impacto_agua_1.ogg" 
+      "audio/naval/fx/combat/impacto_agua_2.ogg" 
+      "audio/naval/fx/combat/impacto_agua_3.ogg" 
+      "audio/naval/fx/combat/impacto_agua_4.ogg" 
+      "audio/naval/fx/combat/impacto_agua_5.ogg" 
+    ]
+    .GENERIC          TRUE
+    .TRANSPOSE        25
+    .VOLUME           !VOL_MAX
+    .TYPE             EFFECT
+    .PREVENT_FLANGER  FALSE
+    .3D               TRUE
+    .RADIOMIN         2000
+    .RADIOMAX         100000
+  ]
+  
+# IMPACTOS EN EL CASCO ===================================================================
+  [
+    .IDNAME "S_IMPACTO_CASCO"
+    .PATH 
+    [ 
+      "audio/naval/fx/combat/impacto_casco_1.ogg" 
+      "audio/naval/fx/combat/impacto_casco_2.ogg" 
+      "audio/naval/fx/combat/impacto_casco_3.ogg" 
+      "audio/naval/fx/combat/impacto_casco_4.ogg" 
+      "audio/naval/fx/combat/impacto_casco_5.ogg" 
+      "audio/naval/fx/combat/impacto_casco_6.ogg" 
+      "audio/naval/fx/combat/impacto_casco_7.ogg" 
+      "audio/naval/fx/combat/impacto_casco_8.ogg" 
+      "audio/naval/fx/combat/impacto_casco_9.ogg" 
+      "audio/naval/fx/combat/impacto_casco_10.ogg" 
+      "audio/naval/fx/combat/impacto_casco_11.ogg" 
+    ]
+    .GENERIC          TRUE
+    .TRANSPOSE        25
+    .VOLUME           !VOL_MAX
+    .TYPE             EFFECT
+    .PREVENT_FLANGER  FALSE
+    .3D               TRUE
+    .RADIOMIN         2000
+    .RADIOMAX         100000
+  ]
+  
+# IMPACTOS EN LA CUBIERTA ===================================================================
+  [
+    .IDNAME "S_IMPACTO_CUBIERTA"
+    .PATH 
+    [ 
+      "audio/naval/fx/combat/impacto_cubierta_1.ogg" 
+      "audio/naval/fx/combat/impacto_cubierta_2.ogg" 
+      "audio/naval/fx/combat/impacto_cubierta_3.ogg" 
+      "audio/naval/fx/combat/impacto_cubierta_4.ogg" 
+      "audio/naval/fx/combat/impacto_cubierta_5.ogg" 
+      "audio/naval/fx/combat/impacto_cubierta_6.ogg" 
+    ]
+    .GENERIC          TRUE
+    .TRANSPOSE        10
+    .VOLUME           !VOL_MAX
+    .TYPE             EFFECT
+    .PREVENT_FLANGER  FALSE
+    .3D               TRUE
+    .RADIOMIN         2000
+    .RADIOMAX         100000
+  ]
+
+# IMPACTOS EN EL VELAMEN ===================================================================
+  [
+    .IDNAME "S_IMPACTO_VELAS"
+    .PATH 
+    [ 
+      "audio/naval/fx/combat/impacto_vela_1.ogg" 
+      "audio/naval/fx/combat/impacto_vela_2.ogg" 
+      "audio/naval/fx/combat/impacto_vela_3.ogg" 
+      "audio/naval/fx/combat/impacto_vela_4.ogg" 
+    ]
+    .GENERIC          TRUE
+    .TRANSPOSE        10
+    .VOLUME           !VOL_MAX
+    .TYPE             EFFECT
+    .PREVENT_FLANGER  TRUE
+    .3D               TRUE
+    .RADIOMIN         2000
+    .RADIOMAX         100000
+  ]
+
+# ABORDAJE ==================================================================================
+  [ 
+    .IDNAME "S_ABORDAJE"     
+    .PATH   "audio/naval/fx/combat/combate.ogg" 
+    .LOOP             TRUE
+    .GENERIC          TRUE
+    .TYPE             EFFECT
+    .VOLUME           !VOL_MAX
+    .3D               TRUE
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  
+# Hundimiento ================================================================================
+  [ 
+    .IDNAME "S_HUNDIMIENTO"     
+    .PATH   "audio/naval/fx/combat/buque_hundirse.ogg" 
+    .GENERIC          TRUE
+    .TYPE             EFFECT
+    .VOLUME           !VOL_MAX
+    .3D               TRUE
+    .RADIOMIN         2000
+    .RADIOMAX         100000
+  ]
+
+# Desarbolamiento ==============================================================================
+  [ 
+    .IDNAME "S_DESARBOLAMIENTO"     
+    .PATH   "audio/naval/fx/combat/desarbolamiento.ogg" 
+    .GENERIC          TRUE
+    .TYPE             EFFECT
+    .VOLUME           !VOL_MAX
+    .3D               TRUE
+    .RADIOMIN         2000
+    .RADIOMAX         100000
+  ]
+  
+# Destruccion casco ============================================================================
+  [ 
+    .IDNAME "S_DESTRUCCION_CASCO"     
+    .PATH 
+    [ 
+      "audio/naval/fx/combat/destruccion_casco_1.ogg" 
+      "audio/naval/fx/combat/destruccion_casco_2.ogg"
+    ]
+    .GENERIC          TRUE
+    .TYPE             EFFECT
+    .VOLUME           !VOL_MAX
+    .3D               TRUE
+    .RADIOMIN         2000
+    .RADIOMAX         100000
+  ]
+
+# Fuego en cubierta ============================================================================
+  [ 
+    .IDNAME "S_FUEGO_CUBIERTA_1"
+    .PATH 
+    [ 
+      "audio/naval/fx/combat/fuego1.ogg" 
+    ]
+    .LOOP             TRUE
+    .PREVENT_FLANGER  TRUE
+    .GENERIC          TRUE
+    .TYPE             EFFECT
+    .VOLUME           !VOL_MAX
+    .3D               TRUE
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  
+  [ 
+    .IDNAME "S_FUEGO_CUBIERTA_2"
+    .PATH 
+    [ 
+      "audio/naval/fx/combat/fuego2.ogg" 
+    ]
+    .LOOP             TRUE
+    .PREVENT_FLANGER  TRUE
+    .GENERIC          TRUE
+    .TYPE             EFFECT
+    .VOLUME           !VOL_MAX
+    .3D               TRUE
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  
+  [ 
+    .IDNAME "S_FUEGO_CUBIERTA_3"
+    .PATH 
+    [ 
+      "audio/naval/fx/combat/fuego3.ogg" 
+    ]
+    .LOOP             TRUE
+    .PREVENT_FLANGER  TRUE
+    .GENERIC          TRUE
+    .TYPE             EFFECT
+    .VOLUME           !VOL_MAX
+    .3D               TRUE
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+
+]

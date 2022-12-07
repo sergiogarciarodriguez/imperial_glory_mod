@@ -1,0 +1,507 @@
+# Archivo que contiene datos generales para que el control para la representacion del mini mapa de batalla
+# sepa donde acudir cuando tenga que mostrar ciertos graficos relacionados con:
+#
+# -> La imagen del escenario de juego
+# -> La representacion de las diferentes tropas en el mapa de juego
+
+
+################################ REPRESENTACION DE LA CAMARA ##
+.CAMARA
+[
+ .FILE "Game\UI\ModeloBatalla\MinBattleMap\Camara.tga" .SX 24 .SY 32 .U 0 .V 0 .ALPHA TRUE
+]
+
+################################ REPRESENTACION DE LOS ESCENARIOS ##
+.ESCENARIOS
+[
+ 
+ # Por defecto
+ [ 
+  .NAME "DEFAULT" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\02Escocia.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ] 
+ ]
+ 
+ # Escocia
+ [ 
+  .NAME "02" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\02Escocia.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 180  .DF 0 ] 
+ ]
+ 
+ # Irlanda
+ [ 
+  .NAME "03" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\03Irlanda.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 0  .DF 180 ]
+ ]
+ 
+ # Gales
+ [ 
+  .NAME "04" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\04Gales.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 180  .DF 0 ] 
+ ]
+ 
+ # Champagne
+ [ 
+  .NAME "05" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\05Champagne.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 90  .DF 270 ] 
+ ]
+ 
+ # Branderburgo
+ [ 
+  .NAME "10" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\10Brandenburgo.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 0  .DF 180 ] 
+ ]
+ 
+ # Minsk
+ [ 
+  .NAME "17" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\17Minsk.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ] 
+  .ROTACION [ .AT 0  .DF 180 ]
+ ]
+ 
+ # Kiev
+ [ 
+  .NAME "21" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\21GobiernodeKiev.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 0  .DF 180 ] 
+ ]
+ 
+ # Andalucia
+ [ 
+  .NAME "26" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\26Andalucia.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 0  .DF 180 ] 
+ ]
+ 
+ # Tunez
+ [ 
+  .NAME "57" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\57Tunez.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 0  .DF 180 ] 
+ ]
+ 
+ # Marruecos
+ [ 
+  .NAME "55" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\55Marruecos.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 0  .DF 180 ] 
+ ]
+ 
+ # Burdeos
+ [ 
+  .NAME "06" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\06Burdeos.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 270  .DF 90 ] 
+ ]
+  
+ # Touluse
+ [ 
+  .NAME "07" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\07Toulouse.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 0  .DF 180 ] 
+ ]
+ 
+ # Bretana
+ [ 
+  .NAME "09" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\09Bretana.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 0  .DF 180 ]  
+ ]
+ 
+ # Silesia
+ [ 
+  .NAME "11" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\11Silesia.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 0  .DF 180 ] 
+ ]
+ 
+ # Polonia
+ [ 
+  .NAME "12" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\12Polonia.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 0  .DF 180 ] 
+ ]
+ 
+ # Austria
+ [ 
+  .NAME "13" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\13Austria.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 0  .DF 180 ] 
+ ]
+ 
+ # Bohemina
+ [ 
+  .NAME "14" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\14Bohemia.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 0  .DF 180 .ATH 0 .DFH 180 ] 
+ ]
+ 
+ # Galizia
+ [ 
+  .NAME "15" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\15Galizia.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 0  .DF 180 ] 
+ ]
+ 
+ # Hungria
+ [ 
+  .NAME "16" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\16Hungria.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 180  .DF 0 ] 
+ ]
+ 
+ # Moscu
+ [ 
+  .NAME "18" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\18Moscu.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ] 
+  .ROTACION [ .AT 0  .DF 180 ]
+ ]
+ 
+ # Kursk
+ [ 
+  .NAME "19" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\19Kursk.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ] 
+  .ROTACION [ .AT 0  .DF 180 ]
+ ]
+ 
+ # Kiev
+ [ 
+  .NAME "21" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\21GobiernodeKiev.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 0  .DF 180 ]
+ ]
+ 
+ # Aragon
+ [ 
+  .NAME "23" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\23Aragon.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 90  .DF 270 ] 
+ ]
+ 
+ # PrusiaOriental
+ [ 
+  .NAME "24" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\24PrusiaOriental.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 180  .DF 0 ] 
+ ]
+ 
+ # Catalunya
+ [ 
+  .NAME "25" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\25Catalunya.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 0  .DF 180 ] 
+ ]
+ 
+ # Louisiana
+ [ 
+  .NAME "27" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\27Lousiana.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ] 
+ ]
+ 
+ # Alentejo
+ [ 
+  .NAME "28" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\28Alentejo.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 0  .DF 180 ] 
+ ]
+ 
+  # Algarve
+ [ 
+  .NAME "29" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\29Algarve.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 0  .DF 180 ] 
+ ]
+ 
+ # RegionBalcania
+ [ 
+  .NAME "31" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\31RegionBalcanica.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ] 
+  .ROTACION [ .AT 180  .DF 0 ]
+ ]
+ 
+ # Grecia
+ [ 
+  .NAME "32" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\32Grecia.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 0  .DF 180 ] 
+ ]
+ 
+ # Noruega
+ [ 
+  .NAME "35" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\35Noruega.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 0  .DF 180 ] 
+ ]
+ 
+ # Napoles
+ [ 
+  .NAME "36" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\36Napoles.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ] 
+  .ROTACION [ .AT 0  .DF 180 ]
+ ]
+ 
+ # Suecia
+ [ 
+  .NAME "38" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\38Suecia.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 0  .DF 180 ] 
+ ]
+ 
+ # Finlandia
+ [ 
+  .NAME "39" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\39Finlandia.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ] 
+  .ROTACION [ .AT 0  .DF 180 ]
+ ]
+ 
+ # Irlanda
+ [ 
+  .NAME "3" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\03Irlanda.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ] 
+  .ROTACION [ .AT 0  .DF 180 ]
+ ]
+ 
+ # Lombardia
+ [ 
+  .NAME "40" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\40Lombardia.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 0  .DF 180 ] 
+ ]
+ 
+ # Venecia
+ [ 
+  .NAME "41" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\41Venecia.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 0  .DF 180 ] 
+ ]
+ 
+ # Egipto
+ [ 
+  .NAME "42" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\42Egipto.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ] 
+  .ROTACION [ .AT 0  .DF 180 .ATH 90 .DFH 270 ]
+ ]
+ 
+ # Cirenaica
+ [ 
+  .NAME "43" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\43Cirenaica.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 0  .DF 180 ] 
+ ]
+ 
+ # Piamonte
+ [ 
+  .NAME "44" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\44Piamonte.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 0  .DF 180 ] 
+ ]
+ 
+ # Cerdeña
+ [ 
+  .NAME "45" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\45Cerdena.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 180  .DF 0 ] 
+ ]
+ 
+ # Hannover
+ [ 
+  .NAME "46" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\46Hannover.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ] 
+  .ROTACION [ .AT 0  .DF 180 ]
+ ]
+ 
+ # Sajonia
+ [ 
+  .NAME "47" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\47Sajonia.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 0  .DF 180 ] 
+ ]
+ 
+ # Batavia
+ [ 
+  .NAME "49" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\49Batavia.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 0  .DF 180 .ATH 0 .DFH 180] 
+ ]
+ 
+ # Republica Helvetica
+ [ 
+  .NAME "51" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\51RepublicaHelvetica.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 0  .DF 180 ] 
+ ]
+ 
+ # Estados papales
+ [ 
+  .NAME "53" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\53EstadosPapales.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 0  .DF 180 ] 
+ ]
+ 
+ # Moldavia
+ [ 
+  .NAME "54" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\54Moldavia.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 180  .DF 0 ] 
+ ]
+ 
+ # Tunez
+ [ 
+  .NAME "57" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\57Tunez.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 0  .DF 180 ] 
+ ]
+ 
+ # Tripolitania
+ [ 
+  .NAME "58" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\58Tripolitania.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 0  .DF 180 ] 
+ ]
+ 
+ # Anatolia - constantinopla
+ [ 
+  .NAME "30" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\30Anatolia-Constantinopla.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 0  .DF 180 ] 
+ ]
+ 
+ # Londres
+ [ 
+  .NAME "01" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\01Londres.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 0  .DF 180 ] 
+ ]
+ 
+ # Dinamarca
+ [ 
+  .NAME "34" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\34Dinamarca.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 0  .DF 180 ] 
+ ]
+
+ # Castilla
+ [ 
+  .NAME "22" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\22Castilla.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 180  .DF 0 .ATH 0 .DFH 180 ] 
+ ]
+
+ # Letonia
+ [ 
+  .NAME "20" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\20SanPetersburgo.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ]
+  .ROTACION [ .AT 270  .DF 90 ] 
+ ] 
+
+ # Paris
+ [ 
+  .NAME "08" 
+  .IMG   [ .FILE "Game\UI\ModeloBatalla\MinBattleMap\08Paris.tga" .SX 231 .SY 231 .U 0 .V 0 ] 
+  .MARCO [ .SX 0 .SY 0 ] 
+  .ROTACION [ .AT 0  .DF 180 ]
+ ] 
+]
+
+################################ REPRESENTACION DE LAS TROPAS ##
+.TROPAS
+[
+ #
+ # La representacion en el mini mapa sera la misma para tropas pertenecientes a un pais
+ # Una tropa tendra una representacion por su estado y por una serie de cualificadores.
+ # Los cualificadores seran graficos AÑADIDOS al que se este usando para representar 
+ # el estado de la tropa.
+ #
+ # Todos deberan de tener las mismas dimensiones
+ #
+ 
+ .DEFAULT
+ [
+   %Game\UI\ModeloBatalla\InterfazPaises\Default\UIDefs_RepresentacionMinBattleMap.sb  
+ ]
+
+ .FRANCIA 
+ [
+  %Game\UI\ModeloBatalla\InterfazPaises\Francia\UIDefs_RepresentacionMinBattleMap.sb    
+ ]
+
+ .GRAN_BRETANYA
+ [
+  %Game\UI\ModeloBatalla\InterfazPaises\Inglaterra\UIDefs_RepresentacionMinBattleMap.sb    
+ ]
+ 
+ .RUSIA
+ [
+  %Game\UI\ModeloBatalla\InterfazPaises\Rusia\UIDefs_RepresentacionMinBattleMap.sb    
+ ]
+ 
+ .PRUSIA
+ [
+  %Game\UI\ModeloBatalla\InterfazPaises\Prusia\UIDefs_RepresentacionMinBattleMap.sb    
+ ]
+ 
+ .AUSTRIA
+ [
+  %Game\UI\ModeloBatalla\InterfazPaises\Austria\UIDefs_RepresentacionMinBattleMap.sb     
+ ] 
+
+]

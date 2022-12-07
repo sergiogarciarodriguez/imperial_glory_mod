@@ -1,0 +1,68 @@
+ #############################################################################################
+ # Dlg por defecton con un listBox y un boton para cerrar. La ventana es modal y movible y
+ # se utilizara como apoyo por defecto para mostrar informacion en el modelo de gestion.
+ #############################################################################################
+ 
+ # Se define la ventana                   
+ .ACTIVO FALSE
+ .CENTER FALSE
+ .MODAL TRUE
+ 
+ .FONDO_TILEADO 
+ [
+  .MODO_TILEADO CENTRAL  
+  .IMG_CENTRAL [ .FILE "Game/UI/ModeloBatalla/DummyDialogMessageBoxBatalla.tga" .U 44 .V 47 .SX 39 .SY 42 .ALPHA TRUE .PRIORITY 0 ]
+  .X 312 .Y 100 
+  .ANCHO 400
+  .ALTO  470
+ ]              
+  
+ # Titulo 
+ .CAPTION
+ [
+  .XMARGEN 5 .YMARGEN 4
+  .HEIGHT 23
+  .TITLE 
+  [ 
+   .ALINEACION CENTER 
+   .TEXT "Info prisioneros" 
+   .FONT "Fonts/Default.fnt" 
+   .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+  .MOVIBLE TRUE
+ ]        
+ 
+  # Se definen los botones
+ .BOTONES
+ [           
+  # Info de centrado automatico
+  .CENTER
+  [                
+   .YMARGEN 440
+   .XSPACE  0          
+  ]                        
+ 
+  # Lista de Botones
+  .LIST
+  [
+   
+   [
+    %Game/UI/Comun/UIDefs_DefaultBtnTile.sb    
+   ]
+   
+  ] # ~ LIST           
+ ] # ~ BOTONES           
+ 
+ # Controles
+ .CONTROLES
+ [ 
+  [ .TIPO UIC_LISTBOXTEXT .ID 'DLBG'
+    .PARAMS
+    [
+     .PRIORITY 0
+     .X 5 .Y 33 .SX 389 .SY 400  
+     .TEXT [ .FONT "Fonts/Times12.fnt" .SCALE 0.9 .COLOR [ .R 255 .G 225 .B 225 ] ]  
+     .SLIDER_VERTICAL [ .SUBTIPO "Game/UI/Comun/UIDefs_DefinicionSliderVertical.sb" ]            
+    ]
+   ]   
+ ] 

@@ -1,0 +1,249 @@
+############################################################################################
+# Aqui se definen las flotas iniciales de los diferentes jugadores.
+# Este archivo es temporal hasta que se exporten flotas y barcos desde el editor.
+# Debera de existir una entrada por jugador y por cada jugador, una posible cantidad
+# de flotas.
+############################################################################################
+
+############################################################################################
+# JUGADOR INGLES
+
+.JUG_GRAN_BRETANYA
+[
+ 
+ [ # FLOTA 1
+  .NOMBRE        "Fleet ING I"
+  .PROVINCIA     MARIRLANDA
+  .BARCO_INICIAL CORBETA
+ ]
+ 
+ [ # FLOTA 2
+  .NOMBRE        "Fleet ING II"
+  .PROVINCIA     MARNORTE
+  .BARCO_INICIAL CORBETA
+ ]
+ 
+]
+
+############################################################################################
+# JUGADOR FRANCES
+
+.JUG_FRANCIA
+[
+
+ [ # FLOTA 1
+  .NOMBRE        "Fleet FRA I"
+  .PROVINCIA     GOLFOLEON
+  .BARCO_INICIAL CORBETA
+ ] 
+ 
+
+
+]
+
+############################################################################################
+# JUGADOR RUSO
+
+.JUG_RUSIA
+[
+
+ [ # FLOTA 1
+  .NOMBRE        "Fleet RUS I"
+  .PROVINCIA     MARNEGRO
+  .BARCO_INICIAL CORBETA
+ ]
+ 
+
+
+]
+
+############################################################################################
+# JUGADOR PRUSIANO
+
+.JUG_PRUSIA
+[
+ [ # FLOTA 1
+  .NOMBRE        "Fleet PRU I"
+  .PROVINCIA     MARBALTICO
+  .BARCO_INICIAL CORBETA
+ ]
+ 
+
+
+]
+
+############################################################################################
+# JUGADOR AUSTRIACO
+
+.JUG_AUSTRIA
+[
+
+
+ 
+]
+
+############################################################################################
+# JUGADOR ESPANYA
+
+.JUG_ESPANYA
+[
+ 
+ [ # FLOTA 1
+  .NOMBRE        "Fleet ESP I"
+  .PROVINCIA     FINISTERRE
+  .BARCO_INICIAL CORBETA
+ ]
+ 
+ [ # FLOTA 2
+  .NOMBRE        "Fleet ESP II"
+  .PROVINCIA     BAHIACADIZ
+  .BARCO_INICIAL CORBETA
+ ]
+ 
+]
+
+############################################################################################
+# JUGADOR BATAVIA
+
+.JUG_BATAVIA
+[
+ [ # FLOTA 1
+  .NOMBRE        "Fleet BAT I"
+  .PROVINCIA     MARWADDEN
+  .BARCO_INICIAL CORBETA
+ ]
+ 
+
+
+]
+
+############################################################################################
+# JUGADOR PORTUGAL
+
+.JUG_PORTUGAL
+[
+ [ # FLOTA 1
+  .NOMBRE        "Fleet POR I"
+  .PROVINCIA     COSTAPORTUGUESA
+  .BARCO_INICIAL CORBETA
+ ]
+ 
+
+
+]
+
+############################################################################################
+# JUGADOR PIAMONTE
+
+.JUG_PIAMONTE
+[
+ [ # FLOTA 1
+  .NOMBRE        "Fleet PIA I"
+  .PROVINCIA     MARLIGURIA
+  .BARCO_INICIAL CORBETA
+ ]
+ 
+
+
+]
+
+############################################################################################
+# JUGADOR LOMBARDIA
+
+.JUG_LOMBARDIA
+[
+ [ # FLOTA 1
+  .NOMBRE        "Fleet LOM I"
+  .PROVINCIA     MARADRIATICO
+  .BARCO_INICIAL CORBETA
+ ]
+ 
+
+
+]
+
+############################################################################################
+# JUGADOR TURCO
+
+.JUG_OTOMANO
+[
+ [ # FLOTA 1
+  .NOMBRE        "Fleet OTO I"
+  .PROVINCIA     MAREGEO
+  .BARCO_INICIAL CORBETA
+ ]
+ 
+
+
+]
+
+############################################################################################
+# JUGADOR DOS SICILIAS
+
+.JUG_DOS_SICILIAS
+[
+ [ # FLOTA 1
+  .NOMBRE        "Fleet DOS I"
+  .PROVINCIA     COSTASICILIANA
+  .BARCO_INICIAL CORBETA
+ ]
+ 
+
+
+]
+
+############################################################################################
+# JUGADOR EGIPTO
+.JUG_EGIPTO
+[
+ [ # FLOTA 1
+  .NOMBRE        "Fleet EGI I"
+  .PROVINCIA     DESEMBOCADURANILO
+  .BARCO_INICIAL CORBETA
+ ]
+ 
+
+
+]
+
+############################################################################################
+# JUGADOR TRIPOLITANIA
+.JUG_TRIPOLITANIA
+[
+ [ # FLOTA 1
+  .NOMBRE        "Fleet TRI I"
+  .PROVINCIA     GOLFOSIDRA
+  .BARCO_INICIAL CORBETA
+ ]
+ 
+
+
+]
+
+############################################################################################
+# JUGADOR MARRUECOS
+.JUG_MARRUECOS
+[
+ [ # FLOTA 1
+  .NOMBRE        "Fleet MAR I"
+  .PROVINCIA     COSTAMARROQUI
+  .BARCO_INICIAL CORBETA
+ ]
+ 
+
+
+]
+
+############################################################################################
+# JUGADOR DINAMARCA
+.JUG_DINAMARCA
+[
+ [ # FLOTA 1
+  .NOMBRE        "Fleet DIN I"
+  .PROVINCIA     MARNORUEGA
+  .BARCO_INICIAL CORBETA
+ ]
+ 
+
+
+]

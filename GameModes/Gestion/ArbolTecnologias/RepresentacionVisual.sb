@@ -1,0 +1,2506 @@
+#######################################################################
+# Define los grupos de representacion de los nodos de tecnologias
+#######################################################################
+
+  .NODOS
+  [
+    # Definicion DUMMY NODO ---
+    [
+      .TECNOLOGIA "DUMMYNODO"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 10 .COORDY 8 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 10 .COORDY 8 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 10 .COORDY 8 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 10 .COORDY 8 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 10 .COORDY 8 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 10 .COORDY 8 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 0 .COORDY 14 ]
+        .BARRA [ .COORDX 0 .COORDY 14 ]
+      ]
+    ]
+  
+    # Definicion CONSERVACION ALIMENTOS ---
+    [
+      .TECNOLOGIA "Conservacion de Alimentos"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 0 .COORDY 0 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 0 .COORDY 0 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 0 .COORDY 0 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 0 .COORDY 0 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 0 .COORDY 0 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 0 .COORDY 0 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 0 .COORDY 0 ]
+        .BARRA [ .COORDX 0 .COORDY 0 ]
+      ]
+    ]
+    
+    # Definicion IMPUESTO SOBRE RENTAS ---
+    [
+      .TECNOLOGIA "Impuesto sobre Rentas"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 1 .COORDY 0 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 1 .COORDY 0 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 1 .COORDY 0 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 1 .COORDY 0 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 1 .COORDY 0 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 1 .COORDY 0 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 1 .COORDY 0 ]
+        .BARRA [ .COORDX 1 .COORDY 0 ]
+      ]
+    ]
+    
+    # Definicion VACUNACION ---
+    [
+      .TECNOLOGIA "Vacunacion"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 2 .COORDY 0 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 2 .COORDY 0 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 2 .COORDY 0 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 2 .COORDY 0 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 2 .COORDY 0 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 2 .COORDY 0 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 2 .COORDY 0 ]
+        .BARRA [ .COORDX 2 .COORDY 0 ]
+      ]
+    ]
+    
+    # Definicion SIERRA CIRCULAR ---
+    [
+      .TECNOLOGIA "Sierra Circular"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 3 .COORDY 0 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 3 .COORDY 0 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 3 .COORDY 0 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 3 .COORDY 0 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 3 .COORDY 0 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 3 .COORDY 0 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 3 .COORDY 0 ]
+        .BARRA [ .COORDX 3 .COORDY 0 ]
+      ]
+    ]
+    
+    # Definicion EDUCACION BASICA ---
+    [
+      .TECNOLOGIA "Educacion Basica"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 4 .COORDY 0 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 4 .COORDY 0 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 4 .COORDY 0 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 4 .COORDY 0 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 4 .COORDY 0 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 4 .COORDY 0 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 4 .COORDY 0 ]
+        .BARRA [ .COORDX 4 .COORDY 0 ]
+      ]
+    ]
+    
+    # Definicion TRUEQUE ---
+    [
+      .TECNOLOGIA "Trueque"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 5 .COORDY 0 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 5 .COORDY 0 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 5 .COORDY 0 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 5 .COORDY 0 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 5 .COORDY 0 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 5 .COORDY 0 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 5 .COORDY 0 ]
+        .BARRA [ .COORDX 5 .COORDY 0 ]
+      ]
+    ]
+        
+    # Definicion ASISTENCIA SANITARIA  ---
+    [
+      .TECNOLOGIA "Asistencia Sanitaria"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 6 .COORDY 0 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 6 .COORDY 0 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 6 .COORDY 0 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 6 .COORDY 0 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 6 .COORDY 0 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 6 .COORDY 0 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 6 .COORDY 0 ]
+        .BARRA [ .COORDX 6 .COORDY 0 ]
+      ]
+    ]
+    
+    # Definicion EDUCACION MODERNA ---
+    [
+      .TECNOLOGIA "Educacion Moderna"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 7 .COORDY 0 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 7 .COORDY 0 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 7 .COORDY 0 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 7 .COORDY 0 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 7 .COORDY 0 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 7 .COORDY 0 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 0 .COORDY 1 ]
+        .BARRA [ .COORDX 0 .COORDY 1 ]
+      ]
+    ]
+    
+    # Definicion AGRICULTURA MODERNA ---
+    [
+      .TECNOLOGIA "Agricultura Moderna"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 8 .COORDY 0 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 8 .COORDY 0 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 8 .COORDY 0 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 8 .COORDY 0 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 8 .COORDY 0 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 8 .COORDY 0 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 1 .COORDY 1 ]
+        .BARRA [ .COORDX 1 .COORDY 1 ]
+      ]
+    ]
+    
+    # Definicion CAMBIO DE ERA 1 A 2 ---
+    [
+      .TECNOLOGIA "Cambio a era 2"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 10 .COORDY 3 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 10 .COORDY 3 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 10 .COORDY 3 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 10 .COORDY 3 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 10 .COORDY 3 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 10 .COORDY 3 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 1 .COORDY 6 ]
+        .BARRA [ .COORDX 1 .COORDY 6 ]
+      ]
+    ]
+
+    # Definicion CAMBIO DE ERA 2 A 3 ---
+    [
+      .TECNOLOGIA "Cambio a era 3"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 9 .COORDY 3 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 9 .COORDY 3 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 9 .COORDY 3 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 9 .COORDY 3 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 9 .COORDY 3 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 9 .COORDY 3 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 0 .COORDY 6 ]
+        .BARRA [ .COORDX 0 .COORDY 6 ]
+      ]
+    ]
+
+    # Definicion BOMBA DE VAPOR ---
+    [
+      .TECNOLOGIA "Bomba de Vapor"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 9 .COORDY 0 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 9 .COORDY 0 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 9 .COORDY 0 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 9 .COORDY 0 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 9 .COORDY 0 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 9 .COORDY 0 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 2 .COORDY 1 ]
+        .BARRA [ .COORDX 2 .COORDY 1 ]
+      ]
+    ]
+    
+    # Definicion INGENIERIA FISCAL ---
+    [
+      .TECNOLOGIA "Ingenieria Fiscal"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 3 .COORDY 3 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 3 .COORDY 3 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 3 .COORDY 3 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 3 .COORDY 3 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 3 .COORDY 3 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 3 .COORDY 3 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 1 .COORDY 5 ]
+        .BARRA [ .COORDX 1 .COORDY 5 ]
+      ]
+    ]
+    
+    # Definicion PRESION FISCAL ---
+    [
+      .TECNOLOGIA "Presion Fiscal"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 10 .COORDY 0 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 10 .COORDY 0 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 10 .COORDY 0 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 10 .COORDY 0 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 10 .COORDY 0 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 10 .COORDY 0 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 3 .COORDY 1 ]
+        .BARRA [ .COORDX 3 .COORDY 1 ]
+      ]
+    ]
+    
+    # Definicion SAQUEO ---
+    [
+      .TECNOLOGIA "Saqueo"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 0 .COORDY 1 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 0 .COORDY 1 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 0 .COORDY 1 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 0 .COORDY 1 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 0 .COORDY 1 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 0 .COORDY 1 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 4 .COORDY 1 ]
+        .BARRA [ .COORDX 4 .COORDY 1 ]
+      ]
+    ]
+    
+    # Definicion IMPUESTOS ---
+    [
+      .TECNOLOGIA "Impuestos"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 1 .COORDY 1 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 1 .COORDY 1 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 1 .COORDY 1 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 1 .COORDY 1 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 1 .COORDY 1 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 1 .COORDY 1 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 5 .COORDY 1 ]
+        .BARRA [ .COORDX 5 .COORDY 1 ]
+      ]
+    ]
+    
+    # Definicion SERVICIO MILITAR ---
+    [
+      .TECNOLOGIA "Servicio Militar"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 2 .COORDY 1 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 2 .COORDY 1 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 2 .COORDY 1 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 2 .COORDY 1 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 2 .COORDY 1 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 2 .COORDY 1 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 6 .COORDY 1 ]
+        .BARRA [ .COORDX 6 .COORDY 1 ]
+      ]
+    ]
+        
+    # Definicion Educacion Avanzada ---
+    [
+      .TECNOLOGIA "Educacion Avanzada"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 3 .COORDY 1 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 3 .COORDY 1 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 3 .COORDY 1 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 3 .COORDY 1 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 3 .COORDY 1 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 3 .COORDY 1 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 0 .COORDY 2 ]
+        .BARRA [ .COORDX 0 .COORDY 2 ]
+      ]
+    ]
+    
+    # Definicion REFORMA AGRARIA ---
+    [
+      .TECNOLOGIA "Reforma Agraria"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 4 .COORDY 1 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 4 .COORDY 1 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 4 .COORDY 1 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 4 .COORDY 1 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 4 .COORDY 1 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 4 .COORDY 1 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 1 .COORDY 2 ]
+        .BARRA [ .COORDX 1 .COORDY 2 ]
+      ]
+    ]
+    
+    # Definicion SIDERURGIA ---
+    [
+      .TECNOLOGIA "Siderurgia"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 5 .COORDY 1 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 5 .COORDY 1 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 5 .COORDY 1 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 5 .COORDY 1 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 5 .COORDY 1 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 5 .COORDY 1 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 2 .COORDY 2 ]
+        .BARRA [ .COORDX 2 .COORDY 2 ]
+      ]
+    ]
+    
+    # Definicion MERCADO DOMESTICO ---
+    [
+      .TECNOLOGIA "Mercado Doméstico"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 6 .COORDY 1 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 6 .COORDY 1 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 6 .COORDY 1 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 6 .COORDY 1 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 6 .COORDY 1 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 6 .COORDY 1 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 3 .COORDY 2 ]
+        .BARRA [ .COORDX 3 .COORDY 2 ]
+      ]
+    ]
+    
+    # Definicion COMERCIO INTERNACIONAL ---
+    [
+      .TECNOLOGIA "Comercio Internacional"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 7 .COORDY 1 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 7 .COORDY 1 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 7 .COORDY 1 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 7 .COORDY 1 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 7 .COORDY 1 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 7 .COORDY 1 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 4 .COORDY 2 ]
+        .BARRA [ .COORDX 4 .COORDY 2 ]
+      ]
+    ]
+    
+    # Definicion INFRAESTRUCTURA PORTUARIA ---
+    [
+      .TECNOLOGIA "Infraestructura Portuaria"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 8 .COORDY 1 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 8 .COORDY 1 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 8 .COORDY 1 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 8 .COORDY 1 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 8 .COORDY 1 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 8 .COORDY 1 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 5 .COORDY 2 ]
+        .BARRA [ .COORDX 5 .COORDY 2 ]
+      ]
+    ]
+    
+    # Definicion ARANCELES ---
+    [
+      .TECNOLOGIA "Aranceles"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 9 .COORDY 1 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 9 .COORDY 1 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 9 .COORDY 1 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 9 .COORDY 1 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 9 .COORDY 1 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 9 .COORDY 1 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 6 .COORDY 2 ]
+        .BARRA [ .COORDX 6 .COORDY 2 ]
+      ]
+    ]
+    
+    # Definicion RED DE MERCADOS ---
+    [
+      .TECNOLOGIA "Red de Mercados"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 10 .COORDY 1 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 10 .COORDY 1 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 10 .COORDY 1 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 10 .COORDY 1 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 10 .COORDY 1 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 10 .COORDY 1 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 0 .COORDY 3 ]
+        .BARRA [ .COORDX 0 .COORDY 3 ]
+      ]
+    ]
+        
+    # Definicion VIGILANCIA ADUANERA ---
+    [
+      .TECNOLOGIA "Vigilancia Aduanera"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 0 .COORDY 2 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 0 .COORDY 2 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 0 .COORDY 2 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 0 .COORDY 2 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 0 .COORDY 2 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 0 .COORDY 2 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 1 .COORDY 3 ]
+        .BARRA [ .COORDX 1 .COORDY 3 ]
+      ]
+    ]
+    
+    # Definicion PUERTOS INDUSTRIALIZADOS ---
+    [
+      .TECNOLOGIA "Puertos Industrializados"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 1 .COORDY 2 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 1 .COORDY 2 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 1 .COORDY 2 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 1 .COORDY 2 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 1 .COORDY 2 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 1 .COORDY 2 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 2 .COORDY 3 ]
+        .BARRA [ .COORDX 2 .COORDY 3 ]
+      ]
+    ]
+    
+    # Definicion CONTRABANDO ---
+    [
+      .TECNOLOGIA "Contrabando"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 2 .COORDY 2 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 2 .COORDY 2 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 2 .COORDY 2 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 2 .COORDY 2 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 2 .COORDY 2 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 2 .COORDY 2 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 3 .COORDY 3 ]
+        .BARRA [ .COORDX 3 .COORDY 3 ]
+      ]
+    ]
+    
+    # Definicion BANCA ---
+    [
+      .TECNOLOGIA "Banca"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 3 .COORDY 2 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 3 .COORDY 2 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 3 .COORDY 2 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 3 .COORDY 2 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 3 .COORDY 2 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 3 .COORDY 2 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 4 .COORDY 3 ]
+        .BARRA [ .COORDX 4 .COORDY 3 ]
+      ]
+    ]
+    
+    # Definicion GUARDACOSTAS ---
+    [
+      .TECNOLOGIA "Guardacostas"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 4 .COORDY 2 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 4 .COORDY 2 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 4 .COORDY 2 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 4 .COORDY 2 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 4 .COORDY 2 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 4 .COORDY 2 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 5 .COORDY 3 ]
+        .BARRA [ .COORDX 5 .COORDY 3 ]
+      ]
+    ]
+    
+    # Definicion POLITICA EXTERIOR ---
+    [
+      .TECNOLOGIA "Politica Exterior"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 5 .COORDY 2 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 5 .COORDY 2 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 5 .COORDY 2 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 5 .COORDY 2 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 5 .COORDY 2 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 5 .COORDY 2 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 6 .COORDY 3 ]
+        .BARRA [ .COORDX 6 .COORDY 3 ]
+      ]
+    ]
+    
+    # Definicion BOLSA ---
+    [
+      .TECNOLOGIA "Bolsa"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 6 .COORDY 2 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 6 .COORDY 2 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 6 .COORDY 2 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 6 .COORDY 2 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 6 .COORDY 2 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 6 .COORDY 2 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 0 .COORDY 4 ]
+        .BARRA [ .COORDX 0 .COORDY 4 ]
+      ]
+    ]
+    
+    # Definicion REFORMA ECONOMICA ---
+    [
+      .TECNOLOGIA "Reforma Economica"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 7 .COORDY 2 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 7 .COORDY 2 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 7 .COORDY 2 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 7 .COORDY 2 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 7 .COORDY 2 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 7 .COORDY 2 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 1 .COORDY 4 ]
+        .BARRA [ .COORDX 1 .COORDY 4 ]
+      ]
+    ]
+        
+    # Definicion MODERNIZACION DE PUERTOS ---
+    [
+      .TECNOLOGIA "Modernizacion de Puertos"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 8 .COORDY 2 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 8 .COORDY 2 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 8 .COORDY 2 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 8 .COORDY 2 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 8 .COORDY 2 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 8 .COORDY 2 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 2 .COORDY 4 ]
+        .BARRA [ .COORDX 2 .COORDY 4 ]
+      ]
+    ]
+    
+    # Definicion PIRATERIA ---
+    [
+      .TECNOLOGIA "Pirateria"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 9 .COORDY 2 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 9 .COORDY 2 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 9 .COORDY 2 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 9 .COORDY 2 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 9 .COORDY 2 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 9 .COORDY 2 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 3 .COORDY 4 ]
+        .BARRA [ .COORDX 3 .COORDY 4 ]
+      ]
+    ]
+    
+    # Definicion RECONOCIMIENTO NAVAL ---
+    [
+      .TECNOLOGIA "Reconocimiento Naval"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 10 .COORDY 2 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 10 .COORDY 2 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 10 .COORDY 2 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 10 .COORDY 2 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 10 .COORDY 2 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 10 .COORDY 2 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 4 .COORDY 4 ]
+        .BARRA [ .COORDX 4 .COORDY 4 ]
+      ]
+    ]
+    
+    # Definicion SISTEMAS DEMOCRATICOS ---
+    [
+      .TECNOLOGIA "Sistemas Democraticos"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 0 .COORDY 3 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 0 .COORDY 3 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 0 .COORDY 3 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 0 .COORDY 3 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 0 .COORDY 3 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 0 .COORDY 3 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 5 .COORDY 4 ]
+        .BARRA [ .COORDX 5 .COORDY 4 ]
+      ]
+    ]
+    
+    # Definicion ABSOLUTISMOS ---
+    [
+      .TECNOLOGIA "Absolutismos"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 1 .COORDY 3 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 1 .COORDY 3 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 1 .COORDY 3 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 1 .COORDY 3 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 1 .COORDY 3 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 1 .COORDY 3 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 6 .COORDY 4 ]
+        .BARRA [ .COORDX 6 .COORDY 4 ]
+      ]
+    ]
+    
+    # Definicion BUROCRACIA ---
+    [
+      .TECNOLOGIA "Burocracia"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 2 .COORDY 3 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 2 .COORDY 3 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 2 .COORDY 3 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 2 .COORDY 3 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 2 .COORDY 3 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 2 .COORDY 3 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 0 .COORDY 5 ]
+        .BARRA [ .COORDX 0 .COORDY 5 ]
+      ]
+    ]
+    
+    # Definicion INFORMACION ---
+    [
+      .TECNOLOGIA "Informacion"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 3 .COORDY 3 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 3 .COORDY 3 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 3 .COORDY 3 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 3 .COORDY 3 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 3 .COORDY 3 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 3 .COORDY 3 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 1 .COORDY 5 ]
+        .BARRA [ .COORDX 1 .COORDY 5 ]
+      ]
+    ]
+
+    # Definicion DIPLOMACIA ---
+    [
+      .TECNOLOGIA "Diplomacia"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 4 .COORDY 3 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 4 .COORDY 3 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 4 .COORDY 3 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 4 .COORDY 3 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 4 .COORDY 3 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 4 .COORDY 3 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 2 .COORDY 5 ]
+        .BARRA [ .COORDX 2 .COORDY 5 ]
+      ]
+    ]
+    
+    # Definicion SERVICIO SECRETO ---
+    [
+      .TECNOLOGIA "Servicio Secreto"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 5 .COORDY 3 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 5 .COORDY 3 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 5 .COORDY 3 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 5 .COORDY 3 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 5 .COORDY 3 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 5 .COORDY 3 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 3 .COORDY 5 ]
+        .BARRA [ .COORDX 3 .COORDY 5 ]
+      ]
+    ]
+    
+    # Definicion ANEXION PACIFICA ---
+    [
+      .TECNOLOGIA "Anexion Pacifica"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 6 .COORDY 3 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 6 .COORDY 3 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 6 .COORDY 3 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 6 .COORDY 3 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 6 .COORDY 3 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 6 .COORDY 3 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 4 .COORDY 5 ]
+        .BARRA [ .COORDX 4 .COORDY 5 ]
+      ]
+    ]
+    
+    # Definicion PERIODISMO ---
+    [
+      .TECNOLOGIA "Periodismo"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 7 .COORDY 3 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 7 .COORDY 3 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 7 .COORDY 3 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 7 .COORDY 3 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 7 .COORDY 3 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 7 .COORDY 3 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 5 .COORDY 5 ]
+        .BARRA [ .COORDX 5 .COORDY 5 ]
+      ]
+    ]
+    
+    # Definicion INFLUENCIA CULTURAL ---
+    [
+      .TECNOLOGIA "Influencia Cultural"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 8 .COORDY 3 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 8 .COORDY 3 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 8 .COORDY 3 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 8 .COORDY 3 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 8 .COORDY 3 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 8 .COORDY 3 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 6 .COORDY 5 ]
+        .BARRA [ .COORDX 6 .COORDY 5 ]
+      ]
+    ]
+    
+    # Definicion REPUBLICA ---
+    [
+      .TECNOLOGIA "Republica"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 9 .COORDY 3 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 9 .COORDY 3 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 9 .COORDY 3 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 9 .COORDY 3 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 9 .COORDY 3 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 9 .COORDY 3 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 0 .COORDY 6 ]
+        .BARRA [ .COORDX 0 .COORDY 6 ]
+      ]
+    ]
+    
+    # Definicion MONARQUIA PARLAMENTARIA ---
+    [
+      .TECNOLOGIA "Monarquia Parlamentaria"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 10 .COORDY 3 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 10 .COORDY 3 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 10 .COORDY 3 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 10 .COORDY 3 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 10 .COORDY 3 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 10 .COORDY 3 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 1 .COORDY 6 ]
+        .BARRA [ .COORDX 1 .COORDY 6 ]
+      ]
+    ]
+    
+    # Definicion MONARQUIA ABSOLUTA ---
+    [
+      .TECNOLOGIA "Monarquia Absoluta"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 0 .COORDY 4 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 0 .COORDY 4 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 0 .COORDY 4 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 0 .COORDY 4 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 0 .COORDY 4 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 0 .COORDY 4 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 2 .COORDY 6 ]
+        .BARRA [ .COORDX 2 .COORDY 6 ]
+      ]
+    ]
+    
+    # Definicion DICTADURA MILITAR ---
+    [
+      .TECNOLOGIA "Dictadura Militar"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 1 .COORDY 4 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 1 .COORDY 4 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 1 .COORDY 4 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 1 .COORDY 4 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 1 .COORDY 4 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 1 .COORDY 4 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 3 .COORDY 6 ]
+        .BARRA [ .COORDX 3 .COORDY 6 ]
+      ]
+    ]
+    
+    # Definicion ADMINISTRACION ---
+    [
+      .TECNOLOGIA "Administracion"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 2 .COORDY 4 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 2 .COORDY 4 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 2 .COORDY 4 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 2 .COORDY 4 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 2 .COORDY 4 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 2 .COORDY 4 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 4 .COORDY 6 ]
+        .BARRA [ .COORDX 4 .COORDY 6 ]
+      ]
+    ]
+    
+    # Definicion RED DE ESPIONAJE ---
+    [
+      .TECNOLOGIA "Red de Espionaje"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 3 .COORDY 4 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 3 .COORDY 4 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 3 .COORDY 4 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 3 .COORDY 4 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 3 .COORDY 4 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 3 .COORDY 4 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 5 .COORDY 6 ]
+        .BARRA [ .COORDX 5 .COORDY 6 ]
+      ]
+    ]
+    
+    # Definicion ESPIONAJE MILITAR ---
+    [
+      .TECNOLOGIA "Espionaje Militar"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 4 .COORDY 4 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 4 .COORDY 4 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 4 .COORDY 4 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 4 .COORDY 4 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 4 .COORDY 4 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 4 .COORDY 4 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 6 .COORDY 6 ]
+        .BARRA [ .COORDX 6 .COORDY 6 ]
+      ]
+    ]
+    
+    # Definicion POLICIA SECRETA ---
+    [
+      .TECNOLOGIA "Policia Secreta"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 5 .COORDY 4 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 5 .COORDY 4 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 5 .COORDY 4 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 5 .COORDY 4 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 5 .COORDY 4 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 5 .COORDY 4 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 0 .COORDY 7 ]
+        .BARRA [ .COORDX 0 .COORDY 7 ]
+      ]
+    ]
+    
+    # Definicion SUBVERSION ---
+    [
+      .TECNOLOGIA "Subversion"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 6 .COORDY 4 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 6 .COORDY 4 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 6 .COORDY 4 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 6 .COORDY 4 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 6 .COORDY 4 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 6 .COORDY 4 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 1 .COORDY 7 ]
+        .BARRA [ .COORDX 1 .COORDY 7 ]
+      ]
+    ]
+    
+    # Definicion PROPAGANDA ---
+    [
+      .TECNOLOGIA "Propaganda"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 7 .COORDY 4 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 7 .COORDY 4 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 7 .COORDY 4 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 7 .COORDY 4 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 7 .COORDY 4 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 7 .COORDY 4 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 2 .COORDY 7 ]
+        .BARRA [ .COORDX 2 .COORDY 7 ]
+      ]
+    ]
+    
+    # Definicion INVERSIONES ---
+    [
+      .TECNOLOGIA "Inversiones"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 8 .COORDY 4 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 8 .COORDY 4 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 8 .COORDY 4 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 8 .COORDY 4 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 8 .COORDY 4 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 8 .COORDY 4 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 3 .COORDY 7 ]
+        .BARRA [ .COORDX 3 .COORDY 7 ]
+      ]
+    ]
+    
+    # Definicion CONTRAESPIONAJE ---
+    [
+      .TECNOLOGIA "Contraespionaje"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 9 .COORDY 4 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 9 .COORDY 4 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 9 .COORDY 4 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 9 .COORDY 4 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 9 .COORDY 4 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 9 .COORDY 4 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 4 .COORDY 7 ]
+        .BARRA [ .COORDX 4 .COORDY 7 ]
+      ]
+    ]
+    
+    # Definicion ORGANIZACION TERRITORIAL ---
+    [
+      .TECNOLOGIA "Organizacion Territorial"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 10 .COORDY 4 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 10 .COORDY 4 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 10 .COORDY 4 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 10 .COORDY 4 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 10 .COORDY 4 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 10 .COORDY 4 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 5 .COORDY 7 ]
+        .BARRA [ .COORDX 5 .COORDY 7 ]
+      ]
+    ]
+    
+    # Definicion CATASTRO ---
+    [
+      .TECNOLOGIA "Catastro"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 0 .COORDY 5 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 0 .COORDY 5 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 0 .COORDY 5 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 0 .COORDY 5 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 0 .COORDY 5 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 0 .COORDY 5 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 6 .COORDY 7 ]
+        .BARRA [ .COORDX 6 .COORDY 7 ]
+      ]
+    ]
+    
+    # Definicion PROTECCIONISMO ---
+    [
+      .TECNOLOGIA "Proteccionismo"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 1 .COORDY 5 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 1 .COORDY 5 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 1 .COORDY 5 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 1 .COORDY 5 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 1 .COORDY 5 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 1 .COORDY 5 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 0 .COORDY 8 ]
+        .BARRA [ .COORDX 0 .COORDY 8 ]
+      ]
+    ]
+    
+    # Definicion CODIGO CIVIL ---
+    [
+      .TECNOLOGIA "Codigo Civil"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 2 .COORDY 5 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 2 .COORDY 5 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 2 .COORDY 5 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 2 .COORDY 5 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 2 .COORDY 5 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 2 .COORDY 5 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 1 .COORDY 8 ]
+        .BARRA [ .COORDX 1 .COORDY 8 ]
+      ]
+    ]
+    
+    # Definicion SINDICALISMO ---
+    [
+      .TECNOLOGIA "Sindicalismo"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 3 .COORDY 5 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 3 .COORDY 5 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 3 .COORDY 5 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 3 .COORDY 5 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 3 .COORDY 5 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 3 .COORDY 5 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 2 .COORDY 8 ]
+        .BARRA [ .COORDX 2 .COORDY 8 ]
+      ]
+    ]
+    
+    # Definicion CAPITALISMO ---
+    [
+      .TECNOLOGIA "Capitalismo"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 4 .COORDY 5 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 4 .COORDY 5 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 4 .COORDY 5 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 4 .COORDY 5 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 4 .COORDY 5 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 4 .COORDY 5 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 3 .COORDY 8 ]
+        .BARRA [ .COORDX 3 .COORDY 8 ]
+      ]
+    ]
+    
+    # Definicion REVOLUCION INDUSTRIAL ---
+    [
+      .TECNOLOGIA "Revolucion Industrial"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 5 .COORDY 5 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 5 .COORDY 5 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 5 .COORDY 5 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 5 .COORDY 5 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 5 .COORDY 5 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 5 .COORDY 5 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 4 .COORDY 8 ]
+        .BARRA [ .COORDX 4 .COORDY 8 ]
+      ]
+    ]
+    
+    # Definicion LIBERALISMO ---
+    [
+      .TECNOLOGIA "Liberalismo"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 6 .COORDY 5 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 6 .COORDY 5 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 6 .COORDY 5 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 6 .COORDY 5 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 6 .COORDY 5 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 6 .COORDY 5 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 5 .COORDY 8 ]
+        .BARRA [ .COORDX 5 .COORDY 8 ]
+      ]
+    ]
+    
+    # Definicion MECENAZGO ---
+    [
+      .TECNOLOGIA "Mecenazgo"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 7 .COORDY 5 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 7 .COORDY 5 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 7 .COORDY 5 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 7 .COORDY 5 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 7 .COORDY 5 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 7 .COORDY 5 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 6 .COORDY 8 ]
+        .BARRA [ .COORDX 6 .COORDY 8 ]
+      ]
+    ]
+    
+    # Definicion ILUSTRACION ---
+    [
+      .TECNOLOGIA "Ilustracion"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 8 .COORDY 5 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 8 .COORDY 5 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 8 .COORDY 5 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 8 .COORDY 5 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 8 .COORDY 5 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 8 .COORDY 5 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 0 .COORDY 9 ]
+        .BARRA [ .COORDX 0 .COORDY 9 ]
+      ]
+    ]
+    
+    # Definicion CUERPO DE VOLUNTARIOS ---
+    [
+      .TECNOLOGIA "Cuerpo de Voluntarios"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 9 .COORDY 5 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 9 .COORDY 5 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 9 .COORDY 5 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 9 .COORDY 5 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 9 .COORDY 5 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 9 .COORDY 5 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 1 .COORDY 9 ]
+        .BARRA [ .COORDX 1 .COORDY 9 ]
+      ]
+    ]
+    
+    # Definicion RECLUTAMIENTO FORZOSO ---
+    [
+      .TECNOLOGIA "Reclutamiento Forzoso"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 10 .COORDY 5 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 10 .COORDY 5 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 10 .COORDY 5 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 10 .COORDY 5 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 10 .COORDY 5 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 10 .COORDY 5 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 2 .COORDY 9 ]
+        .BARRA [ .COORDX 2 .COORDY 9 ]
+      ]
+    ]
+    
+    # Definicion DIEZMO ---
+    [
+      .TECNOLOGIA "Diezmo"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 0 .COORDY 6 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 0 .COORDY 6 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 0 .COORDY 6 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 0 .COORDY 6 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 0 .COORDY 6 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 0 .COORDY 6 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 3 .COORDY 9 ]
+        .BARRA [ .COORDX 3 .COORDY 9 ]
+      ]
+    ]
+    
+    # Definicion LEVA ---
+    [
+      .TECNOLOGIA "Leva"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 1 .COORDY 6 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 1 .COORDY 6 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 1 .COORDY 6 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 1 .COORDY 6 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 1 .COORDY 6 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 1 .COORDY 6 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 4 .COORDY 9 ]
+        .BARRA [ .COORDX 4 .COORDY 9 ]
+      ]
+    ]
+    
+    # Definicion NACIONALISMO ---
+    [
+      .TECNOLOGIA "Nacionalismo"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 2 .COORDY 6 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 2 .COORDY 6 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 2 .COORDY 6 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 2 .COORDY 6 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 2 .COORDY 6 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 2 .COORDY 6 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 5 .COORDY 9 ]
+        .BARRA [ .COORDX 5 .COORDY 9 ]
+      ]
+    ]
+    
+    # Definicion PREFECTURA ---
+    [
+      .TECNOLOGIA "Prefectura"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 3 .COORDY 6 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 3 .COORDY 6 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 3 .COORDY 6 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 3 .COORDY 6 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 3 .COORDY 6 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 3 .COORDY 6 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 6 .COORDY 9 ]
+        .BARRA [ .COORDX 6 .COORDY 9 ]
+      ]
+    ]
+    
+    # Definicion REPRESION ---
+    [
+      .TECNOLOGIA "Represion"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 4 .COORDY 6 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 4 .COORDY 6 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 4 .COORDY 6 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 4 .COORDY 6 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 4 .COORDY 6 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 4 .COORDY 6 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 0 .COORDY 10 ]
+        .BARRA [ .COORDX 0 .COORDY 10 ]
+      ]
+    ]
+    
+    # Definicion INFANTERIA BASICA ---
+    [
+      .TECNOLOGIA "Infanteria Basica"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 5 .COORDY 6 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 5 .COORDY 6 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 5 .COORDY 6 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 5 .COORDY 6 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 5 .COORDY 6 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 5 .COORDY 6 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 1 .COORDY 10 ]
+        .BARRA [ .COORDX 1 .COORDY 10 ]
+      ]
+    ]
+    
+    # Definicion CABALLERIA BASICA ---
+    [
+      .TECNOLOGIA "Caballeria Basica"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 6 .COORDY 6 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 6 .COORDY 6 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 6 .COORDY 6 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 6 .COORDY 6 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 6 .COORDY 6 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 6 .COORDY 6 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 2 .COORDY 10 ]
+        .BARRA [ .COORDX 2 .COORDY 10 ]
+      ]
+    ]
+
+    # Definicion CONSTRUCCION DE ARTILLERIA ---
+    [
+      .TECNOLOGIA "Construccion de Artilleria"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 7 .COORDY 6 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 7 .COORDY 6 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 7 .COORDY 6 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 7 .COORDY 6 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 7 .COORDY 6 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 7 .COORDY 6 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 3 .COORDY 10 ]
+        .BARRA [ .COORDX 3 .COORDY 10 ]
+      ]
+    ]
+    
+    # Definicion INFRAESTRUCTURA NAVAL ---
+    [
+      .TECNOLOGIA "Infraestructura Naval"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 8 .COORDY 6 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 8 .COORDY 6 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 8 .COORDY 6 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 8 .COORDY 6 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 8 .COORDY 6 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 8 .COORDY 6 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 4 .COORDY 10 ]
+        .BARRA [ .COORDX 4 .COORDY 10 ]
+      ]
+    ]
+    
+    # Definicion TACTICAS DE GUERRA BASICAS ---
+    [
+      .TECNOLOGIA "Tacticas de Guerra Basicas"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 9 .COORDY 6 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 9 .COORDY 6 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 9 .COORDY 6 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 9 .COORDY 6 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 9 .COORDY 6 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 9 .COORDY 6 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 5 .COORDY 10 ]
+        .BARRA [ .COORDX 5 .COORDY 10 ]
+      ]
+    ]
+    
+    # Definicion CARRERA MILITAR ---
+    [
+      .TECNOLOGIA "Carrera Militar"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 10 .COORDY 6 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 10 .COORDY 6 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 10 .COORDY 6 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 10 .COORDY 6 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 10 .COORDY 6 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 10 .COORDY 6 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 6 .COORDY 10 ]
+        .BARRA [ .COORDX 6 .COORDY 10 ]
+      ]
+    ]
+    
+    # Definicion INVESTIGACION ARMAMENTISTICA ---
+    [
+      .TECNOLOGIA "Investigacion Armamentistica"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 0 .COORDY 7 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 0 .COORDY 7 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 0 .COORDY 7 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 0 .COORDY 7 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 0 .COORDY 7 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 0 .COORDY 7 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 0 .COORDY 11 ]
+        .BARRA [ .COORDX 0 .COORDY 11 ]
+      ]
+    ]
+    
+    # Definicion MANIOBRAS MILITARES ---
+    [
+      .TECNOLOGIA "Maniobras Militares"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 1 .COORDY 7 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 1 .COORDY 7 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 1 .COORDY 7 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 1 .COORDY 7 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 1 .COORDY 7 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 1 .COORDY 7 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 1 .COORDY 11 ]
+        .BARRA [ .COORDX 1 .COORDY 11 ]
+      ]
+    ]
+    
+    # Definicion CAPTURAR ARTILLERIA ---
+    [
+      .TECNOLOGIA "Capturar Artilleria"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 2 .COORDY 7 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 2 .COORDY 7 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 2 .COORDY 7 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 2 .COORDY 7 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 2 .COORDY 7 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 2 .COORDY 7 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 2 .COORDY 11 ]
+        .BARRA [ .COORDX 2 .COORDY 11 ]
+      ]
+    ]
+    
+    # Definicion HACE PRISIONEROS ---
+    [
+      .TECNOLOGIA "Hace Prisioneros"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 3 .COORDY 7 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 3 .COORDY 7 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 3 .COORDY 7 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 3 .COORDY 7 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 3 .COORDY 7 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 3 .COORDY 7 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 3 .COORDY 11 ]
+        .BARRA [ .COORDX 3 .COORDY 11 ]
+      ]
+    ]
+    
+    # Definicion INFANTERIA AVANZADA ---
+    [
+      .TECNOLOGIA "Infanteria Avanzada"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 4 .COORDY 7 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 4 .COORDY 7 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 4 .COORDY 7 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 4 .COORDY 7 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 4 .COORDY 7 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 4 .COORDY 7 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 4 .COORDY 11 ]
+        .BARRA [ .COORDX 4 .COORDY 11 ]
+      ]
+    ]
+    
+    # Definicion CABALLERIA AVANZADA ---
+    [
+      .TECNOLOGIA "Caballeria Avanzada"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 5 .COORDY 7 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 5 .COORDY 7 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 5 .COORDY 7 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 5 .COORDY 7 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 5 .COORDY 7 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 5 .COORDY 7 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 5 .COORDY 11 ]
+        .BARRA [ .COORDX 5 .COORDY 11 ]
+      ]
+    ]
+    
+    # Definicion MANUFACTURA DE ARTILLERIA ---
+    [
+      .TECNOLOGIA "Manufactura de Artilleria"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 6 .COORDY 7 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 6 .COORDY 7 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 6 .COORDY 7 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 6 .COORDY 7 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 6 .COORDY 7 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 6 .COORDY 7 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 6 .COORDY 11 ]
+        .BARRA [ .COORDX 6 .COORDY 11 ]
+      ]
+    ]
+    
+    # Definicion ORGANIZACION NAVAL ---
+    [
+      .TECNOLOGIA "Organizacion Naval"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 7 .COORDY 7 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 7 .COORDY 7 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 7 .COORDY 7 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 7 .COORDY 7 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 7 .COORDY 7 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 7 .COORDY 7 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 0 .COORDY 12 ]
+        .BARRA [ .COORDX 0 .COORDY 12 ]
+      ]
+    ] 
+    
+    # Definicion TACTICAS DE GUERRA AVANZADAS ---
+    [
+      .TECNOLOGIA "Tacticas de Guerra Avanzadas"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 8 .COORDY 7 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 8 .COORDY 7 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 8 .COORDY 7 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 8 .COORDY 7 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 8 .COORDY 7 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 8 .COORDY 7 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 1 .COORDY 12 ]
+        .BARRA [ .COORDX 1 .COORDY 12 ]
+      ]
+    ]
+    
+    # Definicion INSTRUCCION DE OFICIALES ---
+    [
+      .TECNOLOGIA "Instruccion de Oficiales"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 9 .COORDY 7 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 9 .COORDY 7 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 9 .COORDY 7 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 9 .COORDY 7 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 9 .COORDY 7 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 9 .COORDY 7 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 2 .COORDY 12 ]
+        .BARRA [ .COORDX 2 .COORDY 12 ]
+      ]
+    ]
+    
+    # Definicion CAMPAÑA DE INVIERNO ---
+    [
+      .TECNOLOGIA "Campaña de Invierno"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 10 .COORDY 7 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 10 .COORDY 7 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 10 .COORDY 7 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 10 .COORDY 7 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 10 .COORDY 7 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 10 .COORDY 7 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 3 .COORDY 12 ]
+        .BARRA [ .COORDX 3 .COORDY 12 ]
+      ]
+    ]
+    
+    # Definicion MEJORAS DE COMBATE ---
+    [
+      .TECNOLOGIA "Mejoras de Combate"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 0 .COORDY 8 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 0 .COORDY 8 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 0 .COORDY 8 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 0 .COORDY 8 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 0 .COORDY 8 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 0 .COORDY 8 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 4 .COORDY 12 ]
+        .BARRA [ .COORDX 4 .COORDY 12 ]
+      ]
+    ]
+    
+    # Definicion MANIOBRAS NAVALES ---
+    [
+      .TECNOLOGIA "Maniobras Navales"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 1 .COORDY 8 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 1 .COORDY 8 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 1 .COORDY 8 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 1 .COORDY 8 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 1 .COORDY 8 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 1 .COORDY 8 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 5 .COORDY 12 ]
+        .BARRA [ .COORDX 5 .COORDY 12 ]
+      ]
+    ]
+    
+    # Definicion MANIOBRAS NACIONALES ---
+    [
+      .TECNOLOGIA "Maniobras Nacionales"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 2 .COORDY 8 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 2 .COORDY 8 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 2 .COORDY 8 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 2 .COORDY 8 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 2 .COORDY 8 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 2 .COORDY 8 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 6 .COORDY 12 ]
+        .BARRA [ .COORDX 6 .COORDY 12 ]
+      ]
+    ]
+    
+    # Definicion CIRUGIA ---
+    [
+      .TECNOLOGIA "Cirugia"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 3 .COORDY 8 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 3 .COORDY 8 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 3 .COORDY 8 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 3 .COORDY 8 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 3 .COORDY 8 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 3 .COORDY 8 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 0 .COORDY 13 ]
+        .BARRA [ .COORDX 0 .COORDY 13 ]
+      ]
+    ]
+    
+    # Definicion INFANTERIA DE ELITE ---
+    [
+      .TECNOLOGIA "Infanteria de Elite"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 4 .COORDY 8 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 4 .COORDY 8 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 4 .COORDY 8 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 4 .COORDY 8 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 4 .COORDY 8 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 4 .COORDY 8 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 1 .COORDY 13 ]
+        .BARRA [ .COORDX 1 .COORDY 13 ]
+      ]
+    ]
+    
+    # Definicion CABALLERIA DE ELITE ---
+    [
+      .TECNOLOGIA "Caballeria de Elite"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 5 .COORDY 8 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 5 .COORDY 8 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 5 .COORDY 8 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 5 .COORDY 8 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 5 .COORDY 8 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 5 .COORDY 8 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 2 .COORDY 13 ]
+        .BARRA [ .COORDX 2 .COORDY 13 ]
+      ]
+    ]
+    
+    # Definicion PRODUCCION INDUSTRIA DE ARTILLERIA ---
+    [
+      .TECNOLOGIA "Prod. Industria de Artilleria"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 6 .COORDY 8 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 6 .COORDY 8 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 6 .COORDY 8 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 6 .COORDY 8 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 6 .COORDY 8 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 6 .COORDY 8 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 3 .COORDY 13 ]
+        .BARRA [ .COORDX 3 .COORDY 13 ]
+      ]
+    ]
+    
+    # Definicion ARMADA MODERNA ---
+    [
+      .TECNOLOGIA "Armada Moderna"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 7 .COORDY 8 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 7 .COORDY 8 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 7 .COORDY 8 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 7 .COORDY 8 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 7 .COORDY 8 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 7 .COORDY 8 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 4 .COORDY 13 ]
+        .BARRA [ .COORDX 4 .COORDY 13 ]
+      ]
+    ]
+    
+    # Definicion ALTO MANDO ---
+    [
+      .TECNOLOGIA "Alto Mando"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 8 .COORDY 8 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 8 .COORDY 8 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 8 .COORDY 8 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 8 .COORDY 8 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 8 .COORDY 8 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 8 .COORDY 8 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 5 .COORDY 13 ]
+        .BARRA [ .COORDX 5 .COORDY 13 ]
+      ]
+    ]
+    
+    # Definicion INGENIERIA DE GUERRA ---
+    [
+      .TECNOLOGIA "Ingenieria de Guerra"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 9 .COORDY 8 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 9 .COORDY 8 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 9 .COORDY 8 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 9 .COORDY 8 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 9 .COORDY 8 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 9 .COORDY 8 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 6 .COORDY 13 ]
+        .BARRA [ .COORDX 6 .COORDY 13 ]
+      ]
+    ]
+    
+    # Definicion EXPOSICION UNIVERSAL ---
+    [
+      .TECNOLOGIA "Exposicion Universals"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 0 .COORDY 0 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 0 .COORDY 0 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 0 .COORDY 0 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 0 .COORDY 0 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 0 .COORDY 0 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 0 .COORDY 0 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 6 .COORDY 14 ]
+        .BARRA [ .COORDX 6 .COORDY 14 ]
+      ]
+    ]
+    
+    # Definicion SIMON BOLIVAR ---
+    [
+      .TECNOLOGIA "Simon Bolivar"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 0 .COORDY 0 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 0 .COORDY 0 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 0 .COORDY 0 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 0 .COORDY 0 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 0 .COORDY 0 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 0 .COORDY 0 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 0 .COORDY 15 ]
+        .BARRA [ .COORDX 0 .COORDY 15 ]
+      ]
+    ]
+    
+    # Definicion PIEDRA ROSETA ---
+    [
+      .TECNOLOGIA "Piedra Roseta"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 0 .COORDY 0 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 0 .COORDY 0 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 0 .COORDY 0 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 0 .COORDY 0 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 0 .COORDY 0 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 0 .COORDY 0 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 1 .COORDY 15 ]
+        .BARRA [ .COORDX 1 .COORDY 15 ]
+      ]
+    ]
+    
+    # Definicion COLONIZACION DE AFRICA ---
+    [
+      .TECNOLOGIA "Colonizacion de Africa"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 0 .COORDY 0 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 0 .COORDY 0 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 0 .COORDY 0 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 0 .COORDY 0 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 0 .COORDY 0 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 0 .COORDY 0 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 0 .COORDY 0 ]
+        .BARRA [ .COORDX 0 .COORDY 0 ]
+      ]
+    ]
+    
+    # Definicion SISTEMA METRICO DECIMAL ---
+    [
+      .TECNOLOGIA "Sistema Metrico Decimal"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 0 .COORDY 0 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 0 .COORDY 0 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 0 .COORDY 0 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 0 .COORDY 0 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 0 .COORDY 0 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 0 .COORDY 0 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 0 .COORDY 0 ]
+        .BARRA [ .COORDX 0 .COORDY 0 ]
+      ]
+    ]
+    
+    # Definicion ENCICLOPEDIA ---
+    [
+      .TECNOLOGIA "Enciclopedia"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 0 .COORDY 0 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 0 .COORDY 0 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 0 .COORDY 0 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 0 .COORDY 0 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 0 .COORDY 0 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 0 .COORDY 0 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 0 .COORDY 0 ]
+        .BARRA [ .COORDX 0 .COORDY 0 ]
+      ]
+    ]
+    
+    # Definicion REVOLUCION AGRARIA ---
+    [
+      .TECNOLOGIA "Revolucion Agraria"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 0 .COORDY 0 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 0 .COORDY 0 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 0 .COORDY 0 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 0 .COORDY 0 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 0 .COORDY 0 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 0 .COORDY 0 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 0 .COORDY 0 ]
+        .BARRA [ .COORDX 0 .COORDY 0 ]
+      ]
+    ]
+    
+    # Definicion LA BOLSA ---
+    [
+      .TECNOLOGIA "La Bolsa"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 0 .COORDY 0 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 0 .COORDY 0 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 0 .COORDY 0 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 0 .COORDY 0 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 0 .COORDY 0 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 0 .COORDY 0 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 0 .COORDY 0 ]
+        .BARRA [ .COORDX 0 .COORDY 0 ]
+      ]
+    ]
+    
+    # Definicion RUTA DE LAS INDIAS ---
+    [
+      .TECNOLOGIA "Ruta de Las Indias"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 0 .COORDY 0 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 0 .COORDY 0 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 0 .COORDY 0 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 0 .COORDY 0 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 0 .COORDY 0 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 0 .COORDY 0 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 0 .COORDY 0 ]
+        .BARRA [ .COORDX 0 .COORDY 0 ]
+      ]
+    ]
+
+    # Definicion INDEPENDENCIA DE LOUSIANA ---
+    [
+      .TECNOLOGIA "Independencia de Lousiana"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 0 .COORDY 0 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 0 .COORDY 0 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 0 .COORDY 0 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 0 .COORDY 0 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 0 .COORDY 0 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 0 .COORDY 0 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 0 .COORDY 0 ]
+        .BARRA [ .COORDX 0 .COORDY 0 ]
+      ]
+    ]
+    
+    # Definicion CARTOGRAFIA ---
+    [
+      .TECNOLOGIA "Cartografia"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 0 .COORDY 0 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 0 .COORDY 0 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 0 .COORDY 0 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 0 .COORDY 0 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 0 .COORDY 0 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 0 .COORDY 0 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 0 .COORDY 0 ]
+        .BARRA [ .COORDX 0 .COORDY 0 ]
+      ]
+    ]
+    
+    # Definicion PROCLAMARSE EMPERADOR ---
+    [
+      .TECNOLOGIA "Proclamarse Emperador"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 0 .COORDY 0 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 0 .COORDY 0 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 0 .COORDY 0 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 0 .COORDY 0 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 0 .COORDY 0 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 0 .COORDY 0 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 0 .COORDY 0 ]
+        .BARRA [ .COORDX 0 .COORDY 0 ]
+      ]
+    ]
+    
+    # Definicion DECLARACION DE DERECHOS HUMANOS ---
+    [
+      .TECNOLOGIA "Declaracion de Derechos Humanos"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 0 .COORDY 0 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 0 .COORDY 0 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 0 .COORDY 0 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 0 .COORDY 0 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 0 .COORDY 0 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 0 .COORDY 0 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 0 .COORDY 0 ]
+        .BARRA [ .COORDX 0 .COORDY 0 ]
+      ]
+    ]
+    
+    # Definicion 100.000 HIJOS DE SAN LUIS ---
+    [
+      .TECNOLOGIA "100.000 Hijos de San Luis"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 0 .COORDY 0 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 0 .COORDY 0 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 0 .COORDY 0 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 0 .COORDY 0 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 0 .COORDY 0 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 0 .COORDY 0 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 0 .COORDY 0 ]
+        .BARRA [ .COORDX 0 .COORDY 0 ]
+      ]
+    ]
+    
+    # Definicion CONSTITUCION ---
+    [
+      .TECNOLOGIA "Constitucion"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 0 .COORDY 0 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 0 .COORDY 0 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 0 .COORDY 0 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 0 .COORDY 0 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 0 .COORDY 0 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 0 .COORDY 0 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 0 .COORDY 0 ]
+        .BARRA [ .COORDX 0 .COORDY 0 ]
+      ]
+    ]
+    
+    # Definicion PAZ DE TILSIT ---
+    [
+      .TECNOLOGIA "Paz de Tilsit"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 0 .COORDY 0 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 0 .COORDY 0 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 0 .COORDY 0 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 0 .COORDY 0 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 0 .COORDY 0 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 0 .COORDY 0 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 0 .COORDY 0 ]
+        .BARRA [ .COORDX 0 .COORDY 0 ]
+      ]
+    ]
+    
+    # Definicion PAZ DE AMIENS ---
+    [
+      .TECNOLOGIA "Paz de Amiens"
+      .PARAMS
+      [
+        .INVESTIGANDOSE [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaApagados.tga"	.COORDX 0 .COORDY 0 ]
+        .INVESTIGADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologia.tga"          	.COORDX 0 .COORDY 0 ]
+        .NORMAL       	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaActivados.tga"      .COORDX 0 .COORDY 0 ]
+        .ILUMINADO    	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaIluminados.tga"    	.COORDX 0 .COORDY 0 ]
+        .PULSADO      	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaVerde.tga"      	.COORDX 0 .COORDY 0 ]
+        .DESACTIVADO  	[ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/IconosTecnologiaDesactivados.tga"  	.COORDX 0 .COORDY 0 ]
+        
+        .IDSELECTSOUND "S_UI_GENERICO_PULSADO"        
+        
+        # para el icono descriptivo. No hace falta poner la textura, se cargará de la definición del icono en UIDefs_VentanaArbolTecnologias.sb
+        # aquí solo especificamos las coordenadas de los iconos para cada tecnología
+        .FONDO [ .COORDX 0 .COORDY 0 ]
+        .BARRA [ .COORDX 0 .COORDY 0 ]
+      ]
+    ]
+    
+  ] # NODOS ---  

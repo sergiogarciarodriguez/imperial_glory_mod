@@ -1,0 +1,16 @@
+###############################################################################################################
+# Archivo con el Pool de controles de interfaz para el modelo de batalla.
+# El pool tendra como objetivo evitar el coste de crear e inicializar controles de interfaz cada vez que sea
+# necesario trabajar con ellos. Sera especialmente util y necesario para representar bitmaps.
+#
+# Ver Util/UICPool
+###############################################################################################################
+
+  # Botones de texto por defecto para MsgBox
+  [
+   .CLAVE MB_DEFAULTTEXT_BTN
+   .INIT_POOL 4 .INC_POOL 1 .AUTO_INC_RELEASE FALSE
+   .TIPO UIC_BOTONTEXTO 
+   .PARAMS [ %Game/UI/Comun/UIDefs_CommonMsgBoxBtn.sb ]
+  ]  
+ 

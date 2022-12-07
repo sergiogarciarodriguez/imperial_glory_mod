@@ -1,0 +1,25 @@
+
+
+Piezas:
+
+Barra Anexion
+
+Base: Es la peana de la pieza
+BarradeCristal: Es un plano con alfa que simula el cristal
+Miliciano 1, 2 ,3 y 4: Son las piezas de soldados que deberan ir apareciendo ( en vista frontal de izquierda a derecha)
+Barra1: Es la barra exterior de color verde que indica cuanto se ha anexionado
+Barra2: Es la barra interior de color naranja que indica cuanto se anexionará en los próximos turnos.
+
+Las dos barras están al 100% de lo que pueden ocupar y con el pivote en la base
+
+
+Barra Asedio
+
+Base: Es la peana de la pieza
+BarradeCristal: Es un plano con alfa que simula el cristal
+Miliciano 1, 2 ,3 y 4: Son las piezas de soldados que deberan ir apareciendo( en vista frontal de izquierda a derecha)
+Barra1: Es la barra exterior de color Rojo que indica cuanto se ha anexionado
+Barra2: Es la barra interior de color naranja que indica cuanto se anexionará en los próximos turnos.
+
+
+Las dos barras están al 100% de lo que pueden ocupar y con el pivote en la base

@@ -1,0 +1,305 @@
+  
+  #===================================================================
+  # S_ACK_MOVER
+  #===================================================================
+  [ 
+
+
+
+
+
+    .IDNAME "S_ACK_MOVER_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/NavalCommander/NAV_start_unfurl.ogg" "Audio/Voices/Francia/NavalCommander/NAV_start_manposts.ogg"
+            "Audio/Voices/Francia/NavalCommander/NAV_start_allhands.ogg" "Audio/Voices/Francia/NavalCommander/NAV_start_setsail.ogg" 
+            "Audio/Voices/Francia/NavalCommander/NAV_start_makesail.ogg" "Audio/Voices/Francia/NavalCommander/NAV_start_hoistsail.ogg"
+            "Audio/Voices/Francia/NavalCommander/NAV_move_steadyas_01.ogg" "Audio/Voices/Francia/NavalCommander/NAV_move_steadyas_02.ogg"
+            "Audio/Voices/Francia/NavalCommander/NAV_move_steadyas_03.ogg" "Audio/Voices/Francia/NavalCommander/NAV_move_steady_01.ogg"
+            "Audio/Voices/Francia/NavalCommander/NAV_move_steady_02.ogg" "Audio/Voices/Francia/NavalCommander/NAV_move_setcourse_01.ogg"
+            "Audio/Voices/Francia/NavalCommander/NAV_move_setcourse_02.ogg" "Audio/Voices/Francia/NavalCommander/NAV_move_helmsmanset_01.ogg"
+            "Audio/Voices/Francia/NavalCommander/NAV_move_helmsmanset_02.ogg"  ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_MOVER_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/NavalCommander/NAV_start_unfurl.ogg" "Audio/Voices/Inglaterra/NavalCommander/NAV_start_manposts.ogg"
+            "Audio/Voices/Inglaterra/NavalCommander/NAV_start_allhands.ogg" "Audio/Voices/Inglaterra/NavalCommander/NAV_start_setsail.ogg" 
+            "Audio/Voices/Inglaterra/NavalCommander/NAV_start_makesail.ogg" "Audio/Voices/Inglaterra/NavalCommander/NAV_start_hoistsail.ogg"
+            "Audio/Voices/Inglaterra/NavalCommander/NAV_move_steadyas_01.ogg" "Audio/Voices/Inglaterra/NavalCommander/NAV_move_steadyas_02.ogg"
+            "Audio/Voices/Inglaterra/NavalCommander/NAV_move_steadyas_03.ogg" "Audio/Voices/Inglaterra/NavalCommander/NAV_move_steady_01.ogg"
+            "Audio/Voices/Inglaterra/NavalCommander/NAV_move_steady_02.ogg" "Audio/Voices/Inglaterra/NavalCommander/NAV_move_setcourse_01.ogg"
+            "Audio/Voices/Inglaterra/NavalCommander/NAV_move_setcourse_02.ogg" "Audio/Voices/Inglaterra/NavalCommander/NAV_move_helmsmanset_01.ogg"
+            "Audio/Voices/Inglaterra/NavalCommander/NAV_move_helmsmanset_02.ogg"  ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_MOVER_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/NavalCommander/NAV_start_unfurl.ogg" "Audio/Voices/Austria/NavalCommander/NAV_start_manposts.ogg"
+            "Audio/Voices/Austria/NavalCommander/NAV_start_allhands.ogg" "Audio/Voices/Austria/NavalCommander/NAV_start_setsail.ogg" 
+            "Audio/Voices/Austria/NavalCommander/NAV_start_makesail.ogg" "Audio/Voices/Austria/NavalCommander/NAV_start_hoistsail.ogg"
+            "Audio/Voices/Austria/NavalCommander/NAV_move_steadyas_01.ogg" "Audio/Voices/Austria/NavalCommander/NAV_move_steadyas_02.ogg"
+            "Audio/Voices/Austria/NavalCommander/NAV_move_steadyas_03.ogg" "Audio/Voices/Austria/NavalCommander/NAV_move_steady_01.ogg"
+            "Audio/Voices/Austria/NavalCommander/NAV_move_steady_02.ogg" "Audio/Voices/Austria/NavalCommander/NAV_move_setcourse_01.ogg"
+            "Audio/Voices/Austria/NavalCommander/NAV_move_setcourse_02.ogg" "Audio/Voices/Austria/NavalCommander/NAV_move_helmsmanset_01.ogg"
+            "Audio/Voices/Austria/NavalCommander/NAV_move_helmsmanset_02.ogg"  ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_MOVER_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/NavalCommander/NAV_start_unfurl.ogg" "Audio/Voices/Prusia/NavalCommander/NAV_start_manposts.ogg"
+            "Audio/Voices/Prusia/NavalCommander/NAV_start_allhands.ogg" "Audio/Voices/Prusia/NavalCommander/NAV_start_setsail.ogg" 
+            "Audio/Voices/Prusia/NavalCommander/NAV_start_makesail.ogg" "Audio/Voices/Prusia/NavalCommander/NAV_start_hoistsail.ogg"
+            "Audio/Voices/Prusia/NavalCommander/NAV_move_steadyas_01.ogg" "Audio/Voices/Prusia/NavalCommander/NAV_move_steadyas_02.ogg"
+            "Audio/Voices/Prusia/NavalCommander/NAV_move_steadyas_03.ogg" "Audio/Voices/Prusia/NavalCommander/NAV_move_steady_01.ogg"
+            "Audio/Voices/Prusia/NavalCommander/NAV_move_steady_02.ogg" "Audio/Voices/Prusia/NavalCommander/NAV_move_setcourse_01.ogg"
+            "Audio/Voices/Prusia/NavalCommander/NAV_move_setcourse_02.ogg" "Audio/Voices/Prusia/NavalCommander/NAV_move_helmsmanset_01.ogg"
+            "Audio/Voices/Prusia/NavalCommander/NAV_move_helmsmanset_02.ogg"  ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_MOVER_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/NavalCommander/NAV_start_unfurl.ogg" "Audio/Voices/Rusia/NavalCommander/NAV_start_manposts.ogg"
+            "Audio/Voices/Rusia/NavalCommander/NAV_start_allhands.ogg" "Audio/Voices/Rusia/NavalCommander/NAV_start_setsail.ogg" 
+            "Audio/Voices/Rusia/NavalCommander/NAV_start_makesail.ogg" "Audio/Voices/Rusia/NavalCommander/NAV_start_hoistsail.ogg"
+            "Audio/Voices/Rusia/NavalCommander/NAV_move_steadyas_01.ogg" "Audio/Voices/Rusia/NavalCommander/NAV_move_steadyas_02.ogg"
+            "Audio/Voices/Rusia/NavalCommander/NAV_move_steadyas_03.ogg" "Audio/Voices/Rusia/NavalCommander/NAV_move_steady_01.ogg"
+            "Audio/Voices/Rusia/NavalCommander/NAV_move_steady_02.ogg" "Audio/Voices/Rusia/NavalCommander/NAV_move_setcourse_01.ogg"
+            "Audio/Voices/Rusia/NavalCommander/NAV_move_setcourse_02.ogg" "Audio/Voices/Rusia/NavalCommander/NAV_move_helmsmanset_01.ogg"
+            "Audio/Voices/Rusia/NavalCommander/NAV_move_helmsmanset_02.ogg"  ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  
+  #===================================================================
+  # S_ACK_MOVER_FAST
+  #===================================================================
+  [ 
+    .IDNAME "S_ACK_MOVER_FAST_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/NavalCommander/NAV_fullspeed_fullsail_01.ogg" "Audio/Voices/Francia/NavalCommander/NAV_fullspeed_fullsail_02.ogg"
+            "Audio/Voices/Francia/NavalCommander/NAV_fullspeed_fullsail_03.ogg" "Audio/Voices/Francia/NavalCommander/NAV_fullspeed_fullspeed_01.ogg" 
+            "Audio/Voices/Francia/NavalCommander/NAV_fullspeed_fullspeed_02.ogg"  ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_MOVER_FAST_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/NavalCommander/NAV_fullspeed_fullsail_01.ogg" "Audio/Voices/Inglaterra/NavalCommander/NAV_fullspeed_fullsail_02.ogg"
+            "Audio/Voices/Inglaterra/NavalCommander/NAV_fullspeed_fullsail_03.ogg" "Audio/Voices/Inglaterra/NavalCommander/NAV_fullspeed_fullspeed_01.ogg" 
+            "Audio/Voices/Inglaterra/NavalCommander/NAV_fullspeed_fullspeed_02.ogg"  ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_MOVER_FAST_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/NavalCommander/NAV_fullspeed_fullsail_01.ogg" "Audio/Voices/Austria/NavalCommander/NAV_fullspeed_fullsail_02.ogg"
+            "Audio/Voices/Austria/NavalCommander/NAV_fullspeed_fullsail_03.ogg" "Audio/Voices/Austria/NavalCommander/NAV_fullspeed_fullspeed_01.ogg" 
+            "Audio/Voices/Austria/NavalCommander/NAV_fullspeed_fullspeed_02.ogg"  ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_MOVER_FAST_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/NavalCommander/NAV_fullspeed_fullsail_01.ogg" "Audio/Voices/Prusia/NavalCommander/NAV_fullspeed_fullsail_02.ogg"
+            "Audio/Voices/Prusia/NavalCommander/NAV_fullspeed_fullsail_03.ogg" "Audio/Voices/Prusia/NavalCommander/NAV_fullspeed_fullspeed_01.ogg" 
+            "Audio/Voices/Prusia/NavalCommander/NAV_fullspeed_fullspeed_02.ogg"  ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_MOVER_FAST_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/NavalCommander/NAV_fullspeed_fullsail_01.ogg" "Audio/Voices/Rusia/NavalCommander/NAV_fullspeed_fullsail_02.ogg"
+            "Audio/Voices/Rusia/NavalCommander/NAV_fullspeed_fullsail_03.ogg" "Audio/Voices/Rusia/NavalCommander/NAV_fullspeed_fullspeed_01.ogg" 
+            "Audio/Voices/Rusia/NavalCommander/NAV_fullspeed_fullspeed_02.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  
+  #===================================================================
+  # S_ACK_MOVER_SHARP_TURN_R
+  #===================================================================
+  [ 
+    .IDNAME "S_ACK_MOVER_SHARP_TURN_R_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/NavalCommander/NAV_sharpr_hardsb_01.ogg" "Audio/Voices/Francia/NavalCommander/NAV_sharpr_hardsb_02.ogg"
+            "Audio/Voices/Francia/NavalCommander/NAV_sharpr_helm_hardsb_01.ogg" "Audio/Voices/Francia/NavalCommander/NAV_sharpr_helm_hardsb_02.ogg"  ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_MOVER_SHARP_TURN_R_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/NavalCommander/NAV_sharpr_hardsb_01.ogg" "Audio/Voices/Inglaterra/NavalCommander/NAV_sharpr_hardsb_02.ogg"
+            "Audio/Voices/Inglaterra/NavalCommander/NAV_sharpr_helm_hardsb_01.ogg" "Audio/Voices/Inglaterra/NavalCommander/NAV_sharpr_helm_hardsb_02.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_MOVER_SHARP_TURN_R_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/NavalCommander/NAV_sharpr_hardsb_01.ogg" "Audio/Voices/Austria/NavalCommander/NAV_sharpr_hardsb_02.ogg"
+            "Audio/Voices/Austria/NavalCommander/NAV_sharpr_helm_hardsb_01.ogg" "Audio/Voices/Austria/NavalCommander/NAV_sharpr_helm_hardsb_02.ogg"  ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_MOVER_SHARP_TURN_R_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/NavalCommander/NAV_sharpr_hardsb_01.ogg" "Audio/Voices/Prusia/NavalCommander/NAV_sharpr_hardsb_02.ogg"
+            "Audio/Voices/Prusia/NavalCommander/NAV_sharpr_helm_hardsb_01.ogg" "Audio/Voices/Prusia/NavalCommander/NAV_sharpr_helm_hardsb_02.ogg"   ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_MOVER_SHARP_TURN_R_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/NavalCommander/NAV_sharpr_hardsb_01.ogg" "Audio/Voices/Rusia/NavalCommander/NAV_sharpr_hardsb_02.ogg"
+            "Audio/Voices/Rusia/NavalCommander/NAV_sharpr_helm_hardsb_01.ogg" "Audio/Voices/Rusia/NavalCommander/NAV_sharpr_helm_hardsb_02.ogg"  ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  
+  #===================================================================
+  # S_ACK_MOVER_SHARP_TURN_L
+  #===================================================================
+  [ 
+    .IDNAME "S_ACK_MOVER_SHARP_TURN_L_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/NavalCommander/NAV_sharpl_hardp_01.ogg" "Audio/Voices/Francia/NavalCommander/NAV_sharpl_hardp_02.ogg"
+            "Audio/Voices/Francia/NavalCommander/NAV_sharpl_helm_hardp_01.ogg" "Audio/Voices/Francia/NavalCommander/NAV_sharpl_helm_hardp_02.ogg"  ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_MOVER_SHARP_TURN_L_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/NavalCommander/NAV_sharpl_hardp_01.ogg" "Audio/Voices/Inglaterra/NavalCommander/NAV_sharpl_hardp_02.ogg"
+            "Audio/Voices/Inglaterra/NavalCommander/NAV_sharpl_helm_hardp_01.ogg" "Audio/Voices/Inglaterra/NavalCommander/NAV_sharpl_helm_hardp_02.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         10000
+  ]
+  [ 
+    .IDNAME "S_ACK_MOVER_SHARP_TURN_L_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/NavalCommander/NAV_sharpl_hardp_01.ogg" "Audio/Voices/Austria/NavalCommander/NAV_sharpl_hardp_02.ogg"
+            "Audio/Voices/Austria/NavalCommander/NAV_sharpl_helm_hardp_01.ogg" "Audio/Voices/Austria/NavalCommander/NAV_sharpl_helm_hardp_02.ogg"  ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_MOVER_SHARP_TURN_L_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/NavalCommander/NAV_sharpl_hardp_01.ogg" "Audio/Voices/Prusia/NavalCommander/NAV_sharpl_hardp_02.ogg"
+            "Audio/Voices/Prusia/NavalCommander/NAV_sharpl_helm_hardp_01.ogg" "Audio/Voices/Prusia/NavalCommander/NAV_sharpl_helm_hardp_02.ogg"   ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_MOVER_SHARP_TURN_L_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/NavalCommander/NAV_sharpl_hardp_01.ogg" "Audio/Voices/Rusia/NavalCommander/NAV_sharpl_hardp_02.ogg"
+            "Audio/Voices/Rusia/NavalCommander/NAV_sharpl_helm_hardp_01.ogg" "Audio/Voices/Rusia/NavalCommander/NAV_sharpl_helm_hardp_02.ogg"  ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+
+
+  #===================================================================
+  # S_ACK_TIRAR_ANCLA
+  #===================================================================
+  [ 
+    .IDNAME "S_ACK_TIRAR_ANCLA_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/NavalCommander/NAV_anchor_drop_01.ogg" "Audio/Voices/Francia/NavalCommander/NAV_anchor_furlsails.ogg"
+            "Audio/Voices/Francia/NavalCommander/NAV_anchor_drop_02.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_TIRAR_ANCLA_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/NavalCommander/NAV_anchor_drop_01.ogg" "Audio/Voices/Inglaterra/NavalCommander/NAV_anchor_furlsails.ogg"
+            "Audio/Voices/Inglaterra/NavalCommander/NAV_anchor_drop_02.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_TIRAR_ANCLA_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/NavalCommander/NAV_anchor_drop_01.ogg" "Audio/Voices/Austria/NavalCommander/NAV_anchor_furlsails.ogg"
+            "Audio/Voices/Austria/NavalCommander/NAV_anchor_drop_02.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_TIRAR_ANCLA_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/NavalCommander/NAV_anchor_drop_01.ogg" "Audio/Voices/Prusia/NavalCommander/NAV_anchor_furlsails.ogg"
+            "Audio/Voices/Prusia/NavalCommander/NAV_anchor_drop_02.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_TIRAR_ANCLA_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/NavalCommander/NAV_anchor_drop_01.ogg" "Audio/Voices/Rusia/NavalCommander/NAV_anchor_furlsails.ogg"
+            "Audio/Voices/Rusia/NavalCommander/NAV_anchor_drop_02.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+
+  #===================================================================
+  # S_ACK_RECOGER_ANCLA
+  #===================================================================
+  [ 
+    .IDNAME "S_ACK_RECOGER_ANCLA_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/NavalCommander/NAV_start_unfurl.ogg" "Audio/Voices/Francia/NavalCommander/NAV_start_manposts.ogg"
+            "Audio/Voices/Francia/NavalCommander/NAV_start_setsail.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_RECOGER_ANCLA_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/NavalCommander/NAV_start_unfurl.ogg" "Audio/Voices/Inglaterra/NavalCommander/NAV_start_manposts.ogg"
+            "Audio/Voices/Inglaterra/NavalCommander/NAV_start_setsail.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_RECOGER_ANCLA_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/NavalCommander/NAV_start_unfurl.ogg" "Audio/Voices/Austria/NavalCommander/NAV_start_manposts.ogg"
+            "Audio/Voices/Austria/NavalCommander/NAV_start_setsail.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_RECOGER_ANCLA_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/NavalCommander/NAV_start_unfurl.ogg" "Audio/Voices/Prusia/NavalCommander/NAV_start_manposts.ogg"
+            "Audio/Voices/Prusia/NavalCommander/NAV_start_setsail.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  [ 
+    .IDNAME "S_ACK_RECOGER_ANCLA_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/NavalCommander/NAV_start_unfurl.ogg" "Audio/Voices/Rusia/NavalCommander/NAV_start_manposts.ogg"
+            "Audio/Voices/Rusia/NavalCommander/NAV_start_setsail.ogg" ]
+    .TYPE ACK .3D TRUE .GENERIC TRUE .POLYPHONY 1 .TRANSPOSE 5
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]

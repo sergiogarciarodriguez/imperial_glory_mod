@@ -1,0 +1,8 @@
+#=======================================================================================
+# Definición de sonidos para el modelo de gestión
+#=======================================================================================
+
+.FILES
+[
+  [ .PATH "Game/GameModes/Gestion/AudioScripts/AudioGestion.sb" ]
+]

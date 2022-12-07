@@ -1,0 +1,52 @@
+.VT_GRANDE [ %Game/UI/Comun/VentanasTutorial/VentanaGrande.sb ]
+
+.VT_ALARGADA [ %Game/UI/Comun/VentanasTutorial/VentanaAlargada.sb ]
+
+.VT_NORMAL [ %Game/UI/Comun/VentanasTutorial/VentanaNormal.sb ]
+
+##################################################################
+# MARCAS GRAFICAS
+#
+# Por ahora solo pueden ser del tipo VIDEO
+
+.MARCA_CIRCULO
+[
+    .TIPO VIDEO
+    .PARAMS 
+    [ 
+      .FILE "Videos/BMarca256-.bik" 
+      .X 0 .Y 0 .SX 256 .SY 256
+      .LOOP TRUE .ALPHA TRUE .PRIORITY 250
+    ]
+]
+
+.MARCA_AMARILLA
+[
+    .TIPO VIDEO
+    .PARAMS 
+    [ 
+      .FILE "Videos/AMarca256-.bik" 
+      .X 0 .Y 0 .SX 256 .SY 256
+      .LOOP FALSE .ALPHA TRUE .PRIORITY 250
+    ]
+]
+
+.MARCA_FLECHA3DROJA
+[
+    .TIPO BITMAP3D
+    .PARAMS 
+    [ 
+      .FILE "Game/UI/Comun/FlechaRoja.tga"
+      .SX 256 .SY 256 .ALPHA TRUE
+    ]
+]
+
+.MARCA_FLECHA3DAMARILLA
+[
+    .TIPO BITMAP3D
+    .PARAMS 
+    [ 
+      .FILE "Game/UI/Comun/FlechaamArilla.tga"
+      .SX 256 .SY 256 .ALPHA TRUE
+    ]
+]

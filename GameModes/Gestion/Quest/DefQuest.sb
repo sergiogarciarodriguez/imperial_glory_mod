@@ -1,0 +1,356 @@
+##########################################################################################################
+# Este archivo recoge la definicion de todos los quest existentes en el juego.
+# Todo Quest tiene tres campos fundamentales que lo define:
+# - Los turnos que tarda en activarse.
+# - Los requisitos que tiene.
+# - Las recompensas que ofrece.
+#
+# Para especificar cada uno de los campos se contara con el siguiente esquema:
+#
+# .ETIQUETA_QUEST
+# [
+#   #SI NO SE PONEN SE MOSTRARAN LOS MENSAJES POR DEFECTO
+#   .MENSAJE_COBRO     [ .TEXTO "" .NUMERO_PARAMETROS  ] # UN PARAMETRO POR CADA %s DE LA CADENA
+#   .MENSAJE_FIN_COBRO "" # SOLO SE MOSTRARA EN LOS QUEST QUE TENGAN DURACION, AL TERMINAR ESTA
+#
+#   .TURNOS
+#
+#   .REQUISITOS
+#   [
+#     .RIQUEZA   		    [ .DINERO .MAT_PRIMAS .POBLACION .COMIDA ]
+#     .EDIFICIOS 		    [ (ver carpeta svcDefs de la consola) ]
+#     .BATALLONES		    [ .TIPO_1 cantidad ... .TIPO_n cantidad (para tipos ver carpeta svcDefs en consola) ] 
+#     .BARCOS    	      [ .TIPO_1 cantidad ... .TIPO_n cantidad (para tipos ver carpeta svcDefs en consola) ] 
+#     .RUTAS_TERRESTRES [ .CANTIDAD .ENLACES [ (para enlaces poner etiquetas de capitales)] ]
+#     .RUTAS_MARITIMAS  [ .CANTIDAD .ENLACES [ (para enlaces poner etiquetas de puertos)] ]
+#   ]
+#
+#   .RECOMPENSAS
+#   [
+#     .RIQUEZA   		         [ .DINERO .MAT_PRIMAS .POBLACION .COMIDA ]
+#     .INCREMENTO_PRODUCCION [ .TURNOS .SUMA_SIMPATIA .MULTIPLICADOR_CIENCIA .MULTIPLICADOR_DINERO .MULTIPLICADOR_COMIDA 
+#                               .MULTIPLICADOR_POBLACION .MULTIPLICADOR_MAT_PRIMAS .MULTIPLICADOR_ATAQUE ]
+#     .CONSUMO_COMIDA_TROPAS [ .TURNOS .PORCENTAJE ]
+#     .EJERCITOS             [ [ .MANDO .EFECTIVOS [ ] ] ... [ .MANDO .EFECTIVOS [ ] ] ]
+#     .FLOTAS                [ [ .EFECTIVOS [ ] ] ... [ .EFECTIVOS [ ] ] ]
+#     .FLAGS_ACCIONES        [ .INFLUENCIA_MARITIMA_GLOBAL .PAZ_UNIVERSAL .ANEXION_PAIS .LIBERACION_PAIS_ANEXIONADO 
+#                              .INFLUENCIA_GLOBAL .CREAR_EN_CADA_PUERTO .BLOQUEO_IMPERIO_MAS_HOSTIL 
+#                              .DESCUBRIR_CIENCIA_INMEDIATAMENTE .TURNOS ]
+#     .EDIFICIOS 		         [ (ver carpeta svcDefs de la consola) ]
+#     .CONVERSION_EFECTIVOS  [ [ .ORIGEN .DESTINO ] ... [ .ORIGEN .DESTINO ] ]
+#   ]
+#
+# Notas:
+# - Un turno de 0 indicara que el quest se activa de inmediato
+# - Los campos de REQUISITOS y RECOMPENSAS son obligatorios pero luego sus componentes no por lo que se podra
+#   decidir el punto hasta el que son deseados
+# - Los edificos de las recompensas se construyen en todas las provincias donde sea posible y creando los edificios que requieran para construirse
+# - En CONSUMO_COMIDA_TROPAS el porcentaje se le aplica al consumo de comida de las tropas del jugador, 0 es que no consumen comida durante los turnos que dure
+# - En INCREMENTO_PRODUCCION la SUMA_SIMPATIA son puntos que se restan a la hostilidad por cada turno
+#     y MULTIPLICADOR_ATAQUE es en porcentaje por el que se multiplica el ataque de la tropas durante los turnos
+# - En FLAGS_ACCIONES el CREAR_EN_CADA_PUERTO recibe como argumento un tipo de barco y lo crea en cada puerto que pueda desacuartelado
+# - CONVERSION_EFECTIVOS convierte cada ORIGEN en su DESTINO correspondiente, !! SOLO TROPAS TERRESTRES ¡¡
+# - DESCUBRIR_CIENCIA_INMEDIATAMENTE hace que la tecnologia que se este investigando sea descubierta al turno siguiente durante los turnos que se pongan
+##########################################################################################################
+
+##########################################################################################################
+.PIEDRA_ROSETA
+[
+ .TURNOS 0 #5
+ 
+ .REQUISITOS
+ [
+  .BATALLONES [ .TIRADOR 3 ]
+  .BARCOS     [ .CORBETA 2 ]
+  .RUTAS_MARITIMAS  [ .ENLACES [ PUE_EGIPTO ] ]
+ ]
+ 
+ .RECOMPENSAS
+ [
+  .INCREMENTO_PRODUCCION [ .TURNOS 12 .MULTIPLICADOR_CIENCIA 3 ]  
+ ]
+]
+
+
+##########################################################################################################
+.FERROCARRIL
+[
+ .TURNOS 0 #5
+
+ .MENSAJE_COBRO     [ .TEXTO "LTEXT_QUEST_COBRO_FERROCARRIL" .NUMERO_PARAMETROS 1 ]
+ 
+ .REQUISITOS
+ [
+  .RIQUEZAS         [ .MAT_PRIMAS 2500 .POBLACION 1500]
+ ]
+ 
+ .RECOMPENSAS
+ [
+  .EDIFICIOS        [ ASERRADERO ]
+ ]
+]
+
+##########################################################################################################
+.REVOLUCION_AGRARIA
+[
+ .TURNOS 0 #5
+ 
+ .REQUISITOS
+ [
+  .RUTAS_TERRESTRES [ .CANTIDAD 3 ]
+ ]
+ 
+ .RECOMPENSAS
+ [
+  .CONSUMO_COMIDA_TROPAS [ .TURNOS 12 .PORCENTAJE 0 ] 
+ ]
+]
+
+##########################################################################################################
+.REVOLUCION_MEDICA
+[
+ .TURNOS 0 #5
+
+ .MENSAJE_COBRO     [ .TEXTO "LTEXT_QUEST_COBRO_REVMEDICA" .NUMERO_PARAMETROS 1 ]
+ 
+ .REQUISITOS
+ [
+  .RIQUEZAS         [ .POBLACION 2500 ]
+ ]
+ 
+ .RECOMPENSAS
+ [
+  .EDIFICIOS        [ HOSPITAL_LOCAL ]
+ ] 
+]
+
+##########################################################################################################
+.EXPOSICION_UNIVERSAL
+[
+ .TURNOS 0 #5
+ 
+ .REQUISITOS
+ [  
+  .RIQUEZAS         [ .DINERO 5000 .POBLACION 3000 ]  
+  .RUTAS_MARITIMAS  [ .CANTIDAD 5 ]
+ ]
+ 
+ .RECOMPENSAS
+ [
+  #NOTA: LOS TURNOS DE SUMA DE SIMPATIA TIENEN QUE SER UNO MAS DE LOS QUE SE QUIERA
+  # POR QUE EL TURNO EN EL QUE SE COBRA EL QUEST SE CUENTA PERO NO SE SUMA LA SIMPATIA
+  # SUMA_SIMPATIA tiene que ser un numero flotante, o lo que es lo mismo, siempre tiene que tener decimales (para 1 seria 1.0)
+  .INCREMENTO_PRODUCCION [ .TURNOS 13 .SUMA_SIMPATIA 1.5 ]
+ ]
+]
+
+##########################################################################################################
+.SENYOR_MARES
+[
+ .TURNOS 0 #5
+
+ .MENSAJE_COBRO   [ .TEXTO "LTEXT_QUEST_COBRO_SENYORMARES" .NUMERO_PARAMETROS 1 ]
+ 
+ .REQUISITOS
+ [
+  .RIQUEZAS       [ .DINERO 4000 .MAT_PRIMAS 4500 .POBLACION 2500 ]
+  .EDIFICIOS	  [ EMBARCADERO ]
+ ]
+ 
+ .RECOMPENSAS
+ [
+  .EDIFICIOS      [ PUERTO_MILITAR ]
+  .FLAGS_ACCIONES [ .CREAR_EN_CADA_PUERTO CORBETA ]
+ ] 
+]
+
+##########################################################################################################
+.BLOQUEO_CONTINENTAL
+[
+ .TURNOS 0 #5
+
+ .MENSAJE_COBRO   [ .TEXTO "LTEXT_QUEST_COBRO_BLOQUEO" .NUMERO_PARAMETROS 1 ]
+ 
+ .REQUISITOS
+ [
+  .RIQUEZAS         [ .DINERO 5000 .MAT_PRIMAS 7000 .POBLACION 4000 ]
+  .RUTAS_TERRESTRES [ .CANTIDAD 10 ]  
+ ]
+ 
+ .RECOMPENSAS
+ [
+  .FLAGS_ACCIONES [ .BLOQUEO_IMPERIO_MAS_HOSTIL TRUE .TURNOS 12 ] 
+ ] 
+]
+
+##########################################################################################################
+.SIMON_BOLIVAR
+[
+ .TURNOS 0 #5
+ 
+ .REQUISITOS
+ [
+  .RIQUEZAS  [ .DINERO 10000 .POBLACION 5000 ] 
+  .EDIFICIOS [ CUARTEL_AVANZADO ] 
+ ]
+ 
+ .RECOMPENSAS
+ [
+  .CONVERSION_EFECTIVOS  [ [ .ORIGEN TIRADOR .DESTINO CAZADOR ] [ .ORIGEN FUSILERO .DESTINO GRANADERO ] ]
+ ]
+]
+
+##########################################################################################################
+.SISTEMA_METRICO
+[
+ .TURNOS 0 #5
+ 
+ .REQUISITOS
+ [
+  .RIQUEZAS         [ .DINERO 6000 ] 
+  .RUTAS_TERRESTRES [ .ENLACES [ CAP_ANATOLIA CAP_SUECIA ] ]
+  .RUTAS_MARITIMAS  [ .ENLACES [ PUE_VENECIA PUE_TRIPOLITANIA ] ]
+ ]
+ 
+ .RECOMPENSAS
+ [
+  # NOTA: UN TURNO MAS POR QUE EL ULTIMO NO SE APLICA LA ACCION
+  .FLAGS_ACCIONES   [ .DESCUBRIR_CIENCIA_INMEDIATAMENTE TRUE .TURNOS 3 ]
+ ]
+]
+
+##########################################################################################################
+.PAZ_AMIENS
+[
+ .TURNOS 0 #5
+ 
+ .MENSAJE_COBRO   [ .TEXTO "LTEXT_QUEST_COBRO_PAZAMIENS" .NUMERO_PARAMETROS 1 ]
+ 
+ .REQUISITOS
+ [
+  .RIQUEZAS  [ .DINERO 8000 .POBLACION 3000 ]
+  .RUTAS_TERRESTRES [ .CANTIDAD 5 ]
+ ]
+
+ .RECOMPENSAS
+ [
+  .EDIFICIOS      [ CUARTEL_AVANZADO ] 
+ ]
+]
+
+##########################################################################################################
+.CARTOGRAFIA
+[
+ .TURNOS 0 #5
+ 
+ .REQUISITOS
+ [
+  .RUTAS_TERRESTRES [ .CANTIDAD 10 ]
+  .RUTAS_MARITIMAS  [ .CANTIDAD 5 ]
+ ]
+ 
+ .RECOMPENSAS
+ [
+  .FLAGS_ACCIONES [ .INFLUENCIA_GLOBAL TRUE ]
+ ]
+]
+
+##########################################################################################################
+.ENCICLOPEDIA
+[
+ .TURNOS 0 #5
+ 
+ .REQUISITOS
+ [
+  .RIQUEZAS         [ .DINERO 5000 ]
+  .RUTAS_TERRESTRES [ .ENLACES [ CAP_CASTILLA CAP_E_PAPALES ] ]
+  .RUTAS_MARITIMAS  [ .ENLACES [ PUE_EGIPTO PUE_GRECIA ] ]
+ ]
+
+ .RECOMPENSAS
+ [
+  .INCREMENTO_PRODUCCION [ .TURNOS 24 .MULTIPLICADOR_CIENCIA 3 ]
+ ]
+]
+
+##########################################################################################################
+.DECLARACION_DERECHOS_HUMANOS
+[
+ .TURNOS 0
+ 
+ .MENSAJE_COBRO     [ .TEXTO "LTEXT_QUEST_COBRO_DECDERHUMANOS" .NUMERO_PARAMETROS 1 ] 
+ 
+ .REQUISITOS
+ [
+  .RIQUEZAS  [ .DINERO 12000 .POBLACION 4000 ]
+  .EDIFICIOS [ UNIVERSIDAD ]
+ ]
+ 
+ .RECOMPENSAS
+ [
+  .FLAGS_ACCIONES [ .LIBERACION_PAIS_ANEXIONADO TRUE ]
+  #AL ESTAR EL FLAG DE LIBERACION_PAIS_ANEXIONADO LOS EJERCITOS SE LE CONCEDEN A LOS PAISES LIBERADOS
+  .EJERCITOS 
+  [  
+    [ .MANDO MARISCAL .EFECTIVOS [ FUSILERO FUSILERO FUSILERO FUSILERO CAB_LANCERO CAB_LANCERO ] ]  
+  ]  
+    
+ ]
+]
+
+##########################################################################################################
+.100.000_HIJOS
+[
+ .TURNOS 0
+ 
+ .REQUISITOS
+ [
+  .RIQUEZAS  [ .DINERO 21000 .POBLACION 8500 ]
+ ]
+ 
+ .RECOMPENSAS
+ [
+  .EJERCITOS 
+  [ 
+   [ .MANDO MARISCAL .EFECTIVOS [ CAB_DRAGON CAB_LANCERO CAZADOR GRANADERO TIRADOR ELITE ] ]
+   [ .MANDO MARISCAL .EFECTIVOS [ CAB_DRAGON CAB_HUSAR CAZADOR GRANADERO FUSILERO ELITE ] ]
+  ]
+ ]
+]
+
+##########################################################################################################
+.PROCLAMARSE_EMPERADOR
+[
+ .TURNOS 0
+ 
+ .REQUISITOS
+ [
+  .RIQUEZAS  [ .DINERO 19000 .POBLACION 3500 ]
+  .EDIFICIOS [ CASA_ALISTAMIENTO ]
+ ]
+ 
+ .RECOMPENSAS
+ [
+  # SI EL MULTIPLICADOR ES 100 NO MODIFICA (150 es un 50% mas)
+  .INCREMENTO_PRODUCCION [ .TURNOS 6 .MULTIPLICADOR_ATAQUE 150 ]
+ ]
+]
+
+##########################################################################################################
+.CONSTITUCION
+[
+ .TURNOS 0
+ 
+ .MENSAJE_COBRO     [ .TEXTO "LTEXT_QUEST_COBRO_CONSTITUCION" .NUMERO_PARAMETROS 1 ] 
+ 
+ .REQUISITOS
+ [
+  .RIQUEZAS  [ .DINERO 18000 .POBLACION 3000 ]
+  .EDIFICIOS [ CENTRAL_INTELIGENCIA ] 
+ ]
+ 
+ .RECOMPENSAS
+ [
+  .FLAGS_ACCIONES [ .ANEXION_PAIS TRUE ]
+ ]
+]

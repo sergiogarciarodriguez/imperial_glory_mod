@@ -1,0 +1,14 @@
+#=======================================================================================
+# Definición de sonidos para el modelo de batalla
+#=======================================================================================
+
+.FILES
+[
+  [ .PATH "Game/GameModes/NavalBattleMode/Audio/AudioShips.sb" ]
+  [ .PATH "Game/GameModes/NavalBattleMode/Audio/AudioCombat.sb" ]
+  [ .PATH "Game/GameModes/NavalBattleMode/Audio/AudioOrders.sb" ]
+  [ .PATH "Game/GameModes/NavalBattleMode/Audio/AudioEnvironment.sb" ]
+  [ .PATH "Game/GameModes/NavalBattleMode/Audio/AudioUI.sb" ]
+  [ .PATH "Game/GameModes/NavalBattleMode/Audio/AudioMusic.sb" ]
+  [ .PATH "Game/GameModes/NavalBattleMode/Audio/AudioNarrator.sb" ]
+]

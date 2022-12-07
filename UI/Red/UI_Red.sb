@@ -1,0 +1,10 @@
+# Net game UI defs
+[
+  .NAME UI_RED_MAIN
+  .PROC UI_GENERICO
+  .PARAMS
+  [
+    [ .TIPO UIC_BITMAP     .ID 'FOND' .PARAMS [ .FILE "Game/UI/Start/FondoMainMenu.tga" .X 0 .Y 0 .SX 1024 .SY 768 ] ]
+    [ .TIPO UIC_TECLA      .ID 'KESC' .PARAMS [ .TECLA KEY_ESCAPE .MKEYS [ ] .EVENTOS [ KEY_DOWN ] ] ]
+  ]
+]

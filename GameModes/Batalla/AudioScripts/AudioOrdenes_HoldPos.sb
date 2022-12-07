@@ -1,0 +1,103 @@
+  
+  
+  #===============================================================================
+  # S_HOLD_POSITION_INF
+  #===============================================================================
+  [ 
+    .IDNAME "S_HOLD_POSITION_INF_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/InfantryCommander/Inf_hold_holdposition.ogg" "Audio/Voices/Francia/InfantryCommander/Inf_hold_holdground.ogg"  
+            "Audio/Voices/Francia/InfantryCommander/Inf_hold_steady.ogg" "Audio/Voices/Francia/InfantryCommander/Inf_hold_holdyourposition.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_HOLD_POSITION_INF_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/InfantryCommander/Inf_hold_holdposition.ogg" "Audio/Voices/Inglaterra/InfantryCommander/Inf_hold_holdground.ogg"  
+            "Audio/Voices/Inglaterra/InfantryCommander/Inf_hold_steady.ogg" "Audio/Voices/Inglaterra/InfantryCommander/Inf_hold_holdyourposition.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_HOLD_POSITION_INF_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/InfantryCommander/Inf_hold_holdposition.ogg" "Audio/Voices/Austria/InfantryCommander/Inf_hold_holdground.ogg"  
+            "Audio/Voices/Austria/InfantryCommander/Inf_hold_steady.ogg" "Audio/Voices/Austria/InfantryCommander/Inf_hold_holdyourposition.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_HOLD_POSITION_INF_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/InfantryCommander/Inf_hold_holdposition.ogg" "Audio/Voices/Prusia/InfantryCommander/Inf_hold_holdground.ogg"  
+            "Audio/Voices/Prusia/InfantryCommander/Inf_hold_steady.ogg" "Audio/Voices/Prusia/InfantryCommander/Inf_hold_holdyourposition.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_HOLD_POSITION_INF_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/InfantryCommander/Inf_hold_holdposition.ogg" "Audio/Voices/Rusia/InfantryCommander/Inf_hold_holdground.ogg"  
+            "Audio/Voices/Rusia/InfantryCommander/Inf_hold_steady.ogg" "Audio/Voices/Rusia/InfantryCommander/Inf_hold_holdyourposition.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_HOLD_POSITION_CAB
+  #===============================================================================
+  [ 
+    .IDNAME "S_HOLD_POSITION_CAB_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/CavalryCommander/Cav_hold_holdposition.ogg" "Audio/Voices/Francia/CavalryCommander/Cav_hold_steady.ogg"  
+            "Audio/Voices/Francia/CavalryCommander/Cav_hold_holdground.ogg" "Audio/Voices/Francia/CavalryCommander/Cav_hold_holdyourposition.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_HOLD_POSITION_CAB_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/CavalryCommander/Cav_hold_holdposition.ogg" "Audio/Voices/Inglaterra/CavalryCommander/Cav_hold_steady.ogg"  
+            "Audio/Voices/Inglaterra/CavalryCommander/Cav_hold_holdground.ogg" "Audio/Voices/Inglaterra/CavalryCommander/Cav_hold_holdyourposition.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_HOLD_POSITION_CAB_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/CavalryCommander/Cav_hold_holdposition.ogg" "Audio/Voices/Austria/CavalryCommander/Cav_hold_steady.ogg"  
+            "Audio/Voices/Austria/CavalryCommander/Cav_hold_holdground.ogg" "Audio/Voices/Austria/CavalryCommander/Cav_hold_holdyourposition.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_HOLD_POSITION_CAB_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/CavalryCommander/Cav_hold_holdposition.ogg" "Audio/Voices/Prusia/CavalryCommander/Cav_hold_steady.ogg"  
+            "Audio/Voices/Prusia/CavalryCommander/Cav_hold_holdground.ogg" "Audio/Voices/Prusia/CavalryCommander/Cav_hold_holdyourposition.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_HOLD_POSITION_CAB_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/CavalryCommander/Cav_hold_holdposition.ogg" "Audio/Voices/Rusia/CavalryCommander/Cav_hold_steady.ogg"  
+            "Audio/Voices/Rusia/CavalryCommander/Cav_hold_holdground.ogg" "Audio/Voices/Rusia/CavalryCommander/Cav_hold_holdyourposition.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_HOLD_POSITION_ART
+  #===============================================================================
+  [ 
+    .IDNAME "S_HOLD_POSITION_ART_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/ArtilleryCommander/Art_hold_holdposition.ogg" "Audio/Voices/Francia/ArtilleryCommander/Art_hold_holdground.ogg"  
+            "Audio/Voices/Francia/ArtilleryCommander/Art_hold_steady.ogg" "Audio/Voices/Francia/ArtilleryCommander/Art_hold_holdyourposition.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_HOLD_POSITION_ART_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/ArtilleryCommander/Art_hold_holdposition.ogg" "Audio/Voices/Inglaterra/ArtilleryCommander/Art_hold_holdground.ogg"  
+            "Audio/Voices/Inglaterra/ArtilleryCommander/Art_hold_steady.ogg" "Audio/Voices/Inglaterra/ArtilleryCommander/Art_hold_holdyourposition.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_HOLD_POSITION_ART_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/ArtilleryCommander/Art_hold_holdposition.ogg" "Audio/Voices/Austria/ArtilleryCommander/Art_hold_holdground.ogg"  
+            "Audio/Voices/Austria/ArtilleryCommander/Art_hold_steady.ogg" "Audio/Voices/Austria/ArtilleryCommander/Art_hold_holdyourposition.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_HOLD_POSITION_ART_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/ArtilleryCommander/Art_hold_holdposition.ogg" "Audio/Voices/Prusia/ArtilleryCommander/Art_hold_holdground.ogg"  
+            "Audio/Voices/Prusia/ArtilleryCommander/Art_hold_steady.ogg" "Audio/Voices/Prusia/ArtilleryCommander/Art_hold_holdyourposition.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_HOLD_POSITION_ART_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/ArtilleryCommander/Art_hold_holdposition.ogg" "Audio/Voices/Rusia/ArtilleryCommander/Art_hold_holdground.ogg"  
+            "Audio/Voices/Rusia/ArtilleryCommander/Art_hold_steady.ogg" "Audio/Voices/Rusia/ArtilleryCommander/Art_hold_holdyourposition.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]

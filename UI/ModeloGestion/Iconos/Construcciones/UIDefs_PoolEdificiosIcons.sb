@@ -1,0 +1,1184 @@
+###############################################################################################################
+# Mantiene las entradas en el svcUICPool para los iconos de los edificios con imagenes normales.
+###############################################################################################################
+
+[
+ .KEY DEFAULT_CONSTRUCCION_IMG_NORMAL
+ .PARAMS [ .U 1 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY DEFAULT_CONSTRUCCION_IMG_NORMAL
+ .PARAMS [ .U 89 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY DEFAULT_CONSTRUCCION_IMG_NORMAL
+ .PARAMS [ .U 177 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+######### FILA 1 ###
+
+[
+ .KEY ALMACENES_OCULTOS_IMG_NORMAL
+ .PARAMS [ .U 177 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY BAZAR_IMG_NORMAL
+ .PARAMS [ .U 1 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ALMACEN_VIVERES_IMG_NORMAL
+ .PARAMS [ .U 89 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ASERRADERO_IMG_NORMAL
+ .PARAMS [ .U 177 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY REGADIOS_IMG_NORMAL
+ .PARAMS [ .U 265 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINAS_PROFUNDIDAD_IMG_NORMAL
+ .PARAMS [ .U 353 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_AGRICULTURA_IMG_NORMAL
+ .PARAMS [ .U 441 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY EMBAJADA_COMERCIAL_IMG_NORMAL
+ .PARAMS [ .U 793 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CASA_ALISTAMIENTO_IMG_NORMAL
+ .PARAMS [ .U 529 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ALTOS_HORNOS_IMG_NORMAL
+ .PARAMS [ .U 617 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY BANCO_IMG_NORMAL
+ .PARAMS [ .U 705 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ENSENADAS_OCULTAS_IMG_NORMAL
+ .PARAMS [ .U 1 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY DPTO_COMERCIAL_IMG_NORMAL
+ .PARAMS [ .U 1 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY OFICINA_COMERCIAL_IMG_NORMAL
+ .PARAMS [ .U 881 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+######### FILA 2 ###
+
+[
+ .KEY RED_COMERCIAL_IMG_NORMAL
+ .PARAMS [ .U 1 .V 104 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY EDIFICIO_BOLSA_IMG_NORMAL
+ .PARAMS [ .U 89 .V 104 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY SENADO_IMG_NORMAL
+ .PARAMS [ .U 441 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ARCO_TRIUNFO_IMG_NORMAL
+ .PARAMS [ .U 617 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTATUA_REPUBLICA_IMG_NORMAL
+ .PARAMS [ .U 705 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY PARLAMENTO_IMG_NORMAL
+ .PARAMS [ .U 881 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY PALACIO_IMG_NORMAL
+ .PARAMS [ .U 529 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTATUA_ECUESTRE_IMG_NORMAL
+ .PARAMS [ .U 793 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY BANCO_IMG_NORMAL
+ .PARAMS [ .U 705 .V 104 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY COMISARIA_IMG_NORMAL
+ .PARAMS [ .U 793 .V 104 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CONSULADO_IMG_NORMAL
+ .PARAMS [ .U 881 .V 104 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+######### FILA 3 ###
+
+[
+ .KEY PERIODICO_IMG_NORMAL
+ .PARAMS [ .U 1 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CTO_CULTURAL_IMG_NORMAL
+ .PARAMS [ .U 89 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY BOLETIN_ARMADA_IMG_NORMAL
+ .PARAMS [ .U 177 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY INFRAESTRUCTURAS_IMG_NORMAL
+ .PARAMS [ .U 265 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CELULA_RESISTENCIA_IMG_NORMAL
+ .PARAMS [ .U 353 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY FABRICA_UNIFORMES_IMG_NORMAL
+ .PARAMS [ .U 441 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESCUELA_ARMADA_IMG_NORMAL
+ .PARAMS [ .U 529 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY HOSPITAL_CAMPANA_IMG_NORMAL
+ .PARAMS [ .U 617 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY HOSPITAL_LOCAL_IMG_NORMAL
+ .PARAMS [ .U 705 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY HOSPITAL_MODERNO_IMG_NORMAL
+ .PARAMS [ .U 793 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY OFICINA_RECAUDACION_IMG_NORMAL
+ .PARAMS [ .U 881 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+######### FILA 4 ###
+
+[
+ .KEY DPTO_TESORO_IMG_NORMAL
+ .PARAMS [ .U 1 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_HACIENDA_IMG_NORMAL
+ .PARAMS [ .U 89 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESCUELA_BASICA_IMG_NORMAL
+ .PARAMS [ .U 177 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY LICEO_IMG_NORMAL
+ .PARAMS [ .U 265 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY UNIVERSIDAD_IMG_NORMAL
+ .PARAMS [ .U 353 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY DARSENA_MERCANTIL_IMG_NORMAL
+ .PARAMS [ .U 441 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY MUELLE_MERCANTIL_IMG_NORMAL
+ .PARAMS [ .U 529 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY PUERTO_MERCANTIL_IMG_NORMAL
+ .PARAMS [ .U 617 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY FARO_ARGAND_IMG_NORMAL
+ .PARAMS [ .U 705 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY FARO_FRESNEL_IMG_NORMAL
+ .PARAMS [ .U 793 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY DELEGACION_COMERCIAL_IMG_NORMAL
+ .PARAMS [ .U 881 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+######### FILA 5 ###
+
+[
+ .KEY DPTO_COMERCIAL_IMG_NORMAL
+ .PARAMS [ .U 1 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY PUESTO_FRONTERIZO_IMG_NORMAL
+ .PARAMS [ .U 89 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ADUANAS_IMG_NORMAL
+ .PARAMS [ .U 793 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY AYUNTAMIENTO_IMG_NORMAL
+ .PARAMS [ .U 265 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY GOBIERNO_DEPARTAMENTAL_IMG_NORMAL
+ .PARAMS [ .U 353 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_INTERIOR_IMG_NORMAL
+ .PARAMS [ .U 441 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_ASUNTOS_EXTERIORES_IMG_NORMAL
+ .PARAMS [ .U 881 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY DPTO_INFORMACION_IMG_NORMAL
+ .PARAMS [ .U 1 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY EDIFICIO_INTELIGENCIA_MILITAR_IMG_NORMAL
+ .PARAMS [ .U 617 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CENTRAL_INTELIGENCIA_IMG_NORMAL
+ .PARAMS [ .U 705 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY TALLER_TECNICO_BASICO_IMG_NORMAL
+ .PARAMS [ .U 793 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY TALLER_TECNICO_MEDIO_IMG_NORMAL
+ .PARAMS [ .U 881 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+######### FILA 6 ###
+
+[
+ .KEY FUNDICION_ELITE_IMG_NORMAL
+ .PARAMS [ .U 705 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUARTEL_AVANZADO_IMG_NORMAL
+ .PARAMS [ .U 353 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTADO_MAYOR_IMG_NORMAL
+ .PARAMS [ .U 177 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY BARRACAS_BASICAS_IMG_NORMAL
+ .PARAMS [ .U 793 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY BARRACAS_AVANZADAS_IMG_NORMAL
+ .PARAMS [ .U 881 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY BARRACAS_ELITE_IMG_NORMAL
+ .PARAMS [ .U 1 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY FUNDICION_BASICA_IMG_NORMAL
+ .PARAMS [ .U 529 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY FUNDICION_AVANZADA_IMG_NORMAL
+ .PARAMS [ .U 617 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY TALLER_OBUSES_IMG_NORMAL
+ .PARAMS [ .U 705 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUARTEL_BASICO_IMG_NORMAL
+ .PARAMS [ .U 265 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESCUELA_CAPITANES_IMG_NORMAL
+ .PARAMS [ .U 881 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+######### FILA 7 ###
+
+[
+ .KEY CUARTEL_ELITE_IMG_NORMAL
+ .PARAMS [ .U 441 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAMPO_ENTRENAMIENTO_IMG_NORMAL
+ .PARAMS [ .U 89 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAMPO_TIRO_IMG_NORMAL
+ .PARAMS [ .U 177 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY PUERTO_MILITAR_IMG_NORMAL
+ .PARAMS [ .U 265 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY DIQUE_SECO_IMG_NORMAL
+ .PARAMS [ .U 353 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ARSENAL_IMG_NORMAL
+ .PARAMS [ .U 441 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUADRAS_BASICAS_IMG_NORMAL
+ .PARAMS [ .U 529 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUADRAS_AVANZADAS_IMG_NORMAL
+ .PARAMS [ .U 617 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUADRAS_ELITE_IMG_NORMAL
+ .PARAMS [ .U 705 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CENTRO_DATOS_IMG_NORMAL
+ .PARAMS [ .U 1 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY EMBARCADERO_IMG_NORMAL
+ .PARAMS [ .U 89 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_RUSIA_IMG_NORMAL
+ .PARAMS [ .U 354 .V 1444 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_FRANCIA_IMG_NORMAL
+ .PARAMS [ .U 530 .V 1444 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_GRAN_BRETANYA_IMG_NORMAL
+ .PARAMS [ .U 353 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_PRUSIA_IMG_NORMAL
+ .PARAMS [ .U 441 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_AUSTRIA_IMG_NORMAL
+ .PARAMS [ .U 529 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ARCO_TRIUNFO_IMG_NORMAL
+ .PARAMS [ .U 617 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTATUA_REPUBLICA_IMG_NORMAL
+ .PARAMS [ .U 705 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTATUA_ECUESTRE_IMG_NORMAL
+ .PARAMS [ .U 793 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+##
+[
+ .KEY PARLAMENTO_IMG_NORMAL
+ .PARAMS [ .U 881 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY PALACIO_IMG_NORMAL
+ .PARAMS [ .U 529 .V 882 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY SENADO_IMG_NORMAL
+ .PARAMS [ .U 441 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_IMG_NORMAL
+ .PARAMS [ .U 1234 .V 1650 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_ESPANYA_IMG_NORMAL
+ .PARAMS [ .U 1234 .V 1650 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_OTOMANO_IMG_NORMAL
+ .PARAMS [ .U 1234 .V 1650 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_EGIPTO_IMG_NORMAL
+ .PARAMS [ .U 1234 .V 1650 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_DOS_SICILIAS_IMG_NORMAL
+ .PARAMS [ .U 1234 .V 1650 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_DINAMARCA_IMG_NORMAL
+ .PARAMS [ .U 1234 .V 1650 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_SUECIA_IMG_NORMAL
+ .PARAMS [ .U 1234 .V 1650 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_PORTUGAL_IMG_NORMAL
+ .PARAMS [ .U 1234 .V 1650 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_LOMBARDIA_IMG_NORMAL
+ .PARAMS [ .U 1234 .V 1650 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_PIAMONTE_IMG_NORMAL
+ .PARAMS [ .U 1234 .V 1650 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_EPAPALES_IMG_NORMAL
+ .PARAMS [ .U 1234 .V 1650 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_RHELVETICA_IMG_NORMAL
+ .PARAMS [ .U 1234 .V 1650 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_BATAVIA_IMG_NORMAL
+ .PARAMS [ .U 1234 .V 1650 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_SAJONIA_IMG_NORMAL
+ .PARAMS [ .U 1234 .V 1650 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_POLONIA_IMG_NORMAL
+ .PARAMS [ .U 1234 .V 1650 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_MOLDAVIA_IMG_NORMAL
+ .PARAMS [ .U 1234 .V 1650 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_MARRUECOS_IMG_NORMAL
+ .PARAMS [ .U 1234 .V 1650 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_TUNEZ_IMG_NORMAL
+ .PARAMS [ .U 1234 .V 1650 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_TRIPOLITANIA_IMG_NORMAL
+ .PARAMS [ .U 1234 .V 1650 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_HANOVER_IMG_NORMAL
+ .PARAMS [ .U 1234 .V 1650 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+######### ICONOS PARA LAS BARRAS DE PORCENTAJE DEL DIALOGO DE PRODUCCION DE EDIFICIOS ###
+[
+ .KEY DEFAULT_CONSTRUCCION_GRAFICO_BARRA
+ .PARAMS [ .U 1 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY DEFAULT_CONSTRUCCION_GRAFICO_BARRA
+ .PARAMS [ .U 89 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY DEFAULT_CONSTRUCCION_GRAFICO_BARRA
+ .PARAMS [ .U 177 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+######### FILA 1 ###
+
+[
+ .KEY ALMACENES_OCULTOS_GRAFICO_BARRA
+ .PARAMS [ .U 177 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY BAZAR_GRAFICO_BARRA
+ .PARAMS [ .U 1 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ALMACEN_VIVERES_GRAFICO_BARRA
+ .PARAMS [ .U 89 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ASERRADERO_GRAFICO_BARRA
+ .PARAMS [ .U 177 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY REGADIOS_GRAFICO_BARRA
+ .PARAMS [ .U 265 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINAS_PROFUNDIDAD_GRAFICO_BARRA
+ .PARAMS [ .U 353 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_AGRICULTURA_GRAFICO_BARRA
+ .PARAMS [ .U 441 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY EMBAJADA_COMERCIAL_GRAFICO_BARRA
+ .PARAMS [ .U 793 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CASA_ALISTAMIENTO_GRAFICO_BARRA
+ .PARAMS [ .U 529 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ALTOS_HORNOS_GRAFICO_BARRA
+ .PARAMS [ .U 617 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY BANCO_GRAFICO_BARRA
+ .PARAMS [ .U 705 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ENSENADAS_OCULTAS_GRAFICO_BARRA
+ .PARAMS [ .U 1 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY DPTO_COMERCIAL_GRAFICO_BARRA
+ .PARAMS [ .U 1 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY OFICINA_COMERCIAL_GRAFICO_BARRA
+ .PARAMS [ .U 881 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+######### FILA 2 ###
+
+[
+ .KEY RED_COMERCIAL_GRAFICO_BARRA
+ .PARAMS [ .U 1 .V 104 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY EDIFICIO_BOLSA_GRAFICO_BARRA
+ .PARAMS [ .U 89 .V 104 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY SENADO_GRAFICO_BARRA
+ .PARAMS [ .U 441 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ARCO_TRIUNFO_GRAFICO_BARRA
+ .PARAMS [ .U 617 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTATUA_REPUBLICA_GRAFICO_BARRA
+ .PARAMS [ .U 705 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY PARLAMENTO_GRAFICO_BARRA
+ .PARAMS [ .U 881 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY PALACIO_GRAFICO_BARRA
+ .PARAMS [ .U 529 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTATUA_ECUESTRE_GRAFICO_BARRA
+ .PARAMS [ .U 793 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY BANCO_GRAFICO_BARRA
+ .PARAMS [ .U 705 .V 104 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY COMISARIA_GRAFICO_BARRA
+ .PARAMS [ .U 793 .V 104 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CONSULADO_GRAFICO_BARRA
+ .PARAMS [ .U 881 .V 104 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+######### FILA 3 ###
+
+[
+ .KEY PERIODICO_GRAFICO_BARRA
+ .PARAMS [ .U 1 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CTO_CULTURAL_GRAFICO_BARRA
+ .PARAMS [ .U 89 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY BOLETIN_ARMADA_GRAFICO_BARRA
+ .PARAMS [ .U 177 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY INFRAESTRUCTURAS_GRAFICO_BARRA
+ .PARAMS [ .U 265 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CELULA_RESISTENCIA_GRAFICO_BARRA
+ .PARAMS [ .U 353 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY FABRICA_UNIFORMES_GRAFICO_BARRA
+ .PARAMS [ .U 441 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESCUELA_ARMADA_GRAFICO_BARRA
+ .PARAMS [ .U 529 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY HOSPITAL_CAMPANA_GRAFICO_BARRA
+ .PARAMS [ .U 617 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY HOSPITAL_LOCAL_GRAFICO_BARRA
+ .PARAMS [ .U 705 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY HOSPITAL_MODERNO_GRAFICO_BARRA
+ .PARAMS [ .U 793 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY OFICINA_RECAUDACION_GRAFICO_BARRA
+ .PARAMS [ .U 881 .V 207 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+######### FILA 4 ###
+
+[
+ .KEY DPTO_TESORO_GRAFICO_BARRA
+ .PARAMS [ .U 1 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_HACIENDA_GRAFICO_BARRA
+ .PARAMS [ .U 89 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESCUELA_BASICA_GRAFICO_BARRA
+ .PARAMS [ .U 177 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY LICEO_GRAFICO_BARRA
+ .PARAMS [ .U 265 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY UNIVERSIDAD_GRAFICO_BARRA
+ .PARAMS [ .U 353 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY DARSENA_MERCANTIL_GRAFICO_BARRA
+ .PARAMS [ .U 441 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY MUELLE_MERCANTIL_GRAFICO_BARRA
+ .PARAMS [ .U 529 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY PUERTO_MERCANTIL_GRAFICO_BARRA
+ .PARAMS [ .U 617 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY FARO_ARGAND_GRAFICO_BARRA
+ .PARAMS [ .U 705 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY FARO_FRESNEL_GRAFICO_BARRA
+ .PARAMS [ .U 793 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY DELEGACION_COMERCIAL_GRAFICO_BARRA
+ .PARAMS [ .U 881 .V 310 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+######### FILA 5 ###
+
+[
+ .KEY DPTO_COMERCIAL_GRAFICO_BARRA
+ .PARAMS [ .U 1 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY PUESTO_FRONTERIZO_GRAFICO_BARRA
+ .PARAMS [ .U 89 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ADUANAS_GRAFICO_BARRA
+ .PARAMS [ .U 793 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY AYUNTAMIENTO_GRAFICO_BARRA
+ .PARAMS [ .U 265 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY GOBIERNO_DEPARTAMENTAL_GRAFICO_BARRA
+ .PARAMS [ .U 353 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_INTERIOR_GRAFICO_BARRA
+ .PARAMS [ .U 441 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_ASUNTOS_EXTERIORES_GRAFICO_BARRA
+ .PARAMS [ .U 881 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY DPTO_INFORMACION_GRAFICO_BARRA
+ .PARAMS [ .U 1 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY EDIFICIO_INTELIGENCIA_MILITAR_GRAFICO_BARRA
+ .PARAMS [ .U 617 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CENTRAL_INTELIGENCIA_GRAFICO_BARRA
+ .PARAMS [ .U 705 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY TALLER_TECNICO_BASICO_GRAFICO_BARRA
+ .PARAMS [ .U 793 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY TALLER_TECNICO_MEDIO_GRAFICO_BARRA
+ .PARAMS [ .U 881 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+######### FILA 6 ###
+
+[
+ .KEY FUNDICION_ELITE_GRAFICO_BARRA
+ .PARAMS [ .U 705 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUARTEL_AVANZADO_GRAFICO_BARRA
+ .PARAMS [ .U 353 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTADO_MAYOR_GRAFICO_BARRA
+ .PARAMS [ .U 177 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY BARRACAS_BASICAS_GRAFICO_BARRA
+ .PARAMS [ .U 793 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY BARRACAS_AVANZADAS_GRAFICO_BARRA
+ .PARAMS [ .U 881 .V 413 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY BARRACAS_ELITE_GRAFICO_BARRA
+ .PARAMS [ .U 1 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY FUNDICION_BASICA_GRAFICO_BARRA
+ .PARAMS [ .U 529 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY FUNDICION_AVANZADA_GRAFICO_BARRA
+ .PARAMS [ .U 617 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY TALLER_OBUSES_GRAFICO_BARRA
+ .PARAMS [ .U 705 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUARTEL_BASICO_GRAFICO_BARRA
+ .PARAMS [ .U 265 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESCUELA_CAPITANES_GRAFICO_BARRA
+ .PARAMS [ .U 881 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+######### FILA 7 ###
+
+[
+ .KEY CUARTEL_ELITE_GRAFICO_BARRA
+ .PARAMS [ .U 441 .V 516 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAMPO_ENTRENAMIENTO_GRAFICO_BARRA
+ .PARAMS [ .U 89 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAMPO_TIRO_GRAFICO_BARRA
+ .PARAMS [ .U 177 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY PUERTO_MILITAR_GRAFICO_BARRA
+ .PARAMS [ .U 265 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY DIQUE_SECO_GRAFICO_BARRA
+ .PARAMS [ .U 353 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ARSENAL_GRAFICO_BARRA
+ .PARAMS [ .U 441 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUADRAS_BASICAS_GRAFICO_BARRA
+ .PARAMS [ .U 529 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUADRAS_AVANZADAS_GRAFICO_BARRA
+ .PARAMS [ .U 617 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUADRAS_ELITE_GRAFICO_BARRA
+ .PARAMS [ .U 705 .V 619 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CENTRO_DATOS_GRAFICO_BARRA
+ .PARAMS [ .U 1 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY EMBARCADERO_GRAFICO_BARRA
+ .PARAMS [ .U 89 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_RUSIA_GRAFICO_BARRA
+ .PARAMS [ .U 354 .V 1444 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_FRANCIA_GRAFICO_BARRA
+ .PARAMS [ .U 530 .V 1444 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_GRAN_BRETANYA_GRAFICO_BARRA
+ .PARAMS [ .U 353 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_PRUSIA_GRAFICO_BARRA
+ .PARAMS [ .U 441 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_AUSTRIA_GRAFICO_BARRA
+ .PARAMS [ .U 529 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ARCO_TRIUNFO_GRAFICO_BARRA
+ .PARAMS [ .U 617 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTATUA_REPUBLICA_GRAFICO_BARRA
+ .PARAMS [ .U 705 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTATUA_ECUESTRE_GRAFICO_BARRA
+ .PARAMS [ .U 793 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+##
+[
+ .KEY PARLAMENTO_GRAFICO_BARRA
+ .PARAMS [ .U 881 .V 722 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY PALACIO_GRAFICO_BARRA
+ .PARAMS [ .U 529 .V 882 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY SENADO_GRAFICO_BARRA
+ .PARAMS [ .U 441 .V 825 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_GRAFICO_BARRA
+ .PARAMS [ .U 1234 .V 1650 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_ESPANYA_GRAFICO_BARRA
+ .PARAMS [ .U 1234 .V 1650 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_OTOMANO_GRAFICO_BARRA
+ .PARAMS [ .U 1234 .V 1650 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_EGIPTO_GRAFICO_BARRA
+ .PARAMS [ .U 1234 .V 1650 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_DOS_SICILIAS_GRAFICO_BARRA
+ .PARAMS [ .U 1234 .V 1650 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_DINAMARCA_GRAFICO_BARRA
+ .PARAMS [ .U 1234 .V 1650 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_SUECIA_GRAFICO_BARRA
+ .PARAMS [ .U 1234 .V 1650 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_PORTUGAL_GRAFICO_BARRA
+ .PARAMS [ .U 1234 .V 1650 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_LOMBARDIA_GRAFICO_BARRA
+ .PARAMS [ .U 1234 .V 1650 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_PIAMONTE_GRAFICO_BARRA
+ .PARAMS [ .U 1234 .V 1650 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_EPAPALES_GRAFICO_BARRA
+ .PARAMS [ .U 1234 .V 1650 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_RHELVETICA_GRAFICO_BARRA
+ .PARAMS [ .U 1234 .V 1650 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_BATAVIA_GRAFICO_BARRA
+ .PARAMS [ .U 1234 .V 1650 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_SAJONIA_GRAFICO_BARRA
+ .PARAMS [ .U 1234 .V 1650 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_POLONIA_GRAFICO_BARRA
+ .PARAMS [ .U 1234 .V 1650 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_MOLDAVIA_GRAFICO_BARRA
+ .PARAMS [ .U 1234 .V 1650 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_MARRUECOS_GRAFICO_BARRA
+ .PARAMS [ .U 1234 .V 1650 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_TUNEZ_GRAFICO_BARRA
+ .PARAMS [ .U 1234 .V 1650 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_TRIPOLITANIA_GRAFICO_BARRA
+ .PARAMS [ .U 1234 .V 1650 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAPITAL_BASE_HANOVER_GRAFICO_BARRA
+ .PARAMS [ .U 1234 .V 1650 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesVerde.tga" .SX 87 .SY 102 .ALPHA TRUE ]
+]

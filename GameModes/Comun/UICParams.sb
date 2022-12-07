@@ -1,0 +1,296 @@
+.SLIDER_PARAMS
+[
+  #Parametros standard de sliders
+  [
+    .KEY DEFAULT_SLIDER_VERTICAL
+    .PARAMS
+    [
+      .IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+      .FILE "Game/UI/Comun/ControlesStandard.tga" 
+      .SX 2 .SY 15 .U 59 .V 200 .HORIZONTAL FALSE .ALPHA TRUE .PRIORITY 1
+        
+        # Boton 1
+      .BTN_1
+      [ .TIPO UIC_BOTONGRAFICO
+        .COMPORTAMIENTO SIMPLE 
+        .FONDO
+        [
+          .SX 14 .SY 15 .ALPHA TRUE    
+          .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 4 .V 200 ]
+          .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 22 .V 200 ]
+          .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 40 .V 200 ]
+          .IDSELECTSOUND "S_MAINMENU_OPTION_SELECT"
+          .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_CLICK"
+        ]
+      ]
+    
+      # Boton 2                
+      .BTN_2
+      [ .TIPO UIC_BOTONGRAFICO
+        .COMPORTAMIENTO SIMPLE
+        .FONDO
+        [
+          .SX 14 .SY 15 .ALPHA TRUE
+          .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 4 .V 219  ] 
+          .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 22 .V 219 ]
+          .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 40 .V 219 ]
+          .IDSELECTSOUND "S_MAINMENU_OPTION_SELECT"
+          .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_CLICK"
+        ]
+      ]
+    
+      # Boton central
+      .BTN_CENTRAL
+      [ .TIPO UIC_BOTONGRAFICO
+        .COMPORTAMIENTO SIMPLE    
+        .FONDO
+        [
+          .SX 20 .SY 21 .ALPHA TRUE
+          .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 4 .V 99 ]
+          .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 30 .V 99 ]
+          .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 56 .V 99 ]
+          .IDSELECTSOUND "S_MAINMENU_OPTION_SELECT"
+          .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_CLICK"
+        ]
+      ]
+    ]
+  ]
+  
+  [
+    .KEY DEFAULT_SLIDER_VERTICAL_GRANDE
+    .PARAMS
+    [ 
+      .IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+      .FILE "Game/UI/Comun/ControlesStandard.tga"
+      .SX 6 .SY 33 .U 115 .V 124 .HORIZONTAL FALSE .ALPHA TRUE .PRIORITY 1
+      
+      # Boton 1
+      .BTN_1
+      [ .TIPO UIC_BOTONGRAFICO
+        .COMPORTAMIENTO SIMPLE 
+        .FONDO
+        [
+          .SX 32 .SY 33 .ALPHA TRUE
+          .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 41 .V 124 ]
+          .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 78 .V 124 ]
+          .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 4 .V 124 ]
+          .IDSELECTSOUND "S_MAINMENU_OPTION_SELECT"
+          .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_CLICK"
+        ]
+      ]
+
+      # Boton 2                
+      .BTN_2
+      [ .TIPO UIC_BOTONGRAFICO
+        .COMPORTAMIENTO SIMPLE
+        .FONDO
+        [
+          .SX 32 .SY 33 .ALPHA TRUE
+          .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 41 .V 162 ]
+          .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 78 .V 162 ]
+          .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 4 .V 162 ]
+          .IDSELECTSOUND "S_MAINMENU_OPTION_SELECT"
+          .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_CLICK"
+        ]
+      ]
+
+      # Boton central
+      .BTN_CENTRAL
+      [ .TIPO UIC_BOTONGRAFICO
+        .COMPORTAMIENTO SIMPLE    
+        .FONDO
+        [
+          .SX 32 .SY 33 .ALPHA TRUE
+          .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 152 .V 162 ]
+          .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 189 .V 162 ]
+          .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 115 .V 162 ]
+          .IDSELECTSOUND "S_MAINMENU_OPTION_SELECT"
+          .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_CLICK"
+        ]
+      ]
+    ]
+  ]
+  
+  [
+    .KEY SLIDER_MASMENOS_HORIZONTAL
+    .PARAMS
+    [
+      # no disponemos del gráfico de la barra sobre la que se desplaza el slider, y la textura de controles standard
+      # está demasiado llena como para intentar aprovechar 156x12 pixels de alpha transparente, asi que usamos la textura
+      # del menú de opciones, que es actualmente el único control que usa este estilo. Esto debería cambiar en un futuro y
+      # usarse una textura para controles standard más amplia
+      .FILE "Game/UI/MainMenu/MenuOpciones.tga" 
+      .SX 156 .SY 12 .U 139 .V 776 .HORIZONTAL TRUE .ALPHA TRUE .PRIORITY 1
+        
+        # Boton 1
+      .BTN_1
+      [ .TIPO UIC_BOTONGRAFICO
+        .COMPORTAMIENTO SIMPLE 
+        .IDSELECTSOUND "S_MAINMENU_OPTION_SELECT"
+        .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_CLICK"
+        .FONDO
+        [
+          .SX 25 .SY 26 .ALPHA TRUE    
+          .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 4 .V 36 ]
+          .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 35 .V 36 ]
+          .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 66 .V 36 ]
+        ]
+      ]
+    
+      # Boton 2                
+      .BTN_2
+      [ .TIPO UIC_BOTONGRAFICO
+        .COMPORTAMIENTO SIMPLE
+        .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+        .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT" 
+        .FONDO
+        [
+          .SX 25 .SY 26 .ALPHA TRUE
+          .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 4 .V 68  ] 
+          .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 35 .V 68 ]
+          .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 66 .V 68 ]
+        ]
+      ]
+    
+      # Boton central
+      .BTN_CENTRAL
+      [ .TIPO UIC_BOTONGRAFICO
+        .COMPORTAMIENTO SIMPLE   
+        .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+        .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"   
+        .FONDO
+        [
+          .SX 20 .SY 21 .ALPHA TRUE
+          .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 4 .V 99 ]
+          .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 30 .V 99 ]
+          .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 56 .V 99 ]
+        ]
+      ]
+    ]
+  ]        
+  
+  [
+    .KEY SLIDER_MAYORMENOR_HORIZONTAL
+    .PARAMS
+    [
+      # no disponemos del gráfico de la barra sobre la que se desplaza el slider, y la textura de controles standard
+      # está demasiado llena como para intentar aprovechar 156x12 pixels de alpha transparente, asi que usamos la textura
+      # del menú de opciones. Esto debería cambiar en un futuro y usarse una textura para controles standard más amplia
+      .FILE "Game/UI/MainMenu/MenuOpciones.tga" 
+      .SX 156 .SY 12 .U 139 .V 776 .HORIZONTAL TRUE .ALPHA TRUE .PRIORITY 1
+        
+        # Boton 1
+      .BTN_1
+      [ .TIPO UIC_BOTONGRAFICO
+        .COMPORTAMIENTO SIMPLE 
+        .FONDO
+        [
+          .SX 25 .SY 26 .ALPHA TRUE    
+          .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 132 .V 130 ]
+          .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 160 .V 130 ]
+          .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 188 .V 130 ]
+          .IDSELECTSOUND "S_MAINMENU_OPTION_SELECT"
+          .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_CLICK"
+        ]
+      ]
+    
+      # Boton 2                
+      .BTN_2
+      [ .TIPO UIC_BOTONGRAFICO
+        .COMPORTAMIENTO SIMPLE
+        .FONDO
+        [
+          .SX 25 .SY 26 .ALPHA TRUE
+          .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 132 .V 96  ] 
+          .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 160 .V 96 ]
+          .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 188 .V 96 ]
+          .IDSELECTSOUND "S_MAINMENU_OPTION_SELECT"
+          .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_CLICK"
+        ]
+      ]
+    
+      # Boton central
+      .BTN_CENTRAL
+      [ .TIPO UIC_BOTONGRAFICO
+        .COMPORTAMIENTO SIMPLE    
+        .FONDO
+        [
+          .SX 20 .SY 21 .ALPHA TRUE
+          .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 4 .V 99 ]
+          .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 30 .V 99 ]
+          .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 56 .V 99 ]
+          .IDSELECTSOUND "S_MAINMENU_OPTION_SELECT"
+          .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_CLICK"
+        ]
+      ]
+    ]
+  ]          
+  
+  [
+    .KEY SLIDER_HORIZONTAL_OPCIONES
+    .PARAMS
+    [
+      # no disponemos del gráfico de la barra sobre la que se desplaza el slider, y la textura de controles standard
+      # está demasiado llena como para intentar aprovechar 156x12 pixels de alpha transparente, asi que usamos la textura
+      # del menú de opciones, que es actualmente el único control que usa este estilo. Esto debería cambiar en un futuro y
+      # usarse una textura para controles standard más amplia
+      
+      .FILE "Game/UI/Comun/ControlesStandard.tga" 
+      .SX 10 .SY 6 .SCALEX 123 .U 124 .V 252 .HORIZONTAL TRUE .ALPHA TRUE .PRIORITY 2
+        
+      # Boton 1
+      .BTN_1
+      [ .TIPO UIC_BOTONGRAFICO
+        .COMPORTAMIENTO SIMPLE 
+        
+        .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK"
+        .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"
+        
+        .FONDO
+        [
+          .SX 17 .SY 21 .ALPHA TRUE    
+          .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 217 .V 123 ]
+          .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 243 .V 123 ]
+          .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 269 .V 123 ]
+        ]
+      ]
+    
+      # Boton 2                
+      .BTN_2
+      [ .TIPO UIC_BOTONGRAFICO
+        .COMPORTAMIENTO SIMPLE
+        
+        .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK"
+        .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"
+        
+        .FONDO
+        [
+          .SX 17 .SY 21 .ALPHA TRUE    
+          .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 217 .V 99 ]
+          .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 243 .V 99 ]
+          .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 269 .V 99 ]
+        ]
+      ]
+    
+      # Boton central
+      .BTN_CENTRAL
+      [ .TIPO UIC_BOTONGRAFICO
+        .COMPORTAMIENTO SIMPLE    
+        
+        .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK"
+        .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"
+        
+        .FONDO
+        [
+          .SX 11 .SY 15 .ALPHA TRUE
+          .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 82 .V 252 ]
+          .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 96 .V 252 ]
+          .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 110 .V 252 ]
+        ]
+      ]
+    ]
+  ]        
+  
+  
+  
+]

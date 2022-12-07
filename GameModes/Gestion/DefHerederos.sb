@@ -1,0 +1,305 @@
+##########################################################################################################
+# Archivo con las definiciones de los herederos.
+# Por un lado contara con la informacion asociada a los jugadores y, por otro, con la informacion
+# relativas a las distintas fases en las que puede hallarse un heredero.
+#
+# - Informacion relativa a los jugadores:
+#
+# .JUGADORES
+# [
+#   .JUGADOR_X
+#    [
+#      .TURNOS_ESPERA_NACIMIENTO          -> Turnos de espera antes de que el heredero nazca
+#      .MAX_NOMBRES_HEREDEROS_MASCULINOS  -> Numero de nombres masculinos asociados
+#      .MAX_NOMBRES_HEREDEROS_FEMENINOS   -> Numero de nombre femeninos asociados# 
+#    ]
+# ]
+#
+# - Informacion relativa a las fases en las que puede hallarse un heredero
+# 
+# .FASES
+#  [
+#    .FASE_X
+#     [
+#       .DURACION                     -> Duracion, en turnos, de la fase (si cero, indefinida)
+#       .MAX_MSG_HEREDEROS_MASCULINOS -> Numero de mensajes para herederos masculinos (no requerido)
+#       .MAX_MSG_HEREDEROS_FEMENINOS  -> Numero de mensajes para herederos femeninos (no requerido)
+#       .SIG_FASE                     -> Etiqueta a la siguiente fase (si procede)
+#     ]
+#  ]
+#
+# Los posibles valores de FASE_X seran: NACIMIENTO, INFANTE, JOVEN, ADOLESCENTE, ADULTO y PREPARATIVOS_BODA.
+# Es de esperar que NACIMIENTO lleve a INFANTE, INFANTE lleve a JOVEN y ADOLESCENTE lleve a ADULTO.
+# El estado de PREPARATIVOS_BODA se establecera de forma independiente y tan solo sera importante
+# conocer su duracion.
+#
+# - Informacion relativa a los gobiernos incompatibles, es decir, los gobiernos que haran que cualquier
+# heredero disponible sea ignorado.
+#
+# .GOBIERNOS_INCOMPATIBLES
+# [
+#   [ .GOBIERNO .NOTIFICACION ]
+# ]
+#
+# Este apartado anterior deberia de ser unicamente manipulado por programacion.
+#
+# - Informacion relativa a los gobiernos necesarios para que se permita un casamiento
+#
+# .GOBIERNOS_REQUERIDOS_CASAMIENTO [ GOBIERNO_1 GOBIERNO_2 ... GOBIERNO_N ]
+#
+# - Informacion variada
+#
+# .MISC
+# [
+#  - Especificacion de turnos de espera para comenzar a recibir notificaciones sobre la evolucion de
+#    los distintos herederos.
+#   .TURNO_COMIENZO_CONOCIMIENTO_RESTO_HEREDEROS
+# ]
+##########################################################################################################
+
+# Definicion para jugadores
+.JUGADORES
+[
+ .JUG_GRAN_BRETANYA 
+ [ 
+  .TURNOS_ESPERA_NACIMIENTO         6
+  .MAX_NOMBRES_HEREDEROS_MASCULINOS 8 
+  .MAX_NOMBRES_HEREDEROS_FEMENINOS  8 
+ ]
+ 
+ .JUG_FRANCIA
+ [
+  .TURNOS_ESPERA_NACIMIENTO         6 
+  .MAX_NOMBRES_HEREDEROS_MASCULINOS 4 
+  .MAX_NOMBRES_HEREDEROS_FEMENINOS  5 
+ ]
+ 
+ .JUG_AUSTRIA
+ [
+  .TURNOS_ESPERA_NACIMIENTO         6 
+  .MAX_NOMBRES_HEREDEROS_MASCULINOS 8 
+  .MAX_NOMBRES_HEREDEROS_FEMENINOS  8 
+ ]
+ 
+ .JUG_PRUSIA
+ [
+  .TURNOS_ESPERA_NACIMIENTO         6 
+  .MAX_NOMBRES_HEREDEROS_MASCULINOS 8 
+  .MAX_NOMBRES_HEREDEROS_FEMENINOS  8 
+ ]
+ 
+ .JUG_ESPANYA
+ [
+  .TURNOS_ESPERA_NACIMIENTO         6 
+  .MAX_NOMBRES_HEREDEROS_MASCULINOS 1 
+  .MAX_NOMBRES_HEREDEROS_FEMENINOS  1 
+ ]
+ 
+ .JUG_OTOMANO
+ [
+  .TURNOS_ESPERA_NACIMIENTO         6 
+  .MAX_NOMBRES_HEREDEROS_MASCULINOS 1 
+  .MAX_NOMBRES_HEREDEROS_FEMENINOS  1 
+ ]
+ 
+ .JUG_EGIPTO
+ [
+  .TURNOS_ESPERA_NACIMIENTO         6 
+  .MAX_NOMBRES_HEREDEROS_MASCULINOS 1 
+  .MAX_NOMBRES_HEREDEROS_FEMENINOS  1 
+ ]
+  
+ .JUG_DOS_SICILIAS
+ [
+  .TURNOS_ESPERA_NACIMIENTO         6 
+  .MAX_NOMBRES_HEREDEROS_MASCULINOS 1 
+  .MAX_NOMBRES_HEREDEROS_FEMENINOS  1 
+ ]
+ 
+ .JUG_DINAMARCA
+ [
+  .TURNOS_ESPERA_NACIMIENTO         6 
+  .MAX_NOMBRES_HEREDEROS_MASCULINOS 1 
+  .MAX_NOMBRES_HEREDEROS_FEMENINOS  1 
+ ]
+ 
+ .JUG_SUECIA
+ [
+  .TURNOS_ESPERA_NACIMIENTO         6 
+  .MAX_NOMBRES_HEREDEROS_MASCULINOS 1 
+  .MAX_NOMBRES_HEREDEROS_FEMENINOS  1 
+ ]
+ 
+ .JUG_PORTUGAL
+ [
+  .TURNOS_ESPERA_NACIMIENTO         6 
+  .MAX_NOMBRES_HEREDEROS_MASCULINOS 1 
+  .MAX_NOMBRES_HEREDEROS_FEMENINOS  1 
+ ]
+ 
+ .JUG_LOMBARDIA
+ [
+  .TURNOS_ESPERA_NACIMIENTO         6 
+  .MAX_NOMBRES_HEREDEROS_MASCULINOS 1 
+  .MAX_NOMBRES_HEREDEROS_FEMENINOS  1 
+ ]
+ 
+ .JUG_PIAMONTE
+ [
+  .TURNOS_ESPERA_NACIMIENTO         6 
+  .MAX_NOMBRES_HEREDEROS_MASCULINOS 1 
+  .MAX_NOMBRES_HEREDEROS_FEMENINOS  1 
+ ]
+ 
+ .JUG_EPAPALES
+ [
+  .TURNOS_ESPERA_NACIMIENTO         6 
+  .MAX_NOMBRES_HEREDEROS_MASCULINOS 1 
+  .MAX_NOMBRES_HEREDEROS_FEMENINOS  1 
+ ]
+ 
+ .JUG_RHELVETICA
+ [
+  .TURNOS_ESPERA_NACIMIENTO         6 
+  .MAX_NOMBRES_HEREDEROS_MASCULINOS 1 
+  .MAX_NOMBRES_HEREDEROS_FEMENINOS  1 
+ ]
+ 
+ .JUG_HANNOVER
+ [
+  .TURNOS_ESPERA_NACIMIENTO         6 
+  .MAX_NOMBRES_HEREDEROS_MASCULINOS 1 
+  .MAX_NOMBRES_HEREDEROS_FEMENINOS  1 
+ ]
+ 
+ .JUG_BATAVIA
+ [
+  .TURNOS_ESPERA_NACIMIENTO         6 
+  .MAX_NOMBRES_HEREDEROS_MASCULINOS 1 
+  .MAX_NOMBRES_HEREDEROS_FEMENINOS  1 
+ ]
+ 
+ .JUG_SAJONIA
+ [
+  .TURNOS_ESPERA_NACIMIENTO         6 
+  .MAX_NOMBRES_HEREDEROS_MASCULINOS 1 
+  .MAX_NOMBRES_HEREDEROS_FEMENINOS  1 
+ ]
+ 
+ .JUG_POLONIA
+ [
+  .TURNOS_ESPERA_NACIMIENTO         6 
+  .MAX_NOMBRES_HEREDEROS_MASCULINOS 1 
+  .MAX_NOMBRES_HEREDEROS_FEMENINOS  1 
+ ]
+ 
+ .JUG_MOLDAVIA
+ [
+  .TURNOS_ESPERA_NACIMIENTO         6 
+  .MAX_NOMBRES_HEREDEROS_MASCULINOS 1 
+  .MAX_NOMBRES_HEREDEROS_FEMENINOS  1 
+ ]
+ 
+ .JUG_MARRUECOS
+ [
+  .TURNOS_ESPERA_NACIMIENTO         6 
+  .MAX_NOMBRES_HEREDEROS_MASCULINOS 1 
+  .MAX_NOMBRES_HEREDEROS_FEMENINOS  1  
+ ]
+ 
+ .JUG_TUNEZ
+ [
+  .TURNOS_ESPERA_NACIMIENTO         6 
+  .MAX_NOMBRES_HEREDEROS_MASCULINOS 1 
+  .MAX_NOMBRES_HEREDEROS_FEMENINOS  1 
+ ]
+ 
+ .JUG_TRIPOLITANIA
+ [
+  .TURNOS_ESPERA_NACIMIENTO         6 
+  .MAX_NOMBRES_HEREDEROS_MASCULINOS 1 
+  .MAX_NOMBRES_HEREDEROS_FEMENINOS  1 
+ ]
+ 
+ .JUG_RUSIA
+ [
+  .TURNOS_ESPERA_NACIMIENTO         6 
+  .MAX_NOMBRES_HEREDEROS_MASCULINOS 8 
+  .MAX_NOMBRES_HEREDEROS_FEMENINOS  8 
+ ]
+]
+
+# Definicion de fases
+.FASES
+[
+ .NACIMIENTO
+ [ 
+  .DURACION                     60
+  .MAX_MSG_HEREDEROS_MASCULINOS 1
+  .MAX_MSG_HEREDEROS_FEMENINOS  1
+  .SIG_FASE                     INFANTE
+ ]
+ 
+ .INFANTE
+ [
+  .DURACION                     55
+  .MAX_MSG_HEREDEROS_MASCULINOS 1
+  .MAX_MSG_HEREDEROS_FEMENINOS  1
+  .SIG_FASE                     JOVEN
+ ]
+ 
+ .JOVEN
+ [
+  .DURACION                     50
+  .MAX_MSG_HEREDEROS_MASCULINOS 1
+  .MAX_MSG_HEREDEROS_FEMENINOS  1
+  .SIG_FASE                     ADOLESCENTE
+ ]
+ 
+ .ADOLESCENTE
+ [
+  .DURACION                     40
+  .MAX_MSG_HEREDEROS_MASCULINOS 1
+  .MAX_MSG_HEREDEROS_FEMENINOS  1
+  .SIG_FASE                     ADULTO
+ ]
+ 
+ .ADULTO
+ [
+  .DURACION                     0
+  .MAX_MSG_HEREDEROS_MASCULINOS 1
+  .MAX_MSG_HEREDEROS_FEMENINOS  1  
+ ]  
+ 
+ .PREPARATIVOS_BODA
+ [
+  .DURACION                     5  
+ ]
+]
+
+.GOBIERNOS_INCOMPATIBLES
+[
+ # Aqui se indicaran los gobiernos que NO seran comptibles con los herederos
+ # Ante de manipular este apartado consultar con programacion  
+ [ 
+   .GOBIERNO      LTEXT_RAMA_IIIA
+   .NOTIFICACION  NG_SIN_HEREDERO_POR_REPUBLICA 
+ ]
+ 
+ [ 
+   .GOBIERNO      LTEXT_RAMA_IIID
+   .NOTIFICACION  NG_SIN_HEREDERO_POR_DICTADURA_MILITAR 
+ ]
+]
+
+.GOBIERNOS_REQUERIDOS_CASAMIENTO
+[
+ # Nota: Estas etiquetas hacen referencia a los gobiernos de tipo monarquico de la tercera era
+ [ .GOBIERNO LTEXT_RAMA_IIIB ]
+ [ .GOBIERNO LTEXT_RAMA_IIIC ]
+]
+
+.MISC
+[
+ .TURNO_COMIENZO_CONOCIMIENTO_RESTO_HEREDEROS 240
+]

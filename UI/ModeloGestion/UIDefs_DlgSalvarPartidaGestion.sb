@@ -1,0 +1,186 @@
+.MODAL TRUE
+.CENTER FALSE
+.DEPTH 3
+
+.FONDO
+[
+  .PRIORITY 10
+  .FILE "Game/UI/ModeloGestion/MenuSalvarPartida.tga"
+  .X 153 .Y 58 .U 1 .V 1 .SX 687 .SY 623 .ALPHA TRUE
+]
+
+.CONTROLES [
+
+  #---------------------------------------------------------------------------------------------------
+  # Etiquetas de texto - Títulos
+  [
+    .TIPO UIC_TEXT .ID 'W_CC'
+    .PARAMS
+    [
+      .PRIORITY 15
+      .TEXT LTEXT_UI_SAVE_GAME
+      .ALIGN CENTER
+      .FONT "Fonts/Times17.fnt"
+      .X 542 .Y 131
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+    ]
+  ]
+
+  #---------------------------------------------------------------------------------------------------
+  # Botones de Salvar y Salir
+  #-------------------------------------- Salvar ---
+  [ .TIPO UIC_BOTONTEXTO .ID 'OCPL'
+    .PARAMS
+    [ 
+      .STYLE DEFAULT_OK_BUTTON
+      
+      .IDSELECTSOUND "S_ACEPTAR" 
+      .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"   
+      
+      .FONDO 
+      [
+        .PRIORITY 16
+        .X 619 .Y 559
+      ]
+      
+      .TOOL_TIP
+      [ 
+        .TEXT LTEXT_SAVEGAME_TT_GUARDAR
+        .X 32 .Y 32
+          
+        .STYLE DEFAULT_TOOLTIP 
+      ]            
+    ] 
+  ] # ~ Opción Salvar
+  
+  #-------------------------------------- Salir ---
+  [ .TIPO UIC_BOTONTEXTO .ID 'OCPX'
+    .PARAMS
+    [ 
+      .STYLE DEFAULT_X_BUTTON            
+      
+      .IDSELECTSOUND "S_CANCELAR" 
+      .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"        
+      
+      .FONDO 
+      [
+        .PRIORITY 16
+        .X 564 .Y 559
+      ]
+      
+      .KEY [ .TECLA KEY_ESCAPE .MKEYS [ ] ]            
+      
+      .TOOL_TIP
+      [ 
+        .TEXT LTEXT_SAVEGAME_TT_SALIR
+        .X 32 .Y 32
+          
+        .STYLE DEFAULT_TOOLTIP 
+      ]            
+    ] 
+  ] # ~ Opción Salir
+  
+  #-------------------------------------- Borrar ---
+  [ .TIPO UIC_BOTONTEXTO .ID 'OCPB'
+    .PARAMS
+    [ 
+      .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+      .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"          
+      
+      .FONDO
+      [
+        .X 179 .Y 559
+        .SX 50 .SY 49
+        .ALPHA TRUE
+        .SOLTADO 			[ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 216 .V 276 ]
+        .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 269 .V 276 ]
+        .PULSADO 			[ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 322 .V 276 ]
+        .DISABLE 			[ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 375 .V 276 ]
+        .PRIORITY 16
+      ]            
+      
+      .TOOL_TIP
+      [ 
+        .TEXT LTEXT_SAVEGAME_TT_BORRAR
+        .X 32 .Y 32
+          
+        .STYLE DEFAULT_TOOLTIP 
+      ]      
+    ] 
+  ] # ~ Opción Borrar
+
+  [
+    .TIPO UIC_WRAPTEXT .ID 'W_IN'
+    .PARAMS
+    [
+      #.MSG "En esta zona aparecerá infomación acerca de las peculiaridades del tipo de mapa seleccionado. En esta zona aparecerá infomación acerca de las peculiaridades del tipo de mapa seleccionado. En esta zona aparecerá infomación acerca de las peculiaridades del tipo de mapa seleccionado. En esta zona aparecerá infomación acerca de las peculiaridades del tipo de mapa seleccionado. "
+      .ALIGN LEFT
+      .TEXT
+      [
+        .FONT "Fonts/Times14.fnt" #12.fnt"
+        .COLOR [ .R 255 .G 255 .B 255 ]
+      ]
+      .X 267 .Y 508 .SX 352 .SY 40
+    ]
+  ]
+
+  # listbox con los nombres de los archivos  
+  [ .TIPO UIC_LISTBOXTEXT .ID 'LIST'
+    .PARAMS
+    [ .X 185 .Y 157 .SX 430 .SY 280
+      .TEXT 
+      [
+        .FONT "Fonts/Times11.fnt" # 2.fnt"
+        .COLOR [ .R 255 .G 255 .B 255 ] 
+        .ALIGN LEFT
+      ] # ~ TEXT
+      
+      .PRIORITY 15
+      .VDX 453 .VDY -8
+      .VSX 6 .VSY 298
+      .SLIDER_VERTICAL
+      [
+        .PRIORITY 16
+        .STYLE DEFAULT_SLIDER_VERTICAL_GRANDE
+      ]
+    ]            
+  ]
+  
+  [ .TIPO UIC_EDITBOX .ID 'EBSP'
+    .PARAMS
+    [
+      .X 207 .Y 470 .SX 380 .SY 22 .MAX 30
+      .FONT "Fonts/Times11.fnt" 
+      .COLOR [ .R 255 .G 255 .B 255 ]
+      
+      .SIMPLE_FILENAME TRUE       # compatibilidad con nombres simples de ficheros
+      .SIMPLE TRUE
+    ]
+  ]   
+  
+  #message box de confirmación de sobreescribir partida
+  [
+    .TIPO UIC_MESSAGEBOX .ID 'MBCS'
+    .PARAMS 
+    [ 
+      .DEPTH 4
+      %Game\UI\ModeloGestion\UIDefsMsgBoxNotificaciones\UIDefs_MsgBoxPequenoNotificaciones.sb 
+      .CONTROLES
+      [
+        [
+          .TIPO UIC_BITMAP .ID 'BMCP'
+          .PARAMS
+          [
+            .X 101 .Y 35
+            .PRIORITY 203
+            .FILE "Game/UI/ModeloGestion/UIDefsMsgBoxNotificaciones/NotificacionEdificios.tga" .ALPHA TRUE 
+            .U 10 .V 308 .SX 310 .SY 40 
+          ]        
+        ] # ~bitmap
+        
+      ] # ~Controles      
+    ]
+  ]
+]
+
+.POS_BANDERA [ .X 226 .Y 516 ]

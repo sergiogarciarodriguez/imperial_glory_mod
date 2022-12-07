@@ -1,0 +1,21 @@
+#---------------------------------------------
+#    Script de definición de camara de mapa
+#---------------------------------------------
+.ATACANTE
+[
+  .ANGLE     [ 23.6    6.3    ]
+  .TARGET    [ 31220.0  14301.0   ]
+
+]
+.DEFENSOR
+[
+  .ANGLE     [ 20.8    144.8    ]
+  .TARGET    [ 23505.0  64142.0   ]
+
+]
+
+#---------- distancia minima a los limites del mapa ----------
+.MIN_DIST_LIMIT_TOP          6000.0    # cm
+.MIN_DIST_LIMIT_BOTTOM       6000.0    # cm
+.MIN_DIST_LIMIT_LEFT         8000.0    # cm
+.MIN_DIST_LIMIT_RIGHT        8000.0    # cm

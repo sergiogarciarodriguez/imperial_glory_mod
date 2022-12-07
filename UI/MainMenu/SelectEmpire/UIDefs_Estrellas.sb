@@ -1,0 +1,43 @@
+#############################################################################################
+# Definicion de Estrellas
+#############################################################################################
+
+[
+  .KEY ESTRELLAS_DEFAULT
+  .PARAMS
+  [ 
+    .FILE "Game/UI/MainMenu/SelectEmpire/SeleccionImperioA_.tga" 
+    .SX 32 .SY 48 .U 397 .V 709 .ALPHA TRUE
+    .PRIORITY 50
+  ] 
+]
+
+[
+  .KEY ESTRELLAS_1
+  .PARAMS
+  [ 
+    .FILE "Game/UI/MainMenu/SelectEmpire/SeleccionImperioA_.tga" 
+    .SX 32 .SY 48 .U 397 .V 709 .ALPHA TRUE
+    .PRIORITY 50
+  ] 
+]
+
+[
+  .KEY ESTRELLAS_2
+  .PARAMS
+  [
+    .FILE "Game/UI/MainMenu/SelectEmpire/SeleccionImperioA_.tga" 
+    .SX 32 .SY 48 .U 361 .V 709 .ALPHA TRUE
+    .PRIORITY 50
+  ] 
+]
+
+[
+  .KEY ESTRELLAS_3
+  .PARAMS 
+  [ 
+    .FILE "Game/UI/MainMenu/SelectEmpire/SeleccionImperioA_.tga" 
+    .SX 32 .SY 48 .U 325 .V 709 .ALPHA TRUE
+    .PRIORITY 50
+  ] 
+]

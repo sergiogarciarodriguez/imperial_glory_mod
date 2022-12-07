@@ -1,0 +1,202 @@
+#############################################################################################
+# Se muestra informacion sobre un edificio.
+# El Dlg constara de:
+# - Titulo
+# - Img del edificio
+# - Texto informativo
+# - Btn de destruccion
+# - Btn de cierre / aceptacion
+#############################################################################################
+ 
+ # Se define la ventana                   
+ .ACTIVO FALSE
+ .CENTER FALSE
+ .MODAL TRUE
+ 
+ .DEPTH 4 
+ 
+ # Fondo
+ .FONDO
+ [  
+  .X 233 .Y 74 
+  .U 1 .V 1 .SX 564 .SY 552
+  .FILE "Game/UI/ModeloGestion/UIDefsDlgInfoGestion/VentanaInformacionEdifios.tga" 
+  .ALPHA TRUE .PRIORITY 202
+ ]              
+ 
+ 
+ # Caption               
+ .CAPTION
+ [
+  .XMARGEN 86 .YMARGEN 11 .HEIGHT 30
+  .TITLE 
+  [ 
+   .ALINEACION CENTER 
+   .TEXT LTEXT_UI_GESTION_DLG_INFO_EDIFICIO_TITLE 
+   .FONT "Fonts/Times17.fnt" 
+   .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+  .MOVIBLE FALSE
+ ]
+ 
+ .CONTROLES
+ [ 
+  # Texto de informacion   
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WTIN'
+   .PARAMS
+   [
+    .X 29 .Y 322 .SX 388 .SY 120
+    .ALIGN LEFT
+    
+    .TEXT
+    [
+     .FONT "Fonts/Times11.fnt" 
+     .COLOR [ .R 255 .G 255 .B 255 ]
+     .MSG  " "        
+    ]
+    
+    .VDX 390 .VDY 5
+    .VSX 6 .VSY 120
+    .SLIDER_VERTICAL
+    [
+      .PRIORITY 203
+      .STYLE DEFAULT_SLIDER_VERTICAL_GRANDE
+    ]    
+   ]   
+  ] 
+  
+  # Texto con el nombre de la construcción upgrade
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WTNU'
+   .PARAMS
+   [
+    .X 434 .Y 395 .SX 102 .SY 50
+    .ALIGN CENTER
+    
+    .TEXT
+    [
+     .FONT "Fonts/Times11.fnt" 
+     .COLOR [ .R 255 .G 255 .B 255 ]
+     .MSG  " "        
+    ]
+   ]   
+  ] 
+  
+  # Texto del nombre del edificio
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WTNA'
+   .PARAMS
+   [
+    .X 85 .Y 45 .SX 394 .SY 55
+    .ALIGN CENTER
+    
+    .TEXT
+    [
+     .FONT "Fonts/Times17.fnt" 
+     .COLOR [ .R 255 .G 255 .B 255 ]
+     .MSG  " "        
+    ]
+   ]   
+  ] 
+  
+  # Texto del valor del recurso
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WTRE'
+   .PARAMS
+   [
+    .X 210 .Y 431 .SX 70 .SY 25
+    
+    .ALIGN CENTER
+    
+    .TEXT
+    [
+     .FONT "Fonts/Times11.fnt" 
+     .COLOR [ .R 255 .G 255 .B 255 ]
+     .MSG  " "        
+    ]
+   ]   
+  ] 
+  # Tooltip de aumento en la producción 
+  [ 
+    .TIPO UIC_ZONASENSIBLE  .ID 'ZSTT' 
+    .PARAMS 
+    [ 
+      .RECT [ 210 431 280 456 ] 
+      .DBCLICK_AS_RELEASE FALSE 
+      .EVENTOS [ MOUSE ] 
+      
+      .TOOL_TIP
+      [ 
+        .TEXT LTEXT_UI_TT_INFOGESTION_AUMENTOPRODUCCION
+        .X 32 .Y 32
+        
+        .STYLE DEFAULT_TOOLTIP 
+      ]      
+    ]
+  ]                          
+  
+  # Texto estático de Upgrade to
+  [
+    .TIPO UIC_TEXT .ID 'TXTU'
+    .PARAMS
+    [
+      .X 717 .Y 397
+      .ALIGN CENTER
+      .FONT "Fonts/Times11.fnt"
+      .TEXT LTEXT_UI_GESTION_DLG_INFO_EDIFICIO_UPGRADETO 
+      .COLOR [ .R 255 .G 255 .B 255 ]
+    ]
+  ]
+  
+  [
+   # Btn de salida
+   .TIPO UIC_BOTONTEXTO .ID 'EXIT'
+   .PARAMS 
+   [ 
+     .FONDO [ .X 495 .Y 487 .PRIORITY 203 ]
+     .IDSELECTSOUND "S_CANCELAR"
+     .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO" 
+     .KEY
+     [
+      .TECLA KEY_ESCAPE .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ]          
+     ]         
+     
+     .STYLE DEFAULT_X_BUTTON 
+   ]
+  ] 
+ ]
+
+ 
+ # Se definen los parámetros de la imagen
+ .IMG
+ [
+   .X 209 .Y 105
+   #la textura aquí especificada es lo de menos puesto que va a ser cambiada en cada creación del diálogo, pero debemos ponerla
+   .FILE "Game/UI/ModeloGestion/UIDefsDlgInfoGestion/InformacionEdificios.tga" 
+   .U 1 .V 1 .SX 147 .SY 160
+   .PRIORITY 203
+   .ALPHA TRUE
+ ]
+ 
+ # ruta de la que se van a coger las texturas para las imágenes de los edificios
+ .RUTA "Game/UI/ModeloGestion/Iconos/Construcciones/"
+
+ # posición del icono de upgrade del edificio 
+ .UPGRADE_ICON_POS [ .X 463 .Y 341 ]
+ 
+ .RESOURCE_ICON
+ [
+   .FILE "Game/UI/ModeloGestion/UIDefsDlgInfoGestion/VentanaInformacionEdifios.tga"
+   
+   .X 190 .Y 430    
+   .U 1 .V 560 .SX 86 .SY 27
+   .ALPHA TRUE
+ ]
+ 
+ # posiciones de los iconos dentro de la textura
+ .POS_RESOURCE_ICON_CIENCIA   [ .U 357 .V 560 ]
+ .POS_RESOURCE_ICON_COMIDA    [ .U 268 .V 560 ]
+ .POS_RESOURCE_ICON_POBLACION [ .U 179 .V 560 ]
+ .POS_RESOURCE_ICON_MATPRIMAS [ .U  90 .V 560 ]
+ .POS_RESOURCE_ICON_DINERO    [ .U   1 .V 560 ]

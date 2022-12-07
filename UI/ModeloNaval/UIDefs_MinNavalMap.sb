@@ -1,0 +1,9 @@
+########################################################################################################
+# Params asociados al mini mapa del modelo naval
+########################################################################################################
+
+ # Archivo con los datos donde obtener como representar los escenarios y las tropas
+ .INFOMINMAP_FILE "Game/UI/ModeloNaval/UIDefs_MinNavalMapInfo.sb"
+           
+ # Datos concretos para mostrar el mini mapa
+ .X 5 .Y 55 .TRANSPARENCY 200 .ACTIVO TRUE

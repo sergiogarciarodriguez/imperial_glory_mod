@@ -1,0 +1,144 @@
+#
+# LEYENDA DE SISTEMAS DE GOBIERNO
+#
+#
+
+
+#TITULO
+[
+  .TIPO UIC_WRAPTEXT .ID 'WTTI'
+  .PARAMS
+  [     
+    .X 0 .Y 10 .SX 320 .SY 50
+    .ALIGN CENTER
+    .TEXT
+    [
+      .FONT "Fonts/Times10.fnt" 
+      .COLOR [ .R 255 .G 255 .B 255 ]          
+    ]
+    .MSG LTEXT_LEYENDA_SISTEMAS_GOBIERNO
+  ]
+]
+
+
+#PRERREVOLUCIONARIO
+[ .TIPO UIC_BITMAP .ID 'BMRV'
+  .PARAMS
+  [ .X 30 .Y 45 .U 771 .V 1 .SX 22 .SY 22
+    .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .PRIORITY 255 .ALPHA TRUE  
+  ]      
+]
+   
+#PRERREVOLUCIONARIO
+[
+  .TIPO UIC_TEXT .ID 'TXRV' 
+  .PARAMS 
+  [ .ALIGN LEFT .X 60 .Y 50 .TEXT LTEXT_LEYENDA_GOB_PRERREVOLUCIONARIO
+    .FONT "Fonts/Times9.fnt"  .COLOR [ .R 255 .G 255 .B 255 ]
+  ]
+] 
+
+
+#DEMOCRACIA
+[ .TIPO UIC_BITMAP .ID 'BMDE'
+  .PARAMS
+  [ .X 30 .Y 70 .U 748 .V 24 .SX 22 .SY 22
+    .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .PRIORITY 255 .ALPHA TRUE  
+  ]      
+]
+   
+#DEMOCRACIA
+[
+  .TIPO UIC_TEXT .ID 'TXDE' 
+  .PARAMS 
+  [ .ALIGN LEFT .X 60 .Y 75 .TEXT LTEXT_LEYENDA_GOB_DEMOCRACIA
+    .FONT "Fonts/Times9.fnt"  .COLOR [ .R 255 .G 255 .B 255 ]
+  ]
+]
+
+#ABSOLUTISMO
+[ .TIPO UIC_BITMAP .ID 'BMAB'
+  .PARAMS
+  [ .X 30 .Y 95 .U 771 .V 93 .SX 22 .SY 22
+    .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .PRIORITY 255 .ALPHA TRUE  
+  ]      
+]
+   
+#ABSOLUTISMO
+[
+  .TIPO UIC_TEXT .ID 'TXAB' 
+  .PARAMS 
+  [ .ALIGN LEFT .X 60 .Y 100 .TEXT LTEXT_LEYENDA_GOB_ABSOLUTISMO
+    .FONT "Fonts/Times9.fnt"  .COLOR [ .R 255 .G 255 .B 255 ]
+  ]
+] 
+ 
+ 
+#REPUBLICA
+[ .TIPO UIC_BITMAP .ID 'BMRB'
+  .PARAMS
+  [ .X 30 .Y 120 .U 771 .V 185 .SX 22 .SY 22
+    .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .PRIORITY 255 .ALPHA TRUE  
+  ]      
+]
+   
+#REPUBLICA
+[
+  .TIPO UIC_TEXT .ID 'TXRB' 
+  .PARAMS 
+  [ .ALIGN LEFT .X 60 .Y 125 .TEXT LTEXT_LEYENDA_GOB_REPUBLICA
+    .FONT "Fonts/Times9.fnt"  .COLOR [ .R 255 .G 255 .B 255 ]
+  ]
+] 
+ 
+#MONARQUIA ABSOLUTA
+[ .TIPO UIC_BITMAP .ID 'BMMA'
+  .PARAMS
+  [ .X 160 .Y 45 .U 771 .V 116 .SX 22 .SY 22
+    .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .PRIORITY 255 .ALPHA TRUE  
+  ]      
+]
+   
+#MONARQUIA ABSOLUTA
+[
+  .TIPO UIC_TEXT .ID 'TXMA' 
+  .PARAMS 
+  [ .ALIGN LEFT .X 190 .Y 50 .TEXT LTEXT_LEYENDA_GOB_MONARQUIA_ABSOLUTA
+    .FONT "Fonts/Times9.fnt"  .COLOR [ .R 255 .G 255 .B 255 ]
+  ]
+]
+
+ 
+#MONARQUIA PARLAMENTARIA
+[ .TIPO UIC_BITMAP .ID 'BMMP'
+  .PARAMS
+  [ .X 160 .Y 70 .U 748 .V 47 .SX 22 .SY 22
+    .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .PRIORITY 255 .ALPHA TRUE  
+  ]      
+]
+   
+#MONARQUIA PARLAMENTARIA
+[
+  .TIPO UIC_TEXT .ID 'TXMP' 
+  .PARAMS 
+  [ .ALIGN LEFT .X 190 .Y 75 .TEXT LTEXT_LEYENDA_GOB_MONARQUIA_PARLAMENTARIA
+    .FONT "Fonts/Times9.fnt"  .COLOR [ .R 255 .G 255 .B 255 ]
+  ]
+]
+ 
+#DICTADURA
+[ .TIPO UIC_BITMAP .ID 'BMDI'
+  .PARAMS
+  [ .X 160 .Y 95 .U 771 .V 139 .SX 22 .SY 22
+    .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .PRIORITY 255 .ALPHA TRUE  
+  ]      
+]
+   
+#DICTADURA
+[
+  .TIPO UIC_TEXT .ID 'TXDI' 
+  .PARAMS 
+  [ .ALIGN LEFT .X 190 .Y 100 .TEXT LTEXT_LEYENDA_GOB_DICTADURA
+    .FONT "Fonts/Times9.fnt"  .COLOR [ .R 255 .G 255 .B 255 ]
+  ]
+]

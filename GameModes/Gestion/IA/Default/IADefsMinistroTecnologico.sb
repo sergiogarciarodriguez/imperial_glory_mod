@@ -1,0 +1,36 @@
+##################################################################################################
+# Definiciones asociadas a la IA del ministerio de tecnologia
+##################################################################################################
+
+ # Pesos asociados a los diferentes valores considerados en el calculo del coeficiente que indica
+ # la importancia de investigar una tecnologia frente a otra.
+ #
+ # Notas: - Todo peso debera de oscilar entre 0 y 1, utilizandose para ello valores flotantes. 
+ #        - Cuanto mas cerca este el peso de 1, mas importancia tendra el valor asociado en el
+ #          calculo del coeficiente.
+ #        - La suma de todos los pesos debera de valer 1.
+ #        - Para mas info consultar el documento "Docs/AI/Gestion/Detalles de implementacion del ministro de tecnologia.doc"
+ 
+ .PESOS_CALCULO_COEFICIENTE
+ [
+  .PESO_INTERES_RAMA_TECNOLOGIA       0.15 # Importancia de investigar en ramas de interes
+  .PESO_INCIDENCIA_PRODUCCION         0.35 # Importancia de reaccionar ante una produccion mala de una riqueza
+  .PESO_DISTANCIA_TECNOLOGIA_ORDENADA 0.40 # Importancia de estar cerca de una tecnologia ordenada para investigar    
+  .PESO_COSTE_TURNOS_INVESTIGACION    0.02 # Importancia de que se tarde poco tiempo en investigar  
+  .PESO_TECNOLOGIAS_HABILITADAS       0.01 # Importancia de que habilite tecnologias    
+  .PESO_DISTANCIA_ORIGEN_RAMA         0.05 # Importancia de que este cerca del origen de la rama (expansion en anchura vs profundidad)  
+  .PESO_TECNOLOGIAS_AYUDA_HABILITAR   0.01 # Importancia de que ayude a habilitar tecnologias  
+  .PESO_EDIFICIO_VINCULADO            0.01 # Importancia de que tenga un edificio vinculado
+  .PESO_JUGADORES_CON_TECNOLOGIA      0.00 # Importancia de que haya otros jugadores con la tecnologia  
+ ]
+
+
+ # Define el porcentaje máximo de ciencia que en condiciones normales el ministro tecnológico 
+ # destinará a producción de oro. Este valor podrá ser superado en caso de incidencia grave.
+ .VALOR_MAXIMO_CONVERSION_CIENCIA                               70.0
+ # Valor que indica la cantidad en que aumentará el valor de conversión de ciencia a oro cada vez que
+ # se detecte que un edificio que se quería construir no se ha podido hacer por falta de recursos.
+ .MODIFICADOR_CONVERSION_CIENCIA_POR_EDIFICIO_NO_CONSTRUIDO      5.5
+ # Valor que indica la cantidad en que decrecerá el valor de conversión de ciencia a oro cada vez que
+ # se detecte que había una tecnología que se quería investigar.
+ .MODIFICADOR_CONVERSION_CIENCIA_POR_TECNOLOGIA_NO_INVESTIGADA  -3.0

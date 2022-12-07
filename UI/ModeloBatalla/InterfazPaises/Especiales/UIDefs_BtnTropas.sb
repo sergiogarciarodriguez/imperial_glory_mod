@@ -1,0 +1,248 @@
+###############################################################################################################
+# Tropas Especiales. 
+###############################################################################################################
+
+[ 
+ .KEY PORTUGAL_ELITE_BTN_INFO_TROPA
+ .PARAMS
+ [ 
+  .COMPORTAMIENTO MANUAL
+  .FONDO
+  [
+    .SX 57 .SY 91 .ALPHA TRUE 
+    .SOLTADO    [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Especiales/Especiales.tga" .U 1 .V 1 ] 
+    .PULSADO    [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Especiales/Especiales.tga" .U 1 .V 92 ] 
+  ]  
+  
+  .IDSELECTSOUND "S_UI_BORDENDIRECTA_PULSADO"   
+    
+  .INDICADORES_ACTIVIDAD [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_IndicadoresActividad.sb ]
+  .INFO_PORCENTAJE       [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BtnTropaInfoPorcentajeParams.sb ]
+  .BARRA_FATIGA [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BarraFatiga.sb  ]
+  .BARRA_EXPERIENCIA  "Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BarraExperiencia.sb"
+  .BOTON_GRUPO [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BtnGrupo.sb ]
+ ]
+]
+
+[ 
+ .KEY ARABE_CAB_HUSAR_BTN_INFO_TROPA
+ .PARAMS
+ [ 
+  .COMPORTAMIENTO MANUAL
+  .FONDO
+  [
+    .SX 57 .SY 91 .ALPHA TRUE 
+    .SOLTADO    [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Especiales/Especiales.tga" .U 117 .V 183 ] 
+    .PULSADO    [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Especiales/Especiales.tga" .U 117 .V 274 ] 
+  ]  
+  
+  .IDSELECTSOUND "S_UI_BORDENDIRECTA_PULSADO"   
+    
+  .INDICADORES_ACTIVIDAD [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_IndicadoresActividad.sb ]
+  .INFO_PORCENTAJE       [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BtnTropaInfoPorcentajeParams.sb ]
+  .BARRA_FATIGA [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BarraFatiga.sb  ]
+  .BARRA_EXPERIENCIA  "Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BarraExperiencia.sb"
+  .BOTON_GRUPO [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BtnGrupo.sb ]
+ ]
+]
+
+[ 
+ .KEY ARABE_CAB_LANCERO_BTN_INFO_TROPA
+ .PARAMS
+ [ 
+  .COMPORTAMIENTO MANUAL
+  .FONDO
+  [
+    .SX 57 .SY 91 .ALPHA TRUE 
+    .SOLTADO    [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Especiales/Especiales.tga" .U 59 .V 183 ] 
+    .PULSADO    [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Especiales/Especiales.tga" .U 59 .V 274 ] 
+  ]  
+  
+  .IDSELECTSOUND "S_UI_BORDENDIRECTA_PULSADO"   
+    
+  .INDICADORES_ACTIVIDAD [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_IndicadoresActividad.sb ]
+  .INFO_PORCENTAJE       [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BtnTropaInfoPorcentajeParams.sb ]
+  .BARRA_FATIGA [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BarraFatiga.sb  ]
+  .BARRA_EXPERIENCIA  "Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BarraExperiencia.sb"
+  .BOTON_GRUPO [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BtnGrupo.sb ]
+ ]
+]
+
+[ 
+ .KEY ARABE_MILICIA_BTN_INFO_TROPA
+ .PARAMS
+ [ 
+  .COMPORTAMIENTO MANUAL
+  .FONDO
+  [
+    .SX 57 .SY 91 .ALPHA TRUE 
+    .SOLTADO    [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Especiales/Especiales.tga" .U 349 .V 1 ] 
+    .PULSADO    [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Especiales/Especiales.tga" .U 349 .V 92 ] 
+  ]  
+  
+  .IDSELECTSOUND "S_UI_BORDENDIRECTA_PULSADO"   
+    
+  .INDICADORES_ACTIVIDAD [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_IndicadoresActividad.sb ]
+  .INFO_PORCENTAJE       [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BtnTropaInfoPorcentajeParams.sb ]
+  .BARRA_FATIGA [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BarraFatiga.sb  ]
+  .BARRA_EXPERIENCIA  "Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BarraExperiencia.sb"
+  .BOTON_GRUPO [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BtnGrupo.sb ]
+ ]
+]
+
+[ 
+ .KEY ARABE_FUSILERO_BTN_INFO_TROPA
+ .PARAMS
+ [ 
+  .COMPORTAMIENTO MANUAL
+  .FONDO
+  [
+    .SX 57 .SY 91 .ALPHA TRUE 
+    .SOLTADO    [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Especiales/Especiales.tga" .U 1 .V 183 ] 
+    .PULSADO    [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Especiales/Especiales.tga" .U 1 .V 274 ] 
+  ]  
+  
+  .IDSELECTSOUND "S_UI_BORDENDIRECTA_PULSADO"   
+    
+  .INDICADORES_ACTIVIDAD [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_IndicadoresActividad.sb ]
+  .INFO_PORCENTAJE       [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BtnTropaInfoPorcentajeParams.sb ]
+  .BARRA_FATIGA [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BarraFatiga.sb  ]
+  .BARRA_EXPERIENCIA  "Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BarraExperiencia.sb"
+  .BOTON_GRUPO [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BtnGrupo.sb ]
+ ]
+]
+
+[ 
+ .KEY ARABE_TIRADOR_BTN_INFO_TROPA
+ .PARAMS
+ [ 
+  .COMPORTAMIENTO MANUAL
+  .FONDO
+  [
+    .SX 57 .SY 91 .ALPHA TRUE 
+    .SOLTADO    [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Especiales/Especiales.tga" .U 291 .V 1 ] 
+    .PULSADO    [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Especiales/Especiales.tga" .U 291 .V 92 ] 
+  ]  
+  
+  .IDSELECTSOUND "S_UI_BORDENDIRECTA_PULSADO"   
+    
+  .INDICADORES_ACTIVIDAD [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_IndicadoresActividad.sb ]
+  .INFO_PORCENTAJE       [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BtnTropaInfoPorcentajeParams.sb ]
+  .BARRA_FATIGA [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BarraFatiga.sb  ]
+  .BARRA_EXPERIENCIA  "Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BarraExperiencia.sb"
+  .BOTON_GRUPO [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BtnGrupo.sb ]
+ ]
+]
+
+[ 
+ .KEY ARABE_CAM_LANCERO_BTN_INFO_TROPA
+ .PARAMS
+ [ 
+  .COMPORTAMIENTO MANUAL
+  .FONDO
+  [
+    .SX 57 .SY 91 .ALPHA TRUE 
+    .SOLTADO    [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Especiales/Especiales.tga" .U 407 .V 1 ] 
+    .PULSADO    [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Especiales/Especiales.tga" .U 407 .V 92 ] 
+  ]  
+  
+  .IDSELECTSOUND "S_UI_BORDENDIRECTA_PULSADO"   
+    
+  .INDICADORES_ACTIVIDAD [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_IndicadoresActividad.sb ]
+  .INFO_PORCENTAJE       [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BtnTropaInfoPorcentajeParams.sb ]
+  .BARRA_FATIGA [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BarraFatiga.sb  ]
+  .BARRA_EXPERIENCIA  "Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BarraExperiencia.sb"
+  .BOTON_GRUPO [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BtnGrupo.sb ]
+ ]
+]
+
+[ 
+ .KEY ARABE_CAM_TIRADOR_BTN_INFO_TROPA
+ .PARAMS
+ [ 
+  .COMPORTAMIENTO MANUAL
+  .FONDO
+  [
+    .SX 57 .SY 91 .ALPHA TRUE 
+    .SOLTADO    [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Especiales/Especiales.tga" .U 233 .V 1 ] 
+    .PULSADO    [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Especiales/Especiales.tga" .U 233 .V 92 ] 
+  ]  
+  
+  .IDSELECTSOUND "S_UI_BORDENDIRECTA_PULSADO"   
+    
+  .INDICADORES_ACTIVIDAD [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_IndicadoresActividad.sb ]
+  .INFO_PORCENTAJE       [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BtnTropaInfoPorcentajeParams.sb ]
+  .BARRA_FATIGA [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BarraFatiga.sb  ]
+  .BARRA_EXPERIENCIA  "Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BarraExperiencia.sb"
+  .BOTON_GRUPO [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BtnGrupo.sb ]
+ ]
+]
+
+[ 
+ .KEY ESPANYA_ELITE_BTN_INFO_TROPA
+ .PARAMS
+ [ 
+  .COMPORTAMIENTO MANUAL
+  .FONDO
+  [
+    .SX 57 .SY 91 .ALPHA TRUE 
+    .SOLTADO    [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Especiales/Especiales.tga" .U 175 .V 1 ] 
+    .PULSADO    [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Especiales/Especiales.tga" .U 175 .V 92 ] 
+  ]  
+  
+  .IDSELECTSOUND "S_UI_BORDENDIRECTA_PULSADO"   
+    
+  .INDICADORES_ACTIVIDAD [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_IndicadoresActividad.sb ]
+  .INFO_PORCENTAJE       [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BtnTropaInfoPorcentajeParams.sb ]
+  .BARRA_FATIGA [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BarraFatiga.sb  ]
+  .BARRA_EXPERIENCIA  "Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BarraExperiencia.sb"
+  .BOTON_GRUPO [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BtnGrupo.sb ]
+ ]
+]
+
+
+
+[ 
+ .KEY POLONIA_CAB_ELITE_BTN_INFO_TROPA
+ .PARAMS
+ [ 
+  .COMPORTAMIENTO MANUAL
+  .FONDO
+  [
+    .SX 57 .SY 91 .ALPHA TRUE 
+    .SOLTADO    [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Especiales/Especiales.tga" .U 59 .V 1 ] 
+    .PULSADO    [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Especiales/Especiales.tga" .U 59 .V 92 ] 
+  ]  
+  
+  .IDSELECTSOUND "S_UI_BORDENDIRECTA_PULSADO"   
+    
+  .INDICADORES_ACTIVIDAD [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_IndicadoresActividad.sb ]
+  .INFO_PORCENTAJE       [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BtnTropaInfoPorcentajeParams.sb ]
+  .BARRA_FATIGA [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BarraFatiga.sb  ]
+  .BARRA_EXPERIENCIA  "Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BarraExperiencia.sb"
+  .BOTON_GRUPO [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BtnGrupo.sb ]
+ ]
+]
+
+[ 
+ .KEY ARABE_CAB_ELITE_BTN_INFO_TROPA
+ .PARAMS
+ [ 
+  .COMPORTAMIENTO MANUAL
+  .FONDO
+  [
+    .SX 57 .SY 91 .ALPHA TRUE 
+    .SOLTADO    [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Especiales/Especiales.tga" .U 117 .V 1 ] 
+    .PULSADO    [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Especiales/Especiales.tga" .U 117 .V 92 ] 
+  ]  
+  
+  .IDSELECTSOUND "S_UI_BORDENDIRECTA_PULSADO"   
+    
+  .INDICADORES_ACTIVIDAD [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_IndicadoresActividad.sb ]
+  .INFO_PORCENTAJE       [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BtnTropaInfoPorcentajeParams.sb ]
+  .BARRA_FATIGA [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BarraFatiga.sb  ]
+  .BARRA_EXPERIENCIA  "Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BarraExperiencia.sb"
+  .BOTON_GRUPO [ %Game/UI/ModeloBatalla/InterfazPaises/UIDefs_BtnGrupo.sb ]
+ ]
+]
+

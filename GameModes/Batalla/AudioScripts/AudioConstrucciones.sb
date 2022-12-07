@@ -1,0 +1,56 @@
+#=======================================================================================
+# Definición de sonidos para el modelo de batalla [ ENVIRONMENT ]
+#
+# Param ".3D" es TRUE por defecto.
+#       ".LOOP" es FALSE por defecto.
+#=======================================================================================
+
+
+###-------------------------------------------------------------------------------------
+### AUDIO
+###-------------------------------------------------------------------------------------
+.AUDIO 
+[
+  [ 
+    .IDNAME "S_DESTRUCCION_BARRICADA"     
+    .PATH [ "Audio/Battle/Fx/Constructions/Dest_barricada.ogg"  ]
+    .TYPE EFFECT .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 2
+  ]
+
+  [ 
+    .IDNAME "S_DESTRUCCION_CASA"     
+    .PATH [ "Audio/Battle/Fx/Constructions/Dest_Casa.ogg"  ]
+    .TYPE EFFECT .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 2
+  ]
+  
+  [ 
+    .IDNAME "S_DESTRUCCION_CASACOMPLEJA"     
+    .PATH [ "Audio/Battle/Fx/Constructions/Dest_Casa_Compleja.ogg"  ]
+    .TYPE EFFECT .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 2
+  ]
+  
+  [ 
+    .IDNAME "S_DESTRUCCION_HIELO"     
+    .PATH [ "Audio/Battle/Fx/Constructions/Dest_Hielo.ogg"  ]
+    .TYPE EFFECT .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 2
+  ]
+  
+  [ 
+    .IDNAME "S_DESTRUCCION_JAIMA"     
+    .PATH [ "Audio/Battle/Fx/Constructions/Dest_Jaima.ogg"  ]
+    .TYPE EFFECT .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 2
+  ]
+  
+  [ 
+    .IDNAME "S_DESTRUCCION_MURO"     
+    .PATH [ "Audio/Battle/Fx/Constructions/Dest_Muro.ogg"  ]
+    .TYPE EFFECT .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 2
+  ]
+  
+  [ 
+    .IDNAME "S_DESTRUCCION_RUINA"     
+    .PATH [ "Audio/Battle/Fx/Constructions/Dest_Ruina.ogg"  ]
+    .TYPE EFFECT .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 2
+  ]
+  
+] ### !AUDIO

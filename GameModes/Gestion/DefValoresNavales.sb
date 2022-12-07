@@ -1,0 +1,53 @@
+#===========================================================================================
+# Fichero de definición de valores de los atributos
+#
+#===========================================================================================
+
+#··································································································
+# Tipos de Barco - No modificar ni cambiar el orden, debe coincidir con el 'enum' encontrado en 
+#                  el código del juego -> CommonDataEnumsNaval.h
+#··································································································
+
+!DEF    TBARCO_NAVIO_LINIA      0
+!DEF    TBARCO_FRAGATA          1
+!DEF    TBARCO_CORBETA          2
+!DEF    TBARCO_COUNT            3
+
+#··································································································
+# Tripulaciones Disponibles - No modificar ni cambiar el orden, debe coincidir con el 'enum'
+#                             encontrado en el código del juego -> CommonDataEnumsNaval.h
+#··································································································
+
+!DEF    TTRIPULACION_NOVATA         0
+!DEF    TTRIPULACION_MEDIA          1
+!DEF    TTRIPULACION_EXPERIMENTADA  2
+!DEF    TTRIPULACION_VETERANA       3
+!DEF    TTRIPULACION_ELITE          4
+!DEF    TTRIPULACION_COUNT          5
+
+#··································································································
+# Ratio de reparacion de Barcos, expresado como ganacia porcentual (0.3 = +30% de resistencia)
+#
+# Ricard: Pongo los valores por defecto. De hecho nunca se recupera tripulacion en alta mar
+# y en puertos nos recuperamos completamente en 1 solo turno. Esto puede tener costes en la
+# poblacion y otros recursos!!!
+#··································································································
+
+.REPARACION_BARCOS
+[
+  .ALTA_MAR
+  [
+    .CASCO        0.3
+    .VELAMEN      0.3
+    .TRIPULACION  0.0 
+  ]
+  .PUERTO
+  [
+    .CASCO        1.0
+    .VELAMEN      1.0
+    .TRIPULACION  1.0
+  ]
+]
+
+  
+

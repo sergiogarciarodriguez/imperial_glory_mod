@@ -1,0 +1,9 @@
+###############################################################################################################
+# Imagenes asociadas a tropas.
+# Tropas por defecto.
+###############################################################################################################
+
+[ 
+ .KEY DEFAULT_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Default/Interfaz.tga" .U 773 .V 485 .SX 54 .SY 71 .ALPHA TRUE ]
+]

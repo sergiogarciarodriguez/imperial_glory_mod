@@ -1,0 +1,9 @@
+##########################################################################################################
+# Contiene el array con los bitmaps de carga asociados a cada una de las provincias cuando se entre
+# desde el modelo de gestion al modelo naval.
+# Este archivo lo utilizara un Cargador de Bitmaps creado cuando se entre en modo naval.
+#
+# El formato sera .DESC [ Datos del Bitmap ] donde .DESC, en este archivo, se esperara que sea el DESC de
+# las diferentes provincias y DEFAULT para cuando no se halle provincia asociada.
+
+ .DEFAULT   [ .FILE "Game/UI/Comun/men_waiting.tga"                                 .X 0 .Y 0 .SX 1024 .SY 768 .U 0 .V 0 .PRIORITY 255 ] 

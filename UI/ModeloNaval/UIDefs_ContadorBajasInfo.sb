@@ -1,0 +1,75 @@
+# Archivo que contiene datos generales para que el control para la representacion de los
+# bandos en el contador de bajas de combate.
+# Cada bando estara representado por una imagen estatica y una barra de porcentaje.
+# Cada bando sera reconocido por su nombre
+
+.BANDOS
+[
+
+ .DEFAULT
+ [ 
+   .IMG [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .SX 33 .SY 18 .U 933 .V 130 .ALPHA TRUE ] 
+
+   .BARRA 
+    [ 
+     .SUPERIOR [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 714 .V 328 .ALPHA TRUE ]
+     .SX 165 .SY 14	
+    ] 
+  ]
+
+ .JUG_FRANCIA
+ [ 
+   .IMG [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .SX 33 .SY 18 .U 933 .V 130 .ALPHA TRUE ] 
+
+   .BARRA 
+    [ 
+     .SUPERIOR [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 714 .V 328 .ALPHA TRUE ]
+     .SX 165 .SY 14	
+    ] 
+  ]
+ 
+ .JUG_GRAN_BRETANYA
+ [ 
+   
+   .IMG [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .SX 33 .SY 18 .U 933 .V  151 .ALPHA TRUE ] 
+
+   .BARRA 
+    [ 
+     .SUPERIOR [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 714 .V 349 .ALPHA TRUE ]
+     .SX 165 .SY 14
+    ]
+  ]
+ 
+ .JUG_PRUSIA 
+ [  
+   .IMG [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .SX 33 .SY 18 .U 897 .V 172 .ALPHA TRUE ] 
+
+   .BARRA 
+    [ 
+     .SUPERIOR [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 714 .V 265 .ALPHA TRUE ]
+     .SX 165 .SY 14
+    ] 
+  ]  
+  
+  .JUG_RUSIA
+  [ 
+   .IMG [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .SX 33 .SY 18 .U 897 .V  151 .ALPHA TRUE ] 
+
+   .BARRA 
+    [ 
+     .SUPERIOR [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 714 .V 286 .ALPHA TRUE ]
+     .SX 165 .SY 14
+    ]
+  ]
+  
+  .JUG_AUSTRIA 
+  [   
+   .IMG [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .SX 33 .SY 18 .U 897 .V 130 .ALPHA TRUE ] 
+
+   .BARRA 
+    [ 
+     .SUPERIOR [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 714 .V 307 .ALPHA TRUE ]          
+     .SX 165 .SY 14
+    ] 
+  ]
+]

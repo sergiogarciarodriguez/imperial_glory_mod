@@ -1,0 +1,100 @@
+#########################################################################################
+# Botones de Ordenes de Tipo de Ataque en Modelo Naval
+#########################################################################################
+
+
+.BOTONES
+[
+  # Boton de fuego
+  [ .ID 'FUEG'
+    
+    .COMPORTAMIENTO FIJO    
+    .FONDO
+    [
+      .X 541 .Y 585
+      .SX 37 .SY 39 .ALPHA TRUE .PRIORITY 30
+      .SOLTADO      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 1  .V 346 ] 
+      .SELECCIONADO [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 41 .V 346 ]    
+      .PULSADO      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 81 .V 346 ]    
+      .INTERMITENTE [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 121 .V 346 ]
+      .DISABLE      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 121 .V 346 ]    
+    ]
+    .BLINK_TIMER 600.0
+    
+    .IDSELECTSOUND "S_UI_TIPOATAQUE_PULSADO" 
+    
+    .TOOL_TIP 
+    [ 
+     .TEXT LTEXT_UI_NAVAL_TT_FIRE
+     .FONT "Fonts/gothic.fnt" 
+     .X 32 .Y 32
+     .COLOR [ .R 255 .G 255 .B 255 ] 
+       
+     .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+    ]      
+    
+    .KEY [ .TECLA KEY_F .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ]  
+  ]
+  
+  # Boton de Metralla  
+  [ .ID 'METR'
+    .COMPORTAMIENTO FIJO
+    .FONDO
+    [
+      .X 452 .Y 585
+      .SX 37 .SY 39 .ALPHA TRUE .PRIORITY 30
+      .SOLTADO      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 1  .V 262 ] 
+      .SELECCIONADO [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 41 .V 262 ]    
+      .PULSADO      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 81 .V 262 ]    
+      .INTERMITENTE [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 121 .V 262 ]
+      .DISABLE      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 121 .V 262 ]    
+    ]
+    .BLINK_TIMER 600.0
+    
+    .IDSELECTSOUND "S_UI_TIPOATAQUE_PULSADO" 
+    
+
+    .TOOL_TIP 
+    [ 
+     .TEXT LTEXT_UI_NAVAL_TT_GRAPESHOT
+     .FONT "Fonts/gothic.fnt" 
+     .X 32 .Y 32
+     .COLOR [ .R 255 .G 255 .B 255 ] 
+       
+     .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+    ]          
+  
+    .KEY [ .TECLA KEY_G .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ]   
+  ]
+  
+  # Boton de Bala Cañon  
+  [ .ID 'BLCN'
+    .COMPORTAMIENTO FIJO
+    .FONDO
+    [
+      .X 496 .Y 568
+      .SX 37 .SY 39 .ALPHA TRUE .PRIORITY 30
+      .SOLTADO      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 1  .V 304 ] 
+      .SELECCIONADO [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 41 .V 304 ]    
+      .PULSADO      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 81 .V 304 ]    
+      .INTERMITENTE [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 121 .V 304 ]
+      .DISABLE      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 121 .V 304 ]    
+    ]
+    .BLINK_TIMER 600.0
+    
+    .IDSELECTSOUND "S_UI_TIPOATAQUE_PULSADO" 
+    
+    .TOOL_TIP 
+    [ 
+     .TEXT LTEXT_UI_NAVAL_TT_BOMB
+     .FONT "Fonts/gothic.fnt" 
+     .X 32 .Y 32
+     .COLOR [ .R 255 .G 255 .B 255 ] 
+       
+     .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+    ]        
+    
+    .KEY [ .TECLA KEY_H .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ]    
+  ]
+]
+

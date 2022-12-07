@@ -1,0 +1,445 @@
+###############################################################################################################
+# Mantiene el pool de los botones asociados a los Quest
+###############################################################################################################
+
+[ 
+  .KEY BTN_DEFAULT_NORMAL    
+  .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 1 .V 64 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+  .KEY BTN_DEFAULT_SELECCIONADO
+  .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 1 .V 127 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+  .KEY BTN_DEFAULT_PULSADO
+  .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 1 .V 190 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+  .KEY BTN_DEFAULT_VACIO
+  .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 1 .V 1 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[
+ .KEY BTN_EXPOSICION_UNIVERSAL_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 340 .V 64 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[
+ .KEY BTN_EXPOSICION_UNIVERSAL_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 340 .V 127 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[
+ .KEY BTN_EXPOSICION_UNIVERSAL_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 340 .V 190 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+  .KEY BTN_EXPOSICION_UNIVERSAL_VACIO
+  .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 340 .V 1 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[
+ .KEY BTN_SIMON_BOLIVAR_NORMAL  
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 1 .V 64 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[
+ .KEY BTN_SIMON_BOLIVAR_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 1 .V 127 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[
+ .KEY BTN_SIMON_BOLIVAR_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 1 .V 190 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+  .KEY BTN_SIMON_BOLIVAR_VACIO
+  .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 1 .V 1 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[
+ .KEY BTN_100.000_HIJOS_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 1 .V 316 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[
+ .KEY BTN_100.000_HIJOS_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 1 .V 379 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[
+ .KEY BTN_100.000_HIJOS_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 1 .V 442 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+  .KEY BTN_100.000_HIJOS_VACIO
+  .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 1 .V 253 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[
+ .KEY BTN_CARTOGRAFIA_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 679 .V 64 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[
+ .KEY BTN_CARTOGRAFIA_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 679 .V 127 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[
+ .KEY BTN_CARTOGRAFIA_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 679 .V 190 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+  .KEY BTN_CARTOGRAFIA_VACIO
+  .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 679 .V 1 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_COLONIZACION_AFRICA_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 340 .V 316 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_COLONIZACION_AFRICA_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 340 .V 379 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_COLONIZACION_AFRICA_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 340 .V 442 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+  .KEY BTN_COLONIZACION_AFRICA_VACIO
+  .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 340 .V 253 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[
+ .KEY BTN_CONSTITUCION_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 114 .V 316 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[
+ .KEY BTN_CONSTITUCION_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 114 .V 379 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[
+ .KEY BTN_CONSTITUCION_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 114 .V 442 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+  .KEY BTN_CONSTITUCION_VACIO
+  .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 114 .V 253 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_DECLARACION_DERECHOS_HUMANOS_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 905 .V 64 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_DECLARACION_DERECHOS_HUMANOS_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 905 .V 127 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_DECLARACION_DERECHOS_HUMANOS_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 905 .V 190 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+  .KEY BTN_DECLARACION_DERECHOS_HUMANOS_VACIO
+  .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 905 .V 1 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_ENCICLOPEDIA_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 566 .V 64 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_ENCICLOPEDIA_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 566 .V 127 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_ENCICLOPEDIA_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 566 .V 190 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+  .KEY BTN_ENCICLOPEDIA_VACIO
+  .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 566 .V 1 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_INDEPENDENCIA_LOUISIANA_NORMAL
+  .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 792 .V 64 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_INDEPENDENCIA_LOUISIANA_SELECCIONADO
+  .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 792 .V 127 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_INDEPENDENCIA_LOUISIANA_PULSADO
+  .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 792 .V 190 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+  .KEY BTN_INDEPENDENCIA_LOUISIANA_VACIO
+  .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 792 .V 1 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_LA_BOLSA_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 227 .V 64 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_LA_BOLSA_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 227 .V 127 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_LA_BOLSA_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 227 .V 190 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+  .KEY BTN_LA_BOLSA_VACIO
+  .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 227 .V 1 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_PAZ_AMIENS_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 679 .V 316 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_PAZ_AMIENS_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 679 .V 379 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_PAZ_AMIENS_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 679 .V 442 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+  .KEY BTN_PAZ_AMIENS_VACIO
+  .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 679 .V 253 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_PAZ_TILSIT_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 566 .V 316 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_PAZ_TILSIT_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 566 .V 379 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_PAZ_TILSIT_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 566 .V 442 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+  .KEY BTN_PAZ_TILSIT_VACIO
+  .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 566 .V 253 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_PIEDRA_ROSETA_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 453 .V 64 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_PIEDRA_ROSETA_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 453 .V 127 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_PIEDRA_ROSETA_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 453 .V 190 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+  .KEY BTN_PIEDRA_ROSETA_VACIO
+  .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 453 .V 1 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_PROCLAMARSE_EMPERADOR_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 227 .V 316 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_PROCLAMARSE_EMPERADOR_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 227 .V 379 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_PROCLAMARSE_EMPERADOR_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 227 .V 442 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+  .KEY BTN_PROCLAMARSE_EMPERADOR_VACIO
+  .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 227 .V 253 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_REVOLUCION_AGRARIA_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 114 .V 64 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_REVOLUCION_AGRARIA_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 114 .V 127 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_REVOLUCION_AGRARIA_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 114 .V 190 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+  .KEY BTN_REVOLUCION_AGRARIA_VACIO
+  .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 114 .V 1 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_RUTA_INDIAS_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 792 .V 316 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_RUTA_INDIAS_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 792 .V 379 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_RUTA_INDIAS_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 792 .V 442 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+  .KEY BTN_RUTA_INDIAS_VACIO
+  .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 792 .V 253 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_SISTEMA_METRICO_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 453 .V 316 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_SISTEMA_METRICO_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 453 .V 379 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_SISTEMA_METRICO_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 453 .V 442 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+  .KEY BTN_SISTEMA_METRICO_VACIO
+  .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 453 .V 253 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+# NUEVOS -------------------------------------------------------------------------------------------
+
+[ 
+ .KEY BTN_SENYOR_MARES_VACIO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 792 .V 253 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_SENYOR_MARES_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 792 .V 316 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_SENYOR_MARES_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 792 .V 379 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_SENYOR_MARES_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 792 .V 442 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_FERROCARRIL_VACIO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 1 .V 662 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_FERROCARRIL_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 1 .V 725 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_FERROCARRIL_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 1 .V 788 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_FERROCARRIL_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 1 .V 851 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_REVOLUCION_MEDICA_VACIO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 114 .V 662 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_REVOLUCION_MEDICA_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 114 .V 725 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_REVOLUCION_MEDICA_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 114 .V 788 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_REVOLUCION_MEDICA_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 114 .V 851 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_BLOQUEO_CONTINENTAL_VACIO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 340 .V 662 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_BLOQUEO_CONTINENTAL_NORMAL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 340 .V 725 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_BLOQUEO_CONTINENTAL_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 340 .V 788 .SX 110 .SY 60 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY BTN_BLOQUEO_CONTINENTAL_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/IconosQuest.tga" .U 340 .V 851 .SX 110 .SY 60 .ALPHA TRUE ]
+]

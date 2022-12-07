@@ -1,0 +1,32 @@
+# Boton de Quests
+
+.COMPORTAMIENTO SIMPLE
+
+.FONDO
+[
+ .X 938 .Y 660 .SX 36 .SY 38 .ALPHA TRUE .PRIORITY 10
+ 
+ .SOLTADO      [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 750 .V 237 ] 
+ .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 789 .V 237 ]   
+ .PULSADO      [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 828 .V 237 ]    
+ .DISABLE      [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 867 .V 237 ]    
+]    
+
+#PASADO A CODIGO
+#.IDSELECTSOUND "S_FXQUEST_ABRIR"
+.IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"
+
+.TOOL_TIP 
+[ 
+ .TEXT LTEXT_UI_BATALLA_TT_PCMAPA_BTNQUESTS
+ .FONT "Fonts/Default.fnt" 
+ .X 32 .Y 32
+ .COLOR [ .R 255 .G 255 .B 255 ] 
+   
+ .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+]
+
+.KEY
+[
+  .TECLA KEY_F4 .EVENTOS [ KEY_DOWN KEY_UP ]          
+]  

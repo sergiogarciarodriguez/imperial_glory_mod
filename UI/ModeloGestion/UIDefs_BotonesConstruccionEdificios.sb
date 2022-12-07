@@ -1,0 +1,99 @@
+#############################################################################################
+# Mantiene los botones asociados a las diferentes construcciones de edificios.
+# Las construcciones tendran dos botones asociados: 
+# - Para cuando estan habilitadas
+# - Para cuando estan construidas
+# Diferenciandose que cuando se hallan construidas y tienen upgrades sin construir, el boton
+# permanecera soltado.
+#
+# Representaremos las construcciones usando botones manuales y con boton auxiliar derecho.
+#############################################################################################
+
+
+
+ [
+  .CONSTRUCCION CONST_PRUEBA_MILITAR
+  .PARAMS
+  [      
+   .HABILITADA
+   [ 
+    .COMPORTAMIENTO MANUAL
+    .SX 37 .SY 37
+    .ALPHA TRUE .PRIORITY 255
+    .SOLTADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 6 .V 553 ]
+    .PULSADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 6 .V 513 ]
+    .ACEPTAR TRUE   
+   ]
+    
+   .CONSTRUIDA 
+   [
+    .COMPORTAMIENTO MANUAL
+    .SX 37 .SY 37
+    .ALPHA TRUE .PRIORITY 255
+    .SOLTADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 6 .V 513 ]
+    .PULSADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 6 .V 553 ]
+    .ACEPTAR TRUE      
+   ]
+   
+   # ¿?.EN_CONSTRUCCION [ ]
+  ]
+ ]
+ 
+ [
+  .CONSTRUCCION CONST_PRUEBA_POLITICA
+  .PARAMS
+  [      
+   .HABILITADA
+   [ 
+    .COMPORTAMIENTO MANUAL
+    .SX 37 .SY 37
+    .ALPHA TRUE .PRIORITY 255
+    .SOLTADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 6 .V 553 ]
+    .PULSADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 6 .V 513 ]
+    .ACEPTAR TRUE   
+   ]
+    
+   .CONSTRUIDA 
+   [
+    .COMPORTAMIENTO MANUAL
+    .SX 37 .SY 37
+    .ALPHA TRUE .PRIORITY 255
+    .SOLTADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 6 .V 513 ]
+    .PULSADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 6 .V 553 ]
+    .ACEPTAR TRUE      
+   ]
+   
+   # ¿?.EN_CONSTRUCCION [ ]
+  ]
+ ]
+ 
+ [
+  .CONSTRUCCION CONST_PRUEBA_COMERCIAL
+  .PARAMS
+  [      
+   .HABILITADA
+   [ 
+    .COMPORTAMIENTO MANUAL
+    .SX 37 .SY 37
+    .ALPHA TRUE .PRIORITY 255
+    .SOLTADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 6 .V 553 ]
+    .PULSADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 6 .V 513 ]
+    .ACEPTAR TRUE   
+   ]
+    
+   .CONSTRUIDA 
+   [
+    .COMPORTAMIENTO MANUAL
+    .SX 37 .SY 37
+    .ALPHA TRUE .PRIORITY 255
+    .SOLTADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 6 .V 513 ]
+    .PULSADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 6 .V 553 ]
+    .ACEPTAR TRUE      
+   ]
+   
+   # ¿?.EN_CONSTRUCCION [ ]
+  ]
+ ]
+ 
+
+ 

@@ -1,0 +1,32 @@
+ El volumen de la unidad D es Gaia
+ El n£mero de serie del volumen es: 84EF-C9DA
+
+ Directorio de D:\Napoleon\_Run\Game\UI\ModeloGestion\Iconos\Notificaciones
+
+17/02/2005  11:30       <DIR>          .
+17/02/2005  11:30       <DIR>          ..
+01/02/2005  12:36              262.188 Batalla1.tga
+01/02/2005  12:32              262.188 Batalla2.tga
+01/02/2005  12:30              262.188 Batalla3.tga
+01/02/2005  12:29              262.188 Batalla4.tga
+01/02/2005  12:37              262.188 ComercioBloqueada.tga
+01/02/2005  12:39              262.188 ComercioCreada.tga
+31/01/2005  16:13              262.188 ConquistarMapa.tga
+31/01/2005  17:43              262.188 ConquistarTerritorio.tga
+02/02/2005  15:57              262.188 ConquitarTerritorioPacifico.tga
+31/01/2005  14:49              262.188 EleccionHerederos.tga
+31/01/2005  14:43              262.188 ExpulsionOtroImperio.tga
+01/02/2005  12:01              262.188 ExpulsionPartida.tga
+31/01/2005  14:46              262.188 Investigaciones.tga
+17/02/2005  11:30                    0 listado.txt
+01/02/2005  17:07              262.188 NotificacionInicioAustria.tga
+01/02/2005  16:57              262.188 NotificacionInicioFrancia.tga
+01/02/2005  17:14              262.188 NotificacionInicioGranBretanya.tga
+01/02/2005  17:09              262.188 NotificacionInicioPrusia.tga
+01/02/2005  17:11              262.188 NotificacionInicioRusia.tga
+31/01/2005  15:37              262.188 PenalizacionesComida.tga
+01/02/2005  12:26              262.188 PersecucionNaval.tga
+31/01/2005  18:13              262.188 Quest.tga
+01/02/2005  12:55              262.188 RefuerzoFondo.tga
+              23 archivos      5.768.136 bytes
+               2 dirs     939.040.768 bytes libres

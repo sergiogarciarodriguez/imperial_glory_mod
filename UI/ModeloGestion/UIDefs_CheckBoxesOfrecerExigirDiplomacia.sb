@@ -1,0 +1,54 @@
+#############################################################################################
+# Params Grupo Checkboxes para Ofrecer/Exigir
+#############################################################################################
+
+  .CHECKBOXES
+  [   
+
+    # CheckBox - Ofrecer
+    [ .TIPO UIC_CHECKBOX .ID 'CBOF'
+      .PARAMS
+      [  
+        .COMPORTAMIENTO FIJO
+        .STYLE DEFAULT_DIPLOMACIA_BUTTON_GRANDE
+        .TEXT LTEXT_DIPLOMACIA_OFRECER
+        .FONDO [ .X 739 .Y 369 ]
+    	.COLOR [ .R 0 .G 0 .B 0 ]        
+        
+        .IDSELECTSOUND "S_FXUI_CHECKBUTTON"        
+        .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"
+        
+        .TOOL_TIP 
+        [ 
+          .TEXT LTEXT_DIPLOMACIA_OFRECER 
+          %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+        ]       
+      ]            
+    ] # ~ CHECKBOX 
+
+    # CheckBox - Exigir
+    [ .TIPO UIC_CHECKBOX .ID 'CBEX'
+      .PARAMS
+      [  
+        .COMPORTAMIENTO FIJO
+        .STYLE DEFAULT_DIPLOMACIA_BUTTON_GRANDE
+        .TEXT LTEXT_DIPLOMACIA_EXIGIR
+        .FONDO [ .X 739 .Y 662 ]
+    	.COLOR [ .R 0 .G 0 .B 0 ]
+            
+        .IDSELECTSOUND "S_FXUI_CHECKBUTTON"
+        .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"
+                
+        .TOOL_TIP 
+        [ 
+          .TEXT LTEXT_DIPLOMACIA_EXIGIR 
+          %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+        ]       
+      ]            
+    ] # ~ CHECKBOX 
+                    
+  ] # ~CHECKBOXES
+  
+ .PERMITE_NINGUNA_ACTIVACION TRUE
+ .SELECT_FIRST_ON_ACTIVE	FALSE
+ .TECLAS [ .TECLA_SIGUIENTE KEY_TAB .TECLA_CLICK KEY_SPACE .GESTION_CIRCULAR TRUE ]        

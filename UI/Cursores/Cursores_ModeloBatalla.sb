@@ -1,0 +1,33 @@
+#############################################################################################################
+# Cursores para el modelo de batalla
+#############################################################################################################
+
+ [ .NAME CUR_DEFAULT                         .TEXTURE "Game/UI/Cursores/puntero.tga"            .HOTSPOT [ .X 0 .Y 0 ] ]
+ 
+ [ .NAME CUR_MB_POS_MOV_VALIDA               .TEXTURE "Game/UI/Cursores/puntero.tga"            .HOTSPOT [ .X 0 .Y 0 ] ]
+ [ .NAME CUR_MB_POS_MOV_NO_VALIDA            .TEXTURE "Game/UI/Cursores/punteroProhibido.tga"   .HOTSPOT [ .X 0 .Y 0 ] ]
+ 
+ [ .NAME CUR_MB_SELECT_TROPA_AMIGA           .TEXTURE "Game/UI/Cursores/puntero.tga"        	.HOTSPOT [ .X 0 .Y 0 ] ]
+ 
+ [ .NAME CUR_MB_ATAQUE_DIST            	     .TEXTURE "Game/UI/Cursores/punteroArma.tga"       	.HOTSPOT [ .X 0 .Y 0 ] ]
+ [ .NAME CUR_MB_ATAQUE_DIST_X                .TEXTURE "Game/UI/Cursores/punteroArmaX.tga"       .HOTSPOT [ .X 0 .Y 0 ] ]
+ 
+ [ .NAME CUR_MB_ATAQUE_CAC                   .TEXTURE "Game/UI/Cursores/punteroEspada.tga"      .HOTSPOT [ .X 0 .Y 0 ] ]
+ [ .NAME CUR_MB_ATAQUE_CAC_X                 .TEXTURE "Game/UI/Cursores/punteroEspadaX.tga"     .HOTSPOT [ .X 0 .Y 0 ] ]
+ 
+ [ .NAME CUR_MB_ATAQUE_CAC_DIST              .TEXTURE "Game/UI/Cursores/punteroEspada2.tga"     .HOTSPOT [ .X 0 .Y 0 ] ]
+ [ .NAME CUR_MB_ATAQUE_CAC_DIST_X            .TEXTURE "Game/UI/Cursores/punteroEspada2X.tga"    .HOTSPOT [ .X 0 .Y 0 ] ]
+ 
+ [ .NAME CUR_MB_ATAQUE_DIST_CAC              .TEXTURE "Game/UI/Cursores/punteroArma2.tga"       .HOTSPOT [ .X 0 .Y 0 ] ]
+ [ .NAME CUR_MB_ATAQUE_DIST_CAC_X            .TEXTURE "Game/UI/Cursores/punteroArma2X.tga"      .HOTSPOT [ .X 0 .Y 0 ] ]
+ 
+ [ .NAME CUR_MB_ATAQUE_ARTILLERIA            .TEXTURE "Game/UI/Cursores/punteroCanon.tga"       .HOTSPOT [ .X 0 .Y 0 ] ]
+ [ .NAME CUR_MB_ATAQUE_ARTILLERIA_LEJOS      .TEXTURE "Game/UI/Cursores/punteroCanonLejos.tga"  .HOTSPOT [ .X 0 .Y 0 ] ]
+ [ .NAME CUR_MB_ATAQUE_ARTILLERIA_X          .TEXTURE "Game/UI/Cursores/punteroCanonX.tga"      .HOTSPOT [ .X 0 .Y 0 ] ]
+ 
+ [ .NAME CUR_MB_ATAQUE_NO_VALIDO             .TEXTURE "Game/UI/Cursores/punteroEspada2X.tga"    .HOTSPOT [ .X 0 .Y 0 ] ]
+ 
+ [ .NAME CUR_MB_OCUPACION_EDIFICIO           .TEXTURE "Game/UI/Cursores/punteroApostar.tga"     .HOTSPOT [ .X 0 .Y 0 ] ]
+ [ .NAME CUR_MB_OCUPACION_EDIFICIO_NO_VALIDA .TEXTURE "Game/UI/Cursores/punteroProhibido.tga"   .HOTSPOT [ .X 0 .Y 0 ] ] 
+ [ .NAME CUR_MB_DESOCUPACION_EDIFICIO        .TEXTURE "Game/UI/Cursores/punteroDesapostar.tga"  .HOTSPOT [ .X 0 .Y 0 ] ]
+ 

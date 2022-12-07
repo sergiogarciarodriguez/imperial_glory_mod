@@ -1,0 +1,589 @@
+
+##########################################################################################################
+# UI para el gestor de las AI's existentes en el modelo de batalla
+
+[
+  .NAME UI_GESTOR_AI_BATALLA
+  .PROC UI_GENERICO
+  .PARAMS
+  [
+   .CONTROLES 
+   [ 
+    %Game/UI/ModeloBatalla/UIDefs_GestorAIBatalla.sb 
+   ]     
+   
+   .UI_DATA 
+   [  
+   ]     
+  
+  ] # ~ Params
+] # ~ UI
+
+##########################################################################################################
+# UI de control de la camara. Lo separaremos del UI del modelo de batalla pues se debera de permitir el
+# control de la misma tanto en juego como desde el interfaz de ventana inicial y dicho interfaz debera
+# de ser exclusivo mientras se halle activado. Este interfaz se creara desde AIJugadoresBatallaBaseProc
+# pero tiniendo como padre al jugador humano (si es que hay jugador humano).
+
+[
+  .NAME UI_CONTROL_MOVIMIENTO_CAMARA_MODELO_BATALLA
+  .PROC UI_GENERICO
+  .PARAMS
+  [
+   .CONTROLES 
+   [ 
+    %Game/UI/ModeloBatalla/UIDefs_CtrlMovCamara.sb      
+   ] # ~ Controles
+    
+   .UI_DATA
+   [
+   ]     
+  
+  ] # ~ Params
+] # ~ UI
+
+##########################################################################################################
+# UI del modelo de batalla
+
+[
+  .NAME UI_MODELO_BATALLA
+  .PROC UI_GAME_BATTLE_MAIN
+  .PARAMS
+  [    
+    .CONTROLES
+    [
+     
+     ## Ventana de Opciones
+     #[ .TIPO UIC_DLGOPCIONES .ID 'OPCS'           
+     #  .PARAMS [ %Game/UI/MainMenu/UIDefs_PantallaOpciones.sb ]
+     #]
+          
+     # Control de camara (teclas y zonas sensibles laterales)               
+     #%Game/UI/ModeloBatalla/UIDefs_CtrlMovCamara.sb      
+    
+     # TECLAS 
+     %Game/UI/ModeloBatalla/UIDefs_UIModeloBatallaKeys.sb       
+        
+     # Zonas sensibles
+     [ .TIPO UIC_ZONASENSIBLE  .ID 'BXGA' .PARAMS [ .RECT [ 0 0 1023 767 ] .DBCLICK_AS_RELEASE FALSE .EVENTOS [ MOUSE ] ] ]                      
+        
+     # Marco de informacion con los contadores de bajas en combate
+     [ .TIPO UIC_CONTADORBAJASCOMBATE .ID 'CBAJ'
+       .PARAMS [ %Game/UI/ModeloBatalla/UIDefs_ContadorBajasCombate.sb ]
+     ]
+     
+     # Fondo Menú superior
+     [ .TIPO UIC_BITMAP .ID 'BMSU'
+      .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 0 .V 0 .SX 1024 .SY 50 .ALPHA TRUE]
+     ]
+    
+     # Visor de textos emergentes
+     [ .TIPO UI_VISOR_TEXTO_EMERGENTE .ID 'VTEM'
+       .PARAMS [ %Game/UI/ModeloBatalla/UIDefs_VisorTextoEmergente.sb ]
+     ]
+             
+     # Visor de textos narrados
+     [ .TIPO UI_VISOR_TEXTO_EMERGENTE .ID 'VTNA'
+       .PARAMS [ %Game/UI/ModeloBatalla/UIDefs_VisorTextoNarrado.sb ]
+     ]
+             
+     # Mini Mapa de Batalla
+     [ .TIPO UIC_MINBATTLEMAP .ID 'MMAP'
+       .PARAMS [ %Game/UI/ModeloBatalla/UIDefs_MinBattleMap.sb ]
+     ]
+        
+     # Selector de tropas
+     [ .TIPO UIC_SELECTORTROPAS .ID 'STRO' 
+       .PARAMS [ .UIDEFS "Game/UI/ModeloBatalla/UIDefs_SelectorTropas.sb" ]           
+     ]
+
+     # Barra de control e informacion de la tropa, zona inferior
+     [ .TIPO UIC_BARRACONTROLTROPA .ID 'BARC'           
+       .PARAMS [ %Game/UI/ModeloBatalla/UIDefs_BarraControlTropa.sb ]            
+     ]
+     
+     # Apertura/Cierre Minimapa
+     [ .TIPO UIC_BOTONTEXTO .ID 'BACM'
+       .PARAMS
+       [ .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK"                
+         .IDHIGHLIGHTSOUND  "S_MAINMENU_OPTION_SELECT"
+         .COMPORTAMIENTO SIMPLE        
+         .FONDO 
+         [ 
+          .X 11 .Y 6 
+          .SX 34 .SY 26 .ALPHA TRUE
+          .SOLTADO [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 11 .V 6 ] 
+          .PULSADO [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 259 .V 129 ]                 
+          .SELECCIONADO [ .FILE "Game/UI/ModeloBatalla/InterfazBatalla.tga" .U 259 .V 100 ] 
+          .PRIORITY 10
+         ]
+        .TOOL_TIP 
+         [ 
+          .TEXT LTEXT_UI_BATALLA_TT_MINIMAPA
+          .FONT "Fonts/gothic.fnt" 
+          .X 32 .Y 32
+          .COLOR [ .R 255 .G 255 .B 255 ] 
+            
+          .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+         ]
+    
+         
+       ]
+     ]
+     
+     # Botón opciones
+     [ .TIPO UIC_BOTONTEXTO .ID 'BESC' 
+       .PARAMS [ .STYLE BOTON_ESC .FONDO [ .X 702 .Y 1 .PRIORITY 10 ] ] 
+     ]
+     
+     # Botón retirada
+     [ .TIPO UIC_BOTONTEXTO .ID 'RETI' .PARAMS [ .STYLE BOTON_RETIRADA 	.FONDO [ .X 294 .Y 3 	 .PRIORITY 10 ] ] ]   
+     
+     # Tiempo de la Barra de Victoria
+     [ .TIPO UIC_WRAPTEXT .ID 'TIVI'
+  	.PARAMS
+  	[
+  	  .X 508 .Y 1 .SX 50 .SY 25
+  	  .ALIGN LEFT
+  	  
+ 	  .MSG "00:00"
+  	  .TEXT
+  	  [
+  	   .FONT "Fonts/Times10.fnt" 
+  	   .COLOR [ .R 255 .G 255 .B 255 ]
+  	  ]
+  	]
+     ]
+     
+     # Texto Pausa
+     [ .TIPO UIC_WRAPTEXT .ID 'TPAU'
+       .PARAMS
+       [
+         #.COMPORTAMIENTO FIJO        
+         .X 260
+         .Y 40
+         .SX 500 .SY 70
+         .MSG "LTEXT_UI_PAUSA"
+	 .TEXT 
+      	 [
+           .FONT "Fonts/MonotypeCorsiva45.fnt"    
+         ]
+         .ALIGN CENTER
+       ]
+     ]
+
+     # Controles de tiempo
+     [ .TIPO UIC_BARRAPORCENTAJE .ID 'BTIM'     
+       .PARAMS [ .SUPERIOR [ .FILE "Game\UI\ModeloBatalla\InterfazBatalla.tga" .U 29 .V 75 .ALPHA TRUE ] .X 424 .Y 9 .SX 216 .SY 12 .PRIORITY 10 ]
+     ]
+              
+     # Ventana de informacion bajo el cursor para tropas
+     [ .TIPO UIC_VENTANAINFOCURSORBATALLATROPA .ID 'VICT'           
+       .PARAMS [ %Game/UI/ModeloBatalla/UIDefs_VentanaInfoCursorTropa.sb ]
+     ]           
+     
+     # Ventana de informacion bajo el cursor para grupos
+     [ .TIPO UIC_VENTANAINFOCURSORBATALLAGRUPOS .ID 'VICG'           
+       .PARAMS [ %Game/UI/ModeloBatalla/UIDefs_VentanaInfoCursorGrupos.sb ]
+     ]
+     
+     # Ventana de informacion bajo el cursor para edificios / construcciones
+     [ .TIPO UIC_VENTANAINFOCURSORBATALLAEDIFICIO .ID 'VICE' 
+      .PARAMS [ %Game/UI/ModeloBatalla/UIDefs_VentanaInfoCursorEdificio.sb ]
+     ]               
+     
+     # dialogo de espera de jugadores para partidas de red
+     [ .TIPO UIC_DLGESPERANDOJUGADORES .ID 'EJRE' 
+      .PARAMS [ %Game/UI/ModeloBatalla/UIDefs_DlgEsperandoJugadores.sb ]
+     ]  
+     
+     # dialogo de espera a que todos los jugadores coloquen sus tropas para partidas de red
+     [ .TIPO UIC_DLGESPERANDOCOLOCACIONTROPAS .ID 'ECRE'
+     	.PARAMS [ %Game/UI/ModeloBatalla/UIDefs_DlgEsperandoColocacionTropas.sb ]
+     ]   
+     
+     # gestor de eventos de caida/abandono de jugadores, perdidad de semilla y perdida de conexion
+     [
+      .TIPO UIC_GESTORPLAYERS .ID 'GPLY'
+      .ACTIVO TRUE
+     ]
+     
+     # visor de lag para partidas de red
+     [ .TIPO UIC_VISORLAG .ID 'VLAG'
+       .PARAMS [ %Game\UI\ModeloBatalla\UIDefs_VisorLag.sb ]
+     ]           
+     
+     # dialogo de perdida de semilla para partidas de red
+#     [ .TIPO UIC_DLGSEEDLOST .ID 'SEED'
+#       .PARAMS [ %Game\UI\Comun\UIDefs_DlgSeedLost.sb ]
+#     ]           
+
+     # dialogo de perdida de semilla para partidas de red
+#     [ .TIPO UIC_DLGPLAYERDROP .ID 'PDRP'
+#       .PARAMS [ %Game\UI\Comun\UIDefs_DlgPlayerDrop.sb ]
+#     ]           
+
+     # dialogo de perdida de conexion para partidas de red
+#     [ .TIPO UIC_DLGDISCONNECTED .ID 'DISC'
+#       .PARAMS [ %Game\UI\Comun\UIDefs_DlgDisconnected.sb ]
+#     ]           
+    
+      #---------------------------------------------- GESTOR DE FOCO CHAT ---------------------------------------
+     [ 
+       .TIPO UIC_CHAT .ID 'CHAT'
+       .PARAMS
+       [
+   		   #---------------------------------------- EDITBOX CHAT ------------------------------------------
+         .INPUT
+         [
+           .SIMPLE TRUE
+           .BATALLA TRUE
+           .X -10 .Y 575 .SX 600 .SY 22 .MAX 100
+           .FONT "Fonts/Default.fnt" 
+           .COLOR [ .R 255 .G 255 .B 128 ]
+           .SHADOW TRUE
+           .TECLA_FOCO [ .TECLA KEY_C .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ]    
+         ]
+
+         .INPUT_BANDO # envio de mensajes a los jugadores del mismo bando
+         [
+           .SIMPLE TRUE
+           .BATALLA TRUE
+           .X -10 .Y 575 .SX 600 .SY 22 .MAX 100
+           .FONT "Fonts/Default.fnt" 
+           .COLOR [ .R 128 .G 255 .B 128 ]
+           .SHADOW TRUE
+           .TECLA_FOCO [ .TECLA KEY_C .MKEYS [ L_SHIFT ] .EVENTOS [ KEY_DOWN KEY_UP ] ]    
+         ]      
+           
+         #---------------------------------------- LISTBOX CHAT ------------------------------------------       
+         .OUTPUT_EMERGENTE
+         [
+          .X 4 
+          .Y 572
+          
+          .ACTIVO TRUE
+          
+          .HALIGN LEFT   # RIGHT CENTER
+          .VALIGN BOTTOM # BOTTOM CENTER
+          
+          .DEFAULT_FONT "Fonts/Default.fnt"
+          .DEFAULT_SCALE 1.0
+          .DEFAULT_COLOR [ .R 255 .G 255 .B 255 ]
+          
+          .MAX_LINES 50          
+         ]
+         
+         .LIFE_TIME 15000
+         .FADE_TIME 15000
+         .FORMAT "[%s]: %s"
+       ]
+     ]
+        
+    ] # CONTROLS    
+
+    .UI_DATA
+    [      
+      .CURSOR NO_CURSOR
+    
+      # Aqui especificamos los milisegundos que queremos invertir para que el UI se auto-actualice cada vez que el
+      # el raton sea movido. Este valor en milisegundos (se esperara que sea float) lo transformaremos en codigo a
+      # el numero de RunTicks que deberemos de esperar.
+      .AUTO_INTERACT_UPDATE_TIME 50.0    
+    ]
+  ]
+]
+
+[
+  ##########################################################################################################
+  # Este interfaz representa el menu de juego que aparece en el modelo de batalla al pulsar ESC.
+  # Desde este menu podremos: 
+  #
+  #   - Entrar en Opciones. (entrar en opciones de combate, se supone)
+  #   - Volver a la partida. (volver a batalla)
+  #   - Abandonar Partida (Abandonar batalla)
+  #
+  ##########################################################################################################
+
+  .NAME UI_ESC_MENU_MODELO_BATALLA
+  .PROC UI_GENERICO
+  .PARAMS
+  [  
+   .CONTROLES
+   [
+    
+    [ # Gestor de menus con las opciones a mostrar
+      # ToDo: - Pendiente migrar este esquema a otro tipo Dialogo con un control de gestor de menus.
+     .TIPO UIC_GESTORMENUS .ID 'GMEN'
+     .PARAMS [ %Game/UI/ModeloBatalla/UIDefs_MenuJuego.sb ]
+    ]
+    
+   ]
+
+   .UI_DATA
+   [
+    .CURSOR CUR_DEFAULT
+   ]   
+  ] # ~ PARAMS  
+]
+
+##########################################################################################################
+# Representa la ventana inicial, esta ventana debera de anular cualquier evento que pudiera llegar
+# a UI_GAME_BATTLE_MAIN. Los de mouse con zona sensible y el resto replicando teclas que hay en
+# UI_GAME_BATTLE_MAIN notese que las de movimiento de camara no se replicaran pues interesara que esta
+# se pueda mover tiendo activa la ventana.
+
+[
+ .NAME UI_MODELO_BATALLA_VENTANA_INICIO_BATALLA
+ .PROC UI_GENERICO
+ .PARAMS
+ [
+  .CONTROLES
+  [
+   
+   [ # Ventana de inicio de batalla    
+    .TIPO UIC_VENTANAINICIOBATALLA .ID 'VINI'
+    .PARAMS [ %Game/UI/ModeloBatalla/UIDefs_VentanaInicioBatalla.sb ]            
+   ]      
+   
+  ] # ~ CONTROLES
+  
+  .UI_DATA
+  [
+   .CURSOR CUR_DEFAULT    
+  ] # ~ UI_DATA
+ 
+ ] # ~ PARAMS 
+]
+
+
+##########################################################################################################
+# Representa la ventana de resultado de una batalla, tanto para victoria como para derrota. Unicamente
+# sera obligatorio poner el texto que se debera de mostrar cuando se gane / pierda.    
+[
+  .NAME UI_MODELO_BATALLA_VENTANA_RESULTADO_BATALLA
+  .PROC UI_GENERICO
+  .PARAMS
+  [
+   .CONTROLES
+   [
+   
+    [ # Ventana de resultado de batalla
+     .TIPO UIC_VENTANARESULTADOBATALLA .ID 'VRES'
+     .PARAMS [ %Game/UI/ModeloBatalla/UIDefs_VentanaResultadoBatalla.sb ]     
+    ] 
+             
+   ] # ~ CONTROLES     
+    
+   .UI_DATA
+   [
+    .CURSOR CUR_DEFAULT
+   ]      
+   
+ ] # ~ PARAMS
+]
+
+##########################################################################################################
+# Ventana de confirmación de retirada 
+[
+  .NAME UI_MODELO_BATALLA_MESSAGE_BOX_RETIRADA
+  .PROC UI_GENERICO
+  .PARAMS
+  [
+   .CONTROLES
+   [
+   
+    [
+     .TIPO UIC_MESSAGEBOXBATALLA .ID 'MBRE'
+     .PARAMS [ %Game/UI/ModeloBatalla/UIDefs_MessageBoxBatallaRetirada.sb ]
+    ] 
+             
+   ] # ~ CONTROLES     
+    
+   .UI_DATA
+   [
+    .CURSOR CUR_DEFAULT
+   ]      
+   
+ ] # ~ PARAMS
+]
+
+##########################################################################################################
+# Ventana de confirmación de refuerzos
+[
+  .NAME UI_MODELO_BATALLA_MESSAGE_BOX_CONFIRMAR_REFUERZOS
+  .PROC UI_GENERICO
+  .PARAMS
+  [
+   .CONTROLES
+   [
+   
+    [
+     .TIPO UIC_MESSAGEBOXBATALLA .ID 'MBCR'
+     .PARAMS [ %Game/UI/ModeloBatalla/UIDefs_MessageBoxBatallaConfirmarRefuerzos.sb ]
+    ] 
+             
+   ] # ~ CONTROLES     
+    
+   .UI_DATA
+   [
+    .CURSOR CUR_DEFAULT
+   ]      
+   
+ ] # ~ PARAMS
+]
+
+##########################################################################################################
+# Representa la ventana de mensaje de texto que informa del estado inicial de despliegue de tropas,
+# y que permtie finalizarlo
+
+[
+  .NAME UI_MODELO_BATALLA_MESSAGE_BOX_DESPLIEGUE_TROPAS
+  .PROC UI_GENERICO
+  .PARAMS
+  [
+   .CONTROLES
+   [
+   
+    [ # Ventana de refuerzos incorporados
+     .TIPO UIC_MESSAGEBOXBATALLA .ID 'MBDT'
+     .PARAMS [ %Game/UI/ModeloBatalla/UIDefs_MessageBoxBatallaDespliegueTropas.sb ]
+    ] 
+             
+   ] # ~ CONTROLES     
+    
+   .UI_DATA
+   [
+    .CURSOR CUR_DEFAULT
+   ]      
+   
+ ] # ~ PARAMS
+]
+
+##########################################################################################################
+# Representa la ventana de mensaje de texto que informa de que una zona del mapa ha sido conquistada
+
+[
+  .NAME UI_MODELO_BATALLA_MESSAGE_BOX_ZONA_OCUPADA
+  .PROC UI_GENERICO
+  .PARAMS
+  [
+   .CONTROLES
+   [
+   
+    [ # Ventana de refuerzos incorporados
+     .TIPO UIC_MESSAGEBOXBATALLA .ID 'MBZO'
+     .PARAMS [ %Game/UI/ModeloBatalla/UIDefs_MessageBoxBatallaZonaOcupada.sb ]
+    ] 
+             
+   ] # ~ CONTROLES     
+    
+   .UI_DATA
+   [
+    .CURSOR CUR_DEFAULT
+   ]      
+   
+ ] # ~ PARAMS
+]
+
+##########################################################################################################
+### Ventana de Objetivos
+##########################################################################################################
+[
+  .NAME UI_MODELO_BATALLA_VENTANA_OBJETIVOS
+  .PROC UI_GENERICO
+  .PARAMS 
+  [ 
+	  .CONTROLES
+	  [
+	    [
+	     .TIPO UIC_VENTANAOBJETIVOSBATALLA .ID 'MBVO'
+	     .PARAMS [ %Game/UI/ModeloBatalla/UIDefs_VentanaObjetivos.sb ]
+	    ] 
+	  ]
+  ] 
+  
+  .UI_DATA [ .CURSOR CUR_DEFAULT ]      
+]
+
+##########################################################################################################
+# Representa la ventana de mensaje de texto que indica que se han incorporado refuerzos en la batalla
+
+[
+  .NAME UI_MODELO_BATALLA_MESSAGE_BOX_BATALLA
+  .PROC UI_GENERICO
+  .PARAMS
+  [
+   .CONTROLES
+   [
+   
+    [ # Ventana de refuerzos incorporados
+     .TIPO UIC_MESSAGEBOXBATALLA .ID 'MBXB'
+     .PARAMS [ %Game/UI/ModeloBatalla/UIDefs_MessageBoxBatalla.sb ]
+    ] 
+             
+   ] # ~ CONTROLES     
+    
+   .UI_DATA
+   [
+    .CURSOR CUR_DEFAULT
+   ]      
+   
+ ] # ~ PARAMS
+]
+
+##########################################################################################################
+# Imagen de carga del modelo de batalla hacia el modelo de estadisticas
+
+[
+  .NAME UI_MODELO_BATALLA_ESTADISTICAS_BATALLA_LOADING
+  .PROC UI_GENERICO
+  .PARAMS
+  [  
+   .CONTROLES
+   [
+     [ .TIPO UIC_BITMAP .ID 'BLOA' 
+       .PARAMS 
+       [ 
+          .FILE "Game/UI/Comun/men_waiting.tga" .X 595 .Y 730 .SX 421 .SY 32 .U 302 .V 684 .ALPHA TRUE 
+       ] 
+     ]
+     [
+      .TIPO UIC_TEXT .ID 'TLOA' 
+      .PARAMS 
+      [ 
+        .ALIGN CENTER .X 510 .Y 375 .TEXT LTEXT_UI_LOADING
+        .FONT "Fonts/Times18.fnt"
+        .COLOR [ .R 0 .G 0 .B 0 ]
+      ]
+     ]
+
+   ] # ~ CONTROLES
+
+   .UI_DATA
+   [
+    .CURSOR NO_CURSOR    
+   ]   
+  ] # ~ PARAMS  
+]
+
+##########################################################################################################
+# Ventana de seleccion de refuerzo del modelo batalla
+
+[
+  .NAME UI_VENTANA_SELECCION_REFUERZO
+  .PROC UI_GENERICO
+  .PARAMS
+  [
+    .CONTROLES
+    [
+      [
+        .TIPO UIC_VENTANA_SELECCION_REFUERZO .ID 'VREF'
+        .PARAMS
+        [
+          %Game/UI/ModeloBatalla/UIDefs_DlgSeleccionRefuerzo.sb
+        ]
+      ]
+    ]
+  ]
+]

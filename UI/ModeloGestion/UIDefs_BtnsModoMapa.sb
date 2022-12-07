@@ -1,0 +1,97 @@
+# Gestor de CheckBox con los diferentes botones de modo de mapa
+
+# Los botones seran controlados desde un gestor de CheckBoxes
+.PERMITE_NINGUNA_ACTIVACION FALSE
+
+.CHECKBOXES
+[ 
+ # Boton de Modo Politico - Militar
+ [
+  .ID 'BMPM'
+  .PARAMS
+  [
+   .COMPORTAMIENTO FIJO
+   .FONDO
+   [
+     .X 76 .Y 629  .PRIORITY 10 .ALPHA TRUE .SX 55 .SY 54
+     .SOLTADO      [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 750 .V 357 ] 
+     .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 808 .V 357 ] 
+     .PULSADO      [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 866 .V 357 ]          
+   ]
+   
+   #Pasado a codigo CUIGameGestMapa::setMode
+   #.IDSELECTSOUND "S_FXUI_MAPA_MILITAR"            
+   .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"        
+ 
+   .TOOL_TIP 
+   [ 
+    .TEXT LTEXT_UI_BATALLA_TT_PCMAPA_MPOLMILITAR
+    .FONT "Fonts/Default.fnt" X 32 .Y 32 .COLOR [ .R 255 .G 255 .B 255 ]   
+    .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+   ]
+  ]
+ ]
+   
+  # Boton de Modo Relaciones Internacionales
+  [
+   .ID 'BECO'
+   .PARAMS
+   [
+    .COMPORTAMIENTO FIJO
+    .FONDO
+    [
+     .X 4 .Y 625   .PRIORITY 10 .ALPHA TRUE .SX 60 .SY 35	
+     .SOLTADO      [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 750 .V 319 ] 
+     .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 813 .V 319 ] 
+     .PULSADO      [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 876 .V 319 ]          
+    ]
+    
+   #Pasado a codigo CUIGameGestMapa::setMode
+   #.IDSELECTSOUND "S_FXUI_MAPA_COMERCIAL"     
+   .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"                 
+    
+  
+    .TOOL_TIP 
+    [ 
+     .TEXT LTEXT_UI_BATALLA_TT_PCMAPA_MECOMILITAR
+     .FONT "Fonts/Default.fnt" X 32 .Y 32 .COLOR [ .R 255 .G 255 .B 255 ]   
+     .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+    ]
+   ]
+  ]   
+  
+  # Boton de Modo Barras Comparativas
+  [
+   .ID 'BMBC'
+   .PARAMS
+   [
+    .COMPORTAMIENTO FIJO
+    .FONDO
+    [
+     .X 10 .Y 664 .SX 42 .SY 22 .ALPHA TRUE .PRIORITY 10
+     
+     .SOLTADO      [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 750 .V 414 ] 
+     .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 795 .V 414 ]    
+     .PULSADO      [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 840 .V 414 ]    
+    ]    
+    
+   #Pasado a codigo CUIGameGestMapa::setMode
+   #.IDSELECTSOUND "S_FXUI_CHECKBUTTON"     
+   .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"                 
+    
+    .TOOL_TIP 
+    [ 
+     .TEXT LTEXT_UI_BATALLA_TT_PCMAPA_ESTADISTICAS
+     .FONT "Fonts/Default.fnt" X 32 .Y 32 .COLOR [ .R 255 .G 255 .B 255 ]   
+     .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+    ]  
+
+    .KEY
+    [
+      .TECLA KEY_F8 .EVENTOS [ KEY_DOWN KEY_UP ]          
+    ]  
+    
+
+   ]
+  ]    
+] # ~ CHECKBOXES

@@ -1,0 +1,12 @@
+.START_PROCS
+[
+  [
+    .NAME MODELO_GESTION_MAIN_PROC_LOADING
+    .PARAMS
+    [   
+      .UI_DEFS  "Game/UI/GestionLoading/UI_GestionLoading.sb"   
+    ]
+  ]
+]
+
+

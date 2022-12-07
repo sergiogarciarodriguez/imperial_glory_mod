@@ -1,0 +1,280 @@
+#############################################################################################
+# Se muestra informacion sobre una provincia
+# El Dlg constara de:
+# - Titulo
+# - Img de la provincia
+# - Texto informativo
+# - Btn de cierre / aceptacion
+#############################################################################################
+ 
+ # Se define la ventana                   
+ .ACTIVO FALSE
+ .CENTER FALSE       
+ .MODAL TRUE
+ 
+ .DEPTH 3
+ 
+ # Fondo texto
+ .FONDO
+ [  
+  .X 176 .Y 78 
+  .U 0 .V 0 .SX 680 .SY 604
+  .FILE "Game/UI/ModeloGestion/UIDefsDlgInfoGestion/InformacionTerritorios.tga" 
+  .ALPHA TRUE .PRIORITY 202
+ ]              
+ 
+ 
+ # Caption               
+ .CAPTION
+ [
+  .XMARGEN 86 .YMARGEN 7 .HEIGHT 30
+  .TITLE 
+  [ 
+   .ALINEACION CENTER 
+   .TEXT LTEXT_UI_GESTION_DLG_INFO_PROV_TITLE
+   .FONT "Fonts/Times17.fnt" 
+   .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+  .MOVIBLE FALSE
+ ]
+ 
+ .CONTROLES
+ [ 
+  # Texto del nombre de la provincia
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WTNP'
+   .PARAMS
+   [
+    .X 85 .Y 42 .SX 507 .SY 42
+    .ALIGN CENTER
+    
+    .PRIORITY 203
+    
+    .TEXT
+    [
+     .FONT "Fonts/Times17.fnt" 
+     #.COLOR [ .R 255 .G 255 .B 195 ] <- Mola más este color :P
+     .COLOR [ .R 255 .G 255 .B 255 ]
+     .MSG  " "        
+    ]
+   ]   
+  ]  
+  
+  # Texto de informacion   
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WTIN'
+   .PARAMS
+   [
+    .X 18 .Y 247 .SX 475 .SY 132
+    .ALIGN LEFT
+    
+    .PRIORITY 203
+    
+    .TEXT
+    [
+     .FONT "Fonts/Times11.fnt" 
+     #.COLOR [ .R 255 .G 255 .B 195 ] <- Mola más este color :P
+     .COLOR [ .R 255 .G 255 .B 255 ]
+     .MSG  " "        
+    ]
+    
+    .VDX 493 .VDY 5
+    .VSX  6 .VSY 122
+    .SLIDER_VERTICAL
+    [
+      .PRIORITY 204      
+      .STYLE DEFAULT_SLIDER_VERTICAL_GRANDE
+    ]    
+   ]   
+  ] 
+  
+  #----------------------------TEXTOS DE INFORMACIÓN DE RECURSOS------------------------------
+  #-- Wraptext con la cantidad de recursos de oro que produce la provincia
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WTOR'
+   .PARAMS
+   [
+    .X 42 .Y 382 .SX 82 .SY 32
+    .ALIGN RIGHT
+    
+    .PRIORITY 203
+    
+    .TEXT
+    [
+     .FONT "Fonts/Times10.fnt" 
+     #.COLOR [ .R 255 .G 255 .B 195 ] <- Mola más este color :P
+     .COLOR [ .R 255 .G 255 .B 255 ]
+     .MSG  " "        
+    ]
+   ]   
+  ]      
+  
+  #-- Wraptext con la cantidad de recursos de Materias Primas que produce la provincia
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WTMP'
+   .PARAMS
+   [
+    .X 136 .Y 382 .SX 82 .SY 32
+    .ALIGN RIGHT
+    
+    .PRIORITY 203
+    
+    .TEXT
+    [
+     .FONT "Fonts/Times10.fnt" 
+     #.COLOR [ .R 255 .G 255 .B 195 ] <- Mola más este color :P
+     .COLOR [ .R 255 .G 255 .B 255 ]
+     .MSG  " "        
+    ]
+   ]   
+  ]      
+  
+  #-- Wraptext con la cantidad de recursos de población que produce la provincia
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WTPO'
+   .PARAMS
+   [
+    .X 232 .Y 382 .SX 82 .SY 32
+    .ALIGN RIGHT
+    
+    .PRIORITY 203
+    
+    .TEXT
+    [
+     .FONT "Fonts/Times10.fnt" 
+     #.COLOR [ .R 255 .G 255 .B 195 ] <- Mola más este color :P
+     .COLOR [ .R 255 .G 255 .B 255 ]
+     .MSG  " "        
+    ]
+   ]   
+  ]      
+  
+  #-- Wraptext con la cantidad de recursos de comida que produce la provincia
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WTCO'
+   .PARAMS
+   [
+    .X 328 .Y 382 .SX 82 .SY 32
+    .ALIGN RIGHT
+    
+    .PRIORITY 203
+    
+    .TEXT
+    [
+     .FONT "Fonts/Times10.fnt" 
+     #.COLOR [ .R 255 .G 255 .B 195 ] <- Mola más este color :P
+     .COLOR [ .R 255 .G 255 .B 255 ]
+     .MSG  " "        
+    ]
+   ]   
+  ]      
+  
+  #-- Wraptext con la cantidad de recursos de Ciencia que produce la provincia
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WTCI'
+   .PARAMS
+   [
+    .X 414 .Y 382 .SX 82 .SY 32
+    .ALIGN RIGHT
+    
+    .PRIORITY 203
+    
+    .TEXT
+    [
+     .FONT "Fonts/Times10.fnt" 
+     #.COLOR [ .R 255 .G 255 .B 195 ] <- Mola más este color :P
+     .COLOR [ .R 255 .G 255 .B 255 ]
+     .MSG  " "        
+    ]
+   ]   
+  ]            
+  
+  #-- Tooltip que tapa todos los recursos que produce la provincia con información acerca de producción actual/producción base
+  [ 
+    .TIPO UIC_ZONASENSIBLE  .ID 'ABTT' 
+    .PARAMS 
+    [ 
+      .RECT [ 42 382 496 414 ] 
+      .DBCLICK_AS_RELEASE FALSE 
+      .EVENTOS [ MOUSE ] 
+      
+      .TOOL_TIP
+      [ 
+        .TEXT LTEXT_UI_GESTIONMAPA_TT_PRODUCCION_TERRITORIO
+        .X 32 .Y 32
+          
+        
+        .STYLE DEFAULT_TOOLTIP 
+      ]      
+    ]
+  ]                          
+  
+  #----------------------------------------------------------------------------------------
+  
+  #-- Bitmap que tapa la casilla de información de recursos de ciencia
+  [
+    .TIPO UIC_BITMAP .ID 'BMCI'
+    .PARAMS
+    [
+      .X 407 .Y 380 .SX 95 .SY 27
+      .FILE "Game/UI/ModeloGestion/UIDefsDlgInfoGestion/InformacionTerritorios.tga" 
+      .U 15 .V 727
+      .ALPHA TRUE .PRIORITY 203
+    ]
+  ]
+
+  #-- Título para el apartado de barras de influencia territorial  
+  [
+    .TIPO UIC_TEXT .ID 'LBIT'
+    .PARAMS
+    [
+      .TEXT LTEXT_UI_GESTION_DLG_INFO_PROV_INFLUENCIA_TERRITORIAL
+      .FONT "Fonts/Times14.fnt"
+      .X 511 .Y 518 .ALIGN CENTER
+      .COLOR [ .R 255 .G 255 .B 255 ]     
+    ]
+  ]  
+  
+  [
+   # Btn de salida
+   .TIPO UIC_BOTONTEXTO .ID 'EXIT'
+   .PARAMS 
+   [ 
+     .FONDO [ .X 607 .Y 534 .PRIORITY 203 ]
+     .IDSELECTSOUND "S_CANCELAR"
+     .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"  
+     
+     .KEY
+     [
+      .TECLA KEY_ESCAPE .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ]          
+     ]         
+     
+     
+     .STYLE DEFAULT_X_BUTTON 
+   ]
+  ]
+
+  #--barras de porcentaje con sus wraptext de porcentaje correspondientes
+  %Game/UI/ModeloGestion/UIDefsDlgInfoGestion/UIDefs_BarrasPorcentajeDlgInfoEdificio.sb
+  
+  # --gráficos de las banderas de los imperios
+  %Game/UI/ModeloGestion/UIDefsDlgInfoGestion/UIDefs_ImagenesImperiosDlgInfoEdificio.sb
+ ] 
+ 
+ .POS_BMPESCENARIO [ .X 175 .Y 91 ]
+ .POS_BMPBANDERA [ .X 318 .Y 220 ]
+ 
+  # Se definen los parámetros de la imagen
+ .IMG
+ [
+   .X 512 .Y 253
+   # la textura aquí especificada es lo de menos puesto que va a ser cambiada en cada creación del diálogo, pero debemos poner
+   # una válida
+   .FILE "Game/UI/ModeloGestion/UIDefsDlgInfoGestion/InformacionEdificios.tga" 
+   .U 1 .V 1 .SX 144 .SY 144
+   .PRIORITY 203
+   .ALPHA TRUE
+ ]
+ 
+ # ruta de la que se van a coger las texturas para las imágenes de los minimapas
+ .RUTA "Game/UI/Comun/Minimapas/"

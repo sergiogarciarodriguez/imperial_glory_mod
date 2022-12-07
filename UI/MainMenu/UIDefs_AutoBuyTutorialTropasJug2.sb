@@ -1,0 +1,206 @@
+
+#------------------------------------------------ GRAN BRETANYA ----------------------------------- 
+[
+  .PAIS "GRAN_BRETANYA"
+  .CONFIGS
+  [
+    #-------------------------------------------- GRAN BRETANYA LOW -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FUSILERO"   .EXP 2 ]
+        [ .TIPO "FUSILERO"   .EXP 4 ]
+        [ .TIPO "CAB_DRAGON" .EXP 1 ] 
+        [ .TIPO "CANON_CAB"  .EXP 1 ] 
+      ]
+    ]
+    
+    #-------------------------------------------- GRAN BRETANYA MID -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FUSILERO"   .EXP 2 ]
+        [ .TIPO "FUSILERO"   .EXP 4 ]
+        [ .TIPO "CAB_DRAGON" .EXP 1 ] 
+        [ .TIPO "CANON_CAB"  .EXP 1 ] 
+      ]
+    ]
+
+    #-------------------------------------------- GRAN BRETANYA HIGH ------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FUSILERO"   .EXP 2 ]
+        [ .TIPO "FUSILERO"   .EXP 4 ]
+        [ .TIPO "CAB_DRAGON" .EXP 1 ] 
+        [ .TIPO "CANON_CAB"  .EXP 1 ] 
+      ]
+    ]
+    
+  ] # CONFIGS
+] 
+
+#------------------------------------------------ FRANCIA ----------------------------------- 
+[
+  .PAIS "FRANCIA"
+  .CONFIGS
+  [
+    #-------------------------------------------- FRANCIA LOW -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FUSILERO"   .EXP 2 ]
+        [ .TIPO "FUSILERO"   .EXP 4 ]
+        [ .TIPO "CAB_DRAGON" .EXP 1 ] 
+        [ .TIPO "CANON_CAB"  .EXP 1 ] 
+      ]
+    ]
+    
+    #-------------------------------------------- FRANCIA MID -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FUSILERO"   .EXP 2 ]
+        [ .TIPO "FUSILERO"   .EXP 4 ]
+        [ .TIPO "CAB_DRAGON" .EXP 1 ] 
+        [ .TIPO "CANON_CAB"  .EXP 1 ] 
+      ]
+    ]
+
+    #-------------------------------------------- FRANCIA HIGH ------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FUSILERO"   .EXP 2 ]
+        [ .TIPO "FUSILERO"   .EXP 4 ]
+        [ .TIPO "CAB_DRAGON" .EXP 1 ] 
+        [ .TIPO "CANON_CAB"  .EXP 1 ] 
+      ]
+    ]
+    
+  ] # CONFIGS
+]
+
+#------------------------------------------------ AUSTRIA ----------------------------------- 
+[
+  .PAIS "AUSTRIA"
+  .CONFIGS
+  [
+    #-------------------------------------------- AUSTRIA LOW -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FUSILERO"      .EXP 1 ]
+        [ .TIPO "CAB_LANCERO"   .EXP 1 ]
+        [ .TIPO "TIRADOR"   .EXP 1 ]
+      ]
+    ]
+    
+    #-------------------------------------------- AUSTRIA MID -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FUSILERO"      .EXP 1 ]
+        [ .TIPO "CAB_LANCERO"   .EXP 1 ]
+        [ .TIPO "TIRADOR"   .EXP 1 ]
+      ]
+    ]
+
+    #-------------------------------------------- AUSTRIA HIGH ------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FUSILERO"      .EXP 1 ]
+        [ .TIPO "CAB_LANCERO"   .EXP 1 ]
+        [ .TIPO "TIRADOR"   .EXP 1 ]
+      ]
+    ]
+    
+  ] # CONFIGS
+]
+
+#------------------------------------------------ RUSIA ----------------------------------- 
+[
+  .PAIS "RUSIA"
+  .CONFIGS
+  [
+    #-------------------------------------------- RUSIA LOW -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FUSILERO"   .EXP 2 ]
+        [ .TIPO "FUSILERO"   .EXP 4 ]
+        [ .TIPO "CAB_DRAGON" .EXP 1 ] 
+        [ .TIPO "CANON_CAB"  .EXP 1 ] 
+      ]
+    ]
+    
+    #-------------------------------------------- RUSIA MID -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FUSILERO"   .EXP 2 ]
+        [ .TIPO "FUSILERO"   .EXP 4 ]
+        [ .TIPO "CAB_DRAGON" .EXP 1 ] 
+        [ .TIPO "CANON_CAB"  .EXP 1 ] 
+      ]
+    ]
+
+    #-------------------------------------------- RUSIA HIGH ------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FUSILERO"   .EXP 2 ]
+        [ .TIPO "FUSILERO"   .EXP 4 ]
+        [ .TIPO "CAB_DRAGON" .EXP 1 ] 
+        [ .TIPO "CANON_CAB"  .EXP 1 ] 
+      ]
+    ]
+    
+  ] # CONFIGS
+]
+
+#------------------------------------------------ PRUSIA ----------------------------------- 
+[
+  .PAIS "PRUSIA"
+  .CONFIGS
+  [
+    #-------------------------------------------- PRUSIA LOW -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FUSILERO"   .EXP 2 ]
+        [ .TIPO "FUSILERO"   .EXP 4 ]
+        [ .TIPO "CAB_DRAGON" .EXP 1 ] 
+        [ .TIPO "CANON_CAB"  .EXP 1 ] 
+      ]
+
+    ]
+    
+    #-------------------------------------------- PRUSIA MID -------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FUSILERO"   .EXP 2 ]
+        [ .TIPO "FUSILERO"   .EXP 4 ]
+        [ .TIPO "CAB_DRAGON" .EXP 1 ] 
+        [ .TIPO "CANON_CAB"  .EXP 1 ] 
+      ]
+
+    ]
+
+    #-------------------------------------------- PRUSIA HIGH ------------------------------
+    [
+      .ITEMS
+      [
+        [ .TIPO "FUSILERO"   .EXP 2 ]
+        [ .TIPO "FUSILERO"   .EXP 4 ]
+        [ .TIPO "CAB_DRAGON" .EXP 1 ] 
+        [ .TIPO "CANON_CAB"  .EXP 1 ] 
+      ]
+
+    ]
+    
+  ] # CONFIGS
+]
+

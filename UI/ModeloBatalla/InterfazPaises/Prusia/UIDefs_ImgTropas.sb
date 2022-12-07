@@ -1,0 +1,98 @@
+###############################################################################################################
+# Imagenes asociadas a tropas.
+###############################################################################################################
+
+[ 
+ .KEY PRUSIA_FUSILERO_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Prusia/IconosPrusia.tga" .U 407 .V 1 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY PRUSIA_TIRADOR_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Prusia/IconosPrusia.tga" .U 1 .V 183 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY PRUSIA_CAZADOR_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Prusia/IconosPrusia.tga" .U 233 .V 1 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY PRUSIA_GRANADERO_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Prusia/IconosPrusia.tga" .U 291 .V 1 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY PRUSIA_LANCERO_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Prusia/IconosPrusia.tga" .U 1 .V 1 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY PRUSIA_MILICIA_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Prusia/IconosPrusia.tga" .U 349 .V 1 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY PRUSIA_HUSAR_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Prusia/IconosPrusia.tga" .U 117 .V 1 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY PRUSIA_ELITE_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Prusia/IconosPrusia.tga" .U 59 .V 183 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY PRUSIA_CAB_LANCERO_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Prusia/IconosPrusia.tga" .U 1 .V 1 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY PRUSIA_CAB_HUSAR_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Prusia/IconosPrusia.tga" .U 59 .V 1 .SX 57 .SY 91 .ALPHA TRUE ] 
+]
+
+[ 
+ .KEY PRUSIA_CAB_CORACERO_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Prusia/IconosPrusia.tga" .U 117 .V 1 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY PRUSIA_CAB_DRAGON_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Prusia/IconosPrusia.tga" .U 175 .V 1 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY PRUSIA_CANON_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Prusia/IconosPrusia.tga" .U 291 .V 183 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY PRUSIA_CANON8_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Prusia/IconosPrusia.tga" .U 233 .V 183 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY PRUSIA_OBUS_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Prusia/IconosPrusia.tga" .U 117 .V 183 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY PRUSIA_MORTERO_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Prusia/IconosPrusia.tga" .U 407 .V 183 .SX 57 .SY 91 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY PRUSIA_CANON_CAB_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Prusia/IconosPrusia.tga" .U 175 .V 183 .SX 57 .SY 91 .ALPHA TRUE  ]
+]
+
+[ 
+ .KEY PRUSIA_OBUS_CAB_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Prusia/IconosPrusia.tga" .U 117 .V 183 .SX 57 .SY 91 .ALPHA TRUE  ]
+]
+
+[ 
+ .KEY PRUSIA_CANON_CAMP_IMG
+ .PARAMS [ .FILE "Game/UI/ModeloBatalla/InterfazPaises/Prusia/IconosPrusia.tga" .U 233 .V 183 .ALPHA TRUE ]
+]

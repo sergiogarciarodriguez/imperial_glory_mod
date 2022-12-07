@@ -1,0 +1,261 @@
+###############################################################################################################
+# Fichero que contiene las claves asociadas a las estructuras de inicializacion de los controles para usar con
+# CtrlParamsServer.
+###############################################################################################################
+
+ .BTNTEXTO_PARAMS
+ [
+ 
+  [
+   .KEY MBGESTION_DEFAULT_BTN
+   .PARAMS 
+   [  
+     .TIPO UIC_BOTONTEXTO
+     
+     .COMPORTAMIENTO SIMPLE
+     
+     .SOLTADO [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+     .SELECCIONADO [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+     .PULSADO [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+     
+     .TEXT " "
+     
+     .FONT "Fonts/Times12.fnt"
+       
+     .FONDO
+     [ 
+       .SOLTADO [ .FILE "Game/UI/ModeloGestion/UIDefsMsgBoxNotificaciones/NotificacionEdificios.tga" .U 92 .V 89 ]
+       .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/UIDefsMsgBoxNotificaciones/NotificacionEdificios.tga" .U 92 .V 129 ]
+       .PULSADO [ .FILE "Game/UI/ModeloGestion/UIDefsMsgBoxNotificaciones/NotificacionEdificios.tga" .U 92 .V 169 ]
+       .SX 136 .SY 37
+       .ALPHA TRUE
+     ]              
+                       
+     .CENTER_AREA [ .X1 0 .Y1 0 .X2 136 .Y2 37 ]
+     
+     .IDSELECTSOUND "S_FXUI_CLICKBUTTON"
+     .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"  
+     
+     .KEY [ .TECLA LKEY_GENERIC_MB_OK_KEY .EVENTOS [ KEY_DOWN KEY_UP ] ]     
+   ]
+  ] 
+  
+  [
+   .KEY MB_DEFAULTTEXT_BTN
+   .PARAMS [ %Game/UI/Comun/UIDefs_CommonMsgBoxBtn.sb ]
+  ] 
+  
+  [
+    .KEY MB_DEFAULTTEXT_BTN3
+    .PARAMS 
+    [
+      .TIPO UIC_BOTONTEXTO
+    
+      .COMPORTAMIENTO SIMPLE
+      .ACEPTAR TRUE
+      
+      .SOLTADO [ .COLOR [ .R 220 .G 220 .B 220 ] ] 
+      .PULSADO [ .COLOR [ .R 158 .G 0 .B 0 ] ] 
+      
+      .TEXT LTEXT_UI_OK
+      
+      .FONT "Fonts/Default.fnt" .SCALE 1.0
+      
+      .FONDO
+      [ 
+       .X 0 .Y 0 .PRIORITY 255
+       .TILEABLE TRUE
+       .SOLTADO %Game/UI/Comun/UIDefs_ImgFondoBotonSoltado.sb   
+       .PULSADO %Game/UI/Comun/UIDefs_ImgFondoBotonPulsado.sb   
+       .SX 100 .SY 22
+       .ALPHA TRUE
+      ]              
+                    
+      .CENTER_AREA [ .X1 0 .Y1 0 .X2 100 .Y2 22 ]
+      
+      .IDSELECTSOUND "S_FXUI_CLICKBUTTON"      
+        
+      .KEY [ .TECLA LKEY_GENERIC_MB_OK_KEY .EVENTOS [ KEY_DOWN KEY_UP ] ]
+    ]
+  ]
+    
+    # usado en el visor de gestión, para representar al oficial del ejército actual seleccionado
+    [
+     .KEY VISOR_GESTION_OFICIAL_BTN
+     .PARAMS 
+     [  
+       .TIPO UIC_BOTONTEXTO
+       .COMPORTAMIENTO SIMPLE
+       
+       .BOTON 2 #solo reacciona a los eventos de pulsación del botón derecho
+       
+       .FONDO
+       [ 
+         .PRIORITY 242
+         .X 146 .Y 635
+         .SOLTADO [       .FILE "Game/UI/ModeloGestion/UIDefsMsgBoxNotificaciones/NotificacionEdificios.tga" .U 92 .V 89 ]
+         .PULSADO [       .FILE "Game/UI/ModeloGestion/UIDefsMsgBoxNotificaciones/NotificacionEdificios.tga" .U 92 .V 89 ]
+         .SX 72 .SY 102
+         .ALPHA TRUE
+       ]              
+       
+       .TOOL_TIP 
+       [
+        .FONT "Fonts/Times12.fnt" 
+        .COLOR [ .R 255 .G 255 .B 255 ] 
+        .X 32 .Y 32 
+        .SHOW_TIME 500  
+        .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb        
+       ]       
+       
+       # Cursor de ayuda contextual
+       .ALTERNATE_CURSOR CUR_CONTEXTHELP
+     ]
+   ]
+  
+  %Game/UI/ModeloGestion/Diplomacia/UIDefs_Propuestas.sb
+  %Game/UI/ModeloGestion/Diplomacia/UIDefs_Banderas.sb
+  %Game/UI/ModeloGestion/Diplomacia/UIDefs_Controles.sb      
+  
+  %Game/UI/Comun/UIDefs_ControlesStandard.sb
+  
+  [ .KEY DEFAULT_GESTION_VOLVER_BUTTON
+    .PARAMS
+    [
+      .PX 743 .PY 719
+      .TEXT LTEXT_UI_VOLVER_JUEGO
+      .FONT "Fonts/Times15.fnt"
+      .SOLTADO          [ .COLOR [ .R 255 .G 255 .B   0 ] ] 
+      .SELECCIONADO     [ .COLOR [ .R 255 .G 255 .B 255 ] ] 
+      .PULSADO          [ .COLOR [ .R 255 .G 255 .B   0 ] .DX 5 .DY 2 ] 
+      .IDSELECTSOUND "S_FXUI_CLICKBUTTON"
+      .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"  
+      .KEY [ .TECLA KEY_ESCAPE .MKEYS [ ] ]
+    ]
+  ]
+ ]
+ 
+ .BTNGRAFICO_PARAMS
+ [
+  
+ ]
+ 
+ .BITMAP_PARAMS
+ [
+   # Algunas claves haran referencia a bitmaps de botones por lo que llevaran el prefijo BTN
+   
+   # Default
+   %Game/UI/ModeloGestion/Iconos/Default/UIDefs_PoolDefaultIcons.sb  
+   %Game/UI/ModeloGestion/Iconos/Default/UIDefs_PoolDefaultBtnIcons.sb
+         
+   # Claves de construcciones
+      
+   %Game/UI/ModeloGestion/Iconos/Construcciones/UIDefs_PoolEdificiosIcons.sb  
+   %Game/UI/ModeloGestion/Iconos/Construcciones/UIDefs_PoolEdificiosBtnIcons.sb
+   %Game/UI/ModeloGestion/Iconos/Construcciones/UIDefs_PoolEdificiosBtnSmallIcons.sb
+   
+   # Claves de tropas/barcos y ejércitos/flotas
+   # ToDo: - Esta carga deberia de ser selectiva en un futuro      
+   
+   # Francia   
+   %Game/UI/ModeloGestion/Iconos/Tropas/Francia/UIDefs_PoolTropasIcons.sb  
+   %Game/UI/ModeloGestion/Iconos/Tropas/Francia/UIDefs_PoolTropasBtnIcons.sb
+   %Game/UI/ModeloGestion/Iconos/Tropas/Francia/UIDefs_PoolTropasBtnIconsSmall.sb
+   %Game/UI/ModeloGestion/Iconos/Barcos/Francia/UIDefs_PoolBarcosIcons.sb
+   %Game/UI/ModeloGestion/Iconos/Barcos/Francia/UIDefs_PoolBarcosBtnIconsSmall.sb
+   %Game/UI/ModeloGestion/Iconos/Barcos/Francia/UIDefs_PoolBarcosBtnIcons.sb
+   
+   # Inglaterra   
+   %Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/UIDefs_PoolTropasIcons.sb  
+   %Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/UIDefs_PoolTropasBtnIcons.sb
+   %Game/UI/ModeloGestion/Iconos/Tropas/Inglaterra/UIDefs_PoolTropasBtnIconsSmall.sb
+   %Game/UI/ModeloGestion/Iconos/Barcos/Inglaterra/UIDefs_PoolBarcosIcons.sb
+   %Game/UI/ModeloGestion/Iconos/Barcos/Inglaterra/UIDefs_PoolBarcosBtnIconsSmall.sb
+   %Game/UI/ModeloGestion/Iconos/Barcos/Inglaterra/UIDefs_PoolBarcosBtnIcons.sb
+   
+   # Rusia
+   %Game/UI/ModeloGestion/Iconos/Tropas/Rusia/UIDefs_PoolTropasIcons.sb  
+   %Game/UI/ModeloGestion/Iconos/Tropas/Rusia/UIDefs_PoolTropasBtnIcons.sb
+   %Game/UI/ModeloGestion/Iconos/Tropas/Rusia/UIDefs_PoolTropasBtnIconsSmall.sb
+   %Game/UI/ModeloGestion/Iconos/Barcos/Rusia/UIDefs_PoolBarcosIcons.sb   
+   %Game/UI/ModeloGestion/Iconos/Barcos/Rusia/UIDefs_PoolBarcosBtnIconsSmall.sb   
+   %Game/UI/ModeloGestion/Iconos/Barcos/Rusia/UIDefs_PoolBarcosBtnIcons.sb   
+   
+   # Prusia   
+   %Game/UI/ModeloGestion/Iconos/Tropas/Prusia/UIDefs_PoolTropasIcons.sb  
+   %Game/UI/ModeloGestion/Iconos/Tropas/Prusia/UIDefs_PoolTropasBtnIcons.sb  
+   %Game/UI/ModeloGestion/Iconos/Tropas/Prusia/UIDefs_PoolTropasBtnIconsSmall.sb  
+   %Game/UI/ModeloGestion/Iconos/Barcos/Prusia/UIDefs_PoolBarcosIcons.sb
+   %Game/UI/ModeloGestion/Iconos/Barcos/Prusia/UIDefs_PoolBarcosBtnIconsSmall.sb
+   %Game/UI/ModeloGestion/Iconos/Barcos/Prusia/UIDefs_PoolBarcosBtnIcons.sb
+   
+   # Austria
+   %Game/UI/ModeloGestion/Iconos/Tropas/Austria/UIDefs_PoolTropasIcons.sb  
+   %Game/UI/ModeloGestion/Iconos/Tropas/Austria/UIDefs_PoolTropasBtnIcons.sb  
+   %Game/UI/ModeloGestion/Iconos/Tropas/Austria/UIDefs_PoolTropasBtnIconsSmall.sb  
+   %Game/UI/ModeloGestion/Iconos/Barcos/Austria/UIDefs_PoolBarcosIcons.sb
+   %Game/UI/ModeloGestion/Iconos/Barcos/Austria/UIDefs_PoolBarcosBtnIconsSmall.sb
+   %Game/UI/ModeloGestion/Iconos/Barcos/Austria/UIDefs_PoolBarcosBtnIcons.sb
+   
+   # Genéricos
+   %Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/UIDefs_PoolTropasIcons.sb  
+   %Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/UIDefs_PoolTropasBtnIcons.sb  
+   %Game/UI/ModeloGestion/Iconos/Tropas/Neutrales/UIDefs_PoolTropasBtnIconsSmall.sb  
+   %Game/UI/ModeloGestion/Iconos/Barcos/Neutrales/UIDefs_PoolBarcosIcons.sb
+   %Game/UI/ModeloGestion/Iconos/Barcos/Neutrales/UIDefs_PoolBarcosBtnIconsSmall.sb
+   %Game/UI/ModeloGestion/Iconos/Barcos/Neutrales/UIDefs_PoolBarcosBtnIcons.sb
+   
+   # Botones Quests
+   %Game/UI/ModeloGestion/Quests/UIDefs_PoolQuests.sb
+ 
+   # Banderas
+   %Game/UI/ModeloGestion/UIDefs_Banderas.sb
+   %Game/UI/ModeloGestion/Iconos/UIDefs_FlagIcons.sb
+   
+   # Iconos de notificaciones
+   %Game/UI/ModeloGestion/Iconos/UIDefs_PoolIconosNotificaciones.sb
+   
+   # Bitmaps de escenarios
+   %Game/UI/MainMenu/UIDefs_PoolBitmapEscenario.sb    
+ ]
+ 
+ .TEXT_PARAMS
+ [
+   # Textos Quests
+   %Game/UI/ModeloGestion/Quests/UIDefs_PoolTextQuests.sb
+   
+   # Textos para los iconos de tropas
+   %Game/UI/ModeloGestion/Iconos/Texto/UIDefs_PoolTropasBtnIconsTextUnidades.sb
+   %Game/UI/ModeloGestion/Iconos/Texto/UIDefs_PoolTropasImgIconsTextUnidades.sb
+   
+   # Textos para los iconos de los barcos
+   %Game/UI/ModeloGestion/Iconos/Texto/UIDefs_PoolBarcosBtnIconsTextUnidades.sb
+   %Game/UI/ModeloGestion/Iconos/Texto/UIDefs_PoolBarcosImgIconsTextUnidades.sb
+   
+ ]
+ 
+ .BTNTROPA_PARAMS
+ [
+  
+ ]
+ 
+ .MESSAGEBOX_PARAMS
+ [
+  
+  
+ ]
+ 
+ .TOOLTIP_PARAMS
+ [
+   [
+     .KEY DEFAULT_TOOLTIP
+     .PARAMS
+      [ 
+       .FONT "Fonts/Default.fnt" 
+       .COLOR [ .R 255 .G 255 .B 255 ] 
+       .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+      ]
+   ]
+ ]
+ 
+ %Game/GameModes/Comun/UICParams.sb

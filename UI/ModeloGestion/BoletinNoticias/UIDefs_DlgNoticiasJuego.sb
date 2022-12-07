@@ -1,0 +1,233 @@
+##################################################
+## Diálogo de noticias generales de juego
+##################################################
+
+.MODAL FALSE
+.CENTER FALSE
+.DEPTH 3
+
+.FONDO
+[
+  .X 0 .Y 93 .U 1 .V 94 .SX 640 .SY 564
+  .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinNoticias.tga" 
+  .ALPHA TRUE .PRIORITY 202
+]
+
+.CONTROLES
+[
+  [ 
+    .TIPO UIC_LISTBOXTEXT .ID 'LNEW'
+    .PARAMS
+    [ .X 37 .Y 60 .SX 564 .SY 430
+      .CAN_SELECT FALSE
+      .TEXT 
+      [
+        .FONT "Fonts/Times12.fnt"
+        .DX 5 .DY 5
+        .COLOR [ .R 255 .G 255 .B 255 ] 
+        #.SELECTION [ .R 255 .G 255 .B 255 ] ¿permitir la selección de las líneas?
+        .ALIGN LEFT
+      ] # ~ TEXT
+      
+      .VDX 564 .VDY 0
+      .VSX 6 .VSY 430
+      .SLIDER_VERTICAL
+      [
+        .PRIORITY 203
+        .STYLE DEFAULT_SLIDER_VERTICAL
+      ]
+    ]            
+  ]
+  
+  # Botón de Francia        
+  [ .TIPO UIC_BOTONTEXTO .ID 'CBFR'
+    .PARAMS
+    [ 
+      .COMPORTAMIENTO MANUAL
+
+      .FONDO
+      [
+        .PRIORITY 203
+        .X 57 .Y 14
+        .SX 51 .SY 35
+        .SOLTADO      [ .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinNoticias.tga" .U 1 .V 664 ]
+        .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinNoticias.tga" .U 1 .V 702 ]
+        .PULSADO      [ .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinNoticias.tga" .U 1 .V 740 ]     
+        .ALPHA TRUE          
+      ]
+      
+      .TOOL_TIP
+      [ 
+        .TEXT LTEXT_JUGADOR_FRANCIA
+ 	      .X 32 .Y 32
+ 	        
+        
+        .STYLE DEFAULT_TOOLTIP 
+      ]
+      
+      .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+      .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"  
+    ]            
+  ] # ~ CHECKBOX         
+  
+  # Botón de Inglaterra
+  [ .TIPO UIC_BOTONTEXTO .ID 'CBIN'
+    .PARAMS
+    [ 
+      .COMPORTAMIENTO MANUAL
+
+      .FONDO
+      [
+        .PRIORITY 203
+        .X 133 .Y 14
+        .SX 51 .SY 35
+        .SOLTADO      [ .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinNoticias.tga" .U 55 .V 664 ]
+        .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinNoticias.tga" .U 55 .V 702 ]
+        .PULSADO      [ .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinNoticias.tga" .U 55 .V 740 ]     
+        .ALPHA TRUE          
+      ]
+      
+      .TOOL_TIP
+      [ 
+        .TEXT LTEXT_JUGADOR_GRAN_BRETANYA
+ 	      .X 32 .Y 32
+ 	        
+        
+        .STYLE DEFAULT_TOOLTIP 
+      ]
+      
+      .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+      .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"  
+    ]            
+  ] # ~ CHECKBOX         
+  
+  # Botón de Rusia
+  [ .TIPO UIC_BOTONTEXTO .ID 'CBRU'
+    .PARAMS
+    [ 
+      .COMPORTAMIENTO MANUAL
+
+      .FONDO
+      [
+        .PRIORITY 203
+        .X 209 .Y 14
+        .SX 51 .SY 35
+        .SOLTADO      [ .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinNoticias.tga" .U 109 .V 664 ]
+        .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinNoticias.tga" .U 109 .V 702 ]
+        .PULSADO      [ .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinNoticias.tga" .U 109 .V 740 ]     
+        .ALPHA TRUE          
+      ]
+      
+      .TOOL_TIP
+      [ 
+        .TEXT LTEXT_JUGADOR_RUSIA
+ 	      .X 32 .Y 32
+ 	        
+        
+        .STYLE DEFAULT_TOOLTIP 
+      ]
+      
+      .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+      .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"  
+
+    ]            
+  ] # ~ CHECKBOX         
+  
+  # Botón de Hungria
+  [ .TIPO UIC_BOTONTEXTO .ID 'CBHU'
+    .PARAMS
+    [ 
+      .COMPORTAMIENTO MANUAL
+
+      .FONDO
+      [
+        .PRIORITY 203
+        .X 285 .Y 14
+        .SX 51 .SY 35
+        .SOLTADO      [ .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinNoticias.tga" .U 163 .V 664 ]
+        .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinNoticias.tga" .U 163 .V 702 ]
+        .PULSADO      [ .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinNoticias.tga" .U 163 .V 740 ]     
+        .ALPHA TRUE          
+      ]
+      
+      .TOOL_TIP
+      [ 
+        .TEXT LTEXT_JUGADOR_AUSTRIA
+ 	      .X 32 .Y 32
+ 	        
+        
+        .STYLE DEFAULT_TOOLTIP 
+      ]
+      
+      .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+      .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"  
+
+    ]            
+  ] # ~ CHECKBOX         
+  
+  # Botón de Prusia
+  [ .TIPO UIC_BOTONTEXTO .ID 'CBPR'
+    .PARAMS
+    [ 
+      .COMPORTAMIENTO MANUAL
+
+      .FONDO
+      [
+        .PRIORITY 203
+        .X 361 .Y 14
+        .SX 51 .SY 35
+        .SOLTADO      [ .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinNoticias.tga" .U 217 .V 664 ]
+        .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinNoticias.tga" .U 217 .V 702 ]
+        .PULSADO      [ .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinNoticias.tga" .U 217 .V 740 ]     
+        .ALPHA TRUE          
+      ]
+      
+      .TOOL_TIP
+      [ 
+        .TEXT LTEXT_JUGADOR_PRUSIA
+ 	      .X 32 .Y 32
+ 	        
+        
+        .STYLE DEFAULT_TOOLTIP 
+      ]
+      
+      .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+      .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"  
+
+    ]            
+  ] # ~ CHECKBOX                                 
+  
+  # Botón de "Todos"
+  [
+    .TIPO UIC_BOTONTEXTO .ID 'CBTO'
+    .PARAMS
+    [
+      .TEXT LTEXT_UI_NEWS_BTN_ALL
+	    .FONT     "Fonts/Times12.fnt"            
+	    .SOLTADO      [ .COLOR [ .R 0 .G 0 .B 0 ] ]
+	    .SELECCIONADO [ .COLOR [ .R 0 .G 0 .B 0 ] ]
+	    .PULSADO      [ .COLOR [ .R 0 .G 0 .B 0 ] .DX 5 .DY 2 ]
+	    .CENTER_AREA  [ .X1 0 .Y1 0 .X2 139 .Y2 39 ]            
+    
+      .STYLE DEFAULT_RECTANGLE_BUTTON_SMALL
+    
+      .FONDO [ .X 444 .Y 8 ]
+      
+	    .IDSELECTSOUND "S_FXUI_CLICKBUTTON"                                
+	    .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"
+    ]
+  ]  
+        
+] #~ CONTROLES
+
+# color de los textos del listbox asociados al jugador
+.PLAYER_COLOR [ .R 255 .G 240 .B 0 ]
+
+# separador entre bloques de turno
+.CABECERA_COLOR [ .R 243 .G 101 .B 91 ]
+.CABECERA "LTEXT_NEWS_CABECERA"
+
+.PIE 	  "LTEXT_NEWS_PIE"
+
+# número máximo de bloques(turnos) en los que se presentará la información
+.MAX_BLOQUES 10

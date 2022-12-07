@@ -1,0 +1,318 @@
+###############################################################################################################
+# Mantiene el pool de los botones que representan a los combatientes en el modelo naval.
+###############################################################################################################
+
+#================================================ INGLATERRA ==========================================
+[
+  .KEY GRAN_BRETANYA_FRAGATA_INFO_TROPA
+  .PARAMS
+  [
+   .DBCLICK_AS_RELEASE FALSE
+   .COMPORTAMIENTO MANUAL
+   .FONDO
+   [   
+     .PRIORITY 31
+     .SX 112 .SY 178 .ALPHA TRUE 
+     .SOLTADO    [ .FILE "Game\UI\ModeloNaval\IconosBarcos\GranBretana.tga" .U 203 .V 82 .ALPHA TRUE ]     
+     .PULSADO    [ .FILE "Game\UI\ModeloNaval\IconosBarcos\GranBretana.tga" .U 203 .V 264 .ALPHA TRUE ] 
+   ]
+   
+    %Game\UI\ModeloNaval\UIDefs_DatosBotonInfoFragata.sb
+  ]
+]
+
+[
+  .KEY GRAN_BRETANYA_NAVIO_INFO_TROPA
+  .PARAMS
+  [
+    .DBCLICK_AS_RELEASE FALSE
+    .COMPORTAMIENTO MANUAL
+    .FONDO
+    [
+     .PRIORITY 31    
+     .SX 112 .SY 178 .ALPHA TRUE 
+     .SOLTADO    [ .FILE "Game\UI\ModeloNaval\IconosBarcos\GranBretana.tga" .U 319 .V 82 .ALPHA TRUE ]     
+     .PULSADO    [ .FILE "Game\UI\ModeloNaval\IconosBarcos\GranBretana.tga" .U 319 .V 264 .ALPHA TRUE ] 
+    ]
+    
+    %Game\UI\ModeloNaval\UIDefs_DatosBotonInfoNavio.sb
+  ]
+]
+
+[
+  .KEY GRAN_BRETANYA_CORBETA_INFO_TROPA
+  .PARAMS
+  [
+   .DBCLICK_AS_RELEASE FALSE
+   .COMPORTAMIENTO MANUAL
+   .FONDO
+   [
+     .PRIORITY 31   
+     .SX 112 .SY 178 .ALPHA TRUE 
+     .SOLTADO    [ .FILE "Game\UI\ModeloNaval\IconosBarcos\GranBretana.tga" .U 87 .V 82 .ALPHA TRUE ]     
+     .PULSADO    [ .FILE "Game\UI\ModeloNaval\IconosBarcos\GranBretana.tga" .U 87 .V 264 .ALPHA TRUE ] 
+   ]
+    %Game\UI\ModeloNaval\UIDefs_DatosBotonInfoCorbeta.sb
+  ]
+]
+
+#================================================ FRANCIA ==========================================
+[
+  .KEY FRANCIA_FRAGATA_INFO_TROPA
+  .PARAMS
+  [
+   .COMPORTAMIENTO MANUAL
+   .DBCLICK_AS_RELEASE FALSE
+   .FONDO
+   [
+     .PRIORITY 31
+     .SX 112 .SY 178 .ALPHA TRUE 
+     .SOLTADO    [ .FILE "Game\UI\ModeloNaval\IconosBarcos\Francia.tga" .U 203 .V 82 .ALPHA TRUE ]     
+     .PULSADO    [ .FILE "Game\UI\ModeloNaval\IconosBarcos\Francia.tga" .U 203 .V 264 .ALPHA TRUE ] 
+   ]
+    %Game\UI\ModeloNaval\UIDefs_DatosBotonInfoFragata.sb
+  ]
+]
+
+[
+  .KEY FRANCIA_NAVIO_INFO_TROPA
+  .PARAMS
+  [
+   .COMPORTAMIENTO MANUAL
+   .DBCLICK_AS_RELEASE FALSE
+   .FONDO
+   [
+     .PRIORITY 31
+     .SX 112 .SY 178 .ALPHA TRUE 
+     .SOLTADO    [ .FILE "Game\UI\ModeloNaval\IconosBarcos\Francia.tga" .U 319 .V 82 .ALPHA TRUE ]     
+     .PULSADO    [ .FILE "Game\UI\ModeloNaval\IconosBarcos\Francia.tga" .U 319 .V 264 .ALPHA TRUE ] 
+   ]
+    %Game\UI\ModeloNaval\UIDefs_DatosBotonInfoNavio.sb
+  ]
+]
+
+[
+  .KEY FRANCIA_CORBETA_INFO_TROPA
+  .PARAMS
+  [
+   .COMPORTAMIENTO MANUAL
+   .DBCLICK_AS_RELEASE FALSE
+   .FONDO
+   [
+     .PRIORITY 31  
+     .SX 112 .SY 178 .ALPHA TRUE 
+     .SOLTADO    [ .FILE "Game\UI\ModeloNaval\IconosBarcos\Francia.tga" .U 87 .V 82 .ALPHA TRUE ]     
+     .PULSADO    [ .FILE "Game\UI\ModeloNaval\IconosBarcos\Francia.tga" .U 87 .V 264 .ALPHA TRUE ] 
+   ]
+    %Game\UI\ModeloNaval\UIDefs_DatosBotonInfoCorbeta.sb
+  ]
+]
+
+#================================================ AUSTRIA ==========================================
+[
+  .KEY AUSTRIA_FRAGATA_INFO_TROPA
+  .PARAMS
+  [
+   .COMPORTAMIENTO MANUAL
+   .DBCLICK_AS_RELEASE FALSE
+   .FONDO
+   [   
+     .PRIORITY 31   
+     .SX 112 .SY 178 .ALPHA TRUE 
+     .SOLTADO    [ .FILE "Game\UI\ModeloNaval\IconosBarcos\Austria.tga" .U 203 .V 82 .ALPHA TRUE ]     
+     .PULSADO    [ .FILE "Game\UI\ModeloNaval\IconosBarcos\Austria.tga" .U 203 .V 264 .ALPHA TRUE ] 
+   ]
+    %Game\UI\ModeloNaval\UIDefs_DatosBotonInfoFragata.sb
+  ]
+]
+
+[
+  .KEY AUSTRIA_NAVIO_INFO_TROPA
+  .PARAMS
+  [
+   .COMPORTAMIENTO MANUAL
+   .DBCLICK_AS_RELEASE FALSE
+   .FONDO
+   [
+     .PRIORITY 31   
+     .SX 112 .SY 178 .ALPHA TRUE 
+     .SOLTADO    [ .FILE "Game\UI\ModeloNaval\IconosBarcos\Austria.tga" .U 319 .V 82 .ALPHA TRUE ]     
+     .PULSADO    [ .FILE "Game\UI\ModeloNaval\IconosBarcos\Austria.tga" .U 319 .V 264 .ALPHA TRUE ] 
+   ]
+    %Game\UI\ModeloNaval\UIDefs_DatosBotonInfoNavio.sb
+  ]
+]
+
+[
+  .KEY AUSTRIA_CORBETA_INFO_TROPA
+  .PARAMS
+  [
+   .COMPORTAMIENTO MANUAL
+   .DBCLICK_AS_RELEASE FALSE
+   .FONDO
+   [
+     .PRIORITY 31   
+     .SX 112 .SY 178 .ALPHA TRUE 
+     .SOLTADO    [ .FILE "Game\UI\ModeloNaval\IconosBarcos\Austria.tga" .U 87 .V 82 .ALPHA TRUE ]     
+     .PULSADO    [ .FILE "Game\UI\ModeloNaval\IconosBarcos\Austria.tga" .U 87 .V 264 .ALPHA TRUE ] 
+   ]
+    %Game\UI\ModeloNaval\UIDefs_DatosBotonInfoCorbeta.sb
+  ]
+]
+
+#================================================ PRUSIA ==========================================
+[
+  .KEY PRUSIA_FRAGATA_INFO_TROPA
+  .PARAMS
+  [
+   .COMPORTAMIENTO MANUAL
+   .DBCLICK_AS_RELEASE FALSE
+   .FONDO
+   [
+     .PRIORITY 31   
+     .SX 112 .SY 178 .ALPHA TRUE 
+     .SOLTADO    [ .FILE "Game\UI\ModeloNaval\IconosBarcos\Prusia.tga" .U 203 .V 82 .ALPHA TRUE ]     
+     .PULSADO    [ .FILE "Game\UI\ModeloNaval\IconosBarcos\Prusia.tga" .U 203 .V 264 .ALPHA TRUE ] 
+   ]
+    %Game\UI\ModeloNaval\UIDefs_DatosBotonInfoFragata.sb
+  ]
+]
+
+[
+  .KEY PRUSIA_NAVIO_INFO_TROPA
+  .PARAMS
+  [
+   .COMPORTAMIENTO MANUAL
+   .DBCLICK_AS_RELEASE FALSE
+   .FONDO
+   [
+     .PRIORITY 31   
+     .SX 112 .SY 178 .ALPHA TRUE 
+     .SOLTADO    [ .FILE "Game\UI\ModeloNaval\IconosBarcos\Prusia.tga" .U 319 .V 82 .ALPHA TRUE ]     
+     .PULSADO    [ .FILE "Game\UI\ModeloNaval\IconosBarcos\Prusia.tga" .U 319 .V 264 .ALPHA TRUE ] 
+   ]
+    %Game\UI\ModeloNaval\UIDefs_DatosBotonInfoNavio.sb
+  ]
+]
+
+[
+  .KEY PRUSIA_CORBETA_INFO_TROPA
+  .PARAMS
+  [
+   .COMPORTAMIENTO MANUAL
+   .DBCLICK_AS_RELEASE FALSE
+   .FONDO
+   [
+     .PRIORITY 31   
+     .SX 112 .SY 178 .ALPHA TRUE 
+     .SOLTADO    [ .FILE "Game\UI\ModeloNaval\IconosBarcos\Prusia.tga" .U 87 .V 82 .ALPHA TRUE ]     
+     .PULSADO    [ .FILE "Game\UI\ModeloNaval\IconosBarcos\Prusia.tga" .U 87 .V 264 .ALPHA TRUE ] 
+   ]
+    %Game\UI\ModeloNaval\UIDefs_DatosBotonInfoCorbeta.sb
+  ]
+]
+
+#================================================ RUSIA ==========================================
+[
+  .KEY RUSIA_FRAGATA_INFO_TROPA
+  .PARAMS
+  [
+   .COMPORTAMIENTO MANUAL
+   .DBCLICK_AS_RELEASE FALSE
+   .FONDO
+   [
+     .PRIORITY 31
+     .SX 112 .SY 178 .ALPHA TRUE 
+     .SOLTADO    [ .FILE "Game\UI\ModeloNaval\IconosBarcos\Rusia.tga" .U 203 .V 82 .ALPHA TRUE ]     
+     .PULSADO    [ .FILE "Game\UI\ModeloNaval\IconosBarcos\Rusia.tga" .U 203 .V 264 .ALPHA TRUE ] 
+   ]
+    %Game\UI\ModeloNaval\UIDefs_DatosBotonInfoFragata.sb
+  ]
+]
+
+[
+  .KEY RUSIA_NAVIO_INFO_TROPA
+  .PARAMS
+  [
+   .COMPORTAMIENTO MANUAL
+   .DBCLICK_AS_RELEASE FALSE
+   .FONDO
+   [
+     .PRIORITY 31   
+     .SX 112 .SY 178 .ALPHA TRUE 
+     .SOLTADO    [ .FILE "Game\UI\ModeloNaval\IconosBarcos\Rusia.tga" .U 319 .V 82 .ALPHA TRUE ]     
+     .PULSADO    [ .FILE "Game\UI\ModeloNaval\IconosBarcos\Rusia.tga" .U 319 .V 264 .ALPHA TRUE ] 
+   ]
+    %Game\UI\ModeloNaval\UIDefs_DatosBotonInfoNavio.sb
+  ]
+]
+
+[
+  .KEY RUSIA_CORBETA_INFO_TROPA
+  .PARAMS
+  [
+   .COMPORTAMIENTO MANUAL
+   .DBCLICK_AS_RELEASE FALSE
+   .FONDO
+   [
+     .PRIORITY 31   
+     .SX 112 .SY 178 .ALPHA TRUE 
+     .SOLTADO    [ .FILE "Game\UI\ModeloNaval\IconosBarcos\Rusia.tga" .U 87 .V 82 .ALPHA TRUE ]     
+     .PULSADO    [ .FILE "Game\UI\ModeloNaval\IconosBarcos\Rusia.tga" .U 87 .V 264 .ALPHA TRUE ] 
+   ]
+    %Game\UI\ModeloNaval\UIDefs_DatosBotonInfoCorbeta.sb
+  ]
+]
+
+#================================================ ESPAÑA ==========================================
+# de momento hacemos que sea como Fracia... PET TODO 
+[
+  .KEY ESPANYA_FRAGATA_INFO_TROPA
+  .PARAMS
+  [
+   .COMPORTAMIENTO MANUAL
+   .DBCLICK_AS_RELEASE FALSE
+   .FONDO
+   [
+     .PRIORITY 31
+     .SX 112 .SY 178 .ALPHA TRUE 
+     .SOLTADO    [ .FILE "Game\UI\ModeloNaval\IconosBarcos\Francia.tga" .U 203 .V 82 .ALPHA TRUE ]     
+     .PULSADO    [ .FILE "Game\UI\ModeloNaval\IconosBarcos\Francia.tga" .U 203 .V 264 .ALPHA TRUE ] 
+   ]
+    %Game\UI\ModeloNaval\UIDefs_DatosBotonInfoFragata.sb
+  ]
+]
+
+[
+  .KEY ESPANYA_NAVIO_INFO_TROPA
+  .PARAMS
+  [
+   .COMPORTAMIENTO MANUAL
+   .DBCLICK_AS_RELEASE FALSE
+   .FONDO
+   [
+     .PRIORITY 31
+     .SX 112 .SY 178 .ALPHA TRUE 
+     .SOLTADO    [ .FILE "Game\UI\ModeloNaval\IconosBarcos\Francia.tga" .U 319 .V 82 .ALPHA TRUE ]     
+     .PULSADO    [ .FILE "Game\UI\ModeloNaval\IconosBarcos\Francia.tga" .U 319 .V 264 .ALPHA TRUE ] 
+   ]
+    %Game\UI\ModeloNaval\UIDefs_DatosBotonInfoNavio.sb
+  ]
+]
+
+[
+  .KEY ESPANYA_CORBETA_INFO_TROPA
+  .PARAMS
+  [
+   .COMPORTAMIENTO MANUAL
+   .DBCLICK_AS_RELEASE FALSE
+   .FONDO
+   [
+     .PRIORITY 31  
+     .SX 112 .SY 178 .ALPHA TRUE 
+     .SOLTADO    [ .FILE "Game\UI\ModeloNaval\IconosBarcos\Francia.tga" .U 87 .V 82 .ALPHA TRUE ]     
+     .PULSADO    [ .FILE "Game\UI\ModeloNaval\IconosBarcos\Francia.tga" .U 87 .V 264 .ALPHA TRUE ] 
+   ]
+    %Game\UI\ModeloNaval\UIDefs_DatosBotonInfoCorbeta.sb
+  ]
+]

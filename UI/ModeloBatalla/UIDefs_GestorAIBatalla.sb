@@ -1,0 +1,13 @@
+ ########################################################################################################
+ # Controles asociados al UI gestor de la AI de batalla.
+ ########################################################################################################
+ 
+  # TECLAS 
+      
+  # Teclas de Debug 
+        
+  # Tecla para cambio de bando SOLO en modo debug
+  [ .TIPO UIC_TECLA .ID 'CBAN' .PARAMS [ .TECLA KEY_SPACE .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]
+                
+  # Tecla ESC (para hacer aparecer un menu -> MESC -> Menu ESCape; ver UI_ESC_MENU_MODELO_GESTION)
+  #[ .TIPO UIC_TECLA .ID 'MESC' .PARAMS [ .TECLA KEY_ESCAPE .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]

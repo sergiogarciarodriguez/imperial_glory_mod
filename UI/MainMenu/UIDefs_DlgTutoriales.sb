@@ -1,0 +1,239 @@
+##############################################################################################################
+# 
+# Pantalla de Selección de tutorial
+#
+##############################################################################################################
+
+.MODAL TRUE
+.CENTER FALSE
+
+.FONDO
+[
+  .PRIORITY 2
+  .FILE "Game/UI/MainMenu/MenuTutoriales.tga"
+  .SX 1024 .SY 768 .ALPHA TRUE
+]
+
+.TUTORIAL_DEFAULT_TROPAS [ %Game/UI/MainMenu/UIDefs_AutoBuyTutorialTropas.sb ]
+
+.TUTORIAL_DEFAULT_BARCOS [ %Game/UI/MainMenu/UIDefs_AutoBuyTutorialBarcos.sb ]
+
+.TUTORIAL_DEFAULT_TROPAS_JUG2 [ %Game/UI/MainMenu/UIDefs_AutoBuyTutorialTropasJug2.sb ]
+
+.TUTORIAL_DEFAULT_BARCOS_JUG2 [ %Game/UI/MainMenu/UIDefs_AutoBuyTutorialBarcosJug2.sb ]
+
+.CONTROLES [
+
+	#---------------------------------------------- BITMAP IMPERIAL GLORY -------------------------------------	
+	[ .TIPO UIC_BITMAP .ID 'BMIG' 
+	 .PARAMS 
+	 [ 
+	  .FILE "Game/UI/MainMenu/ImperialGloryLogo.tga" .U 0 .V 0 
+	  .X 0 .Y 0 
+	  .SX 465 .SY 188 
+	  .PRIORITY 201
+	  .ALPHA TRUE
+	 ] 
+	]
+
+
+  #---------------------------------------------------------------------------------------------------
+  # Etiquetas de texto - Títulos
+  [
+    .TIPO UIC_TEXT .ID 'TTUT'
+    .PARAMS
+    [
+      .PRIORITY 5
+      .TEXT LTEXT_UI_TITLE_TUTORIALES
+      .ALIGN CENTER
+      .FONT "Fonts/MonotypeCorsiva29.fnt"
+      .X 818 .Y 160 
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+    ]
+  ]
+
+  # titulos tipos de tutorial
+  [
+    .TIPO UIC_TEXT .ID 'TTBA'
+    .PARAMS
+    [
+      .PRIORITY 5
+      .TEXT LTEXT_UI_TUTORIALES_BATALLA
+      .ALIGN CENTER
+      .FONT "Fonts/MonotypeCorsiva25.fnt"
+      .X 239 .Y 271
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+    ]
+  ]
+  [
+    .TIPO UIC_TEXT .ID 'TTGE'
+    .PARAMS
+    [
+      .PRIORITY 5
+      .TEXT LTEXT_UI_TUTORIALES_GESTION
+      .ALIGN CENTER
+      .FONT "Fonts/MonotypeCorsiva25.fnt"
+      .X 510 .Y 234
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+    ]
+  ]
+
+  [
+    .TIPO UIC_TEXT .ID 'TTNA'
+    .PARAMS
+    [
+      .PRIORITY 5
+      .TEXT LTEXT_UI_TUTORIALES_NAVAL
+      .ALIGN CENTER
+      .FONT "Fonts/MonotypeCorsiva25.fnt"
+      .X 779 .Y 271
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+    ]
+  ]
+
+  #Botones de OK y BACK
+  [
+    .TIPO UIC_BOTONTEXTO .ID 'OTUC'
+    .PARAMS
+    [
+      .FONDO [ .X 854 .Y 614 ]
+      
+      .IDSELECTSOUND "S_ACEPTAR"    
+      .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"      		     
+      
+      .STYLE DEFAULT_OK_BUTTON
+      
+      .KEY
+      [
+       .TECLA LKEY_GENERIC_MB_OK_KEY .EVENTOS [ KEY_DOWN KEY_UP ]          
+      ]       
+    ]
+  ]
+
+  [
+    .TIPO UIC_BOTONTEXTO .ID 'OTUX'
+    .PARAMS
+    [
+      .FONDO [ .X 806 .Y 614 ]
+      
+      .IDSELECTSOUND "S_CANCELAR"    
+      .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"      		
+      
+      .STYLE DEFAULT_X_BUTTON
+      
+      .KEY
+      [
+       .TECLA LKEY_MAINMENU_CANCELKEY .EVENTOS [ KEY_DOWN KEY_UP ]          
+      ]       
+    ]
+  ]
+
+
+  #---------------------------------------------------------------------------------------------------
+  # Botón de jugar todos
+  [
+    .TIPO UIC_BOTONTEXTO .ID 'B_JT'
+    .PARAMS
+    [
+      .TEXT LTEXT_UI_TUTORIALES_JUGAR_TODOS
+      .FONDO [ .X 405 .Y 536 ]
+      
+      .STYLE DEFAULT_MULTIPLAYER_BIG_BUTTON
+    ]
+  ] # ~Boton O_BK 
+
+  #---------------------------------------------------------------------------------------------------
+  # Botones de selección de tipo de Tutorial
+  
+  [ .TIPO UIC_BOTONTEXTO .ID 'BTBA'
+    .PARAMS
+    [ 
+      .COMPORTAMIENTO MANUAL
+      
+      .TEXT LTEXT_UI_MAINMENU_ACEPTAR
+      .FONDO [ .X 171 .Y 498 ]
+      
+      .STYLE DEFAULT_MULTIPLAYER_SMALL_BUTTON
+    ]
+  ]
+  
+  [ .TIPO UIC_BOTONTEXTO .ID 'BTGE'
+    .PARAMS
+    [ 
+      .COMPORTAMIENTO MANUAL
+      
+      .TEXT LTEXT_UI_MAINMENU_ACEPTAR
+      .FONDO [ .X 441 .Y 463 ]
+      
+      .STYLE DEFAULT_MULTIPLAYER_SMALL_BUTTON
+    ]
+  ]
+
+  [ .TIPO UIC_BOTONTEXTO .ID 'BTNA'
+    .PARAMS
+    [ 
+      .COMPORTAMIENTO MANUAL
+      
+      .TEXT LTEXT_UI_MAINMENU_ACEPTAR
+      .FONDO [ .X 711 .Y 498 ]
+      
+      .STYLE DEFAULT_MULTIPLAYER_SMALL_BUTTON
+    ]
+  ]
+  
+  #---------------------------------------------------------------------------------------------------
+  # Botones de imágenes de tutorial
+  
+  [ .TIPO UIC_BOTONTEXTO .ID 'ITBA'
+    .PARAMS
+    [ 
+      .COMPORTAMIENTO MANUAL
+      
+      .FONDO 
+      [ 
+        .X 140 .Y 298 .SX 204 .SY 194
+        .ALPHA TRUE
+        
+        .SOLTADO [ .FILE "Game/UI/MainMenu/MenuTutoriales.tga" .U 140 .V 298 ]
+        .PULSADO [ .FILE "Game/UI/MainMenu/MenuTutoriales.tga" .U 1   .V 829 ]
+      ]
+    ]
+  ]
+  
+  [ .TIPO UIC_BOTONTEXTO .ID 'ITGE'
+    .PARAMS
+    [ 
+      .COMPORTAMIENTO MANUAL
+      
+      .FONDO 
+      [ 
+        .X 410 .Y 263 .SX 204 .SY 194
+        .ALPHA TRUE
+        
+        .SOLTADO [ .FILE "Game/UI/MainMenu/MenuTutoriales.tga" .U 410 .V 263 ]
+        .PULSADO [ .FILE "Game/UI/MainMenu/MenuTutoriales.tga" .U 208 .V 829 ]
+      ]
+      
+      .STYLE DEFAULT_MULTIPLAYER_SMALL_BUTTON
+    ]
+  ]
+
+  [ .TIPO UIC_BOTONTEXTO .ID 'ITNA'
+    .PARAMS
+    [ 
+      .COMPORTAMIENTO MANUAL
+      
+      .FONDO 
+      [ 
+        .X 680 .Y 298 .SX 204 .SY 194
+        .ALPHA TRUE
+        
+        .SOLTADO [ .FILE "Game/UI/MainMenu/MenuTutoriales.tga" .U 680 .V 298 ]
+        .PULSADO [ .FILE "Game/UI/MainMenu/MenuTutoriales.tga" .U 415 .V 829 ]
+      ]
+      
+      .STYLE DEFAULT_MULTIPLAYER_SMALL_BUTTON
+    ]
+  ]  
+  
+]

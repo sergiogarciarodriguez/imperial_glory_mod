@@ -1,0 +1,97 @@
+#===========================================================================================
+# Definiciones de los diferentes tipos de barco
+#
+#===========================================================================================
+
+# Incluimos las definiciones
+%Game/GameModes/Gestion/DefValoresNavales.sb 
+
+.TIPOS_DE_BARCOS
+[
+
+  .BARCO
+  [
+    # (DEF) El tipo de barco. Ver Gestion/DefValoresNavales.sb
+    .TIPO                           !TBARCO_CORBETA
+    
+  	# (float) Total puntos de resistencia, /3 fases que decrementa el daño a distancia
+  	.CASCO					                90.0
+  	
+  	# (float) Total puntos de resistencia, /3 fases que decrementa el daño en abordaje
+  	.TRIPULACION				            110.0
+  	
+  	# (float) Tripulación minima para manejar ese barco
+  	.MIN_TRIPULACION                10.0
+  	
+  	# (float) Total puntos de resistencia, /3 fases que decrementa la velocidad
+  	.VELAS					                120.0
+  	
+  	# (int) Por cada lado
+  	.NUM_CANYONES_LADO			        12
+  	
+  	# (float) Distancia del centro del barco al primer y ultimo cañon. Para los conos de disparo
+  	# TODO: revisar que seguramnete este dato no se necesita o no se consigue por aqui
+  	.DIST_CANYONES				          2000.0
+  	
+  	# (float) Angulo maximo de obertura de un ataque, en grados (ej. 10.0)
+	  .ANGULO_MAX_ATAQUE			        7.0
+	  .ANGULO_MIN_ATAQUE			        -1.0
+	  
+	  # (float) Distancia a la que se entra en abordaje (entre 0 a RANGO_ABORDAJE)
+	  .RANGO_ABORDAJE				          5000.0
+	  
+	  # (float) Distancia a la que estamos en rango de quemarropa ( entre RANGO_ABORDAJE a RANGO_QUEMARROPA ) 
+	  .RANGO_QUEMARROPA			          5000.0
+	  
+	  # (float) Distancia a la que estamos en rango medio ( entre RANGO_QUEMARROPA a RANGO_MEDIO )
+	  .RANGO_MEDIO				            12500.0
+	  
+	  # (float) Distancia a la que estamos en rango largo ( entre RANGO_MEDIO a RANGO_LARGO )
+	  # Tambien se puede leer como "rango maximo"
+	  .RANGO_LARGO				            33250.0
+	  
+	  # (float) Modificador (%) de alcance de disparo de los cañones cuando se reduzca     
+	  # al minimo el angulo de apertura. El valora variara entre el que  
+	  # establezcamos y 1.0 (valor para apertura maxima).
+	  .MODIFICADOR_RANGO              0.6
+  ]
+  
+  
+  .BARCO
+  [
+    .TIPO                           !TBARCO_FRAGATA
+  	.CASCO					                130.0
+  	.TRIPULACION				            150.0
+  	.MIN_TRIPULACION                20.0
+  	.VELAS					                160.0
+  	.NUM_CANYONES_LADO			        25
+  	.DIST_CANYONES				          2500.0
+	  .ANGULO_MAX_ATAQUE			        11.0
+	  .ANGULO_MIN_ATAQUE			        -1.0
+	  .RANGO_ABORDAJE				          5000.0
+	  .RANGO_QUEMARROPA			          5500.0
+	  .RANGO_MEDIO				            13750.0
+	  .RANGO_LARGO				            37375.0
+	  .MODIFICADOR_RANGO              0.7
+  ]	
+  
+  
+  .BARCO
+  [
+    .TIPO                           !TBARCO_NAVIO_LINIA
+  	.CASCO					                170.0
+  	.TRIPULACION				            190.0
+  	.MIN_TRIPULACION                40.0
+  	.VELAS					                210.0
+  	.NUM_CANYONES_LADO			        46
+  	.DIST_CANYONES				          3000.0
+	  .ANGULO_MAX_ATAQUE			        16.0
+	  .ANGULO_MIN_ATAQUE			        4.0
+	  .RANGO_ABORDAJE				          5000.0
+	  .RANGO_QUEMARROPA			          6000.0
+	  .RANGO_MEDIO				            15000.0
+	  .RANGO_LARGO				            41500.0
+	  .MODIFICADOR_RANGO              0.8
+  ]
+  
+]

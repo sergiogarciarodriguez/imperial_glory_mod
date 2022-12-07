@@ -1,0 +1,80 @@
+###############################################################################################################
+# Organiza las imagenes por categoria.
+# Para definir las imagenes especificaremos los campos .DESC ya que estas imagenes seran almacenadas y
+# clasificadas por el control visor.
+###############################################################################################################
+
+.MANDOS
+[
+ # Img por defecto
+ [ .DESC DEFAULT .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[DEFAULT] ] ] 
+]
+
+.TROPAS
+[
+
+ # Imagen por defecto
+ [ .DESC DEFAULT .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[DEFAULT] ] ] 
+ 
+ # Tropas Francesas 
+
+ [ .DESC FRANCIA_FUSILERO     .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[FRANCIA_FUSILERO] ]  ]
+ [ .DESC FRANCIA_TIRADOR      .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[FRANCIA_TIRADOR] ]   ]
+ [ .DESC FRANCIA_CAZADOR      .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[FRANCIA_CAZADOR]  ]   ]
+ [ .DESC FRANCIA_GRANADERO    .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[FRANCIA_GRANADERO] ]  ]
+ [ .DESC FRANCIA_CORACERO     .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[FRANCIA_CORACERO] ] ]
+ [ .DESC FRANCIA_ELITE        .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[FRANCIA_ELITE]     ]  ]
+ [ .DESC FRANCIA_CAB_HUSAR    .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[FRANCIA_CAB_HUSAR]  ] ]
+ [ .DESC FRANCIA_CAB_LANCERO  .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[FRANCIA_CAB_LANCERO] ] ]
+ [ .DESC FRANCIA_CAB_DRAGON   .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[FRANCIA_FUSILERO]   ] ]
+ [ .DESC FRANCIA_CAB_CORACERO .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[FRANCIA_CAB_DRAGON] ]  ]
+ [ .DESC FRANCIA_MORTERO      .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[FRANCIA_MORTERO]   ]  ]
+ [ .DESC FRANCIA_CANON        .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[FRANCIA_CANON]     ]  ]
+ [ .DESC FRANCIA_OBUS         .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[FRANCIA_OBUS]      ]  ]
+ [ .DESC FRANCIA_CANON_CAB    .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[FRANCIA_CANON_CAB] ]  ]
+ [ .DESC FRANCIA_OBUS_CAB     .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[FRANCIA_OBUS_CAB]  ]  ]
+ [ .DESC FRANCIA_CANON_CAMP   .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[FRANCIA_CANON_CAMP] ]  ]
+
+ # Tropas Inglesas
+ [ .DESC INGLATERRA_FUSILERO     .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[INGLATERRA_FUSILERO] ]   ]
+ [ .DESC INGLATERRA_TIRADOR      .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[INGLATERRA_TIRADOR]   ]  ]
+ [ .DESC INGLATERRA_CAZADOR      .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[INGLATERRA_CAZADOR]    ] ]
+ [ .DESC INGLATERRA_GRANADERO    .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[INGLATERRA_GRANADERO] ] ]
+ [ .DESC INGLATERRA_CORACERO     .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[INGLATERRA_CORACERO]  ]  ]
+ [ .DESC INGLATERRA_ELITE        .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[INGLATERRA_ELITE]     ]  ]
+ [ .DESC INGLATERRA_CAB_HUSAR    .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[INGLATERRA_CAB_HUSAR] ]  ]
+ [ .DESC INGLATERRA_CAB_LANCERO  .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[INGLATERRA_CAB_LANCERO] ] ]
+ [ .DESC INGLATERRA_CAB_DRAGON   .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[INGLATERRA_FUSILERO]  ]  ]
+ [ .DESC INGLATERRA_CAB_CORACERO .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[INGLATERRA_CAB_DRAGON]  ] ]
+ [ .DESC INGLATERRA_MORTERO      .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[INGLATERRA_MORTERO]    ] ]
+ [ .DESC INGLATERRA_CANON        .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[INGLATERRA_CANON]      ] ]
+ [ .DESC INGLATERRA_OBUS         .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[INGLATERRA_OBUS]       ] ]
+ [ .DESC INGLATERRA_CANON_CAB    .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[INGLATERRA_CANON_CAB]  ] ]
+ [ .DESC INGLATERRA_OBUS_CAB     .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[INGLATERRA_OBUS_CAB]   ] ]
+ [ .DESC INGLATERRA_CANON_CAMP   .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[INGLATERRA_CANON_CAMP] ] ]
+
+ # Tropas Austriacas
+ [ .DESC AUSTRIA_MORTERO      .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[AUSTRIA_MORTERO]  ]   ]
+ [ .DESC AUSTRIA_CANON        .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[AUSTRIA_CANON]     ]  ]
+ [ .DESC AUSTRIA_OBUS         .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[AUSTRIA_OBUS]      ]  ]
+ [ .DESC AUSTRIA_CANON_CAB    .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[AUSTRIA_CANON_CAB] ]  ]
+ [ .DESC AUSTRIA_OBUS_CAB     .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[AUSTRIA_OBUS_CAB]  ]  ]
+ [ .DESC AUSTRIA_CANON_CAMP   .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[AUSTRIA_CANON_CAMP]  ] ]
+ 
+ # Tropas Prusias
+ [ .DESC PRUSIA_MORTERO      .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[PRUSIA_MORTERO]   ]  ]
+ [ .DESC PRUSIA_CANON        .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[PRUSIA_CANON]     ]  ]
+ [ .DESC PRUSIA_OBUS         .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[PRUSIA_OBUS]      ]  ]
+ [ .DESC PRUSIA_CANON_CAB    .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[PRUSIA_CANON_CAB]  ] ]
+ [ .DESC PRUSIA_OBUS_CAB     .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[PRUSIA_OBUS_CAB]   ] ]
+ [ .DESC PRUSIA_CANON_CAMP   .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[PRUSIA_CANON_CAMP] ] ]
+ 
+ # Tropas Rusia
+ [ .DESC RUSIA_MORTERO      .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[RUSIA_MORTERO]   ]  ]
+ [ .DESC RUSIA_CANON        .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[RUSIA_CANON]     ]  ]
+ [ .DESC RUSIA_OBUS         .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[RUSIA_OBUS]      ]  ]
+ [ .DESC RUSIA_CANON_CAB    .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[RUSIA_CANON_CAB] ]  ]
+ [ .DESC RUSIA_OBUS_CAB     .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[RUSIA_OBUS_CAB]  ]  ]
+ [ .DESC RUSIA_CANON_CAMP   .PARAMS [ %Game/UI/Comun/UIDefs_ImgTropas.sb[RUSIA_CANON_CAMP] ] ]
+
+]

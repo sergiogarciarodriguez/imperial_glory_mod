@@ -1,0 +1,126 @@
+###############################################################################################################
+# Barcos Rusos
+# Mantiene el pool de los btns asociados a los barcos
+###############################################################################################################
+[ 
+ .KEY RUSIA_NAVIO_BTN_NORMAL 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Rusia/PlantillaTropasRu.tga" .SX 72 .SY 102 .U 147 .V 619 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY RUSIA_NAVIO_BTN_SELECCIONADO 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Rusia/PlantillaTropasRu.tga" .SX 72 .SY 102 .U 658 .V 619 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY RUSIA_NAVIO_BTN_PULSADO 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Rusia/PlantillaTropasRu.tga" .SX 72 .SY 102 .U 147 .V 722 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY RUSIA_NAVIO_BTN_DISABLE 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Rusia/PlantillaTropasRu.tga" .SX 72 .SY 102 .U 658 .V 722 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY RUSIA_CORBETA_BTN_NORMAL 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Rusia/PlantillaTropasRu.tga" .SX 72 .SY 102 .U 74 .V 619 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY RUSIA_CORBETA_BTN_SELECCIONADO 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Rusia/PlantillaTropasRu.tga" .SX 72 .SY 102 .U 585 .V 619 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY RUSIA_CORBETA_BTN_PULSADO 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Rusia/PlantillaTropasRu.tga" .SX 72 .SY 102 .U 74 .V 722 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY RUSIA_CORBETA_BTN_DISABLE 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Rusia/PlantillaTropasRu.tga" .SX 72 .SY 102 .U 585 .V 722 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY RUSIA_FRAGATA_BTN_NORMAL 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Rusia/PlantillaTropasRu.tga" .SX 72 .SY 102 .U 1 .V 619 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY RUSIA_FRAGATA_BTN_SELECCIONADO 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Rusia/PlantillaTropasRu.tga" .SX 72 .SY 102 .U 512 .V 619 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY RUSIA_FRAGATA_BTN_PULSADO 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Rusia/PlantillaTropasRu.tga" .SX 72 .SY 102 .U 1 .V 722 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY RUSIA_FRAGATA_BTN_DISABLE 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Rusia/PlantillaTropasRu.tga" .SX 72 .SY 102 .U 512 .V 722 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY RUSIA_BERGANTIN_BTN_NORMAL 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Rusia/PlantillaTropasRu.tga" .SX 72 .SY 102 .U 220 .V 619 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY RUSIA_BERGANTIN_BTN_SELECCIONADO 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Rusia/PlantillaTropasRu.tga" .SX 72 .SY 102 .U 731 .V 619 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY RUSIA_BERGANTIN_BTN_PULSADO 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Rusia/PlantillaTropasRu.tga" .SX 72 .SY 102 .U 220 .V 722 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY RUSIA_BERGANTIN_BTN_DISABLE 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Rusia/PlantillaTropasRu.tga" .SX 72 .SY 102 .U 731 .V 722 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY RUSIA_PAQUEBOTE_BTN_NORMAL 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Rusia/PlantillaTropasRu.tga" .SX 72 .SY 102 .U 293 .V 619 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY RUSIA_PAQUEBOTE_BTN_SELECCIONADO 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Rusia/PlantillaTropasRu.tga" .SX 72 .SY 102 .U 804 .V 619 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY RUSIA_PAQUEBOTE_BTN_PULSADO 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Rusia/PlantillaTropasRu.tga" .SX 72 .SY 102 .U 293 .V 722 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY RUSIA_PAQUEBOTE_BTN_DISABLE 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Rusia/PlantillaTropasRu.tga" .SX 72 .SY 102 .U 804 .V 722 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY RUSIA_URCA_BTN_NORMAL 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Rusia/PlantillaTropasRu.tga" .SX 72 .SY 102 .U 439 .V 619 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY RUSIA_URCA_BTN_SELECCIONADO 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Rusia/PlantillaTropasRu.tga" .SX 72 .SY 102 .U 950 .V 619 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY RUSIA_URCA_BTN_PULSADO 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Rusia/PlantillaTropasRu.tga" .SX 72 .SY 102 .U 439 .V 722 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY RUSIA_URCA_BTN_DISABLE 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Rusia/PlantillaTropasRu.tga" .SX 72 .SY 102 .U 950 .V 722 .ALPHA TRUE ]
+]
+
+
+

@@ -1,0 +1,24 @@
+# Boton de Visualización de barras estadísticas
+
+.COMPORTAMIENTO SIMPLE
+
+.FONDO
+[
+ .X 10 .Y 664 .SX 42 .SY 22 .ALPHA TRUE .PRIORITY 10
+ 
+ .SOLTADO      [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 750 .V 414 ] 
+ .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 795 .V 414 ]    
+ .PULSADO      [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 840 .V 414 ]    
+]    
+
+.IDSELECTSOUND "S_FXUI_CLICKBUTTON"
+.IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"
+
+.TOOL_TIP 
+[ 
+ .TEXT LTEXT_UI_BATALLA_TT_PCMAPA_ESTADISTICAS
+ .X 32 .Y 32
+   
+ 
+ .STYLE DEFAULT_TOOLTIP
+]

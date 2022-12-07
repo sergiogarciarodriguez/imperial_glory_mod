@@ -1,0 +1,167 @@
+.MODAL FALSE
+.CENTER FALSE
+.ACTIVO FALSE
+
+.FONDO
+[
+  .PRIORITY 240
+  .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga"
+  .X 0 .Y 28 .U 1 .V 445 .SX 744 .SY 145 .ALPHA TRUE
+]
+
+.CONTROLES 
+[
+
+  # -- Botones de las pestañas para Era I, Era II, Era III y Neutrales
+  [
+    .TIPO UIC_GESTORCHECKBOX .ID 'G_CB'
+    .PARAMS
+    [
+      .CHECKBOXES
+      [      
+        #  - Botón Era I
+        [
+          .TIPO UIC_CHECKBOX .ID 'ERA1'
+          .PARAMS
+          [
+            .COMPORTAMIENTO FIJO
+            .DISABLE [ .COLOR [ .R 150 .G 150 .B 190 ] ]
+            .SOLTADO [ .COLOR [ .R 230 .G 200 .B 140 ] ]
+            .PULSADO [ .COLOR [ .R 255 .G 255 .B 255 ] ]
+            
+            
+            .FONT "Fonts/Times12.fnt"              
+            .TEXT LTEXT_LABEL_RAMA_I
+            .FONDO
+            [
+              .PRIORITY 242
+              .X 160 .Y 12 .SX 120 .SY 27
+              .ALPHA TRUE
+              .ALPHA_ADITIVO TRUE
+              .DISABLE    [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 776 .V 491 ] 
+              .SOLTADO    [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 776 .V 491 ] 
+              .PULSADO    [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 776 .V 491 ] 
+            ]
+            
+            .CENTER_AREA      [ .X1 0 .Y1 0 .X2 120 .Y2 27 ]
+            
+            .IDSELECTSOUND "S_FXUI_CLICKBUTTON"              
+          ]
+        ]
+  
+        #  - Botón Era II
+        [
+          .TIPO UIC_CHECKBOX .ID 'ERA2'
+          .PARAMS
+          [
+            .COMPORTAMIENTO FIJO
+            .DISABLE [ .COLOR [ .R 150 .G 150 .B 190 ] ]
+            .SOLTADO [ .COLOR [ .R 230 .G 200 .B 140 ] ]
+            .PULSADO [ .COLOR [ .R 255 .G 255 .B 255 ] ]
+            
+            .FONT "Fonts/Times12.fnt"              
+            .TEXT LTEXT_LABEL_RAMA_II
+            .FONDO
+            [
+              .PRIORITY 242
+              .X 328 .Y 12 .SX 120 .SY 27
+              .ALPHA TRUE
+              .ALPHA_ADITIVO TRUE
+              .DISABLE    [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 776 .V 491 ] 
+              .SOLTADO    [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 776 .V 491 ] 
+              .PULSADO    [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 776 .V 491 ] 
+            ]
+            
+            .CENTER_AREA      [ .X1 0 .Y1 0 .X2 120 .Y2 27 ]
+            
+            .IDSELECTSOUND "S_FXUI_CLICKBUTTON"              
+          ]
+        ]
+  
+        #  - Botón Era III
+        [
+          .TIPO UIC_CHECKBOX .ID 'ERA3'
+          .PARAMS
+          [
+            .COMPORTAMIENTO FIJO
+            .DISABLE [ .COLOR [ .R 150 .G 150 .B 190 ] ]
+            .SOLTADO [ .COLOR [ .R 230 .G 200 .B 140 ] ]
+            .PULSADO [ .COLOR [ .R 255 .G 255 .B 255 ] ]
+            
+            .FONT "Fonts/Times12.fnt"              
+            .TEXT LTEXT_LABEL_RAMA_III
+            .FONDO
+            [
+              .PRIORITY 242
+              .X 468 .Y 12 .SX 120 .SY 27
+              .ALPHA TRUE
+              .ALPHA_ADITIVO TRUE
+              .DISABLE    [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 776 .V 491 ] 
+              .SOLTADO    [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 776 .V 491 ] 
+              .PULSADO    [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 776 .V 491 ] 
+            ]
+            
+            .CENTER_AREA      [ .X1 0 .Y1 0 .X2 120 .Y2 27 ]
+            
+            .IDSELECTSOUND "S_FXUI_CLICKBUTTON"              
+          ]
+        ]
+  
+        #  - Botón Edificios Neutrales
+        [
+          .TIPO UIC_CHECKBOX .ID 'NEUT'
+          .PARAMS
+          [
+            .COMPORTAMIENTO FIJO
+            .DISABLE [ .COLOR [ .R 150 .G 150 .B 190 ] ]
+            .SOLTADO [ .COLOR [ .R 230 .G 200 .B 140 ] ]
+            .PULSADO [ .COLOR [ .R 255 .G 255 .B 255 ] ]
+            
+            .FONT "Fonts/Times12.fnt"              
+            .TEXT LTEXT_UI_GESTION_PESTANA_NEUTRALES
+            .FONDO
+            [
+              .PRIORITY 242
+              .X 606 .Y 12 .SX 120 .SY 27
+              .ALPHA TRUE
+              .ALPHA_ADITIVO TRUE
+              .DISABLE    [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 776 .V 491 ] 
+              .SOLTADO    [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 776 .V 491 ] 
+              .PULSADO    [ .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .U 776 .V 491 ] 
+            ]
+            
+            .CENTER_AREA      [ .X1 0 .Y1 0 .X2 120 .Y2 27 ]
+            
+            .IDSELECTSOUND "S_FXUI_CLICKBUTTON"              
+          ]
+        ]
+      ] # ~ Checkboxes
+      
+      .PERMITE_NINGUNA_ACTIVACION FALSE
+    ] # ~ Params
+  ] # ~ UIC_GESTORCHECKBOX
+  
+  # Visor de los edificios normales
+  [
+   .TIPO UIC_VISORMATRIZCTRLS .ID 'VMME'
+   .PARAMS [ %Game/UI/ModeloGestion/VentanasAccionContenidoUIDefs/UIDefs_VisorMiniEdificios.sb ]
+  ]
+  
+  # Visor de las embajadas del resto de imperios
+  [
+   .TIPO UIC_VISORMATRIZCTRLS .ID 'VMEM'
+   .PARAMS [ %Game/UI/ModeloGestion/VentanasAccionContenidoUIDefs/UIDefs_VisorEmbajadas.sb ]
+  ]
+]
+
+# Posición del Icono de edificio de gobierno(el resto de parámetros los obtendremos del Pool)
+.EDIFICIO_GOBIERNO [ .X 151 .Y 634 ]
+
+.ENLACES
+[
+  [ .ID 'ERA1' .BMAP [ .ACTIVO FALSE .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .X 140 .Y 623 .U 1 .V 1   .SX 744 .SY 146 .ALPHA TRUE .PRIORITY 241 ] ]
+  [ .ID 'ERA2' .BMAP [ .ACTIVO FALSE .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .X 140 .Y 623 .U 1 .V 149 .SX 744 .SY 146 .ALPHA TRUE .PRIORITY 241 ] ]
+  [ .ID 'ERA3' .BMAP [ .ACTIVO FALSE .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .X 140 .Y 623 .U 1 .V 297 .SX 744 .SY 146 .ALPHA TRUE .PRIORITY 241 ] ]
+  [ .ID 'NEUT' .BMAP [ .ACTIVO FALSE .FILE "Game/UI/ModeloGestion/InterfaceGestionNeutrales.tga" .X 140 .Y 623 .U 1 .V 445 .SX 744 .SY 146 .ALPHA TRUE .PRIORITY 241 ] ]
+]
+

@@ -1,0 +1,2711 @@
+###############################################################################################################
+# Mantiene las entradas en el svcUICPool para los iconos de los edificios como botones.
+###############################################################################################################
+
+[
+ .KEY DEFAULT_CONSTRUCCION_BTN_SMALL_DISABLE
+ .PARAMS [ .U 1 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DEFAULT_CONSTRUCCION_BTN_SMALL_NORMAL
+ .PARAMS [ .U 1 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DEFAULT_CONSTRUCCION_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 1 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+######### FILA 1 ###
+
+[
+ .KEY BAZAR_BTN_SMALL_DISABLE
+ .PARAMS [ .U 1 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BAZAR_BTN_SMALL_NORMAL
+ .PARAMS [ .U 1 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BAZAR_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 1 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BAZAR_BTN_SMALL_PULSADO
+ .PARAMS [ .U 1 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ALMACEN_VIVERES_BTN_SMALL_DISABLE
+ .PARAMS [ .U 45 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ALMACEN_VIVERES_BTN_SMALL_NORMAL
+ .PARAMS [ .U 45 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ALMACEN_VIVERES_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 45 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ALMACEN_VIVERES_BTN_SMALL_PULSADO
+ .PARAMS [ .U 45 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ASERRADERO_BTN_SMALL_DISABLE
+ .PARAMS [ .U 89 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ASERRADERO_BTN_SMALL_NORMAL
+ .PARAMS [ .U 89 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ASERRADERO_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 89 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ASERRADERO_BTN_SMALL_PULSADO
+ .PARAMS [ .U 89 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY REGADIOS_BTN_SMALL_DISABLE
+ .PARAMS [ .U 133 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY REGADIOS_BTN_SMALL_NORMAL
+ .PARAMS [ .U 133 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY REGADIOS_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 133 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY REGADIOS_BTN_SMALL_PULSADO
+ .PARAMS [ .U 133 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINAS_PROFUNDIDAD_BTN_SMALL_DISABLE
+ .PARAMS [ .U 177 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINAS_PROFUNDIDAD_BTN_SMALL_NORMAL
+ .PARAMS [ .U 177 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINAS_PROFUNDIDAD_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 177 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINAS_PROFUNDIDAD_BTN_SMALL_PULSADO
+ .PARAMS [ .U 177 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_AGRICULTURA_BTN_SMALL_DISABLE
+ .PARAMS [ .U 221 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_AGRICULTURA_BTN_SMALL_NORMAL
+ .PARAMS [ .U 221 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_AGRICULTURA_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 221 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_AGRICULTURA_BTN_SMALL_PULSADO
+ .PARAMS [ .U 221 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CASA_ALISTAMIENTO_BTN_SMALL_DISABLE
+ .PARAMS [ .U 265 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CASA_ALISTAMIENTO_BTN_SMALL_NORMAL
+ .PARAMS [ .U 265 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CASA_ALISTAMIENTO_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 265 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CASA_ALISTAMIENTO_BTN_SMALL_PULSADO
+ .PARAMS [ .U 265 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ALTOS_HORNOS_BTN_SMALL_DISABLE
+ .PARAMS [ .U 309 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ALTOS_HORNOS_BTN_SMALL_NORMAL
+ .PARAMS [ .U 309 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ALTOS_HORNOS_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 309 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ALTOS_HORNOS_BTN_SMALL_PULSADO
+ .PARAMS [ .U 309 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BANCO_BTN_SMALL_DISABLE
+ .PARAMS [ .U 353 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BANCO_BTN_SMALL_NORMAL
+ .PARAMS [ .U 353 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BANCO_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 353 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BANCO_BTN_SMALL_PULSADO
+ .PARAMS [ .U 353 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DPTO_COMERCIAL_BTN_SMALL_DISABLE
+ .PARAMS [ .U 1 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DPTO_COMERCIAL_BTN_SMALL_NORMAL
+ .PARAMS [ .U 1 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DPTO_COMERCIAL_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 1 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DPTO_COMERCIAL_BTN_SMALL_PULSADO
+ .PARAMS [ .U 1 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY OFICINA_COMERCIAL_BTN_SMALL_DISABLE
+ .PARAMS [ .U 441 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY OFICINA_COMERCIAL_BTN_SMALL_NORMAL
+ .PARAMS [ .U 441 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY OFICINA_COMERCIAL_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 441 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY OFICINA_COMERCIAL_BTN_SMALL_PULSADO
+ .PARAMS [ .U 441 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+######### FILA 2 ###
+
+[
+ .KEY RED_COMERCIAL_BTN_SMALL_DISABLE
+ .PARAMS [ .U 1 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY RED_COMERCIAL_BTN_SMALL_NORMAL
+ .PARAMS [ .U 1 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY RED_COMERCIAL_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 1 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY RED_COMERCIAL_BTN_SMALL_PULSADO
+ .PARAMS [ .U 1 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY EDIFICIO_BOLSA_BTN_SMALL_DISABLE
+ .PARAMS [ .U 45 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY EDIFICIO_BOLSA_BTN_SMALL_NORMAL
+ .PARAMS [ .U 45 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY EDIFICIO_BOLSA_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 45 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY EDIFICIO_BOLSA_BTN_SMALL_PULSADO
+ .PARAMS [ .U 45 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY SENADO_BTN_SMALL_DISABLE
+ .PARAMS [ .U 89 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY SENADO_BTN_SMALL_NORMAL
+ .PARAMS [ .U 89 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY SENADO_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 89 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY SENADO_BTN_SMALL_PULSADO
+ .PARAMS [ .U 89 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ARCO_TRIUNFO_BTN_SMALL_DISABLE
+ .PARAMS [ .U 133 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ARCO_TRIUNFO_BTN_SMALL_NORMAL
+ .PARAMS [ .U 133 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ARCO_TRIUNFO_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 133 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ARCO_TRIUNFO_BTN_SMALL_PULSADO
+ .PARAMS [ .U 133 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTATUA_REPUBLICA_BTN_SMALL_DISABLE
+ .PARAMS [ .U 177 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTATUA_REPUBLICA_BTN_SMALL_NORMAL
+ .PARAMS [ .U 177 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTATUA_REPUBLICA_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 177 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTATUA_REPUBLICA_BTN_SMALL_PULSADO
+ .PARAMS [ .U 177 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY PARLAMENTO_BTN_SMALL_DISABLE
+ .PARAMS [ .U 221 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY PARLAMENTO_BTN_SMALL_NORMAL
+ .PARAMS [ .U 221 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY PARLAMENTO_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 221 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY PARLAMENTO_BTN_SMALL_PULSADO
+ .PARAMS [ .U 221 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY PALACIO_BTN_SMALL_DISABLE
+ .PARAMS [ .U 265 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY PALACIO_BTN_SMALL_NORMAL
+ .PARAMS [ .U 265 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY PALACIO_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 265 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY PALACIO_BTN_SMALL_PULSADO
+ .PARAMS [ .U 265 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTATUA_ECUESTRE_BTN_SMALL_DISABLE
+ .PARAMS [ .U 309 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTATUA_ECUESTRE_BTN_SMALL_NORMAL
+ .PARAMS [ .U 309 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTATUA_ECUESTRE_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 309 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTATUA_ECUESTRE_BTN_SMALL_PULSADO
+ .PARAMS [ .U 309 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BANCO_BTN_SMALL_DISABLE
+ .PARAMS [ .U 353 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BANCO_BTN_SMALL_NORMAL
+ .PARAMS [ .U 353 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BANCO_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 353 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BANCO_BTN_SMALL_PULSADO
+ .PARAMS [ .U 353 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY COMISARIA_BTN_SMALL_DISABLE
+ .PARAMS [ .U 397 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY COMISARIA_BTN_SMALL_NORMAL
+ .PARAMS [ .U 397 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY COMISARIA_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 397 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY COMISARIA_BTN_SMALL_PULSADO
+ .PARAMS [ .U 397 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CONSULADO_BTN_SMALL_DISABLE
+ .PARAMS [ .U 441 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CONSULADO_BTN_SMALL_NORMAL
+ .PARAMS [ .U 441 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CONSULADO_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 441 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CONSULADO_BTN_SMALL_PULSADO
+ .PARAMS [ .U 441 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+######### FILA 3 ###
+
+[
+ .KEY PERIODICO_BTN_SMALL_DISABLE
+ .PARAMS [ .U 1 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY PERIODICO_BTN_SMALL_NORMAL
+ .PARAMS [ .U 1 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY PERIODICO_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 1 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY PERIODICO_BTN_SMALL_PULSADO
+ .PARAMS [ .U 1 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CTO_CULTURAL_BTN_SMALL_DISABLE
+ .PARAMS [ .U 45 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CTO_CULTURAL_BTN_SMALL_NORMAL
+ .PARAMS [ .U 45 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CTO_CULTURAL_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 45 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CTO_CULTURAL_BTN_SMALL_PULSADO
+ .PARAMS [ .U 45 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BOLETIN_ARMADA_BTN_SMALL_DISABLE
+ .PARAMS [ .U 89 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BOLETIN_ARMADA_BTN_SMALL_NORMAL
+ .PARAMS [ .U 89 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BOLETIN_ARMADA_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 89 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BOLETIN_ARMADA_BTN_SMALL_PULSADO
+ .PARAMS [ .U 89 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY INFRAESTRUCTURAS_BTN_SMALL_DISABLE
+ .PARAMS [ .U 133 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY INFRAESTRUCTURAS_BTN_SMALL_NORMAL
+ .PARAMS [ .U 133 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY INFRAESTRUCTURAS_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 133 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY INFRAESTRUCTURAS_BTN_SMALL_PULSADO
+ .PARAMS [ .U 133 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CELULA_RESISTENCIA_BTN_SMALL_DISABLE
+ .PARAMS [ .U 177 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CELULA_RESISTENCIA_BTN_SMALL_NORMAL
+ .PARAMS [ .U 177 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CELULA_RESISTENCIA_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 177 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CELULA_RESISTENCIA_BTN_SMALL_PULSADO
+ .PARAMS [ .U 177 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY FABRICA_UNIFORMES_BTN_SMALL_DISABLE
+ .PARAMS [ .U 221 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY FABRICA_UNIFORMES_BTN_SMALL_NORMAL
+ .PARAMS [ .U 221 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY FABRICA_UNIFORMES_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 221 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY FABRICA_UNIFORMES_BTN_SMALL_PULSADO
+ .PARAMS [ .U 221 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESCUELA_ARMADA_BTN_SMALL_DISABLE
+ .PARAMS [ .U 265 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESCUELA_ARMADA_BTN_SMALL_NORMAL
+ .PARAMS [ .U 265 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESCUELA_ARMADA_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 265 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESCUELA_ARMADA_BTN_SMALL_PULSADO
+ .PARAMS [ .U 265 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY HOSPITAL_CAMPANA_BTN_SMALL_DISABLE
+ .PARAMS [ .U 309 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY HOSPITAL_CAMPANA_BTN_SMALL_NORMAL
+ .PARAMS [ .U 309 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY HOSPITAL_CAMPANA_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 309 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY HOSPITAL_CAMPANA_BTN_SMALL_PULSADO
+ .PARAMS [ .U 309 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY HOSPITAL_LOCAL_BTN_SMALL_DISABLE
+ .PARAMS [ .U 353 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY HOSPITAL_LOCAL_BTN_SMALL_NORMAL
+ .PARAMS [ .U 353 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY HOSPITAL_LOCAL_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 353 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY HOSPITAL_LOCAL_BTN_SMALL_PULSADO
+ .PARAMS [ .U 353 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY HOSPITAL_MODERNO_BTN_SMALL_DISABLE
+ .PARAMS [ .U 397 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY HOSPITAL_MODERNO_BTN_SMALL_NORMAL
+ .PARAMS [ .U 397 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY HOSPITAL_MODERNO_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 397 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY HOSPITAL_MODERNO_BTN_SMALL_PULSADO
+ .PARAMS [ .U 397 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY OFICINA_RECAUDACION_BTN_SMALL_DISABLE
+ .PARAMS [ .U 441 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY OFICINA_RECAUDACION_BTN_SMALL_NORMAL
+ .PARAMS [ .U 441 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY OFICINA_RECAUDACION_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 441 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY OFICINA_RECAUDACION_BTN_SMALL_PULSADO
+ .PARAMS [ .U 441 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+######### FILA 4 ###
+
+[
+ .KEY DPTO_TESORO_BTN_SMALL_DISABLE
+ .PARAMS [ .U 1 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DPTO_TESORO_BTN_SMALL_NORMAL
+ .PARAMS [ .U 1 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DPTO_TESORO_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 1 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DPTO_TESORO_BTN_SMALL_PULSADO
+ .PARAMS [ .U 1 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_HACIENDA_BTN_SMALL_DISABLE
+ .PARAMS [ .U 45 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_HACIENDA_BTN_SMALL_NORMAL
+ .PARAMS [ .U 45 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_HACIENDA_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 45 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_HACIENDA_BTN_SMALL_PULSADO
+ .PARAMS [ .U 45 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESCUELA_BASICA_BTN_SMALL_DISABLE
+ .PARAMS [ .U 89 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESCUELA_BASICA_BTN_SMALL_NORMAL
+ .PARAMS [ .U 89 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESCUELA_BASICA_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 89 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESCUELA_BASICA_BTN_SMALL_PULSADO
+ .PARAMS [ .U 89 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY LICEO_BTN_SMALL_DISABLE
+ .PARAMS [ .U 133 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY LICEO_BTN_SMALL_NORMAL
+ .PARAMS [ .U 133 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY LICEO_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 133 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY LICEO_BTN_SMALL_PULSADO
+ .PARAMS [ .U 133 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY UNIVERSIDAD_BTN_SMALL_DISABLE
+ .PARAMS [ .U 177 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY UNIVERSIDAD_BTN_SMALL_NORMAL
+ .PARAMS [ .U 177 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY UNIVERSIDAD_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 177 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY UNIVERSIDAD_BTN_SMALL_PULSADO
+ .PARAMS [ .U 177 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DARSENA_MERCANTIL_BTN_SMALL_DISABLE
+ .PARAMS [ .U 221 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DARSENA_MERCANTIL_BTN_SMALL_NORMAL
+ .PARAMS [ .U 221 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DARSENA_MERCANTIL_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 221 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DARSENA_MERCANTIL_BTN_SMALL_PULSADO
+ .PARAMS [ .U 221 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY MUELLE_MERCANTIL_BTN_SMALL_DISABLE
+ .PARAMS [ .U 265 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY MUELLE_MERCANTIL_BTN_SMALL_NORMAL
+ .PARAMS [ .U 265 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY MUELLE_MERCANTIL_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 265 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY MUELLE_MERCANTIL_BTN_SMALL_PULSADO
+ .PARAMS [ .U 265 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY PUERTO_MERCANTIL_BTN_SMALL_DISABLE
+ .PARAMS [ .U 309 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY PUERTO_MERCANTIL_BTN_SMALL_NORMAL
+ .PARAMS [ .U 309 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY PUERTO_MERCANTIL_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 309 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY PUERTO_MERCANTIL_BTN_SMALL_PULSADO
+ .PARAMS [ .U 309 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY FARO_ARGAND_BTN_SMALL_DISABLE
+ .PARAMS [ .U 353 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY FARO_ARGAND_BTN_SMALL_NORMAL
+ .PARAMS [ .U 353 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY FARO_ARGAND_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 353 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY FARO_ARGAND_BTN_SMALL_PULSADO
+ .PARAMS [ .U 353 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY FARO_FRESNEL_BTN_SMALL_DISABLE
+ .PARAMS [ .U 397 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY FARO_FRESNEL_BTN_SMALL_NORMAL
+ .PARAMS [ .U 397 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY FARO_FRESNEL_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 397 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY FARO_FRESNEL_BTN_SMALL_PULSADO
+ .PARAMS [ .U 397 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DELEGACION_COMERCIAL_BTN_SMALL_DISABLE
+ .PARAMS [ .U 441 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DELEGACION_COMERCIAL_BTN_SMALL_NORMAL
+ .PARAMS [ .U 441 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DELEGACION_COMERCIAL_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 441 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DELEGACION_COMERCIAL_BTN_SMALL_PULSADO
+ .PARAMS [ .U 441 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+######### FILA 5 ###
+
+[
+ .KEY DPTO_COMERCIAL_BTN_SMALL_DISABLE
+ .PARAMS [ .U 1 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DPTO_COMERCIAL_BTN_SMALL_NORMAL
+ .PARAMS [ .U 1 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DPTO_COMERCIAL_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 1 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DPTO_COMERCIAL_BTN_SMALL_PULSADO
+ .PARAMS [ .U 1 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY PUESTO_FRONTERIZO_BTN_SMALL_DISABLE
+ .PARAMS [ .U 45 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY PUESTO_FRONTERIZO_BTN_SMALL_NORMAL
+ .PARAMS [ .U 45 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY PUESTO_FRONTERIZO_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 45 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY PUESTO_FRONTERIZO_BTN_SMALL_PULSADO
+ .PARAMS [ .U 45 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ADUANAS_BTN_SMALL_DISABLE
+ .PARAMS [ .U 397 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ADUANAS_BTN_SMALL_NORMAL
+ .PARAMS [ .U 397 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ADUANAS_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 397 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ADUANAS_BTN_SMALL_PULSADO
+ .PARAMS [ .U 397 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY AYUNTAMIENTO_BTN_SMALL_DISABLE
+ .PARAMS [ .U 133 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY AYUNTAMIENTO_BTN_SMALL_NORMAL
+ .PARAMS [ .U 133 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY AYUNTAMIENTO_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 133 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY AYUNTAMIENTO_BTN_SMALL_PULSADO
+ .PARAMS [ .U 133 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY GOBIERNO_DEPARTAMENTAL_BTN_SMALL_DISABLE
+ .PARAMS [ .U 177 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY GOBIERNO_DEPARTAMENTAL_BTN_SMALL_NORMAL
+ .PARAMS [ .U 177 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY GOBIERNO_DEPARTAMENTAL_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 177 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY GOBIERNO_DEPARTAMENTAL_BTN_SMALL_PULSADO
+ .PARAMS [ .U 177 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_INTERIOR_BTN_SMALL_DISABLE
+ .PARAMS [ .U 221 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_INTERIOR_BTN_SMALL_NORMAL
+ .PARAMS [ .U 221 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_INTERIOR_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 221 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_INTERIOR_BTN_SMALL_PULSADO
+ .PARAMS [ .U 221 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DPTO_INFORMACION_BTN_SMALL_DISABLE
+ .PARAMS [ .U 1 .V 365 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DPTO_INFORMACION_BTN_SMALL_NORMAL
+ .PARAMS [ .U 1 .V 365 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DPTO_INFORMACION_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 1 .V 365 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DPTO_INFORMACION_BTN_SMALL_PULSADO
+ .PARAMS [ .U 1 .V 365 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY INTELIGENCIA_MILITAR_BTN_SMALL_DISABLE
+ .PARAMS [ .U 309 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY INTELIGENCIA_MILITAR_BTN_SMALL_NORMAL
+ .PARAMS [ .U 309 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY INTELIGENCIA_MILITAR_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 309 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY INTELIGENCIA_MILITAR_BTN_SMALL_PULSADO
+ .PARAMS [ .U 309 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CENTRAL_INTELIGENCIA_BTN_SMALL_DISABLE
+ .PARAMS [ .U 353 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CENTRAL_INTELIGENCIA_BTN_SMALL_NORMAL
+ .PARAMS [ .U 353 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CENTRAL_INTELIGENCIA_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 353 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CENTRAL_INTELIGENCIA_BTN_SMALL_PULSADO
+ .PARAMS [ .U 353 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY TALLER_TECNICO_BASICO_BTN_SMALL_DISABLE
+ .PARAMS [ .U 397 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY TALLER_TECNICO_BASICO_BTN_SMALL_NORMAL
+ .PARAMS [ .U 397 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY TALLER_TECNICO_BASICO_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 397 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY TALLER_TECNICO_BASICO_BTN_SMALL_PULSADO
+ .PARAMS [ .U 397 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY TALLER_TECNICO_MEDIO_BTN_SMALL_DISABLE
+ .PARAMS [ .U 441 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY TALLER_TECNICO_MEDIO_BTN_SMALL_NORMAL
+ .PARAMS [ .U 441 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY TALLER_TECNICO_MEDIO_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 441 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY TALLER_TECNICO_MEDIO_BTN_SMALL_PULSADO
+ .PARAMS [ .U 441 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+######### FILA 6 ###
+
+[
+ .KEY CUADRAS_ELITE_BTN_SMALL_DISABLE
+ .PARAMS [ .U 353 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUADRAS_ELITE_BTN_SMALL_NORMAL
+ .PARAMS [ .U 353 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUADRAS_ELITE_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 353 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUADRAS_ELITE_BTN_SMALL_PULSADO
+ .PARAMS [ .U 353 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUARTEL_AVANZADO_BTN_SMALL_DISABLE
+ .PARAMS [ .U 177 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUARTEL_AVANZADO_BTN_SMALL_NORMAL
+ .PARAMS [ .U 177 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUARTEL_AVANZADO_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 177 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUARTEL_AVANZADO_BTN_SMALL_PULSADO
+ .PARAMS [ .U 177 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTADO_MAYOR_BTN_SMALL_DISABLE
+ .PARAMS [ .U 89 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTADO_MAYOR_BTN_SMALL_NORMAL
+ .PARAMS [ .U 89 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTADO_MAYOR_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 89 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTADO_MAYOR_BTN_SMALL_PULSADO
+ .PARAMS [ .U 89 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BARRACAS_BASICAS_BTN_SMALL_DISABLE
+ .PARAMS [ .U 397 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BARRACAS_BASICAS_BTN_SMALL_NORMAL
+ .PARAMS [ .U 397 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BARRACAS_BASICAS_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 397 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BARRACAS_BASICAS_BTN_SMALL_PULSADO
+ .PARAMS [ .U 397 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BARRACAS_AVANZADAS_BTN_SMALL_DISABLE
+ .PARAMS [ .U 441 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BARRACAS_AVANZADAS_BTN_SMALL_NORMAL
+ .PARAMS [ .U 441 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BARRACAS_AVANZADAS_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 441 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BARRACAS_AVANZADAS_BTN_SMALL_PULSADO
+ .PARAMS [ .U 441 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BARRACAS_ELITE_BTN_SMALL_DISABLE
+ .PARAMS [ .U 1 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BARRACAS_ELITE_BTN_SMALL_NORMAL
+ .PARAMS [ .U 1 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BARRACAS_ELITE_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 1 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BARRACAS_ELITE_BTN_SMALL_PULSADO
+ .PARAMS [ .U 1 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY FUNDICION_BASICA_BTN_SMALL_DISABLE
+ .PARAMS [ .U 265 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY FUNDICION_BASICA_BTN_SMALL_NORMAL
+ .PARAMS [ .U 265 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY FUNDICION_BASICA_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 265 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY FUNDICION_BASICA_BTN_SMALL_PULSADO
+ .PARAMS [ .U 265 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY FUNDICION_AVANZADA_BTN_SMALL_DISABLE
+ .PARAMS [ .U 309 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY FUNDICION_AVANZADA_BTN_SMALL_NORMAL
+ .PARAMS [ .U 309 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY FUNDICION_AVANZADA_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 309 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY FUNDICION_AVANZADA_BTN_SMALL_PULSADO
+ .PARAMS [ .U 309 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY FUNDICION_ELITE_BTN_SMALL_DISABLE
+ .PARAMS [ .U 353 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY FUNDICION_ELITE_BTN_SMALL_NORMAL
+ .PARAMS [ .U 353 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY FUNDICION_ELITE_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 353 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY FUNDICION_ELITE_BTN_SMALL_PULSADO
+ .PARAMS [ .U 353 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ALMACENES_OCULTOS_BTN_SMALL_DISABLE
+ .PARAMS [ .U 89 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ALMACENES_OCULTOS_BTN_SMALL_NORMAL
+ .PARAMS [ .U 89 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ALMACENES_OCULTOS_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 89 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ALMACENES_OCULTOS_BTN_SMALL_PULSADO
+ .PARAMS [ .U 89 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ENSENADAS_OCULTAS_BTN_SMALL_DISABLE
+ .PARAMS [ .U 1 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ENSENADAS_OCULTAS_BTN_SMALL_NORMAL
+ .PARAMS [ .U 1 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ENSENADAS_OCULTAS_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 1 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ENSENADAS_OCULTAS_BTN_SMALL_PULSADO
+ .PARAMS [ .U 1 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY EMBARCADERO_BTN_SMALL_DISABLE
+ .PARAMS [ .U 45 .V 365 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY EMBARCADERO_BTN_SMALL_NORMAL
+ .PARAMS [ .U 45 .V 365 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY EMBARCADERO_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 45 .V 365 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY EMBARCADERO_BTN_SMALL_PULSADO
+ .PARAMS [ .U 45 .V 365 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY TALLER_OBUSES_BTN_SMALL_DISABLE
+ .PARAMS [ .U 353 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY TALLER_OBUSES_BTN_SMALL_NORMAL
+ .PARAMS [ .U 353 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY TALLER_OBUSES_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 353 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY TALLER_OBUSES_BTN_SMALL_PULSADO
+ .PARAMS [ .U 353 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUARTEL_BASICO_BTN_SMALL_DISABLE
+ .PARAMS [ .U 133 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUARTEL_BASICO_BTN_SMALL_NORMAL
+ .PARAMS [ .U 133 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUARTEL_BASICO_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 133 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUARTEL_BASICO_BTN_SMALL_PULSADO
+ .PARAMS [ .U 133 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESCUELA_CAPITANES_BTN_SMALL_DISABLE
+ .PARAMS [ .U 441 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESCUELA_CAPITANES_BTN_SMALL_NORMAL
+ .PARAMS [ .U 441 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESCUELA_CAPITANES_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 441 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESCUELA_CAPITANES_BTN_SMALL_PULSADO
+ .PARAMS [ .U 441 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+######### FILA 7 ###
+
+[
+ .KEY CUARTEL_ELITE_BTN_SMALL_DISABLE
+ .PARAMS [ .U 221 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUARTEL_ELITE_BTN_SMALL_NORMAL
+ .PARAMS [ .U 221 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUARTEL_ELITE_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 221 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUARTEL_ELITE_BTN_SMALL_PULSADO
+ .PARAMS [ .U 221 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAMPO_ENTRENAMIENTO_BTN_SMALL_DISABLE
+ .PARAMS [ .U 45 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAMPO_ENTRENAMIENTO_BTN_SMALL_NORMAL
+ .PARAMS [ .U 45 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAMPO_ENTRENAMIENTO_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 45 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAMPO_ENTRENAMIENTO_BTN_SMALL_PULSADO
+ .PARAMS [ .U 45 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAMPO_TIRO_BTN_SMALL_DISABLE
+ .PARAMS [ .U 89 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAMPO_TIRO_BTN_SMALL_NORMAL
+ .PARAMS [ .U 89 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAMPO_TIRO_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 89 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAMPO_TIRO_BTN_SMALL_PULSADO
+ .PARAMS [ .U 89 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY PUERTO_MILITAR_BTN_SMALL_DISABLE
+ .PARAMS [ .U 133 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY PUERTO_MILITAR_BTN_SMALL_NORMAL
+ .PARAMS [ .U 133 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY PUERTO_MILITAR_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 133 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY PUERTO_MILITAR_BTN_SMALL_PULSADO
+ .PARAMS [ .U 133 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DIQUE_SECO_BTN_SMALL_DISABLE
+ .PARAMS [ .U 177 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DIQUE_SECO_BTN_SMALL_NORMAL
+ .PARAMS [ .U 177 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DIQUE_SECO_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 177 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DIQUE_SECO_BTN_SMALL_PULSADO
+ .PARAMS [ .U 177 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ARSENAL_BTN_SMALL_DISABLE
+ .PARAMS [ .U 221 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ARSENAL_BTN_SMALL_NORMAL
+ .PARAMS [ .U 221 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ARSENAL_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 221 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ARSENAL_BTN_SMALL_PULSADO
+ .PARAMS [ .U 221 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUADRAS_BASICAS_BTN_SMALL_DISABLE
+ .PARAMS [ .U 265 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUADRAS_BASICAS_BTN_SMALL_NORMAL
+ .PARAMS [ .U 265 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUADRAS_BASICAS_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 265 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUADRAS_BASICAS_BTN_SMALL_PULSADO
+ .PARAMS [ .U 265 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUADRAS_AVANZADAS_BTN_SMALL_DISABLE
+ .PARAMS [ .U 309 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUADRAS_AVANZADAS_BTN_SMALL_NORMAL
+ .PARAMS [ .U 309 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUADRAS_AVANZADAS_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 309 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUADRAS_AVANZADAS_BTN_SMALL_PULSADO
+ .PARAMS [ .U 309 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUADRAS_IMPERIALES_BTN_SMALL_DISABLE
+ .PARAMS [ .U 353 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUADRAS_IMPERIALES_BTN_SMALL_NORMAL
+ .PARAMS [ .U 353 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUADRAS_IMPERIALES_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 353 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUADRAS_IMPERIALES_BTN_SMALL_PULSADO
+ .PARAMS [ .U 353 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_ASUNTOS_EXTERIORES_BTN_SMALL_DISABLE
+ .PARAMS [ .U 441 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_ASUNTOS_EXTERIORES_BTN_SMALL_NORMAL
+ .PARAMS [ .U 441 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_ASUNTOS_EXTERIORES_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 441 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_ASUNTOS_EXTERIORES_BTN_SMALL_PULSADO
+ .PARAMS [ .U 441 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+######### FILA 8 ### (Alguien se olvido de esto, son las 4 de la mañana y me acuerdo de su familia)
+
+[
+ .KEY CENTRO_DATOS_BTN_SMALL_DISABLE
+ .PARAMS [ .U 1 .V 365 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CENTRO_DATOS_BTN_SMALL_NORMAL
+ .PARAMS [ .U 1 .V 365 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CENTRO_DATOS_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 1 .V 365 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CENTRO_DATOS_BTN_SMALL_PULSADO
+ .PARAMS [ .U 1 .V 365 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+######### FILA 9 ### (Embajadas)
+[
+ .KEY DELEGACION_COMERCIAL_JUG_FRANCIA_BTN_SMALL_DISABLE
+ .PARAMS [ .U 45 .V 417 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DELEGACION_COMERCIAL_JUG_FRANCIA_BTN_SMALL_NORMAL
+ .PARAMS [ .U 45 .V 417 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DELEGACION_COMERCIAL_JUG_FRANCIA_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 45 .V 417 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DELEGACION_COMERCIAL_JUG_FRANCIA_BTN_SMALL_PULSADO
+ .PARAMS [ .U 45 .V 417 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+
+[
+ .KEY DELEGACION_COMERCIAL_JUG_AUSTRIA_BTN_SMALL_DISABLE
+ .PARAMS [ .U 89 .V 417 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DELEGACION_COMERCIAL_JUG_AUSTRIA_BTN_SMALL_NORMAL
+ .PARAMS [ .U 89 .V 417 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DELEGACION_COMERCIAL_JUG_AUSTRIA_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 89 .V 417 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DELEGACION_COMERCIAL_JUG_AUSTRIA_BTN_SMALL_PULSADO
+ .PARAMS [ .U 89 .V 417 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+
+[
+ .KEY DELEGACION_COMERCIAL_JUG_RUSIA_BTN_SMALL_DISABLE
+ .PARAMS [ .U 133 .V 417 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DELEGACION_COMERCIAL_JUG_RUSIA_BTN_SMALL_NORMAL
+ .PARAMS [ .U 133 .V 417 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DELEGACION_COMERCIAL_JUG_RUSIA_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 133 .V 417 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DELEGACION_COMERCIAL_JUG_RUSIA_BTN_SMALL_PULSADO
+ .PARAMS [ .U 133 .V 417 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+
+[
+ .KEY DELEGACION_COMERCIAL_JUG_GRAN_BRETANYA_BTN_SMALL_DISABLE
+ .PARAMS [ .U 1 .V 417 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DELEGACION_COMERCIAL_JUG_GRAN_BRETANYA_BTN_SMALL_NORMAL
+ .PARAMS [ .U 1 .V 417 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DELEGACION_COMERCIAL_JUG_GRAN_BRETANYA_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 1 .V 417 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DELEGACION_COMERCIAL_JUG_GRAN_BRETANYA_BTN_SMALL_PULSADO
+ .PARAMS [ .U 1 .V 417 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+
+[
+ .KEY DELEGACION_COMERCIAL_JUG_PRUSIA_BTN_SMALL_DISABLE
+ .PARAMS [ .U 177 .V 417 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DELEGACION_COMERCIAL_JUG_PRUSIA_BTN_SMALL_NORMAL
+ .PARAMS [ .U 177 .V 417 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DELEGACION_COMERCIAL_JUG_PRUSIA_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 177 .V 417 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DELEGACION_COMERCIAL_JUG_PRUSIA_BTN_SMALL_PULSADO
+ .PARAMS [ .U 177 .V 417 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+
+######### ICONOS PARA LAS BARRAS DE PORCENTAJE DEL VISOR DE EDIFICIOS DE GESTIÓN ###
+######### FILA 1 ###
+
+[
+ .KEY DEFAULT_CONSTRUCCION_SMALL_FONDO_BARRA
+ .PARAMS [ .U 1 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DEFAULT_CONSTRUCCION_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 1 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BAZAR_SMALL_FONDO_BARRA
+ .PARAMS [ .U 1 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BAZAR_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 1 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY FUNDICION_ELITE_SMALL_FONDO_BARRA
+ .PARAMS [ .U 353 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY FUNDICION_ELITE_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 353 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY FUNDICION_BASICA_SMALL_FONDO_BARRA
+ .PARAMS [ .U 265 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY FUNDICION_BASICA_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 265 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY FUNDICION_AVANZADA_SMALL_FONDO_BARRA
+ .PARAMS [ .U 309 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY FUNDICION_AVANZADA_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 309 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ALMACENES_OCULTOS_SMALL_FONDO_BARRA
+ .PARAMS [ .U 89 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ALMACENES_OCULTOS_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 89 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ENSENADAS_OCULTAS_SMALL_FONDO_BARRA
+ .PARAMS [ .U 1 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ENSENADAS_OCULTAS_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 1 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY EMBARCADERO_SMALL_FONDO_BARRA
+ .PARAMS [ .U 45 .V 365 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY EMBARCADERO_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 45 .V 365 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ALMACEN_VIVERES_SMALL_FONDO_BARRA
+ .PARAMS [ .U 45 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+
+[
+ .KEY ALMACEN_VIVERES_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 45 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ASERRADERO_SMALL_FONDO_BARRA
+ .PARAMS [ .U 89 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ASERRADERO_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 89 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY REGADIOS_SMALL_FONDO_BARRA
+ .PARAMS [ .U 133 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+
+[
+ .KEY REGADIOS_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 133 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINAS_PROFUNDIDAD_SMALL_FONDO_BARRA
+ .PARAMS [ .U 177 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+
+[
+ .KEY MINAS_PROFUNDIDAD_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 177 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_AGRICULTURA_SMALL_FONDO_BARRA
+ .PARAMS [ .U 221 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+
+[
+ .KEY MINISTERIO_AGRICULTURA_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 221 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CASA_ALISTAMIENTO_SMALL_FONDO_BARRA
+ .PARAMS [ .U 265 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+
+[
+ .KEY CASA_ALISTAMIENTO_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 265 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ALTOS_HORNOS_SMALL_FONDO_BARRA
+ .PARAMS [ .U 309 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ALTOS_HORNOS_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 309 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BANCO_SMALL_FONDO_BARRA
+ .PARAMS [ .U 353 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BANCO_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 353 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DPTO_COMERCIAL_SMALL_FONDO_BARRA
+ .PARAMS [ .U 1 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DPTO_COMERCIAL_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 1 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY OFICINA_COMERCIAL_SMALL_FONDO_BARRA
+ .PARAMS [ .U 441 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY OFICINA_COMERCIAL_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 441 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+######### FILA 2 ###
+
+[
+ .KEY RED_COMERCIAL_SMALL_FONDO_BARRA
+ .PARAMS [ .U 1 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY RED_COMERCIAL_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 1 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY EDIFICIO_BOLSA_SMALL_FONDO_BARRA
+ .PARAMS [ .U 45 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY EDIFICIO_BOLSA_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 45 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY SENADO_SMALL_FONDO_BARRA
+ .PARAMS [ .U 221 .V 417 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY SENADO_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 221 .V 417 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ARCO_TRIUNFO_SMALL_FONDO_BARRA
+ .PARAMS [ .U 309 .V 365 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ARCO_TRIUNFO_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 309 .V 365 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTATUA_REPUBLICA_SMALL_FONDO_BARRA
+ .PARAMS [ .U 353 .V 365 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTATUA_REPUBLICA_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 353 .V 365 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY PARLAMENTO_SMALL_FONDO_BARRA
+ .PARAMS [ .U 441 .V 365 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY PARLAMENTO_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 441 .V 365 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY PALACIO_SMALL_FONDO_BARRA
+ .PARAMS [ .U 265 .V 417 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY PALACIO_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 265 .V 417 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTATUA_ECUESTRE_SMALL_FONDO_BARRA
+ .PARAMS [ .U 397 .V 365 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTATUA_ECUESTRE_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 397 .V 365 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BANCO_SMALL_FONDO_BARRA
+ .PARAMS [ .U 353 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BANCO_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 353 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY COMISARIA_SMALL_FONDO_BARRA
+ .PARAMS [ .U 397 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY COMISARIA_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 397 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CONSULADO_SMALL_FONDO_BARRA
+ .PARAMS [ .U 441 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CONSULADO_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 441 .V 53 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+######### FILA 3 ###
+
+[
+ .KEY PERIODICO_SMALL_FONDO_BARRA
+ .PARAMS [ .U 1 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY PERIODICO_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 1 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CTO_CULTURAL_SMALL_FONDO_BARRA
+ .PARAMS [ .U 45 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CTO_CULTURAL_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 45 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BOLETIN_ARMADA_SMALL_FONDO_BARRA
+ .PARAMS [ .U 89 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BOLETIN_ARMADA_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 89 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY INFRAESTRUCTURAS_SMALL_FONDO_BARRA
+ .PARAMS [ .U 133 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY INFRAESTRUCTURAS_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 133 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CELULA_RESISTENCIA_SMALL_FONDO_BARRA
+ .PARAMS [ .U 177 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CELULA_RESISTENCIA_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 177 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY FABRICA_UNIFORMES_SMALL_FONDO_BARRA
+ .PARAMS [ .U 221 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY FABRICA_UNIFORMES_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 221 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESCUELA_ARMADA_SMALL_FONDO_BARRA
+ .PARAMS [ .U 265 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESCUELA_ARMADA_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 265 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY HOSPITAL_CAMPANA_SMALL_FONDO_BARRA
+ .PARAMS [ .U 309 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY HOSPITAL_CAMPANA_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 309 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY HOSPITAL_LOCAL_SMALL_FONDO_BARRA
+ .PARAMS [ .U 353 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY HOSPITAL_LOCAL_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 353 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY HOSPITAL_MODERNO_SMALL_FONDO_BARRA
+ .PARAMS [ .U 397 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY HOSPITAL_MODERNO_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 397 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY OFICINA_RECAUDACION_SMALL_FONDO_BARRA
+ .PARAMS [ .U 441 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY OFICINA_RECAUDACION_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 441 .V 105 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+######### FILA 4 ###
+
+[
+ .KEY DPTO_TESORO_SMALL_FONDO_BARRA
+ .PARAMS [ .U 1 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DPTO_TESORO_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 1 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_HACIENDA_SMALL_FONDO_BARRA
+ .PARAMS [ .U 45 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_HACIENDA_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 45 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESCUELA_BASICA_SMALL_FONDO_BARRA
+ .PARAMS [ .U 89 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESCUELA_BASICA_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 89 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY LICEO_SMALL_FONDO_BARRA
+ .PARAMS [ .U 133 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY LICEO_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 133 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY UNIVERSIDAD_SMALL_FONDO_BARRA
+ .PARAMS [ .U 177 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY UNIVERSIDAD_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 177 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DARSENA_MERCANTIL_SMALL_FONDO_BARRA
+ .PARAMS [ .U 221 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DARSENA_MERCANTIL_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 221 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY MUELLE_MERCANTIL_SMALL_FONDO_BARRA
+ .PARAMS [ .U 265 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY MUELLE_MERCANTIL_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 265 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY PUERTO_MERCANTIL_SMALL_FONDO_BARRA
+ .PARAMS [ .U 309 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY PUERTO_MERCANTIL_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 309 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY FARO_ARGAND_SMALL_FONDO_BARRA
+ .PARAMS [ .U 353 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY FARO_ARGAND_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 353 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY FARO_FRESNEL_SMALL_FONDO_BARRA
+ .PARAMS [ .U 397 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY FARO_FRESNEL_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 397 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DELEGACION_COMERCIAL_SMALL_FONDO_BARRA
+ .PARAMS [ .U 441 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DELEGACION_COMERCIAL_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 441 .V 157 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+######### FILA 5 ###
+
+[
+ .KEY DPTO_COMERCIAL_SMALL_FONDO_BARRA
+ .PARAMS [ .U 1 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DPTO_COMERCIAL_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 1 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY PUESTO_FRONTERIZO_SMALL_FONDO_BARRA
+ .PARAMS [ .U 45 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY PUESTO_FRONTERIZO_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 45 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ADUANAS_SMALL_FONDO_BARRA
+ .PARAMS [ .U 397 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ADUANAS_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 397 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY AYUNTAMIENTO_SMALL_FONDO_BARRA
+ .PARAMS [ .U 133 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY AYUNTAMIENTO_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 133 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY GOBIERNO_DEPARTAMENTAL_SMALL_FONDO_BARRA
+ .PARAMS [ .U 177 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY GOBIERNO_DEPARTAMENTAL_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 177 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_INTERIOR_SMALL_FONDO_BARRA
+ .PARAMS [ .U 221 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_INTERIOR_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 221 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DPTO_INFORMACION_SMALL_FONDO_BARRA
+ .PARAMS [ .U 1 .V 365 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+
+[
+ .KEY DPTO_INFORMACION_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 1 .V 365 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY INTELIGENCIA_MILITAR_SMALL_FONDO_BARRA
+ .PARAMS [ .U 309 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY INTELIGENCIA_MILITAR_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 309 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CENTRAL_INTELIGENCIA_SMALL_FONDO_BARRA
+ .PARAMS [ .U 353 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CENTRAL_INTELIGENCIA_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 353 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY TALLER_TECNICO_BASICO_SMALL_FONDO_BARRA
+ .PARAMS [ .U 397 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY TALLER_TECNICO_BASICO_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 397 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY TALLER_TECNICO_MEDIO_SMALL_FONDO_BARRA
+ .PARAMS [ .U 441 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY TALLER_TECNICO_MEDIO_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 441 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+######### FILA 6 ###
+
+[
+ .KEY CUADRAS_ELITE_SMALL_FONDO_BARRA
+ .PARAMS [ .U 353 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUADRAS_ELITE_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 353 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUARTEL_AVANZADO_SMALL_FONDO_BARRA
+ .PARAMS [ .U 177 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUARTEL_AVANZADO_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 177 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTADO_MAYOR_SMALL_FONDO_BARRA
+ .PARAMS [ .U 89 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESTADO_MAYOR_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 89 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BARRACAS_BASICAS_SMALL_FONDO_BARRA
+ .PARAMS [ .U 397 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BARRACAS_BASICAS_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 397 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BARRACAS_AVANZADAS_SMALL_FONDO_BARRA
+ .PARAMS [ .U 441 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BARRACAS_AVANZADAS_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 441 .V 209 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BARRACAS_ELITE_SMALL_FONDO_BARRA
+ .PARAMS [ .U 1 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY BARRACAS_ELITE_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 1 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ALTOS_HORNOS_BASICA_SMALL_FONDO_BARRA
+ .PARAMS [ .U 265 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ALTOS_HORNOS_BASICA_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 265 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ALTOS_HORNOS_AVANZADA_SMALL_FONDO_BARRA
+ .PARAMS [ .U 309 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ALTOS_HORNOS_AVANZADA_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 309 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY TALLER_OBUSES_SMALL_FONDO_BARRA
+ .PARAMS [ .U 353 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY TALLER_OBUSES_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 353 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUARTEL_BASICO_SMALL_FONDO_BARRA
+ .PARAMS [ .U 133 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUARTEL_BASICO_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 133 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESCUELA_CAPITANES_SMALL_FONDO_BARRA
+ .PARAMS [ .U 441 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ESCUELA_CAPITANES_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 441 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+######### FILA 7 ###
+
+[
+ .KEY CUARTEL_ELITE_SMALL_FONDO_BARRA
+ .PARAMS [ .U 221 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUARTEL_ELITE_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 221 .V 261 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAMPO_ENTRENAMIENTO_SMALL_FONDO_BARRA
+ .PARAMS [ .U 45 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAMPO_ENTRENAMIENTO_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 45 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAMPO_TIRO_SMALL_FONDO_BARRA
+ .PARAMS [ .U 89 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CAMPO_TIRO_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 89 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY PUERTO_MILITAR_SMALL_FONDO_BARRA
+ .PARAMS [ .U 133 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY PUERTO_MILITAR_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 133 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DIQUE_SECO_SMALL_FONDO_BARRA
+ .PARAMS [ .U 177 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DIQUE_SECO_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 177 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ARSENAL_SMALL_FONDO_BARRA
+ .PARAMS [ .U 221 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY ARSENAL_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 221 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUADRAS_BASICAS_SMALL_FONDO_BARRA
+ .PARAMS [ .U 265 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUADRAS_BASICAS_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 265 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUADRAS_AVANZADAS_SMALL_FONDO_BARRA
+ .PARAMS [ .U 309 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUADRAS_AVANZADAS_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 309 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUADRAS_IMPERIALES_SMALL_FONDO_BARRA
+ .PARAMS [ .U 353 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CUADRAS_IMPERIALES_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 353 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_ASUNTOS_EXTERIORES_SMALL_FONDO_BARRA
+ .PARAMS [ .U 441 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY MINISTERIO_ASUNTOS_EXTERIORES_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 441 .V 313 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+######### FILA 8 ### (Alguien se olvido de esto, son las 4 de la mañana y me acuerdo de su familia)
+
+[
+ .KEY CENTRO_DATOS_SMALL_FONDO_BARRA
+ .PARAMS [ .U 1 .V 365 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY CENTRO_DATOS_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 1 .V 365 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+######### FILA 9 ### (Embajadas)
+[
+ .KEY DELEGACION_COMERCIAL_JUG_FRANCIA_SMALL_FONDO_BARRA
+ .PARAMS [ .U 45 .V 417 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DELEGACION_COMERCIAL_JUG_FRANCIA_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 45 .V 417 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+
+[
+ .KEY DELEGACION_COMERCIAL_JUG_AUSTRIA_SMALL_FONDO_BARRA
+ .PARAMS [ .U 89 .V 417 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DELEGACION_COMERCIAL_JUG_AUSTRIA_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 89 .V 417 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+
+[
+ .KEY DELEGACION_COMERCIAL_JUG_RUSIA_SMALL_FONDO_BARRA
+ .PARAMS [ .U 133 .V 417 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DELEGACION_COMERCIAL_JUG_RUSIA_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 133 .V 417 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+
+[
+ .KEY DELEGACION_COMERCIAL_JUG_GRAN_BRETANYA_SMALL_FONDO_BARRA
+ .PARAMS [ .U 1 .V 417 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DELEGACION_COMERCIAL_JUG_GRAN_BRETANYA_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 1 .V 417 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+
+[
+ .KEY DELEGACION_COMERCIAL_JUG_PRUSIA_SMALL_FONDO_BARRA
+ .PARAMS [ .U 177 .V 417 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY DELEGACION_COMERCIAL_JUG_PRUSIA_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 177 .V 417 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+
+[
+ .KEY EMBAJADA_COMERCIAL_BTN_SMALL_DISABLE
+ .PARAMS [ .U 397 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY EMBAJADA_COMERCIAL_BTN_SMALL_NORMAL
+ .PARAMS [ .U 397 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY EMBAJADA_COMERCIAL_BTN_SMALL_SELECCIONADO
+ .PARAMS [ .U 397 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY EMBAJADA_COMERCIAL_BTN_SMALL_PULSADO
+ .PARAMS [ .U 397 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosPulsados.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY EMBAJADA_COMERCIAL_SMALL_FONDO_BARRA
+ .PARAMS [ .U 397 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosTrans.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+[
+ .KEY EMBAJADA_COMERCIAL_SMALL_GRAFICO_BARRA
+ .PARAMS [ .U 397 .V 1 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidosVerde.tga" .SX 43 .SY 51 .ALPHA TRUE ]
+]
+
+

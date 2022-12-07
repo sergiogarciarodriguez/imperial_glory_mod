@@ -1,0 +1,240 @@
+#=======================================================================================
+# Definición de sonidos para el modelo naval [ BARCOS ]
+#=======================================================================================
+
+%game/gamemodes/navalbattlemode/audio/audiovoldefs.sb
+
+.AUDIO 
+[
+
+# ANCLA ================================================================================
+  [ 
+    .IDNAME "S_ANCLA_AGUA"
+    .PATH 
+    [ 
+      "audio/naval/fx/ships/ancla_agua.ogg" 
+    ]
+    .GENERIC    TRUE
+    .VOLUME     !VOL_MED
+    .TYPE       EFFECT
+    .3D         TRUE
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  
+  [ 
+    .IDNAME "S_ANCLA_AGUA_SALIR"
+    .PATH 
+    [ 
+      "audio/naval/fx/ships/recoger_ancla_agua.ogg" 
+    ]
+    .GENERIC    TRUE
+    .VOLUME     !VOL_MED
+    .TYPE       EFFECT
+    .3D         TRUE
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  
+  [ 
+    .IDNAME "S_ANCLA_FIN"
+    .PATH 
+    [ 
+      "audio/naval/fx/ships/ancla_fin.ogg" 
+    ]
+    .VOLUME     !VOL_MED
+    .TYPE       EFFECT
+    .3D         TRUE
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  
+  [ 
+    .IDNAME "S_ANCLA_LOOP"
+    .PATH 
+    [ 
+      "audio/naval/fx/ships/ancla_loop.ogg" 
+    ]
+    .LOOP       TRUE
+    .GENERIC    TRUE
+    .VOLUME     !VOL_MED
+    .TYPE       EFFECT
+    .3D         TRUE
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+
+  [ 
+    .IDNAME "S_ANCLA_RECOGER"
+    .PATH 
+    [ 
+      "audio/naval/fx/ships/recoger_ancla.ogg" 
+    ]
+    .LOOP       TRUE
+    .GENERIC    TRUE
+    .VOLUME     !VOL_MED
+    .TYPE       EFFECT
+    .3D         TRUE
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  
+  [ 
+    .IDNAME "S_ANCLA_RECOGER_FIN"
+    .PATH 
+    [ 
+      "audio/naval/fx/ships/recoger_ancla_fin.ogg" 
+    ]
+    .GENERIC    TRUE
+    .VOLUME     !VOL_MED
+    .TYPE       EFFECT
+    .3D         TRUE
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+
+# CAMPANAS ============================================================================
+
+  [ 
+    .IDNAME "S_CAMPANA_1"
+    .PATH 
+    [ 
+      "audio/naval/fx/ships/bell_1.ogg" 
+    ]
+    .GENERIC    TRUE
+    .TRANSPOSE  25
+    .VOLUME     !VOL_LOW
+    .TYPE       EFFECT
+    .3D         TRUE
+    .RADIOMIN         2000
+    .RADIOMAX         100000
+  ]
+  
+  [ 
+    .IDNAME "S_CAMPANA_2"
+    .PATH 
+    [ 
+      "audio/naval/fx/ships/bell_2.ogg" 
+    ]
+    .GENERIC    TRUE
+    .TRANSPOSE  25
+    .VOLUME     !VOL_LOW
+    .TYPE       EFFECT
+    .3D         TRUE
+    .RADIOMIN         2000
+    .RADIOMAX         100000
+  ]
+  
+  [ 
+    .IDNAME "S_CAMPANA_3"
+    .PATH 
+    [ 
+      "audio/naval/fx/ships/bell_3.ogg" 
+    ]
+    .GENERIC    TRUE
+    .TRANSPOSE  25
+    .VOLUME     !VOL_LOW
+    .TYPE       EFFECT
+    .3D         TRUE
+    .RADIOMIN         2000
+    .RADIOMAX         100000
+  ]
+  
+# MADERAS CRUJIR ====================================================================== 
+ 
+  [ 
+    .IDNAME "S_MADERAS"
+    .PATH 
+    [ 
+      "audio/naval/fx/ships/madera_crujir_01.ogg" 
+      "audio/naval/fx/ships/madera_crujir_02.ogg" 
+      "audio/naval/fx/ships/madera_crujir_03.ogg" 
+      "audio/naval/fx/ships/madera_crujir_04.ogg" 
+      "audio/naval/fx/ships/madera_crujir_05.ogg" 
+      "audio/naval/fx/ships/madera_crujir_06.ogg" 
+      "audio/naval/fx/ships/madera_crujir_07.ogg" 
+      "audio/naval/fx/ships/madera_crujir_08.ogg" 
+      "audio/naval/fx/ships/madera_crujir_09.ogg" 
+      "audio/naval/fx/ships/madera_crujir_10.ogg" 
+      "audio/naval/fx/ships/madera_crujir_11.ogg" 
+      "audio/naval/fx/ships/madera_crujir_12.ogg" 
+      "audio/naval/fx/ships/madera_crujir_13.ogg" 
+    ]
+    .GENERIC    TRUE
+    .TRANSPOSE  10
+    .VOLUME     !VOL_HI
+    .TYPE       EFFECT
+    .3D         TRUE
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  
+# MOVIMIENTO =========================================================================  
+
+  [ 
+    .IDNAME "S_MOVER"
+    .PATH 
+    [ 
+      "audio/naval/fx/ships/mover_01.ogg" 
+      "audio/naval/fx/ships/mover_02.ogg" 
+      "audio/naval/fx/ships/mover_03.ogg" 
+    ]
+    .LOOP       TRUE
+    .GENERIC    TRUE
+    .VOLUME     !VOL_MAX
+    .TYPE       EFFECT
+    .3D         TRUE
+    .RADIOMIN         2000
+    .RADIOMAX         100000
+  ]
+    
+# VELAS =========================================================================  
+
+  [ 
+    .IDNAME "S_SOLTAR_VELAS"
+    .PATH 
+    [ 
+      "audio/naval/fx/ships/soltar_velas.ogg" 
+    ]
+    .GENERIC    TRUE
+    .TRANSPOSE  10
+    .VOLUME     !VOL_MAX
+    .TYPE       EFFECT
+    .3D         TRUE
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  
+  [ 
+    .IDNAME "S_RECOGER_VELAS"
+    .PATH 
+    [ 
+      "audio/naval/fx/ships/recoger_velas.ogg" 
+    ]
+    .GENERIC    TRUE
+    .TRANSPOSE  10
+    .VOLUME     !VOL_MAX
+    .TYPE       EFFECT
+    .3D         TRUE
+    .RADIOMIN         20
+    .RADIOMAX         50000
+  ]
+  
+# COLISIONES =====================================================================  
+
+  [ 
+    .IDNAME "S_COLISION"
+    .PATH 
+    [ 
+      "audio/naval/fx/ships/colision1.ogg" 
+    ]
+    .GENERIC    TRUE
+    .TRANSPOSE  0
+    .VOLUME     !VOL_MAX
+    .TYPE       EFFECT
+    .3D         TRUE
+    .RADIOMIN         2000
+    .RADIOMAX         100000
+  ]
+  
+]

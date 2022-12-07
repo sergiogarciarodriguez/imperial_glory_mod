@@ -1,0 +1,80 @@
+
+.X 699 
+.Y 0
+
+# Sin fondo, pero como necesita la definicion se pone un pixel vacio
+.FONDO 
+[
+  .FILE "Game/UI/ModeloGestion/Diplomacia/VentanasDiplomacia.tga"
+  .X 0 .Y 0 .U 0 .V 470 .SX 1 .SY 1
+  .ALPHA TRUE .PRIORITY 1
+] # ~FONDO
+
+.ESTILOS
+[
+  ############################################################
+  # ESTILO DEL PANEL DE OROTURNOSULTIMATUM
+  [ .ID 'EOTU' .TIMEOUT -1
+    .CONTROLES
+    [
+      %Game/UI/ModeloGestion/Diplomacia/EstilosPaneles/UIDefs_EstiloPanelOTU.sb
+    ]
+  ]
+  
+  ############################################################
+  # ESTILO DEL PANEL DE OROULTIMATUM
+  [ .ID 'ESOU' .TIMEOUT -1
+    .CONTROLES
+    [
+      %Game/UI/ModeloGestion/Diplomacia/EstilosPaneles/UIDefs_EstiloPanelOU.sb
+    ]
+  ]
+  
+  ############################################################
+  # ESTILO DEL PANEL DE ORO
+  [ .ID 'EORO' .TIMEOUT -1
+    .CONTROLES
+    [
+      %Game/UI/ModeloGestion/Diplomacia/EstilosPaneles/UIDefs_EstiloPanelORO.sb
+    ]
+  ] 
+
+  ############################################################
+  # ESTILO DEL PANEL DE OROTURNOS
+  [ .ID 'EORT' .TIMEOUT -1
+    .CONTROLES
+    [
+      %Game/UI/ModeloGestion/Diplomacia/EstilosPaneles/UIDefs_EstiloPanelORT.sb
+    ]
+  ] 
+  
+  ############################################################
+  # ESTILO DEL PANEL DE OROBOTONTROPAS
+  [ .ID 'EOBT' .TIMEOUT -1
+    .CONTROLES
+    [
+      %Game/UI/ModeloGestion/Diplomacia/EstilosPaneles/UIDefs_EstiloPanelOBT.sb
+    ]
+  ]   
+
+  ############################################################
+  # ESTILO DEL PANEL DE OROBOTONTERRITORIOS
+  [ .ID 'EOBE' .TIMEOUT -1
+    .CONTROLES
+    [
+      %Game/UI/ModeloGestion/Diplomacia/EstilosPaneles/UIDefs_EstiloPanelOBE.sb
+    ]
+  ]   
+
+  ############################################################
+  # ESTILO DEL PANEL DE OROCOMERCIO
+  [ .ID 'ECOM' .TIMEOUT -1
+    .CONTROLES
+    [
+      %Game/UI/ModeloGestion/Diplomacia/EstilosPaneles/UIDefs_EstiloPanelCOM.sb
+    ]
+  ] 
+    
+]
+  
+  

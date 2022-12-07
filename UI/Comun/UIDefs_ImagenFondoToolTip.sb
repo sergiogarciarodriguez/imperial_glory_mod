@@ -1,0 +1,23 @@
+#############################################################################################################
+# Sb utilizado para definir el fondo de todas las imagenes que son ToolTip
+#############################################################################################################
+
+# Utilizamos este sb para definir la imagen de fondo estandar asociada a los Tool Tips
+
+  .MODO_TILEADO COMPLETO
+
+  .IMG_ESQUINA_SUP_IZQ  [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U  5 .V 405 .SX 2 .SY 2 .ALPHA TRUE .PRIORITY 255 .TRANSPARENCY 255 ]
+  .IMG_LATERAL_SUP      [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 10 .V 405 .SX 2 .SY 2 .ALPHA TRUE .PRIORITY 255 .TRANSPARENCY 255 ]
+  .IMG_ESQUINA_SUP_DCHA [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 15 .V 405 .SX 2 .SY 2 .ALPHA TRUE .PRIORITY 255 .TRANSPARENCY 255 ]
+   
+  .IMG_LATERAL_IZQ      [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U  5 .V 410 .SX 2 .SY 2 .ALPHA TRUE .PRIORITY 255 .TRANSPARENCY 255 ]
+  .IMG_CENTRAL          [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 10 .V 410 .SX 2 .SY 2 .ALPHA TRUE .PRIORITY 255 .TRANSPARENCY 255 ]  
+  .IMG_LATERAL_DCHA     [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 15 .V 410 .SX 2 .SY 2 .ALPHA TRUE .PRIORITY 255 .TRANSPARENCY 255 ]
+  
+  .IMG_ESQUINA_INF_IZQ  [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U  5 .V 415 .SX 2 .SY 2 .ALPHA TRUE .PRIORITY 255 .TRANSPARENCY 255 ]
+  .IMG_LATERAL_INF      [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 10 .V 415 .SX 2 .SY 2 .ALPHA TRUE .PRIORITY 255 .TRANSPARENCY 255 ]  
+  .IMG_ESQUINA_INF_DCHA [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 15 .V 415 .SX 2 .SY 2 .ALPHA TRUE .PRIORITY 255 .TRANSPARENCY 255 ]
+    
+  #.ANCHO 5 
+  #.ALTO  5
+       

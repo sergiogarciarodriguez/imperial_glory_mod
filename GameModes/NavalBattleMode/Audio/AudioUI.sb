@@ -1,0 +1,43 @@
+#=======================================================================================
+# Definición de sonidos para el modelo naval [ UI ]
+#
+# Param ".3D" es TRUE por defecto.
+#       ".LOOP" es FALSE por defecto.
+#       ".NLOOPS" == 0 si se quiere que se repita infinitamente (tambien hace falta establecer ".LOOP" a TRUE)
+#=======================================================================================
+
+###-------------------------------------------------------------------------------------
+### AUDIO
+###-------------------------------------------------------------------------------------
+.AUDIO 
+[
+
+  [ 
+    .IDNAME "S_UI_TIPOATAQUE_PULSADO"       
+    .PATH "Audio/NAVAL/UI/BotonControlPulsado.ogg" 
+    .3D FALSE
+    .LOOP FALSE
+  ]
+
+  [ 
+    .IDNAME "S_UI_ACCIONATAQUE_PULSADO"       
+    .PATH "Audio/NAVAL/UI/BotonControlPulsado.ogg" 
+    .3D FALSE
+    .LOOP FALSE
+  ]
+
+  [ 
+    .IDNAME "S_UI_GENERICO_PULSADO"       
+    .PATH "Audio/NAVAL/UI/BotonControlPulsado.ogg" 
+    .3D FALSE
+    .LOOP FALSE
+  ]
+
+  [ 
+    .IDNAME "S_UI_BOTONBARCO_PULSADO"       
+    .PATH "Audio/NAVAL/UI/BotonControlPulsado.ogg" 
+    .3D FALSE
+    .LOOP FALSE
+  ]
+  
+] ### !AUDIO

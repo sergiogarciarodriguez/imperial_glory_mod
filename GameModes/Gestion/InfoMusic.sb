@@ -1,0 +1,13 @@
+# Fichero con los identificadores de las musicas que se pueden hacer sonar en el modelo de gestion
+
+.MUSICAS
+[
+  S_GEST_MUSIC_01
+  S_GEST_MUSIC_02
+  S_GEST_MUSIC_03
+  S_GEST_MUSIC_04
+  S_GEST_MUSIC_05
+  S_GEST_MUSIC_06  
+]
+
+.MUSIC_MAX_TIME 240 # Sera en segundos

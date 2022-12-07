@@ -1,0 +1,55 @@
+#-----------------------------------------------------------------------------------
+# Define el estilo del slider de modificar rango del panel de órdenes naval
+#-----------------------------------------------------------------------------------
+
+
+  .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .SX 100 .SY 6 .U 139 .V 55 .HORIZONTAL TRUE .ALPHA TRUE
+
+  # Boton 1
+  .BTN_1
+  [ .TIPO UIC_BOTONGRAFICO
+    .COMPORTAMIENTO SIMPLE
+    .FONDO
+    [
+      .X -1 .Y 0 .SX 0 .SY 0 .ALPHA TRUE
+      .SOLTADO      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 160 .V 64 ]
+      .SELECCIONADO [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 160 .V 64 ]
+      .PULSADO      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 160 .V 64 ]
+    ]
+  ]
+
+  # Boton 2                
+  .BTN_2
+  [ .TIPO UIC_BOTONGRAFICO
+    .COMPORTAMIENTO SIMPLE
+    .FONDO
+    [
+      .X 0 .Y 0 .SX 0 .SY 0 .ALPHA TRUE
+      .SOLTADO      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 160 .V 64 ]
+      .SELECCIONADO [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 160 .V 64 ]
+      .PULSADO      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 160 .V 64 ]
+    ]
+  ]
+
+  # Boton central
+  .BTN_CENTRAL
+  [ .TIPO UIC_BOTONGRAFICO
+    .COMPORTAMIENTO SIMPLE
+    .FONDO
+    [
+      .X -1 .Y 0 .SX 14 .SY 21 .ALPHA TRUE
+      .SOLTADO      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 140 .V 64 ]
+      .SELECCIONADO [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 140 .V 64 ]
+      .PULSADO      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 140 .V 64 ]
+    ]
+  ]
+  
+  .TOOL_TIP 
+  [ 
+   .TEXT LTEXT_UI_NAVAL_TT_RANGE                  
+   .FONT "Fonts/gothic.fnt" 
+   .X 32 .Y 32
+   .COLOR [ .R 255 .G 255 .B 255 ] 
+     
+   .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+  ]    

@@ -1,0 +1,166 @@
+###############################################################################
+# Definiciones de los distintos valores que entran en juego en el sistema de
+# resolución automática de batallas.
+###############################################################################
+
+# Factores aleatorios que se utilizan en la resolución automática de batallas terrestres y navales.
+# Estos factores modifican el daño producido por las tropas y los barcos en la batalla.
+.FACTOR_ALEATORIO_COMBATE_TERRESTRE 0.05
+.FACTOR_ALEATORIO_COMBATE_MARITIMO  0.3
+
+# Reglas relacionadas con la formula de maniobra de evasiva
+.REGLAS_MANIOBRAS_NAVALES_EVASIVAS
+[
+ .PESOS
+ [
+  # En esta seccion indicamos los pesos que intervendran en la formula que nos dara un valor entre
+  # 0 y 100 y que indicara el exito que tiene un jugador realizando un determinado tipo de maniobra
+  # (bien evasiva, bien de persecucion a un conjunto de flotas que entran en maniobra evasiva).
+  # Los pesos deberan de sumar entre si 100. 
+  # A mayor valor de los pesos, mayor importancia en la formula. Por ejemplo, si ponemos un peso del
+  # 50.0 a el factor CANTIDAD_BARCOS, el bando que tenga mas barcos tendra muchas mas opciones de
+  # perder en la maniobra. Notese que si ponemos un 50 a este factor tendremos que repartir el otro
+  # 50.0 entre los tres factores que quedan para que se cumpla que sumen 100.0
+  
+  .CANTIDAD_BARCOS          20.0
+  .EXPERIENCIA_TRIPULACION  10.0 
+  .EMBERGADURA_BARCOS       10.0
+  .SUERTE                   60.0
+ ]
+]
+
+# Modificadores de dificultad.
+# Estos multiplicadores modifican los valores de daño y resistencia de las tropas del jugador local
+# cuando se encuentra en cada uno de los niveles de dificultad.
+.DIFICULTAD_FACIL
+[
+  .DANO_DISTANCIA           1.1
+  .DANO_CARGA               1.1
+  .DANO_MELEE               1.1
+  .RESISTENCIA_DISTANCIA    1.0
+  .RESISTENCIA_CARGA        1.0
+  .RESISTENCIA_MELEE        1.0
+]
+
+.DIFICULTAD_MEDIA
+[
+  .DANO_DISTANCIA           1.0
+  .DANO_CARGA               1.0
+  .DANO_MELEE               1.0
+  .RESISTENCIA_DISTANCIA    1.0
+  .RESISTENCIA_CARGA        1.0
+  .RESISTENCIA_MELEE        1.0
+]
+
+.DIFICULTAD_DIFICIL
+[
+  .DANO_DISTANCIA           0.93
+  .DANO_CARGA               0.93
+  .DANO_MELEE               0.93
+  .RESISTENCIA_DISTANCIA    1.0
+  .RESISTENCIA_CARGA        1.0
+  .RESISTENCIA_MELEE        1.0
+]
+
+# Reglas relacionadas con la resolución automática de batallas navales
+# Nota: Los valores aquí reflejados tienen el mismo significado que los
+#       encontrados en los scripts Game/GameModes/NavalBattleMode/DefCombat*.sb
+.NAVAL
+[
+    # Valores generales    
+	  .MIN_DANYO_POR_ESTADO_CASCO     0.3
+  	.PRECISION_MINIMA               0.05
+	  .PRECISION_MAXIMA               0.95
+
+  	.DANYO_BOMBA
+	  [
+		  .QUEMARROPA			              6.0
+		  .MEDIO				                2.0
+		  .LARGO				                0.5
+  	]
+  	
+	  .EFECTIVIDAD_SEGUN_DISTANCIA
+	  [
+		  .QUEMARROPA			              0.8
+		  .MEDIO				                0.25
+		  .LARGO				                0.01
+	  ]
+
+    # Valores específicos de las tripulaciones
+    # Importante: No alterar el orden.
+    .TIPOS_DE_TRIPULACION
+    [
+        .TRIPULACION
+        [
+            # Tripulación Novata
+          	.EFECTIVIDAD_DISTANCIA			    0.1
+          	.CADENCIA_DISTANCIA				      23.0
+        ]
+      
+        .TRIPULACION
+        [
+            # Tripulación Media
+          	.EFECTIVIDAD_DISTANCIA			    0.2
+          	.CADENCIA_DISTANCIA				      20.0
+        ]
+      
+        .TRIPULACION
+        [
+            # Tripulación Experimentada
+          	.EFECTIVIDAD_DISTANCIA			    0.3
+          	.CADENCIA_DISTANCIA				      17.0
+        ]
+      
+        .TRIPULACION
+        [
+            # Tripulación Veterana
+          	.EFECTIVIDAD_DISTANCIA			    0.5
+          	.CADENCIA_DISTANCIA				      14.0
+        ]
+      
+        .TRIPULACION
+        [
+            # Tripulación Elite
+          	.EFECTIVIDAD_DISTANCIA			    0.8
+          	.CADENCIA_DISTANCIA				      10.0
+        ]  
+    ]
+
+    # Valores específicos de los barcos
+    # Importante: No alterar el orden.
+    .TIPOS_DE_BARCOS
+    [
+        .BARCO
+        [
+            # Buque de Línea
+          	.CASCO					                185.0
+          	.NUM_CANYONES_LADO			        39
+        	  .RANGO_QUEMARROPA			          5775.0
+        	  .RANGO_MEDIO				            11385.0
+        	  .RANGO_LARGO				            30585.0
+  	        .VELOCIDAD                      8.0
+        ]
+
+        .BARCO
+        [
+            # Fragata
+          	.CASCO					                140.0
+          	.NUM_CANYONES_LADO			        25
+        	  .RANGO_QUEMARROPA			          5505.0
+        	  .RANGO_MEDIO				            10750.0
+        	  .RANGO_LARGO				            30400.0
+  	        .VELOCIDAD                      10.0
+        ]	
+
+        .BARCO
+        [
+            # Corbeta
+    	      .CASCO					                95.0
+    	      .NUM_CANYONES_LADO			        12
+        	  .RANGO_QUEMARROPA			          5250.0
+  	        .RANGO_MEDIO				            10205.0
+  	        .RANGO_LARGO				            30215.0
+  	        .VELOCIDAD                      13.0
+  	    ]
+    ]
+]

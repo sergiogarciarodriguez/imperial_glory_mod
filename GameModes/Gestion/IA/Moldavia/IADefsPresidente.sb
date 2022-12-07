@@ -1,0 +1,159 @@
+##################################################################################################
+# Definiciones asociadas a la IA del presidente
+##################################################################################################
+
+# Perfil del presidente
+# Notas: - Todo perfil tendra un perfil primario y otro secundario.
+#        - Los porcentajes deberan de estar entre 0 y 1.
+#        - Todos los porcentajes de una misma categoria deberan de sumar 1 (en caso de haber mas de uno),
+#          a no ser que se indique lo contrario.
+
+.PERFIL
+[
+ 
+ .PERFIL_PRIMARIO
+ [ 
+  # El perfil primario define el comportamiento fundamental del jugador.  
+  # Nota: El porcentaje de importancia de puntuación debe ser 0 para todos los jugadores neutrales.
+  
+  .PORCENTAJE_MILITAR        0.40 # Porcentaje de la faceta militar
+  .PORCENTAJE_ECONOMICO      0.35 # Porcentaje de la faceta economica
+  .PORCENTAJE_DIPLOMATICO    0.25 # Porcentaje de la faceta diplomática
+  .PORCENTAJE_TECNOLOGICO    0.00 # Porcentaje de la faceta tecnológica
+  .PORCENTAJE_PUNTUACION     0.00 # Porcentaje de la faceta de puntuación - solamente para países imperiales
+ ]
+ 
+ .PERFIL_SECUNDARIO
+ [
+  # El perfil secundario sirve para definir el comportamiento primario en varios apartados   
+  
+  # La temeridad de un jugador indica cuánto arriesga al mandar tropas a una guerra.
+  # Una temeridad alta hace que el jugador mande a la guerra muchas de las tropas que estaba usando
+  # para defender su territorio, dejándolo más susceptible a ser atacado por otros, mientras
+  # que una temeridad baja hará que el jugador dé preferencia a defender su territorio frente a
+  # mandar más tropas a la batalla. 
+  # El valor de la temeridad debe estar entre 0 (mínima temeridad: no ataca a no ser que tenga 
+  # todos sus territorios perfectamente defendidos) y 1 (máxima temeridad: puede llegar a dejar
+  # todos sus territorios indefensos por volcar más tropas en la guerra). No es recomendable
+  # asignar un valor mayor de 0.5 a este valor.
+  .TEMERIDAD 0.2
+  
+  .MODIFICADOR_ANEXION_EASY 5.0
+  
+  # Es el umbral superior de hostilidad media dentro del cual no declararemos la guerra sino que invadiremos
+  .UMBRAL_HOSTILIDAD_DECLARACION_GUERRA 25.0
+  
+  .PREFERENCIA_CONSTRUCCION
+  [
+   # Sirve para indicar el interes de un jugador en la creacion de distintos tipos
+   # de construibles: edificios, batallones y barcos. Estas preferencias indican 
+   # simplemente la categoría de construibles que más interesa al jugador. Más adelante
+   # se refinan las preferencias concretas del jugador dentro de cada categoría.
+   
+   .PORCENTAJE_CONSTRUCCION_EDIFICIOS   0.33    # Preferencia por la construcción de edificios
+   .PORCENTAJE_CONSTRUCCION_BATALLONES  0.33    # Preferencia por la formación de batallones
+   .PORCENTAJE_CONSTRUCCION_BARCOS      0.33    # Preferencia por la construcción de barcps
+  ]
+
+  .PREFERENCIA_INVESTIGACION  
+  [
+    # Preferencias que tiene un jugador en la investigacion de las distintas ramas tecnologicas.
+    # Estas preferencias tambien se utilizaran para tomar otras decisiones en donde se vean involucrados
+    # edificios (los cuales, a su vez, estaran vinculados a diferentes ramas tecnologicas).  
+  
+   .PORCENTAJE_RAMA_COMERCIAL       0.25 # Porcentaje del interes en la investigacion de la rama comercial
+   .PORCENTAJE_RAMA_POLITICA        0.25 # Porcentaje del interes en la investigacion de la rama politica
+   .PORCENTAJE_RAMA_MILITAR         0.25 # Porcentaje del interes en la investigacion de la rama militar
+   .PORCENTAJE_RAMA_RECURSOS        0.25 # Porcentaje del interes en la investigacion de la rama de recursos
+  ]
+  
+  .PREFERENCIA_BATALLONES
+  [
+    # Preferencias que tiene un jugador en la formación de los distintos tipos de batallones.
+    # En esta lista se incluirán también los tipos de tropas autóctonas de todos los países, de tal manera
+    # que si el imperio consigue conquistar otro país que puede producir tropas autóctonas entonces pueda
+    # decidir producirlas.
+    # Nota: - No es necesario que estos valores sumen 1. Solamente importará la relación entre ellos.
+    
+    .CAB_CORACERO     1.0
+    .CAB_DRAGON       1.0
+    .CAB_ELITE        1.0
+    .CAB_HUSAR        1.0
+    .CAB_LANCERO      1.0
+    .CAM_LANCERO      1.0
+    .CAM_TIRADOR      1.0
+    .CANON            1.0
+    .CANON_CAB        1.0
+    .CANON_CAMP       1.0
+    .CAZADOR          1.0
+    .ELITE            1.0
+    .FUSILERO         1.0
+    .GRANADERO        1.0
+    .MILICIA          1.0
+    .MORTERO          1.0
+    .OBUS             1.0
+    .OBUS_CAB         1.0
+    .TIRADOR          1.0
+    .TENIENTE         1.0
+    .CAPITAN          1.15
+    .GENERAL          1.30
+    .MARISCAL         1.45
+  ]
+  
+  .PREFERENCIA_BARCOS
+  [
+    # Preferencias que tiene un jugador en la construcción de los distintos tipos de barcos militares
+    
+    .CORBETA          0.33
+    .FRAGATA          0.33
+    .NAVIO            0.33
+  ]
+  
+  .PREFERENCIA_GOBIERNOS
+  [
+    # Preferencia que un jugador tiene por los distintos sistemas de gobierno.
+    # Para cada jugador habra que poner al menos un sistema de gobierno preferido en las eras 2 y 3.
+    # La IA eligira, para cada era, un gobierno segun la diversidad de gobiernos que haya en el juego
+    # y un factor aleatorio.
+    # La importancia de cada valor (diversidad y factor aleatorio) se podra definir de manera individual
+    # para cada jugador. La suma de los pesos ha de valer 100
+    # Las etiquetas que distinguen los distintos sitemas de gobierno son las siguientes:     
+    # LTEXT_RAMA_IIA  -> Democracia
+    # LTEXT_RAMA_IIB  -> Absolutismo
+    # LTEXT_RAMA_IIIA -> República
+    # LTEXT_RAMA_IIIC -> Monarquía Parlamentaria
+    # LTEXT_RAMA_IIIB -> Monarquía Absoluta    
+    # LTEXT_RAMA_IIID -> Dictadura
+    
+    .PESOS_FORMULA_ELECCION_GOBIERNO 
+    [ 
+     .DIVERSIDAD   45.0 
+     .AFINIDAD     45.0
+     .ALEATORIEDAD 10.0      
+    ]
+    
+    .GOBIERNOS_ERA_2 
+    [ 
+     LTEXT_RAMA_IIA 
+     LTEXT_RAMA_IIB 
+    ]
+    
+    .GOBIERNOS_ERA_3 
+    [
+     LTEXT_RAMA_IIIA  
+     LTEXT_RAMA_IIIB 
+     LTEXT_RAMA_IIIC 
+     LTEXT_RAMA_IIID
+    ]
+  ]
+  
+  # Los recursos cotizan a un valor para la IA dependiendo la oferta y la demanda
+  # si se usan tantos recursos como se tienen este valor es 1.0 si se necesitan
+  # el doble seria 2.0, etc. Consideraremos que este valor es un problema a partir
+  # de cierto limite (siempre debe ser mayor de 1.0)
+  .VALOR_COTIZACION_RECURSO_PROBLEMATICO 1.3
+
+  
+ ]
+ 
+]

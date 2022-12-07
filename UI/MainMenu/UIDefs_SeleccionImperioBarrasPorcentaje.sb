@@ -1,0 +1,8 @@
+# Definición del valor de las barras de porcentaje (de 0 a 100, por defecto 100)
+# .C -> Comercio, .R -> Recursos, M -> Militar, S -> Ciencia  
+  
+  .HUNGRIA     [ .C 60 .R 70 .M 70 .S 25 ]        
+  .PRUSIA      [ .C 40 .R 50 .M 70 .S 25 ]
+  .FRANCIA     [ .C 50 .R 85 .M 50 .S 25 ]
+  .RUSIA       [ .C 60 .R 75 .M 50 .S 25 ]
+  .INGLATERRA  [ .C 50 .R 65 .M 50 .S 25 ]

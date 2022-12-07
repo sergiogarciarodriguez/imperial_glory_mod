@@ -1,0 +1,159 @@
+ #############################################################################################
+ # MsgBox comun.
+ # Nota: evitar el uso de estilos, porque este control se va a usar en TODOS los modos y no tie-
+ # nen porqué estar definidos
+ #############################################################################################
+ 
+ # Se define la ventana                   
+ .ACTIVO FALSE
+ #.CENTER TRUE       
+ #.MODAL TRUE
+ 
+ # características de fundido
+ .FADE_IN TRUE
+ .FADE_OUT FALSE
+ 
+ .FADE_TIME 0.6
+ .FADE_IN_DELAY 1.0
+ 
+ .ALWAYS_FADE FALSE # esto implica que si en opciones se especifica que no se desenrollen los pergaminos este control no hará fade
+ 
+ .FONDO_VIDEO
+ [
+   .FILE "Videos/PNotificacionEdificio.bik"      
+   .U 49 .V 44 .SX 408 .SY 400 .ALPHA TRUE .PRIORITY 250
+   .LOOP FALSE .NOSOUND TRUE 
+   
+   .NOSYNC FALSE # estos vídeos deberían estar sincronizados con el sistema
+   
+   # el vídeo no recibe fundido
+   .FADE FALSE
+ ]           
+  
+ # Titulo 
+ .CAPTION
+ [
+  .XMARGEN 50 .YMARGEN 36
+  .HEIGHT 25
+  .TITLE 
+  [ 
+   .ALINEACION CENTER 
+   .TEXT " " 
+   .FONT "Fonts/Times14.fnt" 
+   .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+  
+  .MOVIBLE FALSE
+ ]
+ 
+ # Se definen los parametros de centrado de los botones
+ # Nota: - Solo trabajaremos con botones custom y por defecto
+ .BOTONES
+ [           
+  # Info de centrado automatico
+  .CENTER
+  [                   
+   .YMARGEN 325
+   .XSPACE  8   
+  ]                   
+ ] # ~ BOTONES         
+ 
+ # Se definen los parametros para el trabajo con los botones del MessageBox (MB)
+ .MB_BUTTONS  
+ [
+   .TIPO UIC_BOTONTEXTO
+   
+   .COMPORTAMIENTO SIMPLE
+   
+   .SOLTADO [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+   .SELECCIONADO [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+   .PULSADO [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+   
+   .TEXT " "
+   
+   .FONT "Fonts/Times12.fnt"
+     
+   .FONDO
+   [ 
+     .SX 139 .SY 39
+     .ALPHA TRUE          
+     .SOLTADO      [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 113 .V 329 ]
+     .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 113 .V 375 ]
+     .PULSADO      [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 255 .V 375 ]                      
+     #.DISABLE      [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 255 .V 329 ]                      
+   ]              
+                     
+   .CENTER_AREA [ .X1 0 .Y1 0 .X2 139 .Y2 39 ]
+   
+   .IDSELECTSOUND "S_FXUI_CLICKBUTTON"
+   .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"  
+   
+   .KEY [ .TECLA KEY_RETURN .EVENTOS [ KEY_DOWN KEY_UP ] ]       #.LIST [ "Yes" "No" "Cancel" ]
+ ]
+ 
+ # Texto
+ .TEXT 
+ [
+  .CENTER
+  [
+   .YTOPMARGEN   77
+   .YBASEMARGEN  89
+   .XLEFTMARGEN  38
+   .XRIGHTMARGEN 40
+  ]   
+    
+  #.ALIGN CENTER
+  
+  .TEXT [ .FONT "Fonts/Times12.fnt" .COLOR [ .R 255 .G 255 .B 255 ] .MSG  " " ]
+  
+  .VDX 329 .VDY 5
+  .VSX  6  .VSY 216
+  .SLIDER_VERTICAL
+  [
+    .FILE "Game/UI/Comun/ControlesStandard.tga" 
+    .SX 2 .SY 15 .U 59 .V 200 .HORIZONTAL FALSE .ALPHA TRUE .PRIORITY 251
+      
+      # Boton 1
+    .BTN_1
+    [ .TIPO UIC_BOTONGRAFICO
+      .COMPORTAMIENTO SIMPLE 
+      .FONDO
+      [
+        .SX 14 .SY 15 .ALPHA TRUE    
+        .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 4 .V 200 ]
+        .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 22 .V 200 ]
+        .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 40 .V 200 ]
+      ]
+    ]
+  
+    # Boton 2                
+    .BTN_2
+    [ .TIPO UIC_BOTONGRAFICO
+      .COMPORTAMIENTO SIMPLE
+      .FONDO
+      [
+        .SX 14 .SY 15 .ALPHA TRUE
+        .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 4 .V 219  ] 
+        .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 22 .V 219 ]
+        .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 40 .V 219 ]
+      ]
+    ]
+  
+    # Boton central
+    .BTN_CENTRAL
+    [ .TIPO UIC_BOTONGRAFICO
+      .COMPORTAMIENTO SIMPLE    
+      .FONDO
+      [
+        .SX 20 .SY 21 .ALPHA TRUE
+        .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 4 .V 99 ]
+        .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 30 .V 99 ]
+        .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 56 .V 99 ]
+      ]
+    ]    
+  ]    
+ ]
+ 
+ # Posición sobre la que se centrará el icono gráfico(relativa a el diálogo)
+ .ICON_CENTER_X 204 .ICON_CENTER_Y 77
+ .ICON_CAPTION_X 50 .ICON_CAPTION_Y 32

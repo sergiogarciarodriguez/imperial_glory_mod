@@ -1,0 +1,48 @@
+ #############################################################################################
+ # Ventana utilizada para mostrar info de debug asociada a generadores.
+ # Constara de la ventana y un ListBox con Slider vertical.
+ # Sera modal y en caso de estar activada llevara el rastreo de lo que se produzca
+ #############################################################################################
+ 
+ # Se define la ventana                   
+ .ACTIVO FALSE
+ .CENTER FALSE       
+ .MODAL FALSE
+ 
+ .FONDO_TILEADO 
+ [
+  .MODO_TILEADO CENTRAL  
+  .IMG_CENTRAL [ .FILE "Game/UI/ModeloBatalla/DummyDialogMessageBoxBatalla.tga" .U 44 .V 47 .SX 39 .SY 42 .ALPHA TRUE .PRIORITY 0 ]
+  .X 0 .Y 0 
+  .ANCHO 300
+  .ALTO  170
+ ]              
+  
+ # Titulo 
+ .CAPTION
+ [
+  .XMARGEN 5 .YMARGEN 4
+  .HEIGHT 23
+  .TITLE 
+  [ 
+   .ALINEACION CENTER 
+   .TEXT "Info Generadores" 
+   .FONT "Fonts/Default.fnt" 
+   .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+  .MOVIBLE FALSE
+ ]        
+ 
+ # Controles
+ .CONTROLES
+ [ 
+  [ .TIPO UIC_LISTBOXTEXT .ID 'DLBG'
+    .PARAMS
+    [
+     .PRIORITY 0
+     .X 5 .Y 29 .SX 289 .SY 137  
+     .TEXT [ .FONT "Fonts/Times12.fnt" .SCALE 0.8 .COLOR [ .R 255 .G 225 .B 225 ] ]  
+     .SLIDER_VERTICAL [ .SUBTIPO "Game/UI/Comun/UIDefs_DefinicionSliderVertical.sb" ]            
+    ]
+   ]   
+ ] 

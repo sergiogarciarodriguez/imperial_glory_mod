@@ -1,0 +1,101 @@
+#########################################################################################
+# Contiene los valores de afinidad entre regimenes politicos
+#########################################################################################
+
+# TABLA INDEXADA POR DESTINATARIO DE UN TRATADO
+
+.ETIQUETAS
+[
+  .PRE_REVOLUCIONARIO        "LTEXT_RAMA_I"    
+  .DEMOCRACIA                "LTEXT_RAMA_IIA"  
+  .ABSOLUTISMO               "LTEXT_RAMA_IIB" 
+  .REPUBLICA                 "LTEXT_RAMA_IIIA" 
+  .MONARQUIA_ABSOLUTA        "LTEXT_RAMA_IIIB" 
+  .MONARQUIA_PARLAMENTARIA   "LTEXT_RAMA_IIIC" 
+  .DICTADURA                 "LTEXT_RAMA_IIID" 
+]
+
+
+# Las afinidades representan lo tolerantes que son unos sistemas de gobierno con otros.
+# La afinidad máxima es 1.0, mientras que la mínima es 0.0
+.AFINIDADES
+[
+  .PRE_REVOLUCIONARIO
+  [
+    .PRE_REVOLUCIONARIO        1.0
+    .ABSOLUTISMO               0.7
+    .DICTADURA                 0.6
+    .MONARQUIA_ABSOLUTA        0.5
+    .DEMOCRACIA                0.7
+    .REPUBLICA                 0.6
+    .MONARQUIA_PARLAMENTARIA   0.5
+  ]
+  
+  .ABSOLUTISMO
+  [
+    .PRE_REVOLUCIONARIO        0.6
+    .ABSOLUTISMO               1.0
+    .DICTADURA                 0.8
+    .MONARQUIA_ABSOLUTA        1.0
+    .DEMOCRACIA                0.6
+    .REPUBLICA                 0.5
+    .MONARQUIA_PARLAMENTARIA   0.4
+  ]
+  
+  .DICTADURA
+  [
+    .PRE_REVOLUCIONARIO        0.5
+    .ABSOLUTISMO               0.8
+    .DICTADURA                 1.0
+    .MONARQUIA_ABSOLUTA        1.0
+    .DEMOCRACIA                0.6
+    .REPUBLICA                 0.4
+    .MONARQUIA_PARLAMENTARIA   0.3
+  ]
+  
+  .MONARQUIA_ABSOLUTA
+  [
+    .PRE_REVOLUCIONARIO        0.4
+    .ABSOLUTISMO               0.7
+    .DICTADURA                 0.8
+    .MONARQUIA_ABSOLUTA        1.0
+    .DEMOCRACIA                0.4
+    .REPUBLICA                 0.3
+    .MONARQUIA_PARLAMENTARIA   0.2
+  ]
+  
+  .DEMOCRACIA
+  [
+    .PRE_REVOLUCIONARIO        0.7
+    .ABSOLUTISMO               0.7
+    .DICTADURA                 0.6
+    .MONARQUIA_ABSOLUTA        0.5
+    .DEMOCRACIA                1.0
+    .REPUBLICA                 0.9
+    .MONARQUIA_PARLAMENTARIA   1.0
+  ]
+  
+  .REPUBLICA
+  [
+    .PRE_REVOLUCIONARIO        0.6
+    .ABSOLUTISMO               0.6
+    .DICTADURA                 0.5
+    .MONARQUIA_ABSOLUTA        0.4
+    .DEMOCRACIA                0.8
+    .REPUBLICA                 1.0
+    .MONARQUIA_PARLAMENTARIA   1.0
+  ]
+  
+  .MONARQUIA_PARLAMENTARIA
+  [
+    .PRE_REVOLUCIONARIO        0.5
+    .ABSOLUTISMO               0.5
+    .DICTADURA                 0.4
+    .MONARQUIA_ABSOLUTA        0.3
+    .DEMOCRACIA                0.8
+    .REPUBLICA                 0.9
+    .MONARQUIA_PARLAMENTARIA   1.0
+  ]
+]
+
+

@@ -1,0 +1,59 @@
+#
+# Estilo del panel de oroBoton
+#
+#
+
+# Fondo panel OroBoton
+[ .TIPO UIC_BITMAP .ID 'FOBO' 
+  .PARAMS 
+  [ 
+    .X 0 .Y 244 .U 1 .V 215 .SX 283 .SY 151 
+    .FILE "Game/UI/ModeloGestion/Diplomacia/VentanasDiplomacia.tga" 
+    .ALPHA TRUE 
+    .PRIORITY 2
+  ]
+] # ~BITMAP 
+
+[ .TIPO UIC_SPIN .ID 'SPOR'
+  .PARAMS
+  [  .X 785 .Y 300 .MIN 0 .MAX 50 .INCREMENTO 10 .VALUE 0 .TIMEOUT 2
+    %Game/UI/ModeloGestion/Diplomacia/UIDefs_SpinDiplomaciaORO.sb
+  ]
+]
+
+# Label ofrecer
+[ .TIPO UIC_TEXT .ID 'LBMS'
+  .PARAMS 
+  [ 
+    .ALIGN CENTER
+    .TEXT LTEXT_DIPLOMACIA_OFRECER
+    .FONT "Fonts/Times14.fnt"
+    .X 840 .Y 265 .SCALE 1.0 
+  	.COLOR [ .R 255 .G 255 .B 255 ] 
+  ]    	
+] 
+
+# CheckBox Territorios ofertados
+[ .TIPO UIC_CHECKBOX
+  .ID 'CBOT'
+  .PARAMS
+  [
+    .COMPORTAMIENTO FIJO
+    .STYLE DEFAULT_DIPLOMACIA_BUTTON_GRANDE
+    .FONDO [ .X 36 .Y 346 ]
+    
+    .IDSELECTSOUND "S_FXUI_CLICKBUTTON"                    
+    
+    .TEXT LTEXT_DIPLOMACIA_TERRITORIOS_CEDER
+    .CENTER_AREA [ .X 0 .Y 0 .SX 209 .SY 39 ]    
+    .SOLTADO [ .COLOR [ .R 0 .G 0 .B 0 ] ]
+    .PULSADO [ .COLOR [ .R 0 .G 0 .B 0 ] ]
+    .SELECCIONADO [ .COLOR [ .R 0 .G 0 .B 0 ] ]
+    .DISABLE [ .COLOR [ .R 0 .G 0 .B 0 ] ]
+    .TOOL_TIP 
+    [ 
+      .TEXT LTEXT_DIPLOMACIA_TERRITORIOS_CEDER
+      %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+    ]       
+  ]
+] # ~CheckBox TERRITORIOS OFERTADOS

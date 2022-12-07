@@ -1,0 +1,154 @@
+#############################################################################################
+# Representa el cuerpo PARAMS del control encargado de mostrar el panel de los botones
+# de los modulos de gestion.
+#############################################################################################
+
+# Imagen de fondo
+.FONDO
+[
+  .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" 
+  .U 744 .V 878 .SX 153 .SY 146
+  .X 744 .Y 622 .ALPHA TRUE 
+]
+
+# Posiciones
+.POSICIONES
+[
+ .INICIAL     [ .X 778 .Y 638 ]
+ .INCREMENTOS [ .X 0   .Y 20  ]
+]
+
+# Botones
+.BOTONES
+[
+ # Boton Tech 
+ [  
+  .ID 'PMGH'
+  .BOTON 
+  [
+   .COMPORTAMIENTO SIMPLE
+   .SOLTADO [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+   .PULSADO [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+   .KEY
+    [
+     .TECLA KEY_T .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ]          
+    ]   
+   .TEXT LTEXT_UI_GESTION_PMGEST_TECH  
+   .FONT "Fonts/Default.fnt" .SCALE 1.0 
+   .FONDO
+   [
+    .SX 107 .SY 20 .ALPHA TRUE .PRIORITY 1
+    .SOLTADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 116 .V 674  ] 
+    .PULSADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 226 .V 674  ]        
+   ]     
+   .CENTER_AREA [ .X1 0 .Y1 0 .X2 107 .Y2 20 ]
+  ]
+ ]
+ 
+ # Boton Army
+ [
+  .ID 'PMGA'
+  .BOTON 
+  [
+   .COMPORTAMIENTO SIMPLE
+   .SOLTADO [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+   .PULSADO [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+   
+   .TEXT LTEXT_UI_GESTION_PMGEST_ARMY
+   .FONT "Fonts/Default.fnt" .SCALE 1.0 
+   .FONDO
+   [
+    .SX 107 .SY 20 .ALPHA TRUE .PRIORITY 1
+    .SOLTADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 116 .V 697 ] 
+    .PULSADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 226 .V 697 ]    
+   ]     
+   .CENTER_AREA [ .X1 0 .Y1 0 .X2 107 .Y2 20 ]
+  ]
+ ]
+ 
+ # Boton Troops
+ [
+  .ID 'PMGT'
+  .BOTON 
+  [
+   .COMPORTAMIENTO SIMPLE
+   .SOLTADO [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+   .PULSADO [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+ 
+   .TEXT LTEXT_UI_GESTION_PMGEST_TROOPS
+   .FONT "Fonts/Default.fnt" .SCALE 1.0 
+   .FONDO
+   [
+    .SX 107 .SY 20 .ALPHA TRUE .PRIORITY 1
+    .SOLTADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 116 .V 720 ] 
+    .PULSADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 226 .V 720 ]    
+   ]     
+   .CENTER_AREA [ .X1 0 .Y1 0 .X2 107 .Y2 20 ]
+  ]
+ ]
+ 
+ # Boton Diplomacy
+ [
+  .ID 'PMGD'
+  .BOTON 
+  [
+   .COMPORTAMIENTO SIMPLE
+   .SOLTADO [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+   .PULSADO [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+   
+   .TEXT LTEXT_UI_GESTION_PMGEST_DIPLOMACY
+   .FONT "Fonts/Default.fnt" .SCALE 1.0 
+   .FONDO
+   [
+    .SX 107 .SY 20 .ALPHA TRUE .PRIORITY 1
+    .SOLTADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 116 .V 743 ] 
+    .PULSADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 226 .V 743 ]    
+   ]   
+   .CENTER_AREA [ .X1 0 .Y1 0 .X2 107 .Y2 20 ]  
+  ]
+ ]
+ 
+ # Boton Commerce
+ [
+  .ID 'PMGC'
+  .BOTON 
+  [
+   .COMPORTAMIENTO SIMPLE
+   .SOLTADO [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+   .PULSADO [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+   
+   .TEXT LTEXT_UI_GESTION_PMGEST_COMMERCE
+   .FONT "Fonts/Default.fnt" .SCALE 1.0 
+   .FONDO
+   [
+    .SX 107 .SY 20 .ALPHA TRUE .PRIORITY 1
+    .SOLTADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 116 .V 766 ] 
+    .PULSADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 226 .V 766 ]    
+   ]   
+   .CENTER_AREA [ .X1 0 .Y1 0 .X2 107 .Y2 20 ] 
+  ]
+ ]
+ 
+ # Boton Quests
+ [
+  .ID 'PMGQ'
+    .BOTON 
+  [
+   .COMPORTAMIENTO SIMPLE
+   .SOLTADO [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+   .PULSADO [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+   
+   .TEXT LTEXT_UI_GESTION_PMGEST_QUESTS
+   .FONT "Fonts/Default.fnt" .SCALE 1.0 
+   .FONDO
+   [
+    .SX 107 .SY 20 .ALPHA TRUE .PRIORITY 1
+    .SOLTADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 116 .V 789 ] 
+    .PULSADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 226 .V 789 ]    
+   ]    
+   .CENTER_AREA [ .X1 0 .Y1 0 .X2 107 .Y2 20 ] 
+  ]
+ ]
+
+
+]

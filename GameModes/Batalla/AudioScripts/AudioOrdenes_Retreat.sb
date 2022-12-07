@@ -1,0 +1,77 @@
+  #===============================================================================
+  # S_RETREAT_INF
+  #===============================================================================
+  [ 
+    .IDNAME "S_RETREAT_INF_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/InfantryCommander/Inf_retreat_retreat.ogg" "Audio/Voices/Francia/InfantryCommander/Inf_retreat_retire.ogg"
+            "Audio/Voices/Francia/InfantryCommander/Inf_retreat_fallback.ogg" "Audio/Voices/Francia/InfantryCommander/Inf_retreat_fallbackcolours.ogg"
+            "Audio/Voices/Francia/InfantryCommander/Inf_retreat_retireenemy.ogg" "Audio/Voices/Francia/InfantryCommander/Inf_retreat_fallbackfacing.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_RETREAT_INF_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/InfantryCommander/Inf_retreat_retreat.ogg" "Audio/Voices/Inglaterra/InfantryCommander/Inf_retreat_retire.ogg"
+            "Audio/Voices/Inglaterra/InfantryCommander/Inf_retreat_fallback.ogg" "Audio/Voices/Inglaterra/InfantryCommander/Inf_retreat_fallbackcolours.ogg"
+            "Audio/Voices/Inglaterra/InfantryCommander/Inf_retreat_retireenemy.ogg" "Audio/Voices/Inglaterra/InfantryCommander/Inf_retreat_fallbackfacing.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_RETREAT_INF_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/InfantryCommander/Inf_retreat_retreat.ogg" "Audio/Voices/Austria/InfantryCommander/Inf_retreat_retire.ogg"
+            "Audio/Voices/Austria/InfantryCommander/Inf_retreat_fallback.ogg" "Audio/Voices/Austria/InfantryCommander/Inf_retreat_fallbackcolours.ogg"
+            "Audio/Voices/Austria/InfantryCommander/Inf_retreat_retireenemy.ogg" "Audio/Voices/Austria/InfantryCommander/Inf_retreat_fallbackfacing.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_RETREAT_INF_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/InfantryCommander/Inf_retreat_retreat.ogg" "Audio/Voices/Rusia/InfantryCommander/Inf_retreat_retire.ogg"
+            "Audio/Voices/Rusia/InfantryCommander/Inf_retreat_fallback.ogg" "Audio/Voices/Rusia/InfantryCommander/Inf_retreat_fallbackcolours.ogg"
+            "Audio/Voices/Rusia/InfantryCommander/Inf_retreat_retireenemy.ogg" "Audio/Voices/Rusia/InfantryCommander/Inf_retreat_fallbackfacing.ogg"]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_RETREAT_INF_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/InfantryCommander/Inf_retreat_retreat.ogg" "Audio/Voices/Prusia/InfantryCommander/Inf_retreat_retire.ogg"
+            "Audio/Voices/Prusia/InfantryCommander/Inf_retreat_fallback.ogg" "Audio/Voices/Prusia/InfantryCommander/Inf_retreat_fallbackcolours.ogg"
+            "Audio/Voices/Prusia/InfantryCommander/Inf_retreat_retireenemy.ogg" "Audio/Voices/Prusia/InfantryCommander/Inf_retreat_fallbackfacing.ogg"]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  
+  #===============================================================================
+  # S_RETREAT_CAB
+  #===============================================================================
+  [ 
+    .IDNAME "S_RETREAT_CAB_FRANCIA"     
+    .PATH [ "Audio/Voices/Francia/CavalryCommander/Cav_retreat_retreat.ogg" "Audio/Voices/Francia/CavalryCommander/Cav_retreat_retire.ogg"
+            "Audio/Voices/Francia/CavalryCommander/Cav_retreat_fallback.ogg" "Audio/Voices/Francia/CavalryCommander/Cav_retreat_fallbackcolours.ogg"
+            "Audio/Voices/Francia/CavalryCommander/Cav_retreat_retireenemy.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_RETREAT_CAB_INGLATERRA"     
+    .PATH [ "Audio/Voices/Inglaterra/CavalryCommander/Cav_retreat_retreat.ogg" "Audio/Voices/Inglaterra/CavalryCommander/Cav_retreat_retire.ogg"
+            "Audio/Voices/Inglaterra/CavalryCommander/Cav_retreat_fallback.ogg" "Audio/Voices/Inglaterra/CavalryCommander/Cav_retreat_fallbackcolours.ogg"
+            "Audio/Voices/Inglaterra/CavalryCommander/Cav_retreat_retireenemy.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_RETREAT_CAB_AUSTRIA"     
+    .PATH [ "Audio/Voices/Austria/CavalryCommander/Cav_retreat_retreat.ogg" "Audio/Voices/Inglaterra/CavalryCommander/Cav_retreat_retire.ogg"
+            "Audio/Voices/Inglaterra/CavalryCommander/Cav_retreat_fallback.ogg" "Audio/Voices/Inglaterra/CavalryCommander/Cav_retreat_fallbackcolours.ogg"
+            "Audio/Voices/Inglaterra/CavalryCommander/Cav_retreat_retireenemy.ogg" ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_RETREAT_CAB_RUSIA"     
+    .PATH [ "Audio/Voices/Rusia/CavalryCommander/Cav_retreat_retreat.ogg" "Audio/Voices/Rusia/CavalryCommander/Cav_retreat_retire.ogg" 
+            "Audio/Voices/Rusia/CavalryCommander/Cav_retreat_fallback.ogg" "Audio/Voices/Rusia/CavalryCommander/Cav_retreat_fallbackcolours.ogg"
+            "Audio/Voices/Rusia/CavalryCommander/Cav_retreat_retireenemy.ogg"]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]
+  [ 
+    .IDNAME "S_RETREAT_CAB_PRUSIA"     
+    .PATH [ "Audio/Voices/Prusia/CavalryCommander/Cav_retreat_retreat.ogg" "Audio/Voices/Prusia/CavalryCommander/Cav_retreat_retire.ogg"
+            "Audio/Voices/Prusia/CavalryCommander/Cav_retreat_fallback.ogg" "Audio/Voices/Prusia/CavalryCommander/Cav_retreat_fallbackcolours.ogg"
+            "Audio/Voices/Prusia/CavalryCommander/Cav_retreat_retireenemy.ogg"  ]
+    .TYPE ACK .GENERIC FALSE .3D TRUE  .TRANSPOSE 2 .POLYPHONY 1
+  ]

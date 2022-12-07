@@ -1,0 +1,120 @@
+# -- Botones de las pestañas para Infantería, Caballeria, Artilleria, Mandos y Barcos de los paneles de la ventana de construcción de tropas
+.CHECKBOXES
+[      
+  #  - Botón Infanteria
+  [
+    .TIPO UIC_CHECKBOX .ID 'INFA'
+    .PARAMS
+    [
+      .X 18 .Y 93
+      .ZSENSIBLE_MANUAL [ .SX 140 .SY 21 ]
+    
+      .COMPORTAMIENTO FIJO
+      .DISABLE      [ .COLOR [ .R 150 .G 150 .B 190 ] ]
+      .SOLTADO      [ .COLOR [ .R 230 .G 200 .B 140 ] ]
+      .SELECCIONADO [ .COLOR [ .R 230 .G 200 .B 140 ] ]
+      .PULSADO      [ .COLOR [ .R 255 .G 255 .B 255 ] ]
+      
+      .FONT "Fonts/Times12.fnt"              
+      .TEXT LTEXT_UI_PESTANA_INFANTERIA
+      
+      .CENTER_AREA      [ .X1 0 .Y1 0 .X2 140 .Y2 21 ]
+      
+      .IDSELECTSOUND "S_FXUI_CLICKBUTTON"              
+    ]
+  ]
+
+  #  - Botón Caballeria
+  [
+    .TIPO UIC_CHECKBOX .ID 'CABA'
+    .PARAMS
+    [
+      .X 177 .Y 93 
+      .ZSENSIBLE_MANUAL [ .SX 140 .SY 21 ]
+     
+      .COMPORTAMIENTO FIJO
+      .DISABLE      [ .COLOR [ .R 150 .G 150 .B 190 ] ]
+      .SOLTADO      [ .COLOR [ .R 230 .G 200 .B 140 ] ]
+      .SELECCIONADO [ .COLOR [ .R 230 .G 200 .B 140 ] ]
+      .PULSADO      [ .COLOR [ .R 255 .G 255 .B 255 ] ]
+      
+      .FONT "Fonts/Times12.fnt"              
+      .TEXT LTEXT_UI_PESTANA_CABALLERIA
+      
+      .CENTER_AREA      [ .X1 0 .Y1 0 .X2 140 .Y2 21 ]
+      
+      .IDSELECTSOUND "S_FXUI_CLICKBUTTON"              
+    ]
+  ]
+
+  #  - Botón Artilleria
+  [
+    .TIPO UIC_CHECKBOX .ID 'ARTI'
+    .PARAMS
+    [
+      .X 336 .Y 93 
+      .ZSENSIBLE_MANUAL [ .SX 140 .SY 21 ]
+      
+      .COMPORTAMIENTO FIJO
+      .DISABLE      [ .COLOR [ .R 150 .G 150 .B 190 ] ]
+      .SOLTADO      [ .COLOR [ .R 230 .G 200 .B 140 ] ]
+      .SELECCIONADO [ .COLOR [ .R 230 .G 200 .B 140 ] ]
+      .PULSADO      [ .COLOR [ .R 255 .G 255 .B 255 ] ]
+      
+      .FONT "Fonts/Times12.fnt"              
+      .TEXT LTEXT_UI_PESTANA_ARTILLERIA
+      
+      .CENTER_AREA      [ .X1 0 .Y1 0 .X2 140 .Y2 21 ]
+      
+      .IDSELECTSOUND "S_FXUI_CLICKBUTTON"              
+    ]
+  ]
+  
+  #  - Botón Mandos
+  [
+    .TIPO UIC_CHECKBOX .ID 'MAND'
+    .PARAMS
+    [
+      .X 494 .Y 93 
+      .ZSENSIBLE_MANUAL [ .SX 140 .SY 21 ]
+      
+      .COMPORTAMIENTO FIJO
+      .DISABLE      [ .COLOR [ .R 150 .G 150 .B 190 ] ]
+      .SOLTADO      [ .COLOR [ .R 230 .G 200 .B 140 ] ]
+      .SELECCIONADO [ .COLOR [ .R 230 .G 200 .B 140 ] ]
+      .PULSADO      [ .COLOR [ .R 255 .G 255 .B 255 ] ]
+      
+      .FONT "Fonts/Times12.fnt"              
+      .TEXT LTEXT_UI_PESTANA_MANDOS
+      
+      .CENTER_AREA      [ .X1 0 .Y1 0 .X2 140 .Y2 21 ]
+      
+      .IDSELECTSOUND "S_FXUI_CLICKBUTTON"              
+    ]
+  ]
+  
+  #  - Botón Barcos
+  [
+    .TIPO UIC_CHECKBOX .ID 'BARC'
+    .PARAMS
+    [
+      .X 653 .Y 93 
+      .ZSENSIBLE_MANUAL [ .SX 140 .SY 21 ]
+      
+      .COMPORTAMIENTO FIJO
+      .DISABLE      [ .COLOR [ .R 150 .G 150 .B 190 ] ]
+      .SOLTADO      [ .COLOR [ .R 230 .G 200 .B 140 ] ]
+      .SELECCIONADO [ .COLOR [ .R 230 .G 200 .B 140 ] ]
+      .PULSADO      [ .COLOR [ .R 255 .G 255 .B 255 ] ]
+      
+      .FONT "Fonts/Times12.fnt"              
+      .TEXT LTEXT_UI_PESTANA_BARCOS
+      
+      .CENTER_AREA      [ .X1 0 .Y1 0 .X2 140 .Y2 21 ]
+      
+      .IDSELECTSOUND "S_FXUI_CLICKBUTTON"              
+    ]
+  ]    
+] # ~ Checkboxes
+
+.PERMITE_NINGUNA_ACTIVACION FALSE

@@ -1,0 +1,459 @@
+#################################################################################################
+# Estilos para los iconos de banderas redondas.
+# Usados en:
+# - Visor de jugadores pensando entre turnos
+# - Visor de jugadores en el apartado de diplomacia del boletín de noticias
+#################################################################################################
+
+## deshabilitados
+[
+  .KEY BANDERA_DEFAULT_IMG_DISABLE
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 5 .V 1 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_FRANCIA_IMG_DISABLE
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 1 .V 1 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_GRAN_BRETANYA_IMG_DISABLE
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 40 .V 1 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_RUSIA_IMG_DISABLE
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 79 .V 1 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_AUSTRIA_IMG_DISABLE
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 118 .V 1 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_PRUSIA_IMG_DISABLE
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 157 .V 1 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_ESPANYA_IMG_DISABLE
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 196 .V 1 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_OTOMANO_IMG_DISABLE
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 235 .V 1 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_EGIPTO_IMG_DISABLE
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 274 .V 1 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_DOS_SICILIAS_IMG_DISABLE
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 313 .V 1 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_DINAMARCA_IMG_DISABLE
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 352 .V 1 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_SUECIA_IMG_DISABLE
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 391 .V 1 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_PORTUGAL_IMG_DISABLE
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 430 .V 1 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_LOMBARDIA_IMG_DISABLE
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 469 .V 1 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_PIAMONTE_IMG_DISABLE
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 1 .V 40 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_EPAPALES_IMG_DISABLE
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 40 .V 40 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_RHELVETICA_IMG_DISABLE
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 79 .V 40 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_HANNOVER_IMG_DISABLE
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 118 .V 40 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_BATAVIA_IMG_DISABLE
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 157 .V 40 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_SAJONIA_IMG_DISABLE
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 196 .V 40 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_POLONIA_IMG_DISABLE
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 235 .V 40 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_MOLDAVIA_IMG_DISABLE
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 274 .V 40 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_MARRUECOS_IMG_DISABLE
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 313 .V 40 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_TUNEZ_IMG_DISABLE
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 352 .V 40 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_TRIPOLITANIA_IMG_DISABLE
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 391 .V 40 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+
+## normal
+[
+  .KEY BANDERA_DEFAULT_IMG_NORMAL
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 5 .V 79 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_FRANCIA_IMG_NORMAL
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 1 .V 79 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_GRAN_BRETANYA_IMG_NORMAL
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 40 .V 79 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_RUSIA_IMG_NORMAL
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 79 .V 79 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_AUSTRIA_IMG_NORMAL
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 118 .V 79 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_PRUSIA_IMG_NORMAL
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 157 .V 79 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_ESPANYA_IMG_NORMAL
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 196 .V 79 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_OTOMANO_IMG_NORMAL
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 235 .V 79 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_EGIPTO_IMG_NORMAL
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 274 .V 79 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_DOS_SICILIAS_IMG_NORMAL
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 313 .V 79 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_DINAMARCA_IMG_NORMAL
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 352 .V 79 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_SUECIA_IMG_NORMAL
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 391 .V 79 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_PORTUGAL_IMG_NORMAL
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 430 .V 79 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_LOMBARDIA_IMG_NORMAL
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 469 .V 79 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_PIAMONTE_IMG_NORMAL
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 1 .V 118 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_EPAPALES_IMG_NORMAL
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 40 .V 118 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_RHELVETICA_IMG_NORMAL
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 79 .V 118 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_HANNOVER_IMG_NORMAL
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 118 .V 118 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_BATAVIA_IMG_NORMAL
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 157 .V 118 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_SAJONIA_IMG_NORMAL
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 196 .V 118 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_POLONIA_IMG_NORMAL
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 235 .V 118 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_MOLDAVIA_IMG_NORMAL
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 274 .V 118 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_MARRUECOS_IMG_NORMAL
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 313 .V 118 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_TUNEZ_IMG_NORMAL
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 352 .V 118 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]
+
+[
+  .KEY BANDERA_TRIPOLITANIA_IMG_NORMAL
+  .PARAMS
+  [
+    .FILE "Game/UI/ModeloGestion/MiscelaneaGestion.tga"
+    .U 391 .V 118 .SX 38 .SY 38 .ALPHA TRUE
+  ]
+]

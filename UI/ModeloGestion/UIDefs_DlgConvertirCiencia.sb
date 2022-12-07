@@ -1,0 +1,168 @@
+.MODAL TRUE
+.CENTER FALSE
+
+.DEPTH 4
+
+.RELATIVE_PRIORITY FALSE
+
+.FONDO
+[
+  .X 284 .Y 241
+  .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/ConvertirCiencia.tga"
+  .SX 462 .SY 286
+  .ALPHA TRUE
+  .PRIORITY 10
+]
+
+# Titulo 
+.CAPTION
+[
+ .XMARGEN 82 .YMARGEN 42
+ .HEIGHT 30
+ .TITLE 
+ [ 
+  .ALINEACION CENTER 
+  .TEXT LTEXT_UI_CONVERTIR_CIENCIA
+  .FONT "Fonts/Times14.fnt" 
+  .COLOR [ .R 255 .G 255 .B 255 ] 
+ ]
+ .MOVIBLE FALSE
+]
+ 
+# Se definen los parametros de centrado de los botones
+# Nota: - Solo trabajaremos con botones custom y por defecto
+.BOTONES
+[           
+ # Info de centrado automatico
+ .CENTER
+ [                   
+  .YMARGEN 202
+  .XSPACE  55
+ ]                   
+ 
+ .LIST 
+ [ 
+  # usamos el estilo definido para los botones de los menús de multijugador puesto que es el mismo que el de esta pantalla,
+  # y al estar incluído en UIDefs_controlesStandard.sb podemos tener acceso a él
+  [
+   .TIPO UIC_BOTONTEXTO
+   .STYLE DEFAULT_RECTANGLE_BUTTON_SMALL
+   .TEXT LTEXT_UI_ACEPTAR
+   .ACEPTAR TRUE
+   .IDSELECTSOUND "S_ACEPTAR"      
+   .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"              
+   .KEY [ .TECLA KEY_RETURN .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ]                                                              
+  ]                   
+  
+  [
+   .TIPO UIC_BOTONTEXTO
+   .STYLE DEFAULT_RECTANGLE_BUTTON_SMALL
+   .TEXT LTEXT_UI_CANCELAR
+   .CANCELAR TRUE
+   .IDSELECTSOUND "S_CANCELAR"      
+   .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"                           
+   .KEY [ .TECLA KEY_ESCAPE .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ]                                                              
+  ]
+  
+ ]
+] # ~ BOTONES
+
+
+.CONTROLES
+[
+  # Barra de progreso discreta de ciencia
+  [
+    .TIPO UIC_BARRAPROGRESODISCRETA .ID 'BPCI'
+    .PARAMS
+    [
+      .PRIORITY 12
+      .X 189 .Y 104
+      .MAX_VALUE 13
+      .INTERSPACE_X 1
+      
+      .FRAME
+      [
+    	  .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/MenuArbolTecnologias.tga" 
+    	  .U 142 .V 892 .SX 7 .SY 24 .ALPHA TRUE
+      ]
+      
+      .HDR_FRAME
+      [
+    	  .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/MenuArbolTecnologias.tga" 
+  	    .U 152 .V 892 .SX 7 .SY 24 .ALPHA TRUE
+      ]
+      
+    ]
+  ]  
+  
+  # Bitmap de fondo para la barra de progreso
+  [
+    .TIPO UIC_BITMAP .ID 'BMBP'
+    .PARAMS
+    [
+      .PRIORITY 11
+      .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/MenuArbolTecnologias.tga" 
+      #.X 160 .Y 103      
+      #.U 1 .V 891 .SX 136 .SY 26 .ALPHA TRUE
+      .X 157 .Y 102
+      .U 1 .V 890 .SX 139 .SY 28 .ALPHA TRUE
+    ]
+
+  ]
+  
+  # Icono de ciencia a la izquierda de la barra de porcentaje de ciencia
+  [
+    .TIPO UIC_BITMAP .ID 'BMCI'
+    .PARAMS
+    [
+      .X 151 .Y 100
+      .PRIORITY 13
+      .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/ConvertirCiencia.tga" .U 19 .V 386 .ALPHA TRUE
+      .SX 37 .SY 33
+    ]
+  ]
+  
+  # Iconos de recursos a la izquierda de los diales
+  [
+    .TIPO UIC_BITMAP .ID 'BMRE'
+    .PARAMS
+    [
+      .X 82 .Y 156
+      .PRIORITY 13
+      .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/ConvertirCiencia.tga" .U 59 .V 386 .ALPHA TRUE
+      .SX 41 .SY 26
+    ]
+  ]
+  
+  [
+    .TIPO UIC_DIAL .ID 'DIOR'
+    .PARAMS
+    [
+      .X 116 .Y 165 .SX 187 .SY 11
+      .PRIORITY 11
+      .SUPERIOR [ .FILE "Game/UI/ModeloGestion/Arbol de Tecnologias/ConvertirCiencia.tga" .U 262 .V 407 .ALPHA TRUE ]
+      .BOTON [ .STYLE SQUARE_BUTTON_SMALL ]
+    ]
+  ]
+  
+  # Wraptext indicando el porcentaje de ciencia destinado a oro  
+  [ 
+    .TIPO UIC_WRAPTEXT .ID 'WTOR' 
+    .PARAMS
+    [
+      .TEXT 
+      [ 
+        .FONT "Fonts/Times9.fnt" 
+        .COLOR [ .R 255 .G 255 .B 255 ]    
+      ] 
+      
+      .ALIGN RIGHT
+      
+      .X 310 .Y 158 .SX 52 .SY 25
+      
+      .MSG " "
+    ]
+  ]             
+  
+        
+]

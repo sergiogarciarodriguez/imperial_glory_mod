@@ -1,0 +1,8 @@
+# Parámetros de botón con signo menos amarillo 
+
+.PRIORITY 10
+.SX 25 .SY 26
+.ALPHA TRUE
+.SOLTADO       [ .FILE "Game/UI/Comun/ControlesEstandar.tga" .U 35 .V 36 ]
+.PULSADO       [ .FILE "Game/UI/Comun/ControlesEstandar.tga" .U 66 .V 36 ]
+.DISABLE       [ .FILE "Game/UI/Comun/ControlesEstandar.tga" .U 4 .V 36 ]

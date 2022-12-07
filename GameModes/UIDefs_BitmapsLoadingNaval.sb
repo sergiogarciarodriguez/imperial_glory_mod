@@ -1,0 +1,5 @@
+.LOADING1 [ .FILE "Game/UI/Comun/Loading/LoadingNaval1.tga" .SX 1024 .SY 768 .ALPHA TRUE .PRIORITY 253 ]
+.LOADING2 [ .FILE "Game/UI/Comun/Loading/LoadingNaval2.tga" .SX 1024 .SY 768 .ALPHA TRUE .PRIORITY 253 ]
+.LOADING3 [ .FILE "Game/UI/Comun/Loading/LoadingNaval3.tga" .SX 1024 .SY 768 .ALPHA TRUE .PRIORITY 253 ]
+.LOADING4 [ .FILE "Game/UI/Comun/Loading/LoadingNaval4.tga" .SX 1024 .SY 768 .ALPHA TRUE .PRIORITY 253 ]
+.LOADING5 [ .FILE "Game/UI/Comun/Loading/LoadingNaval5.tga" .SX 1024 .SY 768 .ALPHA TRUE .PRIORITY 253 ]

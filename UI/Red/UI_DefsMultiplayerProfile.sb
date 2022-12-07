@@ -1,0 +1,128 @@
+########################################################################################################
+# Dialogo de perfil para partidas multiplayer
+########################################################################################################
+
+ # Se define la ventana                   
+ .CENTER TRUE       
+ .MODAL TRUE
+ .DEPTH 2
+ .ACTIVO FALSE
+ 
+.FONDO
+[  
+ .FILE "Game/UI/Red/VentanaProfile.tga" .SX 512 .SY 256 .ALPHA TRUE .PRIORITY 10
+]              
+
+  
+ # Titulo 
+ .CAPTION
+ [
+  .XMARGEN 98 .YMARGEN 28
+  .HEIGHT 40
+  .TITLE 
+  [ 
+   .ALINEACION CENTER 
+   .TEXT LTEXT_UI_MENUMULTIPLAYER_LBL_PROFILE_TITLE
+   .FONT "Fonts/Times14.fnt" 
+   .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+  .MOVIBLE FALSE
+ ]
+ 
+ # Se definen los parametros de centrado de los botones
+ # Nota: - Solo trabajaremos con botones custom y por defecto
+ .BOTONES
+ [           
+  # Info de centrado automatico
+  .CENTER
+  [                   
+   .YMARGEN 187
+   .XSPACE  69
+  ]                   
+  
+  .LIST 
+  [ 
+#   [
+#    .TIPO UIC_BOTONTEXTO
+#    .STYLE DEFAULT_MULTIPLAYER_SMALL_BUTTON   
+#    .TEXT LTEXT_UI_CANCELAR
+#    .CANCELAR TRUE
+#               
+#    .KEY [ .TECLA LKEY_MAINMENU_CANCELKEY .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ]                                                              
+#   ]
+   
+   [
+    .TIPO UIC_BOTONTEXTO
+    .STYLE DEFAULT_MULTIPLAYER_SMALL_BUTTON   
+    .TEXT LTEXT_UI_ACEPTAR
+    .ACEPTAR TRUE
+               
+    .KEY [ .TECLA LKEY_GENERIC_MB_OK_KEY  .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ]                                                              
+   ]                   
+   
+  ]
+ ] # ~ BOTONES
+ 
+ .CONTROLES
+ [
+   [
+     .TIPO UIC_BITMAP .ID 'MAR1'
+     .PARAMS
+     [
+       .X 100 .Y 31
+       .FILE "Game/UI/Red/BotonesNotificacionProfile.tga" .U 12 .V 14 .SX 310 .SY 40
+       .ALPHA TRUE
+     ]
+   ]
+   
+   [
+     .TIPO UIC_BITMAP .ID 'MAR2'
+     .PARAMS
+     [
+       .X 79 .Y 71
+       .FILE "Game/UI/Red/BotonesNotificacionProfile.tga" .U 11 .V 68 .SX 355 .SY 4
+       .ALPHA TRUE
+     ]
+   ]
+
+  [   
+  	.TIPO UIC_GESTORFOCUS .ID 'GFPR'
+    .PARAMS
+    [
+      .CONTROLES
+      [
+        # las coordenadas de posición de los controles dentro del gestor de focus no pueden ser relativas al diálogo, puesto
+        # que el gestor de foco no tiene un método setPos que se pueda propagar a sus hijos(habría que hacerlo), asi que las
+        # ponemos absolutas
+        [ 
+          .TIPO UIC_EDITBOX .ID 'EBLO'
+          .PARAMS
+          [
+            # la ponemos como filename, que nos prohibe caracteres extraños y además el espacio
+            .FILENAME TRUE
+            .FONT "Fonts/LucidaConsole11.fnt"
+            .X 378 .Y 369 .SX 280 .SY 30
+            .FONDO 
+            [
+              .FILE "Game/UI/Red/BotonesNotificacionProfile.tga" .U 10 .V 213 .SX 264 .SY 30
+              .PRIORITY 210
+              .ALPHA TRUE
+              .X 378 .Y 369
+            ]
+            
+            .MAX 18            
+          ]
+        ]
+      ] # CONTROLES DEL GESTOR DE FOCO
+      
+      .TECLAS
+      [
+        .TECLA_SIGUIENTE_FOCO [ .TECLA KEY_TAB .MKEYS [ ]        .EVENTOS [ KEY_UP KEY_DOWN ] ]
+        .TECLA_ANTERIOR_FOCO  [ .TECLA KEY_TAB .MKEYS [L_SHIFT]  .EVENTOS [ KEY_UP KEY_DOWN ] ]
+      ] # TECLAS DEL GESTOR DE FOCO   
+    ] # PARAMS
+	] # GESTOR DE FOCO 
+  
+   
+ ]
+ 

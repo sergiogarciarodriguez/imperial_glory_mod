@@ -1,0 +1,35 @@
+#######################################################################################################
+# Definición del inidicador de actividad
+#######################################################################################################
+
+.MOVIMIENTO
+[
+    .FILE "Game/UI/ModeloBatalla/InterfazPaises/Francia/IconosFrancia.tga" 
+    .U 189 .V 491 .X 3 .Y 34 .SX 16 .SY 17 
+    .PRIORITY 12 
+    .ALPHA TRUE
+]
+
+.COMBATE
+[
+    .FILE "Game/UI/ModeloBatalla/InterfazPaises/Francia/IconosFrancia.tga" 
+    .U 206 .V 491 .X 3 .Y 34 .SX 16 .SY 17 
+    .PRIORITY 12 
+    .ALPHA TRUE
+]
+
+.APOSTAR
+[
+    .FILE "Game/UI/ModeloBatalla/InterfazPaises/Francia/IconosFrancia.tga" 
+    .U 222 .V 491 .X 3 .Y 45 .SX 16 .SY 17 
+    .PRIORITY 12 
+    .ALPHA TRUE
+]
+
+.MELEE
+[
+    .FILE "Game/UI/ModeloBatalla/InterfazPaises/Francia/IconosFrancia.tga" 
+    .U 240 .V 480 .X 3 .Y 34 .SX 27 .SY 27 
+    .PRIORITY 12 
+    .ALPHA TRUE
+]

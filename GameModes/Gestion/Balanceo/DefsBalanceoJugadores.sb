@@ -1,0 +1,105 @@
+##############################################################################################
+# Fichero que recoge los modificadores concretos de balanceo para cada jugador.
+# Las secciones seran las siguientes:
+#
+# * COSTES [ ]
+#   Donde se definira, para cada jugador, un factor multiplicativo para balancear el coste 
+#   para el mismo a la hora de realizar construcciones y tecnologias de diferentes ramas.
+##############################################################################################
+
+.COSTES
+[
+ .DEFAULT
+ [
+  .MILITAR   0.27
+  .COMERCIAL 0.40
+  .RECURSOS  0.19
+  .POLITICA  0.15
+  .TROPAS    0.54
+  .BARCOS    0.2
+ ]
+
+ .JUG_FRANCIA
+ [
+  .MILITAR   0.52
+  .COMERCIAL 0.81
+  .RECURSOS  0.42
+  .POLITICA  0.32
+  .TROPAS    1.0
+  .BARCOS    0.4
+ ]
+
+ .JUG_OTOMANO
+ [
+  .MILITAR   0.39
+  .COMERCIAL 0.61
+  .RECURSOS  0.32
+  .POLITICA  0.24
+  .TROPAS    0.78
+  .BARCOS    0.3
+ ]
+
+ .JUG_TUNEZ
+ [
+  .MILITAR   0.35
+  .COMERCIAL 0.47
+  .RECURSOS  0.27
+  .POLITICA  0.24
+  .TROPAS    0.54
+  .BARCOS    0.2
+ ]
+  
+ .JUG_ESPANYA
+ [
+  .MILITAR   1.0
+  .COMERCIAL 1.0
+  .RECURSOS  1.0
+  .POLITICA  1.0
+  .TROPAS    1.0
+  .BARCOS    1.0
+ ] 
+
+ .JUG_AUSTRIA
+ [
+  .MILITAR   1.0
+  .COMERCIAL 1.0
+  .RECURSOS  1.0
+  .POLITICA  1.0
+  .TROPAS    1.0
+  .BARCOS    1.0
+ ]
+
+ .JUG_PRUSIA
+ [
+  .MILITAR   1.0
+  .COMERCIAL 1.0
+  .RECURSOS  1.0
+  .POLITICA  1.0
+  .TROPAS    1.0
+  .BARCOS    1.0
+ ]
+ 
+ .JUG_RUSIA
+ [
+  .MILITAR   1.0
+  .COMERCIAL 1.0
+  .RECURSOS  1.0
+  .POLITICA  1.0
+  .TROPAS    1.0
+  .BARCOS    1.0
+ ]
+
+ .JUG_GRAN_BRETANYA
+ [
+  .MILITAR   1.0
+  .COMERCIAL 1.0
+  .RECURSOS  1.0
+  .POLITICA  1.0
+  .TROPAS    1.0
+  .BARCOS    1.0
+ ]
+ 
+ # ....
+
+]
+

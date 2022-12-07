@@ -1,0 +1,44 @@
+#######################################################################################
+# Definición del calendario revolucionario
+# Notas:
+# - Solamente se permite poner nombre de momento a los meses
+# - De momento los meses tienen el mismo número de días, pero está prácticamente soportada
+#   la posibilidad de que tengan diferentes.
+#######################################################################################
+
+# dias que tendrá cada mes (de momento será fijo para cada mes)
+.DIAS_POR_MES 30
+  
+# meses por año y nombre de cada uno
+.MESES
+[
+  [ .MES 1 .TEXT LTEXT_GESTION_MES1 ]
+  [ .MES 2 .TEXT LTEXT_GESTION_MES2 ]
+  [ .MES 3 .TEXT LTEXT_GESTION_MES3 ]
+  [ .MES 4 .TEXT LTEXT_GESTION_MES4 ]
+  [ .MES 5 .TEXT LTEXT_GESTION_MES5 ]
+  [ .MES 6 .TEXT LTEXT_GESTION_MES6 ]
+  [ .MES 7 .TEXT LTEXT_GESTION_MES7 ]
+  [ .MES 8 .TEXT LTEXT_GESTION_MES8 ]
+  [ .MES 9 .TEXT LTEXT_GESTION_MES9 ]
+  [ .MES 10 .TEXT LTEXT_GESTION_MES10 ]
+  [ .MES 11 .TEXT LTEXT_GESTION_MES11 ]
+  [ .MES 12 .TEXT LTEXT_GESTION_MES12 ]
+]
+
+# correspondencia de un turno de juego con tiempo del calendario
+.TURNO
+[
+  .MESES 1
+]
+
+# fecha del turno 1
+.FECHA_INICIO
+[
+  # En realidad aún no se ha llegado al 1792 del calendario revolucionario. El año cristiano 1792 es el primero del calendario revolucionario, asi que,
+  # siendo precisos, el año al comenzar el juego sería el 1. 
+  
+  .ANYO 1789
+  .MES 7
+  .DIA 1
+]

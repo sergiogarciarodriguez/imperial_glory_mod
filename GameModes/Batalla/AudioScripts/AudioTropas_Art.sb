@@ -1,0 +1,115 @@
+#=======================================================================================
+# Definición de sonidos para el modelo de batalla [ TROPAS ARTILLERIA ]
+#
+# Param ".3D" es TRUE por defecto.
+#       ".LOOP" es FALSE por defecto.
+#=======================================================================================
+
+
+###-------------------------------------------------------------------------------------
+### AUDIO
+###-------------------------------------------------------------------------------------
+.AUDIO 
+[
+	[ 
+	  .IDNAME "S_ART_ANDAR"     
+	  .PATH "Audio/Battle/Fx/Troops/Artilleria_mover_corto.ogg" 
+	  .3D TRUE
+	  .LOOP TRUE
+	  .PREVENT_FLANGER TRUE
+	  .GENERIC FALSE
+	  .POLYPHONY 2
+	]
+	[ 
+	  .IDNAME "S_ART_GIRAR"     
+	  .PATH "Audio/Battle/Fx/Troops/Artilleria_girar.ogg" 
+	  .3D TRUE
+	  .LOOP TRUE
+	  .PREVENT_FLANGER TRUE
+	  .GENERIC FALSE
+	  .POLYPHONY 2
+	]
+	
+	######################################################################
+	#### Disparos ####
+	######################################################################
+	[ 
+	  .IDNAME "S_CANON_DISPARA"     
+	  .PATH [ "Audio/Battle/Fx/Combat/canon_dispara_1.ogg" 
+	          "Audio/Battle/Fx/Combat/canon_dispara_2.ogg"
+	          "Audio/Battle/Fx/Combat/canon_dispara_3.ogg"
+	          "Audio/Battle/Fx/Combat/canon_dispara_4.ogg" ]
+	  .3D TRUE
+	  .GENERIC FALSE
+	]
+	[ 
+	  .IDNAME "S_COHETE_DISPARA"     
+	  .PATH "Audio/Battle/Fx/Combat/cohete_dispara_1.ogg"
+	  .3D TRUE
+	  .GENERIC FALSE
+	]
+	[ 
+	  .IDNAME "S_OBUS_DISPARA"     
+	  .PATH [ "Audio/Battle/Fx/Combat/obus_dispara_1.ogg" 
+	          "Audio/Battle/Fx/Combat/obus_dispara_2.ogg"
+	          "Audio/Battle/Fx/Combat/obus_dispara_3.ogg"
+	          "Audio/Battle/Fx/Combat/obus_dispara_4.ogg" ]
+	  .3D TRUE
+	  .GENERIC FALSE
+	]
+	
+	######################################################################
+	#### Impactos ####
+	######################################################################
+	
+	[ 
+	  .IDNAME "S_CANON_IMPACTO"     
+	  .PATH [ "Audio/Battle/Fx/Combat/canon_standard_1.ogg" 
+	          "Audio/Battle/Fx/Combat/canon_standard_2.ogg"
+	          "Audio/Battle/Fx/Combat/canon_standard_3.ogg"
+	          "Audio/Battle/Fx/Combat/canon_standard_4.ogg" ]
+	  .3D TRUE
+	  .GENERIC FALSE
+	]
+	[ 
+	  .IDNAME "S_CANON_IMPACTO_AGUA"     
+	  .PATH [ "Audio/Battle/Fx/Combat/canon_agua_1.ogg" 
+	          "Audio/Battle/Fx/Combat/canon_agua_2.ogg"
+	          "Audio/Battle/Fx/Combat/canon_agua_3.ogg"
+	          "Audio/Battle/Fx/Combat/canon_agua_4.ogg" ]
+	  .3D TRUE
+	  .GENERIC FALSE
+	]
+	[ 
+	  .IDNAME "S_CANON_IMPACTO_DESIERTO"     
+	  .PATH [ "Audio/Battle/Fx/Combat/canon_desierto_1.ogg" 
+	          "Audio/Battle/Fx/Combat/canon_desierto_2.ogg"
+	          "Audio/Battle/Fx/Combat/canon_desierto_3.ogg"
+	          "Audio/Battle/Fx/Combat/canon_desierto_4.ogg" ]
+	  .3D TRUE
+	  .GENERIC FALSE
+	]
+	[ 
+	  .IDNAME "S_CANON_IMPACTO_NIEVE"     
+	  .PATH [ "Audio/Battle/Fx/Combat/canon_nieve_1.ogg" 
+	          "Audio/Battle/Fx/Combat/canon_nieve_2.ogg"
+	          "Audio/Battle/Fx/Combat/canon_nieve_3.ogg"
+	          "Audio/Battle/Fx/Combat/canon_nieve_4.ogg" ]
+	  .3D TRUE
+	  .GENERIC FALSE
+	]
+	[ 
+	  .IDNAME "S_COHETE_IMPACTO"     
+	  .PATH [ "Audio/Battle/Fx/Combat/cohete_standard_1.ogg" 
+	          "Audio/Battle/Fx/Combat/cohete_standard_2.ogg"
+	          "Audio/Battle/Fx/Combat/cohete_standard_3.ogg"
+	          "Audio/Battle/Fx/Combat/cohete_standard_4.ogg" ]
+	  .3D TRUE
+	  .GENERIC FALSE
+	]
+	
+	
+	
+		
+] ### !AUDIO
+

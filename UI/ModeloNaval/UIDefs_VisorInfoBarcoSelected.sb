@@ -1,0 +1,74 @@
+.BARRA_CASCO
+[
+  .X 496 .Y 656
+  .SUPERIOR [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 89 .V 68 .ALPHA TRUE ]
+  .SX 47 .SY 5
+  .PRIORITY 50
+]
+
+.BARRA_TRIPULACION
+[
+  .X 496 .Y 632
+  .SUPERIOR [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 89 .V 56 .ALPHA TRUE ]
+  .SX 47 .SY 5
+  .PRIORITY 50
+]
+
+.BARRA_VELAMEN
+[
+  .X 496 .Y 644
+  .SUPERIOR [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 89 .V 62 .ALPHA TRUE ]
+  .SX 47 .SY 5
+  .PRIORITY 50
+]
+
+.NOMBRE_BARCO
+[
+  .ALIGN CENTER
+  .TEXT [ .FONT "Fonts\MonoTypeCorsiva17.fnt" .COLOR [ .R 0 .G 0 .B 0 ] ]
+  .X 365 .Y 728 
+  .SX 294 .SY 36
+  .PRIORITY 15
+]
+
+.ESTRELLA
+[
+	.COMPORTAMIENTO MANUAL
+  .FONDO
+  [
+    .PRIORITY 55
+    .X  470 .Y  672 
+    .SX 17  .SY 15 
+    .ALPHA TRUE          
+		#.DISABLE      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 662 .V 56 ] 
+		.SOLTADO      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 662 .V 56 ] 
+		.SELECCIONADO [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 682 .V 56 ] 
+		.PULSADO      [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 642 .V 56 ] 
+  ]
+]
+
+.MAX_ESTRELLAS 5
+.ESTRELLAS_WIDTH 17
+
+.BARRAS_RECARGA
+[
+  .X 402 .Y 622
+  
+  .BARRA_BABOR
+  [
+    .X 0 .Y 0
+    .FORMATO VERTICAL
+    .PRIORITY 43
+    .SUPERIOR  [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 242 .V 56 .ALPHA TRUE] 
+    .SX 77 .SY 76
+  ]
+  
+  .BARRA_ESTRIBOR
+  [
+    .X 148 .Y 0
+    .FORMATO VERTICAL  
+    .PRIORITY 43
+    .SUPERIOR  [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 242 .V 135 .ALPHA TRUE ] 
+    .SX 77 .SY 76
+  ]  
+]

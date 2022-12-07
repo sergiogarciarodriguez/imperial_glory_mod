@@ -1,0 +1,147 @@
+#---------------------------------------
+#    Script de definición de clima
+#---------------------------------------
+#    ESCENARIO: Misk (17)
+#---------------------------------------
+.VERSION 2                          # En la versión 2 se pueden definir varios grupos de parámetros
+.CLIMA
+[
+  #-----------------
+  # Estado despejado
+  #-------------------
+  [
+	.TYPE "DESPEJADO"
+	.DURAC 10.0                     # En despejado solo afecta la duración
+  ] 	 
+
+  #-------
+  # Nieve 
+  #-------
+  [
+    .TYPE   "RAIN"
+    .ON TRUE                        # Estado de activación
+    .SOUND "OFF"
+
+    .PROB     0.2                   # Probabilidad de que llueva cada minuto
+    .INTERP   40.0                  # Tiempo de interpolación con los parámetros anteriores (en segundos)
+    .DURAC    90.0                  # Tiempo de duración del efecto
+	.TEX "textures/Nieve.tga"       # Textura de las partículas
+	.UP   20000.0                   # Altura de generacion de partículas
+	.DOWN     0.0                   # Altura de desaparicion de partículas
+	.FAR  10000.0                   # Distancia máxima de generación de partículas
+	.NEAR  1800.0                   # Distancia mínima de generación de partículas
+	.DENS     0.3                   # Densidad de partículas [0,1]
+	.FALL
+	[
+	  .SPEED 600.0                  # Velocidad media de caida
+	  .VSPEED 300.0                  # Variación de la velocidad de caida [speed - vspeed, speed + vspeed]
+	  .ANGMAX 0.2                   # Variación del angulo de caida [0 angmax]
+	]
+	.WIND
+	[
+	  .SPEED  600.0                  # Velocidad del viento
+	  .DIR     0.0                  # Dirección del viento (angulo en radianes)
+	  .VDIR   [3.2  1.13]           # Variación de la dirección [ amplitud  frecuencia_variacion ]
+	  .VSPEED [390.0  1.0]          # Variación de la velocidad [ amplitud  frecuencia_variacion ]
+	]
+	.SIZE
+	[
+	  .INCL FALSE                   # Inclinación. Si FALSE --> las partículas no se inclinan (bueno para nieve)
+	  .WH [20.0 20.0]               # [Ancho Alto] de la partícula
+	  .VWH [0.6 0.6]                # Variación máxima del tamaño [inc_ancho inc_alto] 	  
+	]
+  ]
+
+  #---------------
+  # Nieve intensa
+  #---------------
+  [
+    .TYPE   "RAIN"
+    .ON TRUE                        # Estado de activación
+    .SOUND "OFF"
+    
+    .PROB     0.2                   # Probabilidad de que llueva cada minuto
+    .INTERP   120.0                  # Tiempo de interpolación con los parámetros anteriores (en segundos)
+    .DURAC    12.0                  # Tiempo de duración del efecto
+	.TEX "textures/Nieve.tga"       # Textura de las partículas
+	.UP   20000.0                   # Altura de generacion de partículas
+	.DOWN     0.0                   # Altura de desaparicion de partículas
+	.FAR  10000.0                   # Distancia máxima de generación de partículas
+	.NEAR  1800.0                   # Distancia mínima de generación de partículas
+	.DENS     0.6                   # Densidad de partículas [0,1]
+	.FALL
+	[
+	  .SPEED 600.0                  # Velocidad media de caida
+	  .VSPEED 300.0                  # Variación de la velocidad de caida [speed - vspeed, speed + vspeed]
+	  .ANGMAX 0.2                   # Variación del angulo de caida [0 angmax]
+	]
+	.WIND
+	[
+	  .SPEED  700.0                  # Velocidad del viento
+	  .DIR     0.0                  # Dirección del viento (angulo en radianes)
+	  .VDIR   [3.2  1.13]           # Variación de la dirección [ amplitud  frecuencia_variacion ]
+	  .VSPEED [450.0  0.9]          # Variación de la velocidad [ amplitud  frecuencia_variacion ]
+	]
+	.SIZE
+	[
+	  .INCL FALSE                   # Inclinación. Si FALSE --> las partículas no se inclinan (bueno para nieve)
+	  .WH [20.0 20.0]               # [Ancho Alto] de la partícula
+	  .VWH [0.6 0.6]                # Variación máxima del tamaño [inc_ancho inc_alto] 	  
+	]
+  ]
+
+#----------------------
+  # Tormenta de Nieve
+  #----------------------
+  [
+	.TYPE  "SAND"
+	
+	.PROB      0.4               # Probabilidad
+    .INTERP    2.0                # Tiempo de interpolación con los parámetros anteriores (en segundos)
+    .DURAC   1200.0               # Tiempo de duración del efecto
+    .DENSIDAD  1.0                # Densidad del alfa respecto al de la textura [0.0 - 1.0]
+    .ROT_MAX   0.3                # Angulo máximo de rotación del plano de arena debido a la posicion/angulo de la cámara
+    .INCL_CAM  0.5                # Inclinación de la cámara a partir de la cual la rotación del plano es nula
+    .OFF_CAM  5000.0              # Distancia a la cámara a la que se produce la rotación  (si la cámara corta al plano --> aumentar)
+    
+    .TEX  "Textures/TormentaBlanca.tga"
+    .GRID_SIZE  4                 # Tamaño de la rejilla (vertices por lado)
+    
+    .WIND
+	[
+	  #------------------
+	  # Primera capa
+	  #------------------
+	  [
+		.OFFS    0.0              # Altura de la rejilla
+		.SPEED  85.0              # Velocidad del viento
+		.DIR     0.2              # Dirección del viento (angulo en radianes)
+		.VDIR   [0.1  0.9]        # Variación de la dirección [ amplitud  frecuencia_variacion ]
+		.VSPEED [35.0  0.8]       # Variación de la velocidad [ amplitud  frecuencia_variacion ]
+	  ]
+	  #------------------
+	  # Segunda capa
+	  #------------------
+	  [
+		.OFFS  -150.0             # Altura de la rejilla
+		.SPEED   40.0             # Velocidad del viento
+		.DIR      0.2             # Dirección del viento (angulo en radianes)
+		.VDIR    [0.2  0.5]       # Variación de la dirección [ amplitud  frecuencia_variacion ]
+		.VSPEED  [20.0  0.6]      # Variación de la velocidad [ amplitud  frecuencia_variacion ]
+	  ]
+	]
+  ]
+]
+
+#--------------------------------------------------
+# Para poner animales voladores en el escenario
+#--------------------------------------------------
+.FAUNA
+[
+  [.FILE "Models\Criaturas\Aves\BandadaPajarillos01.V3D" .POS [0.0 -2000.0 0.0]]
+  [.FILE "Models\Criaturas\Aves\BandadaPajarillos01.V3D" .POS [1000.0 -800.0 -10000.0]]
+  [.FILE "Models\Criaturas\Aves\BandadaPajarillos02.V3D" .POS [0.0 -3000.0 0.0]]
+  [.FILE "Models\Criaturas\Aves\BandadaPajarillos03.V3D" .POS [0.0 -1100.0 0.0]]
+  [.FILE "Models\Criaturas\Aves\BandadaPajarillos03.V3D" .POS [-6000.0 -1800.0 5000.0]]
+  [.FILE "Models\Criaturas\Aves\Halcon.V3D" .POS [0.0 1100.0 0.0]]
+]

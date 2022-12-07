@@ -1,0 +1,105 @@
+###############################################################################################################
+# Btn por defecto
+###############################################################################################################
+
+[
+ .KEY DEFAULT_CONSTRUCCION_BTN_NORMAL 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .U 881 .V 722 .ALPHA TRUE ]
+]
+
+[
+ .KEY DEFAULT_CONSTRUCCION_BTN_SMALL_NORMAL
+ .PARAMS [ .U 441 .V 365 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 44 .SY 52 .ALPHA TRUE ]
+]
+
+[
+ .KEY DEFAULT_CONSTRUCCION_BTN_SMALL_PULSADO
+ .PARAMS [ .U 441 .V 365 .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstruccionesReducidos.tga" .SX 44 .SY 52 .ALPHA TRUE ]
+]
+
+[
+ .KEY DEFAULT_CONSTRUCCION_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .U 881 .V 722 .ALPHA TRUE ]
+]
+
+[
+ .KEY DEFAULT_CONSTRUCCION_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Construcciones/IconosConstrucciones.tga" .SX 87 .SY 102 .U 881 .V 722 .ALPHA TRUE ]
+]
+
+[
+ .KEY DEFAULT_TROPA_BTN_NORMAL 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Francia/PlantillaTropasFr.tga" .SX 72 .SY 102 .U 731 .V 516 .ALPHA TRUE ]
+]
+
+[
+ .KEY DEFAULT_TROPA_BTN_SELECCIONADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Francia/PlantillaTropasFr.tga" .SX 72 .SY 102 .U 731 .V 516 .ALPHA TRUE ]
+]
+
+[
+ .KEY DEFAULT_TROPA_BTN_PULSADO
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Francia/PlantillaTropasFr.tga" .SX 72 .SY 102 .U 731 .V 516 .ALPHA TRUE ]
+]
+
+[
+ .KEY DEFAULT_TROPA_BTN_NORMAL_SMALL 
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Francia/PlantillaTropasFrMini.tga" .SX 32 .SY 45 .U 100 .V 93 .ALPHA TRUE ]
+]
+
+[
+ .KEY DEFAULT_TROPA_BTN_SELECCIONADO_SMALL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Francia/PlantillaTropasFrMini.tga" .SX 32 .SY 45 .U 331 .V 93 .ALPHA TRUE ]
+]
+
+[
+ .KEY DEFAULT_TROPA_BTN_PULSADO_SMALL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Francia/PlantillaTropasFrMini.tga" .SX 32 .SY 45 .U 100 .V 231 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY DEFAULT_BARCO_BTN_NORMAL  
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Francia/PlantillaTropasFr.tga" .SX 72 .SY 102 .U 147 .V 619 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY DEFAULT_BARCO_BTN_SELECCIONADO  
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Francia/PlantillaTropasFr.tga" .SX 72 .SY 102 .U 658 .V 619 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY DEFAULT_BARCO_BTN_PULSADO  
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Francia/PlantillaTropasFr.tga" .SX 72 .SY 102 .U 147 .V 722 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY DEFAULT_BARCO_BTN_DISABLE  
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Francia/PlantillaTropasFr.tga" .SX 72 .SY 102 .U 658 .V 722 .ALPHA TRUE ]
+]
+
+#Barcos pequeños
+[ 
+ .KEY DEFAULT_BARCO_BTN_NORMAL_SMALL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Francia/PlantillaTropasFrMini.tga" .SX 32 .SY 45 .U 1 .V 277 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY DEFAULT_BARCO_BTN_SELECCIONADO_SMALL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Francia/PlantillaTropasFrMini.tga" .SX 32 .SY 45 .U 232 .V 277 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY DEFAULT_BARCO_BTN_PULSADO_SMALL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Francia/PlantillaTropasFrMini.tga" .SX 32 .SY 45 .U 1 .V 323 .ALPHA TRUE ]
+]
+
+[ 
+ .KEY DEFAULT_BARCO_BTN_DISABLE_SMALL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Francia/PlantillaTropasFrMini.tga" .SX 32 .SY 45 .U 232 .V 323 .ALPHA TRUE ]
+]
+
+#VACIO, CUIDADO: NO USA LA TEXTURA DE LOS BARCOS PEQUEÑOS
+[
+ .KEY DEFAULT_BARCO_BTN_VACIO_SMALL
+ .PARAMS [ .FILE "Game/UI/ModeloGestion/Iconos/Tropas/Francia/PlantillaTropasFrMini.tga" .SX 32 .SY 45 .U 331 .V 93 .ALPHA TRUE ]
+]

@@ -1,0 +1,835 @@
+##############################################################################################################
+# 
+# Pantalla de seleccion de bando de partida de red
+#
+##############################################################################################################
+
+.MODAL TRUE
+.CENTER FALSE
+
+.FONDO
+[
+  .PRIORITY 10
+  .FILE "Game/UI/Red/SeleccionBando.tga"
+  .X 0 .Y 0 .U 0 .V 0 .SX 1024 .SY 768 .ALPHA TRUE
+]
+
+.CONTROLES 
+[
+  #---------------------------------------------- LABEL SELECT BANDO ----------------------------------------
+  [
+    .TIPO UIC_TEXT .ID 'LMSB'
+    .PARAMS
+    [
+      .TEXT LTEXT_UI_MENUMULTIPLAYER_LBL_SELECTBANDO
+      .ALIGN RIGHT
+      .FONT "Fonts/MonotypeCorsiva29.fnt"
+      .X 900 .Y 145 
+      .COLOR [ .R 255 .G 255 .B 255] 
+    ]
+  ]
+
+  #---------------------------------------------- LABEL GAME NAME -------------------------------------------
+  [
+    .TIPO UIC_TEXT .ID 'LGNA'
+    .PARAMS
+    [
+      .ALIGN LEFT
+      .FONT "Fonts/LucidaConsole11.fnt"
+      .X 137 .Y 221 
+      .COLOR [ .R 255 .G 255 .B 255] 
+    ]
+  ]
+
+  #---------------------------------------------- LABEL PLAYERS -------------------------------------------
+  [
+    .TIPO UIC_TEXT .ID 'L_PL'
+    .PARAMS
+    [
+ 			.TEXT LTEXT_UI_MENUMULTIPLAYER_LBL_PLAYERS   
+      .ALIGN RIGHT
+      .FONT "Fonts/Times12.fnt"
+      .X 380 .Y 243 
+      .COLOR [ .R 255 .G 255 .B 255] 
+    ]
+  ]
+
+  #---------------------------------------------- LABEL N PLAYERS -------------------------------------------
+  [
+    .TIPO UIC_TEXT .ID 'LNPL'
+    .PARAMS
+    [
+      .FONT "Fonts/Times12.fnt"
+      .X 385 .Y 243 
+      .COLOR [ .R 255 .G 255 .B 255] 
+    ]
+  ]
+
+  #---------------------------------------------- LABEL IP --------------------------------------------------
+  [
+    .TIPO UIC_TEXT .ID 'L_IP'
+    .PARAMS
+    [
+    	.ALIGN LEFT
+      .FONT "Fonts/Times11.fnt"
+      .X 138 .Y 245 
+      .COLOR [ .R 255 .G 255 .B 255] 
+    ]
+  ]
+
+  #---------------------------------------------- LABEL ATACANTES -------------------------------------------
+  [
+    .TIPO UIC_TEXT .ID 'L_IP'
+    .PARAMS
+    [
+ 			.TEXT LTEXT_UI_MAINMENU_MP_ATACANTES     
+    	.ALIGN CENTER
+      .FONT "Fonts/Times14.fnt"
+      .X 394 .Y 454 
+      .COLOR [ .R 255 .G 255 .B 255] 
+    ]
+  ]
+
+  #---------------------------------------------- LABEL DEFENSORES ------------------------------------------
+  [
+    .TIPO UIC_TEXT .ID 'L_IP'
+    .PARAMS
+    [
+ 			.TEXT LTEXT_UI_MAINMENU_MP_DEFENSORES     
+    	.ALIGN CENTER
+      .FONT "Fonts/Times14.fnt"
+      .X 644 .Y 454 
+      .COLOR [ .R 255 .G 255 .B 255] 
+    ]
+  ]
+
+  #---------------------------------------------- LABEL SELECT EMPIRE ---------------------------------------
+  [
+    .TIPO UIC_TEXT .ID 'L_ST'
+    .PARAMS
+    [
+ 			.TEXT LTEXT_UI_MAINMENU_MP_SELECTEMPIRE
+    	.ALIGN CENTER
+      .FONT "Fonts/Times23.fnt"
+      .X 760 .Y 240 
+      .COLOR [ .R 255 .G 255 .B 255] 
+    ]
+  ]
+
+  #---------------------------------------------- LABEL SELECT TEAM -----------------------------------------
+  [
+    .TIPO UIC_TEXT .ID 'L_SE'
+    .PARAMS
+    [
+ 			.TEXT LTEXT_UI_MAINMENU_MP_SELECTTEAM     
+    	.ALIGN CENTER
+      .FONT "Fonts/Times18.fnt"
+      .X 513 .Y 408 
+      .COLOR [ .R 255 .G 255 .B 255] 
+    ]
+  ]
+
+	#---------------------------------------------- WRAP TIPO BATALLA -----------------------------------------
+  [
+    .TIPO UIC_WRAPTEXT .ID 'WTB1'
+    .PARAMS
+    [
+      .ALIGN CENTER
+      .TEXT
+      [
+        .FONT "Fonts/Times17.fnt"
+        .COLOR [ .R 255 .G 255 .B 255 ]
+      ]
+      .X 140 .Y 260 .SX 256 .SY 40
+      .PRIORITY 15      
+    ]
+  ]
+
+	#---------------------------------------------- WRAP ESCENARIO --------------------------------------------
+  [
+    .TIPO UIC_WRAPTEXT .ID 'WTES'
+    .PARAMS
+    [
+      .ALIGN CENTER
+      .TEXT
+      [
+        .FONT "Fonts/Times17.fnt"
+        .COLOR [ .R 0 .G 0 .B 0 ]
+      ]
+      .X 140 .Y 282 .SX 256 .SY 40
+      .PRIORITY 17      
+    ]
+  ]
+
+	#---------------------------------------------- WRAP OBJETIVOS --------------------------------------------
+  [
+    .TIPO UIC_WRAPTEXT .ID 'WTOB'
+    .PARAMS
+    [
+      .ALIGN CENTER
+      .TEXT
+      [
+        .FONT "Fonts/Times17.fnt"
+        .COLOR [ .R 255 .G 255 .B 255 ]
+      ]
+      .X 140 .Y 310 .SX 256 .SY 40
+      .PRIORITY 15      
+    ]
+  ]
+
+	#---------------------------------------------- WRAP DINERO -----------------------------------------------
+  [
+    .TIPO UIC_WRAPTEXT .ID 'WTMO'
+    .PARAMS
+    [
+      .ALIGN CENTER
+      .TEXT
+      [
+        .FONT "Fonts/Times14.fnt"
+        .COLOR [ .R 255 .G 255 .B 255 ]
+      ]
+      .X 140 .Y 345 .SX 256 .SY 40
+      .PRIORITY 15      
+    ]
+  ]
+
+	#---------------------------------------------- WRAP IMPERIO ATACANTE -------------------------------------
+  [
+    .TIPO UIC_WRAPTEXT .ID 'WIMA'
+    .PARAMS
+    [
+      .ALIGN CENTER
+      .MSG "LTEXT_UI_MAINMENU_MP_DEFENSORES"
+      .TEXT
+      [
+        .FONT "Fonts/Times15.fnt"
+        .COLOR [ .R 255 .G 255 .B 255 ]
+      ]
+      .X 299 .Y 576 .SX 184 .SY 40
+      .PRIORITY 15      
+    ]
+  ]
+
+	#---------------------------------------------- WRAP IMPERIO DEFENSOR -------------------------------------
+  [
+    .TIPO UIC_WRAPTEXT .ID 'WIMD'
+    .PARAMS
+    [
+      .ALIGN CENTER
+      .MSG "LTEXT_UI_MAINMENU_MP_DEFENSORES"
+      .TEXT
+      [
+        .FONT "Fonts/Times15.fnt"
+        .COLOR [ .R 255 .G 255 .B 255 ]
+      ]
+      .X 551 .Y 576 .SX 184 .SY 40
+      .PRIORITY 15      
+    ]
+  ]
+
+	#---------------------------------------------- WRAP IMPERIO SELECCIONADO ---------------------------------
+  [
+    .TIPO UIC_WRAPTEXT .ID 'WIMS'
+    .PARAMS
+    [
+      .ALIGN CENTER
+      .MSG "LTEXT_UI_MAINMENU_MP_DEFENSORES"
+      .TEXT
+      [ 
+        .FONT "Fonts/Times15.fnt"
+        .COLOR [ .R 255 .G 255 .B 255 ]
+      ]
+      .X 663 .Y 340 .SX 192 .SY 40
+      .PRIORITY 15      
+    ]
+  ]
+
+	#---------------------------------------------- BOTON CANCEL ----------------------------------------------
+	[ 
+		.TIPO UIC_BOTONTEXTO .ID 'MSBX' 
+	 	.PARAMS
+	 	[ 
+	 		.STYLE DEFAULT_X_BUTTON
+	   .FONDO
+		  [
+		    .X 885 .Y 715
+			]
+      .KEY [ .TECLA LKEY_MAINMENU_CANCELKEY .EVENTOS [ KEY_DOWN KEY_UP ] ]  		  		  									
+	 	]
+	]
+	
+	#---------------------------------------------- BOTON OK --------------------------------------------------
+	[ 
+		.TIPO UIC_BOTONTEXTO .ID 'MSBK' 
+	 	.PARAMS
+	 	[ 
+	 		.STYLE DEFAULT_OK_BUTTON
+	   .FONDO
+		  [
+		    .X 935 .Y 715
+			]
+	 	]
+	]
+	
+	#---------------------------------------------- BOTON READY -----------------------------------------------
+  [ 
+  	.TIPO UIC_BOTONGRAFICO .ID 'MSBR'
+	  .PARAMS
+	  [
+	    .FONDO
+	    [
+	      .PRIORITY 215
+	      .X  502 .Y  575 
+	      .SX 32  .SY 33 
+	      .ALPHA TRUE          
+				.SOLTADO 					[ .FILE "Game/UI/Red/SeleccionBando.tga" .U 305 	.V 922 ] 
+				.SELECCIONADO   	[ .FILE "Game/UI/Red/SeleccionBando.tga" .U 340 	.V 922 ]
+				.PULSADO    			[ .FILE "Game/UI/Red/SeleccionBando.tga" .U 375 	.V 922 ]
+	     	.DISABLE					[ .FILE "Game/UI/Red/SeleccionBando.tga" .U 305 	.V 958 ]					      
+				.IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+				.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"               
+	    ]
+      .KEY [ .TECLA LKEY_MAINMENU_OPTION_SELECT .EVENTOS [ KEY_DOWN KEY_UP ] ]  	    	    					  				    
+	  ]
+	]
+	
+	#---------------------------------------------- ICONO READY AT1 -------------------------------------------
+  [ 
+  	.TIPO UIC_BOTONGRAFICO .ID 'IAT1'
+	  .PARAMS
+	  [
+	  	.COMPORTAMIENTO FIJO
+	    .FONDO
+	    [
+	      .PRIORITY 215
+	      .X  465 .Y  472 
+	      .SX 15  .SY 15 
+	      .ALPHA TRUE          
+				.SOLTADO 					[ .FILE "Game/UI/Red/SeleccionBando.tga" .U 671 	.V 806 ] 
+				.PULSADO    			[ .FILE "Game/UI/Red/SeleccionBando.tga" .U 671 	.V 824 ]
+	    ]
+	  ]
+	]
+
+	#---------------------------------------------- ICONO READY AT2 -------------------------------------------
+  [ 
+  	.TIPO UIC_BOTONGRAFICO .ID 'IAT2'
+	  .PARAMS
+	  [
+	  	.COMPORTAMIENTO FIJO
+	    .FONDO
+	    [
+	      .PRIORITY 215
+	      .X  465 .Y  487 
+	      .SX 15  .SY 15 
+	      .ALPHA TRUE          
+				.SOLTADO 					[ .FILE "Game/UI/Red/SeleccionBando.tga" .U 671 	.V 806 ] 
+				.PULSADO    			[ .FILE "Game/UI/Red/SeleccionBando.tga" .U 671 	.V 824 ]
+	    ]
+	  ]
+	]
+
+	#---------------------------------------------- ICONO READY AT3 -------------------------------------------
+  [ 
+  	.TIPO UIC_BOTONGRAFICO .ID 'IAT3'
+	  .PARAMS
+	  [
+	  	.COMPORTAMIENTO FIJO
+	    .FONDO
+	    [
+	      .PRIORITY 215
+	      .X  465 .Y  501 
+	      .SX 15  .SY 15 
+	      .ALPHA TRUE          
+				.SOLTADO 					[ .FILE "Game/UI/Red/SeleccionBando.tga" .U 671 	.V 806 ] 
+				.PULSADO    			[ .FILE "Game/UI/Red/SeleccionBando.tga" .U 671 	.V 824 ]
+	    ]
+	  ]
+	]
+
+	#---------------------------------------------- ICONO READY AT4 -------------------------------------------
+  [ 
+  	.TIPO UIC_BOTONGRAFICO .ID 'IAT4'
+	  .PARAMS
+	  [
+	  	.COMPORTAMIENTO FIJO
+	    .FONDO
+	    [
+	      .PRIORITY 215
+	      .X  465 .Y  515 
+	      .SX 15  .SY 15 
+	      .ALPHA TRUE          
+				.SOLTADO 					[ .FILE "Game/UI/Red/SeleccionBando.tga" .U 671 	.V 806 ] 
+				.PULSADO    			[ .FILE "Game/UI/Red/SeleccionBando.tga" .U 671 	.V 824 ]
+	    ]
+	  ]
+	]
+
+	#---------------------------------------------- ICONO READY DF1 -------------------------------------------
+  [ 
+  	.TIPO UIC_BOTONGRAFICO .ID 'IDF1'
+	  .PARAMS
+	  [
+	  	.COMPORTAMIENTO FIJO
+	    .FONDO
+	    [
+	      .PRIORITY 215
+	      .X  716 .Y  473 
+	      .SX 15  .SY 15 
+	      .ALPHA TRUE          
+				.SOLTADO 					[ .FILE "Game/UI/Red/SeleccionBando.tga" .U 671 	.V 806 ] 
+				.PULSADO    			[ .FILE "Game/UI/Red/SeleccionBando.tga" .U 671 	.V 824 ]
+	    ]
+	  ]
+	]
+
+	#---------------------------------------------- ICONO READY DF2 -------------------------------------------
+  [ 
+  	.TIPO UIC_BOTONGRAFICO .ID 'IDF2'
+	  .PARAMS
+	  [
+	  	.COMPORTAMIENTO FIJO
+	    .FONDO
+	    [
+	      .PRIORITY 215
+	      .X  716 .Y  487 
+	      .SX 15  .SY 15 
+	      .ALPHA TRUE          
+				.SOLTADO 					[ .FILE "Game/UI/Red/SeleccionBando.tga" .U 671 	.V 806 ] 
+				.PULSADO    			[ .FILE "Game/UI/Red/SeleccionBando.tga" .U 671 	.V 824 ]
+	    ]
+	  ]
+	]
+
+	#---------------------------------------------- ICONO READY DF3 -------------------------------------------
+  [ 
+  	.TIPO UIC_BOTONGRAFICO .ID 'IDF3'
+	  .PARAMS
+	  [
+	  	.COMPORTAMIENTO FIJO
+	    .FONDO
+	    [
+	      .PRIORITY 215
+	      .X  716 .Y  501 
+	      .SX 15  .SY 15 
+	      .ALPHA TRUE          
+				.SOLTADO 					[ .FILE "Game/UI/Red/SeleccionBando.tga" .U 671 	.V 806 ] 
+				.PULSADO    			[ .FILE "Game/UI/Red/SeleccionBando.tga" .U 671 	.V 824 ]
+	    ]
+	  ]
+	]
+
+	#---------------------------------------------- ICONO READY DF4 -------------------------------------------
+  [ 
+  	.TIPO UIC_BOTONGRAFICO .ID 'IDF4'
+	  .PARAMS
+	  [
+	  	.COMPORTAMIENTO FIJO
+	    .FONDO
+	    [
+	      .PRIORITY 215
+	      .X  716 .Y  515 
+	      .SX 15  .SY 15 
+	      .ALPHA TRUE          
+				.SOLTADO 					[ .FILE "Game/UI/Red/SeleccionBando.tga" .U 671 	.V 806 ] 
+				.PULSADO    			[ .FILE "Game/UI/Red/SeleccionBando.tga" .U 671 	.V 824 ]
+	    ]
+	  ]
+	]		
+	#---------------------------------------------- BITMAP AUSTRIA 1 ------------------------------------------
+	[ .TIPO UIC_BITMAP .ID 'BAU1' 
+	 .PARAMS 
+	 [ 
+	  .X 200 .Y 475 
+	  .FILE "Game/UI/Red/SeleccionBando.tga" .U 25 .V 926 .SX 53 .SY 57 
+	  .PRIORITY 200
+	  .ALPHA TRUE
+	 ] 
+	]
+
+	#---------------------------------------------- BITMAP AUSTRIA 2 ------------------------------------------
+	[ .TIPO UIC_BITMAP .ID 'BAU2' 
+	 .PARAMS 
+	 [ 
+	  .X 781 .Y 475 
+	  .FILE "Game/UI/Red/SeleccionBando.tga" .U 25 .V 926 .SX 53 .SY 57 
+	  .PRIORITY 200
+	  .ALPHA TRUE
+	 ] 
+	]
+
+	#---------------------------------------------- BITMAP RUSIA 1 --------------------------------------------
+	[ .TIPO UIC_BITMAP .ID 'BRU1' 
+	 .PARAMS 
+	 [ 
+	  .X 200 .Y 475 
+	  .FILE "Game/UI/Red/SeleccionBando.tga" .U 81 .V 926 .SX 53 .SY 57 
+	  .PRIORITY 200
+	  .ALPHA TRUE
+	 ] 
+	]
+
+	#---------------------------------------------- BITMAP RUSIA 2 --------------------------------------------
+	[ .TIPO UIC_BITMAP .ID 'BRU2' 
+	 .PARAMS 
+	 [ 
+	  .X 781 .Y 475 
+	  .FILE "Game/UI/Red/SeleccionBando.tga" .U 81 .V 926 .SX 53 .SY 57 
+	  .PRIORITY 200
+	  .ALPHA TRUE
+	 ] 
+	]
+
+	#---------------------------------------------- BITMAP PRUSIA 1 -------------------------------------------
+	[ .TIPO UIC_BITMAP .ID 'BPR1' 
+	 .PARAMS 
+	 [ 
+	  .X 200 .Y 475 
+	  .FILE "Game/UI/Red/SeleccionBando.tga" .U 137 .V 926 .SX 53 .SY 57 
+	  .PRIORITY 200
+	  .ALPHA TRUE
+	 ] 
+	]
+
+	#---------------------------------------------- BITMAP PRUSIA 2 -------------------------------------------
+	[ .TIPO UIC_BITMAP .ID 'BPR2' 
+	 .PARAMS 
+	 [ 
+	  .X 781 .Y 475 
+	  .FILE "Game/UI/Red/SeleccionBando.tga" .U 137 .V 926 .SX 53 .SY 57 
+	  .PRIORITY 200
+	  .ALPHA TRUE
+	 ] 
+	]
+
+	#---------------------------------------------- BITMAP GRAN BRETAÑA 1 -------------------------------------
+	[ .TIPO UIC_BITMAP .ID 'BGB1' 
+	 .PARAMS 
+	 [ 
+	  .X 200 .Y 475 
+	  .FILE "Game/UI/Red/SeleccionBando.tga" .U 193 .V 926 .SX 53 .SY 57 
+	  .PRIORITY 200
+	  .ALPHA TRUE
+	 ] 
+	]
+
+	#---------------------------------------------- BITMAP GRAN BREATAÑA 2 ------------------------------------
+	[ .TIPO UIC_BITMAP .ID 'BGB2' 
+	 .PARAMS 
+	 [ 
+	  .X 781 .Y 475 
+	  .FILE "Game/UI/Red/SeleccionBando.tga" .U 193 .V 926 .SX 53 .SY 57 
+	  .PRIORITY 200
+	  .ALPHA TRUE
+	 ] 
+	]
+
+	#---------------------------------------------- BITMAP FRANCIA 1 ------------------------------------------
+	[ .TIPO UIC_BITMAP .ID 'BFR1' 
+	 .PARAMS 
+	 [ 
+	  .X 200 .Y 475 
+	  .FILE "Game/UI/Red/SeleccionBando.tga" .U 249 .V 926 .SX 53 .SY 57 
+	  .PRIORITY 200
+	  .ALPHA TRUE
+	 ] 
+	]
+
+	#---------------------------------------------- BITMAP FRANCIA 2 ------------------------------------------
+	[ .TIPO UIC_BITMAP .ID 'BFR2' 
+	 .PARAMS 
+	 [ 
+	  .X 781 .Y 475 
+	  .FILE "Game/UI/Red/SeleccionBando.tga" .U 249 .V 926 .SX 53 .SY 57 
+	  .PRIORITY 200
+	  .ALPHA TRUE
+	 ] 
+	]
+
+			
+	#---------------------------------------------- BOTON AUSTRIA ---------------------------------------------
+	[	 	
+		.TIPO UIC_BOTONTEXTO .ID 'BAUS' 
+		.PARAMS
+		[ 
+	 		.IDSELECTSOUND 			"S_MAINMENU_OPTION_CLICK" 
+			.IDHIGHLIGHTSOUND 	"S_MAINMENU_OPTION_SELECT"         
+      .PRIORITY 15  
+      .FONDO
+			[
+				.X 735	.Y 276
+				.SOLTADO 			[ .FILE "Game/UI/Red/SeleccionBando.tga" .U 25 	.V 806 ] 
+				.SELECCIONADO	[ .FILE "Game/UI/Red/SeleccionBando.tga" .U 25 	.V 866 ]
+				.PULSADO 			[ .FILE "Game/UI/Red/SeleccionBando.tga" .U 25 	.V 926 ]
+				.SX 53 .SY 57 
+				.ALPHA TRUE  
+			]
+		]
+	]
+
+	#---------------------------------------------- BOTON RUSIA -----------------------------------------------
+	[	 	
+		.TIPO UIC_BOTONTEXTO .ID 'BRUS' 
+		.PARAMS
+		[ 
+			.IDSELECTSOUND 			"S_MAINMENU_OPTION_CLICK" 
+			.IDHIGHLIGHTSOUND 	"S_MAINMENU_OPTION_SELECT"         
+      .PRIORITY 15  
+			.FONDO
+			[
+				.X 838	.Y 276
+				.SOLTADO 			[ .FILE "Game/UI/Red/SeleccionBando.tga" .U 81 	.V 806 ] 
+				.SELECCIONADO	[ .FILE "Game/UI/Red/SeleccionBando.tga" .U 81  .V 866 ]
+				.PULSADO 			[ .FILE "Game/UI/Red/SeleccionBando.tga" .U 81  .V 926 ]
+				.SX 53 .SY 57 
+				.ALPHA TRUE  
+			]
+		]
+	]
+
+	#---------------------------------------------- BOTON PRUSIA ----------------------------------------------
+	[	 	
+		.TIPO UIC_BOTONTEXTO .ID 'BPRU' 
+		.PARAMS
+		[ 
+			.IDSELECTSOUND 			"S_MAINMENU_OPTION_CLICK" 
+			.IDHIGHLIGHTSOUND 	"S_MAINMENU_OPTION_SELECT"         
+      .PRIORITY 15  
+			.FONDO
+			[
+				.X 787	.Y 276
+				.SOLTADO 			[ .FILE "Game/UI/Red/SeleccionBando.tga" .U 137 .V 806 ] 
+				.SELECCIONADO	[ .FILE "Game/UI/Red/SeleccionBando.tga" .U 137 .V 866 ]
+				.PULSADO 			[ .FILE "Game/UI/Red/SeleccionBando.tga" .U 137 .V 926 ]
+				.SX 53 .SY 57 
+				.ALPHA TRUE  
+			]
+		]
+	]
+
+	#---------------------------------------------- BOTON GRAN BRETAÑA ----------------------------------------
+	[	 	
+		.TIPO UIC_BOTONTEXTO .ID 'BGRB' 
+		.PARAMS
+		[ 
+			.IDSELECTSOUND 			"S_MAINMENU_OPTION_CLICK" 
+			.IDHIGHLIGHTSOUND 	"S_MAINMENU_OPTION_SELECT"         
+      .PRIORITY 15  
+			.FONDO
+			[
+				.X 632	.Y 276
+				.SOLTADO 			[ .FILE "Game/UI/Red/SeleccionBando.tga" .U 193 .V 806 ] 
+				.SELECCIONADO	[ .FILE "Game/UI/Red/SeleccionBando.tga" .U 193 .V 866 ]
+				.PULSADO 			[ .FILE "Game/UI/Red/SeleccionBando.tga" .U 193 .V 926 ]
+				.SX 53 .SY 57 
+				.ALPHA TRUE  
+			]
+		]
+	]
+
+	#---------------------------------------------- BOTON FRANCIA ---------------------------------------------
+	[	 	
+		.TIPO UIC_BOTONTEXTO .ID 'BFRA' 
+		.PARAMS
+		[ 
+			.IDSELECTSOUND 			"S_MAINMENU_OPTION_CLICK" 
+			.IDHIGHLIGHTSOUND 	"S_MAINMENU_OPTION_SELECT"         
+      .PRIORITY 15  
+			.FONDO
+			[
+				.X 684	.Y 276
+				.SOLTADO 			[ .FILE "Game/UI/Red/SeleccionBando.tga" .U 249 .V 806 ] 
+				.SELECCIONADO	[ .FILE "Game/UI/Red/SeleccionBando.tga" .U 249 .V 866 ]
+				.PULSADO 			[ .FILE "Game/UI/Red/SeleccionBando.tga" .U 249 .V 926 ]
+				.SX 53 .SY 57 
+				.ALPHA TRUE  
+			]
+		]
+	]
+				  
+	#---------------------------------------------- BITMAP IMPERIAL GLORY -------------------------------------	
+	[ .TIPO UIC_BITMAP .ID 'BMIG' 
+	 .PARAMS 
+	 [ 
+	  .FILE "Game/UI/MainMenu/ImperialGloryLogo.tga" .U 0 .V 0 
+	  .X 0 .Y 0 
+	  .SX 465 .SY 188 
+	  .PRIORITY 201
+	  .ALPHA TRUE
+	 ] 
+	]
+		
+	#---------------------------------------------- GESTOR DE FOCO CHAT ---------------------------------------
+  [ 
+  	.TIPO UIC_GESTORFOCUS .ID 'GF_C'
+    .PARAMS
+    [
+      .CONTROLES
+      [
+        [ 
+        	.TIPO UIC_CHAT .ID 'CHAT'
+          .PARAMS
+          [
+            .PRIORITY 200
+      			#---------------------------------------- EDITBOX CHAT ------------------------------------------
+            .INPUT
+            [
+              .X 204 .Y 745 .SX 690 .SY 22
+              .FONT "Fonts/LucidaConsole11.fnt" 
+              .COLOR [ .R 255 .G 255 .B 255 ]
+              .MAX 70
+            ]
+   
+      			#---------------------------------------- LISTBOX CHAT ------------------------------------------
+            .OUTPUT
+            [
+              .X 210 .Y 632 .SX 650 .SY 115
+              .ALPHA TRUE
+	            .CAN_SELECT FALSE
+              .TEXT 
+              [
+                .FONT "Fonts/LucidaConsole11.fnt" 
+                .DX 14 .DY 81 
+                .COLOR [ .R 255 .G 255 .B 255 ]               
+                .ALIGN CENTER
+              ] 
+              
+              .VDX 647 .VDY 12
+              .VSX 2   .VSY 95
+              .SLIDER_VERTICAL
+              [
+                .PRIORITY 100
+                .STYLE DEFAULT_SLIDER_VERTICAL
+              ]
+            ]
+            
+            .FORMAT "[%s]:%s"
+            .LINE_CHARS 70
+          ]
+        ]      
+      ]
+      .TECLAS
+      [
+      .TECLA_SIGUIENTE_FOCO [ .TECLA KEY_TAB 		.MKEYS [ ]        .EVENTOS [ KEY_UP KEY_DOWN ] ]
+      .TECLA_ANTERIOR_FOCO  [ .TECLA KEY_TAB 		.MKEYS [L_SHIFT]  .EVENTOS [ KEY_UP KEY_DOWN ] ]
+      .TECLA_CAMBIO_ESTADO  [ .TECLA KEY_RETURN .MKEYS [ ]     		.EVENTOS [ KEY_UP KEY_DOWN ] ]
+      ]        
+    ]
+  ] # GestorFocus	
+	
+	#---------------------------------------------- LISTA JUGADORES CONECTADOS --------------------------------	
+  [ 
+  	.TIPO UIC_LISTAJUGRED .ID 'LJUR'
+    .PARAMS
+    [   
+      .MODAL FALSE
+      .CENTER FALSE
+
+      .FONDO
+      [
+        .PRIORITY 10
+        .FILE "Game/UI/Red/PantallaConfiguracionPartida.tga"
+        .X 28 .Y 640 .U 28 .V 640 .SX 145 .SY 125 .ALPHA TRUE
+      ]
+
+      .CONTROLES 
+      [
+      
+      	#---------------------------------------- LISTBOX JUGADORES -----------------------------------------
+        [ 
+        	.TIPO UIC_LISTBOXTEXT .ID 'USER'
+          .PARAMS
+          [ 
+          	.X -4 .Y -4 .SX 180 .SY 100
+	          .CAN_SELECT FALSE  # PET TODO esto es temporal, hasta que funcione todo...
+            .TEXT 
+            [
+              .FONT "Fonts/LucidaConsole11.fnt"
+              .DX 14 .DY 81 
+              .COLOR [ .R 255 .G 255 .B 255 ] 
+              .ALIGN CENTER
+            ] # ~ TEXT
+            
+            .SLIDER_VERTICAL
+            [
+              .STYLE DEFAULT_SLIDER_VERTICAL
+            ]
+          ]            
+        ]
+        
+        #---------------------------------------- KICK BUTTON -----------------------------------------------
+        
+        [ .TIPO UIC_BOTONGRAFICO .ID 'KILL'
+          .PARAMS
+          [
+            .FONDO
+            [
+              .PRIORITY 15
+              .X 143 .Y 139 
+              .SX 32 .SY 33 
+              .ALPHA TRUE          
+              .SOLTADO 			[ .FILE "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga" .U 14 .V 805 ]
+              .SELECCIONADO [ .FILE "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga" .U 51 .V 805 ]
+              .PULSADO 			[ .FILE "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga" .U 88 .V 805 ]      
+              
+	      			.IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+	      			.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"               
+            ]
+          ]
+        ]
+        
+      ] # controles
+    ] # params
+  ] # lista jugadores conectados
+
+	
+	#---------------------------------------------- LISTBOX ATACANTES -----------------------------------------
+  [ 
+  	.TIPO UIC_LISTBOXTEXT .ID 'LBAT'
+    .PARAMS
+    [ 
+    	.X 294 .Y 465 .SX 182 .SY 100
+      .CAN_SELECT FALSE
+      .TEXT 
+      [
+        .FONT "Fonts/LucidaConsole11.fnt"
+        .DX 14 .DY 150
+        .COLOR [ .R 255 .G 255 .B 255 ] 
+        .ALIGN LEFT
+      ]      
+    ]            
+  ]	
+
+	#---------------------------------------------- LISTBOX DEFENSORES ----------------------------------------
+  [ 
+  	.TIPO UIC_LISTBOXTEXT .ID 'LBDF'
+    .PARAMS
+    [ 
+    	.X 545 .Y 465 .SX 182 .SY 100
+      .CAN_SELECT FALSE
+      .TEXT 
+      [
+        .FONT "Fonts/LucidaConsole11.fnt"
+        .DX 14 .DY 150
+        .COLOR [ .R 255 .G 255 .B 255 ] 
+        .ALIGN LEFT
+      ]      
+    ]            
+  ]	
+		
+		
+] # .CONTROLES
+
+ # Se definen los parámetros de la imagen
+ .IMG
+ [
+   .X 442 .Y 225
+   #la textura aquí especificada es lo de menos puesto que va a ser cambiada en cada creación del diálogo, pero debemos ponerla
+   .FILE "Game/UI/ModeloGestion/UIDefsDlgInfoGestion/InformacionEdificios.tga" 
+   .U 1 .V 1 .SX 144 .SY 144
+   .PRIORITY 203
+   .ALPHA TRUE
+ ]
+ 
+ # ruta de la que se van a coger las texturas para las imágenes de los edificios
+ .RUTA "Game/UI/Comun/Minimapas/"

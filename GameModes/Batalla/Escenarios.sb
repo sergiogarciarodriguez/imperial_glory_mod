@@ -1,0 +1,205 @@
+# Definición de los escenarios del juego
+[
+  .NAME "01"
+  .MAPA "Game\GameModes\Batalla\Escenarios\01\01Londres.lvl"
+]
+[
+  .NAME "04"
+  .MAPA "Game\GameModes\Batalla\Escenarios\04\04Gales.lvl"
+]
+[
+  .NAME "06"
+  .MAPA "Game\GameModes\Batalla\Escenarios\06\06Burdeos.lvl"
+]
+[
+  .NAME "05"
+  .MAPA "Game\GameModes\Batalla\Escenarios\05\05Champagne.lvl"
+]
+[
+  .NAME "10"
+  .MAPA "Game\GameModes\Batalla\Escenarios\10\10Brandenburgo.lvl"
+]
+[
+  .NAME "35"
+  .MAPA "Game\GameModes\Batalla\Escenarios\35\35Noruega.lvl"    
+]
+[
+  .NAME "45"
+  .MAPA "Game\GameModes\Batalla\Escenarios\45\45Sicilia.lvl"
+]
+[
+  .NAME "54"
+  .MAPA "Game\GameModes\Batalla\Escenarios\54\54Moldavia.lvl"
+]
+[
+  .NAME "58"
+  .MAPA "Game\GameModes\Batalla\Escenarios\58\58Tripolitania.lvl"
+]
+[
+  .NAME "21"
+  .MAPA "Game\GameModes\Batalla\Escenarios\21\21Kiev.lvl"
+]
+[
+  .NAME "25"
+  .MAPA "Game\GameModes\Batalla\Escenarios\25\25Catalunya.lvl"
+]
+[
+  .NAME "41"
+  .MAPA "Game\GameModes\Batalla\Escenarios\41\41Venecia.lvl"
+]
+[
+  .NAME "46"
+  .MAPA "Game\GameModes\Batalla\Escenarios\46\46Hannover.lvl"
+]
+[
+  .NAME "51"
+  .MAPA "Game\GameModes\Batalla\Escenarios\51\51RepublicaHelvetica.lvl"
+]
+[
+  .NAME "02"
+  .MAPA "Game\GameModes\Batalla\Escenarios\02\02Escocia.lvl"
+]
+[
+  .NAME "17"
+  .MAPA "Game\GameModes\Batalla\Escenarios\17\17Minsk.lvl"
+]
+[
+  .NAME "23"
+  .MAPA "Game\GameModes\Batalla\Escenarios\23\23Aragon.lvl"
+]
+[
+  .NAME "26"
+  .MAPA "Game\GameModes\Batalla\Escenarios\26\26Andalucia.lvl"
+]
+[
+  .NAME "03"
+  .MAPA "Game\GameModes\Batalla\Escenarios\03\03Irlanda.lvl"
+]
+[
+  .NAME "43"
+  .MAPA "Game\GameModes\Batalla\Escenarios\43\43Cirenaica.lvl"
+]
+[
+  .NAME "57"
+  .MAPA "Game\GameModes\Batalla\Escenarios\57\57Tunez.lvl"
+]
+[
+  .NAME "40"
+  .MAPA "Game\GameModes\Batalla\Escenarios\40\40Lombardia.lvl"
+]
+[
+  .NAME "07"
+  .MAPA "Game\GameModes\Batalla\Escenarios\07\07Toulouse.lvl"
+]
+[
+  .NAME "55"
+  .MAPA "Game\GameModes\Batalla\Escenarios\55\55Marruecos.lvl"
+]
+[
+  .NAME "47"
+  .MAPA "Game\GameModes\Batalla\Escenarios\47\47Sajonia.lvl"
+]
+[
+  .NAME "09"
+  .MAPA "Game\GameModes\Batalla\Escenarios\09\09Bretana.lvl"
+]
+[
+  .NAME "12"
+  .MAPA "Game\GameModes\Batalla\Escenarios\12\12Polonia.lvl" 
+]
+[
+  .NAME "15"
+  .MAPA "Game\GameModes\Batalla\Escenarios\15\15Galizia.lvl"
+]
+[
+  .NAME "53"
+  .MAPA "Game\GameModes\Batalla\Escenarios\53\53EstadosPapales.lvl"
+]
+[
+  .NAME "28"
+  .MAPA "Game\GameModes\Batalla\Escenarios\28\28Alentejo.lvl"
+]
+[
+  .NAME "16"
+  .MAPA "Game\GameModes\Batalla\Escenarios\16\16Hungria.lvl"
+]
+[
+  .NAME "24"
+  .MAPA "Game\GameModes\Batalla\Escenarios\24\24PrusiaOriental.lvl"
+]
+[
+  .NAME "18"
+  .MAPA "Game\GameModes\Batalla\Escenarios\18\18Moscu.lvl"
+]
+[
+  .NAME "14"
+  .MAPA "Game\GameModes\Batalla\Escenarios\14\14Bohemia.lvl"
+]
+[
+  .NAME "34"
+  .MAPA "Game\GameModes\Batalla\Escenarios\34\34Dinamarca.lvl"
+]
+[
+  .NAME "32"
+  .MAPA "Game\GameModes\Batalla\Escenarios\32\32Grecia.lvl"
+]
+[
+  .NAME "19"
+  .MAPA "Game\GameModes\Batalla\Escenarios\19\19Kursk.lvl"
+]
+[
+  .NAME "36"
+  .MAPA "Game\GameModes\Batalla\Escenarios\36\36Napoles.lvl"
+]
+[
+  .NAME "30"
+  .MAPA "Game\GameModes\Batalla\Escenarios\30\30Anatolia.lvl"
+]
+[
+  .NAME "31"
+  .MAPA "Game\GameModes\Batalla\Escenarios\31\31RegionBalcanica.lvl"
+]
+[
+  .NAME "44"
+  .MAPA "Game\GameModes\Batalla\Escenarios\44\44Piamonte.lvl"
+]
+[
+  .NAME "39"
+  .MAPA "Game\GameModes\Batalla\Escenarios\39\39Finlandia.lvl"
+]
+[
+  .NAME "42"
+  .MAPA "Game\GameModes\Batalla\Escenarios\42\42Egipto.lvl"
+]
+[
+  .NAME "11"
+  .MAPA "Game\GameModes\Batalla\Escenarios\11\11Silesia.lvl"
+]
+[
+  .NAME "13"
+  .MAPA "Game\GameModes\Batalla\Escenarios\13\13Austria.lvl"
+]
+[
+  .NAME "38"
+  .MAPA "Game\GameModes\Batalla\Escenarios\38\38Suecia.lvl"
+]
+[
+  .NAME "49"
+  .MAPA "Game\GameModes\Batalla\Escenarios\49\49Batavia.lvl"
+]
+[
+  .NAME "29"
+  .MAPA "Game\GameModes\Batalla\Escenarios\29\29Algarve.lvl"
+]
+[
+  .NAME "20"
+  .MAPA "Game\GameModes\Batalla\Escenarios\20\20SanPetersburgo.lvl"
+]
+[
+  .NAME "22"
+  .MAPA "Game\GameModes\Batalla\Escenarios\22\22Castilla.lvl"
+]
+[
+  .NAME "08"
+  .MAPA "Game\GameModes\Batalla\Escenarios\08\08Paris.lvl"
+]

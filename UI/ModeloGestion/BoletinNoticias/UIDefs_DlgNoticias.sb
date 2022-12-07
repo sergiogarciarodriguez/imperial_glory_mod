@@ -1,0 +1,158 @@
+##################################################
+## Dlg General de noticias. Contiene los botones
+## que gestionarán la activación de las diferentes
+## pantallas de noticias
+##################################################
+
+.MODAL TRUE
+.CENTER FALSE
+.DEPTH 3
+.ACTIVO FALSE
+
+.FONDO
+[
+  .X 200 .Y 52 .U 1 .V 1 .SX 640 .SY 93
+  .FILE "Game/UI/ModeloGestion/BoletinNoticias/BoletinNoticias.tga" 
+  .ALPHA TRUE .PRIORITY 200
+]
+
+.RELATIVE_PRIORITY FALSE
+
+.CAPTION
+[
+  .XMARGEN 42 .YMARGEN 12 .HEIGHT 36
+  .TITLE 
+  [ 
+   .ALINEACION CENTER 
+   .TEXT LTEXT_UI_NEWS_TITLE
+   .FONT "Fonts/Times17.fnt" 
+   .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+  .MOVIBLE FALSE
+]                 
+
+.CONTROLES
+[
+  # CheckBoxes tipo de ventana de noticias
+  [ .TIPO UIC_GESTORCHECKBOX .ID 'G_CB'
+    .PARAMS
+    [
+      .CHECKBOXES
+      [      
+        # CheckBox - Pantalla de Noticias
+        [ .TIPO UIC_CHECKBOX .ID 'CBNW'
+          .PARAMS
+          [ 
+            .COMPORTAMIENTO FIJO
+
+            .TEXT LTEXT_UI_NEWS_BTN_NOTICIAS
+      	    .FONT     "Fonts/Times12.fnt"            
+      	    .SOLTADO      [ .COLOR [ .R 0 .G 0 .B 0 ] ]
+      	    .SELECCIONADO [ .COLOR [ .R 0 .G 0 .B 0 ] ]
+      	    .PULSADO      [ .COLOR [ .R 0 .G 0 .B 0 ] .DX 5 .DY 2 ]
+      	    .CENTER_AREA  [ .X1 0 .Y1 0 .X2 139 .Y2 39 ]            
+      	    
+      	    .STYLE DEFAULT_RECTANGLE_BUTTON_SMALL
+      	    
+            .FONDO
+            [
+              .PRIORITY 201
+              .X 79 .Y 54
+            ]
+            
+      	    .IDSELECTSOUND "S_BOLETIN_NOTICIAS"                                
+      	    .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT" 
+
+          ]            
+        ] # ~ CHECKBOX 
+                           
+        # CheckBox - Pantalla de Economía
+        [ .TIPO UIC_CHECKBOX .ID 'CBEC'
+          .PARAMS
+          [ 
+            .COMPORTAMIENTO FIJO
+            
+            # texto provisional hasta maqueta definitiva, por eso no usa etiqueta
+            .TEXT LTEXT_UI_NEWS_BTN_ECONOMIA
+      	    .FONT "Fonts/Times12.fnt"            
+      	    .SOLTADO      [ .COLOR [ .R 0 .G 0 .B 0 ] ]
+      	    .SELECCIONADO [ .COLOR [ .R 0 .G 0 .B 0 ] ]
+      	    .PULSADO      [ .COLOR [ .R 0 .G 0 .B 0 ] .DX 5 .DY 2 ]
+      	    .CENTER_AREA  [ .X1 0 .Y1 0 .X2 139 .Y2 39 ]            
+      	    
+      	    .STYLE DEFAULT_RECTANGLE_BUTTON_SMALL
+            
+            .FONDO
+            [
+              .PRIORITY 201
+              .X 249 .Y 54
+            ]
+            
+    	    .IDSELECTSOUND "S_BOLETIN_ECONOMIA"                                
+    	    .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT" 
+
+          ]            
+        ] # ~ CHECKBOX 
+        
+        # CheckBox - Pantalla de Diplomacia
+        [ .TIPO UIC_CHECKBOX .ID 'CBDI'
+          .PARAMS
+          [ 
+            .COMPORTAMIENTO FIJO
+            
+            # texto provisional hasta maqueta definitiva, por eso no usa etiqueta
+            .TEXT LTEXT_UI_NEWS_BTN_DIPLOMACIA
+      	    .FONT "Fonts/Times12.fnt"            
+      	    .SOLTADO      [ .COLOR [ .R 0 .G 0 .B 0 ] ]
+      	    .SELECCIONADO [ .COLOR [ .R 0 .G 0 .B 0 ] ]
+      	    .PULSADO      [ .COLOR [ .R 0 .G 0 .B 0 ] .DX 5 .DY 2 ]
+      	    .CENTER_AREA  [ .X1 0 .Y1 0 .X2 139 .Y2 39 ]            
+      	    
+      	    .STYLE DEFAULT_RECTANGLE_BUTTON_SMALL
+            
+            .FONDO
+            [
+              .PRIORITY 201
+              .X 419 .Y 54
+            ]
+            
+    	    .IDSELECTSOUND "S_BOLETIN_DIPLOMACIA"                                
+    	    .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT" 
+
+          ]            
+        ] # ~ CHECKBOX         
+      ] # ~CHECKBOXES
+      
+      # siempre debe estar activada una opción
+      .PERMITE_NINGUNA_ACTIVACION FALSE
+      
+    ] # ~PARAMS
+  ] # ~GESTOR CHECKBOX            
+  
+  [
+    .TIPO UIC_DLGNOTICIASJUEGO  .ID 'NEWS'
+    .PARAMS [ %Game/UI/ModeloGestion/BoletinNoticias/UIDefs_DlgNoticiasJuego.sb ]
+  ]
+  
+  [
+    .TIPO UIC_DLGNOTICIASECONOMIA .ID 'ECON'
+    .PARAMS [ %Game/UI/ModeloGestion/BoletinNoticias/UIDefs_DlgNoticiasEconomia.sb ]
+  ]
+  
+  [
+    .TIPO UIC_DLGNOTICIASDIPLOMACIA .ID 'DIPL'
+    .PARAMS [ %Game/UI/ModeloGestion/BoletinNoticias/UIDefs_DlgNoticiasDiplomacia.sb ]
+  ]
+  
+  # Volver
+  [ .TIPO UIC_BOTONTEXTO .ID 'OPVO'
+    .PARAMS  
+    [ .IDSELECTSOUND "S_CANCELAR"    
+      .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"
+      .FONDO [ .X 573 .Y 597 .PRIORITY 203 ]
+      .STYLE DEFAULT_X_BUTTON
+      
+      .KEY [ .TECLA KEY_ESCAPE .MKEYS [ ] ]
+    ]
+  ]
+] #~CONTROLES

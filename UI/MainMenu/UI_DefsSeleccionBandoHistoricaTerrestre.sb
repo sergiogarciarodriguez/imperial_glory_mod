@@ -1,0 +1,426 @@
+
+.MODAL TRUE
+
+.FONDO
+[
+  .FILE "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga"
+  .X 0	.Y 0 
+  .U 1 	  .V 1 
+  .SX 1024 .SY 768 
+  .ALPHA TRUE
+  .PRIORITY 10
+]
+
+.CONTROLES
+[
+ 	#-------------------------------------------- BOTON INFO OBJETIVOS -----------------------------------
+	[ 
+		.TIPO UIC_BOTONTEXTO .ID 'INFO' 
+	 	.PARAMS
+	 	[ 
+	 		.STYLE DEFAULT_MULTIPLAYER_SMALL_BUTTON
+			.COMPORTAMIENTO NORMAL				 	
+	 		.TEXT LTEXT_UI_INFO_HISTORICA
+		  .FONDO
+		  [
+		    .PRIORITY 120
+		    .X 448 .Y 204
+			]
+	 	]
+	]
+   
+  #-------------------------------------------- TITULO ------------------------------------------------	
+  [
+    .TIPO UIC_TEXT .ID 'LTIT'
+    .PARAMS
+    [
+      .TEXT LTEXT_TITULO_SELECCION_BANDO_HISTORICA_TERRESTRE
+      .ALIGN CENTER
+      .FONT "Fonts/MonotypeCorsiva29.fnt"
+      .X 804 .Y 161
+      .COLOR [ .R 255 .G 255 .B 255] 
+    ]
+  ]
+	#---------------------------------------------- BITMAP IMPERIAL GLORY -------------------------------------	
+	[ .TIPO UIC_BITMAP .ID 'BMIG' 
+	 .PARAMS 
+	 [ 
+	  .FILE "Game/UI/MainMenu/ImperialGloryLogo.tga" .U 0 .V 0 
+	  .X 0 .Y 0 
+	  .SX 465 .SY 188 
+	  .PRIORITY 201
+	  .ALPHA TRUE
+	 ] 
+	]
+
+  #-------------------------------------------- TEXTO ATACANTES------------------------------------------------	
+  [
+    .TIPO UIC_TEXT .ID 'LATA'
+    .PARAMS
+    [
+      .TEXT LTEXT_UI_ATACANTES
+      .ALIGN CENTER
+      .FONT "Fonts/Times15.fnt"
+      .X 277 .Y 276
+      .COLOR [ .R 255 .G 255 .B 255] 
+    ]
+  ]
+  #-------------------------------------------- TEXTO DEFENSORES------------------------------------------------	
+  [
+    .TIPO UIC_TEXT .ID 'LDEF'
+    .PARAMS
+    [
+      .TEXT LTEXT_UI_DEFENSORES
+      .ALIGN CENTER
+      .FONT "Fonts/Times15.fnt"
+      .X 749 .Y 276
+      .COLOR [ .R 255 .G 255 .B 255] 
+    ]
+  ]
+
+  #-------------------------------------------- TEXTO BATALLA------------------------------------------------	
+  [
+    .TIPO UIC_TEXT .ID 'LBAT'
+    .PARAMS
+    [
+      .TEXT "Batalla tras batalla"
+      .ALIGN CENTER
+      .FONT "Fonts/Times17.fnt"
+      .X 275 .Y 224
+      .COLOR [ .R 255 .G 255 .B 255] 
+    ]
+  ]
+  #-------------------------------------------- TEXTO FECHA------------------------------------------------	
+  [
+    .TIPO UIC_TEXT .ID 'LFEC'
+    .PARAMS
+    [
+      .TEXT "18 Oct 1823"
+      .ALIGN CENTER
+      .FONT "Fonts/Times17.fnt"
+      .X 753 .Y 224
+      .COLOR [ .R 255 .G 255 .B 255] 
+    ]
+  ]
+
+  #-------------------------------------------- BOTON CANCEL ------------------------------------------------	
+  [ 
+	  .TIPO UIC_BOTONTEXTO .ID 'LEOC' 
+	  .PRIORITY 200
+	  .PARAMS
+	  [ 
+	  .IDSELECTSOUND "S_CANCELAR"    
+      	  .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"    
+
+      .PRIORITY 200
+	 	  .STYLE DEFAULT_X_BUTTON
+	    .FONDO
+		  [
+	      .PRIORITY 200
+		    .X 885 .Y 715
+		  ]
+      .KEY [ .TECLA LKEY_MAINMENU_CANCELKEY .EVENTOS [ KEY_DOWN KEY_UP ] ]  		  		  
+	  ]
+  ]
+	#-------------------------------------------- BOTON READY ----------------------------------------------------	
+	[ 
+		.TIPO UIC_BOTONTEXTO .ID 'MREA' 
+	  .PARAMS
+	 	[ 
+	 	  .IDSELECTSOUND "S_ACEPTAR"    
+      .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"    
+	 	  .STYLE DEFAULT_OK_BUTTON
+	    .FONDO [ .X 935 .Y 715 ]
+      .KEY [ .TECLA LKEY_MAINMENU_OPTION_SELECT .EVENTOS [ KEY_DOWN KEY_UP ] ]  	    	    
+	 	]
+	]
+
+  #---------------------------------------------- BOTON UNIRSE ATACANTE -----------------------------------------------
+  [ 
+    .TIPO UIC_BOTONTEXTO .ID 'BTUA'
+	  .PARAMS
+	  [
+		  .IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+		  .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"   	  
+	    .FONDO
+	    [
+	      .PRIORITY 200
+	      .X 181 .Y 267 
+	      .SX 191 .SY 113
+	      .ALPHA TRUE
+			  .SOLTADO          [ .FILE "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga" .U 181 .V 267 ]
+			  .SELECCIONADO   	[ .FILE "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga" .U 25 .V 778 ]
+			  .PULSADO    			[ .FILE "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga" .U 25 .V 778 ]
+	    ]
+	  ]
+  ]
+  #---------------------------------------------- BOTON UNIRSE DEFENSOR -----------------------------------------------
+  [ 
+    .TIPO UIC_BOTONTEXTO .ID 'BTUD'
+	  .PARAMS
+	  [
+		  .IDSELECTSOUND 		"S_MAINMENU_OPTION_CLICK" 
+		  .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"   	  
+	    .FONDO
+	    [
+	      .PRIORITY 200
+	      .X 653 .Y 267 
+	      .SX 191 .SY 113
+	      .ALPHA TRUE
+			  .SOLTADO          [ .FILE "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga" .U 653 .V 267 ]
+			  .SELECCIONADO   	[ .FILE "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga" .U 223 .V 778 ]
+			  .PULSADO    			[ .FILE "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga" .U 223 .V 778 ]
+	    ]
+	  ]
+  ]
+
+  #---------------------------------------------- VISOR MATRIZ TROPAS ---------------------------------------
+  [
+    .TIPO UIC_VISORMATRIZCTRLS .ID 'EJER'
+    .PARAMS
+    [
+      .MATRIZ
+      [
+      .FILAS    2
+      .COLUMNAS 14
+      ]     
+      .DRAW_PARAMS
+      [
+        .X 115
+        .Y 455
+        .CELL_XSPACE 0
+        .CELL_YSPACE 1
+        .SLIDER_XSPACE 3
+        .OBJ_WIDTH  57
+        .OBJ_HEIGHT 79
+      ]         
+      .PRIORITY_BASE 10 
+      .SOUNDS
+      [
+        .IDSELECTSOUND 		"S_FX_ADD_ELEMENTO_COLA_CONSTRUCCION" 
+      ]    
+    
+      # %Game\UI\MainMenu\Tropas\UIDefs_VisorMatrizArmy.sb
+    ]
+  ]  
+
+	
+	#---------------------------------------------- GESTOR DE FOCO CHAT ---------------------------------------
+  [ 
+  	.TIPO UIC_GESTORFOCUS .ID 'GF_C'
+    .PARAMS
+    [
+      .CONTROLES
+      [
+        [ 
+        	.TIPO UIC_CHAT .ID 'CHAT'
+          .PARAMS
+          [
+            .PRIORITY 200
+      			#---------------------------------------- EDITBOX CHAT ------------------------------------------
+            .INPUT
+            [
+              .X 204 .Y 745 .SX 800 .SY 22
+              .FONT "Fonts/LucidaConsole11.fnt" 
+              .COLOR [ .R 255 .G 255 .B 255 ]
+              .MAX 70
+            ]
+   
+      			#---------------------------------------- LISTBOX CHAT ------------------------------------------
+            .OUTPUT
+            [
+              .X 210 .Y 632 .SX 650 .SY 115
+              .ALPHA TRUE
+	            .CAN_SELECT FALSE
+              .TEXT 
+              [
+                .FONT "Fonts/LucidaConsole11.fnt" 
+                .DX 14 .DY 81 
+                .COLOR [ .R 255 .G 255 .B 255 ]               
+                .ALIGN CENTER
+              ] 
+              
+              .VDX 647 .VDY 12
+              .VSX 2   .VSY 95
+              .SLIDER_VERTICAL
+              [
+                .PRIORITY 100
+                .STYLE DEFAULT_SLIDER_VERTICAL
+              ]
+            ]
+            
+            .FORMAT "[%s]:%s"
+            .LINE_CHARS 70
+          ]
+        ]      
+      ]
+      .TECLAS
+      [
+      .TECLA_SIGUIENTE_FOCO [ .TECLA KEY_TAB 		.MKEYS [ ]        .EVENTOS [ KEY_UP KEY_DOWN ] ]
+      .TECLA_ANTERIOR_FOCO  [ .TECLA KEY_TAB 		.MKEYS [L_SHIFT]  .EVENTOS [ KEY_UP KEY_DOWN ] ]
+      .TECLA_CAMBIO_ESTADO  [ .TECLA KEY_RETURN .MKEYS [ ]     		.EVENTOS [ KEY_UP KEY_DOWN ] ]
+      ]        
+    ]
+  ] # GestorFocus	
+	
+	#---------------------------------------------- LISTA JUGADORES CONECTADOS --------------------------------	
+  [ 
+  	.TIPO UIC_LISTAJUGRED .ID 'USER'
+    .PARAMS
+    [   
+      .MODAL FALSE
+      .CENTER FALSE
+
+      .FONDO
+      [
+        .PRIORITY 10
+        .FILE "Game/UI/Red/PantallaConfiguracionPartida.tga"
+        .X 28 .Y 640 .U 28 .V 640 .SX 145 .SY 125 .ALPHA TRUE
+      ]
+
+      .CONTROLES 
+      [
+      
+      	#---------------------------------------- LISTBOX JUGADORES -----------------------------------------
+        [ 
+        	.TIPO UIC_LISTBOXTEXT .ID 'USER'
+          .PARAMS
+          [ 
+          	.X -4 .Y -4 .SX 180 .SY 100
+	          .CAN_SELECT FALSE  # PET TODO esto es temporal, hasta que funcione todo...
+            .TEXT 
+            [
+              .FONT "Fonts/LucidaConsole11.fnt"
+              .DX 14 .DY 81 
+              .COLOR [ .R 255 .G 255 .B 255 ] 
+              .ALIGN CENTER
+            ] # ~ TEXT
+            
+            .SLIDER_VERTICAL
+            [
+              .STYLE DEFAULT_SLIDER_VERTICAL
+            ]
+          ]            
+        ]
+        
+        #---------------------------------------- KICK BUTTON -----------------------------------------------
+        
+        [ .TIPO UIC_BOTONGRAFICO .ID 'KILL'
+          .PARAMS
+          [
+            .FONDO
+            [
+              .PRIORITY 15
+              .X 143 .Y 139 
+              .SX 32 .SY 33 
+              .ALPHA TRUE          
+              .SOLTADO 			[ .FILE "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga" .U 14 .V 805 ]
+              .SELECCIONADO [ .FILE "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga" .U 51 .V 805 ]
+              .PULSADO 			[ .FILE "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga" .U 88 .V 805 ]      
+              
+	      			.IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+	      			.IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"               
+            ]
+          ]
+        ]
+        
+      ] # controles
+    ] # params
+  ] # lista jugadores conectados
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+] # .CONTROLES
+
+.BITMAP_READY "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga"
+
+.BITMAP_PAISES
+[
+  .BASE_U 420 .BASE_V 699
+  .FRANCIA          [ .U 1 .V 79 .SX 38 .SY 38 .FILE "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga" ]
+  .GRAN_BRETANYA    [ .U 40 .V 79 .SX 38 .SY 38 .FILE "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga" ]
+  .RUSIA            [ .U 79 .V 79 .SX 38 .SY 38 .FILE "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga" ]
+  .AUSTRIA          [ .U 118 .V 79 .SX 38 .SY 38 .FILE "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga" ]
+  .PRUSIA           [ .U 157 .V 79 .SX 38 .SY 38 .FILE "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga" ]
+  .ESPANYA          [ .U 196 .V 79 .SX 38 .SY 38 .FILE "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga" ]
+  .OTOMANO          [ .U 235 .V 79 .SX 38 .SY 38 .FILE "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga" ]
+  .EGIPTO           [ .U 274 .V 79 .SX 38 .SY 38 .FILE "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga" ]
+  .DOS_SICILIAS     [ .U 313 .V 79 .SX 38 .SY 38 .FILE "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga" ]
+  .DINAMARCA        [ .U 352 .V 79 .SX 38 .SY 38 .FILE "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga" ]
+  .SUECIA           [ .U 391 .V 79 .SX 38 .SY 38 .FILE "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga" ]
+  .PORTUGAL         [ .U 430 .V 79 .SX 38 .SY 38 .FILE "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga" ]
+  .LOMBARDIA        [ .U 469 .V 79 .SX 38 .SY 38 .FILE "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga" ]
+  .PIAMONTE         [ .U 1 .V 118 .SX 38 .SY 38 .FILE "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga" ]
+  .EPAPALES         [ .U 40 .V 118 .SX 38 .SY 38 .FILE "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga" ]
+  .RHELVETICA       [ .U 79 .V 118 .SX 38 .SY 38 .FILE "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga" ]
+  .HANNOVER         [ .U 118 .V 118 .SX 38 .SY 38 .FILE "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga" ]
+  .BATAVIA          [ .U 157 .V 118 .SX 38 .SY 38 .FILE "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga" ]
+  .SAJONIA          [ .U 196 .V 118 .SX 38 .SY 38 .FILE "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga" ]
+  .POLONIA          [ .U 235 .V 118 .SX 38 .SY 38 .FILE "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga" ]
+  .MOLDAVIA         [ .U 274 .V 118 .SX 38 .SY 38 .FILE "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga" ]
+  .MARRUECOS        [ .U 313 .V 118 .SX 38 .SY 38 .FILE "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga" ]
+  .TUNEZ            [ .U 352 .V 118 .SX 38 .SY 38 .FILE "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga" ]
+  .TRIPOLITANIA     [ .U 391 .V 118 .SX 38 .SY 38 .FILE "Game/UI/MainMenu/SeleccionBandoHistoricaTerrestre.tga" ]
+  # 420 699
+  # FRANCIA         .U 1 .V 79
+  # GRAN_BRETANYA   .U 40 .V 79
+  # RUSIA           .U 79 .V 79
+  # AUSTRIA         .U 118 .V 79
+  # PRUSIA          .U 157 .V 79
+  # ESPANYA         .U 196 .V 79
+  # OTOMANO         .U 235 .V 79
+  # EGIPTO          .U 274 .V 79
+  # DOS_SICILIAS    .U 313 .V 79
+  # DINAMARCA       .U 352 .V 79
+  # SUECIA          .U 391 .V 79
+  # PORTUGAL        .U 430 .V 79
+  # LOMBARDIA       .U 469 .V 79
+  # PIAMONTE        .U 1 .V 118
+  # EPAPALES        .U 40 .V 118
+  # RHELVETICA      .U 79 .V 118
+  # HANNOVER        .U 118 .V 118
+  # BATAVIA         .U 157 .V 118
+  # SAJONIA         .U 196 .V 118
+  # POLONIA         .U 235 .V 118
+  # MOLDAVIA        .U 274 .V 118
+  # MARRUECOS       .U 313 .V 118
+  # TUNEZ           .U 352 .V 118
+  # TRIPOLITANIA    .U 391 .V 118
+]
+
+
+# Se definen los parámetros de la imagen
+.IMG_MINIMAPA
+[
+  .X 442 .Y 225
+  #la textura aquí especificada es lo de menos puesto que va a ser cambiada en cada creación del diálogo, pero debemos ponerla
+  .FILE "Game/UI/ModeloGestion/UIDefsDlgInfoGestion/InformacionEdificios.tga" 
+  .U 1 .V 1 .SX 144 .SY 144
+  .PRIORITY 203
+  .ALPHA TRUE
+]
+# ruta de la que se van a coger las texturas para las imágenes de los edificios
+.RUTA_MINIMAPAS "Game/UI/Comun/Minimapas/"
+ 
+
+
+# barcos:
+
+
+
+# ficheros de los barcos para pantallas de seleccion:
+#
+%Game/UI/Comun/UIDefs_IconosBarcos.sb
+
+

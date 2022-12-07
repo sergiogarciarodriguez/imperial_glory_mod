@@ -1,0 +1,35 @@
+#############################################################################################
+# Representa el cuerpo PARAMS del control encargado de representar la ventana de informacion
+# general para el modelo de gestion
+#############################################################################################
+
+ # Se define la ventana                   
+ .VENTANA
+ [ 
+  .CENTER FALSE
+  .MODAL FALSE 
+  
+  .FONDO 
+  [   
+   .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" 
+   .X 295 .Y 615 .U 295 .V 871 .SX 450 .SY 153 .ALPHA TRUE  
+  ]              
+  
+  .CAPTION
+  [
+   .XMARGEN 107
+   .YMARGEN 2
+   .HEIGHT 19
+   .TITLE 
+   [ 
+    .ALINEACION CENTER 
+    .TEXT "Info General" 
+    .FONT "Fonts/Default.fnt" 
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+   ]
+   .MOVIBLE FALSE
+  ] 
+ ]
+ 
+
+

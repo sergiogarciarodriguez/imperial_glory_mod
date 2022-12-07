@@ -1,0 +1,177 @@
+##############################################################################################################
+# Pantalla de opciones de audio
+##############################################################################################################
+
+
+ [ .TIPO UIC_TEXT .ID 'LB_A' 
+  .PARAMS 
+  [ 
+   .TEXT LTEXT_UI_MAINMENU_OPCIONES_AUDIO
+    .FONT "Fonts/Default.fnt"
+    .X 300 .Y 16 .SCALE 2.0 
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+ ] # ~TEXT
+
+ # CheckBox Activado/Desactivado
+ [ .TIPO UIC_CHECKBOX .ID 'CB_M'
+  .PARAMS
+  [  
+     .COMPORTAMIENTO FIJO
+     # Estilo del CheckBox
+     .FONDO
+     [
+       .X 150 .Y 192 
+       %Game/UI/Comun/UIDefs_DefaultCheckBox.sb
+     ]
+  ]            
+ ] # ~ CHECKBOX                      
+ # Texto Volumen Master
+ [ .TIPO UIC_TEXT .ID 'LB_M' 
+  .PARAMS 
+  [ 
+   .TEXT LTEXT_UI_MAINMENU_AUDIO_MASTER
+   .FONT "Fonts/Default.fnt"
+   .X 250 .Y 192 .SCALE 1.0 
+   .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+ ] # ~TEXT
+ # Slider Volumen Master
+ [ .TIPO UIC_SLIDER .ID 'SL_M'
+  .PARAMS
+  [ 
+    .X 450 .Y 192 .MIN 0 .MAX 9
+    # Estilo del slider
+    %Game/UI/Comun/UIDefs_DefaultSliderHorizontal.sb      
+  ]
+ ] # ~ SLIDER
+
+
+ # CheckBox Activado/Desactivado
+ [ .TIPO UIC_CHECKBOX .ID 'CBMU'
+  .PARAMS
+  [  
+     .COMPORTAMIENTO FIJO
+     # Estilo del CheckBox
+     .FONDO
+     [
+       .X 150 .Y 270 
+       %Game/UI/Comun/UIDefs_DefaultCheckBox.sb
+     ]
+  ]            
+ ] # ~ CHECKBOX                      
+ 
+ # Texto Volumen Musica
+ [ .TIPO UIC_TEXT .ID 'LBMU' 
+  .PARAMS 
+  [ 
+   .TEXT LTEXT_UI_MAINMENU_AUDIO_MUSICA
+   .FONT "Fonts/Default.fnt"
+   .X 250 .Y 270 .SCALE 1.0 
+   .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+ ] # ~TEXT
+ # Slider Volumen Musica
+ [ .TIPO UIC_SLIDER .ID 'SLMU'
+  .PARAMS
+  [ 
+    .X 450 .Y 270 .MIN 0 .MAX 9
+    # Estilo del slider
+    %Game/UI/Comun/UIDefs_DefaultSliderHorizontal.sb      
+  ]
+ ] # ~ SLIDER
+ 
+ # CheckBox Activado/Desactivado
+ [ .TIPO UIC_CHECKBOX .ID 'CB_E'
+  .PARAMS
+  [  
+     .COMPORTAMIENTO FIJO
+     # Estilo del CheckBox
+     .FONDO
+     [
+       .X 150 .Y 338 
+       %Game/UI/Comun/UIDefs_DefaultCheckBox.sb
+     ]
+  ]            
+ ] # ~ CHECKBOX                      
+
+ # Texto Volumen Efectos
+ [ .TIPO UIC_TEXT .ID 'LB_E' 
+  .PARAMS 
+  [ 
+   .TEXT LTEXT_UI_MAINMENU_AUDIO_EFECTOS
+   .FONT "Fonts/Default.fnt"
+   .X 250 .Y 338 .SCALE 1.0 
+   .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+ ] # ~TEXT
+ # Slider Volumen Efectos
+ [ .TIPO UIC_SLIDER .ID 'SL_E'
+  .PARAMS
+  [ 
+    .X 450 .Y 338 .MIN 0 .MAX 9
+    # Estilo del slider
+    %Game/UI/Comun/UIDefs_DefaultSliderHorizontal.sb      
+  ]
+ ] # ~ SLIDER
+
+ # CheckBox Activado/Desactivado
+ [ .TIPO UIC_CHECKBOX .ID 'CB_A'
+  .PARAMS
+  [  
+     .COMPORTAMIENTO FIJO
+     # Estilo del CheckBox
+     .FONDO
+     [
+       .X 150 .Y 406 
+       %Game/UI/Comun/UIDefs_DefaultCheckBox.sb
+     ]
+  ]            
+ ] # ~ CHECKBOX                      
+ #Texto Volumen Acks
+ [ .TIPO UIC_TEXT .ID 'LB_A' 
+  .PARAMS 
+  [ 
+   .TEXT LTEXT_UI_MAINMENU_AUDIO_ACKS
+   .FONT "Fonts/Default.fnt"
+   .X 250 .Y 406 .SCALE 1.0 
+   .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+ ] # ~TEXT
+ # Slider Volumen Acks
+ [ .TIPO UIC_SLIDER .ID 'SL_A'
+  .PARAMS
+  [ 
+    .X 450 .Y 406 .MIN 0 .MAX 9
+    # Estilo del slider
+    %Game/UI/Comun/UIDefs_DefaultSliderHorizontal.sb      
+  ]
+ ] # ~ SLIDER
+
+
+ # Opcion BACK
+ [ .TIPO UIC_OPCIONGRAFICA .ID 'O_BA' 
+  .PARAMS 
+  [ 
+   .COMPORTAMIENTO SIMPLE
+   .X 438 .Y 617 .SX 167 .SY 37 .ALPHA TRUE    
+   .NO_SELECT [ .FILE "Game/UI/MainMenu/SeleccionImperio.tga"        .U 438 .V 617 ]
+   .CLICK     [ .FILE "Game/UI/MainMenu/SeleccionImperioButtons.tga" .U 1   .V 341 ]
+   .SELECT    [ .FILE "Game/UI/MainMenu/SeleccionImperioButtons.tga" .U 1   .V 381 ] 
+   .IDSELECTSOUND "S_MAINMENU_OPTION_SELECT" .IDCLICKSOUND "S_MAINMENU_OPTION_CLICK"                
+  ] 
+ ]
+
+  # Opcion Accept
+ [ .TIPO UIC_OPCIONGRAFICA .ID 'O_AA' 
+  .PARAMS 
+  [ 
+   .COMPORTAMIENTO SIMPLE
+   .X 638 .Y 617 .SX 167 .SY 37 .ALPHA TRUE    
+   .NO_SELECT [ .FILE "Game/UI/MainMenu/SeleccionImperio.tga"        .U 438 .V 617 ]
+   .CLICK     [ .FILE "Game/UI/MainMenu/SeleccionImperioButtons.tga" .U 1   .V 341 ]
+   .SELECT    [ .FILE "Game/UI/MainMenu/SeleccionImperioButtons.tga" .U 1   .V 381 ] 
+   .IDSELECTSOUND "S_MAINMENU_OPTION_SELECT" .IDCLICKSOUND "S_MAINMENU_OPTION_CLICK"                
+  ] 
+ ]
+

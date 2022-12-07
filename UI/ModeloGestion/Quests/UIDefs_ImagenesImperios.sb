@@ -1,0 +1,202 @@
+ ##############################################################################################
+ # Contiene la defincion de las imagenes de imperios que se mostraran en la pantalla de quest
+ ##############################################################################################
+ 
+ .DEFAULT
+ [
+  # Son los datos de francia
+   .STATE_0
+   [
+     .SX 53 .SY 54 .ALPHA TRUE
+     .FILE "Game/UI/ModeloGestion/MenuQuest.tga" .U 934 .V 344
+     .PRIORITY 2
+   ]
+   .STATE_1
+   [
+     .SX 53 .SY 54 .ALPHA TRUE
+     .FILE "Game/UI/ModeloGestion/MenuQuest.tga" .U 137 .V 816
+     .PRIORITY 2
+   ]
+   .STATE_2
+   [
+     .SX 53 .SY 54 .ALPHA TRUE
+     .FILE "Game/UI/ModeloGestion/MenuQuest.tga" .U 435 .V 816
+     .PRIORITY 2
+   ]  
+   .X 934 .Y 344
+   
+   .TOOL_TIP
+   [ 
+    .TEXT LTEXT_JUGADOR_FRANCIA
+    .FONT "Fonts/gothic.fnt" 
+    .X 32 .Y 32
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+      
+    .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+   ]   
+ ]
+
+ .JUG_FRANCIA
+ [ 
+   .STATE_0
+   [
+     .SX 53 .SY 54 .ALPHA TRUE
+     .FILE "Game/UI/ModeloGestion/MenuQuest.tga" .U 934 .V 344
+     .PRIORITY 2
+   ]
+   .STATE_1
+   [
+     .SX 53 .SY 54 .ALPHA TRUE
+     .FILE "Game/UI/ModeloGestion/MenuQuest.tga" .U 137 .V 816
+     .PRIORITY 2
+   ]
+   .STATE_2
+   [
+     .SX 53 .SY 54 .ALPHA TRUE
+     .FILE "Game/UI/ModeloGestion/MenuQuest.tga" .U 435 .V 816
+     .PRIORITY 2
+   ]   
+   .X 934 .Y 344
+   
+   .TOOL_TIP
+   [ 
+    .TEXT LTEXT_JUGADOR_FRANCIA
+    .FONT "Fonts/gothic.fnt" 
+    .X 32 .Y 32
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+      
+    .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+   ]      
+ ]
+ 
+ .JUG_GRAN_BRETANYA
+ [    
+   .STATE_0
+   [
+     .SX 53 .SY 54 .ALPHA TRUE
+     .FILE "Game/UI/ModeloGestion/MenuQuest.tga" .U 934 .V 478
+     .PRIORITY 2
+   ]
+   .STATE_1
+   [
+     .SX 53 .SY 54 .ALPHA TRUE
+     .FILE "Game/UI/ModeloGestion/MenuQuest.tga" .U 249 .V 816
+     .PRIORITY 2
+   ]
+   .STATE_2
+   [
+     .SX 53 .SY 54 .ALPHA TRUE
+     .FILE "Game/UI/ModeloGestion/MenuQuest.tga" .U 547 .V 816
+     .PRIORITY 2
+   ]  
+   .X 934 .Y 478
+   
+   .TOOL_TIP
+   [ 
+    .TEXT LTEXT_JUGADOR_GRAN_BRETANYA
+    .FONT "Fonts/gothic.fnt" 
+    .X 32 .Y 32
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+      
+    .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+   ]         
+ ]
+ 
+ .JUG_PRUSIA 
+ [  
+   .STATE_0
+   [
+     .SX 53 .SY 54 .ALPHA TRUE
+     .FILE "Game/UI/ModeloGestion/MenuQuest.tga" .U 934 .V 276
+     .PRIORITY 2
+   ]
+   .STATE_1
+   [
+     .SX 53 .SY 54 .ALPHA TRUE
+     .FILE "Game/UI/ModeloGestion/MenuQuest.tga" .U 81 .V 816
+     .PRIORITY 2
+   ]
+   .STATE_2
+   [
+     .SX 53 .SY 54 .ALPHA TRUE
+     .FILE "Game/UI/ModeloGestion/MenuQuest.tga" .U 379 .V 816
+     .PRIORITY 2
+   ]  
+   .X 934 .Y 276
+   
+   .TOOL_TIP
+   [ 
+    .TEXT LTEXT_JUGADOR_PRUSIA
+    .FONT "Fonts/gothic.fnt" 
+    .X 32 .Y 32
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+      
+    .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+   ]         
+ ]  
+  
+ .JUG_RUSIA
+ [ 
+   .STATE_0
+   [
+     .SX 53 .SY 54 .ALPHA TRUE
+     .FILE "Game/UI/ModeloGestion/MenuQuest.tga" .U 934 .V 411
+     .PRIORITY 2
+   ]
+   .STATE_1
+   [
+     .SX 53 .SY 54 .ALPHA TRUE
+     .FILE "Game/UI/ModeloGestion/MenuQuest.tga" .U 193 .V 816
+     .PRIORITY 2
+   ]
+   .STATE_2
+   [
+     .SX 53 .SY 54 .ALPHA TRUE
+     .FILE "Game/UI/ModeloGestion/MenuQuest.tga" .U 491 .V 816
+     .PRIORITY 2
+   ]  
+   .X 934 .Y 411
+   
+   .TOOL_TIP
+   [ 
+    .TEXT LTEXT_JUGADOR_RUSIA
+    .FONT "Fonts/gothic.fnt" 
+    .X 32 .Y 32
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+      
+    .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+   ]         
+ ]
+  
+ .JUG_AUSTRIA 
+ [   
+   .STATE_0
+   [
+     .SX 53 .SY 54 .ALPHA TRUE
+     .FILE "Game/UI/ModeloGestion/MenuQuest.tga" .U 934 .V 209
+     .PRIORITY 2
+   ]
+   .STATE_1
+   [
+     .SX 53 .SY 54 .ALPHA TRUE
+     .FILE "Game/UI/ModeloGestion/MenuQuest.tga" .U 25 .V 816
+     .PRIORITY 2
+   ]
+   .STATE_2
+   [
+     .SX 53 .SY 54 .ALPHA TRUE
+     .FILE "Game/UI/ModeloGestion/MenuQuest.tga" .U 323 .V 816
+     .PRIORITY 2
+   ]  
+   .X 934 .Y 209
+
+   .TOOL_TIP
+   [ 
+    .TEXT LTEXT_JUGADOR_AUSTRIA
+    .FONT "Fonts/gothic.fnt" 
+    .X 32 .Y 32
+    .COLOR [ .R 255 .G 255 .B 255 ] 
+      
+    .IMAGEN_FONDO %Game/UI/Comun/UIDefs_ImagenFondoToolTip.sb
+   ]         
+ ]

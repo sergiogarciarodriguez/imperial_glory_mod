@@ -1,0 +1,155 @@
+.MENUS
+[
+# Nota: - El primer menu definido sera el que se active al establecer el gestor de menus
+
+[ ######################################################################################### MENU 1 ##
+  .ID 'EM_1'
+  .CONTROLES 
+  [   
+    # Tecla de desactivacion automatica (equivaldra a pulsar la opcion de regresar a juego)
+    [ .TIPO UIC_TECLA .ID 'MESC' .PARAMS [ .TECLA KEY_ESCAPE .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ] ] ]            
+
+    # Imagen de fondo
+    [ .TIPO UIC_BITMAP .ID 'FOND' .PARAMS [ .FILE "Game/UI/Comun/PIngame0030.tga" .X 256 .Y 156 .SX 512 .SY 375 .U 0 .V 0 .ALPHA TRUE] ]
+
+    # Gestor de las opciones de menu (-> EMGO -> "Esc Menu Gestor Opciones")
+    [ .TIPO UIC_GESTOROPCIONES .ID 'EMGO'
+      .PARAMS
+      [ 
+    
+       .OPCIONES
+       [
+        [ .TIPO_OPCION UIC_BOTONTEXTO .ID 'EMOV' 
+          .PARAMS 
+          [ 
+            .BOTON 0 
+            .TEXT LTEXT_UI_ESCMENU_RESUME 
+            .FONDO [ .X 381 .Y 310 ] 
+            
+            .STYLE ESC_MENU_BUTTON
+            .IDSELECTSOUND "S_FXUI_CLICKBUTTON"
+            .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"  
+          ]
+        ]
+        
+        [ 
+          .TIPO_OPCION UIC_BOTONTEXTO .ID 'EMOO' 
+          .PARAMS 
+          [ 
+            .TEXT LTEXT_UI_ESCMENU_OPTIONS 
+            .FONDO [ .X 381 .Y 350 ] 
+            
+            .STYLE ESC_MENU_BUTTON
+            .IDSELECTSOUND "S_FXUI_CLICKBUTTON"
+            .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"  
+          ]
+        ]        
+        
+        [ .TIPO_OPCION UIC_BOTONTEXTO .ID 'EMOC' 
+          .PARAMS 
+          [ 
+            .TEXT LTEXT_UI_ESCMENU_LOAD 
+            .FONDO [ .X 381 .Y 390 ] 
+            
+            .STYLE ESC_MENU_BUTTON
+            .IDSELECTSOUND "S_FXUI_CLICKBUTTON"
+            .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"  
+          ]
+        ]            
+               
+        [ 
+          .TIPO_OPCION UIC_BOTONTEXTO .ID 'EMOG' 
+          .PARAMS
+          [
+            .TEXT LTEXT_UI_ESCMENU_SAVE
+            .FONDO [ .X 381 .Y 430 ]
+            .STYLE ESC_MENU_BUTTON
+            .IDSELECTSOUND "S_FXUI_CLICKBUTTON"
+            .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"  
+          ]
+        ]
+        
+        [ .TIPO_OPCION UIC_BOTONTEXTO .ID 'EMOX' 
+          .PARAMS 
+          [ 
+            .TEXT LTEXT_UI_ESCMENU_EXIT 
+            .FONDO [ .X 381 .Y 470 ] 
+            
+            .STYLE ESC_MENU_BUTTON
+            .IDSELECTSOUND "S_FXUI_CLICKBUTTON"
+            .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"  
+          ]
+        ]
+      ]#~OPCIONES
+      
+      .TECLAS [ .TECLA_SUBIR KEY_UP .TECLA_BAJAR KEY_DOWN .TECLA_CLICK KEY_RETURN .GESTION_CIRCULAR TRUE ]         
+    ]#~PARAMS
+  ]#~CONTROLES
+ ]
+ 
+ .ENLACES 
+ [ 
+   [ .CONTROL_ID 'EMOC' .MENU_ID 'EM_2' ]
+   [ .CONTROL_ID 'EMOG' .MENU_ID 'EM_3' ]
+   [ .CONTROL_ID 'EMOO' .MENU_ID 'OPCS' ]
+ ]
+]#MENU 1
+
+[
+  .ID 'EM_2'
+  .CONTROLES
+  [
+    [ 
+      .TIPO UIC_DLGCARGARPARTIDA .ID 'DLCP'
+      .PARAMS
+      [
+        %Game/UI/ModeloGestion/UIDefs_DlgCargaPartidaGestion.sb
+      ]
+    ]
+  ]
+  
+  .ENLACES
+  [ 
+    [ .CONTROL_ID 'OCPX' .MENU_ID 0 ]
+  ]
+]
+
+[
+  .ID 'EM_3'
+  .CONTROLES
+  [
+    [ 
+      .TIPO UIC_DLGSALVARPARTIDA .ID 'DLSP'
+      .PARAMS
+      [
+        %Game/UI/ModeloGestion/UIDefs_DlgSalvarPartidaGestion.sb
+      ]
+    ]
+  ]
+  
+  .ENLACES
+  [ 
+    [ .CONTROL_ID 'OCPX' .MENU_ID 0 ]
+  ]
+]
+
+[ #######################################################################################
+  .ID 'OPCS'
+  .CONTROLES
+  [
+    [
+      .TIPO UIC_DLGOPCIONES .ID 'OPCS' 
+      .PARAMS
+      [
+        %Game/UI/MainMenu/UIDefs_PantallaOpciones.sb              
+      ]
+    ]
+  ]
+  .ENLACES
+  [
+    [ .CONTROL_ID 'SBHK' .MENU_ID 0]
+    [ .CONTROL_ID 'SBHX' .MENU_ID 0]
+  ]
+]
+
+]# ~ Gestor de las opciones de menu                            

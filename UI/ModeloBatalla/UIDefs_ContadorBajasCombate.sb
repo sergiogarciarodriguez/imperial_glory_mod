@@ -1,0 +1,42 @@
+########################################################################################################
+# Params asociados al contador de bajas de combate en el modelo de batalla
+########################################################################################################
+
+ # Archivo con los datos donde obtener imagenes e info concreta segun mapa a configurar
+ 
+ .ZONASENSIBLE [ .PARAMS [ .RECT [ 0 0 1023 40 ] .EVENTOS [ MOUSE ] ] ]    
+ 
+ .ATACANTE
+ [   
+   .IMG [ .X 65 .Y 9 ]
+
+   .BARRA 
+    [ 
+     .SUPERIOR [ .FILE "Game\UI\ModeloBatalla\InterfazBatalla.tga" .U 60 .V 181 .ALPHA TRUE ]          
+     .X 107 .Y 12 .SX 165 .SY 14	
+     .PRIORITY 10
+    ] 
+ ]
+ 
+ .DEFENSOR
+ [  
+   .IMG [ .X 931 .Y 9 ]
+
+   .BARRA 
+    [ 
+     .SUPERIOR [ .FILE "Game\UI\ModeloBatalla\InterfazBatalla.tga" .U 60 .V 160 .ALPHA TRUE  ]          
+     .X 757 .Y 12 .SX 165 .SY 14	
+     .PRIORITY 10
+    ] 
+ ]
+
+ # Rob: esto es nuevo, lo usamos para saber las coords de las distintas barras de los imperios
+ .DEFINICION_BARRAS 
+ [
+   .BARRA_INGLATERRA_U 60 .BARRA_INGLATERRA_V 181
+   .BARRA_FRANCIA_U 60 .BARRA_FRANCIA_V 160
+   .BARRA_PRUSIA_U 60 .BARRA_PRUSIA_V 97
+   .BARRA_RUSIA_U 60 .BARRA_RUSIA_V 118
+   .BARRA_AUSTRIA_U 60 .BARRA_AUSTRIA_V 139
+   .BARRA_NEUTRAL_U 60 .BARRA_NEUTRAL_V 97
+ ]

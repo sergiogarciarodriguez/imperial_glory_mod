@@ -1,0 +1,123 @@
+#=======================================================================================
+# Definición de locuciones para las batallas históricas del modelo de batalla
+#
+# Todas las locuciones estan traducidas a varios idiomas (TRANSLATABLE=TRUE), esto quiere
+# decir que las rutas de los ficheros de audio son relativas a la carpeta del idioma!
+# 
+# Param ".3D" es TRUE por defecto.
+#       ".LOOP" es FALSE por defecto.
+#       ".TRANSLATABLE" es FALSE por defecto.
+#=======================================================================================
+
+# -------------------------------------------------------------------------------------
+#                                     AUDIO
+# -------------------------------------------------------------------------------------
+
+.AUDIO 
+[
+  [ 
+    .IDNAME "S_HB_ARAPILES_ATTACK"
+    .PATH "HistoricalBattles/HB_Arapiles_Attack.ogg" 
+    .3D FALSE
+    .STREAMING TRUE
+    .VOLUME 72
+    .TYPE VOICE
+    .PAUSE TRUE
+    .TRANSLATABLE TRUE
+  ]
+  [ 
+    .IDNAME "S_HB_ARAPILES_DEFENSE"
+    .PATH "HistoricalBattles/HB_Arapiles_Defense.ogg" 
+    .3D FALSE
+    .STREAMING TRUE
+    .VOLUME 72
+    .TYPE VOICE
+    .PAUSE TRUE
+    .TRANSLATABLE TRUE
+  ]
+
+  [ 
+    .IDNAME "S_HB_AUSTERLITZ_ATTACK"
+    .PATH "HistoricalBattles/HB_Austerlitz_attack.ogg" 
+    .3D FALSE
+    .STREAMING TRUE
+    .VOLUME 72
+    .TYPE VOICE
+    .PAUSE TRUE
+    .TRANSLATABLE TRUE
+  ]
+  [ 
+    .IDNAME "S_HB_AUSTERLITZ_DEFENSE"
+    .PATH "HistoricalBattles/HB_Austerlitz_defense.ogg" 
+    .3D FALSE
+    .STREAMING TRUE
+    .VOLUME 72
+    .TYPE VOICE
+    .PAUSE TRUE
+    .TRANSLATABLE TRUE
+  ]
+
+  [ 
+    .IDNAME "S_HB_FRIEDLAND_ATTACK"
+    .PATH "HistoricalBattles/HB_Friedland_attack.ogg" 
+    .3D FALSE
+    .STREAMING TRUE
+    .VOLUME 72
+    .TYPE VOICE
+    .PAUSE TRUE
+    .TRANSLATABLE TRUE
+  ]
+  [ 
+    .IDNAME "S_HB_FRIEDLAND_DEFENSE"
+    .PATH "HistoricalBattles/HB_Friedland_defense.ogg" 
+    .3D FALSE
+    .STREAMING TRUE
+    .VOLUME 72
+    .TYPE VOICE
+    .PAUSE TRUE
+    .TRANSLATABLE TRUE
+  ]
+
+  [ 
+    .IDNAME "S_HB_PYRAMID_ATTACK"
+    .PATH "HistoricalBattles/HB_Pyramid_attack.ogg" 
+    .3D FALSE
+    .STREAMING TRUE
+    .VOLUME 72
+    .TYPE VOICE
+    .PAUSE TRUE
+    .TRANSLATABLE TRUE
+  ]
+  [ 
+    .IDNAME "S_HB_PYRAMID_DEFENSE"
+    .PATH "HistoricalBattles/HB_Pyramid_defense.ogg" 
+    .3D FALSE
+    .STREAMING TRUE
+    .VOLUME 72
+    .TYPE VOICE
+    .PAUSE TRUE
+    .TRANSLATABLE TRUE
+  ]	
+  
+  [ 
+    .IDNAME "S_HB_WATERLOO_ATTACK"
+    .PATH "HistoricalBattles/HB_Waterloo_attack.ogg" 
+    .3D FALSE
+    .STREAMING TRUE
+    .VOLUME 72
+    .TYPE VOICE
+    .PAUSE TRUE
+    .TRANSLATABLE TRUE
+  ]
+  [ 
+    .IDNAME "S_HB_WATERLOO_DEFENSE"
+    .PATH "HistoricalBattles/HB_Waterloo_defense.ogg" 
+    .3D FALSE
+    .STREAMING TRUE
+    .VOLUME 72
+    .TYPE VOICE
+    .PAUSE TRUE
+    .TRANSLATABLE TRUE
+  ]  
+] # AUDIO
+

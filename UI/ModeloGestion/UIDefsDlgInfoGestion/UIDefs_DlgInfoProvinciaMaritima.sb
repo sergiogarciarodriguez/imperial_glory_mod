@@ -1,0 +1,112 @@
+#############################################################################################
+# Se muestra informacion sobre una provincia marítima
+# El Dlg constara de:
+# - Titulo
+# - Img de la provincia
+# - Texto informativo
+# - Btn de cierre / aceptacion
+#############################################################################################
+ 
+ # Se define la ventana                   
+ .ACTIVO FALSE
+ .CENTER FALSE       
+ .MODAL TRUE
+ 
+ .DEPTH 3
+ 
+ # Fondo texto
+ .FONDO
+ [  
+  .X 172 .Y 74
+  .U 0 .V 0 .SX 685 .SY 396
+  .FILE "Game/UI/ModeloGestion/UIDefsDlgInfoGestion/PantallaInformacionMar.tga" 
+  .ALPHA TRUE .PRIORITY 202
+ ]              
+ 
+ 
+ # Caption               
+ .CAPTION
+ [
+  .XMARGEN 86 .YMARGEN 11 .HEIGHT 30
+  .TITLE 
+  [ 
+   .ALINEACION CENTER 
+   .TEXT LTEXT_UI_GESTION_DLG_INFO_PROV_TITLE
+   .FONT "Fonts/Times17.fnt" 
+   .COLOR [ .R 255 .G 255 .B 255 ] 
+  ]
+  .MOVIBLE FALSE
+ ]
+ 
+ .CONTROLES
+ [ 
+  # Texto del nombre de la provincia
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WTNP'
+   .PARAMS
+   [
+    .X 85 .Y 45 .SX 507 .SY 42
+    .ALIGN CENTER
+    
+    .PRIORITY 203
+    
+    .TEXT
+    [
+     .FONT "Fonts/Times17.fnt" 
+     #.COLOR [ .R 255 .G 255 .B 195 ] <- Mola más este color :P
+     .COLOR [ .R 255 .G 255 .B 255 ]
+     .MSG  " "        
+    ]
+   ]   
+  ]  
+  
+  # Texto de informacion   
+  [
+   .TIPO UIC_WRAPTEXT .ID 'WTIN'
+   .PARAMS
+   [
+    .X 112 .Y 266 .SX 460 .SY 93
+    .ALIGN LEFT
+    
+    .PRIORITY 203
+    
+    .TEXT
+    [
+     .FONT "Fonts/Times11.fnt" 
+     #.COLOR [ .R 255 .G 255 .B 195 ] <- Mola más este color :P
+     .COLOR [ .R 255 .G 255 .B 255 ]
+     .MSG  " "        
+    ]
+    
+    .VDX 463 .VDY 5
+    .VSX  6 .VSY 122
+    .SLIDER_VERTICAL
+    [
+      .PRIORITY 204      
+      .STYLE DEFAULT_SLIDER_VERTICAL_GRANDE
+    ]    
+   ]   
+  ] 
+  
+  [
+   # Btn de salida
+   .TIPO UIC_BOTONTEXTO .ID 'EXIT'
+   .PARAMS 
+   [ 
+     .FONDO [ .X 614 .Y 326 .PRIORITY 203 ]
+     .IDSELECTSOUND "S_FXUI_CLICKBUTTON"
+     .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"  
+     
+     .KEY
+     [
+      .TECLA KEY_ESCAPE .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ]          
+     ]         
+     
+     
+     .STYLE DEFAULT_X_BUTTON 
+   ]
+  ]
+ ] 
+ 
+ .POS_BMPESCENARIO [ .X 181 .Y 96 ]
+ 

@@ -1,0 +1,19 @@
+#########################################################################################################################
+# Imagenes de Austria.
+# Representacion de las tropas en el mini mapa de batalla
+#########################################################################################################################
+
+ .ESTADOS
+ [
+  .DEFECTO    [ .IMG [ .FILE "Game\UI\ModeloBatalla\InterfazPaises\Austria\RepresentacionTropas.tga" .U 1 .V 19 .ALPHA TRUE ] ]
+  .MOVIENDOSE [ .IMG [ .FILE "Game\UI\ModeloBatalla\InterfazPaises\Austria\RepresentacionTropas.tga" .U 10 .V 19 .ALPHA TRUE ] ]
+  .COMBATE    [ .IMG [ .FILE "Game\UI\ModeloBatalla\InterfazPaises\Austria\RepresentacionTropas.tga" .U 19 .V 19 .ALPHA TRUE ] ]
+ ]
+
+ .CUALIFICADORES
+ [
+  .SELECCIONADA [ .IMG [ .FILE "Game\UI\ModeloBatalla\InterfazPaises\Austria\RepresentacionTropas.tga" .U 28 .V 19 .ALPHA TRUE ] ]
+ ]
+
+ .SX 7
+ .SY 7

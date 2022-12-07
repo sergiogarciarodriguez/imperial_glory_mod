@@ -1,0 +1,7 @@
+
+# WrapText para mostrar la descripcion de un elemento
+# Las coordenadas relativas se definiran desde el exterior
+.X 32 .Y 288
+.TEXT [ .FONT "Fonts/Times11.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+  
+  

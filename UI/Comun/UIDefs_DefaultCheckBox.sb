@@ -1,0 +1,12 @@
+#-----------------------------------------------------------------------------------
+# Define el estilo del CheckBox por defecto
+#-----------------------------------------------------------------------------------
+
+  #.COMPORTAMIENTO FIJO
+  #.FONDO
+  #[
+    .SX 16 .SY 16 
+    .PULSADO [ .FILE "Game/UI/Comun/DummyCheckBox.tga" .U 16 .V 0 ]
+    .SOLTADO [ .FILE "Game/UI/Comun/DummyCheckBox.tga" .U 0  .V 0 ]
+    .DISABLE [.FILE "Game/UI/Comun/DummyCheckBoxDisable.tga" .U 0  .V 0 ]
+  #]

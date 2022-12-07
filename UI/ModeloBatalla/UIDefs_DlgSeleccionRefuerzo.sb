@@ -1,0 +1,203 @@
+#################################################################################################
+# Dialogo de selección de ejército de refuerzo.
+#################################################################################################
+
+# Se define la ventana                   
+
+.MODAL TRUE
+.CENTER TRUE
+
+.ACTIVO TRUE
+
+.DEPTH 4
+
+.FONDO 
+[ 
+  # .X 0 .Y 0 
+  .SX 512 .SY 512 
+  .FILE "Game/UI/ModeloBatalla/Refuerzos/PRefuerzos0030.tga"
+  .U 0 .V 0
+  # .TRANSPARENCY 220
+  .PRIORITY 200
+  .ALPHA TRUE
+]              
+
+.POS_OFICIALES # lista de rects donde posicionar los batallones
+[ 
+  [ .X 73.0  .Y 100.0 .SX 70.0 .SY 100.0 ]
+  [ .X 167.0 .Y 100.0 .SX 70.0 .SY 100.0 ]
+  [ .X 261.0 .Y 100.0 .SX 70.0 .SY 100.0 ]
+  [ .X 355.0 .Y 100.0 .SX 70.0 .SY 100.0 ]
+]
+.POS_BATALLONES # lista de rects donde posicionar los batallones
+[
+  [ .X 51.0  .Y 251.0 .SX 60.0 .SY 90.0 ]
+  [ .X 109.0 .Y 251.0 .SX 60.0 .SY 90.0 ]
+  [ .X 167.0 .Y 251.0 .SX 60.0 .SY 90.0 ]
+  [ .X 225.0 .Y 251.0 .SX 60.0 .SY 90.0 ]
+  [ .X 283.0 .Y 251.0 .SX 60.0 .SY 90.0 ]
+  [ .X 341.0 .Y 251.0 .SX 60.0 .SY 90.0 ]
+  [ .X 399.0 .Y 251.0 .SX 60.0 .SY 90.0 ]
+  [ .X 51.0  .Y 340.0 .SX 60.0 .SY 90.0 ]
+  [ .X 109.0 .Y 340.0 .SX 60.0 .SY 90.0 ]
+  [ .X 167.0 .Y 340.0 .SX 60.0 .SY 90.0 ]
+  [ .X 225.0 .Y 340.0 .SX 60.0 .SY 90.0 ]
+  [ .X 283.0 .Y 340.0 .SX 60.0 .SY 90.0 ]
+  [ .X 341.0 .Y 340.0 .SX 60.0 .SY 90.0 ]
+  [ .X 399.0 .Y 340.0 .SX 60.0 .SY 90.0 ]
+]
+
+.CONTROLES
+[
+  # boton aceptar
+  [
+    .TIPO UIC_BOTONTEXTO .ID 'BTSI'
+    .PARAMS
+    [
+      .SOLTADO [ .COLOR [ .R 0 .G 0 .B 0  ] ] 
+      .SELECCIONADO [ .COLOR [ .R 0 .G 0 .B 0  ] ] 
+      .PULSADO [ .COLOR [ .R 0 .G 0 .B 0  ]  .DX 5 .DY 2 ] 
+      .TEXT LTEXT_UI_OK
+      .FONT "Fonts/Times12.fnt"
+      .CENTER_AREA [ .X1 0 .Y1 0 .X2 156 .Y2 39 ]
+      .FONDO 
+      [
+        .PRIORITY 210
+        .X 45 .Y 438
+        .SX 156 .SY 39
+        .SOLTADO      [ .FILE "Game/UI/ModeloBatalla/Refuerzos/Refuerzos.tga" .U 28  .V 438 ]
+        .PULSADO      [ .FILE "Game/UI/ModeloBatalla/Refuerzos/Refuerzos.tga" .U 342 .V 438 ]
+        .SELECCIONADO [ .FILE "Game/UI/ModeloBatalla/Refuerzos/Refuerzos.tga" .U 185 .V 438 ]
+        .ALPHA TRUE
+      ]
+    ]
+  ]  
+  
+  # boton cancelar
+  [
+    .TIPO UIC_BOTONTEXTO .ID 'BTNO'
+    .PARAMS
+    [
+      .SOLTADO [ .COLOR [ .R 0 .G 0 .B 0  ] ] 
+      .SELECCIONADO [ .COLOR [ .R 0 .G 0 .B 0  ] ] 
+      .PULSADO [ .COLOR [ .R 0 .G 0 .B 0  ]  .DX 5 .DY 2 ] 
+      .TEXT LTEXT_UI_CANCELAR
+      .FONT "Fonts/Times12.fnt"
+      .CENTER_AREA [ .X1 0 .Y1 0 .X2 156 .Y2 39 ]
+      .FONDO
+      [
+        .PRIORITY 210
+        .X 304 .Y 438
+        .SX 156 .SY 39
+        .SOLTADO      [ .FILE "Game/UI/ModeloBatalla/Refuerzos/Refuerzos.tga" .U 28  .V 438 ]
+        .PULSADO      [ .FILE "Game/UI/ModeloBatalla/Refuerzos/Refuerzos.tga" .U 342 .V 438 ]
+        .SELECCIONADO [ .FILE "Game/UI/ModeloBatalla/Refuerzos/Refuerzos.tga" .U 185 .V 438 ]
+        .ALPHA TRUE
+      ]
+    ]
+  ]
+  
+  # titulo (Refuerzos)
+  [
+    .TIPO UIC_BITMAP .ID 'BTNO'
+    .PARAMS
+    [
+      .PRIORITY 210
+      .X 108 .Y 47
+      .SX 297 .SY 38
+      .U 108  .V 47
+      .FILE "Game/UI/ModeloBatalla/Refuerzos/Refuerzos.tga" 
+      .ALPHA TRUE
+    ]
+  ]
+  # titulo (Refuerzos)
+  [
+    .TIPO UIC_WRAPTEXT .ID 'BTNO'
+    .PARAMS
+    [
+      .PRIORITY 225
+      .ALIGN CENTER
+      .X 108 .Y 47
+      .SX 297 .SY 38
+      .MSG LTEXT_UI_REFUERZOS
+      .TEXT
+      [
+        .FONT "Fonts/Times12.fnt"
+        .COLOR [ .R 255 .G 255 .B 255  ]
+      ]
+    ]
+  ]
+
+  # titulo2 (Composición del Ejército)
+  [
+    .TIPO UIC_BITMAP .ID 'BTNO'
+    .PARAMS
+    [
+      .PRIORITY 210
+      .X 106 .Y 218
+      .SX 294 .SY 26
+      .U 106  .V 218
+      .FILE "Game/UI/ModeloBatalla/Refuerzos/Refuerzos.tga"
+      .ALPHA TRUE
+    ]
+  ]
+  # titulo2 (Composición del Ejército)
+  [
+    .TIPO UIC_WRAPTEXT .ID 'BTTT'
+    .PARAMS
+    [
+      .PRIORITY 225
+      .ALIGN CENTER
+      .X 106 .Y 218
+      .SX 294 .SY 26
+      .MSG "LTEXT_UI_COMPOSICION_EJERCITO
+      .TEXT
+      [
+        .FONT "Fonts/Times12.fnt"
+        .COLOR [ .R 255 .G 255 .B 255  ]
+      ]
+    ]
+  ]
+    
+  # fondo oficiales
+  [
+    .TIPO UIC_BITMAP .ID 'BTNO'
+    .PARAMS
+    [
+      .PRIORITY 210
+      .X 44 .Y 92
+      .SX 416 .SY 120
+      .U 44 .V 92
+      .FILE "Game/UI/ModeloBatalla/Refuerzos/Refuerzos.tga"
+      .ALPHA TRUE
+    ]
+  ]
+
+  # fondo tropas
+  [
+    .TIPO UIC_BITMAP .ID 'BTNO'
+    .PARAMS
+    [
+      .PRIORITY 210
+      .X 44 .Y 248
+      .SX 416 .SY 185
+      .U 44 .V 248
+      .FILE "Game/UI/ModeloBatalla/Refuerzos/Refuerzos.tga"
+      .ALPHA TRUE
+    ]
+  ]
+
+  # el slider para escrolar por los oficiales
+  [
+    .TIPO UIC_SLIDER .ID 'SLID'
+    .PARAMS
+    [
+      .PRIORITY 225
+      .X 434 .Y 104 
+      # .SX 13
+      .SY 96
+      .STYLE DEFAULT_SLIDER_VERTICAL
+    ]    
+  ]
+  
+]

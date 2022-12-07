@@ -1,0 +1,186 @@
+#############################################################################################
+# Representa el cuerpo PARAMS del panel para el control de los modos de mapa.
+# Este panel comprendera los botones para cambiar el modo de mapa, la fecha informativa
+# el boton de pasar turno.
+#############################################################################################
+
+ # Imagen de Fondo
+ .FONDO 
+ [ 
+  .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" 
+  .U 896 .V 878 .SX 128 .SY 146 .X 896 .Y 622 
+  .ALPHA TRUE 
+ ]
+ 
+ # Fecha
+ .FECHA
+ [
+  # Se especifica el formato de la celda
+  .X 900 .Y 639 
+  .TEXT  [ .TEXT "Fecha" .FONT "Fonts/Default.fnt"
+  .COLOR [ .R 255 .G 255 .B 255 ] 
+  .CENTER_AREA [ .X1 0 .Y1 0  .X2 116 .Y2 28 ] ]
+  .FONDO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 900 .V 896 .SX 116 .SY 28 .ALPHA TRUE .PRIORITY 1 ] 
+  
+  # Se especifican los meses 
+  .MESES
+  [
+   [ .NOMBRE LTEXT_UI_GESTION_PCMAPA_ENERO      .DIAS 31 ]
+   [ .NOMBRE LTEXT_UI_GESTION_PCMAPA_FEBRERO    .DIAS 28 ]
+   [ .NOMBRE LTEXT_UI_GESTION_PCMAPA_MARZO      .DIAS 31 ]
+   [ .NOMBRE LTEXT_UI_GESTION_PCMAPA_ABRIL      .DIAS 30 ]
+   [ .NOMBRE LTEXT_UI_GESTION_PCMAPA_MAYO       .DIAS 31 ]
+   [ .NOMBRE LTEXT_UI_GESTION_PCMAPA_JUNIO      .DIAS 30 ]
+   [ .NOMBRE LTEXT_UI_GESTION_PCMAPA_JULIO      .DIAS 31 ]
+   [ .NOMBRE LTEXT_UI_GESTION_PCMAPA_AGOSTO     .DIAS 31 ]
+   [ .NOMBRE LTEXT_UI_GESTION_PCMAPA_SEPTIEMBRE .DIAS 30 ]
+   [ .NOMBRE LTEXT_UI_GESTION_PCMAPA_OCTUBRE    .DIAS 31 ]
+   [ .NOMBRE LTEXT_UI_GESTION_PCMAPA_NOVIEMBRE  .DIAS 30 ]
+   [ .NOMBRE LTEXT_UI_GESTION_PCMAPA_DICIEMBRE  .DIAS 31 ]
+  ]
+  
+  # Se especifica la fecha actual
+  # Nota: - El Idx del mes se hara poniendo un valor entre 1 y 12
+  .FECHA_ACTUAL
+  [
+    .IDX_MES 12
+    .DIA 1
+    .ANYO 1895
+  ]  
+  
+ ]
+ 
+ # Boton de Pasar Turno
+ # Nota: Usaremos una definicion del area donde centrar el texto manual ya que el boton incorpora graficos alrededor
+ .BOTON_NEXTTURN
+ [
+  .ID 'BPTU'
+  .BOTON
+  [
+   .COMPORTAMIENTO SIMPLE
+   .SOLTADO [ .COLOR [ .R 0 .G 0 .B 0 ] ] 
+   .PULSADO [ .COLOR [ .R 0 .G 0 .B 0 ] ]    
+   .TEXT LTEXT_UI_GESTION_PCMAPA_NEXTTURN         
+   .FONDO
+   [
+    .X 907 .Y 717 
+    .SX 109 .SY 45 .ALPHA TRUE .PRIORITY 1
+    .SOLTADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 336 .V 764 ] 
+    .PULSADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 448 .V 764 ]    
+   ]     
+   .KEY
+   [
+    .TECLA KEY_SPACE .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ]          
+   ]
+   .CENTER_AREA [ .X1 0 .Y1 0 .X2 102 .Y2 38 ]
+  ]
+ ] 
+
+ # Botones de Modo Mapa
+ .BOTONES_MODOMAPA
+ [
+  # Posiciones inicial e incrementos para colocar de forma automatica los botones
+  .POSICIONES
+  [
+   .INICIAL       [ .X 908 .Y 671 ]
+   .INCREMENTOS   [ .X 26  .Y 0   ]
+  ] 
+ 
+  # Los botones seran controlados desde un gestor de CheckBoxes
+  .PERMITE_NINGUNA_ACTIVACION FALSE
+  .CHECKBOXES
+  [
+   
+   # Boton de Modo Ejercitos
+   [
+    .ID 'BMEJ'
+    .PARAMS
+    [
+     .COMPORTAMIENTO FIJO
+     .FONDO
+     [
+       .PRIORITY 1 .ALPHA TRUE
+       .SX 24 .SY 48
+       .SOLTADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 336 .V 713 ] 
+       .PULSADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 444 .V 713 ]          
+     ]
+     #.TOOL_TIP 
+      [ 
+       .TEXT LTEXT_UI_BATALLA_TT_PCMAPA_EJERCITOS .SHOW_TIME 250 
+       .FONT "Fonts/Default.fnt" .X 32 .Y 32 .COLOR [ .R 0 .G 0 .B 0 ] 
+       .IMAGEN_FONDO %Game\UI\Comun\UIDefs_ImagenFondoToolTip.sb[IMAGEN_FONDO]
+      ]                          
+    ]
+   ]
+   
+   # Boton de Modo Relaciones Internacionales
+   [
+    .ID 'BMRI'
+    .PARAMS
+    [
+     .COMPORTAMIENTO FIJO
+     .FONDO
+     [
+       .PRIORITY 1 .ALPHA TRUE
+       .SX 24 .SY 48
+       .SOLTADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 363 .V 713 ] 
+       .PULSADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 471 .V 713 ]     
+     ]
+     #.TOOL_TIP 
+      [ 
+       .TEXT LTEXT_UI_BATALLA_TT_PCMAPA_RINTERNACIONALES .SHOW_TIME 250 
+       .FONT "Fonts/Default.fnt" .X 32 .Y 32 .COLOR [ .R 0 .G 0 .B 0 ] 
+       .IMAGEN_FONDO %Game\UI\Comun\UIDefs_ImagenFondoToolTip.sb[IMAGEN_FONDO]
+      ] 
+    ]
+   ]
+   
+   # Boton de Sistemas Politicos
+   [
+    .ID 'BMSP'
+    .PARAMS
+    [
+     .COMPORTAMIENTO FIJO
+     .FONDO
+     [
+       .PRIORITY 1 .ALPHA TRUE
+       .SX 24 .SY 48
+       .SOLTADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 390 .V 713 ] 
+       .PULSADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 498 .V 713 ]     
+     ]
+     #.TOOL_TIP 
+      [ 
+       .TEXT LTEXT_UI_BATALLA_TT_PCMAPA_SPOLITICOS .SHOW_TIME 250 
+       .FONT "Fonts/Default.fnt" .X 32 .Y 32 .COLOR [ .R 0 .G 0 .B 0 ] 
+       .IMAGEN_FONDO %Game\UI\Comun\UIDefs_ImagenFondoToolTip.sb[IMAGEN_FONDO]
+      ] 
+    ]
+   ]
+   
+   # Boton de Rutas Comerciales
+   [
+    .ID 'BMRC'
+    .PARAMS
+    [
+     .COMPORTAMIENTO FIJO
+     .FONDO
+     [
+       .PRIORITY 1 .ALPHA TRUE
+       .SX 24 .SY 48
+       .SOLTADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 417 .V 713 ] 
+       .PULSADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 525 .V 713 ]     
+     ]
+     #.TOOL_TIP 
+      [ 
+       .TEXT LTEXT_UI_BATALLA_TT_PCMAPA_RCOMERCIALES .SHOW_TIME 250 
+       .FONT "Fonts/Default.fnt" .X 32 .Y 32  .COLOR [ .R 0 .G 0 .B 0 ] 
+       .IMAGEN_FONDO %Game\UI\Comun\UIDefs_ImagenFondoToolTip.sb[IMAGEN_FONDO]
+      ] 
+    ]
+   ]   
+   
+  ] # ~ CHECKBOXES
+  
+ ]
+ 
+ 

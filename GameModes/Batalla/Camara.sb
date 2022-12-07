@@ -1,0 +1,79 @@
+#------------------------------------------------------------------
+#    Script de definición de camara genérica del modelo de batalla
+#------------------------------------------------------------------
+
+#---------- modo de rotacion sobre el pivote ----------
+.USE_PIVOT                   TRUE
+
+#---------- informacion de debug ----------
+.DRAW_DEBUG                  FALSE
+
+#---------- velocidad de movimiento y rotacion ----------
+.VELMOV                     10000.0       # cm/s
+.VELROT                       100.0       # grados/s
+
+#---------- adaptacion al suelo ----------
+.ADAPTAR_SUELO               TRUE
+.HEIGHT_SPEED                7500.0       # velocidad de adaptacion (cm/s) 
+.SAMPLING                       3         # numero de muestras (en realidad sera ((2n+1)^2)
+.SAMPLING_DIST                750.0       # distancia de muestreo (cm)
+.VOLUME_SAMPLES                 2
+
+#---------- inercia y aceleracion ----------
+.INERTIA_FACTOR_MOV            0.70       # factor de inercia del movimiento, entre [0, 1)
+.INERTIA_FACTOR_ROT            0.70       # factor de inercia de la rotacion, entre [0, 1)
+.INERTIA_ACCELERATION_TIME_MOV 0.35       # tiempo en alcanzar la velocidad max de movimiento (en seg)
+.INERTIA_ACCELERATION_TIME_ROT 0.35       # tiempo en alcanzar la velocidad max de rotacion (en seg)
+
+#---------- configuración del zoom ----------
+.ZOOM_MIN                     -0.5        # nivel minimo de zoom  
+.ZOOM_MAX                      1.0        # nivel maximo de zoom
+.ZOOM_STEP                     0.15       # incrementos de zoom
+.ZOOM_SPEED                    2.0        # velocidad del zoom (en niveles / seg)
+.ZOOM_FACTOR                   0.20       # factor de reduccion de velocidad, entre [0, 1]
+.ZOOM_MIN_EFFECTIVE_SPEED      5.0        # % de velocidad minima efectiva  
+  
+#---------- parametros dependientes del zoom ----------
+
+# altura de la camara
+.ZOOM_BASE_HEIGHT           2500.0        # altura inicial de la camara, con zoom = 0
+.ZOOM_VAR_HEIGHT            2350.0        # variacion de altura por nivel de zoom
+.MIN_HEIGHT                  100.0        # altura minima absoluta
+
+# FOV 
+.ZOOM_VAR_FOV                  5.0        # variacion de FOV por nivel de zoom
+
+# pitch
+.ZOOM_VAR_PITCH              -10.0        # variacion de pitch por nivel de zoom (grados)
+
+# variacion de velocidad
+.ZOOM_VAR_SPEED               50.0        # variacion de velocidad por nivel de zoom (%)
+
+# distancia al target
+.ZOOM_BASE_TARGET_DIST      5000.0        # distancia al target con zoom = 0 (cm)
+.ZOOM_VAR_TARGET_DIST       4500.0        # variacion de la distancia al target por nivel de zoom
+
+#-------- adaptacion de pitch al target ----------
+.PITCH_IDEAL_ANGLE            10.0        # angulo ideal con el target (grados)
+.PITCH_IDEAL_ANGLE_ZOOM_VAR  -10.0        # modificacion de angulo ideal por nivel de zoom (grados)
+.PITCH_SPEED                  45.0        # velocidad de adaptacion del pitch (grados/seg)
+.PITCH_SPEED_MIN_FACTOR       20.0        # factor modulador de velocidad para zoom minimo (%)
+.PITCH_SPEED_SMOOTH_ANGLE     18.0        # grados a partir de los que se aplica el suavizado de velocidad (grados)
+.PITCH_SPEED_SMOOTH_MIN        5.0        # modificador de velocidad minimo (%)         
+
+#---------- velocidad de adaptacion en modo GoToTarget (altura y pitch) ----------
+.GOTOTARGET_ADAPTATION_FACTOR 200.0       # velocidad de adaptacion (%)
+
+#---------- multiplicador de velocidad de la camara en modo goto ----------
+.GOTOTARGET_SPEED_FACTOR        5.0     
+
+#---------- distancia minima a los limites del mapa ----------
+.MIN_DIST_LIMIT_TOP          4000.0    # cm
+.MIN_DIST_LIMIT_BOTTOM       4000.0    # cm
+.MIN_DIST_LIMIT_LEFT         4000.0    # cm
+.MIN_DIST_LIMIT_RIGHT        4000.0    # cm
+
+#---------- movimientos permitidos ----------
+.ENABLE_MOVEMENT                TRUE
+.ENABLE_ROTATION                TRUE
+.ENABLE_ZOOM                    TRUE

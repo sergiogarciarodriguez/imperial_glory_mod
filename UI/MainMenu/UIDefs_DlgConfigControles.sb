@@ -1,0 +1,774 @@
+
+##############################################################################################################
+# Ventana de configuración de controles
+##############################################################################################################
+
+
+.MODAL TRUE
+.CENTER TRUE
+.ACTIVE FALSE
+.DEPTH 4
+
+.FADE_IN TRUE
+# .FADE_OUT TRUE
+
+#------------------------------------------------ IMAGEN DE FONDO -------------------------------------------
+.FONDO
+[
+  .FILE "Game/UI/MainMenu/VentanaTeclas.tga"
+  .X 0 .Y 0
+  .U 1 .V 1 
+  .SX 477 .SY 690
+  .ALPHA TRUE
+  .PRIORITY 250
+]
+
+.RELATIVE_PRIORITY TRUE
+
+.CONTROLES
+[
+
+  #-------------------------------------------- BOTON CANCEL ------------------------------------------------	
+  [ .TIPO UIC_BOTONTEXTO .ID 'BCAN'
+    .PARAMS
+    [ 
+      .TEXT LTEXT_UI_CANCELAR
+      .IDSELECTSOUND "S_CANCELAR"    
+      .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"      
+      .SOLTADO [ .COLOR [ .R  0 .G  0 .B  0 ] ]
+      .PULSADO [ .COLOR [ .R  0 .G  0 .B  0 ] ]
+      .DISABLE [ .COLOR [ .R  0 .G  0 .B  0 ] ]
+      .FONT "Fonts/Times14.fnt"
+      .CENTER_AREA      [ .X1 0 .Y1 0 .X2 139 .Y2 39 ]   
+      .FONDO
+      [
+        .X 83 .Y 562
+        .SX 139 .SY 39 .ALPHA TRUE    
+        .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 113 .V 329 ]
+        .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 113 .V 375 ]
+        .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 255 .V 375 ]
+    .PRIORITY 251
+      ]
+    ]
+  ] # ~ SLIDER
+	#-------------------------------------------- BOTON OK ----------------------------------------------------	
+  [ .TIPO UIC_BOTONTEXTO .ID 'B_OK'
+    .PARAMS
+    [ 
+      .TEXT LTEXT_UI_ACEPTAR
+      .IDSELECTSOUND "S_ACEPTAR"    
+      .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"      
+      .SOLTADO [ .COLOR [ .R  0 .G  0 .B  0 ] ]
+      .PULSADO [ .COLOR [ .R  0 .G  0 .B  0 ] ]
+      .DISABLE [ .COLOR [ .R  0 .G  0 .B  0 ] ]
+      .FONT "Fonts/Times14.fnt"
+      .CENTER_AREA      [ .X1 0 .Y1 0 .X2 139 .Y2 39 ]   
+      .FONDO
+      [
+        .X 257 .Y 562
+        .SX 139 .SY 39 .ALPHA TRUE    
+        .SOLTADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 113 .V 329 ]
+        .SELECCIONADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 113 .V 375 ]
+        .PULSADO [ .FILE "Game/UI/Comun/ControlesStandard.tga" .U 255 .V 375 ]
+    .PRIORITY 251
+      ]
+    ]
+  ] # ~ SLIDER
+
+	#-------------------------------------------- SLIDER ----------------------------------------------------	
+  [ .TIPO UIC_SLIDER .ID 'SLID'
+    .PARAMS
+    [ 
+      .X 368 .Y 218 
+      # .SX 6
+      # .SY 303 # 270
+      .STYLE DEFAULT_SLIDER_VERTICAL_GRANDE
+    .PRIORITY 251
+    ]
+  ] # ~ SLIDER
+
+  [ .TIPO UIC_TEXT .ID 'TITU' 
+    .PARAMS 
+    [ 
+      .TEXT LTEXT_UI_CONFIG_CONTROLS
+      .FONT "Fonts/MonotypeCorsiva29.fnt"
+      # .X 380 .Y 238
+      .X 532 .Y 140 # .X 234 .Y 104 # 202 
+      .ALIGN CENTER
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+      .PRIORITY 251
+    ]
+  ] # ~TEXT
+
+
+
+  [ .TIPO UIC_TEXT .ID 'T001' 
+    .PARAMS 
+    [ 
+      .TEXT LTEXT
+      .FONT "Fonts/Times12.fnt"
+      # .X 380 .Y 238
+      .X 82 .Y 192 # 202 
+      .ALIGN LEFT
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+      .PRIORITY 251
+    ]
+  ] # ~TEXT
+  [ .TIPO UIC_BOTONTEXTO .ID 'B001'
+    .PARAMS
+    [ 
+      # .TEXT LTEXT
+      .COMPORTAMIENTO FIJO
+      .FONT "Fonts/Times12.fnt"
+      .SOLTADO 		[ .COLOR [ .R 255 .G 255 .B 255 ] ]
+      .SELECCIONADO 	[ .COLOR [ .R 0 .G 0 .B 0 ] ]
+      .PULSADO 		[ .COLOR [ .R 250 .G 226 .B 120 ] .DX 5 .DY 2]
+      .CENTER_AREA [ .X1 0 .Y1 0 .X2 82 .Y2 25 ]
+      .ALIGN CENTER
+      .FONDO
+      [
+        .X 283 .Y 189
+        .SX 82 .SY 25 .ALPHA TRUE    
+        .SOLTADO [ .FILE "Game/UI/Mainmenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .SELECCIONADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .PULSADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .PRIORITY 251
+      ]
+    ]
+  ] # ~ SLIDER
+  [ .TIPO UIC_TEXT .ID 'W001'
+    .PARAMS
+    [
+      .X 596 .Y 240 # .X 283 .Y 189 
+      # .SX 82 .SY 25
+      .ALIGN CENTER
+      .FONT "Fonts/Times12.fnt"
+      .COLOR [ .R 255 .G 255 .B 255 ]
+      .TEXT LTEXT
+    ]
+  ]
+
+
+  [ .TIPO UIC_TEXT .ID 'T002' 
+    .PARAMS 
+    [ 
+      .TEXT LTEXT
+      .FONT "Fonts/Times12.fnt"
+      # .X 380 .Y 264
+      .X 82 .Y 218 # 228
+      .ALIGN LEFT
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+      .PRIORITY 251
+    ]
+  ] # ~TEXT
+  [ .TIPO UIC_BOTONTEXTO .ID 'B002'
+    .PARAMS
+    [ 
+      # .TEXT LTEXT
+      .COMPORTAMIENTO FIJO
+      .FONT "Fonts/Times12.fnt"
+      .SOLTADO 		[ .COLOR [ .R 255 .G 255 .B 255 ] ]
+      .SELECCIONADO 	[ .COLOR [ .R 0 .G 0 .B 0 ] ]
+      .PULSADO 		[ .COLOR [ .R 250 .G 226 .B 120 ] .DX 5 .DY 2]
+      .CENTER_AREA [ .X1 0 .Y1 0 .X2 82 .Y2 25 ]
+      .ALIGN CENTER
+      .FONDO
+      [
+        .X 283 .Y 215
+        .SX 82 .SY 25 .ALPHA TRUE    
+        .SOLTADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .SELECCIONADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .PULSADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .PRIORITY 251
+      ]
+    ]
+  ] # ~ SLIDER
+  [ .TIPO UIC_TEXT .ID 'W002'
+    .PARAMS
+    [
+      .X 596 .Y 266 # .X 283 .Y 215 
+      # .SX 82 .SY 25
+      .ALIGN CENTER
+      .FONT "Fonts/Times12.fnt"
+      .COLOR [ .R 255 .G 255 .B 255 ]
+      .TEXT LTEXT
+    ]
+  ]
+
+
+  [ .TIPO UIC_TEXT .ID 'T003' 
+    .PARAMS 
+    [ 
+      .TEXT LTEXT
+      .FONT "Fonts/Times12.fnt"
+      # .X 380 .Y 290
+      .X 82 .Y 244 # 254
+      .ALIGN LEFT
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+      .PRIORITY 251
+    ]
+  ] # ~TEXT
+  [ .TIPO UIC_BOTONTEXTO .ID 'B003'
+    .PARAMS
+    [ 
+      # .TEXT LTEXT
+      .COMPORTAMIENTO FIJO
+      .FONT "Fonts/Times12.fnt"
+      .SOLTADO 		[ .COLOR [ .R 255 .G 255 .B 255 ] ]
+      .SELECCIONADO 	[ .COLOR [ .R 0 .G 0 .B 0 ] ]
+      .PULSADO 		[ .COLOR [ .R 250 .G 226 .B 120 ] .DX 5 .DY 2]
+      .CENTER_AREA [ .X1 0 .Y1 0 .X2 82 .Y2 25 ]
+      .ALIGN CENTER
+      .FONDO
+      [
+        .X 283 .Y 241
+        .SX 82 .SY 25 .ALPHA TRUE    
+        .SOLTADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .SELECCIONADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .PULSADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .PRIORITY 251
+      ]
+    ]
+  ] # ~ SLIDER
+  [ .TIPO UIC_TEXT .ID 'W003'
+    .PARAMS
+    [
+      .X 596 .Y 292 # 313 # 51 .X 283 .Y 241 
+      # .SX 82 .SY 25
+      .ALIGN CENTER
+      .FONT "Fonts/Times12.fnt"
+      .COLOR [ .R 255 .G 255 .B 255 ]
+      .TEXT LTEXT
+    ]
+  ]
+
+
+  [ .TIPO UIC_TEXT .ID 'T004' 
+    .PARAMS 
+    [ 
+      .TEXT LTEXT
+      .FONT "Fonts/Times12.fnt"
+      # .X 380 .Y 316
+      .X 82 .Y 270 # 280
+      .ALIGN LEFT
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+      .PRIORITY 251
+    ]
+  ] # ~TEXT
+  [ .TIPO UIC_BOTONTEXTO .ID 'B004'
+    .PARAMS
+    [ 
+      # .TEXT LTEXT
+      .COMPORTAMIENTO FIJO
+      .FONT "Fonts/Times12.fnt"
+      .SOLTADO 		[ .COLOR [ .R 255 .G 255 .B 255 ] ]
+      .SELECCIONADO 	[ .COLOR [ .R 0 .G 0 .B 0 ] ]
+      .PULSADO 		[ .COLOR [ .R 250 .G 226 .B 120 ] .DX 5 .DY 2]
+      .CENTER_AREA [ .X1 0 .Y1 0 .X2 82 .Y2 25 ]
+      .ALIGN CENTER
+      .FONDO
+      [
+        .X 283 .Y 267
+        .SX 82 .SY 25 .ALPHA TRUE    
+        .SOLTADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .SELECCIONADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .PULSADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .PRIORITY 251
+      ]
+    ]
+  ] # ~ SLIDER
+  [ .TIPO UIC_TEXT .ID 'W004'
+    .PARAMS
+    [
+      .X 596 .Y 318 # 313 # 51.X 283 .Y 267 
+      # .SX 82 .SY 25
+      .ALIGN CENTER
+      .FONT "Fonts/Times12.fnt"
+      .COLOR [ .R 255 .G 255 .B 255 ]
+      .TEXT LTEXT
+    ]
+  ]
+
+
+  [ .TIPO UIC_TEXT .ID 'T005' 
+    .PARAMS 
+    [ 
+      .TEXT LTEXT
+      .FONT "Fonts/Times12.fnt"
+      # .X 380 .Y 342
+      .X 82 .Y 296 # 306
+      .ALIGN LEFT
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+      .PRIORITY 251
+    ]
+  ] # ~TEXT
+  [ .TIPO UIC_BOTONTEXTO .ID 'B005'
+    .PARAMS
+    [ 
+      # .TEXT LTEXT
+      .COMPORTAMIENTO FIJO
+      .FONT "Fonts/Times12.fnt"
+      .SOLTADO 		[ .COLOR [ .R 255 .G 255 .B 255 ] ]
+      .SELECCIONADO 	[ .COLOR [ .R 0 .G 0 .B 0 ] ]
+      .PULSADO 		[ .COLOR [ .R 250 .G 226 .B 120 ] .DX 5 .DY 2]
+      .CENTER_AREA [ .X1 0 .Y1 0 .X2 82 .Y2 25 ]
+      .ALIGN CENTER
+      .FONDO
+      [
+        .X 283 .Y 293
+        .SX 82 .SY 25 .ALPHA TRUE    
+        .SOLTADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .SELECCIONADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .PULSADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .PRIORITY 251
+      ]
+    ]
+  ] # ~ SLIDER
+  [ .TIPO UIC_TEXT .ID 'W005'
+    .PARAMS
+    [
+      .X 596 .Y 344 # 313 # 51 .X 283 .Y 293 
+      # .SX 82 .SY 25
+      .ALIGN CENTER
+      .FONT "Fonts/Times12.fnt"
+      .COLOR [ .R 255 .G 255 .B 255 ]
+      .TEXT LTEXT
+    ]
+  ]
+
+
+  [ .TIPO UIC_TEXT .ID 'T006' 
+    .PARAMS 
+    [ 
+      .TEXT LTEXT
+      .FONT "Fonts/Times12.fnt"
+      # .X 380 .Y 368
+      .X 82 .Y 322 # 332
+      .ALIGN LEFT
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+      .PRIORITY 251
+    ]
+  ] # ~TEXT
+  [ .TIPO UIC_BOTONTEXTO .ID 'B006'
+    .PARAMS
+    [ 
+      # .TEXT LTEXT
+      .COMPORTAMIENTO FIJO
+      .FONT "Fonts/Times12.fnt"
+      .SOLTADO 		[ .COLOR [ .R 255 .G 255 .B 255 ] ]
+      .SELECCIONADO 	[ .COLOR [ .R 0 .G 0 .B 0 ] ]
+      .PULSADO 		[ .COLOR [ .R 250 .G 226 .B 120 ] .DX 5 .DY 2]
+      .CENTER_AREA [ .X1 0 .Y1 0 .X2 82 .Y2 25 ]
+      .ALIGN CENTER
+      .FONDO
+      [
+        .X 283 .Y 319
+        .SX 82 .SY 25 .ALPHA TRUE    
+        .SOLTADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .SELECCIONADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .PULSADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .PRIORITY 251
+      ]
+    ]
+  ] # ~ SLIDER
+  [ .TIPO UIC_TEXT .ID 'W006'
+    .PARAMS
+    [
+      .X 596 .Y 370 # 313 # 51 .X 283 .Y 319 
+      # .SX 82 .SY 25
+      .ALIGN CENTER
+      .FONT "Fonts/Times12.fnt"
+      .COLOR [ .R 255 .G 255 .B 255 ]
+      .TEXT LTEXT
+    ]
+  ]
+
+
+  [ .TIPO UIC_TEXT .ID 'T007' 
+    .PARAMS 
+    [ 
+      .TEXT LTEXT
+      .FONT "Fonts/Times12.fnt"
+      # .X 380 .Y 394
+      .X 82 .Y 348 # 358
+      .ALIGN LEFT
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+      .PRIORITY 251
+    ]
+  ] # ~TEXT
+  [ .TIPO UIC_BOTONTEXTO .ID 'B007'
+    .PARAMS
+    [ 
+      # .TEXT LTEXT
+      .COMPORTAMIENTO FIJO
+      .FONT "Fonts/Times12.fnt"
+      .SOLTADO 		[ .COLOR [ .R 255 .G 255 .B 255 ] ]
+      .SELECCIONADO 	[ .COLOR [ .R 0 .G 0 .B 0 ] ]
+      .PULSADO 		[ .COLOR [ .R 250 .G 226 .B 120 ] .DX 5 .DY 2]
+      .CENTER_AREA [ .X1 0 .Y1 0 .X2 82 .Y2 25 ]
+      .ALIGN CENTER
+      .FONDO
+      [
+        .X 283 .Y 345
+        .SX 82 .SY 25 .ALPHA TRUE    
+        .SOLTADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .SELECCIONADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .PULSADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .PRIORITY 251
+      ]
+    ]
+  ] # ~ SLIDER
+  [ .TIPO UIC_TEXT .ID 'W007'
+    .PARAMS
+    [
+      .X 596 .Y 396 # 313 # 51 .X 283 .Y 345 
+      # .SX 82 .SY 25
+      .ALIGN CENTER
+      .FONT "Fonts/Times12.fnt"
+      .COLOR [ .R 255 .G 255 .B 255 ]
+      .TEXT LTEXT
+    ]
+  ]
+
+
+  [ .TIPO UIC_TEXT .ID 'T008' 
+    .PARAMS 
+    [ 
+      .TEXT LTEXT
+      .FONT "Fonts/Times12.fnt"
+      # .X 380 .Y 420
+      .X 82 .Y 374 # 384
+      .ALIGN LEFT
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+      .PRIORITY 251
+    ]
+  ] # ~TEXT
+  [ .TIPO UIC_BOTONTEXTO .ID 'B008'
+    .PARAMS
+    [ 
+      # .TEXT LTEXT
+      .COMPORTAMIENTO FIJO
+      .FONT "Fonts/Times12.fnt"
+      .SOLTADO 		[ .COLOR [ .R 255 .G 255 .B 255 ] ]
+      .SELECCIONADO 	[ .COLOR [ .R 0 .G 0 .B 0 ] ]
+      .PULSADO 		[ .COLOR [ .R 250 .G 226 .B 120 ] .DX 5 .DY 2]
+      .CENTER_AREA [ .X1 0 .Y1 0 .X2 82 .Y2 25 ]
+      .ALIGN CENTER
+      .FONDO
+      [
+        .X 283 .Y 371
+        .SX 82 .SY 25 .ALPHA TRUE    
+        .SOLTADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .SELECCIONADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .PULSADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .PRIORITY 251
+      ]
+    ]
+  ] # ~ SLIDER
+  [ .TIPO UIC_TEXT .ID 'W008'
+    .PARAMS
+    [
+      .X 596 .Y 422 # 313 # 51 .X 283 .Y 371 
+      # .SX 82 .SY 25
+      .ALIGN CENTER
+      .FONT "Fonts/Times12.fnt"
+      .COLOR [ .R 255 .G 255 .B 255 ]
+      .TEXT LTEXT
+    ]
+  ]
+
+
+  [ .TIPO UIC_TEXT .ID 'T009' 
+    .PARAMS 
+    [ 
+      .TEXT LTEXT
+      .FONT "Fonts/Times12.fnt"
+      # .X 380 .Y 446
+      .X 82 .Y 400 # 410
+      .ALIGN LEFT
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+      .PRIORITY 251
+    ]
+  ] # ~TEXT
+  [ .TIPO UIC_BOTONTEXTO .ID 'B009'
+    .PARAMS
+    [ 
+      # .TEXT LTEXT
+      .COMPORTAMIENTO FIJO
+      .FONT "Fonts/Times12.fnt"
+      .SOLTADO 		[ .COLOR [ .R 255 .G 255 .B 255 ] ]
+      .SELECCIONADO 	[ .COLOR [ .R 0 .G 0 .B 0 ] ]
+      .PULSADO 		[ .COLOR [ .R 250 .G 226 .B 120 ] .DX 5 .DY 2]
+      .CENTER_AREA [ .X1 0 .Y1 0 .X2 82 .Y2 25 ]
+      .ALIGN CENTER
+      .FONDO
+      [
+        .X 283 .Y 397
+        .SX 82 .SY 25 .ALPHA TRUE    
+        .SOLTADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .SELECCIONADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .PULSADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .PRIORITY 251
+      ]
+    ]
+  ] # ~ SLIDER
+  [ .TIPO UIC_TEXT .ID 'W009'
+    .PARAMS
+    [
+      .X 596 .Y 448 # 313 # 51 .X 283 .Y 397 
+      # .SX 82 .SY 25
+      .ALIGN CENTER
+      .FONT "Fonts/Times12.fnt"
+      .COLOR [ .R 255 .G 255 .B 255 ]
+      .TEXT LTEXT
+    ]
+  ]
+
+
+  [ .TIPO UIC_TEXT .ID 'T010' 
+    .PARAMS 
+    [ 
+      .TEXT LTEXT
+      .FONT "Fonts/Times12.fnt"
+      # .X 380 .Y 472
+      .X 82 .Y 426 # 436
+      .ALIGN LEFT
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+      .PRIORITY 251
+    ]
+  ] # ~TEXT
+  [ .TIPO UIC_BOTONTEXTO .ID 'B010'
+    .PARAMS
+    [ 
+      # .TEXT LTEXT
+      .COMPORTAMIENTO FIJO
+      .FONT "Fonts/Times12.fnt"
+      .SOLTADO 		[ .COLOR [ .R 255 .G 255 .B 255 ] ]
+      .SELECCIONADO 	[ .COLOR [ .R 0 .G 0 .B 0 ] ]
+      .PULSADO 		[ .COLOR [ .R 250 .G 226 .B 120 ] .DX 5 .DY 2]
+      .CENTER_AREA [ .X1 0 .Y1 0 .X2 82 .Y2 25 ]
+      .ALIGN CENTER
+      .FONDO
+      [
+        .X 283 .Y 423
+        .SX 82 .SY 25 .ALPHA TRUE    
+        .SOLTADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .SELECCIONADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .PULSADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .PRIORITY 251
+      ]
+    ]
+  ] # ~ SLIDER
+  [ .TIPO UIC_TEXT .ID 'W010'
+    .PARAMS
+    [
+      .X 596 .Y 474 # 313 # 51 .X 283 .Y 423 
+      # .SX 82 .SY 25
+      .ALIGN CENTER
+      .FONT "Fonts/Times12.fnt"
+      .COLOR [ .R 255 .G 255 .B 255 ]
+      .TEXT LTEXT
+    ]
+  ]
+
+
+  [ .TIPO UIC_TEXT .ID 'T011' 
+    .PARAMS 
+    [ 
+      .TEXT LTEXT
+      .FONT "Fonts/Times12.fnt"
+      # .X 380 .Y 498
+      .X 82 .Y 452 # 462
+      .ALIGN LEFT
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+      .PRIORITY 251
+    ]
+  ] # ~TEXT
+  [ .TIPO UIC_BOTONTEXTO .ID 'B011'
+    .PARAMS
+    [ 
+      # .TEXT LTEXT
+      .COMPORTAMIENTO FIJO
+      .FONT "Fonts/Times12.fnt"
+      .SOLTADO 		[ .COLOR [ .R 255 .G 255 .B 255 ] ]
+      .SELECCIONADO 	[ .COLOR [ .R 0 .G 0 .B 0 ] ]
+      .PULSADO 		[ .COLOR [ .R 250 .G 226 .B 120 ] .DX 5 .DY 2]
+      .CENTER_AREA [ .X1 0 .Y1 0 .X2 82 .Y2 25 ]
+      .ALIGN CENTER
+      .FONDO
+      [
+        .X 283 .Y 449
+        .SX 82 .SY 25 .ALPHA TRUE    
+        .SOLTADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .SELECCIONADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .PULSADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .PRIORITY 251
+      ]
+    ]
+  ] # ~ SLIDER
+  [ .TIPO UIC_TEXT .ID 'W011'
+    .PARAMS
+    [
+      .X 596 .Y 500 # 313 # 51 .X 283 .Y 449 
+      # .SX 82 .SY 25
+      .ALIGN CENTER
+      .FONT "Fonts/Times12.fnt"
+      .COLOR [ .R 255 .G 255 .B 255 ]
+      .TEXT LTEXT
+    ]
+  ]
+
+
+  [ .TIPO UIC_TEXT .ID 'T012' 
+    .PARAMS 
+    [ 
+      .TEXT LTEXT
+      .FONT "Fonts/Times12.fnt"
+      # .X 380 .Y 524
+      .X 82 .Y 478 # 488
+      .ALIGN LEFT
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+      .PRIORITY 251
+    ]
+  ] # ~TEXT
+  [ .TIPO UIC_BOTONTEXTO .ID 'B012'
+    .PARAMS
+    [ 
+      # .TEXT LTEXT
+      .COMPORTAMIENTO FIJO
+      .FONT "Fonts/Times12.fnt"
+      .SOLTADO 		[ .COLOR [ .R 255 .G 255 .B 255 ] ]
+      .SELECCIONADO 	[ .COLOR [ .R 0 .G 0 .B 0 ] ]
+      .PULSADO 		[ .COLOR [ .R 250 .G 226 .B 120 ] .DX 5 .DY 2]
+      .CENTER_AREA [ .X1 0 .Y1 0 .X2 82 .Y2 25 ]
+      .ALIGN CENTER
+      .FONDO
+      [
+        .X 283 .Y 475
+        .SX 82 .SY 25 .ALPHA TRUE    
+        .SOLTADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .SELECCIONADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .PULSADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .PRIORITY 251
+      ]
+    ]
+  ] # ~ SLIDER
+  [ .TIPO UIC_TEXT .ID 'W012'
+    .PARAMS
+    [
+      .X 596 .Y 526 # 313 # 51 .X 283 .Y 475 
+      # .SX 82 .SY 25
+      .ALIGN CENTER
+      .FONT "Fonts/Times12.fnt"
+      .COLOR [ .R 255 .G 255 .B 255 ]
+      .TEXT LTEXT
+    ]
+  ]
+
+
+  [ .TIPO UIC_TEXT .ID 'T013' 
+    .PARAMS 
+    [ 
+      .TEXT LTEXT
+      .FONT "Fonts/Times12.fnt"
+      # .X 380 .Y 550
+      .X 82 .Y 504 # 514
+      .ALIGN LEFT
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+      .PRIORITY 251
+    ]
+  ] # ~TEXT
+  [ .TIPO UIC_BOTONTEXTO .ID 'B013'
+    .PARAMS
+    [ 
+      # .TEXT LTEXT
+      .COMPORTAMIENTO FIJO
+      .FONT "Fonts/Times12.fnt"
+      .SOLTADO 		[ .COLOR [ .R 255 .G 255 .B 255 ] ]
+      .SELECCIONADO 	[ .COLOR [ .R 0 .G 0 .B 0 ] ]
+      .PULSADO 		[ .COLOR [ .R 250 .G 226 .B 120 ] .DX 5 .DY 2]
+      .CENTER_AREA [ .X1 0 .Y1 0 .X2 82 .Y2 25 ]
+      .ALIGN CENTER
+      .FONDO
+      [
+        .X 283 .Y 501
+        .SX 82 .SY 25 .ALPHA TRUE    
+        .SOLTADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .SELECCIONADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .PULSADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .PRIORITY 251
+      ]
+    ]
+  ] # ~ SLIDER
+  [ .TIPO UIC_TEXT .ID 'W013'
+    .PARAMS
+    [
+      .X 596 .Y 552 # 313 # 51 .X 283 .Y 501 
+      # .SX 82 .SY 25
+      .ALIGN CENTER
+      .FONT "Fonts/Times12.fnt"
+      .COLOR [ .R 255 .G 255 .B 255 ]
+      .TEXT LTEXT
+    ]
+  ]
+
+
+  [ .TIPO UIC_TEXT .ID 'T014' 
+    .PARAMS 
+    [ 
+      .TEXT LTEXT
+      .FONT "Fonts/Times12.fnt"
+      # .X 380 .Y 576
+      .X 82 .Y 530 # 540
+      .ALIGN LEFT
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+      .PRIORITY 251
+    ]
+  ] # ~TEXT
+  [ .TIPO UIC_BOTONTEXTO .ID 'B014'
+    .PARAMS
+    [ 
+      # .TEXT LTEXT
+      .COMPORTAMIENTO FIJO
+      .FONT "Fonts/Times12.fnt"
+      .SOLTADO 		[ .COLOR [ .R 255 .G 255 .B 255 ] ]
+      .SELECCIONADO 	[ .COLOR [ .R 0 .G 0 .B 0 ] ]
+      .PULSADO 		[ .COLOR [ .R 250 .G 226 .B 120 ] .DX 5 .DY 2]
+      .CENTER_AREA [ .X1 0 .Y1 0 .X2 82 .Y2 25 ]
+      .ALIGN CENTER
+      .FONDO
+      [
+        .X 283 .Y 527
+        .SX 82 .SY 25 .ALPHA TRUE    
+        .SOLTADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .SELECCIONADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .PULSADO [ .FILE "Game/UI/MainMenu/VentanaTeclas.tga" .U 0 .V 693 ]
+        .PRIORITY 251
+      ]
+    ]
+  ] # ~ SLIDER
+  [ .TIPO UIC_TEXT .ID 'W014'
+    .PARAMS
+    [
+      .X 596 .Y 578 # 313 # 51 .X 283 .Y 527 
+      # .SX 82 .SY 25
+      .ALIGN CENTER
+      .FONT "Fonts/Times12.fnt"
+      .COLOR [ .R 255 .G 255 .B 255 ]
+      .TEXT LTEXT
+    ]
+  ]
+
+  [ .TIPO UIC_ZONASENSIBLE .ID 'ZONA'
+    .PARAMS 
+    [ 
+      .RECT [ 0 0 1024 768 ] 
+      # .DBCLICK_AS_RELEASE FALSE 
+      .EVENTOS [ KEY_DOWN ] 
+    ]  
+  ]
+
+]
+
+.SLIDER_SY 303
+

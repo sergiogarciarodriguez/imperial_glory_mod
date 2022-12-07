@@ -1,0 +1,357 @@
+#############################################################################################
+# Ventana Informacion Ejercito
+#
+#############################################################################################
+
+  .MODAL TRUE
+  .CENTER TRUE
+  .DEPTH 3
+  .RELATIVE_PRIORITY FALSE
+
+  .FONDO 
+  [
+    .FILE "Game/UI/ModeloGestion/InformacionEjercito/MenuInformacionEjercitos.tga"
+    .X 0 .Y 0 .U 0 .V 0 .SX 1024 .SY 768 
+    .ALPHA TRUE .PRIORITY 2
+  ] # ~FONDO
+  
+
+  #-------------------------------------------------------------------------------------------------------------------------
+  
+  # ICONOS_MANDOS
+  
+  #-------------------------------------------------------------------------------------------------------------------------
+  .ICONOS_MANDOS
+  [
+    .FONDO
+    [
+      .FILE "Game/UI/ModeloGestion/InformacionEjercito/MenuInformacionEjercitos.tga"
+      .X 0 .Y 0 .U 1 .V 773 .SX 308 .SY 107 
+      .ALPHA TRUE .PRIORITY 3
+    ]
+  
+    .ICONO_DX 3 .ICONO_DY 3
+    
+    .CREAR_ZONA_SENSIBLE_ICONO TRUE #ANTES FALSE
+    
+    .TEXTO_NOMBRE
+    [
+      .X 0 .Y 0 .SX 226 .SY 42 .DX 77 .DY 1 .ALIGN CENTER
+      .TEXT [ .FONT "Fonts/Times12.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+    ]    
+  
+    .TEXTO_NOMBRE_DISABLE
+    [
+      .X 0 .Y 0 .SX 226 .SY 42 .DX 77 .DY 1 .ALIGN CENTER  
+      .TEXT [ .FONT "Fonts/Times12.fnt" .COLOR [ .R 150 .G 150 .B 150 ] ]
+    ]  
+  
+    .TEXTO_PROVINCIA
+    [
+      .X 0 .Y 0 .SX 226 .SY 41 .DX 77 .DY 26 .ALIGN CENTER     
+      .TEXT [ .FONT "Fonts/Times12.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+    ]        
+    
+    .TEXTO_PROVINCIA_DISABLE
+    [
+      .X 0 .Y 0 .SX 226 .SY 41 .DX 77 .DY 26 .ALIGN CENTER      
+      .TEXT [ .FONT "Fonts/Times12.fnt" .COLOR [ .R 150 .G 150 .B 150 ] ]
+    ]        
+  
+    .MATRIZ_TROPAS
+    [
+      .MATRIZ_ICONOS
+      [
+        #.CENTER_ICONS FALSE
+  
+        # Definimos la matriz de vision
+        .MATRIZ
+        [
+          .FILAS 1
+          .COLUMNAS 7
+        ]     
+  
+        .DRAW_PARAMS
+        [
+          .X 0 .Y 0
+          .CELL_XSPACE 1 .CELL_YSPACE 1
+          .SLIDER_XSPACE 10
+          .OBJ_WIDTH 32 .OBJ_HEIGHT 45
+        ]         
+  
+        .TOOL_TIP 
+        [ 
+          %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+        ]
+      	     
+        .PRIORITY_BASE 4 
+  
+        # Usamos el cursor de ayuda contextual 
+        .ALTERNATE_CURSOR CUR_CONTEXTHELP	  	
+  
+      ]
+  
+      # Los iconos insertados se podran seleccionar con el cursor
+      .AUTO_SELECCION FALSE
+  
+      # Desplazamientos
+      .DX 78 .DY 54
+    ]   
+    
+  ] # ~ICONOS_MANDO   
+
+
+  #-------------------------------------------------------------------------------------------------------------------------
+  
+  # ICONOS_ACUARTELADAS
+  
+  #-------------------------------------------------------------------------------------------------------------------------
+  .ICONOS_ACUARTELADAS
+  [
+    .FONDO
+    [
+      .FILE "Game/UI/ModeloGestion/InformacionEjercito/MenuInformacionEjercitos.tga"
+      .X 0 .Y 0 .U 312 .V 773 .SX 308 .SY 127 
+      .ALPHA TRUE .PRIORITY 3
+    ]
+
+    .ICONO_DX 3 .ICONO_DY 10
+    
+    .CREAR_ZONA_SENSIBLE_ICONO TRUE
+    
+    .TEXTO_NOMBRE
+    [
+      .X 0 .Y 0 .SX 226 .SY 42 .DX 77 .DY 1 .ALIGN CENTER 
+      .TEXT [ .FONT "Fonts/Times12.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+    ]    
+
+    .TEXTO_NOMBRE_DISABLE
+    [
+      .X 0 .Y 0 .SX 226 .SY 42 .DX 77 .DY 1 .ALIGN CENTER 
+      .TEXT [ .FONT "Fonts/Times12.fnt" .COLOR [ .R 150 .G 150 .B 150 ] ]
+    ]  
+
+    .TEXTO_PROVINCIA
+    [
+      .X 0 .Y 0 .SX 226 .SY 41 .DX 77 .DY 26 .ALIGN CENTER 
+      .TEXT [ .FONT "Fonts/Times12.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ]
+    ]        
+
+    .TEXTO_PROVINCIA_DISABLE
+    [
+      .X 0 .Y 0 .SX 226 .SY 41 .DX 77 .DY 26 .ALIGN CENTER 
+      .TEXT [ .FONT "Fonts/Times12.fnt" .COLOR [ .R 150 .G 150 .B 150 ] ]
+    ]        
+
+    .MATRIZ_TROPAS
+    [
+      .MATRIZ_ICONOS
+      [
+        #.CENTER_ICONS FALSE
+
+        # Definimos la matriz de vision
+        .MATRIZ
+        [
+          .FILAS 2
+          .COLUMNAS 6
+        ]     
+
+        .DRAW_PARAMS
+        [
+          .X 0 .Y 0
+          .CELL_XSPACE 1 .CELL_YSPACE 1
+          .SLIDER_XSPACE 0
+          .OBJ_WIDTH 32 .OBJ_HEIGHT 45
+        ]  
+
+        .TOOL_TIP 
+        [ 
+          %Game/UI/Comun/UIDefs_DefaultToolTip.sb
+        ]
+
+        # Usamos el cursor de ayuda contextual 
+        .ALTERNATE_CURSOR CUR_CONTEXTHELP	  		     
+        .ALPHA TRUE 
+        .PRIORITY_BASE 15  		
+        .SLIDER [ .STYLE DEFAULT_SLIDER_VERTICAL  .PRIORITY 16]
+      ]
+
+      # Los iconos insertados se podran seleccionar con el cursor
+      .AUTO_SELECCION FALSE
+
+      # Desplazamientos
+      .DX 93 .DY 31
+    ]   
+
+  ] # ~ICONOS_ACUARTELADAS 
+
+#----------------------------------------------------------------------------------------------------------------------------
+#TROPAS CON MANDOS
+
+  .MATRIZ_ICONOS_MANDOS
+  [
+    .CENTER_ICONS FALSE
+    
+    # Definimos la matriz de vision
+    .MATRIZ
+    [
+      .FILAS 5
+      .COLUMNAS 2
+    ]     
+    
+    .DRAW_PARAMS
+    [
+      .X 5 #antes 75
+      .Y 141
+      .CELL_XSPACE 4 
+      .CELL_YSPACE 5 
+      .SLIDER_XSPACE 1
+      .OBJ_WIDTH 308 
+      .OBJ_HEIGHT 107 
+    ]         
+    
+    .SLIDER [ .STYLE DEFAULT_SLIDER_VERTICAL_GRANDE  .PRIORITY 5]
+    .PRIORITY_BASE 4 
+  ]
+  
+  .MATRIZ_ICONOS_MANDOS_AUTO_SELECCION FALSE
+
+#----------------------------------------------------------------------------------------------------------------------------
+#TROPAS ACUARTELADAS
+
+  .MATRIZ_ICONOS_ACUARTELADAS
+  [
+    .CENTER_ICONS FALSE
+    
+    # Definimos la matriz de vision
+    .MATRIZ
+    [
+      .FILAS 4
+      .COLUMNAS 1
+    ]     
+    
+    .DRAW_PARAMS
+    [
+      .X 672 #antes 75
+      .Y 141
+      .CELL_XSPACE 4 
+      .CELL_YSPACE 14 
+      .SLIDER_XSPACE 1
+      .OBJ_WIDTH 308 
+      .OBJ_HEIGHT 127 
+    ]         
+    
+    .SLIDER [ .STYLE DEFAULT_SLIDER_VERTICAL_GRANDE .PRIORITY 5]
+    .PRIORITY_BASE 4
+    .ALPHA TRUE 
+  ]
+  
+  .MATRIZ_ICONOS_ACUARTELADAS_AUTO_SELECCION FALSE  
+
+
+  #---------------------------------------------------------------------------------
+  # CONTROLES
+  
+  .BOTONES
+  [
+    .CENTER
+    [ 
+      .XMARGEN 970
+      .YMARGEN 714
+      .XSPACE  0
+      .YSPACE  0
+    ]
+
+    .LIST
+    [      
+      [
+        .TIPO UIC_BOTONTEXTO     
+        .CANCELAR TRUE
+        .STYLE DEFAULT_X_BUTTON 
+        .IDSELECTSOUND "S_FXQUEST_CERRAR_VENTANA" 
+        .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"
+        .KEY
+        [
+          .TECLA KEY_ESCAPE .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ]          
+        ]        
+      ]       
+    ] # ~ LIST  
+  ] # ~BOTONES
+
+  #Controles
+  .CONTROLES
+  [ 
+    # Dlg MODAL para mostrar informacion de los edificios
+    [
+     .TIPO UIC_DLGINFOEDIFICIO .ID 'DLIE'
+     .PARAMS [ %Game\UI\ModeloGestion\UIDefsDlgInfoGestion\UIDefs_DlgInfoEdificio.sb ]
+    ]
+    
+    # Dlg MODAL para mostrar información de los efectivos de tipo mando
+    [
+     .TIPO UIC_DLGINFOMANDO .ID 'DLIM'
+     .PARAMS [ %Game\UI\ModeloGestion\UIDefsDlgInfoGestion\UIDefs_DlgInfoMando.sb ]
+    ]
+    
+    # Dlg MODAL para mostrar informacion de los efectivos de tipo tropa
+    [
+     .TIPO UIC_DLGINFOTROPA .ID 'DLIT'
+     .PARAMS [ %Game\UI\ModeloGestion\UIDefsDlgInfoGestion\UIDefs_DlgInfoBatallon.sb ]
+    ]
+    
+    # Dlg MODAL para mostrar informacion de los efectivos de tipo barco
+    [
+     .TIPO UIC_DLGINFOBARCO .ID 'DLIB'
+     .PARAMS [ %Game\UI\ModeloGestion\UIDefsDlgInfoGestion\UIDefs_DlgInfoBarco.sb ]
+    ]    
+    
+    [ 
+      .TIPO UIC_BOTONTEXTO .ID 'VIOK' 
+      .PARAMS
+      [ 
+        .STYLE DEFAULT_OK_BUTTON
+        .FONDO
+        [
+          .X 920 .Y 715
+         .PRIORITY 20
+        ]
+      ]
+    ]
+    
+    [ 
+      .TIPO UIC_TEXT .ID 'LBIE'
+      .PARAMS
+      [
+        .X 528 .Y 73
+        .ALIGN CENTER
+        .TEXT LTEXT_LABEL_INFORMACION_EJERCITOS
+        .FONT "Fonts/Times18.fnt"
+        .COLOR [ .R 255 .G 255 .B 255 ] 
+      ]
+    ] # ~TEXT
+
+    [ 
+      .TIPO UIC_TEXT .ID 'LBED'
+      .PARAMS
+      [
+        .X 308 .Y 115
+        .ALIGN CENTER
+        .TEXT LTEXT_LABEL_EJERCITOS_DISPONIBLES
+        .FONT "Fonts/Times15.fnt"
+        .COLOR [ .R 255 .G 255 .B 255 ] 
+      ]
+    ] # ~TEXT
+
+    [ 
+      .TIPO UIC_TEXT .ID 'LBTA'
+      .PARAMS
+      [
+        .X 862 .Y 115
+        .ALIGN CENTER
+        .TEXT LTEXT_LABEL_TROPAS_ACUARTELADAS
+        .FONT "Fonts/Times15.fnt"
+        .COLOR [ .R 255 .G 255 .B 255 ] 
+      ]
+    ] # ~TEXT    
+  ] # ~CONTROLES   
+

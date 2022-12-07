@@ -1,0 +1,344 @@
+##############################################################################################################
+# 
+# Pantalla de configuración de campaña
+#
+##############################################################################################################
+
+.MODAL TRUE
+.CENTER FALSE
+
+.FONDO
+[
+  .PRIORITY 2
+  .FILE "Game/UI/MainMenu/ConfigCampaing.tga"
+  .SX 1024 .SY 768 .ALPHA TRUE
+]
+
+.CONTROLES [
+
+	#---------------------------------------------- BITMAP IMPERIAL GLORY -------------------------------------	
+	[ .TIPO UIC_BITMAP .ID 'BMIG' 
+	 .PARAMS 
+	 [ 
+	  .FILE "Game/UI/MainMenu/ImperialGloryLogo.tga" .U 0 .V 0 
+	  .X 0 .Y 0 
+	  .SX 465 .SY 188 
+	  .PRIORITY 201
+	  .ALPHA TRUE
+	 ] 
+	]
+
+  #---------------------------------------------------------------------------------------------------
+  # Etiquetas de texto - Títulos
+  [
+    .TIPO UIC_TEXT .ID 'W_CC'
+    .PARAMS
+    [
+      .PRIORITY 5
+      .TEXT LTEXT_UI_TITLE_CONFIG_CAMPAIGN
+      .ALIGN CENTER
+      .FONT "Fonts/MonotypeCorsiva29.fnt"
+      .X 705 .Y 157 
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+    ]
+  ]
+
+  # titulos grupos de opciones
+  [
+    .TIPO UIC_TEXT .ID 'W_T1'
+    .PARAMS
+    [
+      .PRIORITY 5
+      .TEXT LTEXT_UI_VICTORY_TYPE
+      .ALIGN CENTER
+      .FONT "Fonts/MonotypeCorsiva25.fnt"
+      .X 512 .Y 234
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+    ]
+  ]
+  [
+    .TIPO UIC_TEXT .ID 'W_T2'
+    .PARAMS
+    [
+      .PRIORITY 5
+      .TEXT LTEXT_UI_HELP_OPTIONS
+      .ALIGN CENTER
+      .FONT "Fonts/MonotypeCorsiva25.fnt"
+      .X 254 .Y 459
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+    ]
+  ]
+
+  [
+    .TIPO UIC_TEXT .ID 'W_T3'
+    .PARAMS
+    [
+      .PRIORITY 5
+      .TEXT LTEXT_UI_DIFFICULTY
+      .ALIGN CENTER
+      .FONT "Fonts/MonotypeCorsiva25.fnt"
+      .X 509 .Y 429
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+    ]
+  ]
+
+  # Partidas salvadas  
+  [
+    .TIPO UIC_TEXT .ID 'W_T4'
+    .PARAMS
+    [
+      .PRIORITY 5
+      .TEXT LTEXT_UI_SAVED_GAMES
+      .ALIGN CENTER
+      .FONT "Fonts/MonotypeCorsiva25.fnt"
+      .X 765 .Y 459
+      .COLOR [ .R 255 .G 255 .B 255 ] 
+    ]
+  ]
+  
+
+
+  #Botones de OK y BACK
+  [
+    .TIPO UIC_BOTONTEXTO .ID 'OCCC'
+    .PARAMS
+    [
+      .FONDO [ .X 854 .Y 614 ]
+      
+      .IDSELECTSOUND "S_ACEPTAR"    
+      .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"          
+      
+      .STYLE DEFAULT_OK_BUTTON
+      
+      .KEY
+      [
+       .TECLA LKEY_MAINMENU_OPTION_SELECT .EVENTOS [ KEY_DOWN KEY_UP ]          
+      ]       
+    ]
+  ]
+
+  [
+    .TIPO UIC_BOTONTEXTO .ID 'OCCX'
+    .PARAMS
+    [
+      .FONDO [ .X 806 .Y 614 ]
+      
+      .IDSELECTSOUND "S_CANCELAR"    
+      .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"    
+      
+      .STYLE DEFAULT_X_BUTTON
+      
+      .KEY
+      [
+       .TECLA LKEY_MAINMENU_CANCELKEY .EVENTOS [ KEY_DOWN KEY_UP ]          
+      ]       
+    ]
+  ]
+
+
+  #---------------------------------------------------------------------------------------------------
+  # Botón de cargar partida
+  [
+    .TIPO UIC_BOTONTEXTO .ID 'B_CP'
+    .PARAMS
+    [
+      .TEXT LTEXT_UI_LOAD_GAME
+      .FONT "Fonts/Times12.fnt"
+      .IDSELECTSOUND "S_FXUI_CLICKBUTTON"    
+      .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"    
+      .FONDO [ .X 698 .Y 516 ]
+      
+      .STYLE DEFAULT_MULTIPLAYER_SMALL_BUTTON
+    ]
+  ] # ~Boton O_BK 
+
+  #---------------------------------------------------------------------------------------------------
+  # Botones de selección de tipo de Victoria
+  
+  [ .TIPO UIC_GESTORCHECKBOX .ID 'VICT' 
+    .PARAMS  
+    [
+      .CHECKBOXES
+      [
+        [ .TIPO UIC_CHECKBOX .ID 'B_TV'
+          .PARAMS
+          [ 
+            .COMPORTAMIENTO FIJO
+            
+            .TEXT LTEXT_UI_TOTAL_VICTORY
+            .FONT "Fonts/Times12.fnt"
+            .FONDO [ .X 174 .Y 340 ]
+            
+            .STYLE DEFAULT_MULTIPLAYER_BIG_BUTTON
+          ]
+        ]
+        [ .TIPO UIC_CHECKBOX .ID 'B_SV'
+          .PARAMS
+          [ 
+            .COMPORTAMIENTO FIJO
+            
+            .TEXT LTEXT_UI_SCORE_VICTORY
+            .FONT "Fonts/Times12.fnt"
+            .FONDO [ .X 174 .Y 269 ]
+            
+            .STYLE DEFAULT_MULTIPLAYER_BIG_BUTTON
+          ]
+        ]
+      ]
+      .TECLAS
+      [
+        .TECLA_SIGUIENTE LKEY_MAINMENU_CHECKBOX_NEXT
+        # .TECLA_ANTERIOR LKEY_MAINMENU_CHECKBOX_PREV
+        .TECLA_CLICK LKEY_MAINMENU_CHECKBOX_CLICK
+        .GESTION_CIRCULAR TRUE
+      ]
+    ]
+  ]
+  
+  #---------------------------------------------------------------------------------------------------
+  # Botones de selección de opciones de ayuda
+  [ .TIPO UIC_CHECKBOX .ID 'B_TT'
+    .PARAMS
+    [ 
+      .COMPORTAMIENTO FIJO
+      
+      .FONT "Fonts/Times14.fnt"
+      .TEXT LTEXT_UI_TOOLTIPS
+      .PULSADO [ .COLOR [ .R 39 .G 30 .B 25 ] .DX 0 .DY 0]
+      .SELECCIONADO [ .COLOR [ .R 39 .G 30 .B 25 ] .DX 0 .DY 0]
+      .SOLTADO [ .COLOR [ .R 39 .G 30 .B 25 ] ]
+      .DX -71 .DY 14 # 16 # .DY DEBERIA SER ESTE VALOR
+      .ALIGN CENTER
+      
+      .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+      .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"         
+      
+      .FONDO [ .X 321 .Y 521  ]
+      
+      .STYLE ROUND_BUTTON_2
+    ]
+  ]
+  
+  #[ .TIPO UIC_CHECKBOX .ID 'B_SA'
+  #  .PARAMS
+  #  [ 
+  #    .COMPORTAMIENTO FIJO
+  #    
+  #    .TEXT LTEXT_UI_STRATEGIC_ASSISTANT
+  #    .FONT "Fonts/Times14.fnt"
+  #    .PULSADO [ .COLOR [ .R 39 .G 30 .B 25 ] ]
+  #    .SELECCIONADO [ .COLOR [ .R 39 .G 30 .B 25 ] ]
+  #    .SOLTADO [ .COLOR [ .R 39 .G 30 .B 25 ] ]
+  #    .DX -71 .DY 14 # 16 # .DY DEBERIA SER ESTE VALOR
+  #    .ALIGN CENTER
+  #    
+  #    .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+  #    .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"         
+  #    
+  #    .FONDO [ .X 321 .Y 535 ]
+  #    
+  #    .STYLE ROUND_BUTTON_2
+  #  ]
+  #]
+  
+  #---------------------------------------------------------------------------------------------------
+  # Botones de selección de dificultad 
+  [ .TIPO UIC_GESTORCHECKBOX .ID 'DIFF' 
+    .PARAMS  
+    [
+      .CHECKBOXES
+      [
+        [ .TIPO UIC_CHECKBOX .ID 'B_DE'
+          .PARAMS
+          [ 
+            .COMPORTAMIENTO FIJO
+            
+            .TEXT LTEXT_UI_DIFFICULTY_EASY
+            .FONT "Fonts/Times14.fnt"
+            .PULSADO [ .COLOR [ .R 39 .G 30 .B 25 ]  .DX 0 .DY 0]
+            .SELECCIONADO [ .COLOR [ .R 39 .G 30 .B 25 ]  .DX 0 .DY 0]
+            .SOLTADO [ .COLOR [ .R 39 .G 30 .B 25 ] ]
+            .ALIGN CENTER
+            
+            .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+            .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"         
+            
+            .DX -58 .DY 14 # 18 # .DY DEBERIA SER ESTE VALOR
+            .FONDO [ .X 564 .Y 475 ]
+            
+            .STYLE ROUND_BUTTON_2
+          ]
+        ]
+        [ .TIPO UIC_CHECKBOX .ID 'B_DM'
+          .PARAMS
+          [ 
+            .COMPORTAMIENTO FIJO
+            
+            .TEXT LTEXT_UI_DIFFICULTY_MEDIUM
+            .FONT "Fonts/Times14.fnt"
+            .PULSADO [ .COLOR [ .R 39 .G 30 .B 25 ]  .DX 0 .DY 0]
+            .SELECCIONADO [ .COLOR [ .R 39 .G 30 .B 25 ]  .DX 0 .DY 0]
+            .SOLTADO [ .COLOR [ .R 39 .G 30 .B 25 ] ]
+            .ALIGN CENTER
+            
+            .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+            .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"         
+            
+            .DX -58 .DY 14 # 18 # .DY DEBERIA SER ESTE VALOR
+            .FONDO [ .X 564 .Y 519 ]
+            
+            .STYLE ROUND_BUTTON_2
+          ]
+        ]
+        [ .TIPO UIC_CHECKBOX .ID 'B_DH'
+          .PARAMS
+          [ 
+            .COMPORTAMIENTO FIJO
+            
+            .TEXT LTEXT_UI_DIFFICULTY_HARD
+            .FONT "Fonts/Times14.fnt"
+            .PULSADO [ .COLOR [ .R 39 .G 30 .B 25 ]  .DX 0 .DY 0]
+            .SELECCIONADO [ .COLOR [ .R 39 .G 30 .B 25 ]  .DX 0 .DY 0]
+            .SOLTADO [ .COLOR [ .R 39 .G 30 .B 25 ] ]
+            .ALIGN CENTER
+            
+            .IDSELECTSOUND "S_MAINMENU_OPTION_CLICK" 
+            .IDHIGHLIGHTSOUND "S_MAINMENU_OPTION_SELECT"         
+            
+            .DX -58 .DY 14 # 18 # .DY DEBERIA SER ESTE VALOR
+            .FONDO [ .X 564 .Y 563 ]
+            
+            .STYLE ROUND_BUTTON_2
+
+          ]
+        ]
+      ]
+      .TECLAS
+      [
+        .TECLA_SIGUIENTE LKEY_MAINMENU_CHECKBOX_NEXT
+        # .TECLA_ANTERIOR LKEY_MAINMENU_CHECKBOX_PREV
+        .TECLA_CLICK LKEY_MAINMENU_CHECKBOX_CLICK
+        .GESTION_CIRCULAR TRUE
+      ]
+    ]
+  ]
+  
+  # texto de descripción del modo de juego seleccionado
+  [ 
+    .TIPO UIC_WRAPTEXT .ID 'WTIM' 
+    .PARAMS
+    [
+      .TEXT 
+      [ 
+        .FONT "Fonts/Times12.fnt" 
+        .COLOR [ .R 39 .G 30 .B 25 ]    
+      ] 
+      
+      .X 415 .Y 276 .SX 412 .SY 93
+      
+      .MSG " "
+      
+      .SLIDER_VERTICAL [ .STYLE DEFAULT_SLIDER_VERTICAL  ] 
+    ]
+  ]  
+]

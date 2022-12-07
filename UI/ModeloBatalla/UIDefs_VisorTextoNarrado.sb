@@ -1,0 +1,30 @@
+########################################################################################################
+# Params asociados al visor de textos de narración en batalla
+########################################################################################################
+
+# Posición de alineación del texto
+.X 512 # 1024 - 24 de margen para alineacion derecha
+.Y 111
+
+.ACTIVO TRUE
+
+.HALIGN CENTER # RIGHT CENTER LEFT
+.VALIGN CENTER # TOP BOTTOM CENTER
+
+.DEFAULT_FONT "Fonts/Times14.fnt"
+.DEFAULT_SCALE 1.0
+.DEFAULT_COLOR [ .R 255 .G 255 .B 255 ]
+
+.SEPARACION_LINEAS_Y 	6
+
+# .MAX_LINES 5
+.MAX_HEIGHT 1500 # maxima altura de los textos en pixels (para eliminar textos)
+
+.MAX_WIDTH 800
+
+.JUG_FRANCIA [ .COLOR [ .R 64 .G 64 .B 255 ] ]
+.JUG_INGLATERRA [ .COLOR [ .R 255 .G 64 .B 64 ] ]
+.JUG_AUSTRIA [ .COLOR [ .R 255 .G 255 .B 0 ] ]
+.JUG_PRUSIA [ .COLOR [ .R 128 .G 128 .B 255 ] ]
+.JUG_RUSIA [ .COLOR [ .R 64 .G 255 .B 64 ] ]
+.JUG_NEUTRO [ .COLOR [ .R 128 .G 128 .B 128 ] ]

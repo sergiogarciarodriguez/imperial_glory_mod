@@ -1,0 +1,28 @@
+# Boton de salida al menu principal
+
+.FONDO
+[
+ .X 632 .Y 7 .SX 31 .SY 28 .ALPHA TRUE 
+ .PRIORITY 201
+ 
+ .SOLTADO      [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 750 .V 165 ] 
+ .SELECCIONADO [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 784 .V 165 ]   
+ .PULSADO      [ .FILE "Game/UI/ModeloGestion/InterfaceGestion.tga" .U 818 .V 165 ]    
+]   
+
+.IDSELECTSOUND "S_CANCELAR"          
+.IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO"              
+
+.TOOL_TIP
+[ 
+  .TEXT LTEXT_UI_ESCMENU
+  .X 32 .Y 32
+    
+  
+  .STYLE DEFAULT_TOOLTIP 
+]
+
+.KEY
+[
+ .TECLA KEY_ESCAPE .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ]          
+]    

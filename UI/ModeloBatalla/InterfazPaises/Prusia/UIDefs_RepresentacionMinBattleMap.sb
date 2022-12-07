@@ -1,0 +1,19 @@
+#########################################################################################################################
+# Imagenes de Prusia.
+# Representacion de las tropas en el mini mapa de batalla
+#########################################################################################################################
+
+ .ESTADOS
+ [
+  .DEFECTO    [ .IMG [ .FILE "Game\UI\ModeloBatalla\InterfazPaises\Prusia\RepresentacionTropas.tga" .U 1 .V 28 .ALPHA TRUE ] ]
+  .MOVIENDOSE [ .IMG [ .FILE "Game\UI\ModeloBatalla\InterfazPaises\Prusia\RepresentacionTropas.tga" .U 10 .V 28 .ALPHA TRUE ] ]
+  .COMBATE    [ .IMG [ .FILE "Game\UI\ModeloBatalla\InterfazPaises\Prusia\RepresentacionTropas.tga" .U 19 .V 28 .ALPHA TRUE ] ]
+ ]
+
+ .CUALIFICADORES
+ [
+  .SELECCIONADA [ .IMG [ .FILE "Game\UI\ModeloBatalla\InterfazPaises\Prusia\RepresentacionTropas.tga" .U 28 .V 28 .ALPHA TRUE ] ]
+ ]
+
+ .SX 7
+ .SY 7

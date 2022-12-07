@@ -1,0 +1,107 @@
+##################################################################################################################
+# Params asociados a la MessageBoxBatalla
+##################################################################################################################
+
+# Se define la ventana
+
+.CENTER TRUE
+
+.FONDO 
+[ 
+ .X 350 .Y 125 .TRANSPARENCY 220 .PRIORITY 0 .ALPHA TRUE
+ .FILE "Game/UI/ModeloBatalla/DummyDialogMessageBoxBatalla.tga" .U 4 .V 6 .SX 324 .SY 149 
+]              
+
+.CAPTION
+[
+ .XMARGEN 4
+ .YMARGEN 4
+ .HEIGHT 35
+ .TITLE [ .ALINEACION CENTER .TEXT " " .FONT "Fonts/Times14.fnt" .SCALE 1.0 .COLOR [ .R 255 .G 255 .B 255 ] ]
+ .MOVIBLE FALSE
+]
+
+.MODAL TRUE 
+
+# Se define el texto
+.TEXT
+[
+ .X 10 .Y 30 .SX 314 .SY 70
+ .ALIGN CENTER
+ .TEXT
+ [
+  .FONT "Fonts/Times10.fnt" 
+  .COLOR [ .R 255 .G 255 .B 255 ]
+  .MSG  "TEXTO DE PRUEBA"
+  ]
+]
+
+# Se definen los botones
+ .BOTONES
+ [           
+  # Info de centrado automatico
+  .CENTER
+  [                
+   .YMARGEN 116
+   .XSPACE  8          
+  ]           
+         
+ # Lista de Botones
+ .LIST
+ [
+  [
+   .TIPO UIC_BOTONTEXTO
+   .ACEPTAR TRUE       
+   .COMPORTAMIENTO SIMPLE        
+   .SOLTADO [ .COLOR [ .R 255 .G 255 .B 255 ] ] 
+   .PULSADO [ .COLOR [ .R 158 .G 0   .B 0 ] ] 
+   .SCALE 1.0
+   .TEXT LTEXT_UI_SI
+   .IDSELECTSOUND "S_ACEPTAR"      
+   .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO" 
+   .FONDO
+   [ 
+    .SX 102 .SY 22
+    .ALPHA TRUE
+    .SOLTADO [ .FILE "Game/UI/ModeloBatalla/DummyDialogMessageBoxBatalla.tga" .U 298 .V 201 ]
+    .PULSADO [ .FILE "Game/UI/ModeloBatalla/DummyDialogMessageBoxBatalla.tga" .U 298 .V 282 ]
+    .ALPHA TRUE
+   ]   
+   
+   .CENTER_AREA [ .X1 0 .Y1 0 .X2 102 .Y2 18 ]   
+   
+   .KEY
+   [
+    .TECLA KEY_Y .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ]          
+   ]       
+  ]                   
+   
+  [
+   .TIPO UIC_BOTONTEXTO
+   .CANCELAR TRUE       
+   .COMPORTAMIENTO SIMPLE
+   .SOLTADO [ .COLOR [ .R 255 .G 255 .B 255 ] ] 
+   .PULSADO [ .COLOR [ .R 158 .G 0   .B 0   ] ] 
+   .SCALE 1.0
+   .TEXT LTEXT_UI_NO
+   .IDSELECTSOUND "S_CANCELAR"      
+   .IDHIGHLIGHTSOUND  "S_FXSELECCION_RESALTE_ELEMENTO" 
+   
+   .FONDO
+   [ 
+     .SX 102 .SY 22
+     .ALPHA TRUE
+     .SOLTADO [ .FILE "Game/UI/ModeloBatalla/DummyDialogMessageBoxBatalla.tga" .U 298 .V 201 ]
+     .PULSADO [ .FILE "Game/UI/ModeloBatalla/DummyDialogMessageBoxBatalla.tga" .U 298 .V 282 ]
+     .ALPHA TRUE
+    ]    
+   
+    .CENTER_AREA [ .X1 0 .Y1 0 .X2 102 .Y2 18 ]
+   
+    .KEY
+    [
+     .TECLA KEY_N .MKEYS [ ] .EVENTOS [ KEY_DOWN KEY_UP ]          
+    ]          
+   ]                               
+  ] # ~ LIST
+ ] # ~ BOTONES  

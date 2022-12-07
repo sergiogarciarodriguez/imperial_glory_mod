@@ -1,0 +1,9 @@
+##############################################################################################################
+# Params de la barra de control e informacion de la tropa seleccionada
+# Notas: - El fondo de la barra de control estara dividida en tres partes, la izquierda, la media y la dcha. 
+#          Esta division sera necesaria para poder manejar un tamaño adecuado de las texturas que los 
+#          representen y para poder asociar internamente zonas sensibles que intercepten posibles eventos 
+#          que se produzcan sobre ellos.
+##############################################################################################################
+                 
+.PANEL_ORDENES_TROPA   [ %Game/UI/ModeloBatalla/UIDefs_PanelOrdenesTropa.sb ]                             

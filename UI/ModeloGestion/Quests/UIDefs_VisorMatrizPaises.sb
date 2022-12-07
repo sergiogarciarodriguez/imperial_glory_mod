@@ -1,0 +1,64 @@
+###############################################################################
+# Mostrará los paises que en la actualidad estan realizando un quest
+###############################################################################
+
+.PARAMS
+[
+  .CENTER_ICONS FALSE
+
+  # Definimos la matriz de vision
+  .MATRIZ
+  [
+   .FILAS 5
+   .COLUMNAS 1
+  ]     
+  
+  .DRAW_PARAMS 
+  [ 
+    .X 411 .Y 565
+    .CELL_XSPACE 0 
+    .CELL_YSPACE 0 
+    .SLIDER_XSPACE 10 
+    .OBJ_WIDTH 200
+    .OBJ_HEIGHT 31
+  ]
+  
+  .PRIORITY_BASE 254  
+]  
+
+#
+# Iconos con las banderas de los paises para poner si estan investigando una quest
+.BANDERA_JUG_FRANCIA_ENABLE     [ .FILE "Game\UI\ModeloGestion\IconosQuest.tga" .DX 2 .DY 8 .SX 33 .SY 18 .U 1 .V 505 .ALPHA TRUE]      
+.BANDERA_JUG_FRANCIA_DISABLE    [ .FILE "Game\UI\ModeloGestion\IconosQuest.tga" .DX 2 .DY 8 .SX 33 .SY 18 .U 1 .V 551 .ALPHA TRUE]      
+
+.BANDERA_JUG_GRAN_BRETANYA_ENABLE     [ .FILE "Game\UI\ModeloGestion\IconosQuest.tga" .DX 2 .DY 8  .SX 33 .SY 18 .U 37 .V 505 .ALPHA TRUE]      
+.BANDERA_JUG_GRAN_BRETANYA_DISABLE    [ .FILE "Game\UI\ModeloGestion\IconosQuest.tga" .DX 2 .DY 8  .SX 33 .SY 18 .U 37 .V 551 .ALPHA TRUE]      
+
+.BANDERA_JUG_AUSTRIA_ENABLE     [ .FILE "Game\UI\ModeloGestion\IconosQuest.tga" .DX 2 .DY 8  .SX 33 .SY 18 .U 73 .V 505 .ALPHA TRUE ]      
+.BANDERA_JUG_AUSTRIA_DISABLE    [ .FILE "Game\UI\ModeloGestion\IconosQuest.tga" .DX 2 .DY 8  .SX 33 .SY 18 .U 73 .V 551 .ALPHA TRUE ]      
+
+.BANDERA_JUG_PRUSIA_ENABLE     [ .FILE "Game\UI\ModeloGestion\IconosQuest.tga" .DX 2 .DY 8  .SX 33 .SY 18 .U 145 .V 505 .ALPHA TRUE ]      
+.BANDERA_JUG_PRUSIA_DISABLE    [ .FILE "Game\UI\ModeloGestion\IconosQuest.tga" .DX 2 .DY 8  .SX 33 .SY 18 .U 145 .V 551 .ALPHA TRUE ]      
+
+.BANDERA_JUG_RUSIA_ENABLE     [ .FILE "Game\UI\ModeloGestion\IconosQuest.tga" .DX 2 .DY 8  .SX 33 .SY 18 .U 109 .V 505 .ALPHA TRUE ]      
+.BANDERA_JUG_RUSIA_DISABLE    [ .FILE "Game\UI\ModeloGestion\IconosQuest.tga" .DX 2 .DY 8  .SX 33 .SY 18 .U 109 .V 551 .ALPHA TRUE ]      
+
+#
+# Texto de los paises que estan investigando una quest
+.TEXTO_PAISES 
+[ 
+  .SX 151 .SY 31
+  .ALIGN LEFT 
+  .TEXT [ .FONT "Fonts/Times14.fnt" .COLOR [ .R 220 .G 220 .B 220 ] ]
+  .DX 35 .DY 0 
+]
+.TEXTO_PAISES_DISABLED 
+[ 
+  .SX 151 .SY 31
+  .ALIGN LEFT 
+  .TEXT [ .FONT "Fonts/Times14.fnt" .COLOR [ .R 80 .G 80 .B 80 ] ]
+  .DX 35 .DY 0 
+]
+#.TEXTO_PAISES [ .FONT "Fonts/Times14.fnt" .COLOR [ .R 220 .G 220 .B 220 ] .DX 40 .DY 0 ] 
+#.TEXTO_PAISES_DISABLED [ .FONT "Fonts/Times14.fnt" .COLOR [ .R 80 .G 80 .B 80 ] .DX 40 .DY 0 ] 
+

@@ -1,0 +1,95 @@
+# 
+# Control que muestra la secuencia de victoria total
+#
+.MODAL TRUE
+
+# No capturamos las teclas (para que al pulsar una llegue el evento y se salga de la secuencia)
+.CAPTURE_KEYS FALSE
+
+# Script de la secuencia
+.SCRIPT_SECUENCIA "Game/LuaScripts/Secuencias/SecuenciaCreditos.lua"
+
+
+#
+#  Lista de videos que se declaran aqui para poderse lanzar desde el script de lua
+#  Los videos se lanzan por ID, asi que no tiene que haber dos videos con IDs iguales
+#
+.VIDEOS
+[
+   
+  [
+    .ID 'VDCR'
+    .PARAMS 
+    [ 
+      .FILE "Videos/Creditos.bik" 
+      .X 0 .Y 0 .SX 1024 .SY 768
+      .LOOP TRUE .ALPHA FALSE .PRIORITY 210
+    ]
+  ] 
+]  
+
+# Lista de controles que se cargan junto al control (se activaran cuando se inicie la secuencia)
+.CONTROLES
+[
+  #
+  # ESTE CONTROL ES OBLIGATORIO, EN EL SCRIPT LUA DE SECUENCIA SE DECIDE SI SE MUESTRA TEXTO O NO, PERO DEBE ESTAR CREADO
+  # Y TENER EL ID 'VTEM'
+  [ .TIPO UI_VISOR_TEXTO_EMERGENTE .ID 'VTEM'
+    .PARAMS 
+    
+    [ 
+      # Posición de alineación del texto
+      .X 512 # 1024 - 24 de margen para alineacion derecha
+      .Y 200 # antes 500
+      
+      .ACTIVO TRUE
+      
+      .HALIGN CENTER # LEFT RIGHT CENTER
+      .VALIGN BOTTOM # TOP BOTTOM CENTER
+      
+      .DEFAULT_FONT "Fonts/Times19n.fnt"
+      .DEFAULT_SCALE 1.0
+      .DEFAULT_COLOR [ .R 255 .G 255 .B 255 ]
+      
+      .MAX_LINES 15
+      # .MAX_HEIGHT 200 # maxima altura de los textos en pixels (para eliminar textos)
+      .MAX_WIDTH 900
+      
+      .JUG_FRANCIA [ .COLOR [ .R 64 .G 64 .B 255 ] ]
+      .JUG_INGLATERRA [ .COLOR [ .R 255 .G 64 .B 64 ] ]
+      .JUG_AUSTRIA [ .COLOR [ .R 255 .G 255 .B 0 ] ]
+      .JUG_PRUSIA [ .COLOR [ .R 128 .G 128 .B 255 ] ]
+      .JUG_RUSIA [ .COLOR [ .R 64 .G 255 .B 64 ] ]
+      .JUG_NEUTRO [ .COLOR [ .R 128 .G 128 .B 128 ] ]
+    ]
+  ] 
+  
+
+  [ 
+    .TIPO UIC_CREDITSROLLER .ID 'CRED' 
+    .PARAMS
+    [
+    #en pixels por segundo
+    .ROLL_SPEED 30
+    
+    .HEADER_FORMAT
+    [ 
+      .FONT "Fonts/Times19n.fnt" 
+      .COLOR [ .R 255 .G 245 .B 0 ]
+      .SHADOW TRUE
+    ] 
+    .BODY_FORMAT
+    [
+      .FONT "Fonts/Times17.fnt"
+      .COLOR [ .R 255 .G 255 .B 255 ]    
+      .SHADOW TRUE
+    ]
+      
+      .CREDITS_LIST
+      [
+        %Game\UI\Comun\ListadoCreditos.sb  
+      ]
+    ]
+  ]
+   
+]

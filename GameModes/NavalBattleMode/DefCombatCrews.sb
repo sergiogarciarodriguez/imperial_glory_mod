@@ -1,0 +1,86 @@
+#===========================================================================================
+# Definiciones de los diferentes tipos de tripulacion
+#
+#===========================================================================================
+
+# Incluimos las definiciones
+%Game/GameModes/Gestion/DefValoresNavales.sb 
+
+.TIPOS_DE_TRIPULACION
+[
+  .TRIPULACION
+  [
+    # (DEF) Tipo de tropa, ver Gestion/DefValoresNavales.sb
+    .TIPO                           !TTRIPULACION_NOVATA
+    
+    # (float) 0.0 nula efectividad, 1.0 maxima efectividad
+  	.EFECTIVIDAD_ABORDAJE			      0.2
+  	
+  	# (float) 0.0 poca efectividad, 1.0 maxima efectividad
+  	.EFECTIVIDAD_DISTANCIA			    0.1
+  	
+  	# (float) segundos entre disparo y disparo
+  	.CADENCIA_DISTANCIA				      20.0
+  	
+  	# (float) segundos entre ataque y ataque
+  	.CADENCIA_ABORDAJE              2.2
+    
+    # (float) segundo de espera al cambiar municion
+  	.CAMBIO_MUNICION			         24.0
+  	
+  	# (float) tiempo para soltar el ancla
+  	.PARAR					                3.0
+  	
+  	# (float) tiempo para levar el ancla
+  	.ARRANCAR				                5.5
+  ]
+  
+  .TRIPULACION
+  [
+    .TIPO                           !TTRIPULACION_MEDIA
+  	.EFECTIVIDAD_ABORDAJE			      0.4
+  	.EFECTIVIDAD_DISTANCIA			    0.4
+  	.CADENCIA_DISTANCIA				      17.0
+  	.CADENCIA_ABORDAJE              2.0			        	
+  	.CAMBIO_MUNICION			          21.0
+  	.PARAR					                1.8
+  	.ARRANCAR				                4.0
+  ]
+  
+  .TRIPULACION
+  [
+    .TIPO                           !TTRIPULACION_EXPERIMENTADA
+  	.EFECTIVIDAD_ABORDAJE			      0.6
+  	.EFECTIVIDAD_DISTANCIA			    0.6
+  	.CADENCIA_DISTANCIA				      15.0
+  	.CADENCIA_ABORDAJE              1.8			        	
+  	.CAMBIO_MUNICION			          20.0
+  	.PARAR					                1.6
+  	.ARRANCAR				                3.5
+  ]
+  
+  .TRIPULACION
+  [
+    .TIPO                           !TTRIPULACION_VETERANA
+  	.EFECTIVIDAD_ABORDAJE			      0.8
+  	.EFECTIVIDAD_DISTANCIA			    0.8
+  	.CADENCIA_DISTANCIA				      13.0
+  	.CADENCIA_ABORDAJE              1.4			        	
+  	.CAMBIO_MUNICION			          19.0
+  	.PARAR					                1.4
+  	.ARRANCAR				                3.0
+  ]
+  
+  .TRIPULACION
+  [
+    .TIPO                           !TTRIPULACION_ELITE
+  	.EFECTIVIDAD_ABORDAJE			      0.9
+  	.EFECTIVIDAD_DISTANCIA			    0.9
+  	.CADENCIA_DISTANCIA				      10.0
+  	.CADENCIA_ABORDAJE              1.1	        	
+  	.CAMBIO_MUNICION			          17.0
+  	.PARAR					                1.2
+  	.ARRANCAR				                2.5
+  ]  
+
+]

@@ -1,0 +1,408 @@
+#_______________________________________________________
+#
+#                  <<<< CRIATURAS >>>>
+#_______________________________________________________
+
+# Especies posibles
+#    CARNIVORO         = 'CARN'
+#    HERBIVORO         = 'HERB'
+#    SUBACUATICO       = 'SUBA'
+#    SOBREACUATICO     = 'SOBA'
+#    AVE               = 'AVES'
+
+# Preferencias por terrenos disponibles
+#    STANDAR           = 'STND'
+#    CLIMA FRIO        = 'FRIO'
+#    CLIMA TEMPLADO    = 'TMPL'
+#    CLIMA ARIDO       = 'ARID'
+
+# Pasabilidad por terrenos disponibles
+#    TERRESTRE         = 'TERR'
+    
+#_______________________________________________________
+#
+#                  LISTA DE HERBIVOROS
+#_______________________________________________________
+
+# Ahora todos son iguales
+
+.ANTILOPE
+[
+  .GRX "Models\Criaturas\Ciervo\Ciervo.V3D"
+  .ANM "Models\Criaturas\Ciervo\Ciervo_ANM.sb"
+  #.SHADOW "Models\Sombras\SombraCriatura.V3D"
+  .ESPECIE 'HERB'
+  
+  .COMPORTAMIENTO
+  [
+  	.INC_HAMBRE			1
+  	.DEC_HAMBRE			5
+  	.INC_SED			1
+  	.DEC_SED			15
+  	.INC_CANSANCIO			15
+  	.DEC_CANSANCIO			10
+  	.ACTIVIDAD			40
+	.DIST_VISTA			2500.0
+	.DIST_MIEDO			6000.0
+	.DIST_HUIR			5000.0
+	.VELOCIDAD_ANDAR		9.0
+	.VELOCIDAD_CORRER		36.0
+	.MANADAS			TRUE
+	.CARRONERO			FALSE
+	.TERRENOS_PREFERIDOS		'TMPL'
+	.TERRENOS_TRANSITABLES  	'TERR'
+  ]
+]
+
+.CIERVO
+[
+  .GRX "Models\Criaturas\Ciervo\Ciervo.V3D"
+  .ANM "Models\Criaturas\Ciervo\Ciervo_ANM.sb"
+  #.SHADOW "Models\Sombras\SombraCriatura.V3D"
+  .ESPECIE 'HERB'
+  
+  .COMPORTAMIENTO
+  [
+  	.INC_HAMBRE			1
+  	.DEC_HAMBRE			5
+  	.INC_SED			1
+  	.DEC_SED			15
+  	.INC_CANSANCIO			15
+  	.DEC_CANSANCIO			10
+  	.ACTIVIDAD			40
+	.DIST_VISTA			2500.0
+	.DIST_MIEDO			5000.0
+	.DIST_HUIR			5000.0
+	.VELOCIDAD_ANDAR		9.0
+	.VELOCIDAD_CORRER		36.0
+	.MANADAS			TRUE
+	.CARRONERO			FALSE
+	.TERRENOS_PREFERIDOS		'TMPL'
+	.TERRENOS_TRANSITABLES  	'TERR'
+  ]
+]
+
+.VACA
+[
+  .GRX "Models\Criaturas\Vaca\Vaca.V3D"
+  .ANM "Models\Criaturas\Vaca\Vaca_ANM.sb"
+  .RANDOMTEX "Models\Criaturas\Vaca\Vaca.tga"      
+  #.SHADOW "Models\Sombras\SombraCriatura.V3D"
+  .ESPECIE 'HERB'
+  
+  .COMPORTAMIENTO
+  [
+  	.INC_HAMBRE			1
+  	.DEC_HAMBRE			5
+  	.INC_SED			1
+  	.DEC_SED			15
+  	.INC_CANSANCIO			18
+  	.DEC_CANSANCIO			10
+  	.ACTIVIDAD			30
+	.DIST_VISTA			2500.0
+	.DIST_MIEDO			4000.0
+	.DIST_HUIR			3000.0
+	.VELOCIDAD_ANDAR		9.0
+	.VELOCIDAD_CORRER		36.0
+	.MANADAS			TRUE
+	.CARRONERO			FALSE
+	.TERRENOS_PREFERIDOS		'TMPL'
+	.TERRENOS_TRANSITABLES  	'TERR'
+  ]
+]
+
+.OVEJA
+[
+  .GRX "Models\Criaturas\Oveja\Oveja.V3D"
+  .ANM "Models\Criaturas\Oveja\Oveja_ANM.sb"
+  #.RANDOMTEX "Models\Criaturas\Oveja\Oveja.tga"      
+  #.SHADOW "Models\Sombras\SombraCriatura.V3D"
+  .ESPECIE 'HERB'
+  
+  .COMPORTAMIENTO
+  [
+  	.INC_HAMBRE			1
+  	.DEC_HAMBRE			5
+  	.INC_SED			1
+  	.DEC_SED			15
+  	.INC_CANSANCIO			18
+  	.DEC_CANSANCIO			10
+  	.ACTIVIDAD			30
+	.DIST_VISTA			2500.0
+	.DIST_MIEDO			4000.0
+	.DIST_HUIR			3000.0
+	.VELOCIDAD_ANDAR		10.0
+	.VELOCIDAD_CORRER		36.0
+	.MANADAS			TRUE
+	.CARRONERO			FALSE
+	.TERRENOS_PREFERIDOS		'TMPL'
+	.TERRENOS_TRANSITABLES  	'TERR'
+  ]
+]
+
+#_______________________________________________________
+#
+#                  LISTA DE CARNIVOROS
+#_______________________________________________________
+
+# Ahora todos son iguales
+.LOBO
+[
+  .GRX "Models\Criaturas\Lobo\LoboM.V3D"
+  .ANM "Models\Criaturas\Lobo\Lobo_ANM.sb"
+  .RANDOMTEX "Models\Criaturas\Lobo\Lobo.tga"      
+  #.SHADOW "Models\Sombras\SombraCriatura.V3D"
+  .ESPECIE 'CARN'
+  
+  .COMPORTAMIENTO
+  [
+  	.INC_HAMBRE			3
+  	.DEC_HAMBRE			15
+  	.INC_SED			1
+  	.DEC_SED			15
+  	.INC_CANSANCIO			15
+  	.DEC_CANSANCIO			10
+  	.ACTIVIDAD			60
+	.DIST_VISTA			2500.0
+	.DIST_MIEDO			4000.0
+	.DIST_HUIR			4000.0
+	.VELOCIDAD_ANDAR		9.0
+	.VELOCIDAD_CORRER		36.0
+	.MANADAS			FALSE
+	.CARRONERO			TRUE
+	.TERRENOS_PREFERIDOS		'TMPL'
+	.TERRENOS_TRANSITABLES  	'TERR'
+  ]
+]
+
+.CHACAL
+[
+  .GRX "Models\Criaturas\Chacal\Chacal.V3D"
+  .ANM "Models\Criaturas\Chacal\Chacal_ANM.sb"
+  #.RANDOMTEX "Models\Criaturas\Chacal\Chacal.tga"      
+  #.SHADOW "Models\Sombras\SombraCriatura.V3D"
+  .ESPECIE 'CARN'
+  
+  .COMPORTAMIENTO
+  [
+  	.INC_HAMBRE			3
+  	.DEC_HAMBRE			15
+  	.INC_SED			1
+  	.DEC_SED			15
+  	.INC_CANSANCIO			15
+  	.DEC_CANSANCIO			10
+  	.ACTIVIDAD			60
+	.DIST_VISTA			2500.0
+	.DIST_MIEDO			4000.0
+	.DIST_HUIR			4000.0
+	.VELOCIDAD_ANDAR		10.0
+	.VELOCIDAD_CORRER		36.0
+	.MANADAS			FALSE
+	.CARRONERO			TRUE
+	.TERRENOS_PREFERIDOS		'TMPL'
+	.TERRENOS_TRANSITABLES  	'TERR'
+  ]
+]
+
+.LOBO_SIBERIANO
+[
+  .GRX "Models\Criaturas\Lobo\LoboN.V3D"
+  .ANM "Models\Criaturas\Lobo\Lobo_ANM.sb"
+  .RANDOMTEX "Models\Criaturas\Lobo\Lobo.tga"
+  #.SHADOW "Models\Sombras\SombraCriatura.V3D"
+  .ESPECIE 'CARN'
+  
+  .COMPORTAMIENTO
+  [
+  	.INC_HAMBRE			3
+  	.DEC_HAMBRE			15
+  	.INC_SED			1
+  	.DEC_SED			15
+  	.INC_CANSANCIO			15
+  	.DEC_CANSANCIO			10
+  	.ACTIVIDAD			60
+	.DIST_VISTA			2500.0
+	.DIST_MIEDO			4000.0
+	.DIST_HUIR			4000.0
+	.VELOCIDAD_ANDAR		9.0
+	.VELOCIDAD_CORRER		36.0
+	.MANADAS			FALSE
+	.CARRONERO			TRUE
+	.TERRENOS_PREFERIDOS		'TMPL'
+	.TERRENOS_TRANSITABLES  	'TERR'
+  ]
+]
+
+.LEON
+[
+  .GRX "Models\Criaturas\Ciervo\Ciervo.V3D"
+  .ANM "Models\Criaturas\Ciervo\Ciervo_ANM.sb"
+  #.SHADOW "Models\Sombras\SombraCriatura.V3D"
+  .ESPECIE 'CARN'
+  
+  .COMPORTAMIENTO
+  [
+  	.INC_HAMBRE			3
+  	.DEC_HAMBRE			15
+  	.INC_SED			1
+  	.DEC_SED			15
+  	.INC_CANSANCIO			15
+  	.DEC_CANSANCIO			10
+  	.ACTIVIDAD			50
+	.DIST_VISTA			2500.0
+	.DIST_MIEDO			5000.0
+	.DIST_HUIR			4000.0
+	.VELOCIDAD_ANDAR		9.0
+	.VELOCIDAD_CORRER		36.0
+	.MANADAS			FALSE
+	.CARRONERO			TRUE
+	.TERRENOS_PREFERIDOS		'TMPL'
+	.TERRENOS_TRANSITABLES  	'TERR'
+  ]
+]
+
+.OSO
+[
+  .GRX "Models\Criaturas\Ciervo\Ciervo.V3D"
+  .ANM "Models\Criaturas\Ciervo\Ciervo_ANM.sb"
+  #.SHADOW "Models\Sombras\SombraCriatura.V3D"
+  .ESPECIE 'CARN'
+  
+  .COMPORTAMIENTO
+  [
+  	.INC_HAMBRE			3
+  	.DEC_HAMBRE			15
+  	.INC_SED			1
+  	.DEC_SED			15
+  	.INC_CANSANCIO			15
+  	.DEC_CANSANCIO			10
+  	.ACTIVIDAD			30
+	.DIST_VISTA			2500.0
+	.DIST_MIEDO			5000.0
+	.DIST_HUIR			4000.0
+	.VELOCIDAD_ANDAR		9.0
+	.VELOCIDAD_CORRER		36.0
+	.MANADAS			FALSE
+	.CARRONERO			TRUE
+	.TERRENOS_PREFERIDOS		'TMPL'
+	.TERRENOS_TRANSITABLES  	'TERR'
+  ]
+]
+
+#_______________________________________________________
+#
+#                  LISTA DE AVES
+#_______________________________________________________
+
+# De momento son todo "lobos"
+.PATO
+[
+  .GRX "Models\Criaturas\Ciervo\Ciervo.V3D"
+  .ANM "Models\Criaturas\Ciervo\Ciervo_ANM.sb"
+  #.SHADOW "Models\Sombras\SombraCriatura.V3D"
+  .ESPECIE 'CARN'
+  
+  .COMPORTAMIENTO
+  [
+  	.INC_HAMBRE			3
+  	.DEC_HAMBRE			15
+  	.INC_SED			1
+  	.DEC_SED			15
+  	.INC_CANSANCIO			15
+  	.DEC_CANSANCIO			10
+  	.ACTIVIDAD			60
+	.DIST_VISTA			2500.0
+	.DIST_MIEDO			5000.0
+	.DIST_HUIR			4000.0
+	.VELOCIDAD_ANDAR		9.0
+	.VELOCIDAD_CORRER		36.0
+	.MANADAS			FALSE
+	.CARRONERO			TRUE
+	.TERRENOS_PREFERIDOS		'TMPL'
+	.TERRENOS_TRANSITABLES  	'TERR'
+  ]
+]
+
+.PERDICES
+[
+  .GRX "Models\Criaturas\Ciervo\Ciervo.V3D"
+  .ANM "Models\Criaturas\Ciervo\Ciervo_ANM.sb"
+  #.SHADOW "Models\Sombras\SombraCriatura.V3D"
+  .ESPECIE 'CARN'
+  
+  .COMPORTAMIENTO
+  [
+  	.INC_HAMBRE			3
+  	.DEC_HAMBRE			15
+  	.INC_SED			1
+  	.DEC_SED			15
+  	.INC_CANSANCIO			15
+  	.DEC_CANSANCIO			10
+  	.ACTIVIDAD			60
+	.DIST_VISTA			2500.0
+	.DIST_MIEDO			5000.0
+	.DIST_HUIR			4000.0
+	.VELOCIDAD_ANDAR		9.0
+	.VELOCIDAD_CORRER		36.0
+	.MANADAS			FALSE
+	.CARRONERO			TRUE
+	.TERRENOS_PREFERIDOS		'TMPL'
+	.TERRENOS_TRANSITABLES  	'TERR'
+  ]
+]
+
+.AGUILA
+[
+  .GRX "Models\Criaturas\Ciervo\Ciervo.V3D"
+  .ANM "Models\Criaturas\Ciervo\Ciervo_ANM.sb"
+  #.SHADOW "Models\Sombras\SombraCriatura.V3D"
+  .ESPECIE 'CARN'
+  
+  .COMPORTAMIENTO
+  [
+  	.INC_HAMBRE			3
+  	.DEC_HAMBRE			15
+  	.INC_SED			1
+  	.DEC_SED			15
+  	.INC_CANSANCIO			15
+  	.DEC_CANSANCIO			10
+  	.ACTIVIDAD			60
+	.DIST_VISTA			2500.0
+	.DIST_MIEDO			5000.0
+	.DIST_HUIR			4000.0
+	.VELOCIDAD_ANDAR		9.0
+	.VELOCIDAD_CORRER		36.0
+	.MANADAS			FALSE
+	.CARRONERO			TRUE
+	.TERRENOS_PREFERIDOS		'TMPL'
+	.TERRENOS_TRANSITABLES  	'TERR'
+  ]
+]
+
+.HALCON
+[
+  .GRX "Models\Criaturas\Ciervo\Ciervo.V3D"
+  .ANM "Models\Criaturas\Ciervo\Ciervo_ANM.sb"
+  #.SHADOW "Models\Sombras\SombraCriatura.V3D"
+  .ESPECIE 'CARN'
+  
+  .COMPORTAMIENTO
+  [
+  	.INC_HAMBRE			3
+  	.DEC_HAMBRE			15
+  	.INC_SED			1
+  	.DEC_SED			15
+  	.INC_CANSANCIO			15
+  	.DEC_CANSANCIO			10
+  	.ACTIVIDAD			60
+	.DIST_VISTA			2500.0
+	.DIST_MIEDO			5000.0
+	.DIST_HUIR			4000.0
+	.VELOCIDAD_ANDAR		9.0
+	.VELOCIDAD_CORRER		36.0
+	.MANADAS			FALSE
+	.CARRONERO			TRUE
+	.TERRENOS_PREFERIDOS		'TMPL'
+	.TERRENOS_TRANSITABLES  	'TERR'
+  ]
+]

@@ -1,0 +1,37 @@
+    .IDSELECTSOUND "S_UI_BOTONBARCO_PULSADO"    
+        
+    .CONTROL_INFO
+    [
+      %Game/UI/ModeloNaval/UIDefs_CtrlInfoBarco.sb    
+    ]
+    .BARRA_CASCO
+    [
+      .X 42 .Y 155
+      .SUPERIOR [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 89 .V 68 .ALPHA TRUE ]
+      .SX 47 .SY 5
+    ]
+    .BARRA_TRIPULACION
+    [
+      .X 42 .Y 131
+      .SUPERIOR [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 89 .V 56 .ALPHA TRUE ]
+      .SX 47 .SY 5
+    ]
+    .BARRA_VELAMEN
+    [
+      .X 42 .Y 143
+      .SUPERIOR [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 89 .V 62 .ALPHA TRUE ]
+      .SX 47 .SY 5
+    ]
+    .BARRA_VELOCIDAD
+    [
+      .FORMATO VERTICAL
+      .X 12 .Y 92
+      .SUPERIOR [ .FILE "Game\UI\ModeloNaval\InterfazNaval.tga" .U 7 .V 56 .ALPHA TRUE ]
+      .SX 4 .SY 89
+    ]    
+    .BARRAS_RECARGA
+    [
+      %Game/UI/ModeloNaval/UIDefs_BarrasRecargaBarco.sb
+    ]
+    
+      %Game/UI/ModeloNaval/UIDefs_VisorEstrellas.sb    

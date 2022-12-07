@@ -1,0 +1,28 @@
+#---------------------------------------------
+#    Script de definición de camara de mapa
+#---------------------------------------------
+.ATACANTE
+[
+  .ANGLE     [ 19.1    182.6    ]
+  .TARGET    [ 27570.0  65905.0   ]
+  .MIN_DIST_LIMITS             0.0      # cm
+
+]
+.DEFENSOR
+[
+  .ANGLE     [ 17.2    6.6    ]
+  .TARGET    [ 31811.0  10959.0   ]
+  .MIN_DIST_LIMITS             0.0      # cm
+]
+
+.HISTORICA_DEFENSOR
+[
+  .ANGLE     [ 12.331    71.010    ]
+  .TARGET    [ 12471.996  44000.461   ]   
+]
+
+.HISTORICA_ATACANTE
+[
+  .ANGLE     [ 28.487    360.908    ]
+  .TARGET    [ 32587.555  11124.980   ]
+]

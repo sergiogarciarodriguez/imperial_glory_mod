@@ -1,0 +1,170 @@
+.START_PROCS
+[
+  [
+    .NAME MODELO_GESTION_STARTUP_PROC
+    .PARAMS
+    [        
+      .CURSORES    "Game/UI/Cursores/Cursores_ModeloGestion.sb"           
+      
+      .COMBATE_AUTOMATICO
+      [
+        %Game/GameModes/ModeloCombate.sb
+      ]
+       
+       .TEXTOS_LOCALES
+      [
+       [ .FILE "Management\TextPaises.sb"                    ]       
+       [ .FILE "Management\TextProvincias.sb"                ]       
+       [ .FILE "Management\TextCapitales.sb"                 ]       
+       [ .FILE "Management\TextPuertos.sb"                   ]       
+       [ .FILE "Management\TextUIGestionMapa.sb"             ]
+       [ .FILE "Management\TextTiposBarcos.sb"               ]
+       [ .FILE "Management\TextNotificacionesGestion.sb"     ]
+       [ .FILE "Management\TextDescripcionesProvincias.sb"   ]
+       [ .FILE "Management\TextTecnologias.sb"               ]
+       [ .FILE "Management\TextQuests.sb"                    ]
+       [ .FILE "Management\TextDescripcionesTecnologias.sb"  ]
+       [ .FILE "Management\TextUITecnologias.sb"             ]
+       [ .FILE "Management\TextPantallaDiplomacia.sb"	       ]
+       [ .FILE "Management\TextTerritoriosMaritimos.sb"      ]
+       [ .FILE "Management\TextMensajesEmergentes.sb"        ]
+       [ .FILE "Management\TextConstrucciones.sb"            ]
+       [ .FILE "Management\TextUIGestionNews.sb"		         ]
+       [ .FILE "Management\TextHerederos.sb"		             ]
+       [ .FILE "Others\TextUIObjetivosHistoricos.sb"     		 ]
+       [ .FILE "Others\TextUIObjetivos.sb"     			         ]
+       [ .FILE "Others\TextTutoriales\TextTutorialGestion.sb"]
+
+       # tipos de tropa       
+       [ .FILE "Management\TiposTropas\TiposTropasAustria.sb"   ]
+       [ .FILE "Management\TiposTropas\TiposTropasFrancia.sb"   ]
+       [ .FILE "Management\TiposTropas\TiposTropasBretanya.sb"   ]
+       [ .FILE "Management\TiposTropas\TiposTropasRusia.sb"   ]
+       [ .FILE "Management\TiposTropas\TiposTropasPrusia.sb"   ]
+       [ .FILE "Management\TiposTropas\TiposTropasNeutral.sb"   ]
+       
+       # nombres de oficiales
+       [ .FILE "Management\TextNombresOficiales\TextOficialesArabes.sb"   ]
+       [ .FILE "Management\TextNombresOficiales\TextOficialesAustria.sb"   ]
+       [ .FILE "Management\TextNombresOficiales\TextOficialesBatavia.sb"   ]
+       [ .FILE "Management\TextNombresOficiales\TextOficialesDinamarca.sb"   ]
+       [ .FILE "Management\TextNombresOficiales\TextOficialesEspanya.sb"   ]
+       [ .FILE "Management\TextNombresOficiales\TextOficialesFrancia.sb"   ]
+       [ .FILE "Management\TextNombresOficiales\TextOficialesGermanicos.sb"   ]
+       [ .FILE "Management\TextNombresOficiales\TextOficialesBretanya.sb"   ]
+       [ .FILE "Management\TextNombresOficiales\TextOficialesItalianos.sb"   ]
+       [ .FILE "Management\TextNombresOficiales\TextOficialesMoldavia.sb"   ]
+       [ .FILE "Management\TextNombresOficiales\TextOficialesPolonia.sb"   ]
+       [ .FILE "Management\TextNombresOficiales\TextOficialesPortugal.sb"   ]
+       [ .FILE "Management\TextNombresOficiales\TextOficialesPrusia.sb"   ]
+       [ .FILE "Management\TextNombresOficiales\TextOficialesHelvetica.sb"   ]
+       [ .FILE "Management\TextNombresOficiales\TextOficialesRusia.sb"   ]
+       [ .FILE "Management\TextNombresOficiales\TextOficialesSuecia.sb"   ]
+       [ .FILE "Management\TextNombresOficiales\TextOficialesTitulos.sb"   ]
+       
+       # nombres de flotas
+       [ .FILE "Management\TextNombresFlotas\TextFlotasArabes.sb"   ]
+       [ .FILE "Management\TextNombresFlotas\TextFlotasAustria.sb"   ]
+       [ .FILE "Management\TextNombresFlotas\TextFlotasBatavia.sb"   ]
+       [ .FILE "Management\TextNombresFlotas\TextFlotasDinamarca.sb"   ]
+       [ .FILE "Management\TextNombresFlotas\TextFlotasEspanya.sb"   ]
+       [ .FILE "Management\TextNombresFlotas\TextFlotasFrancia.sb"   ]
+       [ .FILE "Management\TextNombresFlotas\TextFlotasGermanicos.sb"   ]
+       [ .FILE "Management\TextNombresFlotas\TextFlotasBretanya.sb"   ]
+       [ .FILE "Management\TextNombresFlotas\TextFlotasItalianos.sb"   ]
+       [ .FILE "Management\TextNombresFlotas\TextFlotasMoldavia.sb"   ]
+       [ .FILE "Management\TextNombresFlotas\TextFlotasPolonia.sb"   ]
+       [ .FILE "Management\TextNombresFlotas\TextFlotasPortugal.sb"   ]
+       [ .FILE "Management\TextNombresFlotas\TextFlotasPrusia.sb"   ]
+       [ .FILE "Management\TextNombresFlotas\TextFlotasHelvetica.sb"   ]
+       [ .FILE "Management\TextNombresFlotas\TextFlotasRusia.sb"   ]
+       [ .FILE "Management\TextNombresFlotas\TextFlotasSuecia.sb"   ]
+       [ .FILE "Management\TextNombresFlotas\TextFlotasTitulos.sb"   ]
+       
+       # títulos de crédito
+       [ .FILE "Others\TextCreditos.sb" ]         
+
+       
+       # obsoletas
+       #[ .FILE "Management\TextTiposTropas.sb"               ]
+       #[ .FILE "Management\TextNombresOficiales.sb"		         ]
+       #[ .FILE "Management\TextNombresFlotas.sb"		         ]
+      ]
+      
+      #.AUDIODEF                            "Game/GameModes/Gestion/AudioDefGestion.sb"
+      .AUDIODEF                             "Game/GameModes/Gestion/AudioDefs.sb"
+      
+      .UICPARAMS_FILE                       "Game/GameModes/Gestion/UICParams.sb"
+      
+      .UI_DEFS                              "Game/UI/ModeloGestion/UI_ModeloGestion.sb"
+      
+      .FLOTAS_JUGADORES_FILE                "Game/GameModes/Gestion/dbgDefFlotasIniciales.sb"      
+
+      .DEFS_NOMBRES	                        "Game/GameModes/Gestion/DefInfoNombres.sb"            
+      .DEFS_INICIALES_JUGADORES             "Game/GameModes/Gestion/defsInicialesJugadores.sb"
+      .DEFS_INICIALES_LOCAL_EASY            "Game/GameModes/Gestion/defsInicialesLocalEasy.sb"
+      .DEFS_INICIALES_LOCAL_MEDIUM          "Game/GameModes/Gestion/defsInicialesLocalMedium.sb"
+      .DEFS_INICIALES_LOCAL_HARD            "Game/GameModes/Gestion/defsInicialesLocalHard.sb"
+      
+      .DEFS_BALANCEO                        "Game/GameModes/Gestion/Balanceo/DefsBalanceoJugadores.sb"
+         
+      .START_PROCS
+      [
+        [
+         .NAME LOGICA_GESTION_BASE_PROC
+         .PARAMS
+         [     
+          .REGLAS_COMBATE_AUTOMATICO_FILE   "Game/GameModes/Gestion/CombateAutomatico/DefReglasCombateAutomatico.sb"
+          .CONFIGURACION_CONFLICTOS    "Game/GameModes/Gestion/DefConflictoEjercitos.sb"
+          .REGLAS_GENERALES_FILE       "Game/GameModes/Gestion/Reglas/DefReglasGenerales.sb"
+          .REGLAS_RES_BATALLA_FILE     "Game/GameModes/Gestion/Reglas/DefReglasResolucionBatalla.sb"
+          .REGLAS_TECNOLOGIAS_FILE     "Game/GameModes/Gestion/Reglas/DefReglasTecnologias.sb"
+          .REGLAS_EDIFICIOS_FILE       "Game/GameModes/Gestion/Reglas/DefReglasEdificios.sb"
+          .REGLAS_PUNTUACIONES_FILE    "Game/GameModes/Gestion/Reglas/DefReglasPuntuaciones.sb"
+          .REGLAS_COMERCIO_FILE        "Game/GameModes/Gestion/Reglas/DefReglasComercio.sb"
+          .AFINIDAD_REGIMENES_POLITICOS "Game/GameModes/Gestion/DefsRegimenesPoliticos.sb"
+          
+          .NOTIFICACIONESGESTION_FILE  "Game/GameModes/Gestion/DefNotificaciones.sb"
+          
+          .DEFS_HEREDEROS              "Game/GameModes/Gestion/DefHerederos.sb"
+          
+          .TRADE_FILE                  "Game/GameModes/Gestion/Comercio/DefComercio.sb"
+          
+          .QUEST_FILE                  "Game/GameModes/Gestion/Quest/DefQuest.sb"
+             
+          .START_PROCS
+          [          
+            [
+             .NAME LOGICA_GESTION_STARTUP_PROC
+             .PARAMS
+              [
+                .START_PROCS
+                [
+                  [                    
+                    .NAME AI_GESTION_CONTROL_BASE_PROC
+                    .PARAMS
+                    [           
+                     .CON_IA         TRUE
+                                          
+                     .IADEFS         "Game/GameModes/Gestion/IA/IADefs.sb"                                          
+                     .IACONSTANTS    "Game/GameModes/Gestion/IA/IAConstants.sb"
+                     
+                     .ORDEN_TURNOS   "Game/GameModes/Gestion/DefOrdenTurnos.sb"
+                     
+                     .INFO_MUSIC     "Game/GameModes/Gestion/InfoMusic.sb"
+                     
+                     .DEFS_AUTOSAVE  [ .MAX_AUTOSAVE_FILES 5 .TURNOS_AUTOSAVE_UPDATES 3 ]
+                     
+                     .CAMARA_INICIAL TRUE
+                    ]                    
+                  ]
+                ] # ~ .START_PROCS                
+              ] # ~ .PARAMS             
+            ]            
+          ] # ~ .START_PROCS         
+         ] # ~ .PARAMS                 
+        ]        
+      ] # ~ START_PROCS            
+    ] # ~ .PARAMS
+  ]
+] # ~ .START_PROCS

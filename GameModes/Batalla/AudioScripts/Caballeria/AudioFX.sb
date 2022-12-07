@@ -1,0 +1,57 @@
+###--------------------------------------------------------------------------------------------------
+### Script de Audio. 
+### .IDSOUND: identificador del sonido "S_" o del descriptor de sonido "SE_"
+###--------------------------------------------------------------------------------------------------
+.AUDIOFX
+[
+  [
+    .ID ANDAR
+    .IDSOUND
+    [
+      [ .NAME S_CAB_ANDAR_40 .TERRAIN TT_DEFAULT .NUMUNITS 40 ]
+      [ .NAME S_CAB_ANDAR_30 .TERRAIN TT_DEFAULT .NUMUNITS 30 ]
+      [ .NAME S_CAB_ANDAR_10 .TERRAIN TT_DEFAULT .NUMUNITS 10 ]
+      [ .NAME S_CAB_ANDAR_AGUA_40 .TERRAIN TT_AGUA .NUMUNITS 40 ]
+      [ .NAME S_CAB_ANDAR_AGUA_30 .TERRAIN TT_AGUA .NUMUNITS 30 ]
+      [ .NAME S_CAB_ANDAR_AGUA_10 .TERRAIN TT_AGUA .NUMUNITS 10 ]
+    ]
+  ]
+  [
+    .ID CORRER
+    .IDSOUND
+    [
+      [ .NAME S_CAB_CORRER_40 .TERRAIN TT_DEFAULT .NUMUNITS 40 ]
+      [ .NAME S_CAB_CORRER_30 .TERRAIN TT_DEFAULT .NUMUNITS 30 ]
+      [ .NAME S_CAB_CORRER_10 .TERRAIN TT_DEFAULT .NUMUNITS 10 ]
+      [ .NAME S_CAB_CORRER_AGUA_40 .TERRAIN TT_AGUA .NUMUNITS 40 ]
+      [ .NAME S_CAB_CORRER_AGUA_30 .TERRAIN TT_AGUA .NUMUNITS 30 ]
+      [ .NAME S_CAB_CORRER_AGUA_10 .TERRAIN TT_AGUA .NUMUNITS 10 ]
+    ]
+  ]
+
+  [
+    .ID CARGAR_INICIO
+    .IDSOUND S_CAB_CARGA_INICIO
+  ]
+  [
+    .ID CARGAR
+    .IDSOUND S_CAB_CARGA
+  ]
+  [
+    .ID DISPARAR
+    .IDSOUND
+    [
+      [ .NAME S_INF_DISPARA_40 .NUMUNITS 40 ]
+      [ .NAME S_INF_DISPARA_30 .NUMUNITS 30 ]
+      [ .NAME S_INF_DISPARA_15 .NUMUNITS 15 ]
+    ]
+  ]
+  [
+    .ID REFORMAR
+    .IDSOUND S_CAB_REFORMAR
+  ]
+  [
+    .ID MUERTE
+    .IDSOUND S_INF_MORIR
+  ]    
+]
