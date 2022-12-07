@@ -7,11 +7,11 @@
    [     
     [ .TIPO UIC_GESTORMENUS
       .ID 'GMEN'
-      # ATENCIÓN: La descripción de los enlaces del gestor de menús contempla la posibilidad de asignarle a un ID de control
-      # el menú anterior especificándole como ID de destino el 0. En caso de usarse esta característica, y para que funcione
-      # correctamente, TODOS los menús que vuelvan al menú inmediatamente anterior deberán especificar en su zona de enlaces
-      # 0 como el ID de destino en su botón de Volver. Esto es debido a que 0 implica un pop en la pila de pantallas, mientras
-      # que especificar cualquier otro menú equivale a un push.
+      # ATENCIï¿½N: La descripciï¿½n de los enlaces del gestor de menï¿½s contempla la posibilidad de asignarle a un ID de control
+      # el menï¿½ anterior especificï¿½ndole como ID de destino el 0. En caso de usarse esta caracterï¿½stica, y para que funcione
+      # correctamente, TODOS los menï¿½s que vuelvan al menï¿½ inmediatamente anterior deberï¿½n especificar en su zona de enlaces
+      # 0 como el ID de destino en su botï¿½n de Volver. Esto es debido a que 0 implica un pop en la pila de pantallas, mientras
+      # que especificar cualquier otro menï¿½ equivale a un push.
       .PARAMS
       [             
         .MENUS
@@ -36,7 +36,7 @@
               ]
             ]
             
-            # Texto de versión especial, por defecto comentado
+            # Texto de versiï¿½n especial, por defecto comentado
 #           [ .TIPO UIC_TEXT .ID 'TEST' .PARAMS [ .TEXT "PREVIEW" .X 15 .Y 30 .FONT "Fonts/Times18.fnt" .COLOR [ .R 255 .G 255 .B 255 ] ] ]
             
            
@@ -45,8 +45,8 @@
           
           .ENLACES
           [
-           [ .CONTROL_ID 'OP_1' .MENU_ID 'M_CC' ] # M_CC M_SE 'M__2' ] # opciones de campaña antes de imperios, verificar
-           [ .CONTROL_ID 'OP_2' .MENU_ID 'M_JC' ] # M_JC  M_SN  M_SA Comentar esta línea para desactivar multiplayer
+           [ .CONTROL_ID 'OP_1' .MENU_ID 'M_CC' ] # M_CC M_SE 'M__2' ] # opciones de campaï¿½a antes de imperios, verificar
+           [ .CONTROL_ID 'OP_2' .MENU_ID 'M_JC' ] # M_JC  M_SN  M_SA Comentar esta lï¿½nea para desactivar multiplayer
            [ .CONTROL_ID 'OP_8' .MENU_ID 'M_OJ' ]
            [ .CONTROL_ID 'OP_5' .MENU_ID 'M_SE' ] # M_PR  M_SE MSA1 MSN1        
            [ .CONTROL_ID 'OP_4' .MENU_ID 'MCRE' ]
@@ -67,7 +67,7 @@
              .TIPO UIC_DLGSELECTEMPIRE .ID 'MMS2' 
              .PARAMS 
              [ 
-               .MODO_FUNCIONAMIENTO 0
+               .MODO_FUNCIONAMIENTO 1
                %Game\UI\MainMenu\UIDefs_SelectEmpire.sb 
              ]# ~ .PARAMS
            ]
@@ -76,7 +76,7 @@
           .ENLACES
           [
             [ .CONTROL_ID 'MSIX' .MENU_ID 'M__3']          
-            [ .CONTROL_ID 'O2_X' .MENU_ID 0 ] # 'M__1'] # desde deslección de imperios volvemos a config campaña, verificar
+            [ .CONTROL_ID 'O2_X' .MENU_ID 0 ] # 'M__1'] # desde deslecciï¿½n de imperios volvemos a config campaï¿½a, verificar
           ]
         ] # ~ MENU 2
   
@@ -95,7 +95,7 @@
           ]
         ] # ~ MENU 3
 
-        [ ################################################################# MENU CONFIGURACIÓN DE CAMPAÑA ##
+        [ ################################################################# MENU CONFIGURACIï¿½N DE CAMPAï¿½A ##
           .ID 'M_CC'
           .CONTROLES
           [
@@ -113,7 +113,7 @@
             [ .CONTROL_ID 'OCCC' .MENU_ID 'M_25'] #CMonterd: M__2
             [ .CONTROL_ID 'OCCX' .MENU_ID 0 ]
           ]
-        ] # ~ MENU CONFIGURACIÓN DE CAMPAÑA
+        ] # ~ MENU CONFIGURACIï¿½N DE CAMPAï¿½A
         
         [ ################################################################### MENU TUTORIALES ##
           .ID 'MPTU'
@@ -164,7 +164,7 @@
             [ .CONTROL_ID 'SBHX' .MENU_ID 0]
           ]
         ] # ~ MENU OPCIONES 
-        [ ################################################################# MENU CRÉDITOS##
+        [ ################################################################# MENU CRï¿½DITOS##
           .ID 'MCRE'
           .CONTROLES
           [
@@ -176,7 +176,7 @@
             [ .CONTROL_ID 'CRBK' .MENU_ID 0]
             [ .CONTROL_ID 'VSFJ' .MENU_ID 0]
           ]
-        ] # ~ MENU CRÉDITOS         
+        ] # ~ MENU CRï¿½DITOS         
 
         [ ####################################### MENU MULTIPLAYER JOIN CREATE ##############################
           .ID 'M_JC'
@@ -585,7 +585,7 @@
       ] # ~ .PARAMS     
     ] # ~ .TIPO UIC_GESTORMENUS    
     
-     # Vídeo de fondo del menú principal
+     # Vï¿½deo de fondo del menï¿½ principal
      [
        .TIPO UIC_VIDEO .ID 'VDFO'
        .PARAMS 
