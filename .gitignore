@@ -1,0 +1,3 @@
+# ignore all tga and scc files
+*.tga
+*.scc
