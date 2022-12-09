@@ -235,7 +235,7 @@
   .PROTECCION_MUTUA       12 # Numero de turnos maximo para una proteccion mutua
   .PERMISO_PASO           8  # Numero de turnos maximo para un permiso de paso
   .MATRIMONIO             4  # OBSOLETO. Numero de turnos que dura un matrimonio en hacerse efectivo.
-  .ARMISTICIO_CONSOLIDADO 5  # Numero de turnos en que consideramos que una paz esta consolidada
+  .ARMISTICIO_CONSOLIDADO 4  # Numero de turnos en que consideramos que una paz esta consolidada
   .TRATADO_COMERCIAL      2  # Numero maximo de tratados comerciales con un jugador en un turno
   .ENVIO_AYUDA_MILITAR    1  # Numero maximo de ayuda militar que puede recibir un jugador por turno de parte de otro
  ]
@@ -243,7 +243,7 @@
  .CFG_PROTECCION_MUTUA
  [
   # Valores de configuracion para la proteccion mutua
-  .MAX_JUGADORES 4 # Maximo numero de jugadores en una alianza
+  .MAX_JUGADORES 3 # Maximo numero de jugadores en una alianza
  ]
 
  .MISC
@@ -343,8 +343,8 @@
   # Notese que un valor de 1.0 hara que se tome la misma riqueza.
   # Notese que un valor superior a 1.0 hara que se tome una cantidad superior.
   # Notese que un valor inferior a 1.0 hara que se tome una cantidad inferior.
-  .MILITAR     0.7
-  .DIPLOMATICA 0.2
+  .MILITAR     1.0
+  .DIPLOMATICA 0.3
  ]
  
  .LIBERACION
@@ -373,7 +373,7 @@
   
   # Numero maximo de ejercitos rebeldes
   # En caso de poner 0, nunca habra sistema de ejercitos rebeldes en asedios
-  .MAX_EJERCITOS_REBELDES     2 
+  .MAX_EJERCITOS_REBELDES     1 
   
   # Indica el porcentaje maximo del poder militar del ejercito invasor que el ejercito rebelde
   # podra llegar a tener.
@@ -400,7 +400,7 @@
   # valor, mayor probabilidad. Se espera que los valores sean flotantes y oscilen entre 0 y 100.
   # El sistema lanzara un dado entre 0 y 100 y si es menor o igual que el valor maximo aqui puesto
   # creara una milicia.
-  .PROBABILIDAD_MILICIA_FRENTE_FUSILERO 80.0
+  .PROBABILIDAD_MILICIA_FRENTE_FUSILERO 30.0
   
   # Factor de modificador de enfado segun sea el sistema de gobierno elegido por el jugador que asedia
   # Un factor con valor 1.0 NO variara el enfado producido.
@@ -481,8 +481,8 @@
 #         desercion aleatoria entre un porcentaje minimo y maximo
 .DESERCION_POR_LIBERACION_PAIS
 [
- .PORCENTAJE_MINIMO 30.0
- .PORCENTAJE_MAXIMO 70.0
+ .PORCENTAJE_MINIMO 40.0
+ .PORCENTAJE_MAXIMO 90.0
 ]
 
 # Tabla de equivalencia de ciencia con respecto al resto de riquezas

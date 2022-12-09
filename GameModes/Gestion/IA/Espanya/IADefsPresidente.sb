@@ -34,7 +34,7 @@
   # todos sus territorios perfectamente defendidos) y 1 (m�xima temeridad: puede llegar a dejar
   # todos sus territorios indefensos por volcar m�s tropas en la guerra). No es recomendable
   # asignar un valor mayor de 0.5 a este valor.
-  .TEMERIDAD 0.3
+  .TEMERIDAD 0.65
   
   .MODIFICADOR_ANEXION_EASY 5.0
 
